@@ -1,0 +1,39 @@
+name: Kanuri
+iso_639_3: kau
+iso_639_1: kr
+name_french: kanouri
+altnames:
+- Aga
+- Borno
+- Bornouan
+- Bornouans
+- Bornu
+- Central Kanuri
+- Kanouri
+- Kanoury
+- Kanuri
+- Yerwa
+- Kole
+- Kolere
+- Sirata
+- Yerwa Kanuri
+countries:
+- Cameroon
+- Chad
+- Niger
+- Nigeria
+population: '9600000'
+population_order: 10⁶+
+official_status: 🛂
+glottocode: kanu1279
+glottocode_url: https://glottolog.org/resource/languoid/id/kanu1279
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Kanuri_language
+  family: Nilo-Saharan
+  speakers_l1: 10.6 million
+  writing_system: Latin Arabic ( Ajami ) [ 3 ]
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=kau
+resource_page: http://kamu.si/kanuri-resources
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=kau
+  OLAC: http://www.language-archives.org/language/kau

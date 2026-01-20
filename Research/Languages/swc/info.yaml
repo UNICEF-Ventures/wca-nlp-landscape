@@ -1,0 +1,28 @@
+name: Congo Swahili
+iso_639_3: swc
+name_french: congo swahili
+altnames:
+- Congo Swahili
+- Zaïre Swahili
+countries:
+- Democratic Republic of Congo
+population: '9100000'
+population_order: 10⁶+
+endangerment: safe
+glottocode: cong1236
+glottocode_url: https://glottolog.org/resource/languoid/id/cong1236
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Congo_Swahili
+  family: Niger–Congo
+  speakers_l1: 2.0 million
+  speakers_l2: 9.1 million
+  writing_system: Latin script ( Roman Swahili alphabet ) Arabic script ( Arabic Swahili
+    alphabet ) Swahili Braille
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=swc
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=swc
+  OLAC: http://www.language-archives.org/language/swc
+  Grambank: https://grambank.clld.org/languages/cong1236
+tech_resources:
+  AfroLID: true
+  Fineweb2: 💬

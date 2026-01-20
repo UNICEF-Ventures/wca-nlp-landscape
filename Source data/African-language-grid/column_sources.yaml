@@ -1,0 +1,124 @@
+columns:
+  name_french:
+    original_name: 🇫🇷Nom
+    source_url: https://documentation.abes.fr/guide/html/formats/CodesLanguesISO639-3.htm
+  glottocode:
+    original_name: Glotto🪵
+    source_url: https://glottolog.org/
+  population_order:
+    original_name: 10ˣ
+    source_url: https://docs.google.com/spreadsheets/d/1AQgfxbirMhK3rN5OI2KWBWEMYC8W9sPenMtnjvUsKvQ/edit?usp=sharing
+  endangerment:
+    original_name: ⚠️Danger
+    source_url: https://en.wikipedia.org/wiki/Atlas_of_the_World%27s_Languages_in_Danger
+  official_status:
+    original_name: Official
+    source_url: https://en.wikipedia.org/wiki/List_of_official_languages
+  iso_639_1:
+    original_name: ISO 639-1
+    source_url: https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes
+  olac:
+    original_name: OLAC
+    source_url: http://www.language-archives.org/
+  grambank:
+    original_name: 👵🏦
+    source_url: https://grambank.clld.org/
+  wals:
+    original_name: WALS
+    source_url: https://wals.info/
+  elar:
+    original_name: ELAR
+    source_url: https://elararchive.org/collections/
+  elp:
+    original_name: ⏳ELP
+    source_url: https://endangeredlanguages.com/
+  afrolid:
+    original_name: 🌍🆔
+    source_url: https://github.com/UBC-NLP/afrolid
+  cldr:
+    original_name: CLDR
+    source_url: https://www.unicode.org/cldr/charts/47/summary/root.html
+  fineweb2:
+    original_name: Fineweb2
+    source_url: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
+  africarxiv:
+    original_name: AfricArXiV
+    source_url: https://africarxiv.ubuntunet.net/handle/1/1
+  africlirmatrix:
+    original_name: AfriCLIRMatrix
+    source_url: https://github.com/castorini/africlirmatrix/blob/main/README.md
+  google_translate:
+    original_name: Google Translate
+    source_url: https://docs.google.com/spreadsheets/d/10HzAHjFa2JWaxWdPaTt8sAxoOl8NQBeMYvHRVN-wfTE/edit?usp=sharing
+  mbert:
+    original_name: mBERT
+    source_url: https://github.com/google-research/bert/blob/master/multilingual.md
+  nllb_200:
+    original_name: NLLB 200
+    source_url: https://dl-translate.readthedocs.io/en/latest/available_languages/
+  mbart_50:
+    original_name: mBart 50
+    source_url: https://dl-translate.readthedocs.io/en/latest/available_languages/
+  m2m_100:
+    original_name: M2M-100
+    source_url: https://dl-translate.readthedocs.io/en/latest/available_languages/
+  common_voice:
+    original_name: Mozilla Common Voice
+    source_url: https://commonvoice.mozilla.org/en/languages
+  madlad_400_docs:
+    original_name: MADLAD-400 docs
+    source_url: https://huggingface.co/datasets/allenai/MADLAD-400
+  madlad_400_sentences:
+    original_name: MADLAD-400 sentences
+    source_url: https://huggingface.co/datasets/allenai/MADLAD-400
+  aya_101:
+    original_name: Aya 101
+    source_url: https://cohere.com/research/papers/aya-model-paper-2024-02-13
+  webonary:
+    original_name: 🕸️Webonary
+    source_url: https://www.webonary.org/
+  language_box:
+    original_name: Language Box
+    source_url: https://ethiolanguagebox.com/
+  kencorpus:
+    original_name: Kencorpus
+    source_url: https://kencorpus.maseno.ac.ke/corpus-datasets/
+  bible:
+    original_name: Bible
+    source_url: https://huggingface.co/datasets/Helsinki-NLP/bible_para
+  naija_voices:
+    original_name: NaijaVoices
+    source_url: https://naijavoices.com/
+  fleurs:
+    original_name: Fleurs
+    source_url: https://huggingface.co/datasets/google/fleurs
+  afrihate:
+    original_name: AfriHate
+    source_url: https://aclanthology.org/2025.naacl-long.92.pdf
+  cmu_wilderness:
+    original_name: CMU Wilderness
+    source_url: https://github.com/festvox/datasets-CMU_Wilderness?tab=readme-ov-file
+  qcri_edu_corpus:
+    original_name: QCRI Educational Domain Corpus
+    source_url: https://huggingface.co/datasets/Helsinki-NLP/qed_amara
+  mafand:
+    original_name: MAFAND
+    source_url: https://github.com/masakhane-io/lafand-mt
+  incubalm:
+    original_name: IncubaLM
+    source_url: https://lelapa.ai/inkubalm-a-small-language-model-for-low-resource-african-languages/
+  sunflower:
+    original_name: Sunflower
+    source_url: https://medium.com/sunbird-ai/sunflower-for-africas-many-voices-cf80d0c27fdf
+  afriquellm:
+    original_name: 𝐀𝐟𝐫𝐢𝐪𝐮𝐞𝐋𝐋𝐌
+    source_url: https://huggingface.co/collections/McGill-NLP/afriquellm
+  swivuriso:
+    original_name: Swivuriso
+    source_url: https://arxiv.org/abs/2512.02201
+  autogramm:
+    original_name: Autogramm
+    source_url: https://autogramm.github.io/languages/
+  universal_dependencies:
+    original_name: UD 2.17
+    source_url: https://lindat.mff.cuni.cz/repository/items/b4fcb1e0-f4b2-4939-80f5-baeafda9e5c0

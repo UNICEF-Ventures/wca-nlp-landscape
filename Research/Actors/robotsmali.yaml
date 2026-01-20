@@ -1,0 +1,124 @@
+id: robotsmali
+name: RobotsMali
+type: ngo
+website: https://robotsmali.org/
+location: Bamako, Mali
+
+# Organization details
+founded: 2017
+organization_size: medium
+funding: >
+  Grant-funded. Supported by Bill & Melinda Gates Foundation, Google, UNESCO, World Bank,
+  Mali's Ministry of Education, and AI4D Africa (IDRC).
+description: >
+  RobotsMali is a centre dedicated to training and innovation in robotics and artificial
+  intelligence, working to democratize access to emerging technologies in Mali and West Africa.
+  Their AI4D Lab focuses on NLP for Bambara and other Malian national languages to support
+  education, health care and entrepreneurship. They have trained 9,000+ students in STEM,
+  robotics, and AI. Following Mali's 2023 decision to replace French with 13 local languages
+  as official languages, RobotsMali is creating AI-powered educational materials in local languages.
+
+# Key people
+key_people:
+  - name: Michael Leventhal
+    role: Principal investigator
+
+  - name: Allahsera Augustus Tapo
+    role: Director of Research
+
+  - name: Yacouba Diarra
+    role: Lead researcher
+    note: First author on AfVoices and Kunkado dataset papers
+
+# Coverage
+countries:
+  - ML  # Mali
+languages:
+  - bam  # Bambara (spoken by ~80% of Mali's population)
+  # Plus 12 other Malian national languages for educational content
+
+# Links
+github: https://github.com/RobotsMali-AI
+huggingface: https://huggingface.co/RobotsMali
+contact:
+  email: contact@robotsmali.org
+
+# Projects
+projects:
+  - name: AfVoices Dataset
+    url: https://huggingface.co/datasets/RobotsMali/afvoices
+    description: >
+      African Next Voices – Bambara. 612 hours raw / 423 hours segmented spontaneous speech
+      from 512 speakers in southern Mali. 159h human-corrected subset. Largest Bambara ASR corpus.
+      CC-BY-4.0 license.
+
+  - name: Kunkado Dataset
+    url: https://huggingface.co/datasets/RobotsMali/kunkado
+    description: >
+      "Messy-real" Bambara ASR corpus. 161 hours from radio/TV broadcasts with extensive
+      French code-switching. 39h human-reviewed. Designed for real-world noisy conditions.
+      CC-BY-SA-4.0 license.
+
+  - name: Soloni ASR Models
+    url: https://huggingface.co/RobotsMali/soloni-114m-tdt-ctc-v2
+    description: >
+      Family of Bambara ASR models including Soloni TDT-CTC (114M params), QuartzNet-15×5 (19M params),
+      and Soloba (0.6B params). Trained on AfVoices and Kunkado datasets.
+
+  - name: French-Bambara Machine Translation
+    url: https://robotsmali.org/en/intelligence-artificielle/
+    description: Created the first French-to-Bambara machine learning dataset in 2020.
+
+  - name: AI-Generated Educational Books
+    url: https://robotsmali.org/en/
+    description: >
+      180 illustrated books for beginning readers through high school in Bambara and 11 other
+      Malian languages. Available on Bloom Library. 67-90% of children able to read complete
+      books after 12 hours of instruction.
+
+  - name: AI4D Lab
+    url: https://robotsmali.org/en/intelligence-artificielle/
+    description: Mali's international AI lab working on NLP for national languages.
+
+projects_url: https://robotsmali.org/projets/
+
+publications:
+  - title: "Dealing with the Hard Facts of Low-Resource African NLP"
+    url: https://arxiv.org/abs/2511.18557
+    venue: arXiv 2025 (AfVoices dataset paper)
+
+  - title: "Kunnafonidilaw ka Cadeau: an ASR dataset of present-day Bambara"
+    url: https://arxiv.org/abs/2512.19400
+    venue: arXiv 2025 (Kunkado dataset paper)
+
+  - title: "Generative AI for Creating Books in Bambara"
+    url: https://robotsmali.org/en/communications/%F0%9F%A7%A0-robotsmali-ai4d-lab-at-naacl-2025/
+    venue: Findings of NAACL 2025
+
+publications_url: https://robotsmali.org/en/Communications/nlp-conference/
+
+partnerships:
+  - Bill & Melinda Gates Foundation
+  - Google
+  - UNESCO
+  - Unicef
+  - World Bank
+  - Mali Ministry of Education
+  - AI4D Africa (IDRC)
+  - Bloom Library (SIL)
+  - Orange
+
+# UNICEF relevance
+unicef_relevance: >
+  (Auto generated) Highly relevant for UNICEF Mali and education programming across WCA. RobotsMali has
+  demonstrated impact: 9,000+ students trained, 180 AI-generated books in local languages,
+  and proven literacy outcomes (67-90% reading improvement). Their Bambara ASR and MT models
+  directly support low-literacy content delivery. Strong government relationship following
+  Mali's language policy shift. Model for AI-enabled education in local languages that could
+  be replicated across the region.
+
+maturity: established
+engagement_status: none
+last_updated: 2026-01-19
+
+notes: 

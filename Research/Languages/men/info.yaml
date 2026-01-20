@@ -1,0 +1,33 @@
+name: Mende
+iso_639_3: men
+name_french: mendé
+altnames:
+- Boumpe
+- Hulo
+- Mende (Sierra Leone)
+- Mɛnde
+- Mɛnde yia
+countries:
+- Liberia
+- Sierra Leone
+population: '1800000'
+population_order: 10⁶+
+endangerment: safe
+glottocode: mend1266
+glottocode_url: https://glottolog.org/resource/languoid/id/mend1266
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Mende_language
+  family: Niger–Congo
+  speakers_l1: 2.5 million
+  writing_system: Latin Mende Kikakui script
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=men
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=men
+  OLAC: http://www.language-archives.org/language/men
+  Grambank: https://grambank.clld.org/languages/mend1266
+  WALS: https://wals.info/languoid/lect/wals_code_mde
+  Endangered Languages Project: https://endangeredlanguages.com/lang/10706
+tech_resources:
+  AfroLID: true
+  Fineweb2: 💬
+  CMU Wilderness: true

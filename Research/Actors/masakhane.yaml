@@ -1,0 +1,181 @@
+id: masakhane
+name: Masakhane
+type: Research community and foundation
+website: https://www.masakhane.io
+location: Distributed (Africa-wide); MRF legally registered in Kenya
+
+# Organization details
+founded: 2019
+organization_size: large  # 1000+ participants from ~30 African countries
+funding: >
+  Volunteer-driven community. Lacuna Fund grants for specific projects.
+  MRF (Masakhane Research Foundation) now funds other projects.
+description: >
+  Masakhane ("We build together" in isiZulu) is a grassroots NLP organization dedicated to
+  strengthening natural language processing research in African languages, for Africans,
+  by Africans. The organization operates on principles of Ubuntu philosophy, African-centricity,
+  data sovereignty, and reproducibility. They explicitly reject "parachute research" from the
+  Global North, emphasizing that African researchers should lead development of African NLP solutions.
+
+  In 2023, Masakhane evolved into the Masakhane Research Foundation (MRF), legally registered
+  in Kenya. MRF is developing the "African Languages Hub" and now funds other African NLP projects.
+  Many researchers affiliated with other institutions publish their work under the Masakhane name.
+
+# Key people
+key_people:
+  - name: David Adelani
+    role: Core contributor, researcher
+    affiliation: McGill University / Mila
+    note: Prolific researcher, lead on MasakhaNER, MasakhaNEWS, and many MT papers
+  - name: Chris Emezue 
+    role: Core contributor
+    affiliation: Lanfrica / NaijaVoices
+    note: Founder of Lanfrica and NaijaVoices
+  - name: Vukosi Marivate
+    role: Co-founder
+    affiliation: MRF / AfriDSAI / ABSA / University of Pretoria / Lelapa.ai
+
+
+# Coverage
+countries:
+  - NG  # Nigeria
+  - GH  # Ghana
+  - KE  # Kenya
+  - ZA  # South Africa
+  - ET  # Ethiopia
+  - TZ  # Tanzania
+  - BJ  # Benin
+  - SN  # Senegal
+  # Plus ~25 more African countries represented
+languages:
+  - hau  # Hausa
+  - yor  # Yoruba
+  - ibo  # Igbo
+  - swa  # Swahili
+  - amh  # Amharic
+  - zul  # Zulu
+  - twi  # Twi
+  - fon  # Fon
+  - wol  # Wolof
+  - pcm  # Nigerian Pidgin
+  # 38+ African languages covered
+
+# Links
+github: https://github.com/masakhane-io
+huggingface: https://huggingface.co/masakhane
+contact:
+  email: masakhane_leadership@googlegroups.com
+  mailing_list: https://groups.google.com/forum/#!forum/masakhane-nlp
+  slack: https://www.google.com/url?q=https%3A%2F%2Fjoin.slack.com%2Ft%2Fmasakhane-nlp%2Fshared_invite%2Fzt-3ihzuew5u-AfTDznbq3cXDV9wvxHLuQg&sa=D&sntz=1
+
+# Projects (with URLs)
+projects:
+  - name: Masakhane MT - Decolonise Science
+    url: https://www.masakhane.io/ongoing-projects/masakhane-mt-decolonise-science
+    description: Translation of scientific papers into African languages. Lacuna Fund supported.
+
+  - name: MasakhaNER - Know Our Names
+    url: https://www.masakhane.io/ongoing-projects/masakhaner-know-our-names
+    description: Named Entity Recognition for African languages. Lacuna Fund supported.
+
+  - name: MakerereNLP - Text & Speech for East Africa
+    url: https://www.masakhane.io/ongoing-projects/makererenlp-text-speech-for-east-africa
+    description: Text and speech processing for East African languages. Lacuna Fund supported.
+
+  - name: NaijaNLP - Sentiment Lexicon & Hate Speech
+    url: https://www.masakhane.io/ongoing-projects/naijanlp-sentiment-lexicon-hate-speech
+    description: Sentiment analysis and hate speech detection for Nigerian languages. Lacuna Fund supported.
+
+  - name: LAFAND-MT
+    url: https://www.masakhane.io/ongoing-projects/lafand-mt
+    description: Low-resource African language machine translation.
+
+  - name: MMT-Africa
+    url: https://www.masakhane.io/ongoing-projects/mmt-africa
+    description: Multilingual machine translation for Africa.
+
+  - name: Question Answering
+    url: https://www.masakhane.io/ongoing-projects/question-answering
+    description: Question answering systems for African languages.
+
+  - name: Study NLP
+    url: https://www.masakhane.io/ongoing-projects/study-nlp
+    description: Educational resources and study groups for NLP.
+
+  - name: African Languages Hub
+    url: https://www.masakhane.io/masakhane-african-languages-hub/about
+    description: MRF initiative to centralize African language resources and fund projects.
+
+projects_url: https://www.masakhane.io/ongoing-projects
+
+# Publications (with URLs) - Key papers only, full list at website
+publications:
+  - title: "AfriMTE and AfriCOMET: Empowering COMET to Embrace Under-resourced African Languages"
+    url: https://arxiv.org/abs/2311.09828
+    venue: NAACL 2024
+
+  - title: "MasakhaNEWS: News Topic Classification for African languages"
+    url: https://aclanthology.org/2023.ijcnlp-main.10/
+    venue: IJCNLP-AACL 2023
+
+  - title: "MasakhaNER 2.0: Africa-centric Transfer Learning for Named Entity Recognition"
+    url: https://arxiv.org/abs/2210.12391
+    venue: EMNLP 2022
+
+  - title: "AfroLM: A Self-Active Learning-based Multilingual Pretrained Language Model for 23 African Languages"
+    url: https://arxiv.org/abs/2211.03263
+    venue: SustaiNLP 2022
+
+  - title: "BibleTTS: a large, high-fidelity, multilingual, and uniquely African speech corpus"
+    url: https://arxiv.org/abs/2207.03546
+    venue: Interspeech 2022
+
+  - title: "MasakhaNER: Named Entity Recognition for African Languages"
+    url: https://aclanthology.org/2021.tacl-1.66/
+    venue: TACL 2021
+
+  - title: "Quality at a Glance: An Audit of Web-Crawled Multilingual Datasets"
+    url: https://arxiv.org/abs/2103.12028
+    venue: TACL 2021
+
+  - title: "MMTAfrica: Multilingual Machine Translation for African Languages"
+    url: https://aclanthology.org/2021.wmt-1.48/
+    venue: WMT 2021
+
+  - title: "Participatory Research for Low-resourced Machine Translation: A Case Study in African Languages"
+    url: https://www.aclweb.org/anthology/2020.findings-emnlp.195/
+    venue: EMNLP 2020
+
+  - title: "Masakhane - Machine Translation for Africa"
+    url: https://arxiv.org/pdf/2003.11529
+    venue: AfricaNLP @ ICLR 2020
+
+publications_url: https://www.masakhane.io/publications
+
+partnerships:
+  - Data Science for Social Impact (University of Pretoria)
+  - CLEAR Global
+  - African Computer Vision Summer School
+  - RAIL LAB (University of Witwatersrand)
+  - Knowledge4All Foundation
+  - Strathmore CIPIT
+  - Bantucracy
+
+# UNICEF relevance
+unicef_relevance: >
+  (Auto generated) Key partner for any NLP work in WCA. Has established networks across African NLP researchers,
+  open-source models and datasets for multiple WCA languages (Hausa, Yoruba, Igbo, Fon, Wolof, etc.),
+  and a philosophy aligned with community-driven, locally-owned technology. Their MasakhaNER
+  and MT projects directly relevant to UNICEF communication and data processing needs.
+  The new MRF structure and African Languages Hub could serve as a coordination point for
+  UNICEF's language technology initiatives across the region.
+
+maturity: established
+engagement_status: none
+last_updated: 2026-01-19
+
+notes: >
+  (Auto generated) Strong community with weekly meetings on Slack. Beginner-friendly with Google Colab notebooks.
+  Good entry point for connecting with African NLP ecosystem. Four of six Masakhane consortium
+  proposals received Lacuna Fund awards. Now operates as MRF (Masakhane Research Foundation)
+  legally registered in Kenya.

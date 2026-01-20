@@ -1,0 +1,29 @@
+name: Krio
+iso_639_3: kri
+name_french: krio
+altnames:
+- Creole
+- Patois
+countries:
+- Sierra Leone
+population: '6300000'
+population_order: 10⁶+
+endangerment: safe
+glottocode: krio1253
+glottocode_url: https://glottolog.org/resource/languoid/id/krio1253
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Krio_language
+  family: English Creole
+  speakers_l1: 6.9 million
+  speakers_l2: 6.9 million
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=kri
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=kri
+  OLAC: http://www.language-archives.org/language/kri
+tech_resources:
+  AfroLID: true
+  Google Translate: '2022'
+  MADLAD-400 Docs: 786 MAD-Docs
+  MADLAD-400 Sentences: 38800 MAD-Sents
+  Fineweb2: 💬
+  CMU Wilderness: true

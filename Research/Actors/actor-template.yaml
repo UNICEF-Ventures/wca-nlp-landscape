@@ -1,0 +1,75 @@
+# Actor Template - Copy this file and fill in details
+# File naming: use lowercase-with-dashes.yaml (e.g., google-research.yaml)
+
+id: template  # lowercase, no spaces (used for URLs)
+name: Organization Name
+type: startup  # Options: research_community, startup, ngo, academic_lab, corporate, government
+website: https://example.com
+location: City, Country
+
+# Organization details
+founded: 2020  # Year established
+organization_size: small  # Options: small (<10), medium (10-50), large (50+)
+funding: Grant-funded / VC-backed / Self-funded / etc.
+description: >
+  Brief description of the organization and what they do.
+  Can span multiple lines.
+
+# Key people (founders, leads, notable contributors)
+key_people:
+  - name: Person Name
+    role: Founder / CEO / Lead researcher / etc.
+    affiliation: Their institution if different from org
+    note: Brief note about their contributions
+
+# Geographic and language coverage
+countries:  # ISO 3166-1 alpha-2 codes
+  - NG
+  - GH
+languages:  # ISO 639-3 codes of languages they work on
+  - hau
+  - yor
+
+# Links
+github: https://github.com/org-name
+huggingface: https://huggingface.co/org-name
+contact:
+  email: contact@example.com
+  # Can also include: phone, mailing_list, slack, twitter, linkedin
+
+# Work output - Projects with URLs
+projects:
+  - name: Project Name
+    url: https://example.com/project
+    description: Brief description of the project
+  - name: Another Project
+    url: https://example.com/project2
+    description: What this project does
+
+# Publications with URLs and venues
+publications:
+  - title: "Paper Title"
+    url: https://arxiv.org/abs/xxxx.xxxxx
+    venue: Conference/Journal Year
+  - title: "Another Publication"
+    url: https://aclanthology.org/xxxx
+    venue: Venue Year
+
+publications_url: https://example.com/publications  # Link to full publications list
+
+# Partners
+partnerships:  # Organizations they collaborate with
+  - Partner Organization 1
+  - Partner Organization 2
+
+# UNICEF engagement
+unicef_relevance: >
+  Why this actor matters for UNICEF WCA work. What technologies or expertise
+  they have that could support UNICEF programmes.
+
+maturity: emerging  # Options: emerging, established, mature
+engagement_status: none  # Options: none, contacted, in_discussion, active_partner
+last_updated: 2026-01-19
+
+notes: >
+  Any additional observations or context.

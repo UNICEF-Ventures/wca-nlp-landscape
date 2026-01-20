@@ -1,0 +1,50 @@
+name: Yoruba
+iso_639_3: yor
+iso_639_1: yo
+name_french: yoruba
+altnames:
+- Yariba
+- Yooba
+- Yorouba
+- Yorùbá
+- Èdè Yorùbá
+countries:
+- Benin
+- Nigeria
+- Togo
+population: '54000000'
+population_order: 10⁶+
+endangerment: safe
+official_status: 🛂
+glottocode: yoru1245
+glottocode_url: https://glottolog.org/resource/languoid/id/yoru1245
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Yoruba_language
+  family: Niger–Congo
+  speakers_l1: 48 million
+  speakers_l2: 2.0 million
+  writing_system: Latin ( Yoruba alphabet ) Arabic ( Anjemi ) Oduduwa script Yoruba
+    Braille
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=yor
+resource_page: http://kamu.si/yoruba-resources
+acalan_commission: https://docs.google.com/spreadsheets/d/12xbHCEMj-r-dLLG4aZ1HUONwSwQp0xqoIO5iOTKEKn4/edit?gid=930323633
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=yor
+  OLAC: http://www.language-archives.org/language/yor
+  WALS: https://wals.info/languoid/lect/wals_code_yor
+  CLDR: https://www.unicode.org/cldr/charts/47/summary/yo.html
+  AfricArXiv: https://africarxiv.ubuntunet.net/handle/1/1542
+tech_resources:
+  AfroLID: true
+  Google Translate: '2013'
+  mBERT: true
+  NLLB-200: true
+  M2M-100: true
+  Mozilla Common Voice: true
+  MADLAD-400 Docs: 52100 MAD-Docs
+  MADLAD-400 Sentences: 1200000 MAD-Sents
+  Aya-101: true
+  Fineweb2: 💬
+  FLEURS: true
+  AfriHate: true
+  NaijaVoices: true

@@ -1,0 +1,120 @@
+asr:
+  items:
+  - name: sarulab-speech/yodas2_sidon
+    url: https://huggingface.co/datasets/sarulab-speech/yodas2_sidon
+    downloads: 23200
+    likes: 55
+  - name: suryatmodulus/yodas2_sidon
+    url: https://huggingface.co/datasets/suryatmodulus/yodas2_sidon
+    downloads: 3780
+    likes: 0
+  - name: YuRiVeRTi/V1Q
+    url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
+    downloads: 309
+    likes: 3
+  - name: WueNLP/sib-fleurs
+    url: https://huggingface.co/datasets/WueNLP/sib-fleurs
+    downloads: 299
+    likes: 11
+  - name: OlameMend/soreva
+    url: https://huggingface.co/datasets/OlameMend/soreva
+    downloads: 107
+    likes: 6
+  - name: Groovy-123/deep-think
+    url: https://huggingface.co/datasets/Groovy-123/deep-think
+    downloads: 68
+    likes: 1
+  - name: french-datasets/espnet_yodas2
+    url: https://huggingface.co/datasets/french-datasets/espnet_yodas2
+    downloads: 26
+    likes: 0
+  - name: french-datasets/espnet_yodas
+    url: https://huggingface.co/datasets/french-datasets/espnet_yodas
+    downloads: 21
+    likes: 0
+  - name: worldboss/ewe_bible_v2_tts
+    url: https://huggingface.co/datasets/worldboss/ewe_bible_v2_tts
+    downloads: 19
+    likes: 0
+  - name: Menoviar28/menov31
+    url: https://huggingface.co/datasets/Menoviar28/menov31
+    downloads: 17
+    likes: 0
+  - name: Groovy-123/QuantumAI
+    url: https://huggingface.co/datasets/Groovy-123/QuantumAI
+    downloads: 16
+    likes: 0
+  - name: worldboss/ewe_bible_v1
+    url: https://huggingface.co/datasets/worldboss/ewe_bible_v1
+    downloads: 9
+    likes: 0
+  - name: dijihax/Dataset
+    url: https://huggingface.co/datasets/dijihax/Dataset
+    downloads: 4
+    likes: 2
+  - name: lenoxaugo254/LenoxAI
+    url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
+    downloads: 1
+    likes: 1
+  - name: crystalai/autotrain-data-crystal_alchemist-vision
+    url: https://huggingface.co/datasets/crystalai/autotrain-data-crystal_alchemist-vision
+    downloads: 0
+    likes: 1
+  total_count: 15
+  counts_by_code: {}
+tts:
+  items:
+  - name: sarulab-speech/yodas2_sidon
+    url: https://huggingface.co/datasets/sarulab-speech/yodas2_sidon
+    downloads: 23200
+    likes: 55
+  - name: suryatmodulus/yodas2_sidon
+    url: https://huggingface.co/datasets/suryatmodulus/yodas2_sidon
+    downloads: 3780
+    likes: 0
+  - name: YuRiVeRTi/V1Q
+    url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
+    downloads: 309
+    likes: 3
+  - name: WueNLP/sib-fleurs
+    url: https://huggingface.co/datasets/WueNLP/sib-fleurs
+    downloads: 299
+    likes: 11
+  - name: OlameMend/soreva
+    url: https://huggingface.co/datasets/OlameMend/soreva
+    downloads: 107
+    likes: 6
+  - name: Groovy-123/deep-think
+    url: https://huggingface.co/datasets/Groovy-123/deep-think
+    downloads: 68
+    likes: 1
+  - name: worldboss/ewe_bible_v2_tts
+    url: https://huggingface.co/datasets/worldboss/ewe_bible_v2_tts
+    downloads: 19
+    likes: 0
+  - name: Menoviar28/menov31
+    url: https://huggingface.co/datasets/Menoviar28/menov31
+    downloads: 17
+    likes: 0
+  - name: Groovy-123/QuantumAI
+    url: https://huggingface.co/datasets/Groovy-123/QuantumAI
+    downloads: 16
+    likes: 0
+  - name: worldboss/ewe_bible_v1
+    url: https://huggingface.co/datasets/worldboss/ewe_bible_v1
+    downloads: 9
+    likes: 0
+  - name: dijihax/Dataset
+    url: https://huggingface.co/datasets/dijihax/Dataset
+    downloads: 4
+    likes: 2
+  - name: lenoxaugo254/LenoxAI
+    url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
+    downloads: 1
+    likes: 1
+  - name: crystalai/autotrain-data-crystal_alchemist-vision
+    url: https://huggingface.co/datasets/crystalai/autotrain-data-crystal_alchemist-vision
+    downloads: 0
+    likes: 1
+  total_count: 13
+  counts_by_code: {}

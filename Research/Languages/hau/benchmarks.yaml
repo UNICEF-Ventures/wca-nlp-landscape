@@ -1,0 +1,10 @@
+common_voice:
+  locale: ha
+  total_hours: 12.6
+  validated_clips: 3496
+  total_clips: 10447
+  train_clips: 1901
+  dev_clips: 634
+  test_clips: 783
+  male_percent: 57.0
+  female_percent: 24.0

@@ -1,0 +1,47 @@
+name: Wolof
+iso_639_3: wol
+iso_639_1: wo
+name_french: wolof
+altnames:
+- Ouolof
+- Volof
+- Walaf
+- Waro-Waro
+- Yallof
+countries:
+- Gambia
+- Mauritania
+- Senegal
+population: '5500000'
+population_order: 10⁶+
+endangerment: safe
+official_status: 🛂
+glottocode: nucl1347
+glottocode_url: https://glottolog.org/resource/languoid/id/nucl1347
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Wolof_language
+  family: Niger–Congo
+  speakers_l1: 8.2 million
+  speakers_l2: 9.5 million
+  writing_system: Latin (Wolof alphabet) Arabic ( Wolofal ) Garay script
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=wol
+resource_page: http://kamu.si/wolof-resources
+acalan_commission: https://docs.google.com/spreadsheets/d/1uHE_6JzKHow5D0WX-6WARl1IyuEBnhHJ7bIQXkvbWqM/edit?gid=930323633
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=wol
+  OLAC: http://www.language-archives.org/language/wol
+  Grambank: https://grambank.clld.org/languages/nucl1347
+  WALS: https://wals.info/languoid/lect/wals_code_wlf
+  CLDR: https://www.unicode.org/cldr/charts/47/summary/wo.html
+  AfricArXiv: https://africarxiv.ubuntunet.net/handle/1/1560
+tech_resources:
+  AfroLID: true
+  Google Translate: '2024'
+  NLLB-200: true
+  M2M-100: true
+  Mozilla Common Voice: ☑️
+  MADLAD-400 Docs: 871 MAD-Docs
+  MADLAD-400 Sentences: 25400 MAD-Sents
+  Fineweb2: 💬
+  FLEURS: true
+  MAFAND: true

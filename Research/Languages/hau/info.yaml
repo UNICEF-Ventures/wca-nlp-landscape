@@ -1,0 +1,49 @@
+name: Hausa
+iso_639_3: hau
+iso_639_1: ha
+name_french: hausa
+countries:
+- Benin
+- Burkina Faso
+- Cameroon
+- Ghana
+- Niger
+- Nigeria
+- Sudan
+- Togo
+population: '50000000'
+population_order: 10⁶+
+endangerment: safe
+official_status: 🛂
+glottocode: haus1257
+glottocode_url: https://glottolog.org/resource/languoid/id/haus1257
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Hausa_language
+  family: Afro-Asiatic
+  speakers_l1: 73 million
+  speakers_l2: 47 million
+  writing_system: Latin ( Boko alphabet ) Arabic ( Hausa Ajami ) Hausa Braille
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=hau
+resource_page: http://kamu.si/hausa-resources
+acalan_commission: https://docs.google.com/spreadsheets/d/1Rei-QZOVxTk5KLwUVMGwCx-4GF1B89d3cfYDClRly2E/edit?gid=930323633
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=hau
+  OLAC: http://www.language-archives.org/language/hau
+  Grambank: https://grambank.clld.org/languages/haus1257
+  WALS: https://wals.info/languoid/lect/wals_code_hau
+  CLDR: https://www.unicode.org/cldr/charts/47/summary/ha.html
+  AfricArXiv: https://africarxiv.ubuntunet.net/handle/1/1544
+tech_resources:
+  AfroLID: true
+  Google Translate: '2013'
+  NLLB-200: true
+  M2M-100: true
+  Mozilla Common Voice: true
+  MADLAD-400 Docs: 173500 MAD-Docs
+  MADLAD-400 Sentences: 2400000 MAD-Sents
+  Aya-101: true
+  FLEURS: true
+  AfriHate: true
+  CMU Wilderness: true
+  MAFAND: true
+  NaijaVoices: true

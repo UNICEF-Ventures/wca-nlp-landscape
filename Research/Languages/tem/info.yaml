@@ -1,0 +1,33 @@
+name: Temne
+iso_639_3: tem
+name_french: temne
+altnames:
+- Temen
+- Themne
+- Timene
+- Timmannee
+- Timne
+countries:
+- Guinea
+- Sierra Leone
+population: '2500000'
+population_order: 10⁶+
+endangerment: safe
+glottocode: timn1235
+glottocode_url: https://glottolog.org/resource/languoid/id/timn1235
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Temne_language
+  family: Niger–Congo
+  speakers_l1: 2.0 million
+  writing_system: Latin
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=tem
+resource_page: http://kamu.si/temne-resources
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=tem
+  OLAC: http://www.language-archives.org/language/tem
+  Grambank: https://grambank.clld.org/languages/timn1235
+  WALS: https://wals.info/languoid/lect/wals_code_tne
+tech_resources:
+  AfroLID: true
+  Fineweb2: 💬
+  CMU Wilderness: true

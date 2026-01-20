@@ -1,0 +1,33 @@
+name: Ga
+iso_639_3: gaa
+name_french: ga
+altnames:
+- Accra
+- Acra
+- Amina
+- Gain
+- Gamei
+countries:
+- Ghana
+population: '820000'
+population_order: 10⁵
+endangerment: safe
+official_status: 🛂
+glottocode: gaaa1244
+glottocode_url: https://glottolog.org/resource/languoid/id/gaaa1244
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Ga_language
+  family: Niger–Congo
+  speakers_l1: 745,000
+  writing_system: Latin (Ga alphabet) Ghanaian braille
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=gaa
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=gaa
+  OLAC: http://www.language-archives.org/language/gaa
+  Grambank: https://grambank.clld.org/languages/gaaa1244
+  WALS: https://wals.info/languoid/lect/wals_code_ga
+  CLDR: https://www.unicode.org/cldr/charts/47/summary/gaa.html
+tech_resources:
+  AfroLID: true
+  Google Translate: '2024'
+  Fineweb2: 💬

@@ -1,0 +1,49 @@
+name: Bambara
+iso_639_3: bam
+iso_639_1: bm
+name_french: bambara
+altnames:
+- Bamako
+- Bamana
+- Bamanakan
+countries:
+- Burkina Faso
+- Cote d'Ivoire
+- Gambia
+- Ghana
+- Guinea
+- Mali
+- Mauritania
+- Niger
+- Senegal
+population: '10000000'
+population_order: 10⁶+
+endangerment: safe
+official_status: 🛂
+glottocode: bamb1269
+glottocode_url: https://glottolog.org/resource/languoid/id/bamb1269
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Bambara_language
+  family: Niger–Congo
+  speakers_l1: 4.2 million
+  speakers_l2: 10 million
+  writing_system: Latin script Arabic script ( Ajami ) NKo script Masaba [ 2 ]
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=bam
+resource_page: http://kamu.si/bambara-resources
+acalan_commission: https://docs.google.com/spreadsheets/d/1oxjufk81f717RdVE-vCh2FAtrP4vVHtImYuxdFxQWOc/edit?gid=930323633
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=bam
+  OLAC: http://www.language-archives.org/language/bam
+  Grambank: https://grambank.clld.org/languages/bamb1269
+  WALS: https://wals.info/languoid/lect/wals_code_bam
+  CLDR: https://www.unicode.org/cldr/charts/47/summary/bm.html
+tech_resources:
+  AfroLID: true
+  Google Translate: '2022'
+  NLLB-200: true
+  Mozilla Common Voice: ☑️
+  MADLAD-400 Docs: 702 MAD-Docs
+  MADLAD-400 Sentences: 24500 MAD-Sents
+  Fineweb2: 💬
+  CMU Wilderness: true
+  MAFAND: true

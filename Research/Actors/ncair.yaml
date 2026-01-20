@@ -1,0 +1,93 @@
+id: ncair
+name: National Centre for Artificial Intelligence and Robotics (NCAIR)
+type: government
+website: https://ncair.nitda.gov.ng/
+location: Wuye District, Abuja, Nigeria
+
+# Organization details
+founded: 2020
+organization_size: large  # 134 team members
+funding: >
+  Government-funded (NITDA/Federal Ministry of Communications, Innovation and Digital Economy).
+  Also runs AI Fund in partnership with Google providing grants to Nigerian AI startups.
+description: >
+  NCAIR is a special purpose vehicle of NITDA (National Information Technology Development Agency)
+  created to promote research and development on emerging technologies. The centre focuses on
+  Artificial Intelligence (AI), Robotics and Drones, Internet of Things (IoT), and other emerging
+  technologies aimed at transforming the Nigerian digital economy. NCAIR developed N-ATLAS,
+  Nigeria's first open-source multilingual LLM supporting Yoruba, Hausa, Igbo and Nigerian English.
+
+# Key people
+key_people:
+  - name: Kashifu Inuwa Abdullahi
+    role: Director General, NITDA
+    note: Oversees NCAIR as part of NITDA's digital innovation mandate
+
+# Coverage
+countries:
+  - NG
+languages:
+  - yor  # Yoruba
+  - hau  # Hausa
+  - ibo  # Igbo
+  - eng  # Nigerian-accented English
+
+# Links
+github: null
+huggingface: https://huggingface.co/NCAIR1
+contact:
+  email: ncair@nitda.gov.ng
+  phone: "+234 817 877 8499"
+
+# Projects
+projects:
+  - name: N-ATLAS
+    url: https://huggingface.co/NCAIR1/N-ATLaS
+    description: >
+      Nigeria's first open-source multilingual & multimodal LLM. Fine-tuned from Llama-3 8B
+      with 400M+ tokens. Supports Yoruba, Hausa, Igbo, and Nigerian English. Launched at UNGA80.
+
+  - name: Yoruba ASR
+    url: https://huggingface.co/NCAIR1/Yoruba-ASR
+    description: Automatic speech recognition model for Yoruba language.
+
+  - name: Hausa ASR
+    url: https://huggingface.co/NCAIR1/Hausa-ASR
+    description: Automatic speech recognition model for Hausa language.
+
+  - name: Igbo ASR
+    url: https://huggingface.co/NCAIR1/Igbo-ASR
+    description: Automatic speech recognition model for Igbo language.
+
+  - name: Nigerian English ASR
+    url: https://huggingface.co/NCAIR1/NigerianAccentedEnglish
+    description: ASR model optimized for Nigerian-accented English.
+
+projects_page: https://ncair.nitda.gov.ng/work-done-so-far/
+
+publications: []
+publications_url: null
+
+partnerships:
+  - NITDA (parent organization)
+  - Awarri Technologies (N-ATLAS development partner)
+  - Google (AI Fund partnership)
+  - Data Science Nigeria
+
+# UNICEF relevance
+unicef_relevance: >
+  Critical government partner for NLP work in Nigeria. NCAIR has developed production-ready
+  ASR models for Nigeria's three major languages (Hausa, Yoruba, Igbo) plus Nigerian English.
+  N-ATLAS LLM could power chatbots and information services in local languages. As a government
+  entity, they have mandate and resources for scaling. Direct alignment with UNICEF Nigeria's
+  digital programmes.
+
+maturity: established
+engagement_status: none
+last_updated: 2026-01-19
+
+notes: >
+  Government-backed with significant resources (134 staff). N-ATLAS launched at UN General Assembly
+  2024 signals political commitment. Models on HuggingFace are open-source. Focus on practical
+  applications in agriculture, health, education. Could be strategic partner for scaling
+  UNICEF language tech across Nigeria.

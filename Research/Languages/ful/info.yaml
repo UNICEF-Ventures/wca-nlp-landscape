@@ -1,0 +1,65 @@
+name: Fula
+iso_639_3: ful
+iso_639_1: ff
+name_french: Biira, Boulbe, Domona, Dzemay, Eastern Fulani, Eastern Fulfulde, Fellata,
+  Fillanci, Foulfoulde, Ful, Fula, Fula Fulbe, Fulani, Fulata, Fulatanchi, Fulbe,
+  Fulfulde, Mbororo, Nagapelta, Palata, Paldena, Paldida, Pelta Hay, Peuhl
+altnames:
+- Biira
+- Boulbe
+- Domona
+- Dzemay
+- Eastern Fulani
+- Eastern Fulfulde
+- Fellata
+- Fillanci
+- Foulfoulde
+- Ful
+- Fula
+- Fula Fulbe
+- Fulani
+- Fulata
+- Fulatanchi
+countries:
+- Benin
+- Burkina Faso
+- Cameroon
+- Central African Republic
+- Cote d'Ivoire
+- Democratic Republic of Congo
+- Gambia
+- Guinea
+- Guinea-Bissau
+- Nigeria
+- Mali
+- Mauritania
+- Niger
+- Senegal
+- Sierra Leone
+- Sudan
+- Togo
+population: '37000000'
+population_order: 10⁶+
+official_status: 🛂
+glottocode: fula1264
+glottocode_url: https://glottolog.org/resource/languoid/id/fula1264
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Fula_language
+  family: Niger–Congo
+  speakers_l1: 37 million
+  speakers_l2: 2.7 million
+  writing_system: Latin Adlam Arabic ( Ajami )
+resource_page: http://kamu.si/fulfulde-resources
+acalan_commission: https://docs.google.com/spreadsheets/d/1XS_ZzeMUeagsZyLcst_El8s_S0onbN5fGTbEzk8OLSw/edit?gid=930323633
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=ful
+  OLAC: http://www.language-archives.org/language/ful
+  CLDR: https://www.unicode.org/cldr/charts/47/summary/ff.html
+tech_resources:
+  AfroLID: true
+  Google Translate: '2024'
+  M2M-100: true
+  Mozilla Common Voice: ☑️
+  MADLAD-400 Docs: 26 MAD-Docs
+  MADLAD-400 Sentences: 5000 MAD-Sents
+  FLEURS: true

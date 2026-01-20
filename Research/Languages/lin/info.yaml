@@ -1,0 +1,39 @@
+name: Lingala
+iso_639_3: lin
+iso_639_1: ln
+name_french: lingala
+countries:
+- Republic of Congo
+- Democratic Republic of Congo
+population: '5500000'
+population_order: 10⁶+
+endangerment: safe
+official_status: 🛂
+glottocode: ling1263
+glottocode_url: https://glottolog.org/resource/languoid/id/ling1263
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Lingala
+  family: Niger–Congo
+  speakers_l1: 21 million
+  speakers_l2: 20 million
+  writing_system: African Reference Alphabet ( Latin ), Mandombe script
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=lin
+resource_page: http://kamu.si/lingala-resources
+acalan_commission: https://docs.google.com/spreadsheets/d/1gmAJOyV25ZKnY2BjpdlZJe-CIzb30zejGfp7KyiR9n4/edit?gid=930323633
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=lin
+  OLAC: http://www.language-archives.org/language/lin
+  Grambank: https://grambank.clld.org/languages/ling1263
+  WALS: https://wals.info/languoid/lect/wals_code_lin
+  CLDR: https://www.unicode.org/cldr/charts/47/summary/ln.html
+  AfricArXiv: https://africarxiv.ubuntunet.net/handle/1/1559
+tech_resources:
+  AfroLID: true
+  Google Translate: '2022'
+  NLLB-200: true
+  M2M-100: true
+  Mozilla Common Voice: ☑️
+  MADLAD-400 Docs: 3300 MAD-Docs
+  MADLAD-400 Sentences: 139000 MAD-Sents
+  Fineweb2: 💬
+  FLEURS: true

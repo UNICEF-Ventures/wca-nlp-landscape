@@ -1,0 +1,10 @@
+common_voice:
+  locale: yo
+  total_hours: 8.1
+  validated_clips: 3451
+  total_clips: 4852
+  train_clips: 1412
+  dev_clips: 915
+  test_clips: 1122
+  male_percent: 30.0
+  female_percent: 37.0

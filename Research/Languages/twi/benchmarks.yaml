@@ -1,0 +1,10 @@
+common_voice:
+  locale: tw
+  total_hours: 0.4
+  validated_clips: 240
+  total_clips: 341
+  train_clips: 213
+  dev_clips: 0
+  test_clips: 27
+  male_percent: 65.0
+  female_percent: 0

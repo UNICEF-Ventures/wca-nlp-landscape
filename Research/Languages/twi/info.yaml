@@ -1,0 +1,27 @@
+name: Twi
+iso_639_3: twi
+iso_639_1: tw
+name_french: twi
+countries:
+- Ghana
+population: '9000000'
+population_order: 10⁶+
+glottocode: twii1234
+glottocode_url: https://glottolog.org/resource/languoid/id/twii1234
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Twi
+  family: Niger–Congo
+  speakers_l1: 8.9 million
+  speakers_l2: 1 million
+  writing_system: Latin
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=twi
+  OLAC: http://www.language-archives.org/language/twi
+tech_resources:
+  AfroLID: true
+  Google Translate: '2022'
+  NLLB-200: true
+  Mozilla Common Voice: true
+  Fineweb2: 💬
+  AfriHate: true
+  MAFAND: true

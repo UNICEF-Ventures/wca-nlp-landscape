@@ -1,0 +1,31 @@
+# Generated output (built by GitHub Actions)
+output/
+
+# Internal project docs
+Project documents/
+Source data aux/
+CLAUDE.md
+TASK1_LANGUAGE_MODEL_MAPPING.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+.claude/
+*.swp
+*.swo
+
+# Temp files
+*.tmp
+*.bak

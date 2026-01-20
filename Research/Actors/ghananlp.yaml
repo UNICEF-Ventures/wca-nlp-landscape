@@ -1,0 +1,107 @@
+id: ghananlp
+name: Ghana NLP / Khaya AI
+type: research_community
+website: https://ghananlp.org/
+location: Ghana (distributed team)
+
+# Organization details
+founded: 2020  # Approximate - became active around this time
+organization_size: large  # 105 contributors
+funding: >
+  Volunteer-driven nonprofit. Grant support from Hugging Face, Google, Microsoft.
+  Commercial arms: Algorine Inc. (research lab) and Khaya AI (enterprise API services).
+description: >
+  Ghana NLP is an open-source initiative focused on Natural Language Processing for Ghanaian
+  and African languages. They developed Khaya, the first AI-powered translation app for
+  Ghanaian languages, which has expanded to cover 17 languages including Kenyan and Nigerian
+  languages. Their translation models outperform Google Translate for Ghanaian languages.
+  The name "Khaya" comes from the African Mahogany tree and means "home" in several
+  Southern African languages. The team now also operates Khaya AI (khaya.ai) as a commercial
+  startup offering enterprise API access for African language translation, ASR, and TTS.
+
+# Key people
+key_people:
+  - name: Dr. Paul Azunre
+    role: Co-founder, Director of Research
+    affiliation: PhD MIT, Author "Transfer Learning for NLP"
+    note: >
+      Founded Algorine Inc. research lab. Led development of world's first MT and speech
+      systems for Twi, Ewe, Ga, Dagbani, Gurene. Principal investigator on DARPA programs.
+
+# Coverage
+countries:
+  - GH  # Ghana (primary)
+  - NG  # Nigeria (Yoruba)
+  - KE  # Kenya (Kikuyu, Kimeru, Luo)
+languages:
+  - twi  # Twi (Akan)
+  - ewe  # Ewe
+  - gaa  # Ga
+  - dag  # Dagbani
+  - gur  # Gurene/Farefare/Frafra
+  - kus  # Kusaal
+  - yor  # Yoruba (Nigerian)
+  - kik  # Kikuyu (Kenyan)
+  # Plus Kimeru, Luo
+
+# Links
+github: https://github.com/GhanaNLP
+huggingface: https://huggingface.co/Ghana-NLP
+contact:
+  email: natural.language.processing.gh@gmail.com
+
+# Projects
+projects:
+  - name: Khaya Translator (web + mobile app)
+    url: https://translate.ghananlp.org/
+    description: >
+      AI-powered translation for 10+ African languages. Web, Android, iOS apps available.
+      Outperforms Google Translate for Ghanaian languages. ASR capability. 
+
+  - name: Khaya API
+    url: https://translation.ghananlp.org/
+    description: Developer API for integrating African language translation, ASR and TTS into apps.
+
+  - name: Khaya ASR
+    url: https://ghananlp.org/
+    description: >
+      Automatic speech recognition for Twi, Ewe, Ga, Dagbani, Yoruba. Speak to phone
+      and get text transcription.
+
+  - name: Khaya TTS
+    url: https://huggingface.co/spaces/Ghana-NLP/Africa-TTS-UI
+    description: Text-to-speech for 36 African languages
+
+  - name: ABENA
+    url: https://ghananlp.org/project/abena/
+    description: BERT-based NLP model for Twi language. (2017)
+
+projects_url: https://ghananlp.org/projects
+
+publications: []
+publications_url: https://nlpghana.medium.com/
+
+partnerships:
+  - Google
+  - Microsoft
+  - Harvard University
+  - Algorine Inc.
+
+# UNICEF relevance
+unicef_relevance: >
+  (Auto generated) Directly relevant for UNICEF Ghana's AGOO platform and Asempa AI companion, which users
+  are requesting in local languages. Khaya already supports all major Ghanaian languages
+  (Twi, Dagbani, Ewe, Ga) that AGOO uses. Their API could be integrated into existing
+  UNICEF platforms. Translation + ASR + TTS stack enables voice-first interfaces for
+  low-literacy users. Volunteer-driven model means potential for co-development partnerships.
+  Also covers Yoruba (Nigeria) which could support other country offices.
+
+maturity: established
+engagement_status: none
+last_updated: 2026-01-19
+
+notes: >
+  (Auto generated) Strong technical team led by MIT PhD. Production-ready apps on App Store and Play Store.
+  API available for integration. Outperforms Google Translate for covered languages.
+  105 contributors shows strong community. Expanding beyond Ghana to Kenya and Nigeria
+  demonstrates scalability. Could be key partner for UNICEF Ghana's language tech needs.

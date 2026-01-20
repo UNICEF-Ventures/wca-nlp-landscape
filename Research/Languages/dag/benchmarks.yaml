@@ -1,0 +1,10 @@
+common_voice:
+  locale: dag
+  total_hours: 25.4
+  validated_clips: 8114
+  total_clips: 21274
+  train_clips: 446
+  dev_clips: 396
+  test_clips: 415
+  male_percent: 2.0
+  female_percent: 18.0

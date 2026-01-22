@@ -1,0 +1,178 @@
+id: farmerline
+name: Farmerline / Darli AI
+type: startup
+website: https://farmerline.co/
+location: Accra, Ghana
+
+# Organization details
+founded: 2013
+organization_size: large  # One of Ghana's largest private agricultural employers
+funding: >
+  $12.9M pre-Series A (2022) from investors including Acumen, Aavishkaar Capital,
+  and others. Started with $600 seed funding from founders.
+description: >
+  Ghanaian agritech company building technology solutions for smallholder farmers.
+  Core platform Mergdata is a cloud-based farm management system used by 3,000+ partners
+  across 48+ countries to reach 2.3M+ farmers. Darli AI is their AI-powered farming
+  assistant supporting 27+ languages with voice-based agricultural guidance, crop disease
+  detection, and remote data collection. The ML team (FarmerlineML) develops extensive
+  ASR and TTS models for African languages, making them one of the most prolific
+  producers of open speech models for the continent. 1M+ registered users on Darli AI
+  with 8.5M+ cumulative interactions.
+
+# Key people
+key_people:
+  - name: Alloysius Attah
+    role: Co-Founder & CEO
+    note: >
+      BSc Natural Resource Management from KNUST. Stanford Seed Transformation Program
+      Certificate (2021). Grew up on a farm in Ghana.
+
+  - name: Emmanuel Owusu-Addai
+    role: Co-Founder & CTO
+    note: >
+      BSc Geodetic Engineering, MSc Geomatic Engineering from KNUST.
+      2014 Echoing Green Global Fellow. Leads technology and product strategy.
+
+  - name: Emmanuel Kissi
+    role: ML Engineer
+    note: >
+      Develops ASR models for African languages. HuggingFace: misterkissi.
+      Key contributor to DarliAI models.
+
+# Coverage
+countries:
+  - GH  # Ghana (HQ: Accra, Kumasi, Tamale, Wa)
+  - CI  # Côte d'Ivoire (Abidjan)
+  - NG  # Nigeria (models)
+  - SN  # Senegal (Wolof models)
+  - ML  # Mali (Bambara models)
+  - SL  # Sierra Leone (Krio models)
+  - BJ  # Benin (Fongbe models)
+  - KE  # Kenya (Luo, Kikuyu, Kamba models)
+  - UG  # Uganda (Luganda models)
+  - TZ  # Tanzania (Swahili models)
+  - RW  # Rwanda (Kinyarwanda models)
+  - ET  # Ethiopia (Oromo models)
+  - SO  # Somalia (Somali models)
+  - ZM  # Zambia (Bemba models)
+
+languages:
+  # West Africa - Ghana
+  - twi  # Twi
+  - aka  # Akan
+  - ewe  # Ewe
+  - dag  # Dagbani
+  - gaa  # Ga (implied from Akan coverage)
+  # West Africa - Nigeria
+  - yor  # Yoruba
+  - ibo  # Igbo
+  - hau  # Hausa
+  # West Africa - Other
+  - wol  # Wolof (Senegal)
+  - bam  # Bambara (Mali)
+  - dyu  # Dyula (Côte d'Ivoire)
+  - kri  # Krio (Sierra Leone)
+  - fon  # Fongbe (Benin)
+  - ful  # Fulfulde/Fula
+  # East Africa
+  - swa  # Swahili
+  - lug  # Luganda
+  - luo  # Luo (Dholuo)
+  - kik  # Kikuyu
+  - kam  # Kamba
+  - kin  # Kinyarwanda
+  - orm  # Oromo
+  - som  # Somali
+  # Southern Africa
+  - bem  # Bemba
+
+# Links
+github: https://github.com/hci-lab-dcsug  # Collaborates with HCI Lab
+huggingface: https://huggingface.co/FarmerlineML
+contact:
+  email: comms@farmerline.co
+  website_darli: https://darli.ai
+  huggingface_darli: https://huggingface.co/DarliAI
+  linkedin: https://www.linkedin.com/company/farmerline/
+
+# Projects
+projects:
+  - name: Darli AI
+    url: https://darli.ai
+    description: >
+      AI-powered farming assistant with voice-based agricultural guidance in 27+ languages.
+      Features crop disease detection via image scanning, remote data collection, and
+      AI consultation via phone calls. 1M+ users, 8.5M+ interactions across 60+ countries.
+    languages: [twi, hau, swa, yor, bam, ibo, ewe, dag, wol, fon, ful]
+
+  - name: Mergdata Platform
+    url: https://farmerline.co/
+    description: >
+      Cloud-based farm management platform supporting 3,000+ partners across 48 countries
+      to reach 2.3M+ farmers. Offline-capable, customizable, multilingual.
+    languages: []
+
+  - name: FarmerlineML ASR Models
+    url: https://huggingface.co/FarmerlineML
+    description: >
+      33+ open ASR and TTS models based on wav2vec-BERT 2.0 and custom architectures.
+      Languages include Yoruba, Igbo, Twi, Ewe, Dagbani, Krio, Dyula, Fongbe, Kikuyu,
+      Luganda, Luo, Swahili, Somali, Kamba, and more.
+    languages: [yor, ibo, twi, ewe, dag, kri, dyu, fon, lug, luo, swa, som]
+
+  - name: FarmerlineML TTS Models
+    url: https://huggingface.co/FarmerlineML
+    description: >
+      TTS models (36.3M params) for Luganda, Yoruba, Dagbani, Ewe, Swahili, Hausa.
+      Enables voice-first interfaces for low-literacy farmers.
+    languages: [lug, yor, dag, ewe, swa, hau]
+
+  - name: FarmerlineML Datasets
+    url: https://huggingface.co/FarmerlineML
+    description: >
+      21+ speech datasets for African languages including Hausa (9.15k samples),
+      Yoruba (9.51k), Wolof (14k), Igbo (5.69k), Swahili (40k), Twi (3.43k),
+      Akan (12.5k), Dyula (5k), Fongbe (10.4k), Kikuyu (9k), and more.
+    languages: [hau, yor, wol, ibo, swa, twi, aka, dyu, fon, kik, lug, som, orm, kri, kam]
+
+  - name: DarliAI ASR Models
+    url: https://huggingface.co/DarliAI
+    description: >
+      ASR models (wav2vec2 0.3B) for Bambara, Bemba, Dagaare, Kinyarwanda, Fula, Oromo.
+      Used in Darli AI farming assistant.
+    languages: [bam, bem, kin, ful, orm]
+
+projects_url: https://huggingface.co/FarmerlineML
+
+publications: []
+
+partnerships:
+  - HCI Lab, University of Ghana (DCS)
+  - MEDA
+  - Government of Ghana
+  - Multiple agribusinesses and NGOs
+
+# UNICEF relevance
+unicef_relevance: >
+  Highly relevant for UNICEF's agricultural and nutrition programs. Darli AI's voice-first
+  approach (27+ languages) addresses low-literacy populations - directly applicable to
+  UNICEF's communication challenges. Their extensive open ASR/TTS models could be
+  repurposed for health messaging, education, and community engagement. Already proven
+  at scale: 1M+ users, 2.3M farmers reached, 60+ countries. The Mergdata platform's
+  offline capability suits rural deployment. Strong presence in UNICEF priority countries
+  (Ghana, Côte d'Ivoire, Nigeria, Mali, Sierra Leone, Senegal). Collaboration with
+  University of Ghana HCI Lab shows academic-industry partnership model.
+
+maturity: established
+engagement_status: none
+openness: open  # Extensive open models and datasets on HuggingFace
+last_updated: 2026-01-22
+
+notes: >
+  One of the most prolific producers of open African language speech models. 33+ models
+  and 21+ datasets on HuggingFace covering 20+ languages. Unique combination of agtech
+  domain expertise with ML research. The FarmerlineML and DarliAI HuggingFace orgs are
+  connected - Emmanuel Kissi (misterkissi) is key ML contributor. Collaboration with
+  University of Ghana HCI Lab (Farmerline <> DCS HCI org on HuggingFace). Christine
+  Lagarde (ECB President) praised them as "an innovative company using technology for good."

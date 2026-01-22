@@ -1,0 +1,10 @@
+common_voice:
+  locale: ig
+  total_hours: 13.2
+  validated_clips: 269
+  total_clips: 8702
+  train_clips: 92
+  dev_clips: 87
+  test_clips: 89
+  male_percent: 9.0
+  female_percent: 44.0

@@ -1,0 +1,40 @@
+name: Pular
+iso_639_3: fuf
+name_french: pular
+altnames:
+- Foula Fouta
+- Fouta Djallon
+- Fouta Dyalon
+- Fula
+- Fulbe
+- Fulfulde Jalon
+- Fullo Fuuta
+- Futa
+- Futa Fula
+- Futa Jallon
+- Fuuta Jalon
+- Jalon
+- Poular
+countries:
+- Guinea
+population: '3000000'
+population_order: 10⁶+
+endangerment: safe
+glottocode: pula1262
+glottocode_url: https://glottolog.org/resource/languoid/id/pula1262
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Pular_language
+  family: Niger–Congo
+  speakers_l1: 4.8 million
+  writing_system: Fula alphabets ( Adlam , Ajami , Latin )
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=fuf
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=fuf
+  OLAC: http://www.language-archives.org/language/fuf
+  Grambank: https://grambank.clld.org/languages/pula1262
+  WALS: https://wals.info/languoid/lect/wals_code_fgu
+  Webonary: https://www.webonary.org/pular/
+tech_resources:
+  AfroLID: true
+  Fineweb2: 💬
+  CMU Wilderness: true

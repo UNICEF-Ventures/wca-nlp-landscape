@@ -1,0 +1,32 @@
+asr:
+  items:
+  - name: espnet/xeus
+    url: https://huggingface.co/espnet/xeus
+    downloads: 43
+    likes: 143
+  total_count: 1
+  counts_by_code:
+    fan: 1
+tts:
+  total_count: 0
+  counts_by_code: {}
+translation:
+  total_count: 0
+  counts_by_code: {}
+llm:
+  items:
+  - name: UBC-NLP/toucan-base
+    url: https://huggingface.co/UBC-NLP/toucan-base
+    downloads: 37
+    likes: 2
+  - name: UBC-NLP/toucan-1.2B
+    url: https://huggingface.co/UBC-NLP/toucan-1.2B
+    downloads: 2
+    likes: 1
+  - name: UBC-NLP/cheetah-1.2B
+    url: https://huggingface.co/UBC-NLP/cheetah-1.2B
+    downloads: 0
+    likes: 4
+  total_count: 3
+  counts_by_code:
+    fan: 3

@@ -1,0 +1,44 @@
+name: Igbo
+iso_639_3: ibo
+iso_639_1: ig
+name_french: igbo
+altnames:
+- Ebo
+- Ibo
+- Unege
+countries:
+- Equatorial Guinea
+- Nigeria
+population: '27000000'
+population_order: 10⁶+
+endangerment: safe
+official_status: 🛂
+glottocode: nucl1417
+glottocode_url: https://glottolog.org/resource/languoid/id/nucl1417
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Igbo_language
+  family: Niger–Congo
+  speakers_l1: 34 million
+  writing_system: Latin ( Ọnwụ alphabet ) Nwagu Aneke script Neo- Nsibidi Ndebe script
+    Igbo Braille Akagụ Script
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=ibo
+resource_page: http://kamu.si/igbo-resources
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=ibo
+  OLAC: http://www.language-archives.org/language/ibo
+  Grambank: https://grambank.clld.org/languages/nucl1417
+  WALS: https://wals.info/languoid/lect/wals_code_igb
+  CLDR: https://www.unicode.org/cldr/charts/47/summary/ig.html
+tech_resources:
+  AfroLID: true
+  Google Translate: '2013'
+  NLLB-200: true
+  M2M-100: true
+  Mozilla Common Voice: true
+  MADLAD-400 Docs: 54400 MAD-Docs
+  MADLAD-400 Sentences: 1400000 MAD-Sents
+  Aya-101: true
+  Fineweb2: 💬
+  FLEURS: true
+  AfriHate: true
+  NaijaVoices: true

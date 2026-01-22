@@ -1,0 +1,31 @@
+name: Fang
+iso_639_3: fan
+name_french: fang
+altnames:
+- Benjube Fenga
+- Pahouin
+- Pamue
+- Pangwe
+countries:
+- Cameroon
+- Equatorial Guinea
+- Gabon
+- Republic of Congo
+- São Tomé e Príncipe
+population: '1000000'
+population_order: 10⁶+
+endangerment: safe
+glottocode: fang1246
+glottocode_url: https://glottolog.org/resource/languoid/id/fang1246
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Fang_language
+  family: Niger–Congo
+  speakers_l1: 1 million
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=fan
+resource_page: http://kamu.si/fang-resources
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=fan
+  OLAC: http://www.language-archives.org/language/fan
+tech_resources:
+  Mozilla Common Voice: true
+  Fineweb2: 💬

@@ -1,0 +1,44 @@
+name: Chadian Arabic
+iso_639_3: shu
+name_french: chadian arabic
+altnames:
+- Arabe Choa
+- Arabic
+- Shuwa
+- Chad Arabic
+- Chadian Arabic
+- Chadian Spoken Arabic
+- Chadic Arabic
+- Choa
+- Chowa
+- L’arabe du Tchad
+- Shoa
+- Shoa Arabic
+- Shua
+- Shua Arabic
+- Shuwa
+countries:
+- Cameroon
+- Central African Republic
+- Chad
+- Niger
+- Nigeria
+- Sudan
+population: '2300000'
+population_order: 10⁶+
+endangerment: safe
+glottocode: chad1249
+glottocode_url: https://glottolog.org/resource/languoid/id/chad1249
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Chadian_Arabic
+  family: Afro-Asiatic
+  speakers_l1: 2.6 million
+  speakers_l2: 5.8 million
+  writing_system: Arabic alphabet
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=shu
+  OLAC: http://www.language-archives.org/language/shu
+  Grambank: https://grambank.clld.org/languages/chad1249
+  WALS: https://wals.info/languoid/lect/wals_code_abb
+tech_resources:
+  Fineweb2: 💬

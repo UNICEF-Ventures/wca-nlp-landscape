@@ -12,37 +12,61 @@ Mapping of available NLP resources (ASR, TTS, MT, LLM) and key actors working on
 ### 1.1 Infrastructure
 - [x] Research data and directory structure
 - [x] Structuring of language database (African language grid)
-- [x] Comprehensive language list
+- [x] Comprehensive language list (wca_all_languages.yaml)
 - [x] HuggingFace scraping (models + datasets)
-- [ ] Lanfrica scraping (Gain wrt HF evaluated)
-- [ ] MMS special check
-- [x] Common Voice stats
+- [x] Common Voice stats integration
 - [x] Wikipedia info fetching
 - [x] Language detail pages
 - [x] Actor detail pages
-- [x] HTML report generation
-- [ ] Document generation
-- [ ] Language specific models (related to benchmarks)
-- [ ] Publish web and make it easy to pull data and render
+- [x] HTML report generation with tabs
+- [x] Countries tab with LUDP integration
+- [x] GitHub Pages auto-deployment
+- [x] Favicon for generated HTML
+- [ ] Lanfrica scraping (evaluate gain vs HuggingFace)
+- [ ] MMS special check
+- [ ] Document generation (PDF factsheets)
 
 
-### 1.1 Language Profiles
+### 1.2 Language Profiles
 Automated fetching of HuggingFace models/datasets, Common Voice stats, and Wikipedia info for priority languages.
 
 | Done | Target | Progress                 |
 |------|--------|--------------------------|
-| 16   | 20?    | ████████████████░░░░ 80% |
+| 24   | 24     | ████████████████████ 100% |
 
-**Completed:** Hausa, Yoruba, Bambara, Mooré, Twi, Ewe, Wolof, Fulfulde, Krio
+**Focus languages (24):**
+- Nigeria: Hausa (hau), Yoruba (yor), Igbo (ibo)
+- Ghana: Twi (twi), Akan (aka), Ewe (ewe), Dagbani (dag), Ga (gaa)
+- Mali: Bambara (bam)
+- Burkina Faso: Mooré (mos)
+- Senegal/Gambia: Wolof (wol), Mandinka (mnk)
+- Guinea: Pular (fuf)
+- Sierra Leone: Krio (kri), Mende (men), Temne (tem)
+- Benin: Fon (fon)
+- CAR: Sango (sag)
+- Chad: Shuwa Arabic (shu), Kanuri (kau)
+- Gabon/Eq. Guinea: Fang (fan)
+- DRC: Lingala (lin), Swahili Congo (swc)
+- Widespread: Fulfulde (ful)
 
-### 1.2 Actor Directory
-Profiles of organizations, research groups, and startups working on African language technology with information on focus areas, languages covered, recent projects, contact information
+### 1.3 Actor Directory
+Profiles of organizations, research groups, and startups working on African language technology.
 
 | Done | Target | Progress                 |
 |------|--------|--------------------------|
-| 4    | 20     | ████░░░░░░░░░░░░░░░░ 20% |
+| 10   | 20     | ██████████░░░░░░░░░░ 50% |
 
-**Completed:** Masakhane, GhanaNLP, RobotsMali, NCAIR
+**Completed actors:**
+1. Masakhane - Pan-African NLP research community
+2. GhanaNLP / Khaya AI - Ghana, translation + speech
+3. RobotsMali - Mali, Bambara chatbot
+4. NCAIR - Nigeria, government AI research
+5. Maliba AI - Mali, Bambara NLP
+6. Sunbird AI - Uganda, speech tech
+7. DSN (Data Science Nigeria) - Nigeria, AI training
+8. GoAI - Burkina Faso, Mooré NLP (UNICEF partner)
+9. Farmerline / Darli AI - Ghana/multi-country, 20+ languages, agtech
+10. HCI Lab, University of Ghana - Ghana, 5000-hour speech corpus
 
 ---
 
@@ -54,26 +78,25 @@ Compile existing benchmark results (FLORES, FLEURS, Common Voice, published pape
 |--------|----------|
 | Not started | ░░░░░░░░░░░░░░░░░░░░ 0% |
 
-- [ ] Compile ASR benchmarks (Whisper, MMS, etc.)
+- [ ] Compile ASR benchmarks (Whisper, MMS, wav2vec2, etc.)
 - [ ] Compile MT benchmarks (NLLB, MADLAD, etc.)
 - [ ] Compile TTS benchmarks
 - [ ] Compile LLM benchmarks
-- [ ] Gap analysis: which languages lack benchmarks that can be done within scope
+- [ ] Gap analysis: which languages lack benchmarks
 - [ ] Conducting benchmark analyses where needed and possible
 
-### Benchmark Data
+### Benchmark Data Sources
 
 | Benchmark | URL | Type | Notes |
 |-----------|-----|------|-------|
-| FLORES-200 | https://github.com/facebookresearch/flores | MT | |
+| FLORES-200 | https://github.com/facebookresearch/flores | MT | 200 languages |
 | FLEURS | https://huggingface.co/datasets/google/fleurs | Speech | |
 | Common Voice | https://commonvoice.mozilla.org | ASR data | |
-| Sahara | TBD | Text | African language benchmark |
-| AfriBench | TBD | Multi | |
-| Whisper paper | | ASR | Published WER by language |
-| MMS paper | | ASR/TTS | Meta's Massively Multilingual Speech |
-| Omnilingual ASR | | | |
-
+| Whisper paper | OpenAI | ASR | Published WER by language |
+| MMS paper | Meta | ASR/TTS | Massively Multilingual Speech |
+| AfriSpeech | | ASR | African-focused |
+| Sahara | | Text | African language benchmark |
+| AfriBench | | Multi | |
 
 ---
 
@@ -112,9 +135,36 @@ Advisory support for actor selection, agenda input, and presentation of findings
 
 ---
 
+## Recent Updates (January 2026)
+
+### 2026-01-22
+- Added HCI Lab, University of Ghana actor with comprehensive research
+  - Discovered UGSpeechData: 5,000-hour speech corpus (largest for Ghana)
+  - Added key faculty: Prof. Isaac Wiafe, Prof. Jamal-Deen Abdulai
+  - Documented Tɛkyerɛma Pa project (impaired speech ASR, Google collaboration)
+- Added Farmerline / Darli AI actor
+  - 33+ models, 21+ datasets on HuggingFace
+  - Voice-first agtech for 60+ countries, 27+ languages
+- Added favicon to generated HTML pages
+- Updated CLAUDE.md and PROGRESS.md
+
+### 2026-01-20
+- Added Countries tab with CLEAR Global LUDP integration
+- Added new languages: fon, sag, shu, fan, mnk, aka, fuf
+- Total focus languages: 24
+
+### 2026-01-19
+- Added actors: Maliba AI, Sunbird AI, DSN, GoAI
+- GitHub Pages deployment configured
+- Actor-language linking implemented
+
+---
+
 ## Quick Links
 
-- **HTML Report:** `output/index.html`
+- **Live site:** https://translatorswb.github.io/wca-nlp-landscape/
+- **GitHub repo:** https://github.com/translatorswb/wca-nlp-landscape
+- **HTML Report (local):** `output/index.html`
 - **Add language:** Edit `Research/focused_languages.yaml`, run `python scripts/populate_research.py`
 - **Add actor:** Create `Research/Actors/{id}.yaml`
 - **Regenerate HTML:** `python scripts/generate_html.py`

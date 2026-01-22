@@ -1,0 +1,175 @@
+id: hci-lab-ug
+name: HCI and Persuasive Systems Lab, University of Ghana
+type: university
+website: https://dcs.ug.edu.gh/research/hci-and-persuasive-systems
+location: Accra, Ghana
+
+# Organization details
+organization_size: medium  # 4 faculty + 9 HuggingFace members + students
+funding: >
+  $40,000 grant from Google for Tɛkyerɛma Pa project. Research support from UCL's
+  Global Disability Innovation Hub through AT2030 program.
+description: >
+  Research lab within the Department of Computer Science at University of Ghana, led by
+  Prof. Isaac Wiafe. Focused on Human-Computer Interaction, persuasive technology, and
+  AI/ML for African languages. The lab has produced the largest open speech corpus for
+  Ghanaian languages: UGSpeechData with 5,000 hours across 5 languages (Akan, Ewe,
+  Dagbani, Dagaare, Ikposo - 1,000 hours each, 100 hours transcribed per language).
+  Current flagship project Tɛkyerɛma Pa ("Good Tongue") develops ASR for people with
+  speech impairments in collaboration with Google Research Africa and UCL GDI Hub.
+  Additional work includes maternal health translation systems and TTS development.
+
+# Key people - Faculty
+key_people:
+  - name: Prof. Isaac Wiafe
+    role: Lab Lead, Associate Professor
+    note: >
+      PhD Informatics from University of Reading. 15+ years researching HCI and persuasive
+      technologies. Principal investigator on UGSpeechData and Tɛkyerɛma Pa. Research areas:
+      Persuasive Technologies, HCI, VR, NLP, ASR. 947 citations. HuggingFace: IsaacWiafe
+
+  - name: Prof. Jamal-Deen Abdulai
+    role: Head of Department, Computer Science
+    note: >
+      PhD Computer Science from University of Glasgow (2009). Co-author of UGSpeechData.
+      Research: AI/ML, wireless networks, sensor networks, embedded systems. Top 10
+      Computer Science academics in Ghana. 1,696 citations.
+
+  - name: Kelvin Nketia-Achiampong
+    role: Research Assistant, MSc Student
+    note: >
+      Also known as "Fiifi". Over 5 years experience in scalable systems. Develops ASR and TTS
+      for Akan/Twi using VITS and YourTTS. Focus on maternal health speech tech.
+      Personal site: fiifinketia.github.io. HuggingFace: fiifinketia
+
+  - name: Mark Atta Mensah
+    role: Researcher
+    note: >
+      Developed Akan Whisper model for ASR. Focus on ASR, NLP, and persuasive technologies.
+      HuggingFace: GiftMark
+
+  - name: Fiifi Baffoe Payin Winful
+    role: Front-end Developer, Researcher
+    note: >
+      Develops Ewe language ASR models. Co-author on UGSpeechData. Also worked on
+      Kinyarwanda speech recognition. Farmerline collaboration. HuggingFace: Paywinful
+
+# Coverage
+countries:
+  - GH  # Ghana
+  - TG  # Togo (Ikposo speakers)
+languages:
+  - aka  # Akan (includes Twi/Asante Twi)
+  - ewe  # Ewe
+  - dag  # Dagbani
+  - dga  # Dagaare
+  # Note: Ikposo (kpo) not in ISO 639-3, uses Ethnologue code
+
+# Links
+github: https://github.com/hci-lab-dcsug
+huggingface: https://huggingface.co/hci-lab-dcug
+contact:
+  twitter: https://twitter.com/hci_lab_dcsug
+  github_data: https://github.com/HCI-LAB-UGSPEECHDATA
+
+# Projects
+projects:
+  - name: UGSpeechData (5000 hours)
+    url: https://hci-lab-ugspeechdata.github.io/speech_data_ghana_ug/
+    description: >
+      MASSIVE multilingual speech corpus: 5,000 hours across 5 Ghanaian languages
+      (Akan, Ewe, Dagbani, Dagaare, Ikposo). 1,000 hours per language from native
+      speakers, 100 hours transcribed per language. 970,148 audio files total.
+      Licensed CC BY-NC-ND 4.0. DOI: 10.57760/sciencedb.22298
+    languages: [aka, ewe, dag, dga]
+
+  - name: Tɛkyerɛma Pa (Good Tongue)
+    url: https://www.disabilityinnovation.com/news/google-university-of-ghana-and-gdi-hub-to-expand-ai-powered-speech-recognition-for-non-standard-speech-in-ghanaian-languages
+    description: >
+      AI-powered ASR for people with non-standard speech (cerebral palsy, stroke,
+      Down syndrome, ALS, Parkinson's) in 5 Ghanaian languages. $40k Google grant.
+      Collaboration with Google Research Africa and UCL GDI Hub. Creating first
+      open-source dataset of impaired speech in Ghanaian languages. Mobile app
+      runs locally without internet.
+    languages: [aka, ewe, dag, dga]
+
+  - name: UGSpeech Akan 100hrs (HuggingFace)
+    url: https://huggingface.co/datasets/hci-lab-dcug/ugspeech-akan-clean-100hrs
+    description: >
+      Clean subset of UGSpeechData: 100 hours Akan speech on HuggingFace.
+      12.7k downloads. Major resource for Akan ASR development.
+    languages: [aka]
+
+  - name: BibleTTS Asante Twi Segmented
+    url: https://huggingface.co/datasets/hci-lab-dcug/bibletts-asante-twi-max29secs-total9hrs-sr22050
+    description: >
+      9 hours of segmented Asante Twi speech from BibleTTS for TTS training
+      (max 29 second segments, 22050Hz). 3.25k downloads on HuggingFace.
+    languages: [aka]
+
+  - name: Maternal Health Translation (Obaa Panin / Mat Entwi)
+    url: https://huggingface.co/spaces/hci-lab-dcug/UG_Maternal_Health_Translate
+    description: >
+      Akan-English machine translation for maternal health domain.
+      Interactive demo on HuggingFace Spaces.
+    languages: [aka]
+
+  - name: Akan Whisper ASR
+    url: https://huggingface.co/GiftMark/akan-whisper-model
+    description: >
+      Fine-tuned Whisper model (0.2B) for Akan ASR.
+      Demo: huggingface.co/spaces/GiftMark/AkanWhisperV.1
+    languages: [aka]
+
+  - name: Akan TTS Models
+    url: https://huggingface.co/fiifinketia
+    description: >
+      SpeechT5-based TTS models for Akan, multi-speaker variants.
+      Also Whisper large-v3-turbo and wav2vec2 ASR models.
+    languages: [aka]
+
+  - name: Ewe ASR
+    url: https://huggingface.co/Paywinful/whisper-ewe-asr
+    description: >
+      Whisper-based ASR for Ewe. Dataset: Paywinful/ewe-asr (22.3k downloads)
+    languages: [ewe]
+
+publications:
+  - title: "Advancing ASR for low-resource Ghanaian languages: Audio datasets for Akan, Ewe, Dagbani, Dagaare, and Ikposo"
+    url: https://pure.ug.edu.gh/en/publications/advancing-automatic-speech-recognition-for-low-resource-ghanaian-/
+    venue: Data in Brief, 2025
+  - title: "A Cookbook for Community-driven Data Collection of Impaired Speech in Low-Resource Languages"
+    url: https://pure.ug.edu.gh/en/publications/a-cookbook-for-community-driven-data-collection-of-impaired-speec/
+    venue: 2024
+
+partnerships:
+  - Google Research Africa
+  - UCL Global Disability Innovation Hub (GDI Hub)
+  - AT2030 Programme
+  - Farmerline
+  - University of Ghana, Department of Computer Science
+
+# UNICEF relevance
+unicef_relevance: >
+  Extremely relevant for UNICEF Ghana and regional language technology needs. The 5,000-hour
+  UGSpeechData corpus is the largest open speech dataset for Ghanaian languages - a foundational
+  resource for any voice-based application. The Tɛkyerɛma Pa project directly serves people
+  with disabilities, aligning with UNICEF's inclusive technology mandate. Maternal health
+  translation work supports health communication programs. The lab has proven ability to
+  collaborate with major tech companies (Google) and international organizations (UCL).
+  Could support AGOO platform, Asempa AI companion, and health messaging in Akan, Ewe,
+  Dagbani, Dagaare. Academic setting enables research partnerships and student involvement.
+
+maturity: established
+engagement_status: none
+openness: open  # Major open datasets (5000 hrs), some open models
+last_updated: 2026-01-22
+
+notes: >
+  Major resource hub for Ghanaian language technology. The 5,000-hour UGSpeechData corpus
+  is a game-changer for the region. Strong leadership with Prof. Isaac Wiafe (947 citations)
+  and Prof. Jamal-Deen Abdulai (1,696 citations, current HOD). Google Research collaboration
+  through Katrin Tomanek brings world-class expertise. The Tɛkyerɛma Pa hackathon engaged
+  students across Ghana (winner: Kasa Noma team from UESD, $2,500 prize). Lab members also
+  collaborate with Farmerline on agricultural speech tech. Individual researchers contribute
+  via personal HuggingFace accounts (fiifinketia, GiftMark, Paywinful, IsaacWiafe).

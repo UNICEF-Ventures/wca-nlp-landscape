@@ -1,0 +1,10 @@
+common_voice:
+  locale: fan
+  total_hours: 11.7
+  validated_clips: 7706
+  total_clips: 8134
+  train_clips: 349
+  dev_clips: 327
+  test_clips: 328
+  male_percent: 0
+  female_percent: 0

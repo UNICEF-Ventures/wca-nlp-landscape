@@ -1069,6 +1069,7 @@ def generate_language_detail_page(iso_code, lang_data, actors):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{name} - UNICEF WCARO NLP</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
     <style>{get_css()}</style>
 </head>
 <body>
@@ -1362,7 +1363,10 @@ def generate_countries_tab(wca_languages):
             </p>
 
             <div id="languageListContainer" class="language-list-container" style="margin-top: 1.5rem; display: none;">
-                <h3 style="margin-bottom: 1rem; color: var(--primary-dark);">Languages spoken in <span id="langListCountryName"></span></h3>
+                <h3 style="margin-bottom: 0.5rem; color: var(--primary-dark);">Languages spoken in <span id="langListCountryName"></span></h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+                    Note: Population figures represent total global speakers of each language, not speakers within this country specifically.
+                </p>
                 <div id="languageList" class="table-scroll" style="max-height: 400px;">
                     <!-- Language list will be inserted here -->
                 </div>
@@ -1374,6 +1378,19 @@ def generate_countries_tab(wca_languages):
             const countriesData = {countries_json};
             const langsByCountry = {langs_by_country_json};
             const focusLanguages = {focus_langs_json};
+
+            // Mapping from display names to data names (for language lookup)
+            const countryNameMapping = {{
+                "DR Congo": "Democratic Republic of Congo",
+                "Republic of the Congo": "Republic of Congo",
+                "The Gambia": "Gambia",
+                "Côte d'Ivoire": "Cote d'Ivoire",
+                "São Tomé and Príncipe": "São Tomé e Príncipe"
+            }};
+
+            function getDataCountryName(displayName) {{
+                return countryNameMapping[displayName] || displayName;
+            }}
 
             function getCountryData(countryName) {{
                 return countriesData.find(c => c.name === countryName);
@@ -1467,7 +1484,9 @@ def generate_countries_tab(wca_languages):
                 nameSpan.textContent = countryName;
                 listContainer.style.display = 'block';
 
-                const langs = langsByCountry[countryName] || [];
+                // Use mapped name for data lookup
+                const dataCountryName = getDataCountryName(countryName);
+                const langs = langsByCountry[dataCountryName] || [];
 
                 if (langs.length === 0) {{
                     container.innerHTML = '<p class="empty">No language data available for this country.</p>';
@@ -1792,6 +1811,7 @@ def generate_actor_detail_page(actor_key, actor_data):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{name} - UNICEF WCARO NLP</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
     <style>{get_css()}</style>
 </head>
 <body>
@@ -1877,7 +1897,7 @@ def generate_main_html(languages, actors, wca_languages):
 
     total_focus = len(languages)
     total_wca = len(wca_languages)
-    total_actors = len(actors)
+    total_actors = len([k for k in actors.keys() if k != 'actor-template'])
     total_countries = 23  # WCA countries
 
     return f"""<!DOCTYPE html>
@@ -1886,6 +1906,7 @@ def generate_main_html(languages, actors, wca_languages):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UNICEF WCARO NLP Landscape</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
     <style>{get_css()}</style>
 </head>
 <body>

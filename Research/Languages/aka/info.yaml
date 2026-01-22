@@ -1,0 +1,32 @@
+name: Akan
+iso_639_3: aka
+iso_639_1: ak
+name_french: akan
+countries:
+- Benin
+- Ghana
+population: '11000000'
+population_order: 10⁶+
+endangerment: safe
+official_status: 🛂
+glottocode: akan1250
+glottocode_url: https://glottolog.org/resource/languoid/id/akan1250
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Akan_language
+  family: Niger–Congo
+  speakers_l1: 8.9 million
+  speakers_l2: 1 million
+  writing_system: Latin
+resource_page: http://kamu.si/akan-resources
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=aka
+  OLAC: http://www.language-archives.org/language/aka
+  Grambank: https://grambank.clld.org/languages/akan1250
+  WALS: https://wals.info/languoid/lect/wals_code_akn
+  CLDR: https://www.unicode.org/cldr/charts/47/summary/ak.html
+tech_resources:
+  NLLB-200: true
+  MADLAD-400 Docs: 4800 MAD-Docs
+  MADLAD-400 Sentences: 210200 MAD-Sents
+  CMU Wilderness: true
+  MAFAND: true

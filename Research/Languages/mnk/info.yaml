@@ -1,0 +1,49 @@
+name: Mandinka
+iso_639_3: mnk
+name_french: mandinka
+altnames:
+- Eastern Malinke
+- Kankan Maninka
+- Madingo
+- Malinké
+- Mande
+- Manding
+- Maninga
+- Mandingo
+- Maninka-Mori
+- Maninkakan
+- Maninkakan
+- Eastern
+- Maninkaxan
+- Southern Malinke
+- Southern Maninka
+countries:
+- Cote d'Ivoire
+- Gambia
+- Guinea
+- Guinea-Bissau
+- Liberia
+- Senegal
+- Sierra Leone
+population: '2100000'
+population_order: 10⁶+
+endangerment: safe
+official_status: 🛂
+glottocode: mand1436
+glottocode_url: https://glottolog.org/resource/languoid/id/mand1436
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Mandinka_language
+  family: Niger–Congo
+  speakers_l1: 2.1 million
+  writing_system: Arabic , Latin , N'Ko , Garay
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=man
+resource_page: http://kamu.si/mandinka-resources
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=mnk
+  OLAC: http://www.language-archives.org/language/mnk
+  Grambank: https://grambank.clld.org/languages/mand1436
+  WALS: https://wals.info/languoid/lect/wals_code_mdk
+tech_resources:
+  AfroLID: true
+  Fineweb2: 💬
+  CMU Wilderness: true

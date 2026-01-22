@@ -1,0 +1,42 @@
+name: Fon
+iso_639_3: fon
+name_french: fon
+altnames:
+- Dahomeen
+- Djedji
+- Fo
+- Fogbe
+- Fon-Gbe
+- Fongbe
+- Fonnu
+- Fɔngbè
+countries:
+- Benin
+- Togo
+population: '2300000'
+population_order: 10⁶+
+endangerment: safe
+official_status: 🛂
+glottocode: fonn1241
+glottocode_url: https://glottolog.org/resource/languoid/id/fonn1241
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Fon_language
+  family: Niger–Congo
+  speakers_l1: 2.3 million
+  writing_system: Latin Gbékoun
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=fon
+resource_page: http://kamu.si/fon-resources
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=fon
+  OLAC: http://www.language-archives.org/language/fon
+  Grambank: https://grambank.clld.org/languages/fonn1241
+  WALS: https://wals.info/languoid/lect/wals_code_fon
+tech_resources:
+  AfroLID: true
+  Google Translate: '2024'
+  NLLB-200: true
+  MADLAD-400 Docs: 1100 MAD-Docs
+  MADLAD-400 Sentences: 67300 MAD-Sents
+  Fineweb2: 💬
+  CMU Wilderness: true
+  MAFAND: true

@@ -8,6 +8,7 @@
 # Current focus languages
 - hau  # Hausa (Nigeria, Ghana, Niger, Cameroon...)
 - yor  # Yoruba (Nigeria, Benin)
+- ibo  # Igbo (Nigeria, Equatorial guinea ...)
 - bam  # Bambara (Mali)
 - mos  # Mooré (Burkina Faso)
 - twi  # Twi (Ghana)
@@ -15,10 +16,17 @@
 - wol  # Wolof (Senegal, Gambia)
 - ful  # Fulfulde (widespread)
 - kri  # Krio (Sierra Leone)
-- tem
-- men
-- dag
-- gaa
-- kau
-- swc
-- lin
+- tem  # Temne (Sierra Leone)
+- men  # Mende (Sierra Leone)
+- dag  # Dagbani (Ghana)
+- gaa  # Ga (Ghana)
+- kau  # Kanuri (Nigeria, Niger, Chad)
+- swc  # Congo Swahili (DRC)
+- lin  # Lingala (DRC, Republic of Congo)
+- fon  # Fon (Benin)
+- sag  # Sango (Central African Republic)
+- shu  # Shuwa Arabic (Chad, Nigeria)
+- fan  # Fang (Gabon, Equatorial Guinea, Cameroon)
+- mnk  # Mandinka (Gambia, Senegal, Guinea-Bissau)
+- aka  # Akan (Ghana)
+- fuf  # Pular (Guinea)

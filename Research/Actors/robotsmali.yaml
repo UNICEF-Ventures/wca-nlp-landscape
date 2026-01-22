@@ -51,6 +51,7 @@ projects:
       African Next Voices – Bambara. 612 hours raw / 423 hours segmented spontaneous speech
       from 512 speakers in southern Mali. 159h human-corrected subset. Largest Bambara ASR corpus.
       CC-BY-4.0 license.
+    languages: [bam]
 
   - name: Kunkado Dataset
     url: https://huggingface.co/datasets/RobotsMali/kunkado
@@ -58,16 +59,19 @@ projects:
       "Messy-real" Bambara ASR corpus. 161 hours from radio/TV broadcasts with extensive
       French code-switching. 39h human-reviewed. Designed for real-world noisy conditions.
       CC-BY-SA-4.0 license.
+    languages: [bam, fra]  # Bambara with French code-switching
 
   - name: Soloni ASR Models
     url: https://huggingface.co/RobotsMali/soloni-114m-tdt-ctc-v2
     description: >
       Family of Bambara ASR models including Soloni TDT-CTC (114M params), QuartzNet-15×5 (19M params),
       and Soloba (0.6B params). Trained on AfVoices and Kunkado datasets.
+    languages: [bam]
 
   - name: French-Bambara Machine Translation
     url: https://robotsmali.org/en/intelligence-artificielle/
     description: Created the first French-to-Bambara machine learning dataset in 2020.
+    languages: [bam, fra]
 
   - name: AI-Generated Educational Books
     url: https://robotsmali.org/en/
@@ -75,10 +79,12 @@ projects:
       180 illustrated books for beginning readers through high school in Bambara and 11 other
       Malian languages. Available on Bloom Library. 67-90% of children able to read complete
       books after 12 hours of instruction.
+    languages: [bam, snk, bmq, dts, myk, ful, ses, tmh, khq, kao, bze, dnj]  # 12 Malian languages
 
   - name: AI4D Lab
     url: https://robotsmali.org/en/intelligence-artificielle/
     description: Mali's international AI lab working on NLP for national languages.
+    languages: [bam]  # Primary focus on Bambara
 
 projects_url: https://robotsmali.org/projets/
 
@@ -119,6 +125,7 @@ unicef_relevance: >
 
 maturity: established
 engagement_status: none
+openness: open  # Public datasets, models, papers on HuggingFace and GitHub
 last_updated: 2026-01-19
 
 notes: 

@@ -1,0 +1,151 @@
+id: goai
+name: GO AI Corp
+type: startup
+website: https://goaicorporation.org/
+location: Ouagadougou, Burkina Faso
+
+# Organization details
+founded: 2020
+organization_size: small
+funding: >
+  Commercial revenue from enterprise clients. Contract work with UNICEF and other
+  international organizations.
+description: >
+  GO AI Corp is a Burkinabè technology startup providing AI solutions, web/mobile
+  development, cybersecurity, and cloud services. They co-developed NLP models for
+  the Moore language in partnership with UNICEF Burkina Faso, building speech-to-text,
+  text-to-speech, and French-Moore translation tools integrated into UNICEF's UYouth
+  and U-Report platforms.
+
+  They offer an API for Moore language AI and several commercial SaaS products.
+  Have released 8 Mooré datasets on HuggingFace (gated, non-commercial license),
+  but keep trained model weights private.
+
+# UNICEF relevance
+unicef_relevance: >
+  Proven UNICEF partner with deployed production systems in Burkina Faso. Their Moore
+  NLP is live in UYouth/U-Report. Have released Mooré datasets on HuggingFace but
+  model weights and evaluation (if any) remain private, limiting reproducibility and independent evaluation.
+
+maturity: established
+engagement_status: active_partner
+openness: partial  # Datasets on HuggingFace (gated, non-commercial), but models private
+
+last_updated: 2026-01-22
+
+# Key people
+key_people:
+  - name: Alban Nyantudre
+    role: ML Engineer
+    note: "HuggingFace: anyantudre. Email: nyantudre@gmail.com"
+  - name: Aristide Bandaogo
+    role: ML Engineer, not working there anymore 
+    note: "Built Moore ASR/TTS models. HuggingFace: ArissBandoss. Email: aristide@goaicorporation.org"
+
+# Coverage
+countries:
+  - BF  # Burkina Faso
+languages:
+  - mos  # Moore
+
+# Links
+github: https://github.com/GO-AI-CORPORATION
+huggingface: https://huggingface.co/goaicorp
+contact:
+  email: contact@goaicorporation.org
+  moore_ai_email: moore-ai@goaicorporation.org
+
+# HuggingFace datasets (8 total, all gated with CC-BY-NC-4.0)
+datasets:
+  - name: cle-moore-traduction-mos-fr
+    url: https://huggingface.co/datasets/goaicorp/cle-moore-traduction-mos-fr
+    description: ~32k Mooré-French translation pairs. Gated, non-commercial.
+    languages: [mos, fra]
+
+  - name: GOAI-MooreSpeechCorpora
+    url: https://huggingface.co/datasets/goaicorp/GOAI-MooreSpeechCorpora
+    description: ~8.66 hours Mooré speech (5.5k examples). Cleaned/denoised. Gated, non-commercial.
+    languages: [mos]
+
+  - name: cle-audio-moore
+    url: https://huggingface.co/datasets/goaicorp/cle-audio-moore
+    description: 23.1k Mooré audio samples.
+    languages: [mos]
+
+  - name: moore-speech-bible
+    url: https://huggingface.co/datasets/goaicorp/moore-speech-bible
+    description: Mooré Bible speech corpus.
+    languages: [mos]
+
+  - name: fb_comments_dataset
+    url: https://huggingface.co/datasets/goaicorp/fb_comments_dataset
+    description: 20k Facebook comments dataset.
+    languages: [mos]
+
+# Demo space (models are private)
+demo_space:
+  url: https://huggingface.co/spaces/ArissBandoss/Moore-Language-Space-ZeroGPU
+  note: >
+    Demo for TTS/ASR/MT. Models are PRIVATE (ArissBandoss/nllb-200-3.3B-mos2fr,
+    whisper-*-mos, coqui-tts-moore-*). Code viewable but models inaccessible.
+
+# Projects
+projects:
+  - name: Moore AI (STT/TTS/Translation)
+    url: https://huggingface.co/spaces/ArissBandoss/Moore-Language-Space-ZeroGPU
+    description: >
+      French-Moore translation, text-to-speech, and speech-to-text. API available.
+      MT: Meta NLLB-200 3.3B fine-tuned for Moore.
+      TTS: Coqui TTS and MMS-TTS fine-tuned for Moore.
+      ASR: Whisper fine-tuned for Moore.
+      None of the models are open but datasets are. 
+    languages: [mos, fra]
+
+  - name: UYouth/U-Report NLP Integration
+    description: >
+      Integration of Moore NLP models into UNICEF's UYouth platform (built on U-Report
+      with RapidPro backend). Enables Moore-speaking youth to access U-Stories, U-Protect/PSEA,
+      and U-Opinion modules via voice or text.
+    languages: [mos]
+
+  - name: SANLAM OCR SDK
+    description: >
+      AI models for SANLAM Assurances for automatic reading and extraction of information
+      from identity documents and driver licenses.
+    languages: []
+
+  - name: Deepfake Detector
+    description: >
+      AI models based on GANs, CNNs, and RAG for deepfake detection. Accessible via
+      WhatsApp for audio, video, and image analysis.
+    languages: []
+
+  - name: Sentinel AI
+    url: https://goaicorporation.org/saas
+    description: >
+      AI-powered surveillance system with facial recognition attendance, threat detection
+      (weapons, fire), automatic police alerts, and suspect identification.
+    languages: []
+
+  - name: EDUC AI
+    url: https://goaicorporation.org/saas
+    description: >
+      School management platform with AI tutoring assistant accessible via WhatsApp
+      for student exercises and homework.
+    languages: [fra]
+
+projects_url: https://goaicorporation.org/portfolio
+
+publications: []
+publications_url: null
+
+partnerships:
+  - UNICEF Burkina Faso
+
+
+notes: >
+  Partial openness - datasets available (with restrictions) but models
+  closed. Website marketing claims lack technical documentation. For social impact
+  projects, fully open models are preferable for independent evaluation, community
+  improvements, and sustainability. However, they have demonstrated real deployment
+  with UNICEF and have invested in creating Mooré datasets.

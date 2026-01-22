@@ -1,0 +1,120 @@
+id: sunbird-ai
+name: Sunbird AI
+type: Non-profit research organization
+website: https://sunbird.ai/
+location: Kampala, Uganda
+
+# Organization details
+founded: 2019
+organization_size: medium  # ~15-20 staff
+funding: >
+  Non-profit with 501(c)(3) equivalence status. Funded by IDRC, Humanity Forward, GIZ.
+description: >
+  Sunbird AI is a non-profit research organization based in Kampala, Uganda that builds
+  and deploys practical AI systems for African contexts. Their focus areas include:
+  speech/language processing, geospatial and environmental sensing, and public-sector
+  decision support.
+
+  Key technical work: ASR, TTS, translation, and language models for African languages;
+  remote sensing and urban growth mapping; biodiversity acoustics; and tools for
+  evidence-informed decision-making in public institutions. They maintain curated
+  corpora, annotation guidelines, and evaluation sets as data infrastructure.
+
+  Their flagship product is Sunflower, a multilingual LLM series (14B and 32B parameters)
+  supporting 31+ Ugandan languages for translations, summaries, and explanations.
+
+# Key people
+key_people:
+  - name: Ernest Mwebaze
+    role: Executive Director
+  - name: Engineer Bainomugisha
+    role: Founding Director
+    note: Chair, Computer Science Dept., Makerere University
+  - name: John Quinn
+    role: Director
+  - name: Patrick Walukagga
+    role: Software Engineering Lead
+  - name: Benjamin Akera
+    role: Software Engineer
+
+# Coverage
+countries:
+  - UG  # Uganda (primary)
+  - KE  # Kenya (Kikuyu models)
+languages:
+  - lug  # Luganda
+  - nyn  # Nyankole
+  - ach  # Acholi
+  - teo  # Teso
+  - lgg  # Lugbara
+  - kik  # Kikuyu
+  # 31+ Ugandan languages via Sunflower
+
+# Links
+github: https://github.com/SunbirdAI
+huggingface: https://huggingface.co/Sunbird
+contact:
+  email: info@sunbird.ai
+
+# Projects
+projects:
+  - name: Sunflower LLM
+    url: https://huggingface.co/collections/Sunbird/sunflower-6705c44a52378cbaacf82715
+    description: Multilingual LLM for 31+ Ugandan languages (14B and 32B parameter versions)
+    languages: [lug, nyn, ach, teo, lgg, luo, nyo, cgg, xog, myx]  # 31+ Ugandan languages
+
+  - name: SALT (Speech and Language Technology)
+    url: https://huggingface.co/datasets/Sunbird/salt
+    description: Translation and speech datasets for Ugandan languages (80k+ records)
+    languages: [lug, nyn, ach, teo, lgg]  # Major Ugandan languages
+
+  - name: African Language Technology
+    url: https://sunbird.ai/
+    description: Translation and speech systems for under-resourced African languages
+    languages: [lug, nyn, ach, teo, lgg, kik]  # Ugandan + Kikuyu
+
+  - name: Green Electrification Planning
+    url: https://sunbird.ai/
+    description: Evidence-informed decision making tools for electricity access planning
+    languages: []  # Not language-specific
+
+  - name: Environmental Sensing
+    url: https://sunbird.ai/
+    description: Noise pollution monitoring for urban development (62k+ annotated audio samples)
+    languages: []  # Not language-specific
+
+projects_url: https://sunbird.ai/
+
+# Publications
+publications: []
+publications_url: null
+
+partnerships:
+  - IDRC
+  - Humanity Forward
+  - GIZ (German International Cooperation)
+  - Makerere University
+
+# Board
+# Davis Adieno (Chair), Rhona Mijumbi, Sarah T. Lucas, Kenneth Legesi, Engineer Bainomugisha
+
+# UNICEF relevance
+unicef_relevance: >
+  While Uganda is in East Africa (not WCA), Sunbird AI's approach and technology stack
+  is highly relevant as a model for UNICEF's language technology initiatives in WCA.
+  Their Sunflower LLM architecture could be adapted for WCA languages. Their experience
+  with citizen feedback tools, environmental monitoring, and public-sector AI deployment
+  provides valuable lessons. Could be a technical partner or advisor for similar
+  initiatives in WCA countries.
+
+maturity: established
+engagement_status: none
+openness: open  # Public models, datasets, GitHub, committed to open research
+last_updated: 2026-01-22
+
+notes: >
+  Strong technical team with connections to Makerere University. Published 37 models
+  on HuggingFace including the Sunflower LLM series with multiple quantization options.
+  Maintains 7 datasets including SALT translation data and urban noise annotations.
+  API available at api.sunbird.ai. Team of 12 active contributors on HuggingFace.
+  Focus on open source and open research with commitment to locally-owned AI systems.

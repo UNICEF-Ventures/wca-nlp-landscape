@@ -1,0 +1,98 @@
+id: maliba-ai
+name: MALIBA-AI
+type: Community initiative
+website: https://maliba-ai.org/
+location: Mali
+
+# Organization details
+founded: null  # Not specified
+organization_size: small
+funding: >
+  Community-driven, volunteer-based initiative.
+description: >
+  MALIBA-AI ("L'IA au service du Mali" - AI in service of Mali) is a community-driven
+  organization focused on empowering Mali through open-source AI innovation. Their mission
+  is to bridge the digital divide and democratize technology access for Malian linguistic
+  communities. They envision an inclusive technological ecosystem that preserves culture,
+  enhances education, and drives economic growth for all Malian communities regardless of
+  educational or linguistic background.
+
+  Core initiatives include: (1) Language Technology Development - building foundation models,
+  speech tech, and translation systems; (2) Community Empowerment - open collaboration,
+  knowledge exchange, and capacity building; (3) Practical Applications - local solutions,
+  educational tools, and accessibility.
+
+# Key people
+key_people:
+  - name: Seydou Diallo
+    role: Core contributor
+    note: Active developer, handles model and dataset releases
+
+# Coverage
+countries:
+  - ML  # Mali
+languages:
+  - bam  # Bambara (primary focus)
+  - snk  # Songhoy (Soninke - closest match)
+  - bmq  # Bomu
+  - dts  # Dogon (Toro So Dogon - representative)
+  - myk  # Minianka (Mamara Senoufo)
+
+# Links
+github: https://github.com/MALIBA-AI
+huggingface: https://huggingface.co/MALIBA-AI
+contact:
+  email: null
+
+# Projects
+projects:
+  - name: Bambara TTS
+    url: https://huggingface.co/MALIBA-AI/bambara-tts
+    description: Text-to-speech model for Bambara language (0.5B parameters)
+    languages: [bam]
+
+  - name: Bambara ASR
+    url: https://huggingface.co/MALIBA-AI/bambara-asr-v2
+    description: Automatic speech recognition for Bambara (multiple versions available)
+    languages: [bam]
+
+  - name: MalianTTS
+    url: https://huggingface.co/spaces/MALIBA-AI/MalianTTS
+    description: Text-to-speech demo supporting 6 Malian languages
+    languages: [bam, snk, bmq, dts, myk, ful]  # 6 Malian languages
+
+  - name: Bambara Translator
+    url: https://huggingface.co/spaces/MALIBA-AI/BambaraTranslator
+    description: Translation tool for Bambara-French-English
+    languages: [bam, fra, eng]
+
+  - name: Bambara ASR Leaderboard
+    url: https://huggingface.co/spaces/MALIBA-AI/Bambara-ASR-Leaderboard
+    description: Leaderboard tracking speech recognition results for Bambara
+    languages: [bam]
+
+# Publications
+publications: []
+publications_url: null
+
+partnerships: []
+
+# UNICEF relevance
+unicef_relevance: >
+  Highly relevant for UNICEF's work in Mali. MALIBA-AI provides open-source ASR, TTS,
+  and translation models for Bambara and other Malian languages - essential for
+  community engagement, emergency messaging, and service delivery in local languages.
+  Their models could be integrated into U-Report, RapidPro, or similar platforms
+  for voice-based interaction with communities who speak Malian languages.
+
+maturity: emerging
+engagement_status: none
+openness: open  # Public models, datasets on HuggingFace and GitHub
+last_updated: 2026-01-22
+
+notes: >
+  Active community with recent model releases (bambara-tts updated January 2026).
+  Published 9 models covering ASR and TTS for multiple Malian languages including
+  Bambara, Songhoy, Bomu, Dogon, and Minianka. Also maintains datasets including
+  a 667k-record Bambara speech dataset and a 186k-record Bambara MT dataset.
+  The Bambara ASR Leaderboard provides benchmarking for speech recognition systems.

@@ -73,38 +73,47 @@ projects:
   - name: Masakhane MT - Decolonise Science
     url: https://www.masakhane.io/ongoing-projects/masakhane-mt-decolonise-science
     description: Translation of scientific papers into African languages. Lacuna Fund supported.
+    languages: [hau, yor, ibo, swa, amh, zul, twi, fon, wol]  # 30+ languages
 
   - name: MasakhaNER - Know Our Names
     url: https://www.masakhane.io/ongoing-projects/masakhaner-know-our-names
     description: Named Entity Recognition for African languages. Lacuna Fund supported.
+    languages: [hau, yor, ibo, swa, amh, zul, twi, fon, wol, pcm]  # 21 languages in v2.0
 
   - name: MakerereNLP - Text & Speech for East Africa
     url: https://www.masakhane.io/ongoing-projects/makererenlp-text-speech-for-east-africa
     description: Text and speech processing for East African languages. Lacuna Fund supported.
+    languages: [lug, ach, nyn, teo, lgg, swa]  # Ugandan + Swahili
 
   - name: NaijaNLP - Sentiment Lexicon & Hate Speech
     url: https://www.masakhane.io/ongoing-projects/naijanlp-sentiment-lexicon-hate-speech
     description: Sentiment analysis and hate speech detection for Nigerian languages. Lacuna Fund supported.
+    languages: [hau, yor, ibo, pcm]  # Nigerian languages
 
   - name: LAFAND-MT
     url: https://www.masakhane.io/ongoing-projects/lafand-mt
     description: Low-resource African language machine translation.
+    languages: [hau, yor, ibo, swa, amh, fon, wol]  # Multiple African languages
 
   - name: MMT-Africa
     url: https://www.masakhane.io/ongoing-projects/mmt-africa
     description: Multilingual machine translation for Africa.
+    languages: [hau, yor, ibo, swa, amh, zul, twi, fon, wol]  # Pan-African
 
   - name: Question Answering
     url: https://www.masakhane.io/ongoing-projects/question-answering
     description: Question answering systems for African languages.
+    languages: [hau, yor, ibo, swa, twi, fon, wol]
 
   - name: Study NLP
     url: https://www.masakhane.io/ongoing-projects/study-nlp
     description: Educational resources and study groups for NLP.
+    languages: []  # Educational - language agnostic
 
   - name: African Languages Hub
     url: https://www.masakhane.io/masakhane-african-languages-hub/about
     description: MRF initiative to centralize African language resources and fund projects.
+    languages: []  # Platform - all African languages
 
 projects_url: https://www.masakhane.io/ongoing-projects
 
@@ -172,6 +181,7 @@ unicef_relevance: >
 
 maturity: established
 engagement_status: none
+openness: open  # Public models, datasets, papers, GitHub, HuggingFace
 last_updated: 2026-01-19
 
 notes: >

@@ -46,22 +46,27 @@ projects:
     description: >
       Nigeria's first open-source multilingual & multimodal LLM. Fine-tuned from Llama-3 8B
       with 400M+ tokens. Supports Yoruba, Hausa, Igbo, and Nigerian English. Launched at UNGA80.
+    languages: [yor, hau, ibo, eng]
 
   - name: Yoruba ASR
     url: https://huggingface.co/NCAIR1/Yoruba-ASR
     description: Automatic speech recognition model for Yoruba language.
+    languages: [yor]
 
   - name: Hausa ASR
     url: https://huggingface.co/NCAIR1/Hausa-ASR
     description: Automatic speech recognition model for Hausa language.
+    languages: [hau]
 
   - name: Igbo ASR
     url: https://huggingface.co/NCAIR1/Igbo-ASR
     description: Automatic speech recognition model for Igbo language.
+    languages: [ibo]
 
   - name: Nigerian English ASR
     url: https://huggingface.co/NCAIR1/NigerianAccentedEnglish
     description: ASR model optimized for Nigerian-accented English.
+    languages: [eng]
 
 projects_page: https://ncair.nitda.gov.ng/work-done-so-far/
 
@@ -84,6 +89,7 @@ unicef_relevance: >
 
 maturity: established
 engagement_status: none
+openness: partial  # Models on HuggingFace but no GitHub, limited documentation
 last_updated: 2026-01-19
 
 notes: >

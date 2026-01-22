@@ -42,9 +42,11 @@ projects:
   - name: Project Name
     url: https://example.com/project
     description: Brief description of the project
+    languages: [hau, yor]  # ISO 639-3 codes of languages this project covers
   - name: Another Project
     url: https://example.com/project2
     description: What this project does
+    languages: [hau]
 
 # Publications with URLs and venues
 publications:
@@ -69,6 +71,7 @@ unicef_relevance: >
 
 maturity: emerging  # Options: emerging, established, mature
 engagement_status: none  # Options: none, contacted, in_discussion, active_partner
+openness: open  # Options: open (public models/code/papers), partial (some open resources), closed (all commercial)
 last_updated: 2026-01-19
 
 notes: >

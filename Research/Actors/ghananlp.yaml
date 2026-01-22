@@ -56,25 +56,30 @@ projects:
     url: https://translate.ghananlp.org/
     description: >
       AI-powered translation for 10+ African languages. Web, Android, iOS apps available.
-      Outperforms Google Translate for Ghanaian languages. ASR capability. 
+      Outperforms Google Translate for Ghanaian languages. ASR capability.
+    languages: [twi, ewe, gaa, dag, gur, kus, yor, kik]  # 10+ languages
 
   - name: Khaya API
     url: https://translation.ghananlp.org/
     description: Developer API for integrating African language translation, ASR and TTS into apps.
+    languages: [twi, ewe, gaa, dag, gur, kus, yor, kik]
 
   - name: Khaya ASR
     url: https://ghananlp.org/
     description: >
       Automatic speech recognition for Twi, Ewe, Ga, Dagbani, Yoruba. Speak to phone
       and get text transcription.
+    languages: [twi, ewe, gaa, dag, yor]
 
   - name: Khaya TTS
     url: https://huggingface.co/spaces/Ghana-NLP/Africa-TTS-UI
     description: Text-to-speech for 36 African languages
+    languages: [twi, ewe, gaa, dag, yor, hau, ibo, swa, amh]  # 36 languages
 
   - name: ABENA
     url: https://ghananlp.org/project/abena/
     description: BERT-based NLP model for Twi language. (2017)
+    languages: [twi]
 
 projects_url: https://ghananlp.org/projects
 
@@ -98,6 +103,7 @@ unicef_relevance: >
 
 maturity: established
 engagement_status: none
+openness: partial  # Open models on HuggingFace, but also commercial Khaya AI arm
 last_updated: 2026-01-19
 
 notes: >

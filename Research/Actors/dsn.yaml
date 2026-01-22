@@ -1,0 +1,96 @@
+id: dsn
+name: Data Science Nigeria
+type: Non-profit / Community
+website: https://datasciencenigeria.org/
+location: Nigeria
+
+# Organization details
+founded: 2016
+organization_size: large  # 14,000+ community members across 90+ countries
+funding: >
+  Non-profit run and managed by the Data Scientists Network Foundation.
+  Various grants and partnerships for specific programs.
+description: >
+  Data Science Nigeria (DSN) is Africa's foremost AI and Data Science organization,
+  dedicated to raising 1 million AI talents across the continent. As Africa's premier
+  community of AI professionals, enthusiasts, and beginners spanning Anglophone and
+  Francophone nations, DSN connects more than 14,000 data scientists, engineers,
+  researchers, mentors, and enthusiasts across 90+ countries.
+
+  Their mission extends beyond talent development to deploying AI solutions that
+  enhance the lives of 2 billion people in emerging markets. DSN was listed in the
+  DataDotOrg Global Report on Data Talent for Social Impact, had 5 products selected
+  in the Global Top 100 AI Products by UNESCO IRCAI (2021 & 2022), and won the
+  Didactic Paper award at ICLR Singapore.
+
+  Key programs include the annual AI Bootcamp (physical training for 500 candidates
+  after free AI classes in multiple cities) and sector-specific AI solution development.
+
+# Key people
+key_people:
+  - name: Dr. Olubayo Adekanmbi
+    role: Founder & CEO
+    note: PhD from University of London, 19+ years experience in Strategy, Marketing, Analytics
+
+# Coverage
+countries:
+  - NG  # Nigeria (primary)
+  # Community spans 90+ countries including Francophone nations
+languages:
+  - hau  # Hausa
+  - yor  # Yoruba
+  - ibo  # Igbo
+  - pcm  # Nigerian Pidgin
+  # Focus on Nigerian languages
+
+# Links
+github: null
+huggingface: https://huggingface.co/DataScienceNigeria
+contact:
+  email: null
+
+# Projects
+projects:
+  - name: AI Bootcamp
+    url: https://datasciencenigeria.org/2025_aibootcamp/
+    description: Annual intensive AI training program with free classes across Nigerian cities
+    languages: []  # Training program - not language-specific
+
+  - name: African Voice NG Dataset
+    url: https://huggingface.co/datasets/DataScienceNigeria/african_voice_ng
+    description: Nigerian language voice dataset on HuggingFace
+    languages: [hau, yor, ibo, pcm]  # Nigerian languages
+
+projects_url: https://datasciencenigeria.org/
+
+# Publications
+publications: []
+publications_url: null
+
+partnerships:
+  - Global Partnership for Sustainable Development Data
+  - data.org
+  - UNESCO IRCAI
+
+# UNICEF relevance
+unicef_relevance: >
+  Highly relevant for UNICEF's Nigeria operations. DSN has the largest AI talent
+  community in Africa, making them a key partner for building local capacity for
+  NLP/AI projects. Their voice dataset work (african_voice_ng) directly supports
+  Nigerian language technology development. Their reach into both Anglophone and
+  Francophone communities in Nigeria makes them valuable for cross-linguistic
+  initiatives. Could serve as implementation partner or talent pipeline for
+  UNICEF AI projects in Nigeria.
+
+maturity: established
+engagement_status: none
+openness: partial  # Some datasets on HuggingFace, but primarily a community/training org
+last_updated: 2026-01-22
+
+notes: >
+  Primarily a talent development and community organization rather than a research
+  lab. Strong convening power with 14,000+ members. UNESCO IRCAI recognition
+  (5 products in Global Top 100) demonstrates quality of their AI solutions.
+  The african_voice_ng dataset on HuggingFace (updated Nov 2025) shows active
+  contribution to language data resources. Good entry point for engaging Nigeria's
+  AI ecosystem.

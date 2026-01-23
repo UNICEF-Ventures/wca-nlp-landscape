@@ -144,6 +144,12 @@ Advisory support for actor selection, agenda input, and presentation of findings
 
 ### 2026-01-23
 - Added 5 new actors (15 total, 75% of target)
+- **TODO:** Check people from K4All Fongbe project: https://k4all.org/project/database-fongbe/
+  - Kevin Degila (ML Research Engineer, Konta)
+  - Momboladji Balogoun (Data Analyst, Gozem; co-founder Takwimu Lab)
+  - Godson Kalipe (Data Engineer, Takwimu Lab)
+  - Jamiil Toure (Design engineer, Masakhane contributor)
+  - All affiliated with Takwimu Lab (West African francophone data science org)
   - IMSP Benin: Fon language research, FFSTC corpus (61hrs), D. Fortuné Kponou
   - LAfricaMobile: Senegal telecom, ASR/TTS for Wolof, Fulfulde, Hausa, Ewe
   - Baamtu: Senegal consulting firm, Wolof chatbots (closed/commercial)

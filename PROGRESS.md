@@ -73,6 +73,16 @@ Profiles of organizations, research groups, and startups working on African lang
 14. GalsenAI - Senegal, Wolof NLP community
 15. Chad AI Network - Chad, Chadian Arabic NLP
 
+Languages missing dedicated actors
+Sierra Leone: Krio, Mende, Temne - no dedicated actors
+DRC/Congo: Lingala, Congo Swahili - no dedicated actors
+CAR: Sango - no dedicated actors
+Guinea: Pular/Fulfulde - no dedicated actors
+Guinea-Bissau/Gambia: Mandinka - no dedicated actors
+Gabon/Equatorial Guinea: Fang - no dedicated actors
+Kanuri (Chad/Nigeria/Niger) - no dedicated actors
+Fulfulde (widespread) - only partially covered
+
 ---
 
 ## Task 2: Benchmarking Study

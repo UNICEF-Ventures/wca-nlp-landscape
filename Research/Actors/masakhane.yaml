@@ -34,6 +34,10 @@ key_people:
   - name: Vukosi Marivate
     role: Co-founder
     affiliation: MRF / AfriDSAI / ABSA / University of Pretoria / Lelapa.ai
+  - name: Bonaventure Dossou
+    role: Core contributor
+    affiliation: McGill University
+    note: Co-creator of FFR (Fon-French translation). Pioneer of Fon language NLP.
 
 
 # Coverage
@@ -115,6 +119,11 @@ projects:
     description: MRF initiative to centralize African language resources and fund projects.
     languages: []  # Platform - all African languages
 
+  - name: FFR (Fon-French Translation)
+    url: https://github.com/bonaventuredossou/ffr-v1
+    description: First large-scale neural MT for Fon-French (2020). 53,975 parallel sentences. BLEU 30.55.
+    languages: [fon]
+
 projects_url: https://www.masakhane.io/ongoing-projects
 
 # Publications (with URLs) - Key papers only, full list at website
@@ -182,7 +191,7 @@ unicef_relevance: >
 maturity: established
 engagement_status: none
 openness: open  # Public models, datasets, papers, GitHub, HuggingFace
-last_updated: 2026-01-19
+last_updated: 2026-01-23
 
 notes: >
   (Auto generated) Strong community with weekly meetings on Slack. Beginner-friendly with Google Colab notebooks.

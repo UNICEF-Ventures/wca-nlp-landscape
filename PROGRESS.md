@@ -21,7 +21,7 @@ Mapping of available NLP resources (ASR, TTS, MT, LLM) and key actors working on
 - [x] HTML report generation with tabs
 - [x] Countries tab with LUDP integration
 - [x] GitHub Pages auto-deployment
-- [x] Favicon for generated HTML
+- [ ] Crisis index information for languages
 - [ ] Lanfrica scraping (evaluate gain vs HuggingFace)
 - [ ] MMS special check
 - [ ] Document generation (PDF factsheets)
@@ -54,7 +54,7 @@ Profiles of organizations, research groups, and startups working on African lang
 
 | Done | Target | Progress                 |
 |------|--------|--------------------------|
-| 10   | 20     | ██████████░░░░░░░░░░ 50% |
+| 15   | 20     | ███████████████░░░░░ 75% |
 
 **Completed actors:**
 1. Masakhane - Pan-African NLP research community
@@ -67,6 +67,11 @@ Profiles of organizations, research groups, and startups working on African lang
 8. GoAI - Burkina Faso, Mooré NLP (UNICEF partner)
 9. Farmerline / Darli AI - Ghana/multi-country, 20+ languages, agtech
 10. HCI Lab, University of Ghana - Ghana, 5000-hour speech corpus
+11. IMSP Benin - Benin, Fon NLP (FFSTC corpus, 61hrs)
+12. LAfricaMobile - Senegal, Wolof/Fulfulde/Hausa/Ewe ASR/TTS
+13. Baamtu - Senegal, Wolof (consulting, closed)
+14. GalsenAI - Senegal, Wolof NLP community
+15. Chad AI Network - Chad, Chadian Arabic NLP
 
 ---
 
@@ -136,6 +141,17 @@ Advisory support for actor selection, agenda input, and presentation of findings
 ---
 
 ## Recent Updates (January 2026)
+
+### 2026-01-23
+- Added 5 new actors (15 total, 75% of target)
+  - IMSP Benin: Fon language research, FFSTC corpus (61hrs), D. Fortuné Kponou
+  - LAfricaMobile: Senegal telecom, ASR/TTS for Wolof, Fulfulde, Hausa, Ewe
+  - Baamtu: Senegal consulting firm, Wolof chatbots (closed/commercial)
+  - GalsenAI: Senegal community, 18 models + 8 datasets for Wolof
+  - Chad AI Network: Chad community, Kalam-na project for 123 Chadian languages
+- Updated Masakhane with Bonaventure Dossou and FFR (Fon-French) project
+- Updated RobotsMali with Yacouba Diarra LinkedIn
+- Senegal now well-covered with 3 actors for Wolof
 
 ### 2026-01-22
 - Added HCI Lab, University of Ghana actor with comprehensive research

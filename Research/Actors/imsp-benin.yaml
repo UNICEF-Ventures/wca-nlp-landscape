@@ -1,0 +1,63 @@
+id: imsp-benin
+name: Institut de Mathématiques et de Sciences Physiques (IMSP)
+type: university
+website: https://imsp-benin.com/home/
+location: Dangbo, Benin
+
+description: >
+  Research institute affiliated with University of Abomey-Calavi, offering programs in
+  mathematics, physics, data science, and information technologies. Home to Fongbe
+  speech and NLP research led by PhD student D. Fortuné Kponou. The team has created
+  the largest speech translation corpus for Fongbe (61 hours) and developed ASR systems
+  for the language. Research funded by PASET-Rsif (Pan-African Science Fund).
+
+key_people:
+  - name: D. Fortuné Kponou
+    role: PhD Student, Lead Researcher
+    note: >
+      PhD candidate in NLP/AI at University of Abomey-Calavi. Creator of FFSTC corpus
+      and Fongbe ASR systems. PASET-Rsif fellowship recipient.
+      LinkedIn: https://www.linkedin.com/in/fortune-kponou/
+  - name: Eugène C. Ezin
+    role: Professor, Director of IFRI
+    note: >
+      Professor at University of Abomey-Calavi. Co-author on FFSTC papers.
+      LinkedIn: https://www.linkedin.com/in/eugene-c-ezin/
+
+countries:
+  - BJ  # Benin
+
+languages:
+  - fon  # Fongbe
+
+huggingface: https://huggingface.co/GbeBenin
+
+projects:
+  - name: FFSTC-2 Dataset
+    url: https://huggingface.co/datasets/GbeBenin/FFSTC-2
+    description: >
+      Extended Fongbe-French speech translation corpus with 61 hours of transcribed
+      audio (33,668 utterances). Used for training ASR and speech translation systems.
+    languages: [fon]
+
+  - name: FFVoice
+    url: https://ayihoun.com/
+    description: >
+      Community voice data collection platform for Fongbe language.
+    languages: [fon]
+
+publications:
+  - title: "FFSTC: Fongbe to French Speech Translation Corpus"
+    url: https://aclanthology.org/2024.lrec-main.638.pdf
+    venue: LREC 2024
+
+  - title: "FFSTC 2: Extending the Fongbe to French Speech Translation Corpus"
+    url: https://www.isca-archive.org/interspeech_2025/kponou25_interspeech.pdf
+    venue: Interspeech 2025
+
+funding: PASET-Rsif (Pan-African Science Fund)
+
+maturity: emerging
+engagement_status: none
+openness: open
+last_updated: 2026-01-23

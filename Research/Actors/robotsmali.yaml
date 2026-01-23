@@ -27,8 +27,10 @@ key_people:
     role: Director of Research
 
   - name: Yacouba Diarra
-    role: Lead researcher
-    note: First author on AfVoices and Kunkado dataset papers
+    role: Research Lead, ASR
+    note: >
+      First author on AfVoices and Kunkado dataset papers.
+      LinkedIn: https://www.linkedin.com/in/d1array/
 
 # Coverage
 countries:

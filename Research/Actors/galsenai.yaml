@@ -1,0 +1,46 @@
+id: galsenai
+name: GalsenAI
+type: research_community
+website: https://galsen.ai/
+location: Dakar, Senegal
+
+description: >
+  Community of young Senegalese AI/data science enthusiasts. Runs training,
+  meetups, hackathons, and collaborative projects. Strong focus on Wolof NLP
+  with 18 models and 8 datasets on HuggingFace covering TTS, ASR, MT, and LLMs.
+
+countries:
+  - SN  # Senegal
+
+languages:
+  - wol  # Wolof
+
+huggingface: https://huggingface.co/galsenai
+
+projects:
+  - name: Wolof TTS
+    url: https://huggingface.co/galsenai/xTTS-v2-wolof
+    description: Text-to-speech models for Wolof (xTTS, Parler-TTS).
+    languages: [wol]
+
+  - name: Wolof ASR
+    url: https://huggingface.co/galsenai/whisper-large-v3-wo
+    description: Whisper large-v3 fine-tuned for Wolof. 2B params.
+    languages: [wol]
+
+  - name: Wolof-French Translation
+    url: https://huggingface.co/galsenai/wolofToFrenchTranslator_nllb
+    description: NLLB-based translation. Dataset with 98K+ parallel sentences.
+    languages: [wol, fra]
+
+  - name: Wolof LLMs
+    url: https://huggingface.co/galsenai/llama-2-7B_wolof
+    description: Llama models fine-tuned for Wolof including QA assistant.
+    languages: [wol]
+
+maturity: emerging
+engagement_status: none
+openness: open
+last_updated: 2026-01-23
+
+notes: Stub entry - community-driven, very active on HuggingFace for Wolof.

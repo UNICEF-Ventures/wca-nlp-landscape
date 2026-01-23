@@ -1,0 +1,53 @@
+id: chadai-network
+name: Chad AI Network
+type: research_community
+website: https://chadainetwork.org/
+location: N'Djamena, Chad
+
+description: >
+  Community bringing together professionals, students, and enthusiasts to
+  establish Chad as an AI actor in Africa. Focus areas: agriculture, education,
+  health, linguistics, R&D. Building NLP resources for Chadian languages.
+
+key_people:
+  - name: Abdel-aziz Harane
+    role: Founder & General Coordinator
+    note: >
+      LinkedIn: https://www.linkedin.com/in/abdel-aziz-harane/
+      Website: https://a-harane.chadainetwork.org/
+
+countries:
+  - TD  # Chad
+
+languages:
+  - shu  # Chadian Arabic (primary focus)
+
+huggingface: https://huggingface.co/ChadAI-Network
+github: https://github.com/Chad-AI-Network
+
+projects:
+  - name: Kalam-na (NLP for Chadian Languages)
+    url: https://abdelazizharane.github.io/nlp-for-chadian-languages/
+    description: >
+      NLP initiative to document and digitize 123 Chadian languages. Targeting
+      10+ hours audio per language. Starting with Chadian Arabic, expanding to
+      Zaghawa, Tupuri, others. ASR, TTS, MT development.
+    languages: [shu]
+
+  - name: Chad Open Data
+    url: https://huggingface.co/datasets/ChadAI-Network/Chad-open-data
+    description: >
+      Centralized repository of open datasets from various Chadian sectors.
+    languages: []
+
+  - name: Corpus Chadian Languages
+    url: https://huggingface.co/datasets/ChadAI-Network/Corpus-Chadian-languages
+    description: Text/audio corpus for Chadian languages.
+    languages: [shu]
+
+projects_url: https://chadainetwork.org/projet/
+
+maturity: emerging
+engagement_status: none
+openness: open
+last_updated: 2026-01-23

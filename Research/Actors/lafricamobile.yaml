@@ -1,0 +1,79 @@
+id: lafricamobile
+name: LAfricaMobile
+type: startup
+website: https://lafricamobile.com/
+location: Senegal
+
+description: >
+  Communication platform serving 300+ companies across Africa. Provides messaging
+  (SMS, WhatsApp Business API, Voice), USSD, and AI-powered Text-to-Speech and
+  Speech-to-Text services in African languages. Data science team works on NLU/NLG,
+  speech synthesis, ASR, and LLM-based solutions for local languages.
+
+key_people:
+  - name: Abdou Aziz DIOP
+    role: Data Science Lead
+    note: >
+      ML/NLP research engineer. Focus on ASR, MT, and conversational AI for African
+      languages. Masakhane member. MSc Mathematics (cryptography).
+      LinkedIn: https://www.linkedin.com/in/abdouaziiz
+      Website: https://abdouaziz.github.io/
+  - name: Mansour SOW
+    role: Data Scientist
+    note: "LinkedIn: https://www.linkedin.com/in/mansour-sow-163091198/"
+
+countries:
+  - SN  # Senegal (HQ)
+
+languages:
+  - wol  # Wolof
+  - ful  # Fulfulde
+  - hau  # Hausa
+  - ewe  # Ewe
+
+huggingface: https://huggingface.co/LAfricaMobile
+
+projects:
+  - name: Wolof ASR Dataset
+    url: https://huggingface.co/datasets/abdouaziiz/wol-Latn-asr
+    description: Wolof speech recognition dataset. 765 downloads.
+    languages: [wol]
+
+  - name: Wolof ASR Models
+    url: https://huggingface.co/abdouaziiz/wav2vec2-xls-r-300m-wolof-lm
+    description: wav2vec2-based ASR for Wolof with language model.
+    languages: [wol]
+
+  - name: Wolof LLM (Llama)
+    url: https://huggingface.co/abdouaziiz/llama-7B-wolof_peft
+    description: Llama 7B fine-tuned for Wolof using PEFT.
+    languages: [wol]
+
+  - name: French-Wolof Speech Translation
+    url: https://huggingface.co/datasets/abdouaziiz/s2st_frenc_wolof
+    description: Speech-to-speech translation dataset French-Wolof.
+    languages: [wol, fra]
+
+  - name: Fulfulde ASR
+    url: https://huggingface.co/LAfricaMobile/Wav2vec2-afr-fula-kenLM
+    description: wav2vec2-based ASR for Fula with KenLM. 0.3B params.
+    languages: [ful]
+
+  - name: Hausa ASR
+    url: https://huggingface.co/LAfricaMobile/Wav2vec2-afr-Hausa-kenLM
+    description: wav2vec2-based ASR for Hausa with KenLM.
+    languages: [hau]
+
+  - name: Ewe ASR
+    url: https://huggingface.co/LAfricaMobile/Wav2Vec2-Ewe
+    description: wav2vec2-based ASR for Ewe. 0.3B params.
+    languages: [ewe]
+
+  - name: Fulfulde TTS
+    description: Text-to-speech synthesis for Fulfulde.
+    languages: [ful]
+
+maturity: established
+engagement_status: none
+openness: partial  # Commercial platform, some open research via Masakhane
+last_updated: 2026-01-23

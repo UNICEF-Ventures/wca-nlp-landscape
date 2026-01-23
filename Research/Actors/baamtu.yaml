@@ -1,0 +1,44 @@
+id: baamtu
+name: Baamtu
+type: startup
+website: https://baamtu.com/
+location: Senegal
+
+description: >
+  Digital transformation and AI consulting firm. Develops custom AI solutions
+  for clients including government and financial institutions. Has TTS and
+  chatbot capabilities in Wolof. Commercial/consulting model, not open research.
+
+key_people:
+  - name: Mouhamed Moustapha Diouf
+    role: General Manager, Data & AI Strategist
+    note: "LinkedIn: https://www.linkedin.com/in/mouhamed-moustapha-diouf-5018982/"
+  - name: Aïmérou Ndiaye
+    role: AI Research Scientist
+    note: "Focus on TTS & Deepfakes. LinkedIn: https://www.linkedin.com/in/aimerou-ndiaye-867708162/"
+
+countries:
+  - SN  # Senegal
+
+languages:
+  - wol  # Wolof
+
+contact:
+  twitter: https://twitter.com/baamtusarl
+
+projects:
+  - name: CARDIo4Dakar Wolof Chatbot
+    description: >
+      Text and voice chatbot in Wolof for Ministry of Health, for cardiovascular
+      disease awareness campaign.
+    languages: [wol]
+
+maturity: established
+engagement_status: none
+openness: closed  # Consulting firm, commercial work, no public models/datasets
+last_updated: 2026-01-23
+
+notes: >
+  Consulting firm model - builds custom AI solutions for clients. Not an open
+  research initiative like GalsenAI or Masakhane. Relevant for understanding
+  commercial Wolof NLP landscape but unlikely to share models publicly.

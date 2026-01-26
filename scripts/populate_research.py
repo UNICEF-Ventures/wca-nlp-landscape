@@ -25,9 +25,9 @@ SCRIPT_DIR = Path(__file__).parent
 PROJECT_DIR = SCRIPT_DIR.parent
 sys.path.insert(0, str(SCRIPT_DIR))
 
-from fetch_huggingface import fetch_models_for_language, fetch_datasets_for_language
-from fetch_wikipedia import fetch_language_info
-from fetch_common_voice import get_common_voice_stats
+from fetchers.fetch_huggingface import fetch_models_for_language, fetch_datasets_for_language
+from fetchers.fetch_wikipedia import fetch_language_info
+from fetchers.fetch_common_voice import get_common_voice_stats
 
 # Paths
 RESEARCH_DIR = PROJECT_DIR / "Research"

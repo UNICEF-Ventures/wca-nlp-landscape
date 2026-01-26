@@ -21,6 +21,7 @@ Mapping of available NLP resources (ASR, TTS, MT, LLM) and key actors working on
 - [x] HTML report generation with tabs
 - [x] Countries tab with LUDP integration
 - [x] GitHub Pages auto-deployment
+- [x] Search filtering on Focus Languages and Actors tabs
 - [ ] Crisis index information for languages
 - [ ] Lanfrica scraping? (evaluate gain vs HuggingFace)
 - [ ] MMS special check
@@ -159,6 +160,12 @@ Advisory support for actor selection, agenda input, and presentation of findings
 ---
 
 ## Recent Updates (January 2026)
+
+### 2026-01-26 (later)
+- Refactored `generate_html.py` (2,083 lines) into `scripts/htmlgen/` package (7 modules: constants, data, utils, styles, pages, tabs)
+- Moved `fetch_*.py` scripts into `scripts/fetchers/` package, updated imports in `populate_research.py`
+- Added text search to Focus Languages tab and Actors tab (search by name, ISO code, country, description, etc.)
+- Entry point (`scripts/generate_html.py`) unchanged — GitHub Actions deployment unaffected
 
 ### 2026-01-26
 - Added 8 new actors + UBC-NLP (24 total, 100% of target)

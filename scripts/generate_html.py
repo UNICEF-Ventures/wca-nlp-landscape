@@ -230,7 +230,7 @@ def main():
 
     # Generate actor detail pages
     for actor_key, actor_data in actors.items():
-        actor_html = generate_actor_detail_page(actor_key, actor_data)
+        actor_html = generate_actor_detail_page(actor_key, actor_data, languages)
         actor_id = actor_data.get('id', actor_key)
         actor_path = OUTPUT_DIR / "actor" / f"{actor_id}.html"
         with open(actor_path, 'w') as f:

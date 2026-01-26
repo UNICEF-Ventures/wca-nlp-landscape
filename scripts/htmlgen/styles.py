@@ -138,6 +138,28 @@ def get_css():
             font-size: 0.75rem;
         }
 
+        .lang-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+            margin-top: 0.4rem;
+        }
+
+        .lang-tag {
+            background: #e7f5ff;
+            color: #1971c2;
+            padding: 0.1rem 0.45rem;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        a.lang-tag:hover {
+            background: #d0ebff;
+            text-decoration: none;
+        }
+
         .altnames {
             font-size: 0.8rem;
             color: var(--text-muted);
@@ -412,11 +434,21 @@ def get_css():
         }
 
         .actor-maturity {
-            background: #d3f9d8;
-            color: #2f9e44;
             padding: 0.2rem 0.5rem;
             border-radius: 4px;
             font-size: 0.8rem;
+            background: #40c057;
+            color: white;
+        }
+
+        .actor-maturity.emerging {
+            background: #fff9db;
+            color: #e67700;
+        }
+
+        .actor-maturity.early {
+            background: #fff3bf;
+            color: #e67700;
         }
 
         footer {

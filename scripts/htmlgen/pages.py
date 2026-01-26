@@ -2,6 +2,8 @@
 
 from datetime import datetime
 
+from urllib.parse import quote_plus
+
 from .constants import WCA_COUNTRIES
 from .styles import get_css
 from .utils import (
@@ -50,22 +52,8 @@ def generate_language_detail_page(iso_code, lang_data, actors):
         else:
             glotto_html = glottocode
 
-    # Wikipedia section
-    wiki_section = ""
-    if wiki_url or wiki_family:
-        wiki_link = f'<a href="{wiki_url}" target="_blank">{name} on Wikipedia</a>' if wiki_url else '—'
-        wiki_section = f"""
-            <div class="detail-section">
-                <h2>📖 Wikipedia</h2>
-                <div class="info-grid">
-                    <div class="info-item"><label>Wikipedia</label><span class="value">{wiki_link}</span></div>
-                    <div class="info-item"><label>Language Family</label><span class="value">{wiki_family or '—'}</span></div>
-                    <div class="info-item"><label>L1 Speakers</label><span class="value">{wiki_speakers_l1 or '—'}</span></div>
-                    <div class="info-item"><label>L2 Speakers</label><span class="value">{wiki_speakers_l2 or '—'}</span></div>
-                    <div class="info-item" style="grid-column: 1 / -1;"><label>Writing System</label><span class="value">{wiki_writing or '—'}</span></div>
-                </div>
-            </div>
-        """
+    # Wikipedia link for General Information section
+    wiki_link = f'<a href="{wiki_url}" target="_blank">{name} on Wikipedia</a>' if wiki_url else ''
 
     # Tech resources
     tech_section = ""
@@ -142,6 +130,86 @@ def generate_language_detail_page(iso_code, lang_data, actors):
             </div>
         """
 
+    # LUDP Language Use embed (Tableau)
+    # Languages not available in LUDP
+    ludp_skip = {'fan', 'men', 'tem', 'twi', 'gaa'}
+    # Languages with different names in LUDP
+    ludp_name_map = {
+        'mos': 'Mossi',
+    }
+    if iso_code not in ludp_skip:
+        ludp_name = ludp_name_map.get(iso_code, name)
+        lang_name_encoded = ludp_name.replace(' ', '+')
+        ludp_share_code = '83X9CW8X6'
+        ludp_share_prefix = ludp_share_code[:2]
+        ludp_viz_id = f'viz_lang_{iso_code}'
+        ludp_section = f"""
+        <div class="detail-section">
+            <h2>🗺️ Language Use</h2>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+                Data from <a href="https://clearglobal.org/language-use-data-platform/" target="_blank">CLEAR Global's Language Use Data Platform</a>.
+            </p>
+            <div class='tableauPlaceholder' id='{ludp_viz_id}' style='position: relative'>
+                <noscript>
+                    <a href='https://clearglobal.org/'>
+                        <img alt='Language Dashboard' src='https://public.tableau.com/static/images/{ludp_share_prefix}/{ludp_share_code}/1_rss.png' style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='path' value='shared/{ludp_share_code}' />
+                    <param name='toolbar' value='no' />
+                    <param name='device' value='default' />
+                    <param name='static_image' value='https://public.tableau.com/static/images/{ludp_share_prefix}/{ludp_share_code}/1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='tabs' value='n' />
+                    <param name='filter' value='Language+Name={lang_name_encoded}' />
+                    <param name='filter' value='Select+View=Map' />
+                    <param name='filter' value='Location+Level+Parameter=2' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                (function() {{
+                    var divElement = document.getElementById('{ludp_viz_id}');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    if (divElement.offsetWidth > 800) {{
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                    }} else if (divElement.offsetWidth > 500) {{
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                    }} else {{
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = '2950px';
+                    }}
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                }})();
+            </script>
+        </div>
+    """
+    else:
+        ludp_section = f"""
+        <div class="detail-section">
+            <h2>🗺️ Language Use</h2>
+            <div style="padding: 2.5rem; text-align: center;">
+                <div style="font-size: 2rem; margin-bottom: 1rem; opacity: 0.3;">🗺️</div>
+                <p style="font-size: 1rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+                    Language use data not yet available for <strong>{name}</strong> in CLEAR Global's platform.
+                </p>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">
+                    See the sections below for other available data.
+                </p>
+            </div>
+        </div>
+    """
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -182,14 +250,19 @@ def generate_language_detail_page(iso_code, lang_data, actors):
                 <div class="info-item"><label>ISO 639-1</label><span class="value">{iso1 or '—'}</span></div>
                 <div class="info-item"><label>French Name</label><span class="value">{name_french or '—'}</span></div>
                 <div class="info-item"><label>Glottocode</label><span class="value">{glotto_html}</span></div>
+                <div class="info-item"><label>Language Family</label><span class="value">{wiki_family or '—'}</span></div>
+                <div class="info-item"><label>Writing System</label><span class="value">{wiki_writing or '—'}</span></div>
+                <div class="info-item"><label>L1 Speakers</label><span class="value">{wiki_speakers_l1 or '—'}</span></div>
+                <div class="info-item"><label>L2 Speakers</label><span class="value">{wiki_speakers_l2 or '—'}</span></div>
                 <div class="info-item"><label>Population</label><span class="value">{population or '—'} {f'({population_order})' if population_order else ''}</span></div>
                 <div class="info-item"><label>Endangerment</label><span class="value">{endangerment or '—'}</span></div>
                 <div class="info-item" style="grid-column: 1 / -1;"><label>Countries</label><span class="value">{', '.join(countries) if countries else '—'}</span></div>
                 {f'<div class="info-item" style="grid-column: 1 / -1;"><label>Also Known As</label><span class="value">{", ".join(altnames[:10])}</span></div>' if altnames else ''}
+                {f'<div class="info-item" style="grid-column: 1 / -1;"><label>Wikipedia</label><span class="value">{wiki_link}</span></div>' if wiki_link else ''}
             </div>
         </div>
 
-        {wiki_section}
+        {ludp_section}
         {tech_section}
         {cv_section}
         {actors_section}
@@ -232,7 +305,7 @@ def generate_language_detail_page(iso_code, lang_data, actors):
 """
 
 
-def generate_actor_detail_page(actor_key, actor_data):
+def generate_actor_detail_page(actor_key, actor_data, all_languages=None):
     """Generate a full detail page for an actor."""
     name = actor_data.get('name', actor_key)
     actor_id = actor_data.get('id', actor_key)
@@ -277,6 +350,26 @@ def generate_actor_detail_page(actor_key, actor_data):
     huggingface_html = format_huggingface_link(huggingface)
     actor_type_display = format_actor_type(actor_type)
 
+    # Build ISO-to-name mapping for project language tags
+    iso_to_name = {}
+    if all_languages:
+        for iso, ldata in all_languages.items():
+            linfo = ldata.get('info', {})
+            iso_to_name[iso] = linfo.get('name', iso)
+
+    # Build coverage language tags
+    if languages:
+        cov_tags = []
+        for lcode in languages:
+            lname = iso_to_name.get(str(lcode), str(lcode))
+            if str(lcode) in iso_to_name:
+                cov_tags.append(f'<a href="../lang/{lcode}.html" class="lang-tag">{lname}</a>')
+            else:
+                cov_tags.append(f'<span class="lang-tag">{lcode}</span>')
+        coverage_langs_html = f'<div class="lang-tags">{"".join(cov_tags)}</div>'
+    else:
+        coverage_langs_html = '—'
+
     # Projects section - handle both list of strings and list of dicts with URLs
     projects_url = actor_data.get('projects_url', '')
     projects_html = ""
@@ -288,10 +381,22 @@ def generate_actor_detail_page(actor_key, actor_data):
                     pname = p.get("name", "")
                     purl = p.get("url", "")
                     pdesc = p.get("description", "")
+                    plangs = p.get("languages", [])
+                    # Render language tags
+                    lang_tags = ""
+                    if plangs:
+                        tags = []
+                        for lcode in plangs:
+                            lname = iso_to_name.get(str(lcode), str(lcode))
+                            if str(lcode) in iso_to_name:
+                                tags.append(f'<a href="../lang/{lcode}.html" class="lang-tag">{lname}</a>')
+                            else:
+                                tags.append(f'<span class="lang-tag">{lcode}</span>')
+                        lang_tags = f'<div class="lang-tags">{"".join(tags)}</div>'
                     if purl:
-                        items.append(f'<li><strong><a href="{purl}" target="_blank">{pname}</a></strong>: {pdesc}</li>')
+                        items.append(f'<li><strong><a href="{purl}" target="_blank">{pname}</a></strong>: {pdesc}{lang_tags}</li>')
                     else:
-                        items.append(f'<li><strong>{pname}</strong>: {pdesc}</li>')
+                        items.append(f'<li><strong>{pname}</strong>: {pdesc}{lang_tags}</li>')
                 else:
                     items.append(f'<li>{p}</li>')
             more_link = f'<p style="margin-top: 1rem;"><a href="{projects_url}" target="_blank">View all projects →</a></p>' if projects_url else ''
@@ -378,7 +483,7 @@ def generate_actor_detail_page(actor_key, actor_data):
     status_colors = {
         'contacted': '#fab005',
         'in_discussion': '#15aabf',
-        'active_partner': '#40c057'
+        'active_partner': '#023e8a'
     }
     status_badge = ''
     if engagement_status and engagement_status != 'none':
@@ -420,7 +525,7 @@ def generate_actor_detail_page(actor_key, actor_data):
             <h1>{name}</h1>
             <div class="actor-meta" style="margin-top: 0.5rem;">
                 <span class="actor-type">{actor_type_display}</span>
-                {f'<span class="actor-maturity">{maturity}</span>' if maturity else ''}
+                {f'<span class="actor-maturity {maturity}">{maturity}</span>' if maturity else ''}
                 {status_badge}
             </div>
         </div>
@@ -445,7 +550,7 @@ def generate_actor_detail_page(actor_key, actor_data):
             <h2>Coverage</h2>
             <div class="info-grid">
                 <div class="info-item" style="grid-column: 1 / -1;"><label>Countries</label><span class="value">{', '.join(country_names) if country_names else '—'}</span></div>
-                <div class="info-item" style="grid-column: 1 / -1;"><label>Languages</label><span class="value">{', '.join(str(l) for l in languages) if languages else '—'}</span></div>
+                <div class="info-item" style="grid-column: 1 / -1;"><label>Languages</label><span class="value">{coverage_langs_html}</span></div>
             </div>
         </div>
 

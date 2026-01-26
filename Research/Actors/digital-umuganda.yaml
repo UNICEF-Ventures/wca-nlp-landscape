@@ -1,0 +1,134 @@
+id: digital-umuganda
+name: Digital Umuganda
+type: startup
+website: https://digitalumuganda.com
+location: Kigali, Rwanda
+
+# Organization details
+founded: 2020
+organization_size: small
+funding: >
+  European Commission Smart Development Hack prize (1M+ euros). Mozilla Foundation
+  support for Common Voice work. Gates Foundation (via African Next Voices project).
+description: >
+  Rwandan AI and open data company building voice infrastructure for African languages.
+  "Umuganda" is the Rwandan tradition of community service -- Digital Umuganda applies
+  this model to crowdsourced data collection for language technology. Africa's largest
+  contributor to Mozilla Common Voice with 2,200+ hours of Kinyarwanda speech data.
+
+  While based in Rwanda, their work extends to WCA languages: the AfriVoice dataset
+  includes Lingala (517hrs), Fulani/Fulfulde (527hrs), and Wolof (531hrs) alongside
+  Shona, Malagasy, and Somali. Their Open Data For All (OD4A) initiative has digitalized
+  17 languages across 14 countries with 4,500 audio hours recorded. Machine translation
+  project for Rwanda done in collaboration with CLEAR Global.
+
+# Key people
+key_people:
+  - name: Audace Niyonkuru
+    role: Founder & CEO
+  - name: Samuel Rutunda
+    role: Chief Technology Officer
+
+# Coverage
+countries:
+  - RW  # Rwanda
+languages:
+  - kin  # Kinyarwanda
+  - lin  # Lingala (AfriVoice)
+  - ful  # Fulani/Fulfulde (AfriVoice)
+  - wol  # Wolof (AfriVoice)
+
+# Links
+github: https://github.com/Digital-Umuganda
+huggingface: https://huggingface.co/DigitalUmuganda
+
+# Projects
+projects:
+  - name: AfriVoice Dataset
+    url: https://huggingface.co/datasets/DigitalUmuganda/AfriVoice
+    description: >
+      ~3,200 hours of audio across 6 African languages. Each datapoint contains
+      images, corresponding audio descriptions (WAV), and transcriptions. CC-BY-4.0.
+      WCA-relevant languages: Lingala (517hrs total, 101hrs transcribed), Fulani/Fulfulde
+      (527hrs total, 102hrs transcribed), Wolof (531hrs total, 103hrs transcribed).
+      Also covers Shona (574hrs), Malagasy (516hrs), Somali (536hrs).
+    languages: [lin, ful, wol]
+
+  - name: Open Data For All (OD4A)
+    url: https://digitalumuganda.com/projects/od4a
+    description: >
+      Large-scale data collection initiative building open datasets for African language
+      technology. Collects voice recordings, text samples, and translations to support
+      ASR, TTS, and MT. 17 languages digitalized, 552.8 million language speakers
+      represented, 14 countries involved, 4,500 audio hours recorded. Datasets
+      released open-source on HuggingFace.
+    languages: [kin, lin, ful, wol]
+
+  - name: Mozilla Common Voice - Kinyarwanda
+    url: https://commonvoice.mozilla.org/rw
+    description: >
+      Africa's largest Common Voice contribution. 2,200+ hours of validated Kinyarwanda
+      speech data crowdsourced using the "digital umuganda" community model.
+    languages: [kin]
+
+  - name: Mbaza Innovation Hub
+    url: https://digitalumuganda.com/projects
+    description: >
+      Innovation hub focused on real-world problem-solving. Co-creation with
+      governments, private sector, and NGOs to develop tailored AI solutions.
+    languages: []
+
+  - name: Machine Translation Rwanda
+    description: >
+      Machine translation project for Kinyarwanda done in collaboration with
+      CLEAR Global (Translators without Borders).
+    languages: [kin]
+
+  - name: AfriVoice / African Next Voices (ANV)
+    url: https://africanvoices.io/
+    description: >
+      Pan-African speech dataset initiative creating 9,000+ hours of speech across
+      18 languages. Partners: University of Pretoria, Maseno University, Data Science
+      Nigeria, RobotsMali, Masakhane, Lelapa AI, Lanfrica. Funded by $2.2M Gates
+      Foundation grant + Meta. Featured in Nature.
+    languages: [kin]
+
+projects_url: https://digitalumuganda.com/projects
+
+publications: []
+publications_url: null
+
+partnerships:
+  - CLEAR Global (Translators without Borders)
+  - Mozilla Foundation
+  - University of Pretoria (ANV project)
+  - Data Science Nigeria (ANV project)
+  - RobotsMali (ANV project)
+  - Masakhane
+  - Lelapa AI
+  - Lanfrica
+  - Meta
+  - NVIDIA
+
+# UNICEF relevance
+unicef_relevance: >
+  Past contact of CLEAR Global (MT Rwanda collaboration). AfriVoice dataset directly
+  covers WCA languages: Lingala (517hrs), Fulani/Fulfulde (527hrs), and Wolof (531hrs) --
+  all priority languages for UNICEF WCA. Their community-driven "digital umuganda" data
+  collection methodology is replicable for other WCA languages that lack speech data.
+  OD4A initiative spans 14 countries and 17 languages. ANV project partners include
+  WCA actors RobotsMali and Data Science Nigeria.
+
+maturity: established
+engagement_status: none
+openness: open  # CC-BY-4.0 datasets, Common Voice contributions
+last_updated: 2026-01-26
+
+notes: >
+  Rwanda-based (not WCA), but directly relevant due to: (1) AfriVoice dataset covering
+  Lingala, Fulfulde, and Wolof, (2) CLEAR Global collaboration on MT Rwanda, (3) ANV
+  project partnerships with WCA actors (RobotsMali, DSN), (4) replicable community
+  data collection model. Their 2,200hrs Kinyarwanda Common Voice contribution
+  demonstrates what's achievable with community mobilization. OD4A's scale (4,500hrs
+  across 17 languages, 14 countries) makes them one of the larger open data producers
+  for African languages.

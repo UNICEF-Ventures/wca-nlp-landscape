@@ -22,8 +22,8 @@ Mapping of available NLP resources (ASR, TTS, MT, LLM) and key actors working on
 - [x] Countries tab with LUDP integration
 - [x] GitHub Pages auto-deployment
 - [x] Search filtering on Focus Languages and Actors tabs
+- [x] LUDP panel for languages
 - [ ] Crisis index information for languages
-- [ ] Lanfrica scraping? (evaluate gain vs HuggingFace)
 - [ ] MMS special check
 - [ ] Compile an updated full list of important multilingual models
 - [ ] List important fine-tuned models (⭐️ highlighted models) for each language
@@ -57,7 +57,7 @@ Profiles of organizations, research groups, and startups working on African lang
 
 | Done | Target | Progress                 |
 |------|--------|--------------------------|
-| 24   | 24     | ████████████████████ 100% |
+| 26   | 24     | ████████████████████ 108% |
 
 **Completed actors:**
 1. Masakhane - Pan-African NLP research community
@@ -84,13 +84,14 @@ Profiles of organizations, research groups, and startups working on African lang
 22. Lanfrica - Pan-African, language resource discovery platform
 23. Intron Voice AI - Nigeria, Sahara ASR models, healthcare focus
 24. UBC Deep Learning & NLP Lab - Canada, SERENGETI/Toucan/AfroLID (517 African languages)
+25. Digital Umuganda - Rwanda, AfriVoice dataset (Lingala/Fulfulde/Wolof), 2200hrs Kinyarwanda Common Voice (CLEAR Global contact)
+26. CLEAR Global - Global, TWB Voice (Hausa/Kanuri/Shuwa Arabic), Gamayun, LT4CR, 55 HF models (conducting this consultancy)
 
 Languages missing dedicated actors
 Sierra Leone: Krio, Mende, Temne - no dedicated actors
-DRC/Congo: Lingala, Congo Swahili - no dedicated actors
+DRC/Congo: Lingala, Congo Swahili - no dedicated actors (partially covered by CLEAR Global LT4CR + Gamayun)
 CAR: Sango - no dedicated actors
 Gabon/Equatorial Guinea: Fang - no dedicated actors
-Kanuri (Chad/Nigeria/Niger) - no dedicated actors
 
 ---
 
@@ -160,6 +161,12 @@ Advisory support for actor selection, agenda input, and presentation of findings
 ---
 
 ## Recent Updates (January 2026)
+
+### 2026-01-26 (evening)
+- Added Digital Umuganda: Rwanda, AfriVoice dataset (Lingala 517hrs, Fulfulde 527hrs, Wolof 531hrs), OD4A (17 languages, 4500hrs), 2200hrs Kinyarwanda Common Voice, MT Rwanda with CLEAR Global
+- Added CLEAR Global: TWB Voice (Hausa/Kanuri/Shuwa Arabic), Gamayun, LT4CR, SynVoices, OpenSLR/Coqui TTS (Hausa/Yoruba/Ewe/Lingala/Twi), NLU chatbot data, 55 models + 14 datasets on HuggingFace
+- Kanuri now covered by CLEAR Global TWB Voice; Lingala/Congo Swahili partially covered by CLEAR Global LT4CR + Gamayun
+- Actor count: 26/24 (108%)
 
 ### 2026-01-26 (later)
 - Refactored `generate_html.py` (2,083 lines) into `scripts/htmlgen/` package (7 modules: constants, data, utils, styles, pages, tabs)

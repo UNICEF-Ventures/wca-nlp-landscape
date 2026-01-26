@@ -1,0 +1,224 @@
+id: clear-global
+name: CLEAR Global
+type: ngo
+website: https://clearglobal.org/
+location: New York, USA (global operations)
+
+# Organization details
+founded: 2010  # As Translators without Borders; rebranded to CLEAR Global
+organization_size: large
+funding: >
+  Institutional donors, foundations, and contracts. Partners include Australian
+  Government DFAT, UNICEF, UNHCR, and others.
+description: >
+  CLEAR Global's mission is to help people get information and be heard, whatever
+  language they speak. Evolved from Translators without Borders (TWB), which continues
+  to exist as a community of over 100,000 volunteer linguists worldwide. CLEAR Global
+  taps into this vast community for its language technology projects, combining
+  human linguistic expertise with AI to build speech and translation tools for
+  underserved languages.
+
+  Develops open-source ASR, TTS, and MT models for crisis-affected and low-resource
+  languages. Flagship initiative TWB Voice is a voice data collection platform
+  integrated with the TWB linguist community, enabling scalable speech data collection.
+  Pilot phase collected 125+ hours of speech in Hausa, Kanuri, and Shuwa Arabic --
+  producing the first openly available voice datasets for Kanuri and Shuwa Arabic,
+  and the first humanitarian-domain speech data for all three. Also works on Lingala
+  and Congolese Swahili through the LT4CR and SynVoices projects.
+
+# Key people
+key_people:
+  - name: Aimee Ansari
+    role: CEO
+  - name: Alyssa Boulares
+    role: Head of International Programs
+  - name: Milena Haykowska
+    role: Human-centered design expert
+  - name: Alp Öktem
+    role: Computational linguist
+  - name: Christian Resch
+    role: Expert in language AI
+  - name: Andrew Bredenkamp
+    role: Chairman of the Board
+
+# Coverage
+countries:  # (in WCA)
+  - NG  # Nigeria (TWB Voice: Hausa, Kanuri, Shuwa Arabic)
+  - CD  # DRC (Lingala, Congolese Swahili)
+  - RW  # Rwanda (MT Rwanda)
+languages:  # (in WCA)
+  - hau  # Hausa (TWB Voice, Gamayun)
+  - kau  # Kanuri (TWB Voice, Gamayun parallel corpus)
+  - shu  # Shuwa Arabic (TWB Voice)
+  - lin  # Lingala (LT4CR, Gamayun)
+  - swc  # Congolese Swahili (LT4CR, Gamayun MT + ASR)
+
+# Links
+github: https://github.com/translatorswb
+huggingface: https://huggingface.co/CLEAR-Global
+contact:
+  email: info@clearglobal.org
+
+# Projects
+projects:
+  - name: TWB Voice
+    url: https://huggingface.co/collections/CLEAR-Global/twb-voice-10-67f10d20db63e0c7422aedf1
+    description: >
+      Voice data collection platform integrated with the Translators without Borders
+      community of 100,000+ linguists. Supports ASR and TTS data workflows. Pilot
+      phase (2024-2025) collected speech in three northeast Nigerian languages:
+      Hausa (~58hrs ASR, ~10hrs TTS, 144 contributors), Kanuri (~52hrs ASR, ~10hrs TTS,
+      52 contributors), Shuwa Arabic (~15hrs ASR, 22 contributors). Fine-tuned
+      Whisper and Wav2Vec 2.0 models achieving 2.23% WER for Hausa and 10.16% WER
+      for Kanuri. First openly available voice datasets for Kanuri and Shuwa Arabic.
+      All data and models published under open licenses on HuggingFace.
+    languages: [hau, kau, shu]
+
+  - name: TWB Voice Playbook
+    url: https://twbvoiceplaybook.clearglobal.org/
+    description: >
+      Practical guide covering project setup to dataset publishing for voice data
+      collection in low-resource languages. Relevant to any organization building
+      speech technology.
+    languages: []
+
+  - name: Machine Translation Rwanda
+    url: https://huggingface.co/mbazaNLP
+    description: >
+      Machine translation project for Kinyarwanda in collaboration with Digital
+      Umuganda.
+    languages: [kin]
+
+  - name: LT4CR (Language Technology for Crisis Response)
+    description: >
+      Collecting 50 hours of crisis-domain speech in 10 underresourced languages:
+      Kanuri, Lingala, Haitian Creole, Maay Somali, Maxaa Somali, Congolese Swahili,
+      Sudanese Arabic, Rohingya, Dari, Seraiki. Collaboration with George Mason
+      University and Washington University.
+    languages: [kau, lin, swc]
+
+  - name: MarmaSpeak TTS
+    url: https://translatorswb.github.io/marma-prototype-tts
+    description: >
+      TTS-powered mother tongue education technology for the Marma community in
+      Bangladesh's Chittagong Hill Tracts (300,000 speakers). Built on Meta's MMS
+      model with 5,000+ Marma sentences collected from native speakers. 74% overall
+      approval on pronunciation, clarity, and naturalness. Supports teachers with
+      pronunciation practice and helps students with reading comprehension. Funded
+      by Australian Government DFAT.
+    languages: [rmz]
+
+  - name: SynVoices
+    url: https://arxiv.org/abs/2507.17578
+    description: >
+      Creating synthetic speech data and benchmarks for AI in cooperation with
+      XRI Global, Dimagi, and University of British Columbia. Synthetic ASR datasets
+      published on HuggingFace for Hausa, Luo, and Chichewa.
+    languages: [hau]
+
+  - name: Gamayun
+    url: https://gamayun.translatorswb.org/
+    description: >
+      CLEAR Global's initial language technology initiative (2019-2022) that marked
+      TWB's expansion into building NLP tools. Produced MT models, ASR models, and
+      parallel corpora for crisis-affected languages including Congolese Swahili,
+      Hausa, Lingala, and Kanuri. Resources remain available on the Gamayun data portal.
+    languages: [swc, hau, lin, kau]
+
+  - name: TICO-19 (Translation Initiative for COVID-19)
+    url: https://tico-19.github.io/
+    description: >
+      Multilingual translation benchmark and terminology for COVID-19 response.
+      Published at NLP COVID-19 Workshop at EMNLP 2020.
+    languages: [swc, hau]
+
+  - name: BibleTTS (Masakhane & Coqui)
+    url: https://www.openslr.org/129/
+    description: >
+      Speech data collection and TTS model training for 6 African languages (2022).
+      Produced speech datasets published on OpenSLR and TTS models released via Coqui TTS.
+      Languages: Hausa, Yoruba, Ewe, Lingala, Akuapem Twi, Asante Twi. All published
+      under open licenses.
+    languages: [hau, yor, ewe, lin, twi]
+
+  - name: Lacuna PII Multilingual Text Dataset
+    url: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/CGHWZE
+    description: >
+      Structured text dataset for personally identifiable information (PII) detection
+      across multiple languages including Hausa. Published on Harvard Dataverse (2024).
+    languages: [hau, kau]
+
+  - name: Speech Resource Finder
+    url: https://huggingface.co/spaces/CLEAR-Global/speech-resource-finder
+    description: >
+      Interactive tool to discover ASR and TTS support and resources for any language.
+    languages: []
+
+  - name: Shehu and Uji
+    description: >
+       are COVID-19 chatbots built by CLEAR Global for Nigeria (Hausa, Kanuri) and DR Congo (Congolese Swahili, Lingala) respectively, enabling health information access in local languages during the pandemic. 
+    languages: [swc, lin, hau, kau]
+
+projects_url: https://gamayun.translatorswb.org/
+
+# Publications
+publications:
+  - title: "SynVoices: Synthetic Voices for Low-Resource Language ASR"
+    url: https://arxiv.org/abs/2507.17578
+    venue: arXiv 2025
+
+  - title: "Congolese Swahili Machine Translation for Humanitarian Response"
+    url: https://gamayun.translatorswb.org/congolese-swahili-mt/
+    venue: AfricaNLP @ EACL 2021
+
+  - title: "TICO-19: The Translation Initiative for COvid-19"
+    url: https://gamayun.translatorswb.org/tico-19/
+    venue: NLP COVID-19 Workshop @ EMNLP 2020
+
+  - title: "Participatory Research for Low-resourced Machine Translation: A Case Study in African Languages"
+    url: https://gamayun.translatorswb.org/masakhane-emnlp/
+    venue: Findings of EMNLP 2020
+
+  - title: "Gamayun: Language Technology for Humanitarian Response"
+    url: https://gamayun.translatorswb.org/gamayun-ghtc/
+    venue: IEEE Global Humanitarian Technology Conference (GHTC) 2020
+
+  - title: "Tigrinya Neural Machine Translation with Transfer Learning for Humanitarian Response"
+    url: https://gamayun.translatorswb.org/tigrinya-africa-nlp/
+    venue: AfricaNLP @ ICLR 2020
+
+publications_url: https://gamayun.translatorswb.org/category/publications/
+
+partnerships:
+  - UNICEF
+  - Digital Umuganda
+  - Masakhane
+  - Bill & Melinda Gates Foundation (BMGF)
+  - Cisco
+  - Kobo Toolbox
+  - George Mason University (LT4CR)
+  - Washington University (LT4CR)
+  - XRI Global (SynVoices)
+  - Dimagi (SynVoices)
+  - University of British Columbia (SynVoices)
+  - Australian Government DFAT (Marma)
+
+# UNICEF relevance
+unicef_relevance: >
+  CLEAR Global is conducting this UNICEF WCARO NLP landscape mapping consultancy.
+  TWB Voice directly addresses WCA language gaps -- producing the first open speech
+  datasets for Kanuri and Shuwa Arabic, both WCA crisis languages. LT4CR covers
+  Lingala and Congolese Swahili (DRC priority). The TWB community of 100,000+
+  linguists is an unmatched resource for language data collection. TWB Voice Playbook
+  provides a replicable methodology for UNICEF country offices. Already a UNICEF
+  partner.
+
+maturity: established
+engagement_status: active_partner
+openness: open  # Open licenses on HuggingFace, open playbook, open corpora
+last_updated: 2026-01-26
+
+notes: >
+  Shehu and Uji are COVID-19 chatbots built by CLEAR Global for Nigeria (Hausa, Kanuri)
+  and DR Congo (Congolese Swahili, Lingala) respectively, enabling health information
+  access in local languages during the pandemic.

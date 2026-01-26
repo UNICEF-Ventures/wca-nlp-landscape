@@ -585,7 +585,7 @@ def generate_actors_tab(actors):
         status_colors = {
             'contacted': '#fab005',
             'in_discussion': '#15aabf',
-            'active_partner': '#40c057'
+            'active_partner': '#023e8a'
         }
         status_badge = ''
         if engagement_status and engagement_status != 'none':
@@ -609,7 +609,7 @@ def generate_actors_tab(actors):
                 <h3><a href="{detail_url}">{name}</a></h3>
                 <div class="actor-meta">
                     <span class="actor-type">{actor_type_display}</span>
-                    {f'<span class="actor-maturity">{maturity}</span>' if maturity else ''}
+                    {f'<span class="actor-maturity {maturity}">{maturity}</span>' if maturity else ''}
                     {status_badge}
                 </div>
                 {f'<div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">{location} · Est. {founded}</div>' if location or founded else ''}

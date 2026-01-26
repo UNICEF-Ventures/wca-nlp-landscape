@@ -47,3 +47,6 @@ tech_resources:
   Fineweb2: 💬
   CMU Wilderness: true
   MAFAND: true
+  MMS-ASR: true
+  MMS-TTS: true
+  MMS-LID: true

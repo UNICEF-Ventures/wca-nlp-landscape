@@ -2,111 +2,111 @@ asr:
   items:
   - name: google/fleurs
     url: https://huggingface.co/datasets/google/fleurs
-    downloads: 28600
-    likes: 365
+    downloads: 25000
+    likes: 368
   - name: sarulab-speech/yodas2_sidon
     url: https://huggingface.co/datasets/sarulab-speech/yodas2_sidon
-    downloads: 23200
+    downloads: 22900
     likes: 55
   - name: google/xtreme_s
     url: https://huggingface.co/datasets/google/xtreme_s
-    downloads: 8830
+    downloads: 7830
     likes: 66
   - name: suryatmodulus/yodas2_sidon
     url: https://huggingface.co/datasets/suryatmodulus/yodas2_sidon
-    downloads: 3780
+    downloads: 3880
+    likes: 0
+  - name: vonewman/wolof-audio-data
+    url: https://huggingface.co/datasets/vonewman/wolof-audio-data
+    downloads: 487
     likes: 0
   - name: facebook/2M-Belebele
     url: https://huggingface.co/datasets/facebook/2M-Belebele
-    downloads: 763
+    downloads: 319
     likes: 12
-  - name: vonewman/wolof-audio-data
-    url: https://huggingface.co/datasets/vonewman/wolof-audio-data
-    downloads: 504
+  - name: galsenai/wolof-audio-data
+    url: https://huggingface.co/datasets/galsenai/wolof-audio-data
+    downloads: 269
     likes: 0
   - name: YuRiVeRTi/V1Q
     url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 309
+    downloads: 269
     likes: 3
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 299
+    downloads: 234
     likes: 11
-  - name: galsenai/wolof-audio-data
-    url: https://huggingface.co/datasets/galsenai/wolof-audio-data
-    downloads: 276
-    likes: 0
   - name: cahya/fleurs
     url: https://huggingface.co/datasets/cahya/fleurs
-    downloads: 219
+    downloads: 199
     likes: 1
-  - name: WueNLP/belebele-fleurs
-    url: https://huggingface.co/datasets/WueNLP/belebele-fleurs
-    downloads: 149
-    likes: 9
-  - name: OlameMend/soreva
-    url: https://huggingface.co/datasets/OlameMend/soreva
-    downloads: 107
-    likes: 6
   - name: ankur02/bhojpuri
     url: https://huggingface.co/datasets/ankur02/bhojpuri
-    downloads: 88
+    downloads: 86
     likes: 0
   - name: M9and2M/Wolof_ASR_dataset
     url: https://huggingface.co/datasets/M9and2M/Wolof_ASR_dataset
-    downloads: 87
+    downloads: 80
     likes: 1
-  - name: ankur02/fleurs
-    url: https://huggingface.co/datasets/ankur02/fleurs
-    downloads: 51
-    likes: 0
+  - name: WueNLP/belebele-fleurs
+    url: https://huggingface.co/datasets/WueNLP/belebele-fleurs
+    downloads: 73
+    likes: 9
   - name: Isma/alffa_wolof
     url: https://huggingface.co/datasets/Isma/alffa_wolof
-    downloads: 49
+    downloads: 51
     likes: 4
+  - name: ankur02/fleurs
+    url: https://huggingface.co/datasets/ankur02/fleurs
+    downloads: 48
+    likes: 0
   - name: developeranalyser/new_train_data
     url: https://huggingface.co/datasets/developeranalyser/new_train_data
-    downloads: 41
+    downloads: 39
     likes: 2
-  - name: french-datasets/espnet_yodas2
-    url: https://huggingface.co/datasets/french-datasets/espnet_yodas2
-    downloads: 26
-    likes: 0
   - name: karim155/WolBanking77
     url: https://huggingface.co/datasets/karim155/WolBanking77
-    downloads: 23
+    downloads: 25
     likes: 1
   - name: Helloworld668/fleurs_clean
     url: https://huggingface.co/datasets/Helloworld668/fleurs_clean
-    downloads: 23
+    downloads: 25
     likes: 1
+  - name: french-datasets/espnet_yodas2
+    url: https://huggingface.co/datasets/french-datasets/espnet_yodas2
+    downloads: 23
+    likes: 0
   - name: french-datasets/espnet_yodas
     url: https://huggingface.co/datasets/french-datasets/espnet_yodas
     downloads: 21
     likes: 0
+  - name: OlameMend/soreva
+    url: https://huggingface.co/datasets/OlameMend/soreva
+    downloads: 20
+    likes: 6
   - name: french-datasets/espnet_ml_superb_hf
     url: https://huggingface.co/datasets/french-datasets/espnet_ml_superb_hf
-    downloads: 15
+    downloads: 13
     likes: 0
   - name: tunngo/test_4
     url: https://huggingface.co/datasets/tunngo/test_4
-    downloads: 13
+    downloads: 7
+    likes: 0
+  - name: satwikguptha/xtreme_s
+    url: https://huggingface.co/datasets/satwikguptha/xtreme_s
+    downloads: 7
     likes: 0
   - name: asr-africa/ASR_Evaluation_dataset
     url: https://huggingface.co/datasets/asr-africa/ASR_Evaluation_dataset
-    downloads: 1
+    downloads: 2
     likes: 0
   - name: FrancophonIA/17-minute-world-languages_wolof
     url: https://huggingface.co/datasets/FrancophonIA/17-minute-world-languages_wolof
-    downloads: 1
+    downloads: 2
     likes: 0
-  - name: crystalai/autotrain-data-crystal_alchemist-vision
-    url: https://huggingface.co/datasets/crystalai/autotrain-data-crystal_alchemist-vision
-    downloads: 0
-    likes: 1
   - name: Husary/wolo
     url: https://huggingface.co/datasets/Husary/wolo
-    downloads: 0
+    downloads: 1
     likes: 0
   total_count: 27
   counts_by_code: {}
@@ -114,39 +114,35 @@ tts:
   items:
   - name: sarulab-speech/yodas2_sidon
     url: https://huggingface.co/datasets/sarulab-speech/yodas2_sidon
-    downloads: 23200
+    downloads: 22900
     likes: 55
   - name: suryatmodulus/yodas2_sidon
     url: https://huggingface.co/datasets/suryatmodulus/yodas2_sidon
-    downloads: 3780
+    downloads: 3880
     likes: 0
-  - name: YuRiVeRTi/V1Q
-    url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 309
-    likes: 3
   - name: galsenai/anta_women_tts
     url: https://huggingface.co/datasets/galsenai/anta_women_tts
-    downloads: 300
+    downloads: 288
     likes: 8
+  - name: YuRiVeRTi/V1Q
+    url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
+    downloads: 269
+    likes: 3
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 299
+    downloads: 234
     likes: 11
   - name: galsenai/wolof_tts
     url: https://huggingface.co/datasets/galsenai/wolof_tts
-    downloads: 283
+    downloads: 218
     likes: 9
   - name: WueNLP/belebele-fleurs
     url: https://huggingface.co/datasets/WueNLP/belebele-fleurs
-    downloads: 149
+    downloads: 73
     likes: 9
   - name: OlameMend/soreva
     url: https://huggingface.co/datasets/OlameMend/soreva
-    downloads: 107
+    downloads: 20
     likes: 6
-  - name: crystalai/autotrain-data-crystal_alchemist-vision
-    url: https://huggingface.co/datasets/crystalai/autotrain-data-crystal_alchemist-vision
-    downloads: 0
-    likes: 1
-  total_count: 9
+  total_count: 8
   counts_by_code: {}

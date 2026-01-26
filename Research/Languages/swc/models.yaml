@@ -1,78 +1,12 @@
 asr:
-  items:
-  - name: espnet/xeus
-    url: https://huggingface.co/espnet/xeus
-    downloads: 46
-    likes: 143
-  total_count: 1
-  counts_by_code:
-    swc: 1
+  total_count: 0
+  counts_by_code: {}
 tts:
   total_count: 0
   counts_by_code: {}
 translation:
-  items:
-  - name: Helsinki-NLP/opus-mt-swc-en
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-swc-en
-    downloads: 95
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-en-swc
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-en-swc
-    downloads: 68
-    likes: 0
-  - name: vonjack/opus-mt-mul-en-big
-    url: https://huggingface.co/vonjack/opus-mt-mul-en-big
-    downloads: 20
-    likes: 3
-  - name: Helsinki-NLP/opus-mt-swc-es
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-swc-es
-    downloads: 11
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-sv-swc
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-sv-swc
-    downloads: 9
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-fi-swc
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-fi-swc
-    downloads: 6
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-fr-swc
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-fr-swc
-    downloads: 6
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-es-swc
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-es-swc
-    downloads: 5
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-swc-fr
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-swc-fr
-    downloads: 4
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-swc-sv
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-swc-sv
-    downloads: 3
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-swc-fi
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-swc-fi
-    downloads: 1
-    likes: 0
-  total_count: 11
-  counts_by_code:
-    swc: 11
+  total_count: 0
+  counts_by_code: {}
 llm:
-  items:
-  - name: UBC-NLP/toucan-base
-    url: https://huggingface.co/UBC-NLP/toucan-base
-    downloads: 37
-    likes: 2
-  - name: UBC-NLP/toucan-1.2B
-    url: https://huggingface.co/UBC-NLP/toucan-1.2B
-    downloads: 2
-    likes: 1
-  - name: UBC-NLP/cheetah-1.2B
-    url: https://huggingface.co/UBC-NLP/cheetah-1.2B
-    downloads: 0
-    likes: 4
-  total_count: 3
-  counts_by_code:
-    swc: 3
+  total_count: 0
+  counts_by_code: {}

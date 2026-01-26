@@ -499,4 +499,16 @@ def get_css():
             padding: 1rem;
             border: 1px solid var(--border);
         }
+
+        /* Benchmark tables */
+        .benchmark-table { margin-bottom: 1.5rem; }
+        .benchmark-table th.num { text-align: right; }
+
+        .detail-section h3 {
+            font-size: 1.05rem;
+            color: var(--text);
+            margin: 1.25rem 0 0.5rem 0;
+        }
+
+        .detail-section h3:first-child { margin-top: 0; }
     """

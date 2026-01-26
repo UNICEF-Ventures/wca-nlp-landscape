@@ -2,67 +2,67 @@ asr:
   items:
   - name: sarulab-speech/yodas2_sidon
     url: https://huggingface.co/datasets/sarulab-speech/yodas2_sidon
-    downloads: 23200
+    downloads: 22900
     likes: 55
   - name: suryatmodulus/yodas2_sidon
     url: https://huggingface.co/datasets/suryatmodulus/yodas2_sidon
-    downloads: 3780
+    downloads: 3880
     likes: 0
+  - name: RobotsMali/bam-asr-early
+    url: https://huggingface.co/datasets/RobotsMali/bam-asr-early
+    downloads: 1490
+    likes: 6
   - name: RobotsMali/kunkado
     url: https://huggingface.co/datasets/RobotsMali/kunkado
-    downloads: 783
-    likes: 4
-  - name: RobotsMali/jeli-asr
-    url: https://huggingface.co/datasets/RobotsMali/jeli-asr
-    downloads: 636
+    downloads: 837
     likes: 4
   - name: YuRiVeRTi/V1Q
     url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 309
+    downloads: 269
     likes: 3
+  - name: OumarDicko/Bambara_AudioSynthetique_42K_V3
+    url: https://huggingface.co/datasets/OumarDicko/Bambara_AudioSynthetique_42K_V3
+    downloads: 242
+    likes: 2
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 299
+    downloads: 234
     likes: 11
   - name: RobotsMali/afvoices
     url: https://huggingface.co/datasets/RobotsMali/afvoices
-    downloads: 238
+    downloads: 212
     likes: 5
-  - name: RobotsMali/bam-asr-early
-    url: https://huggingface.co/datasets/RobotsMali/bam-asr-early
-    downloads: 234
-    likes: 6
   - name: uvci/koumankan4dyula
     url: https://huggingface.co/datasets/uvci/koumankan4dyula
-    downloads: 195
+    downloads: 208
     likes: 5
-  - name: WueNLP/belebele-fleurs
-    url: https://huggingface.co/datasets/WueNLP/belebele-fleurs
+  - name: RobotsMali/jeli-asr
+    url: https://huggingface.co/datasets/RobotsMali/jeli-asr
     downloads: 149
-    likes: 9
-  - name: OumarDicko/Bambara_AudioSynthetique_42K_V3
-    url: https://huggingface.co/datasets/OumarDicko/Bambara_AudioSynthetique_42K_V3
-    downloads: 85
-    likes: 1
+    likes: 4
   - name: binaryMao/Kunkado_Maya_V2
     url: https://huggingface.co/datasets/binaryMao/Kunkado_Maya_V2
-    downloads: 60
+    downloads: 109
     likes: 0
+  - name: WueNLP/belebele-fleurs
+    url: https://huggingface.co/datasets/WueNLP/belebele-fleurs
+    downloads: 73
+    likes: 9
   - name: RobotsMali/Bam_ASR_Eval_500
     url: https://huggingface.co/datasets/RobotsMali/Bam_ASR_Eval_500
-    downloads: 40
+    downloads: 37
     likes: 1
   - name: RobotsMali/transcription-scorer
     url: https://huggingface.co/datasets/RobotsMali/transcription-scorer
-    downloads: 30
+    downloads: 25
     likes: 1
   - name: sil-ai/bloom-speech
     url: https://huggingface.co/datasets/sil-ai/bloom-speech
-    downloads: 28
+    downloads: 24
     likes: 25
   - name: french-datasets/espnet_yodas2
     url: https://huggingface.co/datasets/french-datasets/espnet_yodas2
-    downloads: 26
+    downloads: 23
     likes: 0
   - name: french-datasets/espnet_yodas
     url: https://huggingface.co/datasets/french-datasets/espnet_yodas
@@ -70,95 +70,87 @@ asr:
     likes: 0
   - name: Menoviar28/menov31
     url: https://huggingface.co/datasets/Menoviar28/menov31
-    downloads: 17
+    downloads: 19
     likes: 0
   - name: RobotsMali/nyana-eval
     url: https://huggingface.co/datasets/RobotsMali/nyana-eval
-    downloads: 6
+    downloads: 13
     likes: 1
-  - name: Washedashore/thepower
-    url: https://huggingface.co/datasets/Washedashore/thepower
-    downloads: 4
-    likes: 2
   - name: dijihax/Dataset
     url: https://huggingface.co/datasets/dijihax/Dataset
-    downloads: 4
+    downloads: 11
+    likes: 2
+  - name: Washedashore/thepower
+    url: https://huggingface.co/datasets/Washedashore/thepower
+    downloads: 6
     likes: 2
   - name: lenoxaugo254/LenoxAI
     url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
-    downloads: 1
-    likes: 1
-  - name: crystalai/autotrain-data-crystal_alchemist-vision
-    url: https://huggingface.co/datasets/crystalai/autotrain-data-crystal_alchemist-vision
-    downloads: 0
+    downloads: 5
     likes: 1
   - name: djelia/bambara-audio
     url: https://huggingface.co/datasets/djelia/bambara-audio
-    downloads: 0
+    downloads: 1
     likes: 1
-  total_count: 24
+  total_count: 23
   counts_by_code: {}
 tts:
   items:
   - name: sarulab-speech/yodas2_sidon
     url: https://huggingface.co/datasets/sarulab-speech/yodas2_sidon
-    downloads: 23200
+    downloads: 22900
     likes: 55
   - name: suryatmodulus/yodas2_sidon
     url: https://huggingface.co/datasets/suryatmodulus/yodas2_sidon
-    downloads: 3780
+    downloads: 3880
     likes: 0
-  - name: RobotsMali/jeli-asr
-    url: https://huggingface.co/datasets/RobotsMali/jeli-asr
-    downloads: 636
-    likes: 4
+  - name: RobotsMali/bam-asr-early
+    url: https://huggingface.co/datasets/RobotsMali/bam-asr-early
+    downloads: 1490
+    likes: 6
   - name: YuRiVeRTi/V1Q
     url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 309
+    downloads: 269
     likes: 3
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 299
-    likes: 11
-  - name: RobotsMali/bam-asr-early
-    url: https://huggingface.co/datasets/RobotsMali/bam-asr-early
     downloads: 234
-    likes: 6
-  - name: WueNLP/belebele-fleurs
-    url: https://huggingface.co/datasets/WueNLP/belebele-fleurs
+    likes: 11
+  - name: RobotsMali/jeli-asr
+    url: https://huggingface.co/datasets/RobotsMali/jeli-asr
     downloads: 149
-    likes: 9
+    likes: 4
   - name: binaryMao/Kunkado_Maya_V2
     url: https://huggingface.co/datasets/binaryMao/Kunkado_Maya_V2
-    downloads: 60
+    downloads: 109
     likes: 0
-  - name: oza75/bambara-tts
-    url: https://huggingface.co/datasets/oza75/bambara-tts
-    downloads: 33
-    likes: 5
+  - name: WueNLP/belebele-fleurs
+    url: https://huggingface.co/datasets/WueNLP/belebele-fleurs
+    downloads: 73
+    likes: 9
   - name: sil-ai/bloom-speech
     url: https://huggingface.co/datasets/sil-ai/bloom-speech
-    downloads: 28
+    downloads: 24
     likes: 25
   - name: Menoviar28/menov31
     url: https://huggingface.co/datasets/Menoviar28/menov31
-    downloads: 17
+    downloads: 19
     likes: 0
   - name: dijihax/Dataset
     url: https://huggingface.co/datasets/dijihax/Dataset
-    downloads: 4
+    downloads: 11
     likes: 2
   - name: lenoxaugo254/LenoxAI
     url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
-    downloads: 1
+    downloads: 5
     likes: 1
-  - name: crystalai/autotrain-data-crystal_alchemist-vision
-    url: https://huggingface.co/datasets/crystalai/autotrain-data-crystal_alchemist-vision
-    downloads: 0
-    likes: 1
+  - name: oza75/bambara-tts
+    url: https://huggingface.co/datasets/oza75/bambara-tts
+    downloads: 2
+    likes: 5
   - name: djelia/bambara-audio
     url: https://huggingface.co/datasets/djelia/bambara-audio
-    downloads: 0
+    downloads: 1
     likes: 1
-  total_count: 15
+  total_count: 14
   counts_by_code: {}

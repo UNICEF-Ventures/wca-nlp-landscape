@@ -225,3 +225,125 @@ def get_model_count(models_data):
     if isinstance(models_data, dict):
         return models_data.get('total_count', len(models_data.get('items', [])))
     return len(models_data) if models_data else 0
+
+
+# --- Benchmark rendering ---
+
+TASK_LABELS = {
+    'asr': 'ASR (Speech-to-Text)',
+    'tts': 'TTS (Text-to-Speech)',
+    'translation': 'Machine Translation',
+    'llm': 'Large Language Models',
+}
+
+
+def generate_benchmarks_section(evaluations):
+    """Generate the full Benchmarks HTML section from merged evaluation data.
+
+    Args:
+        evaluations: dict like {'asr': [entries], 'translation': [entries], ...}
+
+    Returns:
+        HTML string for the benchmarks section, or empty string if no data.
+    """
+    if not evaluations:
+        return ""
+
+    subsections = []
+    for task in ['asr', 'tts', 'translation', 'llm']:
+        entries = evaluations.get(task, [])
+        if not entries:
+            continue
+        label = TASK_LABELS.get(task, task.upper())
+        table_html = _render_benchmark_table(entries)
+        if table_html:
+            subsections.append(f"<h3>{label}</h3>\n{table_html}")
+
+    # Also render any tasks not in the standard list
+    for task, entries in evaluations.items():
+        if task in TASK_LABELS or not entries:
+            continue
+        table_html = _render_benchmark_table(entries)
+        if table_html:
+            subsections.append(f"<h3>{task.upper()}</h3>\n{table_html}")
+
+    if not subsections:
+        return ""
+
+    return f"""
+        <div class="detail-section">
+            <h2>Benchmarks</h2>
+            {''.join(subsections)}
+        </div>
+    """
+
+
+def _render_benchmark_table(entries):
+    """Render a benchmark table for a single task.
+
+    Each entry has model, model_url, and results (list of test_set results).
+    Each result has test_set, source, source_url, and metrics (list of name/value).
+    """
+    # First pass: collect all unique metric names across all results
+    metric_names = []
+    seen_metrics = set()
+    for entry in entries:
+        for result in entry.get('results', []):
+            for m in result.get('metrics', []):
+                name = m.get('name', '')
+                if name and name not in seen_metrics:
+                    metric_names.append(name)
+                    seen_metrics.add(name)
+
+    if not metric_names:
+        return ""
+
+    # Build header
+    metric_headers = ''.join(f'<th class="num">{name}</th>' for name in metric_names)
+    header = f"<tr><th>Model</th><th>Test Set</th>{metric_headers}<th>Source</th></tr>"
+
+    # Build rows: one row per (model, test_set)
+    rows = []
+    for entry in entries:
+        model = entry.get('model', '')
+        model_url = entry.get('model_url', '')
+        # Shorten model name for display
+        model_short = model.split('/')[-1] if '/' in model else model
+        model_html = f'<a href="{model_url}" target="_blank" title="{model}">{model_short}</a>' if model_url else model_short
+
+        for result in entry.get('results', []):
+            test_set = result.get('test_set', '')
+            source = result.get('source', '')
+            source_url = result.get('source_url', '')
+
+            # Source column: "reported" links to source_url
+            if source_url:
+                source_html = f'<a href="{source_url}" target="_blank">{source}</a>'
+            else:
+                source_html = source
+
+            # Build metric cells
+            metrics_by_name = {m['name']: m['value'] for m in result.get('metrics', []) if 'name' in m}
+            metric_cells = []
+            for name in metric_names:
+                val = metrics_by_name.get(name)
+                if val is not None:
+                    metric_cells.append(f'<td class="num">{val}</td>')
+                else:
+                    metric_cells.append('<td class="num">—</td>')
+
+            rows.append(
+                f"<tr>"
+                f"<td>{model_html}</td>"
+                f"<td>{test_set}</td>"
+                f"{''.join(metric_cells)}"
+                f"<td>{source_html}</td>"
+                f"</tr>"
+            )
+
+    return f"""
+        <table class="data-table benchmark-table">
+            <thead>{header}</thead>
+            <tbody>{''.join(rows)}</tbody>
+        </table>
+    """

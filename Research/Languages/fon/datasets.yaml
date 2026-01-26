@@ -1,16 +1,6 @@
 asr:
-  items:
-  - name: WueNLP/sib-fleurs
-    url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 139
-    likes: 11
-  total_count: 1
+  total_count: 0
   counts_by_code: {}
 tts:
-  items:
-  - name: WueNLP/sib-fleurs
-    url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 139
-    likes: 11
-  total_count: 1
+  total_count: 0
   counts_by_code: {}

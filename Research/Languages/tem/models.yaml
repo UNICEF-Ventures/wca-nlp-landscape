@@ -1,40 +1,12 @@
 asr:
-  items:
-  - name: espnet/xeus
-    url: https://huggingface.co/espnet/xeus
-    downloads: 46
-    likes: 143
-  total_count: 1
-  counts_by_code:
-    tem: 1
+  total_count: 0
+  counts_by_code: {}
 tts:
   total_count: 0
   counts_by_code: {}
 translation:
-  items:
-  - name: Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-mul
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-mul
-    downloads: 86
-    likes: 1
-  - name: Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_nld
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_nld
-    downloads: 61
-    likes: 2
-  - name: vonjack/opus-mt-mul-en-big
-    url: https://huggingface.co/vonjack/opus-mt-mul-en-big
-    downloads: 20
-    likes: 3
-  - name: Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_fra_por_spa
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_fra_por_spa
-    downloads: 20
-    likes: 2
-  - name: Helsinki-NLP/opus-mt-tc-bible-big-alv-deu_eng_fra_por_spa
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-alv-deu_eng_fra_por_spa
-    downloads: 1
-    likes: 0
-  total_count: 5
-  counts_by_code:
-    tem: 5
+  total_count: 0
+  counts_by_code: {}
 llm:
   total_count: 0
   counts_by_code: {}

@@ -2,63 +2,67 @@ asr:
   items:
   - name: MahmoudAshraf/mms-300m-1130-forced-aligner
     url: https://huggingface.co/MahmoudAshraf/mms-300m-1130-forced-aligner
-    downloads: 3020000
+    downloads: 2910000
     likes: 69
   - name: facebook/seamless-m4t-v2-large
     url: https://huggingface.co/facebook/seamless-m4t-v2-large
-    downloads: 182000
-    likes: 945
+    downloads: 137000
+    likes: 946
   - name: facebook/mms-1b-all
     url: https://huggingface.co/facebook/mms-1b-all
-    downloads: 139000
+    downloads: 114000
     likes: 171
   - name: facebook/mms-1b-fl102
     url: https://huggingface.co/facebook/mms-1b-fl102
-    downloads: 67100
+    downloads: 84000
     likes: 28
   - name: facebook/mms-1b-l1107
     url: https://huggingface.co/facebook/mms-1b-l1107
-    downloads: 2080
+    downloads: 2730
     likes: 11
   - name: bilalfaye/wav2vec2-large-mms-1b-wolof
     url: https://huggingface.co/bilalfaye/wav2vec2-large-mms-1b-wolof
-    downloads: 115
-    likes: 3
-  - name: kingabzpro/wav2vec2-large-xlsr-53-wolof
-    url: https://huggingface.co/kingabzpro/wav2vec2-large-xlsr-53-wolof
-    downloads: 74
+    downloads: 131
     likes: 3
   - name: espnet/xeus
     url: https://huggingface.co/espnet/xeus
-    downloads: 50
+    downloads: 42
     likes: 143
-  - name: ngia/whisper-small-wolof
-    url: https://huggingface.co/ngia/whisper-small-wolof
-    downloads: 26
-    likes: 0
   - name: speechbrain/asr-wav2vec2-dvoice-wolof
     url: https://huggingface.co/speechbrain/asr-wav2vec2-dvoice-wolof
-    downloads: 22
+    downloads: 27
     likes: 4
   - name: M9and2M/whisper-small-wolof
     url: https://huggingface.co/M9and2M/whisper-small-wolof
-    downloads: 17
-    likes: 4
-  - name: abdouaziiz/wav2vec2-xls-r-300m-wolof-lm
-    url: https://huggingface.co/abdouaziiz/wav2vec2-xls-r-300m-wolof-lm
     downloads: 15
-    likes: 5
-  - name: M9and2M/marone_wolof_wav2vec2-xls-r-300m
-    url: https://huggingface.co/M9and2M/marone_wolof_wav2vec2-xls-r-300m
-    downloads: 10
+    likes: 4
+  - name: ngia/whisper-small-wolof
+    url: https://huggingface.co/ngia/whisper-small-wolof
+    downloads: 12
     likes: 0
   - name: johntsi/ZeroSwot-Large_asr-cv_en-to-200
     url: https://huggingface.co/johntsi/ZeroSwot-Large_asr-cv_en-to-200
     downloads: 9
     likes: 1
+  - name: abdouaziiz/wav2vec2-xls-r-300m-wolof-lm
+    url: https://huggingface.co/abdouaziiz/wav2vec2-xls-r-300m-wolof-lm
+    downloads: 7
+    likes: 5
+  - name: M9and2M/marone_wolof_wav2vec2-xls-r-300m
+    url: https://huggingface.co/M9and2M/marone_wolof_wav2vec2-xls-r-300m
+    downloads: 7
+    likes: 0
+  - name: kingabzpro/wav2vec2-large-xlsr-53-wolof
+    url: https://huggingface.co/kingabzpro/wav2vec2-large-xlsr-53-wolof
+    downloads: 6
+    likes: 3
   - name: M9and2M/whisper_small_wolof_mix_hum_mach_data
     url: https://huggingface.co/M9and2M/whisper_small_wolof_mix_hum_mach_data
-    downloads: 8
+    downloads: 6
+    likes: 0
+  - name: johntsi/ZeroSwot-Medium_asr-cv_en-to-200
+    url: https://huggingface.co/johntsi/ZeroSwot-Medium_asr-cv_en-to-200
+    downloads: 5
     likes: 0
   - name: CAYTU/whosper-large
     url: https://huggingface.co/CAYTU/whosper-large
@@ -70,44 +74,28 @@ asr:
     likes: 0
   - name: aioxlabs/dvoice-wolof
     url: https://huggingface.co/aioxlabs/dvoice-wolof
-    downloads: 3
+    downloads: 2
     likes: 0
   - name: osanseviero/seamless-copy
     url: https://huggingface.co/osanseviero/seamless-copy
-    downloads: 2
-    likes: 0
-  - name: johntsi/ZeroSwot-Medium_asr-cv_en-to-200
-    url: https://huggingface.co/johntsi/ZeroSwot-Medium_asr-cv_en-to-200
-    downloads: 2
-    likes: 0
-  - name: johntsi/ZeroSwot-Large_asr-mustc_en-to-200
-    url: https://huggingface.co/johntsi/ZeroSwot-Large_asr-mustc_en-to-200
-    downloads: 2
-    likes: 0
-  - name: alfaDF9/whisper-small-wolof-v3
-    url: https://huggingface.co/alfaDF9/whisper-small-wolof-v3
-    downloads: 2
+    downloads: 1
     likes: 0
   - name: cibfaye/whisper-wolof
     url: https://huggingface.co/cibfaye/whisper-wolof
     downloads: 1
     likes: 1
-  - name: alfaDF9/whisper-small-wolof-v2
-    url: https://huggingface.co/alfaDF9/whisper-small-wolof-v2
+  - name: johntsi/ZeroSwot-Large_asr-mustc_en-to-200
+    url: https://huggingface.co/johntsi/ZeroSwot-Large_asr-mustc_en-to-200
     downloads: 1
     likes: 0
-  - name: alfaDF9/whisper-small-wolof-v4
-    url: https://huggingface.co/alfaDF9/whisper-small-wolof-v4
-    downloads: 1
-    likes: 0
+  - name: facebook/seamless-m4t-large
+    url: https://huggingface.co/facebook/seamless-m4t-large
+    downloads: 0
+    likes: 513
   - name: facebook/seamless-m4t-medium
     url: https://huggingface.co/facebook/seamless-m4t-medium
     downloads: 0
     likes: 135
-  - name: facebook/seamless-m4t-large
-    url: https://huggingface.co/facebook/seamless-m4t-large
-    downloads: 0
-    likes: 512
   - name: asr-africa/Whisper-WOLOF-10-hours-Google-Fleurs-dataset
     url: https://huggingface.co/asr-africa/Whisper-WOLOF-10-hours-Google-Fleurs-dataset
     downloads: 0
@@ -124,6 +112,18 @@ asr:
     url: https://huggingface.co/alfaDF9/whisper-small-wolof
     downloads: 0
     likes: 0
+  - name: alfaDF9/whisper-small-wolof-v2
+    url: https://huggingface.co/alfaDF9/whisper-small-wolof-v2
+    downloads: 0
+    likes: 0
+  - name: alfaDF9/whisper-small-wolof-v3
+    url: https://huggingface.co/alfaDF9/whisper-small-wolof-v3
+    downloads: 0
+    likes: 0
+  - name: alfaDF9/whisper-small-wolof-v4
+    url: https://huggingface.co/alfaDF9/whisper-small-wolof-v4
+    downloads: 0
+    likes: 0
   total_count: 34
   counts_by_code:
     wo: 33
@@ -132,28 +132,28 @@ tts:
   items:
   - name: CONCREE/Adia_TTS
     url: https://huggingface.co/CONCREE/Adia_TTS
-    downloads: 371
+    downloads: 396
     likes: 11
   - name: WueNLP/seamless-m4t-v2-large-speech-encoder
     url: https://huggingface.co/WueNLP/seamless-m4t-v2-large-speech-encoder
-    downloads: 251
-    likes: 7
+    downloads: 337
+    likes: 8
   - name: bilalfaye/speecht5_tts-wolof
     url: https://huggingface.co/bilalfaye/speecht5_tts-wolof
-    downloads: 228
-    likes: 1
-  - name: bilalfaye/speecht5_tts-wolof-v0.2
-    url: https://huggingface.co/bilalfaye/speecht5_tts-wolof-v0.2
-    downloads: 9
+    downloads: 236
     likes: 1
   - name: audo/seamless-m4t-v2-large
     url: https://huggingface.co/audo/seamless-m4t-v2-large
-    downloads: 3
-    likes: 20
+    downloads: 10
+    likes: 21
+  - name: bilalfaye/speecht5_tts-wolof-v0.2
+    url: https://huggingface.co/bilalfaye/speecht5_tts-wolof-v0.2
+    downloads: 8
+    likes: 1
   - name: facebook/seamless-streaming
     url: https://huggingface.co/facebook/seamless-streaming
     downloads: 0
-    likes: 275
+    likes: 276
   - name: Pendrokar/xvapitch_nvidia
     url: https://huggingface.co/Pendrokar/xvapitch_nvidia
     downloads: 0
@@ -191,106 +191,106 @@ tts:
     wo: 14
 translation:
   items:
-  - name: facebook/nllb-200-distilled-600M
-    url: https://huggingface.co/facebook/nllb-200-distilled-600M
-    downloads: 212000
-    likes: 827
   - name: google/madlad400-3b-mt
     url: https://huggingface.co/google/madlad400-3b-mt
-    downloads: 177000
-    likes: 174
+    downloads: 237000
+    likes: 177
+  - name: facebook/nllb-200-distilled-600M
+    url: https://huggingface.co/facebook/nllb-200-distilled-600M
+    downloads: 221000
+    likes: 839
   - name: facebook/nllb-200-distilled-1.3B
     url: https://huggingface.co/facebook/nllb-200-distilled-1.3B
-    downloads: 126000
+    downloads: 95300
     likes: 140
-  - name: Helsinki-NLP/opus-mt-mul-en
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-mul-en
-    downloads: 38100
-    likes: 83
   - name: facebook/nllb-200-3.3B
     url: https://huggingface.co/facebook/nllb-200-3.3B
-    downloads: 37000
+    downloads: 39300
     likes: 401
+  - name: Helsinki-NLP/opus-mt-mul-en
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-mul-en
+    downloads: 39000
+    likes: 84
   - name: facebook/nllb-200-1.3B
     url: https://huggingface.co/facebook/nllb-200-1.3B
-    downloads: 18100
+    downloads: 17400
     likes: 68
   - name: alirezamsh/small100
     url: https://huggingface.co/alirezamsh/small100
-    downloads: 4400
-    likes: 97
+    downloads: 4520
+    likes: 98
   - name: Helsinki-NLP/opus-mt-en-mul
     url: https://huggingface.co/Helsinki-NLP/opus-mt-en-mul
-    downloads: 2360
+    downloads: 2190
     likes: 25
   - name: JustFrederik/nllb-200-distilled-600M-ct2-int8
     url: https://huggingface.co/JustFrederik/nllb-200-distilled-600M-ct2-int8
-    downloads: 480
+    downloads: 420
     likes: 1
   - name: winstxnhdw/nllb-200-distilled-1.3B-ct2-int8
     url: https://huggingface.co/winstxnhdw/nllb-200-distilled-1.3B-ct2-int8
-    downloads: 248
+    downloads: 319
     likes: 6
   - name: facebook/nllb-moe-54b
     url: https://huggingface.co/facebook/nllb-moe-54b
-    downloads: 92
+    downloads: 102
     likes: 123
   - name: ychenNLP/nllb-200-distilled-1.3B-easyproject
     url: https://huggingface.co/ychenNLP/nllb-200-distilled-1.3B-easyproject
-    downloads: 90
+    downloads: 93
     likes: 2
   - name: JustFrederik/nllb-200-distilled-1.3B-ct2-int8
     url: https://huggingface.co/JustFrederik/nllb-200-distilled-1.3B-ct2-int8
-    downloads: 66
+    downloads: 77
     likes: 2
-  - name: JustFrederik/nllb-200-distilled-1.3B-ct2-float16
-    url: https://huggingface.co/JustFrederik/nllb-200-distilled-1.3B-ct2-float16
-    downloads: 22
-    likes: 1
-  - name: vonjack/opus-mt-mul-en-big
-    url: https://huggingface.co/vonjack/opus-mt-mul-en-big
-    downloads: 22
-    likes: 3
-  - name: michaelfeil/ct2fast-nllb-200-3.3B
-    url: https://huggingface.co/michaelfeil/ct2fast-nllb-200-3.3B
-    downloads: 21
-    likes: 14
   - name: Narsil/nllb
     url: https://huggingface.co/Narsil/nllb
-    downloads: 18
+    downloads: 21
     likes: 2
-  - name: Helsinki-NLP/opus-mt-alv-en
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-alv-en
-    downloads: 17
-    likes: 0
   - name: JustFrederik/nllb-200-distilled-600M-ct2-float16
     url: https://huggingface.co/JustFrederik/nllb-200-distilled-600M-ct2-float16
-    downloads: 16
+    downloads: 20
     likes: 0
+  - name: JustFrederik/nllb-200-distilled-600M-ct2
+    url: https://huggingface.co/JustFrederik/nllb-200-distilled-600M-ct2
+    downloads: 17
+    likes: 2
   - name: JustFrederik/nllb-200-3.3B-ct2-float16
     url: https://huggingface.co/JustFrederik/nllb-200-3.3B-ct2-float16
-    downloads: 16
+    downloads: 17
     likes: 3
-  - name: michaelfeil/ct2fast-nllb-200-distilled-1.3B
-    url: https://huggingface.co/michaelfeil/ct2fast-nllb-200-distilled-1.3B
-    downloads: 16
-    likes: 1
   - name: JustFrederik/nllb-200-1.3B-ct2-int8
     url: https://huggingface.co/JustFrederik/nllb-200-1.3B-ct2-int8
     downloads: 14
     likes: 0
-  - name: JustFrederik/nllb-200-distilled-600M-ct2
-    url: https://huggingface.co/JustFrederik/nllb-200-distilled-600M-ct2
-    downloads: 9
+  - name: JustFrederik/nllb-200-distilled-1.3B-ct2-float16
+    url: https://huggingface.co/JustFrederik/nllb-200-distilled-1.3B-ct2-float16
+    downloads: 13
     likes: 1
+  - name: Helsinki-NLP/opus-mt-alv-en
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-alv-en
+    downloads: 9
+    likes: 0
   - name: JustFrederik/nllb-200-1.3B-ct2
     url: https://huggingface.co/JustFrederik/nllb-200-1.3B-ct2
-    downloads: 8
+    downloads: 9
     likes: 0
+  - name: cstr/madlad400-3b-ct2-int8
+    url: https://huggingface.co/cstr/madlad400-3b-ct2-int8
+    downloads: 7
+    likes: 1
+  - name: vonjack/opus-mt-mul-en-big
+    url: https://huggingface.co/vonjack/opus-mt-mul-en-big
+    downloads: 7
+    likes: 3
   - name: JustFrederik/nllb-200-distilled-1.3B-ct2
     url: https://huggingface.co/JustFrederik/nllb-200-distilled-1.3B-ct2
     downloads: 6
     likes: 0
+  - name: ychenNLP/nllb-200-3.3B-easyproject
+    url: https://huggingface.co/ychenNLP/nllb-200-3.3B-easyproject
+    downloads: 5
+    likes: 8
   - name: Helsinki-NLP/opus-mt-en-nic
     url: https://huggingface.co/Helsinki-NLP/opus-mt-en-nic
     downloads: 4
@@ -307,14 +307,14 @@ translation:
     url: https://huggingface.co/Helsinki-NLP/opus-mt-nic-en
     downloads: 2
     likes: 0
-  - name: ychenNLP/nllb-200-3.3B-easyproject
-    url: https://huggingface.co/ychenNLP/nllb-200-3.3B-easyproject
-    downloads: 2
-    likes: 8
   - name: ArthurZ/nllb-moe-128
     url: https://huggingface.co/ArthurZ/nllb-moe-128
-    downloads: 1
+    downloads: 2
     likes: 0
+  - name: McGill-NLP/ssa-comet-stl
+    url: https://huggingface.co/McGill-NLP/ssa-comet-stl
+    downloads: 0
+    likes: 1
   - name: LocaleNLP/localenlp-wol-eng-0.03
     url: https://huggingface.co/LocaleNLP/localenlp-wol-eng-0.03
     downloads: 0
@@ -331,75 +331,79 @@ llm:
   items:
   - name: bigscience/bloomz-560m
     url: https://huggingface.co/bigscience/bloomz-560m
-    downloads: 315000
+    downloads: 386000
     likes: 137
   - name: bigscience/bloom-560m
     url: https://huggingface.co/bigscience/bloom-560m
-    downloads: 101000
+    downloads: 113000
     likes: 370
   - name: bigscience/bloom-1b7
     url: https://huggingface.co/bigscience/bloom-1b7
-    downloads: 34400
+    downloads: 39900
     likes: 122
   - name: bigscience/bloom-7b1
     url: https://huggingface.co/bigscience/bloom-7b1
-    downloads: 21200
+    downloads: 22300
     likes: 203
-  - name: bigscience/bloom-3b
-    url: https://huggingface.co/bigscience/bloom-3b
-    downloads: 9310
-    likes: 93
   - name: bigscience/bloomz-7b1
     url: https://huggingface.co/bigscience/bloomz-7b1
-    downloads: 8990
+    downloads: 10700
     likes: 146
+  - name: bigscience/bloom-3b
+    url: https://huggingface.co/bigscience/bloom-3b
+    downloads: 9850
+    likes: 93
   - name: bigscience/bloom-1b1
     url: https://huggingface.co/bigscience/bloom-1b1
-    downloads: 6760
+    downloads: 6880
     likes: 65
   - name: bigscience/bloomz-3b
     url: https://huggingface.co/bigscience/bloomz-3b
-    downloads: 5210
+    downloads: 5240
     likes: 81
   - name: bigscience/bloomz-1b7
     url: https://huggingface.co/bigscience/bloomz-1b7
-    downloads: 4330
+    downloads: 4380
     likes: 23
   - name: bigscience/bloomz-1b1
     url: https://huggingface.co/bigscience/bloomz-1b1
-    downloads: 4100
+    downloads: 4230
     likes: 33
   - name: bigscience/bloom
     url: https://huggingface.co/bigscience/bloom
-    downloads: 3350
-    likes: 4970
+    downloads: 3730
+    likes: 4980
   - name: bigscience/bloomz
     url: https://huggingface.co/bigscience/bloomz
-    downloads: 1770
+    downloads: 1700
     likes: 514
   - name: bigscience/bloomz-7b1-mt
     url: https://huggingface.co/bigscience/bloomz-7b1-mt
     downloads: 1410
     likes: 143
-  - name: LLaMAX/LLaMAX3-8B-Alpaca
-    url: https://huggingface.co/LLaMAX/LLaMAX3-8B-Alpaca
-    downloads: 341
-    likes: 29
-  - name: bigscience/bloom-1b1-intermediate
-    url: https://huggingface.co/bigscience/bloom-1b1-intermediate
-    downloads: 96
-    likes: 0
   - name: bigscience/bloom-7b1-intermediate
     url: https://huggingface.co/bigscience/bloom-7b1-intermediate
-    downloads: 91
+    downloads: 95
+    likes: 0
+  - name: bigscience/bloom-1b1-intermediate
+    url: https://huggingface.co/bigscience/bloom-1b1-intermediate
+    downloads: 95
     likes: 0
   - name: bigscience/bloomz-mt
     url: https://huggingface.co/bigscience/bloomz-mt
-    downloads: 73
+    downloads: 70
     likes: 32
+  - name: bigscience/bloomz-p3
+    url: https://huggingface.co/bigscience/bloomz-p3
+    downloads: 58
+    likes: 19
+  - name: bigscience/bloomz-7b1-p3
+    url: https://huggingface.co/bigscience/bloomz-7b1-p3
+    downloads: 58
+    likes: 6
   - name: bigscience/distill-bloom-1b3
     url: https://huggingface.co/bigscience/distill-bloom-1b3
-    downloads: 55
+    downloads: 56
     likes: 9
   - name: bigscience/bloom-3b-intermediate
     url: https://huggingface.co/bigscience/bloom-3b-intermediate
@@ -407,67 +411,63 @@ llm:
     likes: 1
   - name: bigscience/bloom-1b7-intermediate
     url: https://huggingface.co/bigscience/bloom-1b7-intermediate
-    downloads: 52
+    downloads: 54
     likes: 0
-  - name: bigscience/distill-bloom-1b3-10x
-    url: https://huggingface.co/bigscience/distill-bloom-1b3-10x
-    downloads: 49
-    likes: 7
   - name: bigscience/bloom-560m-intermediate
     url: https://huggingface.co/bigscience/bloom-560m-intermediate
-    downloads: 49
+    downloads: 54
     likes: 1
-  - name: bigscience/bloomz-7b1-p3
-    url: https://huggingface.co/bigscience/bloomz-7b1-p3
-    downloads: 48
-    likes: 6
-  - name: bigscience/bloomz-p3
-    url: https://huggingface.co/bigscience/bloomz-p3
-    downloads: 47
-    likes: 19
+  - name: bigscience/distill-bloom-1b3-10x
+    url: https://huggingface.co/bigscience/distill-bloom-1b3-10x
+    downloads: 51
+    likes: 7
   - name: UBC-NLP/toucan-base
     url: https://huggingface.co/UBC-NLP/toucan-base
-    downloads: 37
-    likes: 2
-  - name: mrm8488/bloom-6b3-8bit
-    url: https://huggingface.co/mrm8488/bloom-6b3-8bit
-    downloads: 11
-    likes: 4
-  - name: model-attribution-challenge/bloom-2b5
-    url: https://huggingface.co/model-attribution-challenge/bloom-2b5
-    downloads: 11
-    likes: 0
+    downloads: 46
+    likes: 3
   - name: model-attribution-challenge/bloom-350m
     url: https://huggingface.co/model-attribution-challenge/bloom-350m
-    downloads: 10
+    downloads: 15
     likes: 1
   - name: joaoalvarenga/bloom-8bit
     url: https://huggingface.co/joaoalvarenga/bloom-8bit
     downloads: 9
     likes: 75
-  - name: model-attribution-challenge/bloom-560m
-    url: https://huggingface.co/model-attribution-challenge/bloom-560m
-    downloads: 8
+  - name: mrm8488/bloom-6b3-8bit
+    url: https://huggingface.co/mrm8488/bloom-6b3-8bit
+    downloads: 6
+    likes: 4
+  - name: model-attribution-challenge/bloom-2b5
+    url: https://huggingface.co/model-attribution-challenge/bloom-2b5
+    downloads: 6
     likes: 0
   - name: goldfish-models/wol_latn_full
     url: https://huggingface.co/goldfish-models/wol_latn_full
-    downloads: 7
+    downloads: 6
+    likes: 0
+  - name: model-attribution-challenge/bloom-560m
+    url: https://huggingface.co/model-attribution-challenge/bloom-560m
+    downloads: 4
     likes: 0
   - name: goldfish-models/wol_latn_5mb
     url: https://huggingface.co/goldfish-models/wol_latn_5mb
-    downloads: 5
+    downloads: 4
     likes: 0
   - name: mrm8488/bloom-1b3-8bit
     url: https://huggingface.co/mrm8488/bloom-1b3-8bit
-    downloads: 4
+    downloads: 3
     likes: 3
+  - name: ybelkada/bloom-560m-8bit
+    url: https://huggingface.co/ybelkada/bloom-560m-8bit
+    downloads: 3
+    likes: 0
   - name: goldfish-models/wol_latn_10mb
     url: https://huggingface.co/goldfish-models/wol_latn_10mb
-    downloads: 4
+    downloads: 2
     likes: 0
   - name: UBC-NLP/toucan-1.2B
     url: https://huggingface.co/UBC-NLP/toucan-1.2B
-    downloads: 2
+    downloads: 1
     likes: 1
   - name: UBC-NLP/cheetah-1.2B
     url: https://huggingface.co/UBC-NLP/cheetah-1.2B

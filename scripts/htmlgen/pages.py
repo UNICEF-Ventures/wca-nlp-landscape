@@ -10,6 +10,7 @@ from .utils import (
     markdown_to_html, get_actors_for_language, format_actor_type,
     format_huggingface_link, country_codes_to_names,
     get_model_count, generate_models_table, generate_datasets_table,
+    generate_benchmarks_section,
 )
 
 
@@ -92,6 +93,10 @@ def generate_language_detail_page(iso_code, lang_data, actors):
                 </div>
             </div>
         """
+
+    # Benchmarks (evaluations from merged benchmarks.yaml + benchmarks_manual.yaml)
+    evaluations = benchmarks.get('evaluations', {})
+    benchmarks_section = generate_benchmarks_section(evaluations)
 
     # Notes
     notes_section = ""
@@ -263,9 +268,10 @@ def generate_language_detail_page(iso_code, lang_data, actors):
         </div>
 
         {ludp_section}
+        {actors_section}
         {tech_section}
         {cv_section}
-        {actors_section}
+        {benchmarks_section}
         {notes_section}
 
         <div class="detail-section">

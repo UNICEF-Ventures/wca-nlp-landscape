@@ -47,3 +47,6 @@ tech_resources:
   CMU Wilderness: true
   MAFAND: true
   NaijaVoices: true
+  MMS-ASR: true
+  MMS-TTS: true
+  MMS-LID: true

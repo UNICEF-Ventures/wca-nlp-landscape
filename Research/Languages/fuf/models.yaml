@@ -1,21 +1,9 @@
 asr:
-  items:
-  - name: espnet/xeus
-    url: https://huggingface.co/espnet/xeus
-    downloads: 43
-    likes: 143
-  total_count: 1
-  counts_by_code:
-    fuf: 1
+  total_count: 0
+  counts_by_code: {}
 tts:
-  items:
-  - name: MALIBA-AI/malian-tts
-    url: https://huggingface.co/MALIBA-AI/malian-tts
-    downloads: 0
-    likes: 0
-  total_count: 1
-  counts_by_code:
-    fuf: 1
+  total_count: 0
+  counts_by_code: {}
 translation:
   total_count: 0
   counts_by_code: {}

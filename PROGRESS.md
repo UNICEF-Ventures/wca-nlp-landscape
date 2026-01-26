@@ -23,10 +23,9 @@ Mapping of available NLP resources (ASR, TTS, MT, LLM) and key actors working on
 - [x] GitHub Pages auto-deployment
 - [x] Search filtering on Focus Languages and Actors tabs
 - [x] LUDP panel for languages
-- [ ] Crisis index information for languages
-- [ ] MMS special check
-- [ ] Compile an updated full list of important multilingual models
-- [ ] List important fine-tuned models (⭐️ highlighted models) for each language
+- [x] MMS coverage check (ASR/TTS/LID per language in tech_resources)
+- [x] Benchmark infrastructure (evaluations in benchmarks.yaml + benchmarks_manual.yaml, Source data/Evaluations/ with fetcher)
+- [ ] Crisis index information for languages (pending approval from CLEAR to add)
 - [ ] Document generation (PDF factsheets)
 
 
@@ -101,11 +100,14 @@ Compile existing benchmark results (FLORES, FLEURS, Common Voice, published pape
 
 | Status | Progress |
 |--------|----------|
-| Not started | ░░░░░░░░░░░░░░░░░░░░ 0% |
+| Infrastructure done, data collection started | ██░░░░░░░░░░░░░░░░░░ 10% |
 
-- [ ] Compile ASR benchmarks (Whisper, MMS, wav2vec2, etc.)
+- [x] Benchmark data infrastructure (two-file system, Source data/Evaluations/, rendering on language pages)
+- [x] Initial ASR data: Whisper FLEURS WER (14 languages), CLEAR Global TWB Voice (Hausa, Kanuri), w2v-BERT 2.0 (Hausa, Kanuri)
+- [x] Initial TTS data: CLEAR Global TWB Voice TTS (Hausa, Kanuri) — scores entered
+- [ ] Compile ASR benchmarks (more Whisper variants, MMS, wav2vec2, etc.)
 - [ ] Compile MT benchmarks (NLLB, MADLAD, etc.)
-- [ ] Compile TTS benchmarks
+- [ ] Compile TTS benchmarks (more models)
 - [ ] Compile LLM benchmarks
 - [ ] Gap analysis: which languages lack benchmarks
 - [ ] Conducting benchmark analyses where needed and possible
@@ -161,6 +163,18 @@ Advisory support for actor selection, agenda input, and presentation of findings
 ---
 
 ## Recent Updates (January 2026)
+
+### 2026-01-26 (night)
+- Built benchmark/evaluation infrastructure:
+  - Two-file system: `benchmarks.yaml` (auto-generated) + `benchmarks_manual.yaml` (hand-entered, never overwritten)
+  - `Source data/Evaluations/` directory with structured YAML files that distribute to languages via `fetch_evaluations.py`
+  - Supports single-model and multi-model file formats
+  - Benchmark section renders on language detail pages with per-task tables (ASR, TTS, MT, LLM)
+  - Metric names are arbitrary (WER, CER, BLEU, Pronunciation accuracy, etc.)
+  - "reported" source text links to source URL
+- Added initial benchmark data
+- Added MMS (Meta) language coverage as flat entries (MMS-ASR, MMS-TTS, MMS-LID) in tech_resources
+- Fixed language detail page section ordering: General Info → Language Use → Actors → NLP & Tech → Common Voice → Benchmarks → Models → Datasets
 
 ### 2026-01-26 (evening)
 - Added Digital Umuganda: Rwanda, AfriVoice dataset (Lingala 517hrs, Fulfulde 527hrs, Wolof 531hrs), OD4A (17 languages, 4500hrs), 2200hrs Kinyarwanda Common Voice, MT Rwanda with CLEAR Global

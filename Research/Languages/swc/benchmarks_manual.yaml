@@ -1,0 +1,46 @@
+# Manual benchmark entries for Congo Swahili (swc)
+# This file is NEVER overwritten by populate_research.py.
+# Add one-off benchmark results you find in papers here.
+#
+# Structure:
+#
+# evaluations:
+#   asr:
+#     - model: some-org/model-name
+#       model_url: https://huggingface.co/some-org/model-name
+#       results:
+#         - test_set: Common Voice 17
+#           source: reported
+#           source_url: https://arxiv.org/abs/...
+#           metrics:
+#             - name: WER
+#               value: 12.5
+#             - name: CER
+#               value: 5.3
+#         - test_set: FLEURS
+#           source: evaluated
+#           metrics:
+#             - name: WER
+#               value: 18.2
+#   translation:
+#     - model: facebook/nllb-200-3.3B
+#       model_url: https://huggingface.co/facebook/nllb-200-3.3B
+#       results:
+#         - test_set: FLORES-200
+#           source: reported
+#           source_url: https://arxiv.org/abs/2207.04672
+#           metrics:
+#             - name: BLEU
+#               value: 24.3
+#             - name: direction
+#               value: "swc->eng"
+#   llm:
+#     - model: meta-llama/Llama-3.1-70B
+#       model_url: https://huggingface.co/meta-llama/Llama-3.1-70B
+#       results:
+#         - test_set: IrokoBench
+#           source: reported
+#           source_url: https://arxiv.org/abs/...
+#           metrics:
+#             - name: Accuracy
+#               value: 42.1

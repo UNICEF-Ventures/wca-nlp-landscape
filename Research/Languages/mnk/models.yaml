@@ -1,12 +1,6 @@
 asr:
-  items:
-  - name: espnet/xeus
-    url: https://huggingface.co/espnet/xeus
-    downloads: 43
-    likes: 143
-  total_count: 1
-  counts_by_code:
-    mnk: 1
+  total_count: 0
+  counts_by_code: {}
 tts:
   total_count: 0
   counts_by_code: {}

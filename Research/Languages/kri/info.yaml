@@ -27,3 +27,6 @@ tech_resources:
   MADLAD-400 Sentences: 38800 MAD-Sents
   Fineweb2: 💬
   CMU Wilderness: true
+  MMS-ASR: true
+  MMS-TTS: true
+  MMS-LID: true

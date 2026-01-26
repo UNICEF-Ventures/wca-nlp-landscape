@@ -28,6 +28,8 @@ sys.path.insert(0, str(SCRIPT_DIR))
 from fetchers.fetch_huggingface import fetch_models_for_language, fetch_datasets_for_language
 from fetchers.fetch_wikipedia import fetch_language_info
 from fetchers.fetch_common_voice import get_common_voice_stats
+from fetchers.fetch_evaluations import load_evaluation_sources, get_evaluations_for_language
+from fetchers.fetch_mms import load_mms_data, get_mms_support
 
 # Paths
 RESEARCH_DIR = PROJECT_DIR / "Research"
@@ -299,13 +301,69 @@ def save_markdown(content, path):
     print(f"  Saved: {path}")
 
 
-def process_language(iso_639_3, cv_data, grid_data, force_fetch=False):
+def create_manual_benchmarks_template(path, lang_name, iso_code):
+    """Create a benchmarks_manual.yaml template with commented-out sample entries."""
+    template = f"""# Manual benchmark entries for {lang_name} ({iso_code})
+# This file is NEVER overwritten by populate_research.py.
+# Add one-off benchmark results you find in papers here.
+#
+# Structure:
+#
+# evaluations:
+#   asr:
+#     - model: some-org/model-name
+#       model_url: https://huggingface.co/some-org/model-name
+#       results:
+#         - test_set: Common Voice 17
+#           source: reported
+#           source_url: https://arxiv.org/abs/...
+#           metrics:
+#             - name: WER
+#               value: 12.5
+#             - name: CER
+#               value: 5.3
+#         - test_set: FLEURS
+#           source: evaluated
+#           metrics:
+#             - name: WER
+#               value: 18.2
+#   translation:
+#     - model: facebook/nllb-200-3.3B
+#       model_url: https://huggingface.co/facebook/nllb-200-3.3B
+#       results:
+#         - test_set: FLORES-200
+#           source: reported
+#           source_url: https://arxiv.org/abs/2207.04672
+#           metrics:
+#             - name: BLEU
+#               value: 24.3
+#             - name: direction
+#               value: "{iso_code}->eng"
+#   llm:
+#     - model: meta-llama/Llama-3.1-70B
+#       model_url: https://huggingface.co/meta-llama/Llama-3.1-70B
+#       results:
+#         - test_set: IrokoBench
+#           source: reported
+#           source_url: https://arxiv.org/abs/...
+#           metrics:
+#             - name: Accuracy
+#               value: 42.1
+"""
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write(template)
+    print(f"  Created: {path}")
+
+
+def process_language(iso_639_3, cv_data, grid_data, all_evaluations, mms_data, force_fetch=False):
     """Process a single language and create output files in Research/Languages/{iso}/.
 
     Args:
         iso_639_3: ISO 639-3 language code
         cv_data: Common Voice data dict
         grid_data: African Language Grid data
+        all_evaluations: Evaluation data from Source data/Evaluations/
+        mms_data: MMS language coverage data dict
         force_fetch: If True, re-fetch HuggingFace data even if files exist
     """
 
@@ -367,6 +425,19 @@ def process_language(iso_639_3, cv_data, grid_data, force_fetch=False):
         # NLP/Tech resources from African Grid
         'tech_resources': grid_info.get('tech_resources') if grid_info else None,
     }
+
+    # Add MMS coverage to tech_resources
+    mms_support = get_mms_support(iso_639_3, mms_data)
+    if mms_support:
+        if language_info.get('tech_resources') is None:
+            language_info['tech_resources'] = {}
+        if mms_support['asr']:
+            language_info['tech_resources']['MMS-ASR'] = True
+        if mms_support['tts']:
+            language_info['tech_resources']['MMS-TTS'] = True
+        if mms_support['lid']:
+            language_info['tech_resources']['MMS-LID'] = True
+
     save_yaml(language_info, lang_dir / "info.yaml")
 
     # 2. Fetch models from HuggingFace
@@ -438,16 +509,25 @@ def process_language(iso_639_3, cv_data, grid_data, force_fetch=False):
 
         save_yaml(datasets_data, datasets_path)
 
-    # 4. Get Common Voice stats
+    # 4. Get Common Voice stats + evaluations from Source data
     print("    Checking Common Voice...")
     cv_stats = get_common_voice_stats(iso_639_3, iso_639_1, cv_data)
 
+    evaluations = get_evaluations_for_language(iso_639_3, all_evaluations)
+
     benchmarks_data = {
         'common_voice': cv_stats,
-        'flores': None,  # TODO: Add FLORES lookup
-        'fleurs': None,  # TODO: Add FLEURS lookup
     }
+    if evaluations:
+        benchmarks_data['evaluations'] = evaluations
+        print(f"    Added evaluations: {', '.join(f'{k} ({len(v)} models)' for k, v in evaluations.items())}")
+
     save_yaml(benchmarks_data, lang_dir / "benchmarks.yaml")
+
+    # Create benchmarks_manual.yaml template if it doesn't exist
+    manual_path = lang_dir / "benchmarks_manual.yaml"
+    if not manual_path.exists():
+        create_manual_benchmarks_template(manual_path, lang_name, iso_639_3)
 
     # 5. Create notes.md stub
     notes_path = lang_dir / "notes.md"
@@ -562,8 +642,12 @@ def main():
     # Load other data
     focus_languages = load_focused_languages()
     cv_data = load_common_voice_data()
+    all_evaluations = load_evaluation_sources()
+    mms_data = load_mms_data()
 
     print(f"Loaded {len(cv_data)} Common Voice locales")
+    print(f"Loaded evaluations for {len(all_evaluations)} languages from Source data/Evaluations/")
+    print(f"Loaded MMS coverage for {len(mms_data)} languages")
     print(f"Found {len(focus_languages)} focus languages")
 
     # Ensure Languages directory exists
@@ -582,7 +666,7 @@ def main():
     # Process each language
     processed = 0
     for iso_code in languages_to_process:
-        if process_language(iso_code, cv_data, grid_data, force_fetch=args.force):
+        if process_language(iso_code, cv_data, grid_data, all_evaluations, mms_data, force_fetch=args.force):
             processed += 1
 
     # Also generate/update the WCA languages list

@@ -48,3 +48,6 @@ tech_resources:
   FLEURS: true
   AfriHate: true
   NaijaVoices: true
+  MMS-ASR: true
+  MMS-TTS: true
+  MMS-LID: true

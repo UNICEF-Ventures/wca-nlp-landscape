@@ -1,0 +1,93 @@
+# CLEAR Global models trained on TWB Voice dataset
+# Source: HuggingFace model cards
+
+models:
+  # --- ASR: Whisper fine-tunes ---
+
+  - model: CLEAR-Global/whisper-small-clearglobal-hausa-asr-1.0.0
+    model_url: https://huggingface.co/CLEAR-Global/whisper-small-clearglobal-hausa-asr-1.0.0
+    task: asr
+    results:
+      hau:
+        - test_set: TWB Voice 1.0
+          source: reported
+          source_url: https://huggingface.co/CLEAR-Global/whisper-small-clearglobal-hausa-asr-1.0.0
+          metrics:
+            - name: WER
+              value: 2.23
+            - name: CER
+              value: 3.11
+
+  - model: CLEAR-Global/whisper-small-clearglobal-kanuri-asr-1.0.0
+    model_url: https://huggingface.co/CLEAR-Global/whisper-small-clearglobal-kanuri-asr-1.0.0
+    task: asr
+    results:
+      kau:
+        - test_set: TWB Voice 1.0
+          source: reported
+          source_url: https://huggingface.co/CLEAR-Global/whisper-small-clearglobal-kanuri-asr-1.0.0
+          metrics:
+            - name: WER
+              value: 10.16
+            - name: CER
+              value: 3.72
+
+  # --- ASR: W2V-BERT 2.0 fine-tunes ---
+
+  - model: CLEAR-Global/w2v-bert-2.0-clearglobal-hausa-asr-1.0.0
+    model_url: https://huggingface.co/CLEAR-Global/w2v-bert-2.0-clearglobal-hausa-asr-1.0.0
+    task: asr
+    results:
+      hau:
+        - test_set: TWB Voice 1.0
+          source: reported
+          source_url: https://huggingface.co/CLEAR-Global/w2v-bert-2.0-clearglobal-hausa-asr-1.0.0
+          metrics:
+            - name: WER
+              value: 4.02
+            - name: CER
+              value: 0.97
+
+  - model: CLEAR-Global/w2v-bert-2.0-clearglobal-kanuri-asr-1.0.0
+    model_url: https://huggingface.co/CLEAR-Global/w2v-bert-2.0-clearglobal-kanuri-asr-1.0.0
+    task: asr
+    results:
+      kau:
+        - test_set: TWB Voice 1.0
+          source: reported
+          source_url: https://huggingface.co/CLEAR-Global/w2v-bert-2.0-clearglobal-kanuri-asr-1.0.0
+          metrics:
+            - name: WER
+              value: 11.31
+            - name: CER
+              value: 3.05
+
+  # --- TTS: TWB Voice TTS models (scores to be added) ---
+
+  - model: CLEAR-Global/TWB-Voice-Hausa-TTS-1.0
+    model_url: https://huggingface.co/CLEAR-Global/TWB-Voice-Hausa-TTS-1.0
+    task: tts
+    results:
+      hau:
+        - test_set: TWB Voice 1.0
+          source: reported
+          source_url: https://huggingface.co/CLEAR-Global/TWB-Voice-Hausa-TTS-1.0
+          metrics: 
+            - name: Pronunciation accuracy
+              value: 2.52/5
+            - name: Naturalness
+              value: 2.93/5
+
+  - model: CLEAR-Global/TWB-Voice-Kanuri-TTS-1.0
+    model_url: https://huggingface.co/CLEAR-Global/TWB-Voice-Kanuri-TTS-1.0
+    task: tts
+    results:
+      kau:
+        - test_set: TWB Voice 1.0
+          source: reported
+          source_url: https://huggingface.co/CLEAR-Global/TWB-Voice-Kanuri-TTS-1.0
+          metrics:
+            - name: Pronunciation accuracy
+              value: 2.8/5
+            - name: Naturalness
+              value: 2.76/5

@@ -31,3 +31,6 @@ tech_resources:
   AfroLID: true
   Fineweb2: 💬
   CMU Wilderness: true
+  MMS-ASR: true
+  MMS-TTS: true
+  MMS-LID: true

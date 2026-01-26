@@ -1,0 +1,121 @@
+id: awarri
+name: Awarri
+type: startup
+website: https://awarri.com
+location: Lagos, Nigeria
+
+# Organization details
+founded: 2019
+organization_size: medium  # 11-50 employees + 100+ data annotation workers + 4,200 trained data operators
+funding: >
+  Pre-seed from undisclosed investors. Government-backed contracts. UNDP, UNESCO, Meta,
+  Google, Microsoft support for N-ATLAS. Data.org partnership.
+description: >
+  Nigerian AI startup ("awari" = "to seek and find" in Yoruba) that built N-ATLAS --
+  Nigeria's first government-backed open-source multilingual AI model suite, launched
+  at UNGA80 in September 2025. N-ATLAS includes ASR models for Yoruba, Hausa, Igbo,
+  and Nigerian-accented English (Whisper fine-tunes) plus a multilingual LLM
+  (Llama-3 8B fine-tuned on ~392M tokens). Also operates LangEasy (crowdsourced
+  language data collection platform targeting 500K hours), RootLens (visual data
+  management), and a data annotation lab in Ikorodu employing 100+ workers.
+  Leading Nigerian telcos and banks integrating N-ATLAS for customer service.
+
+# Key people
+key_people:
+  - name: Silas Adekunle
+    role: Co-Founder & CEO
+    note: >
+      Nigerian-British robotics engineer. Previously founded Reach Robotics
+      (MekaMon gaming robot, Apple distribution). Also CEO of Reach Industries.
+  - name: Eniola Edun
+    role: Co-Founder
+    note: Previously co-founded Gamr (esports/gaming platform) in Lagos.
+  - name: Moses Daudu
+    role: Senior AI Engineer
+
+# Coverage
+countries:
+  - NG  # Nigeria
+languages:
+  - yor  # Yoruba
+  - hau  # Hausa
+  - ibo  # Igbo
+
+# Links
+huggingface: https://huggingface.co/AWARRITech
+contact:
+  email: datasupport@awarri.com
+
+# Projects
+projects:
+  - name: N-ATLAS (Nigerian Atlas for Languages & AI at Scale)
+    url: https://huggingface.co/NCAIR1/N-ATLaS
+    description: >
+      Nigeria's first open-source multilingual AI model suite: 4 ASR models (Whisper Small
+      fine-tuned) + 1 LLM (Llama-3 8B, ~392M tokens). Launched at UNGA80, Sept 2025.
+      Published under NCAIR1 on HuggingFace (5,600+ LLM downloads). Open-Source Research
+      and Innovation License (free <=1,000 users; commercial license above).
+    languages: [yor, hau, ibo]
+
+  - name: LangEasy
+    url: https://www.awarri.com/langeasy
+    description: >
+      Nationwide crowdsourced data collection platform. Mobile-first app where users
+      record voice samples by translating English sentences into Nigerian languages.
+      Languages: Yoruba, Igbo, Hausa, Efik, Ibibio, Nigerian Pidgin. 4,000+ fellows
+      from 3MTT government programme engaged. Long-term goal: 500,000 hours of audio.
+    languages: [yor, ibo, hau]
+
+  - name: RootLens
+    url: https://www.awarri.com/ai-product
+    description: >
+      Platform for uploading, processing, and managing visual data for AI training
+      and evaluation.
+    languages: []
+
+  - name: Multilingual AI Assistant (in development)
+    url: https://www.awarri.com/ai-product
+    description: >
+      Nigeria's first locally trained multilingual AI assistant. Voice-first approach.
+      Targeting 80%+ accuracy across Yoruba, Hausa, Igbo, Nigerian Pidgin.
+    languages: [yor, hau, ibo]
+
+  - name: Data Annotation Services
+    url: https://www.awarri.com/ai-services
+    description: >
+      Data labeling, annotation, RLHF, and customized data platforms. Lab in Ikorodu
+      employs 100+ workers. Trained GPT-4 with proprietary datasets.
+    languages: []
+
+publications: []
+publications_url: null
+
+partnerships:
+  - NCAIR / NITDA (N-ATLAS development partner)
+  - Federal Ministry of Communications, Innovation & Digital Economy
+  - Data.org
+  - UNDP
+  - UNESCO
+  - Meta
+  - Google
+  - Microsoft
+  - OpenAI (trained GPT-4 with proprietary datasets)
+
+# UNICEF relevance
+unicef_relevance: >
+  Building open-source Nigerian language models (LLM + ASR) with government backing.
+  N-ATLAS is the most significant government-private partnership for African language AI.
+  Voice-first approach aligns with low-literacy use cases. LangEasy's crowdsourced data
+  collection model could be leveraged for UNICEF's community engagement. Already
+  partnered with NCAIR (existing actor).
+
+maturity: emerging  # Models released Sept 2025, still iterating
+engagement_status: none
+openness: partial  # Open for research; commercial license required above 1,000 users
+last_updated: 2026-01-26
+
+notes: >
+  N-ATLAS models are published under the NCAIR1 HuggingFace org (government partnership),
+  not under AWARRITech. Human evaluation shows English (4.21/5) and Hausa (3.98/5) perform
+  well, Igbo (3.87/5) is decent, but Yoruba (2.69/5) still needs work. Developer challenge
+  with NGN 1M prizes to encourage ecosystem building around N-ATLAS.

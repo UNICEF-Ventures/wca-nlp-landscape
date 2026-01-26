@@ -1,0 +1,177 @@
+id: hausanlp
+name: HausaNLP
+type: research_community
+website: https://hausanlp.github.io/
+location: Bayero University Kano, Nigeria (distributed globally)
+
+# Organization details
+founded: 2019
+organization_size: small  # ~11 members on HuggingFace
+funding: >
+  Lacuna Fund (NaijaSenti project). Google DeepMind Academic Fellowship (Shamsuddeen
+  Muhammad). Academic affiliations.
+description: >
+  Open community of academics, researchers, linguists, students, and NLP enthusiasts
+  dedicated to advancing Hausa NLP. Based at the Department of Computing, Bayero
+  University Kano (BUK), Nigeria. Hausa is the second most spoken language in Africa
+  (~120M L1 + 80M L2 speakers) but remains severely under-resourced for NLP.
+
+  HausaNLP has built foundational resources including AfriSenti (110K+ tweets, 14
+  African languages, organized as SemEval-2023 Task 12), NaijaSenti (sentiment corpus
+  for 4 Nigerian languages), HaVG/HaVQA (multimodal Hausa datasets), AfriHate (hate
+  speech for 15 African languages), and BRIGHTER (emotion detection for 28 languages,
+  Best Resource Paper at ACL 2025). Also maintains a resource catalogue at
+  catalog.hausanlp.org and the Kamusun Hausa dictionary.
+
+# Key people
+key_people:
+  - name: Shamsuddeen Hassan Muhammad
+    role: Co-founder & Lead
+    note: >
+      Google DeepMind Academic Fellow, Imperial College London. Senior Lecturer at
+      BUK. Visiting Professor at AIMS (Cameroon & South Africa). PhD from University
+      of Porto. 4,340+ citations. Multiple best paper awards (ACL 2025, NAACL 2025).
+      Also founded Arewa Data Science Academy.
+    url: https://shmuhammadd.github.io/
+  - name: Ibrahim Said Ahmad
+    role: Co-founder
+    note: >
+      Assistant Professor at UW-Stevens Point (USA). PhD from Universiti Kebangsaan
+      Malaysia. Previously postdoc at Northeastern University.
+    url: https://isahmadbbr.github.io/
+  - name: Idris Abdulmumin
+    role: Core contributor
+    note: >
+      Postdoctoral Fellow at University of Pretoria DSFSI. Member of Masakhane.
+      Co-author on MasakhaNER 2.0, machine translation papers.
+    url: https://abumafrim.github.io/
+
+# Coverage
+countries:
+  - NG  # Nigeria
+  - NE  # Niger (Hausa speakers)
+  - GH  # Ghana (Hausa speakers)
+  - CM  # Cameroon (Hausa speakers)
+  - TD  # Chad (Hausa speakers)
+languages:
+  - hau  # Hausa (primary)
+  - yor  # Yoruba (via NaijaSenti, AfriSenti)
+  - ibo  # Igbo (via NaijaSenti, AfriSenti)
+  - twi  # Twi (via AfriSenti)
+
+# Links
+github: https://github.com/hausanlp
+huggingface: https://huggingface.co/hausanlp
+contact:
+  twitter: https://twitter.com/hausaboronlp
+
+# Projects
+projects:
+  - name: AfriSenti
+    url: https://huggingface.co/HausaNLP/AfriSenti
+    description: >
+      Largest sentiment analysis benchmark for African languages. 110K+ annotated tweets
+      in 14 languages. Organized as SemEval-2023 Task 12 (first Africentric SemEval shared
+      task; 44 submissions for monolingual, 32 for multilingual, 34 for zero-shot).
+    languages: [hau, yor, ibo, twi]
+
+  - name: NaijaSenti
+    url: https://github.com/hausanlp/NaijaSenti
+    description: >
+      Lacuna Fund-funded sentiment corpus for 4 Nigerian languages. ~30K annotated
+      tweets per language (Hausa, Igbo, Yoruba, Nigerian Pidgin). Precursor to AfriSenti.
+    languages: [hau, yor, ibo]
+
+  - name: Hausa Visual Genome (HaVG) & HaVQA
+    url: https://huggingface.co/datasets/HausaNLP/HausaVG
+    description: >
+      HaVG: 32,918 multimodal English-Hausa image descriptions (LREC 2022).
+      HaVQA: 6,022 visual question-answering pairs for Hausa (ACL 2023 Findings).
+    languages: [hau]
+
+  - name: AfriHate
+    url: https://aclanthology.org/2025.naacl-main.1/
+    description: >
+      Multilingual hate speech and abusive language datasets for 15 African languages
+      with native speaker annotations. Published at NAACL 2025.
+    languages: [hau, yor, ibo]
+
+  - name: BRIGHTER
+    description: >
+      Bridging the Gap in Human-Annotated Textual Emotion Recognition Datasets for
+      28 languages. Won Best Resource Paper Award at ACL 2025.
+    languages: [hau]
+
+  - name: Kamusun Hausa Dictionary
+    url: https://kamusunhausa.hausanlp.org/
+    description: Online Hausa-to-Hausa dictionary.
+    languages: [hau]
+
+  - name: HausaNLP Resource Catalogue
+    url: https://catalog.hausanlp.org/
+    description: >
+      Curated catalogue of Hausa NLP datasets, tools, and papers. Currently 5+ approved
+      datasets indexed.
+    languages: [hau]
+
+# Publications (selected -- full list is extensive)
+publications:
+  - title: "BRIGHTER: BRIdging the Gap in Human-Annotated Textual Emotion Recognition Datasets for 28 Languages"
+    url: https://aclanthology.org/2025.acl-long.1/
+    venue: ACL 2025 (Best Resource Paper Award)
+
+  - title: "IrokoBench: A New Benchmark for African Languages in the Age of LLMs"
+    url: https://aclanthology.org/2025.naacl-main.1/
+    venue: NAACL 2025 (Outstanding Paper Award)
+
+  - title: "AfriHate: A Multilingual Collection of Hate Speech and Abusive Language Datasets for African Languages"
+    venue: NAACL 2025
+
+  - title: "AfriSenti: A Twitter Sentiment Analysis Benchmark for African Languages"
+    url: https://aclanthology.org/2023.emnlp-main.1/
+    venue: EMNLP 2023
+
+  - title: "SemEval-2023 Task 12: Sentiment Analysis for African Languages (AfriSenti-SemEval)"
+    venue: SemEval 2023
+
+  - title: "HaVQA: A Dataset for Visual Question Answering and Multimodal Research in Hausa"
+    venue: ACL 2023 Findings
+
+  - title: "NaijaSenti: Nigerian Twitter Sentiment Corpus for Multilingual Sentiment Analysis"
+    venue: LREC 2022
+
+  - title: "Hausa Visual Genome: Multi-Modal English to Hausa Machine Translation"
+    venue: LREC 2022
+
+  - title: "HausaNLP: Current Status, Challenges and Future Directions for Hausa NLP"
+    url: https://arxiv.org/html/2505.14311v1
+    venue: AfricaNLP Workshop @ ACL 2025
+
+publications_url: https://scholar.google.com/citations?user=Ne1nt4gAAAAJ
+
+partnerships:
+  - Masakhane
+  - Lacuna Fund
+  - University of Pretoria DSFSI
+  - Imperial College London
+
+# UNICEF relevance
+unicef_relevance: >
+  The primary community driving Hausa NLP. Hausa is spoken across Nigeria, Niger,
+  Ghana, Cameroon, and Chad -- core WCA territory. Their sentiment analysis tools
+  (AfriSenti, NaijaSenti) are directly useful for analyzing community feedback from
+  U-Report and similar platforms. Hate speech detection (AfriHate, HERDPhobia) relevant
+  for content moderation. Strong Masakhane connections. Lead researcher (Shamsuddeen
+  Muhammad) is a Google DeepMind fellow with high academic impact.
+
+maturity: established
+engagement_status: none
+openness: open  # All datasets free, models on HuggingFace, papers open access
+last_updated: 2026-01-26
+
+notes: >
+  Extremely prolific research group -- multiple best paper awards at top venues
+  (ACL, NAACL, EMNLP). 9 models and 6 datasets on HuggingFace. Also organized
+  SemEval shared tasks in 2023, 2024, and 2025. Idris Abdulmumin (core contributor)
+  is at University of Pretoria DSFSI -- another important connection in the
+  African NLP ecosystem.

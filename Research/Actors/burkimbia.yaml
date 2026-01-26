@@ -1,0 +1,110 @@
+id: burkimbia
+name: BurkimbIA
+type: ngo
+website: https://burkimbia.com/
+location: Burkina Faso
+
+# Organization details
+founded: 2024
+organization_size: small  # 6 members
+funding: >
+  Volunteer-driven community. No known external funding.
+description: >
+  Non-profit community of Burkinabe engineers, researchers, students, and professionals
+  building open-source AI models for the Moore (Mossi) language. Motto: "Building AI
+  for Burkina Faso, by Burkina Faso." Has produced 12+ models spanning ASR (Whisper
+  fine-tuned), TTS (XTTS, VITS, ParlerTTS), MT (NLLB, Mistral fine-tuned for
+  French-Moore), and text generation (Gemma). Also maintains public Moore ASR and MT
+  leaderboards for benchmarking.
+
+  Close relationship with GO AI Corp -- Alban Nyantudre is a member of both
+  organizations. BurkimbIA operates as the open-source community counterpart:
+  while GoAI keeps model weights private, BurkimbIA publishes everything openly
+  (Apache 2.0). Their SaChi system is an end-to-end Moore pipeline: ASR -> MT -> TTS.
+
+# Key people
+key_people:
+  - name: SAWADOGO Salif
+    role: Lead developer
+    note: "HuggingFace: https://huggingface.co/sawadogosalif. Time series forecasting, interpretable ML."
+  - name: Alban NYANTUDRE
+    role: ML Engineer
+    note: "HuggingFace: https://huggingface.co/anyantudre. Also at GO AI Corp. Specializes in speech corpora and audio quality. 11 Moore speech datasets."
+  - name: David Christophe Pegdwende Oubda
+    role: Member
+  - name: KABORE Josias
+    role: Member
+  - name: Mahamadi NIKIEMA
+    role: Member
+  - name: KOLOGO Boinzemwinde Josias Yannick
+    role: Member
+
+# Coverage
+countries:
+  - BF  # Burkina Faso
+languages:
+  - mos  # Moore
+
+# Links
+github: https://github.com/burkimbia
+huggingface: https://huggingface.co/burkimbia
+contact:
+  email: contact@burkimbia.com
+
+# Projects
+projects:
+  - name: SaChi (Moore ASR/MT/TTS Pipeline)
+    url: https://huggingface.co/burkimbia
+    description: >
+      End-to-end Moore language AI: BIA-WHISPER (ASR, 3 versions fine-tuned from
+      Whisper Large v3 on ~100hrs Moore audio), BIA-NLLB / BIA-MISTRAL (French-Moore MT),
+      BIA-XTTS / BIA-VITS / BIA-ParlerTTS (Moore TTS). 12 models total. All Apache 2.0.
+    languages: [mos]
+
+  - name: Moore ASR Leaderboard
+    url: https://huggingface.co/spaces/burkimbia/leaderboard-asr
+    description: >
+      Public benchmark comparing ASR models on Moore language using the asr-benchmark-public
+      dataset. Important resource for collecting Moore ASR benchmarks.
+    languages: [mos]
+
+  - name: Moore MT Leaderboard
+    url: https://huggingface.co/spaces/burkimbia/leaderboard-mt
+    description: >
+      Public benchmark comparing French-Moore translation models using the mt-benchmark-public
+      dataset (1,483 rows across 6 domains).
+    languages: [mos]
+
+  - name: Moore Speech Corpora
+    url: https://huggingface.co/anyantudre/moore-speech-full-dataset
+    description: >
+      Consolidated Moore speech corpus (243K downloads). Includes Bible speech, folktales,
+      proverbs, riddles. Individual datasets under Salif and Alban's personal accounts.
+    languages: [mos]
+
+publications: []
+publications_url: null
+
+partnerships:
+  - GO AI Corp (personnel overlap)
+
+# UNICEF relevance
+unicef_relevance: >
+  Open-source complement to GoAI (the existing UNICEF Burkina Faso partner). Same
+  language (Moore), same country, but fully open models (Apache 2.0) vs GoAI's
+  private weights. UNICEF could leverage BurkimbIA's open models for independent
+  evaluation and community improvement. Their public ASR and MT leaderboards are
+  valuable for benchmarking (Task 2). Personnel overlap with GoAI (Alban Nyantudre)
+  means the two orgs share knowledge but take different openness approaches.
+
+maturity: emerging
+engagement_status: none
+openness: open  # Apache 2.0, all models and datasets public
+last_updated: 2026-01-26
+
+notes: >
+  BurkimbIA and GoAI are distinct but closely linked. Alban Nyantudre bridges both.
+  Many of Alban's HuggingFace datasets are mirrored across both orgs. BurkimbIA's
+  models are open while GoAI's are private -- this dynamic is important context for
+  the Moore language landscape. The ASR leaderboard (spaces/burkimbia/leaderboard-asr)
+  is useful for the benchmarking study.

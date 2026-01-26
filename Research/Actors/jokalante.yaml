@@ -1,0 +1,111 @@
+id: jokalante
+name: Jokalante
+type: startup
+website: https://jokalante.com
+location: Dakar, Senegal
+
+# Organization details
+founded: 2016
+organization_size: small  # 11-50 employees
+funding: >
+  Lacuna Fund (KALLAAMA project, 2023). Fund for Innovation in Development / FID
+  (NAFOORE chatbot). GSMA AgriTech Accelerator (via GIZ/BMZ). WFP Innovation
+  Accelerator.
+description: >
+  Senegalese social enterprise ("jokalante" = "facilitate dialogue" in Wolof)
+  providing digital solutions for rural and underserved populations. Core platform
+  provides IVR, SMS, voice, and data collection services across all 14 regions of
+  Senegal, reaching 1M+ people in 7 languages (Wolof, Pulaar, Sereer, Diola,
+  Mandinka, French, English). Primary focus is agriculture, with 250,000 direct
+  beneficiaries.
+
+  Created the KALLAAMA speech dataset (125 hours of transcribed agricultural
+  speech in Wolof, Pulaar, and Sereer) funded by Lacuna Fund. Developing the
+  NAFOORE AI chatbot providing personalized farming advice via WhatsApp and voice
+  calls, adapting to weather, soil, and crop conditions using ANACIM meteorological
+  data and CGIAR agroecological knowledge.
+
+# Key people
+key_people:
+  - name: Ndeye Amy Kebe
+    role: Founder & CEO
+    note: >
+      ICT expert specializing in agriculture. Master's in Education and Adult Training,
+      University of Lille (2013). Also founded Caman vocational training org.
+  - name: Aminata Ndiaye
+    role: Project Manager
+    note: Co-author of KALLAAMA paper.
+  - name: Papa Ndiaga Sarr
+    role: IT Manager
+
+# Coverage
+countries:
+  - SN  # Senegal
+  - GM  # The Gambia
+languages:
+  - wol  # Wolof
+  - fuc  # Pulaar/Pular
+  - srr  # Sereer
+  - dyo  # Diola/Jola
+  - mnk  # Mandinka
+
+# Links
+huggingface: https://huggingface.co/jokalante
+
+# Projects
+projects:
+  - name: KALLAAMA Speech Dataset
+    url: https://github.com/gauthelo/kallaama-speech-dataset
+    description: >
+      125 hours of transcribed agricultural speech: Wolof (55h, 13h expert-validated),
+      Pulaar (32h, 11h expert-validated), Sereer (38h, 11h expert-validated). Also
+      includes Wolof text corpus (1.14M words), Pulaar text corpus (742K words), and
+      phonetized Wolof lexicon (49,132 entries). CC-BY 4.0. Available on GitHub,
+      Zenodo, and OpenSLR 151. Partnership with Orange Innovation and Ecole
+      Polytechnique de Thies.
+    languages: [wol, fuc, srr]
+
+  - name: NAFOORE AI Chatbot
+    url: https://fundinnovation.dev/en/projects/voice-ai-chatbot-provides-farming-advice-senegal
+    description: >
+      Voice chatbot powered by generative AI providing personalized farming advice
+      via WhatsApp and voice calls. Adapts responses based on weather, soil type, and
+      crops using ANACIM meteorological data and CGIAR/AICCRA agroecological knowledge.
+      Funded by Fund for Innovation in Development (FID). June 2024 - January 2026.
+    languages: [wol, fuc, srr, dyo, mnk]
+
+publications:
+  - title: "Kallaama: A Transcribed Speech Dataset about Agriculture in the Three Most Widely Spoken Languages in Senegal"
+    url: https://aclanthology.org/2024.rail-1.2/
+    venue: RAIL 2024 (Resources for African Indigenous Languages)
+
+partnerships:
+  - Orange Innovation (France)
+  - Ecole Polytechnique de Thies
+  - Lacuna Fund
+  - GSMA AgriTech Accelerator
+  - WFP Innovation Accelerator
+  - ANACIM (Senegalese meteorological agency)
+  - CGIAR / AICCRA
+  - Fund for Innovation in Development (FID)
+
+# UNICEF relevance
+unicef_relevance: >
+  Directly relevant as a Senegal-based organization building speech technology and
+  AI chatbots for local languages with agricultural and climate focus. KALLAAMA
+  dataset covers Wolof, Pulaar, and Sereer -- languages that currently lack dedicated
+  actors. The NAFOORE platform and IVR/SMS infrastructure reaching 1M+ rural users
+  is exactly the kind of community engagement infrastructure UNICEF programs use.
+  Relevant for the March 2026 Senegal summit.
+
+maturity: established  # Operating since 2016, but AI/NLP work is recent
+engagement_status: none
+openness: open  # KALLAAMA dataset is CC-BY 4.0
+last_updated: 2026-01-26
+
+notes: >
+  Primary expertise is rural digital services, not AI research. Their entry into NLP
+  is driven by practical need (reaching farmers who speak local languages). The KALLAAMA
+  dataset is one of very few open speech resources for Pulaar and Sereer. HuggingFace
+  profile has no public models or datasets yet (data hosted on GitHub/OpenSLR instead).
+  70% of surveyed users reported reduced material losses from timely weather alerts.

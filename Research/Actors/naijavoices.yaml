@@ -1,0 +1,108 @@
+id: naijavoices
+name: NaijaVoices
+type: community_initiative
+website: https://naijavoices.com
+location: Nigeria (distributed; leadership in Canada/USA)
+
+# Organization details
+founded: 2021
+organization_size: small
+funding: >
+  Lacuna Fund grant (Rockefeller Foundation, Google.org). Revenue from commercial
+  licensing of the dataset reinvested into Language Heritage Micro-Grants.
+description: >
+  Community-driven initiative building Africa's largest speech datasets for Nigerian
+  languages. The NaijaVoices dataset contains 1,800+ hours of speech from 5,000+
+  speakers across Igbo, Hausa, and Yoruba -- making it the largest multi-speaker
+  African speech dataset to date. Uses a "data farming" methodology where communities
+  cultivate, own, and benefit from their language data (as opposed to extractive
+  "data mining"). Fine-tuning ASR models on the dataset showed dramatic improvements:
+  75.86% WER reduction (Whisper), 52.06% (MMS), 42.33% (XLSR).
+
+  Runs the Language Heritage Micro-Grants program, reinvesting dataset revenue into
+  community-driven documentation of endangered Nigerian languages (2025 cohort covers
+  Ehugbo, Nupe, Tyap, Gbagyi, Ekpeye, Ibono, Obolo).
+
+# Key people
+key_people:
+  - name: Chris Emezue
+    role: Founder & Lead
+    note: >
+      Mila / Universite de Montreal. Also founder of Lanfrica. Former HuggingFace ML
+      Advocate. MSc Mathematics in Data Science (TU Munich). General Chair Deep Learning
+      Indaba 2026. Core Masakhane contributor.
+  - name: Abraham Owodunni
+    role: Co-lead
+    note: PhD researcher at Ohio State University
+  - name: Busayo Awobade
+    role: Co-lead / ML Engineer
+    note: MLCollective. Focus on efficient ML and resource-efficient NLP.
+  - name: Bonaventure Dossou
+    role: Co-founder
+    note: Beninese researcher at McGill/Mila. Also co-founded Lanfrica.
+
+# Coverage
+countries:
+  - NG  # Nigeria
+languages:
+  - ibo  # Igbo
+  - hau  # Hausa
+  - yor  # Yoruba
+
+# Links
+github: https://github.com/Naija-Voices
+huggingface: https://huggingface.co/naijavoices
+contact:
+  email: info@naijavoices.com
+
+# Projects
+projects:
+  - name: NaijaVoices Dataset
+    url: https://huggingface.co/datasets/naijavoices/naijavoices-dataset
+    description: >
+      1,800+ hours of speech from 5,000+ speakers across Igbo, Hausa, and Yoruba.
+      645,000+ unique sentences. CC BY-NC-SA 4.0. 1,200+ downloads on HuggingFace.
+    languages: [ibo, hau, yor]
+
+  - name: Language Heritage Micro-Grants
+    url: https://lanfrica.com/blog/announcing-the-2025-cohort-of-the-naijavoices-language-heritage-micro-grant/
+    description: >
+      Micro-grant program reinvesting dataset revenue into community-driven documentation
+      of under-resourced Nigerian languages. 2025 cohort: 6 projects covering Ehugbo,
+      Nupe, Tyap, Gbagyi, Ekpeye, Ibono, Obolo. NGN 4M total.
+    languages: []
+
+# Publications
+publications:
+  - title: "The NaijaVoices Dataset: Cultivating Large-Scale, High-Quality, Culturally-Rich Speech Data for African Languages"
+    url: https://arxiv.org/abs/2505.20564
+    venue: Interspeech 2025
+
+partnerships:
+  - Lanfrica
+  - Meta
+  - Lacuna Fund
+  - Intron Health
+  - Masakhane
+  - McGill University
+  - Mila Quebec AI Institute
+
+# UNICEF relevance
+unicef_relevance: >
+  Large open speech dataset for Nigeria's three major languages (Igbo, Hausa, Yoruba)
+  directly relevant to UNICEF Nigeria -- a priority country. Community-driven "data
+  farming" methodology aligns with UNICEF values around participation and ownership.
+  Fine-tuned ASR models show dramatic WER improvements. Micro-grants program expands
+  coverage to endangered Nigerian languages. Chris Emezue is a central node connecting
+  NaijaVoices, Lanfrica, and Masakhane.
+
+maturity: established
+engagement_status: none
+openness: open  # CC BY-NC-SA 4.0
+last_updated: 2026-01-26
+
+notes: >
+  Dataset available at naijavoices.com (requires membership registration) and on
+  HuggingFace. Strong cross-connections with Intron Health (Chris Emezue co-authored
+  AfriSpeech papers), Lanfrica (same founder), and Masakhane. Intron Health lists
+  NaijaVoices as a partner.

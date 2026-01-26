@@ -1,0 +1,162 @@
+id: intron-health
+name: Intron Voice AI
+type: startup
+website: https://www.intron.io
+location: Lagos, Nigeria (also San Francisco, USA)
+
+# Organization details
+founded: 2020
+organization_size: medium
+funding: >
+  $1.6M pre-seed (July 2024) led by Microtraction, with Plug and Play Ventures,
+  Jaza Rift Ventures, Octopus Ventures, Africa Health Ventures, OpenseedVC, Pi Campus,
+  Alumni Angel, BakerBridge Capital. NVIDIA Inception programme. Gates Foundation
+  research funding (AfriMed-QA).
+description: >
+  Africa-focused voice AI startup (formerly Intron Health, rebranded mid-2025 as they
+  expanded beyond healthcare). Builds the "infrastructure layer for voice interactions
+  across Africa." Develops the Sahara model family: Sahara-Optimus (ASR for 300+ African
+  accents, 92%+ accuracy), Sahara-Nova (real-time streaming), Sahara-TTS (80+ voices,
+  40+ accents, 13 countries), Sahara-Voice-Lock (biometric voice auth), and upcoming
+  Sahara-Titan (multilingual ASR for 20 African languages) and Sahara-Primus
+  (multilingual TTS).
+
+  Proprietary AccentMix algorithm trained on 3.5M+ audio clips from 18,000+ speakers
+  across 30+ countries. Deployed in 30+ hospitals across 5 markets (Nigeria, Kenya,
+  Rwanda, South Africa, Uganda). Also deployed for court transcription (Ogun State
+  Judiciary) and fintech call centers (Branch International). Created major open
+  datasets including AfriSpeech-200 (200hrs, 120 accents) and AfriMed-QA (15,275
+  medical questions, 32 specialties, 16 countries).
+
+# Key people
+key_people:
+  - name: Dr. Tobi Olatunji
+    role: Founder & CEO
+    note: >
+      Physician (University of Ibadan) turned ML scientist. Ex-AWS Health AI,
+      ex-Enlitic. MSc CS Georgia Tech. Yale healthcare management certificate.
+      3 patents. Built models for US, Canadian, European hospital systems before
+      founding Intron.
+  - name: Olakunle Asekun
+    role: Co-Founder & COO
+    note: MBA from IE Business School. Prior at KPMG, GE. Based in France.
+  - name: Timothy Faniran
+    role: Co-Founder & CTO
+    note: Prior at Visa, Tesla.
+
+# Coverage
+countries:
+  - NG  # Nigeria
+  - KE  # Kenya
+  - RW  # Rwanda
+  - ZA  # South Africa
+  - UG  # Uganda
+  - GH  # Ghana (hiring)
+languages:
+  - hau  # Hausa (Sahara-Titan target)
+  - yor  # Yoruba (Sahara-Titan target)
+  - ibo  # Igbo (Sahara-Titan target)
+
+# Links
+github: https://github.com/intron-innovation
+huggingface: https://huggingface.co/intronhealth
+contact:
+  twitter: https://twitter.com/intaboronhealth
+
+# Projects
+projects:
+  - name: Sahara Model Family
+    url: https://www.intron.io
+    description: >
+      Production voice AI suite: Optimus (ASR, 300+ accents), Nova (streaming),
+      TTS (80+ voices, 40+ accents), Voice-Lock (biometrics). Outperforms Whisper,
+      GPT-4o Transcribe, Google STT, AWS Transcribe on African-accented English.
+      Sahara-Titan (20 African languages) and Sahara-Primus (multilingual TTS)
+      in development.
+    languages: [hau, yor, ibo]
+
+  - name: AfriSpeech-200
+    url: https://huggingface.co/datasets/intronhealth/afrispeech-200
+    description: >
+      200hrs Pan-African accented speech, 67,577 clips, 2,463 speakers, 120 accents,
+      13 countries. Clinical and general domain. 1,240 downloads.
+    languages: []
+
+  - name: AfriMed-QA
+    url: https://huggingface.co/datasets/intronhealth/afrimedqa_v2
+    description: >
+      Pan-African medical QA benchmark: 15,275 questions across 32 specialties,
+      16 countries. Joint with Google Research, Gates Foundation, PATH.
+      15,300 downloads.
+    languages: []
+
+  - name: AfriSpeech-MultiBench
+    url: https://arxiv.org/abs/2511.14255
+    description: >
+      First domain-specific evaluation suite for 100+ African English accents across
+      7 application domains.
+    languages: []
+
+  - name: AfriSpeech ASR Challenge
+    url: https://zindi.africa/competitions/intron-afrispeech-200-automatic-speech-recognition-challenge
+    description: >
+      $5,000 prize challenge on Zindi for African-accented ASR. Partners: NVIDIA,
+      HuggingFace, Data Science Nigeria.
+    languages: []
+
+# Publications
+publications:
+  - title: "AfriSpeech-200: Pan-African Accented Speech Dataset for Clinical and General Domain ASR"
+    url: https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00627/118796
+    venue: TACL / EMNLP 2023
+
+  - title: "AfriNames: Most ASR Models 'Butcher' African Names"
+    url: https://arxiv.org/abs/2306.02443
+    venue: Interspeech 2023 (Oral)
+
+  - title: "AfriSpeech-Dialog: A Benchmark Dataset for Spontaneous English Conversations in Healthcare and Beyond"
+    url: https://arxiv.org/abs/2502.03945
+    venue: arXiv 2025
+
+  - title: "AfriSpeech-MultiBench: A Verticalized Multidomain Multicountry Benchmark Suite"
+    url: https://arxiv.org/abs/2511.14255
+    venue: arXiv 2025
+
+  - title: "AfriMed-QA: A Pan-African, Multi-Specialty, Medical Question-Answering Benchmark Dataset"
+    url: https://arxiv.org/abs/2411.15640
+    venue: arXiv 2024
+
+publications_url: https://www.intron.io/research/
+
+partnerships:
+  - Google Research
+  - Bill & Melinda Gates Foundation
+  - Digital Square at PATH
+  - NVIDIA
+  - Ministry of Health Rwanda
+  - Data Science Nigeria
+  - HuggingFace
+  - Masakhane
+  - NaijaVoices
+
+# UNICEF relevance
+unicef_relevance: >
+  Directly relevant to UNICEF's healthcare AI goals. Sahara-Titan will cover 20
+  African languages including Hausa, Yoruba, Igbo. AfriSpeech-200 and AfriMed-QA
+  provide critical benchmarks for evaluating AI tools in African healthcare settings.
+  Already deployed in Rwanda (Ministry of Health nationwide), Nigeria, Kenya, Uganda.
+  Gates Foundation/Google/PATH partnership for LLM evaluation aligns with UNICEF's
+  need to assess AI tool readiness.
+
+maturity: established
+engagement_status: none
+openness: partial  # Open datasets; closed production models
+last_updated: 2026-01-26
+
+notes: >
+  Formerly "Intron Health", rebranded mid-2025 as they expanded beyond healthcare into
+  legal, fintech, and other sectors. Currently focused on accented English -- Sahara-Titan
+  (local African languages) is still in development. NaijaVoices lists Intron as a partner.
+  Chris Emezue (NaijaVoices) co-authored AfriSpeech-200 and AfriNames papers. Real-world
+  impact: reduced radiology result wait times from 48 hours to 20 minutes; court
+  transcription times nearly halved.

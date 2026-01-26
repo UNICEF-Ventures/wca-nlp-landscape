@@ -10,7 +10,7 @@ Duration: January - March 2026
 Mapping of available NLP resources (ASR, TTS, MT, LLM) and key actors working on WCA languages.
 
 ### 1.1 Infrastructure
-- [x] Research data and directory structure
+- [x] Research data and directory 
 - [x] Structuring of language database (African language grid)
 - [x] Comprehensive language list (wca_all_languages.yaml)
 - [x] HuggingFace scraping (models + datasets)
@@ -22,8 +22,10 @@ Mapping of available NLP resources (ASR, TTS, MT, LLM) and key actors working on
 - [x] Countries tab with LUDP integration
 - [x] GitHub Pages auto-deployment
 - [ ] Crisis index information for languages
-- [ ] Lanfrica scraping (evaluate gain vs HuggingFace)
+- [ ] Lanfrica scraping? (evaluate gain vs HuggingFace)
 - [ ] MMS special check
+- [ ] Compile an updated full list of important multilingual models
+- [ ] List important fine-tuned models (⭐️ highlighted models) for each language
 - [ ] Document generation (PDF factsheets)
 
 
@@ -54,7 +56,7 @@ Profiles of organizations, research groups, and startups working on African lang
 
 | Done | Target | Progress                 |
 |------|--------|--------------------------|
-| 15   | 20     | ███████████████░░░░░ 75% |
+| 24   | 24     | ████████████████████ 100% |
 
 **Completed actors:**
 1. Masakhane - Pan-African NLP research community
@@ -72,16 +74,22 @@ Profiles of organizations, research groups, and startups working on African lang
 13. Baamtu - Senegal, Wolof (consulting, closed)
 14. GalsenAI - Senegal, Wolof NLP community
 15. Chad AI Network - Chad, Chadian Arabic NLP
+16. NaijaVoices - Nigeria, 1800hrs speech dataset (Hausa/Igbo/Yoruba)
+17. BurkimbIA - Burkina Faso, open-source Moore models (complement to GoAI)
+18. Awarri - Nigeria, N-ATLAS government-backed LLM
+19. HausaNLP - Nigeria/distributed, Hausa NLP research community
+20. Jokalante - Senegal, KALLAAMA speech dataset + NAFOORE chatbot
+21. CONCREE - Senegal, Wolof TTS (Adia suite)
+22. Lanfrica - Pan-African, language resource discovery platform
+23. Intron Voice AI - Nigeria, Sahara ASR models, healthcare focus
+24. UBC Deep Learning & NLP Lab - Canada, SERENGETI/Toucan/AfroLID (517 African languages)
 
 Languages missing dedicated actors
 Sierra Leone: Krio, Mende, Temne - no dedicated actors
 DRC/Congo: Lingala, Congo Swahili - no dedicated actors
 CAR: Sango - no dedicated actors
-Guinea: Pular/Fulfulde - no dedicated actors
-Guinea-Bissau/Gambia: Mandinka - no dedicated actors
 Gabon/Equatorial Guinea: Fang - no dedicated actors
 Kanuri (Chad/Nigeria/Niger) - no dedicated actors
-Fulfulde (widespread) - only partially covered
 
 ---
 
@@ -151,6 +159,22 @@ Advisory support for actor selection, agenda input, and presentation of findings
 ---
 
 ## Recent Updates (January 2026)
+
+### 2026-01-26
+- Added 8 new actors + UBC-NLP (24 total, 100% of target)
+  - NaijaVoices: Nigeria, 1800hrs speech dataset, Interspeech 2025, Chris Emezue
+  - BurkimbIA: Burkina Faso, open-source Moore models (ASR/TTS/MT), complement to GoAI
+  - Awarri: Nigeria, N-ATLAS government-backed LLM (Llama-3 8B), UNGA80 launch
+  - HausaNLP: Hausa NLP research community, AfriSenti, multiple ACL/EMNLP best papers
+  - Jokalante: Senegal, KALLAAMA 125hrs speech (Wolof/Pulaar/Sereer), NAFOORE chatbot
+  - CONCREE: Senegal, Wolof TTS (Adia suite), entrepreneurship platform
+  - Lanfrica: Pan-African language resource catalog (2,199 languages), Bengio advisor
+  - Intron Voice AI: Nigeria, Sahara ASR (300+ African accents), healthcare deployment
+- Research report at Research/potential-new-actors.md
+- Languages now without actors reduced to: Krio, Mende, Temne, Lingala, Congo Swahili, Sango, Fang, Kanuri
+- Pular/Fulfulde now partially covered by Jokalante (KALLAAMA dataset) and LAfricaMobile
+- Mandinka partially covered by Jokalante (NAFOORE chatbot languages)
+- Note: BurkimbIA ASR leaderboard (huggingface.co/spaces/burkimbia/leaderboard-asr) useful for benchmarking task
 
 ### 2026-01-23
 - Added 5 new actors (15 total, 75% of target)

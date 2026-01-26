@@ -1,0 +1,114 @@
+id: concree
+name: CONCREE
+type: startup
+website: https://concree.com/
+location: Dakar and Saint-Louis, Senegal
+
+# Organization details
+founded: 2020
+organization_size: small
+funding: >
+  Impact partners (30+). Revenue from entrepreneurship platform and programs.
+  Partnerships with USAID, UNIDO, ITC, ENABEL, French Embassy in Senegal.
+description: >
+  Senegalese social enterprise originally focused on entrepreneurship support
+  (virtual incubation, business training). Has expanded into AI/NLP for Wolof
+  through the "Adia" product suite. 1,000+ entrepreneurs supported, 57+ programs
+  delivered, 7,000+ platform users.
+
+  The Adia suite includes: Adia_TTS (Wolof text-to-speech, Apache 2.0, trained on
+  40 hours of Wolof speech data), Wolof LLM variants (Llama 3.2 fine-tuned), and
+  Tambali (AI co-pilot that transforms business ideas into action plans). Technical
+  work led by Moustapha Sarr and Hawoly Deme, who have produced 11+ models and 11+
+  datasets under personal accounts focused on Wolof TTS and text generation.
+  Also connected to "Startup SamaIA" ("My AI" in Wolof).
+
+# Key people
+key_people:
+  - name: Babacar Birane
+    role: Executive Director
+  - name: Abdoul Sy
+    role: CTO / Co-founder
+    note: "HuggingFace: dousy"
+  - name: Moustapha Sarr
+    role: AI/ML Engineer
+    note: >
+      Most prolific technical contributor. 11 models + 11 datasets on HuggingFace
+      (personal account). Multiple Wolof TTS architectures (XTTS, Parler, SpeechT5).
+      HuggingFace: Moustapha91.
+  - name: Hawoly Deme
+    role: AI/ML Engineer
+    note: "Llama 3.2 fine-tuned for Wolof. HuggingFace: Hawoly18."
+
+# Coverage
+countries:
+  - SN  # Senegal
+languages:
+  - wol  # Wolof
+
+# Links
+huggingface: https://huggingface.co/CONCREE
+contact:
+  email: ai@concree.com
+
+# Projects
+projects:
+  - name: Adia_TTS (Wolof Text-to-Speech)
+    url: https://huggingface.co/CONCREE/Adia_TTS
+    description: >
+      Wolof TTS based on Parler TTS mini multilingual v1.1. Trained on 40 hours
+      of Wolof speech data, fine-tuned for 100 epochs (~168 hours training).
+      0.9B parameters, 24kHz output. Apache 2.0 license. 396 downloads.
+    languages: [wol]
+
+  - name: Adia LLM (Wolof Text Generation)
+    description: >
+      Llama 3.2-3B fine-tuned for Wolof text generation (SFT, 100 training steps).
+      Under Hawoly Deme's personal HuggingFace account.
+    languages: [wol]
+
+  - name: Tambali (AI Co-pilot)
+    url: https://concree.com/
+    description: >
+      AI co-pilot that transforms business ideas into concrete action plans using
+      AI. Part of CONCREE's entrepreneurship platform.
+    languages: [wol]
+
+  - name: Wolof TTS Research (under personal accounts)
+    description: >
+      Multiple Wolof TTS models across architectures: XTTS-Adia (2 versions),
+      Parler TTS multi-speaker, SpeechT5 fine-tuned (20K steps). 11 Wolof
+      speech/text datasets including wolof_kalama_TTS and kaddu_wolof series.
+      Under Moustapha Sarr's personal HuggingFace account (Moustapha91).
+    languages: [wol]
+
+publications: []
+publications_url: null
+
+partnerships:
+  - USAID
+  - UNIDO
+  - ITC (International Trade Centre)
+  - ENABEL
+  - French Embassy in Senegal
+  - ADEPME
+  - Netherlands Trust Fund V
+
+# UNICEF relevance
+unicef_relevance: >
+  Senegalese company with established institutional partnerships (USAID, UNIDO, ITC).
+  Adia_TTS is one of very few open Wolof TTS models (Apache 2.0). Their
+  entrepreneurship platform and Tambali AI co-pilot demonstrate practical deployment
+  of Wolof language technology. Adds to Senegal actor coverage alongside GalsenAI
+  and Baamtu. Relevant for March 2026 Senegal summit.
+
+maturity: emerging  # Established as company (2020), but NLP work is recent
+engagement_status: none
+openness: partial  # Adia_TTS is Apache 2.0; platform is commercial
+last_updated: 2026-01-26
+
+notes: >
+  Primary business is entrepreneurship support, not NLP. AI work is a recent
+  expansion. Many HuggingFace Spaces are currently in error state, suggesting
+  active development. Moustapha Sarr and Hawoly Deme are also affiliated with
+  "Startup SamaIA" -- possibly a sister initiative. "Sama" means "my" in Wolof.

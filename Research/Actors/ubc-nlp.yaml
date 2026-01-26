@@ -1,0 +1,162 @@
+id: ubc-nlp
+name: UBC Deep Learning & NLP Lab
+type: university
+website: https://www.dlnlp.ai/
+location: Vancouver, Canada (University of British Columbia)
+
+# Organization details
+founded: ~2018
+organization_size: medium  # ~21 researchers: 1 director, 4 postdocs, 7 PhD, 6 RAs, masters students
+funding: >
+  University of British Columbia. Canadian research funding agencies.
+description: >
+  Research lab at the University of British Columbia led by Muhammad Abdul-Mageed, focused on
+  deep representation learning and natural language socio-pragmatics. While based in Canada,
+  the lab has become one of the most prolific producers of African language NLP resources
+  globally, with work spanning language modeling, machine translation, language identification,
+  and benchmarking for hundreds of African languages. Their SERENGETI and Cheetah language
+  models cover 517 African languages, Toucan provides machine translation for 156 African
+  language pairs, and AfroLID identifies 517 African languages. They also maintain the
+  SimbaBench and Sahara leaderboards for benchmarking African speech and NLP models.
+
+# Key people
+key_people:
+  - name: Muhammad Abdul-Mageed
+    role: Director
+    note: Associate Professor at UBC. Leads all African language initiatives.
+  - name: AbdelRahim Elmadany
+    role: Researcher
+    note: Co-author on Toucan, SERENGETI, AfroLID
+  - name: Ife Adebara
+    role: Researcher
+    note: Co-author on Toucan, "Towards Afrocentric NLP" (ACL 2022)
+
+# Coverage - WCA languages confirmed in their models (Toucan, SERENGETI cover 517 African languages)
+countries: []  # Canada-based; covers Pan-African languages
+languages:
+  - hau  # Hausa - in Toucan, SERENGETI
+  - yor  # Yoruba - in Toucan, SERENGETI; dedicated Yoruba-English MT paper
+  - ibo  # Igbo - in Toucan, SERENGETI
+  - bam  # Bambara - in Toucan, SERENGETI
+  - twi  # Twi - in Toucan (via Akan)
+  - ewe  # Ewe - in Toucan, SERENGETI
+  - wol  # Wolof - in SERENGETI
+  - fon  # Fon - in SERENGETI
+  - lin  # Lingala - in SERENGETI
+  - aka  # Akan - in Toucan, SERENGETI
+  - ful  # Fulfulde - in SERENGETI
+  # SERENGETI/Cheetah cover 517 African languages total, likely including most WCA languages
+
+# Links
+github: https://github.com/UBC-NLP
+huggingface: https://huggingface.co/UBC-NLP
+contact:
+  twitter: https://twitter.com/UBC_NLP
+
+# Projects
+projects:
+  - name: SimbaBench
+    url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    description: Leaderboard for benchmarking African Speech AI models across languages and tasks.
+    languages: []  # Pan-African speech benchmark
+
+  - name: Sahara Benchmark
+    url: https://huggingface.co/spaces/UBC-NLP/sahara
+    description: Comprehensive benchmark and leaderboard for African NLP models.
+    languages: []  # Pan-African NLP benchmark
+
+  - name: SERENGETI
+    url: https://huggingface.co/UBC-NLP
+    description: >
+      Massively multilingual language models for 517 African languages and varieties.
+      Outperforms other models on 11 datasets across 8 NLU tasks (82.27 avg F1).
+    languages: [hau, yor, ibo, bam, twi, ewe, wol, fon, lin, aka, ful]  # 517 total
+
+  - name: Toucan
+    url: https://huggingface.co/UBC-NLP/toucan-base
+    description: >
+      Many-to-many machine translation for 156 African language pairs. Available in
+      base (0.6B) and 1.2B parameter versions. Built on Cheetah language models.
+    languages: [hau, yor, ibo, bam, twi, ewe, aka]  # 46 languages, ~150 pairs
+
+  - name: Cheetah
+    url: https://huggingface.co/UBC-NLP
+    description: >
+      Pre-trained language models (1.2B and 3.7B parameters) covering 517 African languages.
+      Foundation for the Toucan translation models.
+    languages: [hau, yor, ibo, bam, twi, ewe, wol, fon, lin, aka, ful]  # 517 total
+
+  - name: AfroLID
+    url: https://huggingface.co/UBC-NLP/afrolid_1.5
+    description: >
+      Neural language identification toolkit for 517 African languages and varieties
+      across 14 language families and 5 orthographic systems. Achieves 95.89 F1-score.
+    languages: [hau, yor, ibo, bam, twi, ewe, wol, fon, lin, aka, ful]  # 517 total
+
+  - name: spBLEU_1K
+    url: https://huggingface.co/UBC-NLP
+    description: >
+      Evaluation metric for machine translation covering 1,000 languages (614 African).
+      Released alongside Toucan.
+    languages: []  # 1000 languages
+
+# Publications - African language focused
+publications:
+  - title: "Toucan: Many-to-Many Translation for 150 African Language Pairs"
+    url: https://aclanthology.org/2024.findings-acl.781/
+    venue: Findings of ACL 2024
+
+  - title: "SERENGETI: Massively Multilingual Language Models for Africa"
+    url: https://arxiv.org/abs/2212.10785
+    venue: Findings of ACL 2023
+
+  - title: "AfroLID: A Neural Language Identification Tool for African Languages"
+    url: https://arxiv.org/abs/2210.11744
+    venue: EMNLP 2022
+
+  - title: "Towards Afrocentric NLP for African Languages: Where We Are and Where We Can Go"
+    url: https://arxiv.org/abs/2203.08351
+    venue: ACL 2022
+
+  - title: "Linguistically-motivated Yorùbá-English Machine Translation"
+    url: https://aclanthology.org/2022.coling-1.449/
+    venue: COLING 2022
+
+  - title: "Improving African Language Identification with Multi-task Learning"
+    url: https://openreview.net/forum?id=hEajWlbZJI
+    venue: AfricaNLP 2023
+
+  - title: "UBC-DLNLP at SemEval-2023 Task 12: Impact of Transfer Learning on African Sentiment Analysis"
+    url: https://arxiv.org/abs/2304.11256
+    venue: ACL 2023
+
+  - title: "Zero-Shot Slot and Intent Detection in Low-Resource Languages"
+    url: https://arxiv.org/abs/2304.13292
+    venue: VarDial 2023
+
+publications_url: https://dlnlp.ai/our_papers
+
+partnerships:
+  - University of British Columbia
+
+# UNICEF relevance
+unicef_relevance: >
+  Major producer of open African language technology resources covering hundreds of WCA languages.
+  Their SERENGETI/Cheetah models (517 African languages), Toucan MT system (156 language pairs),
+  and AfroLID language identification tool are directly usable in UNICEF programmes. The SimbaBench
+  and Sahara benchmarks provide standardized evaluation frameworks for assessing African language
+  technology - valuable for UNICEF's model selection decisions. Their "Towards Afrocentric NLP"
+  position paper provides a useful framework for ethical language technology development in the region.
+  Not Africa-based, but models and tools are open and freely available.
+
+maturity: established
+engagement_status: none
+openness: open  # Public models, datasets, papers, GitHub, HuggingFace
+last_updated: 2026-01-26
+
+notes: >
+  Canada-based lab, not African-led, but with significant African language output. Their scale
+  of coverage (517 languages) is among the broadest of any research group. Strong publication
+  record at top NLP venues (ACL, EMNLP, COLING). Also has extensive Arabic NLP work (ARBERT,
+  MARBERT, AraT5, JASMINE, NileChat) which may be relevant for Shuwa Arabic and Mauritania.
+  45 models and 28 datasets on HuggingFace as of January 2026.

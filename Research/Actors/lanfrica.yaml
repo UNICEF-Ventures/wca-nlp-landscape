@@ -1,0 +1,111 @@
+id: lanfrica
+name: Lanfrica
+type: ngo
+website: https://lanfrica.com
+location: Distributed (founders in Canada/Germany; operations pan-African)
+
+# Organization details
+founded: 2020
+organization_size: small
+funding: >
+  Mila Quebec AI Institute Entrepreneurship Lab partnership. UNESCO/ViVaTech prize.
+  Shuttleworth Flash Grant (Bonaventure Dossou).
+description: >
+  Non-profit platform that catalogs, archives, and connects African language technology
+  resources (datasets, papers, models, tools). Addresses the discoverability problem --
+  African language resources are fragmented across many platforms and hard to find.
+  Covers 2,199 African languages with 1,000+ AI resources catalogued. Uses custom
+  algorithms to detect which African language(s) a resource involves, even when not
+  explicitly stated. Participatory approach allows community contributions. Goal:
+  200,000 linked records by 2026.
+
+  Founded by Chris Emezue (Nigeria) and Bonaventure Dossou (Benin), both core
+  Masakhane researchers. Advised by Turing Award winner Yoshua Bengio. Won first
+  place at UNESCO/ViVaTech 2021 challenge for "Overcoming Language Barriers through
+  Data and AI."
+
+# Key people
+key_people:
+  - name: Chris Emezue
+    role: Founder
+    note: >
+      Nigerian. MSc Mathematics in Data Science (TU Munich). Research at Mila Quebec,
+      former HuggingFace ML Advocate. Also founder of NaijaVoices. General Chair
+      Deep Learning Indaba 2026. Core Masakhane contributor.
+  - name: Bonaventure F. P. Dossou
+    role: Co-founder
+    note: >
+      Beninese. PhD candidate at McGill/Mila (supervised by Jackie Cheung). Former
+      Google AI, Roche Canada, Lelapa AI. Led Fon integration into Google Translate
+      (2024). Co-creator of FFR (French-Fon MT). Borealis AI PhD Fellow.
+  - name: Yoshua Bengio
+    role: Research Advisor
+    note: Turing Award winner. Advisory role since July 2022.
+
+# Coverage
+countries: []  # Pan-African platform, not country-specific
+languages: []  # Catalogs resources for 2,199 African languages
+
+# Links
+github: https://github.com/Lanfrica
+huggingface: https://huggingface.co/lanfrica
+contact:
+  email: support@lanfrica.com
+  twitter: https://twitter.com/lanfrica
+
+# Projects
+projects:
+  - name: Lanfrica Platform
+    url: https://lanfrica.com
+    description: >
+      Centralized catalog of African language resources. Aggregates datasets, papers,
+      and models from arXiv, AfricArXiv, Zenodo, and other sources. Custom NLP
+      algorithms identify African languages in resources. 2,199 languages indexed,
+      1,000+ AI resources.
+    languages: []
+
+# Publications
+publications:
+  - title: "Lanfrica: A Participatory Approach to Documenting Machine Translation Research on African Languages"
+    url: https://arxiv.org/pdf/2008.07302.pdf
+    venue: arXiv 2020
+
+  - title: "AfroLM: A Self-Active Learning-based Multilingual Pretrained Language Model for 23 African Languages"
+    url: https://aclanthology.org/2022.emnlp-main.11/
+    venue: EMNLP 2022
+
+  - title: "OkwuGbe: End-to-End Speech Recognition for Fon and Igbo"
+    url: https://aclanthology.org/2021.emnlp-main.47/
+    venue: EMNLP 2021
+
+  - title: "MMTAfrica: Multilingual Machine Translation for African Languages"
+    url: https://arxiv.org/abs/2109.04715
+    venue: WMT 2021
+
+publications_url: https://scholar.google.com/citations?user=2J581k0AAAAJ
+
+partnerships:
+  - Mila Quebec AI Institute
+  - Masakhane
+  - HuggingFace
+  - UNESCO
+  - Meta
+
+# UNICEF relevance
+unicef_relevance: >
+  Essential discovery platform for African language technology resources. Any UNICEF
+  programme seeking to identify available NLP tools, datasets, and models for WCA
+  languages should use Lanfrica as a starting point. The founders are deeply embedded
+  in the Masakhane and broader AfricaNLP community. Could serve as a resource mapping
+  tool for UNICEF's technology selection process. Won UNESCO/ViVaTech challenge.
+
+maturity: established
+engagement_status: none
+openness: open  # Platform freely accessible, founders publish openly
+last_updated: 2026-01-26
+
+notes: >
+  Lanfrica is a meta-resource (catalog) rather than a technology builder. The founders
+  also run NaijaVoices (Chris Emezue) and contributed to Masakhane/FFR (Bonaventure
+  Dossou). Yoshua Bengio's advisory role adds credibility. Platform code is not
+  open source but the catalog itself is freely accessible.

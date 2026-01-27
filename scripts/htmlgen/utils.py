@@ -295,9 +295,6 @@ def _render_benchmark_table(entries):
                     metric_names.append(name)
                     seen_metrics.add(name)
 
-    if not metric_names:
-        return ""
-
     # Build header
     metric_headers = ''.join(f'<th class="num">{name}</th>' for name in metric_names)
     header = f"<tr><th>Model</th><th>Test Set</th>{metric_headers}<th>Source</th></tr>"
@@ -311,7 +308,21 @@ def _render_benchmark_table(entries):
         model_short = model.split('/')[-1] if '/' in model else model
         model_html = f'<a href="{model_url}" target="_blank" title="{model}">{model_short}</a>' if model_url else model_short
 
-        for result in entry.get('results', []):
+        results = entry.get('results', [])
+        if not results:
+            # Model listed without evaluation results
+            metric_cells = ''.join('<td class="num">—</td>' for _ in metric_names)
+            rows.append(
+                f"<tr>"
+                f"<td>{model_html}</td>"
+                f"<td>—</td>"
+                f"{metric_cells}"
+                f"<td>—</td>"
+                f"</tr>"
+            )
+            continue
+
+        for result in results:
             test_set = result.get('test_set', '')
             source = result.get('source', '')
             source_url = result.get('source_url', '')
@@ -341,9 +352,62 @@ def _render_benchmark_table(entries):
                 f"</tr>"
             )
 
+    if not rows:
+        return ""
+
     return f"""
         <table class="data-table benchmark-table">
             <thead>{header}</thead>
             <tbody>{''.join(rows)}</tbody>
         </table>
+    """
+
+
+TASK_SHORT_LABELS = {
+    'asr': 'ASR',
+    'tts': 'TTS',
+    'translation': 'MT',
+    'llm': 'LLM',
+}
+
+
+def generate_unbenchmarked_models_section(models):
+    """Generate HTML section for unbenchmarked models.
+
+    Args:
+        models: list of dicts with model, model_url, task, and optional notes.
+
+    Returns:
+        HTML string, or empty string if no models.
+    """
+    if not models:
+        return ""
+
+    rows = []
+    for entry in models:
+        model = entry.get('model', '')
+        model_url = entry.get('model_url', '')
+        task = entry.get('task', '')
+        notes = entry.get('notes', '')
+
+        model_short = model.split('/')[-1] if '/' in model else model
+        model_html = f'<a href="{model_url}" target="_blank" title="{model}">{model_short}</a>' if model_url else model_short
+        task_label = TASK_SHORT_LABELS.get(task, task.upper())
+
+        rows.append(
+            f"<tr>"
+            f"<td>{model_html}</td>"
+            f"<td>{task_label}</td>"
+            f"<td>{notes}</td>"
+            f"</tr>"
+        )
+
+    return f"""
+        <div class="detail-section">
+            <h2>Noteworthy models without benchmark</h2>
+            <table class="data-table benchmark-table">
+                <thead><tr><th>Model</th><th>Task</th><th>Notes</th></tr></thead>
+                <tbody>{''.join(rows)}</tbody>
+            </table>
+        </div>
     """

@@ -11,6 +11,7 @@ from .utils import (
     format_huggingface_link, country_codes_to_names,
     get_model_count, generate_models_table, generate_datasets_table,
     generate_benchmarks_section,
+    generate_unbenchmarked_models_section,
 )
 
 
@@ -97,6 +98,10 @@ def generate_language_detail_page(iso_code, lang_data, actors):
     # Benchmarks (evaluations from merged benchmarks.yaml + benchmarks_manual.yaml)
     evaluations = benchmarks.get('evaluations', {})
     benchmarks_section = generate_benchmarks_section(evaluations)
+
+    # Unbenchmarked models
+    unbenchmarked = benchmarks.get('unbenchmarked_models', [])
+    unbenchmarked_section = generate_unbenchmarked_models_section(unbenchmarked)
 
     # Notes
     notes_section = ""
@@ -272,6 +277,7 @@ def generate_language_detail_page(iso_code, lang_data, actors):
         {tech_section}
         {cv_section}
         {benchmarks_section}
+        {unbenchmarked_section}
         {notes_section}
 
         <div class="detail-section">

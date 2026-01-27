@@ -349,6 +349,14 @@ def create_manual_benchmarks_template(path, lang_name, iso_code):
 #           metrics:
 #             - name: Accuracy
 #               value: 42.1
+#
+# Models without benchmark scores (shown in a separate table):
+#
+# unbenchmarked_models:
+#   - model: some-org/model-name
+#     model_url: https://huggingface.co/some-org/model-name
+#     task: asr
+#     notes: Fine-tuned for {lang_name}, no public benchmarks
 """
     with open(path, 'w', encoding='utf-8') as f:
         f.write(template)

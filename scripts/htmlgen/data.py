@@ -88,6 +88,13 @@ def load_benchmarks(lang_dir):
     if combined_evals:
         merged['evaluations'] = combined_evals
 
+    # Merge unbenchmarked_models (concatenate both lists)
+    auto_unbenched = auto.get('unbenchmarked_models', [])
+    manual_unbenched = manual.get('unbenchmarked_models', [])
+    combined_unbenched = auto_unbenched + manual_unbenched
+    if combined_unbenched:
+        merged['unbenchmarked_models'] = combined_unbenched
+
     return merged
 
 

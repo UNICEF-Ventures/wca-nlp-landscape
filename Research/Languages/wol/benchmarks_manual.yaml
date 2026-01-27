@@ -44,3 +44,11 @@
 #           metrics:
 #             - name: Accuracy
 #               value: 42.1
+#
+# Models without benchmark scores (shown in a separate table):
+#
+# unbenchmarked_models:
+#   - model: some-org/model-name
+#     model_url: https://huggingface.co/some-org/model-name
+#     task: asr
+#     notes: Fine-tuned for Wolof, no public benchmarks

@@ -25,6 +25,7 @@ Mapping of available NLP resources (ASR, TTS, MT, LLM) and key actors working on
 - [x] LUDP panel for languages
 - [x] MMS coverage check (ASR/TTS/LID per language in tech_resources)
 - [x] Benchmark infrastructure (evaluations in benchmarks.yaml + benchmarks_manual.yaml, Source data/Evaluations/ with fetcher)
+- [x] Unbenchmarked models support (`unbenchmarked_models` in benchmarks_manual.yaml — lists noteworthy models without scores)
 - [ ] Crisis index information for languages (pending approval from CLEAR to add)
 - [ ] Document generation (PDF factsheets)
 
@@ -163,6 +164,13 @@ Advisory support for actor selection, agenda input, and presentation of findings
 ---
 
 ## Recent Updates (January 2026)
+
+### 2026-01-27
+- Added `unbenchmarked_models` support in `benchmarks_manual.yaml` for listing noteworthy models without benchmark scores
+  - Renders as "Noteworthy models without benchmark" table (Model / Task / Notes columns) on language detail pages
+  - Placed after the Benchmarks section
+  - Also made benchmark tables robust to entries without results (shows row with dashes)
+  - Updated `benchmarks_manual.yaml` template with example
 
 ### 2026-01-26 (night)
 - Built benchmark/evaluation infrastructure:

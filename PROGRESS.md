@@ -27,7 +27,7 @@ Mapping of available NLP resources (ASR, TTS, MT, LLM) and key actors working on
 - [x] Benchmark infrastructure (evaluations in benchmarks.yaml + benchmarks_manual.yaml, Source data/Evaluations/ with fetcher)
 - [x] Unbenchmarked models support (`unbenchmarked_models` in benchmarks_manual.yaml — lists noteworthy models without scores)
 - [ ] Crisis index information for languages (pending approval from CLEAR to add)
-- [ ] Document generation (PDF factsheets)
+- [x] Document generation (DOCX: Languages + Actors)
 
 
 ### 1.2 Language Profiles
@@ -166,6 +166,12 @@ Advisory support for actor selection, agenda input, and presentation of findings
 ## Recent Updates (January 2026)
 
 ### 2026-01-27
+- Added DOCX document generation (`scripts/generate_docs.py`)
+  - Two documents: `WCA_NLP_Languages.docx` and `WCA_NLP_Actors.docx`
+  - Summary matrix at the top of each doc with key stats (languages: speakers, HF models, benchmark coverage; actors: type, countries, openness, maturity, engagement)
+  - Clickable hyperlinks throughout: internal bookmarks (summary → entry), HuggingFace model/dataset search links, actor websites, benchmark source URLs, resource links, publications
+  - CLI: `--languages` / `--actors` flags, or both by default
+  - Uses `python-docx`, added to `scripts/requirements.txt`
 - Added `unbenchmarked_models` support in `benchmarks_manual.yaml` for listing noteworthy models without benchmark scores
   - Renders as "Noteworthy models without benchmark" table (Model / Task / Notes columns) on language detail pages
   - Placed after the Benchmarks section
@@ -260,3 +266,4 @@ Advisory support for actor selection, agenda input, and presentation of findings
 - **Add language:** Edit `Research/focused_languages.yaml`, run `python scripts/populate_research.py`
 - **Add actor:** Create `Research/Actors/{id}.yaml`
 - **Regenerate HTML:** `python scripts/generate_html.py`
+- **Generate DOCX:** `python scripts/generate_docs.py` (or `--languages` / `--actors`)

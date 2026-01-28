@@ -1,0 +1,3308 @@
+# Omnilingual ASR: Meta's wav2vec2 + LLaMA multilingual ASR
+# Source: https://github.com/facebookresearch/omnilingual-asr
+# 1672 language-script pairs, 1650 unique ISO 639-3 codes
+# Task: ASR only
+
+tech_resources_label: Omnilingual ASR
+
+languages:
+  aae:
+    scripts: [Latn]
+  aal:
+    scripts: [Latn]
+  abb:
+    scripts: [Latn]
+  abi:
+    scripts: [Latn]
+  abk:
+    scripts: [Cyrl]
+  abn:
+    scripts: [Latn]
+  abp:
+    scripts: [Latn]
+  abr:
+    scripts: [Latn]
+  abs:
+    scripts: [Latn]
+  aca:
+    scripts: [Latn]
+  acd:
+    scripts: [Latn]
+  ace:
+    scripts: [Latn]
+  acf:
+    scripts: [Latn]
+  ach:
+    scripts: [Latn]
+  acm:
+    scripts: [Arab]
+  acn:
+    scripts: [Latn]
+  acr:
+    scripts: [Latn]
+  acu:
+    scripts: [Latn]
+  acw:
+    scripts: [Arab]
+  ade:
+    scripts: [Latn]
+  adh:
+    scripts: [Latn]
+  adj:
+    scripts: [Latn]
+  adx:
+    scripts: [Tibt]
+  ady:
+    scripts: [Cyrl]
+  aeb:
+    scripts: [Arab]
+  aec:
+    scripts: [Arab]
+  aeu:
+    scripts: [Latn]
+  afb:
+    scripts: [Arab]
+  afo:
+    scripts: [Latn]
+  afr:
+    scripts: [Latn]
+  agd:
+    scripts: [Latn]
+  agg:
+    scripts: [Latn]
+  agn:
+    scripts: [Latn]
+  agr:
+    scripts: [Latn]
+  agu:
+    scripts: [Latn]
+  agx:
+    scripts: [Cyrl]
+  aha:
+    scripts: [Latn]
+  ahk:
+    scripts: [Latn]
+  ahl:
+    scripts: [Latn]
+  ahs:
+    scripts: [Latn]
+  aia:
+    scripts: [Latn]
+  ajg:
+    scripts: [Latn]
+  aka:
+    scripts: [Latn]
+  akb:
+    scripts: [Latn]
+  ake:
+    scripts: [Latn]
+  akp:
+    scripts: [Latn]
+  ala:
+    scripts: [Latn]
+  alj:
+    scripts: [Latn]
+  aln:
+    scripts: [Latn]
+  alo:
+    scripts: [Latn]
+  alp:
+    scripts: [Latn]
+  als:
+    scripts: [Latn]
+  alt:
+    scripts: [Cyrl]
+  alz:
+    scripts: [Latn]
+  ame:
+    scripts: [Latn]
+  amf:
+    scripts: [Latn]
+  amh:
+    scripts: [Ethi]
+  ami:
+    scripts: [Latn]
+  amk:
+    scripts: [Latn]
+  amu:
+    scripts: [Latn]
+  anc:
+    scripts: [Latn]
+  ank:
+    scripts: [Latn]
+  ann:
+    scripts: [Latn]
+  anp:
+    scripts: [Deva]
+  anw:
+    scripts: [Latn]
+  any:
+    scripts: [Latn]
+  aom:
+    scripts: [Latn]
+  aoz:
+    scripts: [Latn]
+  apb:
+    scripts: [Latn]
+  apc:
+    scripts: [Arab]
+  apd:
+    scripts: [Arab]
+  apr:
+    scripts: [Latn]
+  arb:
+    scripts: [Arab]
+  arg:
+    scripts: [Latn]
+  arl:
+    scripts: [Latn]
+  arq:
+    scripts: [Arab]
+  ars:
+    scripts: [Arab]
+  ary:
+    scripts: [Arab]
+  arz:
+    scripts: [Arab]
+  asa:
+    scripts: [Latn]
+  asg:
+    scripts: [Latn]
+  asm:
+    scripts: [Beng]
+  ast:
+    scripts: [Latn]
+  ata:
+    scripts: [Latn]
+  atb:
+    scripts: [Latn]
+  atg:
+    scripts: [Latn]
+  ati:
+    scripts: [Latn]
+  atq:
+    scripts: [Latn]
+  ava:
+    scripts: [Cyrl]
+  avn:
+    scripts: [Latn]
+  avu:
+    scripts: [Latn]
+  awa:
+    scripts: [Deva]
+  awb:
+    scripts: [Latn]
+  awo:
+    scripts: [Latn]
+  ayl:
+    scripts: [Arab]
+  ayo:
+    scripts: [Latn]
+  ayp:
+    scripts: [Arab]
+  ayr:
+    scripts: [Latn]
+  ayz:
+    scripts: [Latn]
+  aze:
+    scripts: [Arab, Cyrl, Latn]
+  azg:
+    scripts: [Latn]
+  azz:
+    scripts: [Latn]
+  bag:
+    scripts: [Latn]
+  bak:
+    scripts: [Cyrl]
+  bam:
+    scripts: [Latn]
+  ban:
+    scripts: [Latn]
+  bao:
+    scripts: [Latn]
+  bas:
+    scripts: [Latn]
+  bav:
+    scripts: [Latn]
+  bax:
+    scripts: [Latn]
+  bba:
+    scripts: [Latn]
+  bbb:
+    scripts: [Latn]
+  bbc:
+    scripts: [Latn]
+  bbj:
+    scripts: [Latn]
+  bbl:
+    scripts: [Geor]
+  bbo:
+    scripts: [Latn]
+  bbu:
+    scripts: [Latn]
+  bcc:
+    scripts: [Arab, Latn]
+  bce:
+    scripts: [Latn]
+  bci:
+    scripts: [Latn]
+  bcl:
+    scripts: [Latn]
+  bcs:
+    scripts: [Latn]
+  bcw:
+    scripts: [Latn]
+  bcy:
+    scripts: [Latn]
+  bcz:
+    scripts: [Latn]
+  bda:
+    scripts: [Latn]
+  bde:
+    scripts: [Latn]
+  bdg:
+    scripts: [Latn]
+  bdh:
+    scripts: [Latn]
+  bdm:
+    scripts: [Latn]
+  bdq:
+    scripts: [Latn]
+  bdu:
+    scripts: [Latn]
+  beb:
+    scripts: [Latn]
+  beh:
+    scripts: [Latn]
+  bel:
+    scripts: [Cyrl]
+  bem:
+    scripts: [Latn]
+  ben:
+    scripts: [Beng]
+  bep:
+    scripts: [Latn]
+  bew:
+    scripts: [Latn]
+  bex:
+    scripts: [Latn]
+  bfa:
+    scripts: [Latn]
+  bfd:
+    scripts: [Latn]
+  bfo:
+    scripts: [Latn]
+  bft:
+    scripts: [Arab]
+  bfy:
+    scripts: [Deva]
+  bfz:
+    scripts: [Deva]
+  bgc:
+    scripts: [Deva]
+  bgp:
+    scripts: [Arab]
+  bgq:
+    scripts: [Deva]
+  bgr:
+    scripts: [Latn]
+  bgt:
+    scripts: [Latn]
+  bgw:
+    scripts: [Deva]
+  bha:
+    scripts: [Deva]
+  bhb:
+    scripts: [Deva]
+  bhh:
+    scripts: [Cyrl]
+  bho:
+    scripts: [Deva]
+  bhp:
+    scripts: [Latn]
+  bht:
+    scripts: [Deva]
+  bhz:
+    scripts: [Latn]
+  bib:
+    scripts: [Latn]
+  bim:
+    scripts: [Latn]
+  bis:
+    scripts: [Latn]
+  biv:
+    scripts: [Latn]
+  bjj:
+    scripts: [Deva]
+  bjk:
+    scripts: [Latn]
+  bjn:
+    scripts: [Latn]
+  bjr:
+    scripts: [Latn]
+  bjt:
+    scripts: [Latn]
+  bjv:
+    scripts: [Latn]
+  bjw:
+    scripts: [Latn]
+  bjz:
+    scripts: [Latn]
+  bkd:
+    scripts: [Latn]
+  bkh:
+    scripts: [Latn]
+  bkm:
+    scripts: [Latn]
+  bkv:
+    scripts: [Latn]
+  bky:
+    scripts: [Latn]
+  ble:
+    scripts: [Latn]
+  blh:
+    scripts: [Latn]
+  blt:
+    scripts: [Latn]
+  blx:
+    scripts: [Latn]
+  blz:
+    scripts: [Latn]
+  bmm:
+    scripts: [Latn]
+  bmq:
+    scripts: [Latn]
+  bmr:
+    scripts: [Latn]
+  bmu:
+    scripts: [Latn]
+  bmv:
+    scripts: [Latn]
+  bng:
+    scripts: [Beng]
+  bnm:
+    scripts: [Latn]
+  bnn:
+    scripts: [Latn]
+  bno:
+    scripts: [Latn]
+  bnp:
+    scripts: [Latn]
+  bns:
+    scripts: [Deva]
+  boa:
+    scripts: [Latn]
+  bod:
+    scripts: [Tibt]
+  boj:
+    scripts: [Latn]
+  bom:
+    scripts: [Latn]
+  bor:
+    scripts: [Latn]
+  bos:
+    scripts: [Latn]
+  bou:
+    scripts: [Latn]
+  bov:
+    scripts: [Latn]
+  box:
+    scripts: [Latn]
+  bpr:
+    scripts: [Latn]
+  bps:
+    scripts: [Latn]
+  bqc:
+    scripts: [Latn]
+  bqg:
+    scripts: [Latn]
+  bqi:
+    scripts: [Arab]
+  bqj:
+    scripts: [Latn]
+  bqp:
+    scripts: [Latn]
+  bra:
+    scripts: [Deva]
+  bre:
+    scripts: [Latn]
+  brh:
+    scripts: [Arab]
+  bri:
+    scripts: [Latn]
+  bru:
+    scripts: [Latn]
+  brx:
+    scripts: [Deva]
+  bsc:
+    scripts: [Latn]
+  bsh:
+    scripts: [Arab]
+  bsj:
+    scripts: [Latn]
+  bsk:
+    scripts: [Latn]
+  bsq:
+    scripts: [Latn]
+  bss:
+    scripts: [Latn]
+  bsy:
+    scripts: [Latn]
+  btd:
+    scripts: [Latn]
+  btm:
+    scripts: [Latn]
+  bts:
+    scripts: [Latn]
+  btt:
+    scripts: [Latn]
+  btv:
+    scripts: [Arab]
+  btx:
+    scripts: [Latn]
+  bud:
+    scripts: [Latn]
+  bug:
+    scripts: [Latn]
+  bul:
+    scripts: [Cyrl]
+  bum:
+    scripts: [Latn]
+  buo:
+    scripts: [Latn]
+  bus:
+    scripts: [Latn]
+  bux:
+    scripts: [Latn]
+  bvb:
+    scripts: [Latn]
+  bvc:
+    scripts: [Latn]
+  bvz:
+    scripts: [Latn]
+  bwq:
+    scripts: [Latn]
+  bwr:
+    scripts: [Latn]
+  bwu:
+    scripts: [Latn]
+  bxf:
+    scripts: [Latn]
+  bxk:
+    scripts: [Latn]
+  byc:
+    scripts: [Latn]
+  byr:
+    scripts: [Latn]
+  bys:
+    scripts: [Latn]
+  byv:
+    scripts: [Latn]
+  byx:
+    scripts: [Latn]
+  bzh:
+    scripts: [Latn]
+  bzi:
+    scripts: [Thai]
+  bzj:
+    scripts: [Latn]
+  bzw:
+    scripts: [Latn]
+  caa:
+    scripts: [Latn]
+  cab:
+    scripts: [Latn]
+  cac:
+    scripts: [Latn]
+  cak:
+    scripts: [Latn]
+  cap:
+    scripts: [Latn]
+  car:
+    scripts: [Latn]
+  cas:
+    scripts: [Latn]
+  cat:
+    scripts: [Latn]
+  cax:
+    scripts: [Latn]
+  cbc:
+    scripts: [Latn]
+  cbi:
+    scripts: [Latn]
+  cbr:
+    scripts: [Latn]
+  cbs:
+    scripts: [Latn]
+  cbt:
+    scripts: [Latn]
+  cbu:
+    scripts: [Latn]
+  cbv:
+    scripts: [Latn]
+  cce:
+    scripts: [Latn]
+  ccg:
+    scripts: [Latn]
+  cco:
+    scripts: [Latn]
+  cdj:
+    scripts: [Deva]
+  cdo:
+    scripts: [Hans]
+  ceb:
+    scripts: [Latn]
+  ceg:
+    scripts: [Latn]
+  cek:
+    scripts: [Latn]
+  cen:
+    scripts: [Latn]
+  ces:
+    scripts: [Latn]
+  cfa:
+    scripts: [Latn]
+  cfm:
+    scripts: [Latn]
+  cgc:
+    scripts: [Latn]
+  cgg:
+    scripts: [Latn]
+  che:
+    scripts: [Cyrl]
+  chf:
+    scripts: [Latn]
+  chq:
+    scripts: [Latn]
+  chv:
+    scripts: [Cyrl]
+  chz:
+    scripts: [Latn]
+  cjk:
+    scripts: [Latn]
+  cjo:
+    scripts: [Latn]
+  cjp:
+    scripts: [Latn]
+  cjs:
+    scripts: [Cyrl]
+  ckb:
+    scripts: [Arab]
+  ckl:
+    scripts: [Latn]
+  cko:
+    scripts: [Latn]
+  ckr:
+    scripts: [Latn]
+  ckt:
+    scripts: [Cyrl]
+  cky:
+    scripts: [Latn]
+  cla:
+    scripts: [Latn]
+  cle:
+    scripts: [Latn]
+  cly:
+    scripts: [Latn]
+  cme:
+    scripts: [Latn]
+  cmn:
+    scripts: [Hans, Hant]
+  cmo:
+    scripts: [Khmr, Latn]
+  cmr:
+    scripts: [Latn]
+  cnh:
+    scripts: [Latn]
+  cni:
+    scripts: [Latn]
+  cnl:
+    scripts: [Latn]
+  cnt:
+    scripts: [Latn]
+  coe:
+    scripts: [Latn]
+  cof:
+    scripts: [Latn]
+  cok:
+    scripts: [Latn]
+  con:
+    scripts: [Latn]
+  cor:
+    scripts: [Latn]
+  cot:
+    scripts: [Latn]
+  cou:
+    scripts: [Latn]
+  cpa:
+    scripts: [Latn]
+  cpb:
+    scripts: [Latn]
+  cpu:
+    scripts: [Latn]
+  cpx:
+    scripts: [Hans]
+  cpy:
+    scripts: [Latn]
+  crh:
+    scripts: [Cyrl]
+  crk:
+    scripts: [Cans, Latn]
+  crn:
+    scripts: [Latn]
+  crq:
+    scripts: [Latn]
+  crs:
+    scripts: [Latn]
+  crt:
+    scripts: [Latn]
+  csk:
+    scripts: [Latn]
+  cso:
+    scripts: [Latn]
+  ctd:
+    scripts: [Latn]
+  cte:
+    scripts: [Latn]
+  ctg:
+    scripts: [Beng]
+  ctl:
+    scripts: [Latn]
+  cto:
+    scripts: [Latn]
+  ctu:
+    scripts: [Latn]
+  cuc:
+    scripts: [Latn]
+  cui:
+    scripts: [Latn]
+  cuk:
+    scripts: [Latn]
+  cul:
+    scripts: [Latn]
+  cut:
+    scripts: [Latn]
+  cux:
+    scripts: [Latn]
+  cwa:
+    scripts: [Latn]
+  cwe:
+    scripts: [Latn]
+  cwt:
+    scripts: [Latn]
+  cya:
+    scripts: [Latn]
+  cym:
+    scripts: [Latn]
+  daa:
+    scripts: [Latn]
+  dag:
+    scripts: [Latn]
+  dah:
+    scripts: [Latn]
+  dan:
+    scripts: [Latn]
+  dar:
+    scripts: [Cyrl]
+  dav:
+    scripts: [Latn]
+  dbd:
+    scripts: [Latn]
+  dbj:
+    scripts: [Latn]
+  dbq:
+    scripts: [Latn]
+  dcc:
+    scripts: [Arab]
+  ddn:
+    scripts: [Latn]
+  ded:
+    scripts: [Latn]
+  deg:
+    scripts: [Latn]
+  des:
+    scripts: [Latn]
+  deu:
+    scripts: [Latn]
+  dga:
+    scripts: [Latn]
+  dgh:
+    scripts: [Latn]
+  dgi:
+    scripts: [Latn]
+  dgk:
+    scripts: [Latn]
+  dgo:
+    scripts: [Deva]
+  dgr:
+    scripts: [Latn]
+  dhi:
+    scripts: [Deva]
+  did:
+    scripts: [Latn]
+  dig:
+    scripts: [Latn]
+  dik:
+    scripts: [Latn]
+  dip:
+    scripts: [Latn]
+  div:
+    scripts: [Thaa]
+  dje:
+    scripts: [Latn]
+  djk:
+    scripts: [Latn]
+  dmk:
+    scripts: [Arab]
+  dml:
+    scripts: [Arab]
+  dnj:
+    scripts: [Latn]
+  dnt:
+    scripts: [Latn]
+  dnw:
+    scripts: [Latn]
+  dop:
+    scripts: [Latn]
+  dos:
+    scripts: [Latn]
+  dru:
+    scripts: [Latn]
+  dsb:
+    scripts: [Latn]
+  dsh:
+    scripts: [Latn]
+  dtp:
+    scripts: [Latn]
+  dts:
+    scripts: [Latn]
+  dty:
+    scripts: [Deva]
+  dua:
+    scripts: [Latn]
+  dug:
+    scripts: [Latn]
+  dwr:
+    scripts: [Latn]
+  dyi:
+    scripts: [Latn]
+  dyo:
+    scripts: [Latn]
+  dyu:
+    scripts: [Latn]
+  dzg:
+    scripts: [Latn]
+  dzo:
+    scripts: [Tibt]
+  ebu:
+    scripts: [Latn]
+  ego:
+    scripts: [Latn]
+  eip:
+    scripts: [Latn]
+  eiv:
+    scripts: [Latn]
+  eka:
+    scripts: [Latn]
+  ekk:
+    scripts: [Latn]
+  eko:
+    scripts: [Latn]
+  ekr:
+    scripts: [Latn]
+  ell:
+    scripts: [Grek, Grek_cypr1249]
+  elm:
+    scripts: [Latn]
+  emp:
+    scripts: [Latn]
+  enb:
+    scripts: [Latn]
+  eng:
+    scripts: [Latn]
+  enx:
+    scripts: [Latn]
+  epo:
+    scripts: [Latn]
+  ese:
+    scripts: [Latn]
+  ess:
+    scripts: [Latn]
+  esu:
+    scripts: [Latn]
+  eto:
+    scripts: [Latn]
+  ets:
+    scripts: [Latn]
+  etu:
+    scripts: [Latn]
+  eus:
+    scripts: [Latn]
+  evn:
+    scripts: [Cyrl]
+  ewe:
+    scripts: [Latn]
+  ewo:
+    scripts: [Latn]
+  eyo:
+    scripts: [Latn]
+  eza:
+    scripts: [Latn]
+  fal:
+    scripts: [Latn]
+  fan:
+    scripts: [Latn]
+  fao:
+    scripts: [Latn]
+  far:
+    scripts: [Latn]
+  fas:
+    scripts: [Arab]
+  fat:
+    scripts: [Latn]
+  fia:
+    scripts: [Latn]
+  fij:
+    scripts: [Latn]
+  fil:
+    scripts: [Latn]
+  fin:
+    scripts: [Latn]
+  fip:
+    scripts: [Latn]
+  fkk:
+    scripts: [Latn]
+  flr:
+    scripts: [Latn]
+  fmp:
+    scripts: [Latn]
+  fmu:
+    scripts: [Deva]
+  fon:
+    scripts: [Latn]
+  fra:
+    scripts: [Latn]
+  frd:
+    scripts: [Latn]
+  fry:
+    scripts: [Latn]
+  fub:
+    scripts: [Latn]
+  fuc:
+    scripts: [Latn]
+  fue:
+    scripts: [Latn]
+  ful:
+    scripts: [Latn]
+  fuq:
+    scripts: [Latn]
+  fuv:
+    scripts: [Latn]
+  gag:
+    scripts: [Cyrl, Latn]
+  gai:
+    scripts: [Latn]
+  gam:
+    scripts: [Latn]
+  gau:
+    scripts: [Telu]
+  gbi:
+    scripts: [Latn]
+  gbk:
+    scripts: [Deva]
+  gbm:
+    scripts: [Deva]
+  gbo:
+    scripts: [Latn]
+  gbr:
+    scripts: [Latn]
+  gby:
+    scripts: [Latn]
+  gcc:
+    scripts: [Latn]
+  gde:
+    scripts: [Latn]
+  gdf:
+    scripts: [Latn]
+  geb:
+    scripts: [Latn]
+  gej:
+    scripts: [Latn]
+  ges:
+    scripts: [Latn]
+  ggg:
+    scripts: [Arab]
+  gid:
+    scripts: [Latn]
+  gig:
+    scripts: [Arab]
+  gil:
+    scripts: [Latn]
+  giz:
+    scripts: [Latn]
+  gjk:
+    scripts: [Arab]
+  gjn:
+    scripts: [Latn]
+  gju:
+    scripts: [Arab]
+  gkn:
+    scripts: [Latn]
+  gld:
+    scripts: [Cyrl]
+  gle:
+    scripts: [Latn]
+  glg:
+    scripts: [Latn]
+  glk:
+    scripts: [Arab]
+  glv:
+    scripts: [Latn]
+  glw:
+    scripts: [Latn]
+  gmv:
+    scripts: [Latn]
+  gna:
+    scripts: [Latn]
+  gnd:
+    scripts: [Latn]
+  gng:
+    scripts: [Latn]
+  gof:
+    scripts: [Latn]
+  gog:
+    scripts: [Latn]
+  gol:
+    scripts: [Latn]
+  gom:
+    scripts: [Deva]
+  gor:
+    scripts: [Latn]
+  gqr:
+    scripts: [Latn]
+  grc:
+    scripts: [Grek]
+  gri:
+    scripts: [Latn]
+  grn:
+    scripts: [Latn]
+  grt:
+    scripts: [Beng]
+  gsl:
+    scripts: [Latn]
+  gso:
+    scripts: [Latn]
+  gub:
+    scripts: [Latn]
+  guc:
+    scripts: [Latn]
+  gud:
+    scripts: [Latn]
+  gug:
+    scripts: [Latn]
+  guh:
+    scripts: [Latn]
+  gui:
+    scripts: [Latn]
+  guj:
+    scripts: [Gujr]
+  guk:
+    scripts: [Ethi]
+  gum:
+    scripts: [Latn]
+  guo:
+    scripts: [Latn]
+  guq:
+    scripts: [Latn]
+  gur:
+    scripts: [Latn]
+  guu:
+    scripts: [Latn]
+  gux:
+    scripts: [Latn]
+  guz:
+    scripts: [Latn]
+  gvc:
+    scripts: [Latn]
+  gvl:
+    scripts: [Latn]
+  gwc:
+    scripts: [Arab]
+  gwe:
+    scripts: [Latn]
+  gwi:
+    scripts: [Latn]
+  gwr:
+    scripts: [Latn]
+  gwt:
+    scripts: [Arab]
+  gym:
+    scripts: [Latn]
+  gyr:
+    scripts: [Latn]
+  gyz:
+    scripts: [Latn]
+  had:
+    scripts: [Latn]
+  hag:
+    scripts: [Latn]
+  hah:
+    scripts: [Latn]
+  hak:
+    scripts: [Latn]
+  hao:
+    scripts: [Latn]
+  hap:
+    scripts: [Latn]
+  hat:
+    scripts: [Latn]
+  hau:
+    scripts: [Latn]
+  haw:
+    scripts: [Latn]
+  hay:
+    scripts: [Latn]
+  hbb:
+    scripts: [Latn]
+  hch:
+    scripts: [Latn]
+  heb:
+    scripts: [Hebr]
+  heh:
+    scripts: [Latn]
+  her:
+    scripts: [Latn]
+  hia:
+    scripts: [Latn]
+  hif:
+    scripts: [Latn]
+  hig:
+    scripts: [Latn]
+  hil:
+    scripts: [Latn]
+  hin:
+    scripts: [Deva]
+  hkk:
+    scripts: [Latn]
+  hla:
+    scripts: [Latn]
+  hlb:
+    scripts: [Deva]
+  hlt:
+    scripts: [Latn]
+  hne:
+    scripts: [Deva]
+  hnn:
+    scripts: [Latn]
+  hno:
+    scripts: [Arab]
+  hns:
+    scripts: [Latn]
+  hoc:
+    scripts: [Orya]
+  hrv:
+    scripts: [Latn]
+  hsb:
+    scripts: [Latn]
+  hto:
+    scripts: [Latn]
+  hub:
+    scripts: [Latn]
+  hue:
+    scripts: [Latn]
+  hui:
+    scripts: [Latn]
+  hul:
+    scripts: [Latn]
+  hun:
+    scripts: [Latn]
+  hus:
+    scripts: [Latn]
+  huu:
+    scripts: [Latn]
+  huv:
+    scripts: [Latn]
+  hux:
+    scripts: [Latn]
+  hvn:
+    scripts: [Latn]
+  hwc:
+    scripts: [Latn]
+  hwo:
+    scripts: [Latn]
+  hye:
+    scripts: [Armn]
+  hyw:
+    scripts: [Armn]
+  iba:
+    scripts: [Latn]
+  ibb:
+    scripts: [Latn]
+  ibo:
+    scripts: [Latn]
+  icr:
+    scripts: [Latn]
+  ida:
+    scripts: [Latn]
+  idd:
+    scripts: [Latn]
+  idu:
+    scripts: [Latn]
+  ifa:
+    scripts: [Latn]
+  ifb:
+    scripts: [Latn]
+  ife:
+    scripts: [Latn]
+  ifk:
+    scripts: [Latn]
+  ifu:
+    scripts: [Latn]
+  ify:
+    scripts: [Latn]
+  igl:
+    scripts: [Latn]
+  ign:
+    scripts: [Latn]
+  ijc:
+    scripts: [Latn]
+  ijn:
+    scripts: [Latn]
+  ikk:
+    scripts: [Latn]
+  ikw:
+    scripts: [Latn]
+  ilb:
+    scripts: [Latn]
+  ilo:
+    scripts: [Latn]
+  imo:
+    scripts: [Latn]
+  ina:
+    scripts: [Latn]
+  inb:
+    scripts: [Latn]
+  ind:
+    scripts: [Latn]
+  iou:
+    scripts: [Latn]
+  ipi:
+    scripts: [Latn]
+  ipk:
+    scripts: [Latn]
+  iqw:
+    scripts: [Latn]
+  iri:
+    scripts: [Latn]
+  irk:
+    scripts: [Latn]
+  ish:
+    scripts: [Latn]
+  isl:
+    scripts: [Latn]
+  iso:
+    scripts: [Latn]
+  ita:
+    scripts: [Latn]
+  itl:
+    scripts: [Cyrl]
+  its:
+    scripts: [Latn]
+  itv:
+    scripts: [Latn]
+  itw:
+    scripts: [Latn]
+  itz:
+    scripts: [Latn]
+  ixl:
+    scripts: [Latn]
+  izr:
+    scripts: [Latn]
+  izz:
+    scripts: [Latn]
+  jac:
+    scripts: [Latn]
+  jal:
+    scripts: [Latn]
+  jam:
+    scripts: [Latn]
+  jav:
+    scripts: [Latn]
+  jax:
+    scripts: [Latn]
+  jbu:
+    scripts: [Latn]
+  jen:
+    scripts: [Latn]
+  jic:
+    scripts: [Latn]
+  jiv:
+    scripts: [Latn]
+  jmc:
+    scripts: [Latn]
+  jmd:
+    scripts: [Latn]
+  jmx:
+    scripts: [Latn]
+  jpn:
+    scripts: [Jpan]
+  jqr:
+    scripts: [Latn]
+  juk:
+    scripts: [Latn]
+  jun:
+    scripts: [Orya]
+  juo:
+    scripts: [Latn]
+  jvn:
+    scripts: [Latn]
+  kaa:
+    scripts: [Cyrl]
+  kab:
+    scripts: [Latn]
+  kac:
+    scripts: [Latn]
+  kai:
+    scripts: [Latn]
+  kaj:
+    scripts: [Latn]
+  kak:
+    scripts: [Latn]
+  kam:
+    scripts: [Latn]
+  kan:
+    scripts: [Knda]
+  kao:
+    scripts: [Latn]
+  kaq:
+    scripts: [Latn]
+  kas:
+    scripts: [Arab]
+  kat:
+    scripts: [Geor]
+  kay:
+    scripts: [Latn]
+  kaz:
+    scripts: [Cyrl]
+  kbd:
+    scripts: [Cyrl]
+  kbl:
+    scripts: [Latn]
+  kbo:
+    scripts: [Latn]
+  kbp:
+    scripts: [Latn]
+  kbq:
+    scripts: [Latn]
+  kbr:
+    scripts: [Latn]
+  kbt:
+    scripts: [Latn]
+  kby:
+    scripts: [Latn]
+  kca:
+    scripts: [Cyrl]
+  kcg:
+    scripts: [Latn]
+  kcn:
+    scripts: [Latn]
+  kcq:
+    scripts: [Latn]
+  kdc:
+    scripts: [Latn]
+  kde:
+    scripts: [Latn]
+  kdh:
+    scripts: [Latn]
+  kdi:
+    scripts: [Latn]
+  kdj:
+    scripts: [Latn]
+  kdl:
+    scripts: [Latn]
+  kdn:
+    scripts: [Latn]
+  kdt:
+    scripts: [Khmr]
+  kea:
+    scripts: [Latn]
+  kek:
+    scripts: [Latn]
+  ken:
+    scripts: [Latn]
+  keo:
+    scripts: [Latn]
+  ker:
+    scripts: [Latn]
+  keu:
+    scripts: [Latn]
+  key:
+    scripts: [Telu]
+  kez:
+    scripts: [Latn]
+  kfb:
+    scripts: [Deva]
+  kff:
+    scripts: [Telu]
+  kfk:
+    scripts: [Deva]
+  kfq:
+    scripts: [Deva]
+  kfr:
+    scripts: [Gujr]
+  kfw:
+    scripts: [Latn]
+  kfx:
+    scripts: [Deva]
+  kha:
+    scripts: [Latn]
+  khg:
+    scripts: [Tibt]
+  khk:
+    scripts: [Cyrl]
+  khm:
+    scripts: [Khmr]
+  khq:
+    scripts: [Latn]
+  khw:
+    scripts: [Arab]
+  kia:
+    scripts: [Latn]
+  kij:
+    scripts: [Latn]
+  kik:
+    scripts: [Latn]
+  kin:
+    scripts: [Latn]
+  kir:
+    scripts: [Cyrl]
+  kix:
+    scripts: [Latn]
+  kjb:
+    scripts: [Latn]
+  kjc:
+    scripts: [Latn]
+  kje:
+    scripts: [Latn]
+  kjg:
+    scripts: [Latn]
+  kjh:
+    scripts: [Cyrl]
+  kjk:
+    scripts: [Latn]
+  kki:
+    scripts: [Latn]
+  kkj:
+    scripts: [Latn]
+  kle:
+    scripts: [Deva]
+  kln:
+    scripts: [Latn]
+  kls:
+    scripts: [Latn]
+  klu:
+    scripts: [Latn]
+  klv:
+    scripts: [Latn]
+  klw:
+    scripts: [Latn]
+  kma:
+    scripts: [Latn]
+  kmd:
+    scripts: [Latn]
+  kml:
+    scripts: [Latn]
+  kmr:
+    scripts: [Arab, Cyrl, Latn]
+  kmu:
+    scripts: [Latn]
+  kmy:
+    scripts: [Latn]
+  kna:
+    scripts: [Latn]
+  knb:
+    scripts: [Latn]
+  knc:
+    scripts: [Latn]
+  kne:
+    scripts: [Latn]
+  knf:
+    scripts: [Latn]
+  knj:
+    scripts: [Latn]
+  knk:
+    scripts: [Latn]
+  knn:
+    scripts: [Deva]
+  kno:
+    scripts: [Latn]
+  kog:
+    scripts: [Latn]
+  kol:
+    scripts: [Latn]
+  koo:
+    scripts: [Latn]
+  kor:
+    scripts: [Hang]
+  kpo:
+    scripts: [Latn]
+  kpq:
+    scripts: [Latn]
+  kps:
+    scripts: [Latn]
+  kpv:
+    scripts: [Cyrl]
+  kpy:
+    scripts: [Cyrl]
+  kpz:
+    scripts: [Latn]
+  kqe:
+    scripts: [Latn]
+  kqo:
+    scripts: [Latn]
+  kqp:
+    scripts: [Latn]
+  kqr:
+    scripts: [Latn]
+  kqy:
+    scripts: [Ethi]
+  krc:
+    scripts: [Cyrl]
+  kri:
+    scripts: [Latn]
+  krj:
+    scripts: [Latn]
+  krl:
+    scripts: [Latn]
+  krr:
+    scripts: [Khmr]
+  krs:
+    scripts: [Latn]
+  kru:
+    scripts: [Deva]
+  krx:
+    scripts: [Latn]
+  ksb:
+    scripts: [Latn]
+  ksd:
+    scripts: [Latn]
+  ksf:
+    scripts: [Latn]
+  ksr:
+    scripts: [Latn]
+  kss:
+    scripts: [Latn]
+  ksz:
+    scripts: [Deva]
+  ktb:
+    scripts: [Ethi]
+  ktj:
+    scripts: [Latn]
+  kto:
+    scripts: [Latn]
+  kua:
+    scripts: [Latn]
+  kub:
+    scripts: [Latn]
+  kue:
+    scripts: [Latn]
+  kuh:
+    scripts: [Latn]
+  kum:
+    scripts: [Cyrl]
+  kur:
+    scripts: [Arab]
+  kus:
+    scripts: [Latn]
+  kvn:
+    scripts: [Latn]
+  kvw:
+    scripts: [Latn]
+  kvx:
+    scripts: [Arab]
+  kwd:
+    scripts: [Latn]
+  kwf:
+    scripts: [Latn]
+  kwi:
+    scripts: [Latn]
+  kwm:
+    scripts: [Latn]
+  kxc:
+    scripts: [Ethi]
+  kxf:
+    scripts: [Latn]
+  kxm:
+    scripts: [Thai]
+  kxp:
+    scripts: [Arab]
+  kyb:
+    scripts: [Latn]
+  kyc:
+    scripts: [Latn]
+  kyf:
+    scripts: [Latn]
+  kyg:
+    scripts: [Latn]
+  kyo:
+    scripts: [Latn]
+  kyq:
+    scripts: [Latn]
+  kyu:
+    scripts: [Kali]
+  kyx:
+    scripts: [Latn]
+  kyz:
+    scripts: [Latn]
+  kzf:
+    scripts: [Latn]
+  kzi:
+    scripts: [Latn]
+  lac:
+    scripts: [Latn]
+  lag:
+    scripts: [Latn]
+  laj:
+    scripts: [Latn]
+  lam:
+    scripts: [Latn]
+  lao:
+    scripts: [Laoo]
+  las:
+    scripts: [Latn]
+  lat:
+    scripts: [Latn]
+  lav:
+    scripts: [Latn]
+  law:
+    scripts: [Latn]
+  lbj:
+    scripts: [Tibt]
+  lbw:
+    scripts: [Latn]
+  lcm:
+    scripts: [Latn]
+  lcp:
+    scripts: [Thai]
+  ldb:
+    scripts: [Latn]
+  led:
+    scripts: [Latn]
+  lee:
+    scripts: [Latn]
+  lef:
+    scripts: [Latn]
+  lem:
+    scripts: [Latn]
+  lew:
+    scripts: [Latn]
+  lex:
+    scripts: [Latn]
+  lgg:
+    scripts: [Latn]
+  lgl:
+    scripts: [Latn]
+  lhu:
+    scripts: [Latn]
+  lia:
+    scripts: [Latn]
+  lid:
+    scripts: [Latn]
+  lif:
+    scripts: [Deva]
+  lij:
+    scripts: [Latn]
+  lin:
+    scripts: [Latn]
+  lip:
+    scripts: [Latn]
+  lir:
+    scripts: [Latn]
+  lis:
+    scripts: [Lisu]
+  lit:
+    scripts: [Latn]
+  lje:
+    scripts: [Latn]
+  ljp:
+    scripts: [Latn]
+  lkb:
+    scripts: [Latn]
+  lke:
+    scripts: [Latn]
+  lla:
+    scripts: [Latn]
+  lld:
+    scripts: [Latn_gherd, Latn_valbadia]
+  llg:
+    scripts: [Latn]
+  lln:
+    scripts: [Latn]
+  lme:
+    scripts: [Latn]
+  lnd:
+    scripts: [Latn]
+  lns:
+    scripts: [Latn]
+  lnu:
+    scripts: [Latn]
+  loa:
+    scripts: [Latn]
+  lob:
+    scripts: [Latn]
+  lok:
+    scripts: [Latn]
+  lom:
+    scripts: [Latn]
+  lon:
+    scripts: [Latn]
+  loq:
+    scripts: [Latn]
+  lrk:
+    scripts: [Arab]
+  lsi:
+    scripts: [Latn]
+  lsm:
+    scripts: [Latn]
+  lss:
+    scripts: [Arab]
+  ltg:
+    scripts: [Latn]
+  lth:
+    scripts: [Latn]
+  lto:
+    scripts: [Latn]
+  ltz:
+    scripts: [Latn]
+  lua:
+    scripts: [Latn]
+  luc:
+    scripts: [Latn]
+  lug:
+    scripts: [Latn]
+  luo:
+    scripts: [Latn]
+  lus:
+    scripts: [Latn]
+  lwg:
+    scripts: [Latn]
+  lwo:
+    scripts: [Latn]
+  lww:
+    scripts: [Latn]
+  lzz:
+    scripts: [Latn]
+  maa:
+    scripts: [Latn]
+  mab:
+    scripts: [Latn]
+  mad:
+    scripts: [Latn]
+  maf:
+    scripts: [Latn]
+  mag:
+    scripts: [Deva]
+  mah:
+    scripts: [Latn]
+  mai:
+    scripts: [Deva]
+  maj:
+    scripts: [Latn]
+  mak:
+    scripts: [Latn]
+  mal:
+    scripts: [Mlym]
+  mam:
+    scripts: [Latn]
+  maq:
+    scripts: [Latn]
+  mar:
+    scripts: [Deva]
+  mau:
+    scripts: [Latn]
+  maw:
+    scripts: [Latn]
+  max:
+    scripts: [Latn]
+  maz:
+    scripts: [Latn]
+  mbb:
+    scripts: [Latn]
+  mbc:
+    scripts: [Latn]
+  mbh:
+    scripts: [Latn]
+  mbj:
+    scripts: [Latn]
+  mbt:
+    scripts: [Latn]
+  mbu:
+    scripts: [Latn]
+  mca:
+    scripts: [Latn]
+  mcb:
+    scripts: [Latn]
+  mcd:
+    scripts: [Latn]
+  mcf:
+    scripts: [Latn]
+  mco:
+    scripts: [Latn]
+  mcp:
+    scripts: [Latn]
+  mcq:
+    scripts: [Latn]
+  mcu:
+    scripts: [Latn]
+  mcx:
+    scripts: [Latn]
+  mda:
+    scripts: [Latn]
+  mdd:
+    scripts: [Latn]
+  mdv:
+    scripts: [Latn]
+  mdy:
+    scripts: [Ethi]
+  med:
+    scripts: [Latn]
+  mee:
+    scripts: [Latn]
+  meh:
+    scripts: [Latn]
+  mej:
+    scripts: [Latn]
+  mek:
+    scripts: [Latn]
+  mel:
+    scripts: [Latn]
+  men:
+    scripts: [Latn]
+  meq:
+    scripts: [Latn]
+  mer:
+    scripts: [Latn]
+  met:
+    scripts: [Latn]
+  meu:
+    scripts: [Latn]
+  mev:
+    scripts: [Latn]
+  mfe:
+    scripts: [Latn]
+  mfh:
+    scripts: [Latn]
+  mfi:
+    scripts: [Latn]
+  mfk:
+    scripts: [Latn]
+  mfm:
+    scripts: [Latn]
+  mfn:
+    scripts: [Latn]
+  mfo:
+    scripts: [Latn]
+  mfq:
+    scripts: [Latn]
+  mfv:
+    scripts: [Latn]
+  mfy:
+    scripts: [Latn]
+  mfz:
+    scripts: [Latn]
+  mgd:
+    scripts: [Latn]
+  mge:
+    scripts: [Latn]
+  mgg:
+    scripts: [Latn]
+  mgh:
+    scripts: [Latn]
+  mgi:
+    scripts: [Latn]
+  mgo:
+    scripts: [Latn]
+  mhi:
+    scripts: [Latn]
+  mhk:
+    scripts: [Latn]
+  mhr:
+    scripts: [Cyrl]
+  mhu:
+    scripts: [Latn]
+  mhx:
+    scripts: [Latn]
+  mhy:
+    scripts: [Latn]
+  mib:
+    scripts: [Latn]
+  mie:
+    scripts: [Latn]
+  mif:
+    scripts: [Latn]
+  mig:
+    scripts: [Latn]
+  mih:
+    scripts: [Latn]
+  mil:
+    scripts: [Latn]
+  mim:
+    scripts: [Latn]
+  min:
+    scripts: [Latn]
+  mio:
+    scripts: [Latn]
+  mip:
+    scripts: [Latn]
+  miq:
+    scripts: [Latn]
+  mit:
+    scripts: [Latn]
+  miu:
+    scripts: [Latn]
+  miy:
+    scripts: [Latn]
+  miz:
+    scripts: [Latn]
+  mjl:
+    scripts: [Deva]
+  mjv:
+    scripts: [Mlym]
+  mkd:
+    scripts: [Cyrl]
+  mkf:
+    scripts: [Latn]
+  mki:
+    scripts: [Arab]
+  mkl:
+    scripts: [Latn]
+  mkn:
+    scripts: [Latn]
+  mlg:
+    scripts: [Latn]
+  mlq:
+    scripts: [Latn]
+  mlt:
+    scripts: [Latn]
+  mmc:
+    scripts: [Latn]
+  mmg:
+    scripts: [Latn]
+  mnb:
+    scripts: [Latn]
+  mne:
+    scripts: [Latn]
+  mnf:
+    scripts: [Latn]
+  mni:
+    scripts: [Beng]
+  mnk:
+    scripts: [Latn]
+  mnw:
+    scripts: [Mymr]
+  mnx:
+    scripts: [Latn]
+  moa:
+    scripts: [Latn]
+  mog:
+    scripts: [Latn]
+  mon:
+    scripts: [Cyrl]
+  mop:
+    scripts: [Latn]
+  mor:
+    scripts: [Latn]
+  mos:
+    scripts: [Latn]
+  mox:
+    scripts: [Latn]
+  moz:
+    scripts: [Latn]
+  mpg:
+    scripts: [Latn]
+  mpm:
+    scripts: [Latn]
+  mpp:
+    scripts: [Latn]
+  mpx:
+    scripts: [Latn]
+  mqb:
+    scripts: [Latn]
+  mqf:
+    scripts: [Latn]
+  mqj:
+    scripts: [Latn]
+  mqn:
+    scripts: [Latn]
+  mqy:
+    scripts: [Latn]
+  mri:
+    scripts: [Latn]
+  mrj:
+    scripts: [Cyrl]
+  mrr:
+    scripts: [Deva]
+  mrt:
+    scripts: [Latn]
+  mrw:
+    scripts: [Latn]
+  msh:
+    scripts: [Latn]
+  msi:
+    scripts: [Latn]
+  msw:
+    scripts: [Latn]
+  msy:
+    scripts: [Latn]
+  mtd:
+    scripts: [Latn]
+  mtj:
+    scripts: [Latn]
+  mto:
+    scripts: [Latn]
+  mtr:
+    scripts: [Deva]
+  mtu:
+    scripts: [Latn]
+  mtx:
+    scripts: [Latn]
+  mua:
+    scripts: [Latn]
+  mug:
+    scripts: [Latn]
+  muh:
+    scripts: [Latn]
+  mui:
+    scripts: [Latn]
+  mup:
+    scripts: [Deva]
+  mur:
+    scripts: [Latn]
+  muv:
+    scripts: [Mlym]
+  muy:
+    scripts: [Latn]
+  mve:
+    scripts: [Arab]
+  mvp:
+    scripts: [Latn]
+  mvy:
+    scripts: [Arab]
+  mwq:
+    scripts: [Latn]
+  mwv:
+    scripts: [Latn]
+  mxb:
+    scripts: [Latn]
+  mxq:
+    scripts: [Latn]
+  mxs:
+    scripts: [Latn]
+  mxt:
+    scripts: [Latn]
+  mxu:
+    scripts: [Latn]
+  mxv:
+    scripts: [Latn]
+  mxy:
+    scripts: [Latn]
+  mya:
+    scripts: [Mymr]
+  myb:
+    scripts: [Latn]
+  myk:
+    scripts: [Latn]
+  myv:
+    scripts: [Cyrl]
+  myx:
+    scripts: [Latn]
+  myy:
+    scripts: [Latn]
+  mza:
+    scripts: [Latn]
+  mzi:
+    scripts: [Latn]
+  mzj:
+    scripts: [Latn]
+  mzk:
+    scripts: [Latn]
+  mzl:
+    scripts: [Latn]
+  mzm:
+    scripts: [Latn]
+  mzw:
+    scripts: [Latn]
+  nab:
+    scripts: [Latn]
+  nag:
+    scripts: [Latn]
+  nal:
+    scripts: [Latn]
+  nan:
+    scripts: [Latn]
+  nap:
+    scripts: [Latn]
+  nas:
+    scripts: [Latn]
+  naw:
+    scripts: [Latn]
+  nbh:
+    scripts: [Latn]
+  nca:
+    scripts: [Latn]
+  ncf:
+    scripts: [Latn]
+  nch:
+    scripts: [Latn]
+  ncj:
+    scripts: [Latn]
+  ncl:
+    scripts: [Latn]
+  nco:
+    scripts: [Latn]
+  ncu:
+    scripts: [Latn]
+  ncx:
+    scripts: [Latn]
+  ndi:
+    scripts: [Latn]
+  ndj:
+    scripts: [Latn]
+  ndo:
+    scripts: [Latn]
+  ndp:
+    scripts: [Latn]
+  ndv:
+    scripts: [Latn]
+  ndy:
+    scripts: [Latn]
+  ndz:
+    scripts: [Latn]
+  neb:
+    scripts: [Latn]
+  nep:
+    scripts: [Deva]
+  new:
+    scripts: [Deva]
+  nfa:
+    scripts: [Latn]
+  nfr:
+    scripts: [Latn]
+  nga:
+    scripts: [Latn]
+  ngi:
+    scripts: [Latn]
+  ngl:
+    scripts: [Latn]
+  ngp:
+    scripts: [Latn]
+  ngu:
+    scripts: [Latn]
+  nhe:
+    scripts: [Latn]
+  nhg:
+    scripts: [Latn]
+  nhi:
+    scripts: [Latn]
+  nhn:
+    scripts: [Latn]
+  nhq:
+    scripts: [Latn]
+  nhu:
+    scripts: [Latn]
+  nhw:
+    scripts: [Latn]
+  nhx:
+    scripts: [Latn]
+  nhy:
+    scripts: [Latn]
+  nia:
+    scripts: [Latn]
+  nij:
+    scripts: [Latn]
+  nim:
+    scripts: [Latn]
+  nin:
+    scripts: [Latn]
+  nja:
+    scripts: [Latn]
+  nko:
+    scripts: [Latn]
+  nla:
+    scripts: [Latn]
+  nlc:
+    scripts: [Latn]
+  nld:
+    scripts: [Latn]
+  nlg:
+    scripts: [Latn]
+  nlk:
+    scripts: [Latn]
+  nlv:
+    scripts: [Latn]
+  nmg:
+    scripts: [Latn]
+  nmz:
+    scripts: [Latn]
+  nnb:
+    scripts: [Latn]
+  nnh:
+    scripts: [Latn]
+  nnq:
+    scripts: [Latn]
+  nnw:
+    scripts: [Latn]
+  noa:
+    scripts: [Latn]
+  nob:
+    scripts: [Latn]
+  nod:
+    scripts: [Thai]
+  noe:
+    scripts: [Deva]
+  nog:
+    scripts: [Cyrl]
+  not:
+    scripts: [Latn]
+  npl:
+    scripts: [Latn]
+  npy:
+    scripts: [Latn]
+  nso:
+    scripts: [Latn]
+  nst:
+    scripts: [Latn]
+  nsu:
+    scripts: [Latn]
+  ntm:
+    scripts: [Latn]
+  ntr:
+    scripts: [Latn]
+  nuj:
+    scripts: [Latn]
+  nup:
+    scripts: [Latn]
+  nus:
+    scripts: [Latn]
+  nuz:
+    scripts: [Latn]
+  nwb:
+    scripts: [Latn]
+  nxq:
+    scripts: [Latn]
+  nya:
+    scripts: [Latn]
+  nyf:
+    scripts: [Latn]
+  nyn:
+    scripts: [Latn]
+  nyo:
+    scripts: [Latn]
+  nyu:
+    scripts: [Latn]
+  nyy:
+    scripts: [Latn]
+  nzi:
+    scripts: [Latn]
+  obo:
+    scripts: [Latn]
+  oci:
+    scripts: [Latn]
+  odk:
+    scripts: [Arab]
+  odu:
+    scripts: [Latn]
+  ogo:
+    scripts: [Latn]
+  ojb:
+    scripts: [Cans, Latn]
+  oku:
+    scripts: [Latn]
+  old:
+    scripts: [Latn]
+  omw:
+    scripts: [Latn]
+  onb:
+    scripts: [Latn]
+  ood:
+    scripts: [Latn]
+  orc:
+    scripts: [Latn]
+  orm:
+    scripts: [Latn]
+  oru:
+    scripts: [Arab]
+  ory:
+    scripts: [Orya]
+  oss:
+    scripts: [Cyrl]
+  ote:
+    scripts: [Latn]
+  otq:
+    scripts: [Latn]
+  ozm:
+    scripts: [Latn]
+  pab:
+    scripts: [Latn]
+  pad:
+    scripts: [Latn]
+  pag:
+    scripts: [Latn]
+  pam:
+    scripts: [Latn]
+  pan:
+    scripts: [Guru]
+  pao:
+    scripts: [Latn]
+  pap:
+    scripts: [Latn]
+  pau:
+    scripts: [Latn]
+  pbb:
+    scripts: [Latn]
+  pbc:
+    scripts: [Latn]
+  pbi:
+    scripts: [Latn]
+  pbs:
+    scripts: [Latn]
+  pbt:
+    scripts: [Arab]
+  pbu:
+    scripts: [Arab]
+  pce:
+    scripts: [Thai]
+  pcm:
+    scripts: [Latn]
+  pex:
+    scripts: [Latn]
+  pez:
+    scripts: [Latn]
+  phl:
+    scripts: [Arab]
+  phr:
+    scripts: [Arab]
+  pib:
+    scripts: [Latn]
+  pil:
+    scripts: [Latn]
+  pip:
+    scripts: [Latn]
+  pir:
+    scripts: [Latn]
+  pis:
+    scripts: [Latn]
+  piy:
+    scripts: [Latn]
+  pjt:
+    scripts: [Latn]
+  pkb:
+    scripts: [Latn]
+  pko:
+    scripts: [Latn]
+  plk:
+    scripts: [Arab]
+  pls:
+    scripts: [Latn]
+  plt:
+    scripts: [Latn]
+  plw:
+    scripts: [Latn]
+  pmf:
+    scripts: [Latn]
+  pmq:
+    scripts: [Latn]
+  pms:
+    scripts: [Latn]
+  pmy:
+    scripts: [Latn]
+  pnb:
+    scripts: [Arab]
+  pne:
+    scripts: [Latn]
+  pny:
+    scripts: [Latn]
+  poc:
+    scripts: [Latn]
+  poe:
+    scripts: [Latn]
+  poh:
+    scripts: [Latn]
+  poi:
+    scripts: [Latn]
+  pol:
+    scripts: [Latn]
+  por:
+    scripts: [Latn]
+  pov:
+    scripts: [Latn]
+  pow:
+    scripts: [Latn]
+  poy:
+    scripts: [Latn]
+  ppk:
+    scripts: [Latn]
+  pps:
+    scripts: [Latn]
+  prf:
+    scripts: [Latn]
+  prk:
+    scripts: [Latn]
+  prq:
+    scripts: [Latn]
+  prt:
+    scripts: [Thai]
+  pse:
+    scripts: [Latn]
+  pss:
+    scripts: [Latn]
+  pst:
+    scripts: [Arab]
+  ptu:
+    scripts: [Latn]
+  pua:
+    scripts: [Latn]
+  pui:
+    scripts: [Latn]
+  pus:
+    scripts: [Arab]
+  pwg:
+    scripts: [Latn]
+  pwn:
+    scripts: [Latn]
+  pww:
+    scripts: [Thai]
+  pxm:
+    scripts: [Latn]
+  qub:
+    scripts: [Latn]
+  quc:
+    scripts: [Latn]
+  quf:
+    scripts: [Latn]
+  qug:
+    scripts: [Latn]
+  quh:
+    scripts: [Latn]
+  qul:
+    scripts: [Latn]
+  qum:
+    scripts: [Latn]
+  qup:
+    scripts: [Latn]
+  qur:
+    scripts: [Latn]
+  qus:
+    scripts: [Latn]
+  quv:
+    scripts: [Latn]
+  quw:
+    scripts: [Latn]
+  qux:
+    scripts: [Latn]
+  quy:
+    scripts: [Latn]
+  quz:
+    scripts: [Latn]
+  qva:
+    scripts: [Latn]
+  qvc:
+    scripts: [Latn]
+  qve:
+    scripts: [Latn]
+  qvh:
+    scripts: [Latn]
+  qvi:
+    scripts: [Latn]
+  qvj:
+    scripts: [Latn]
+  qvl:
+    scripts: [Latn]
+  qvm:
+    scripts: [Latn]
+  qvn:
+    scripts: [Latn]
+  qvo:
+    scripts: [Latn]
+  qvs:
+    scripts: [Latn]
+  qvw:
+    scripts: [Latn]
+  qvz:
+    scripts: [Latn]
+  qwa:
+    scripts: [Latn]
+  qwh:
+    scripts: [Latn]
+  qws:
+    scripts: [Latn]
+  qxa:
+    scripts: [Latn]
+  qxh:
+    scripts: [Latn]
+  qxl:
+    scripts: [Latn]
+  qxn:
+    scripts: [Latn]
+  qxo:
+    scripts: [Latn]
+  qxp:
+    scripts: [Latn]
+  qxr:
+    scripts: [Latn]
+  qxt:
+    scripts: [Latn]
+  qxu:
+    scripts: [Latn]
+  qxw:
+    scripts: [Latn]
+  rag:
+    scripts: [Latn]
+  rah:
+    scripts: [Beng]
+  rai:
+    scripts: [Latn]
+  rap:
+    scripts: [Latn]
+  rav:
+    scripts: [Deva]
+  raw:
+    scripts: [Latn]
+  rej:
+    scripts: [Latn]
+  rel:
+    scripts: [Latn]
+  rgu:
+    scripts: [Latn]
+  rhg:
+    scripts: [Latn]
+  rif:
+    scripts: [Arab, Latn]
+  rim:
+    scripts: [Latn]
+  rjs:
+    scripts: [Deva]
+  rkt:
+    scripts: [Beng]
+  rmc:
+    scripts: [Cyrl, Latn]
+  rmo:
+    scripts: [Latn]
+  rmy:
+    scripts: [Cyrl, Latn]
+  rng:
+    scripts: [Latn]
+  rnl:
+    scripts: [Latn]
+  rob:
+    scripts: [Latn]
+  rof:
+    scripts: [Latn]
+  roh:
+    scripts: [Latn_surs1244]
+  rol:
+    scripts: [Latn]
+  ron:
+    scripts: [Latn]
+  roo:
+    scripts: [Latn]
+  rop:
+    scripts: [Latn]
+  rro:
+    scripts: [Latn]
+  rth:
+    scripts: [Latn]
+  rub:
+    scripts: [Latn]
+  ruc:
+    scripts: [Latn]
+  ruf:
+    scripts: [Latn]
+  rug:
+    scripts: [Latn]
+  run:
+    scripts: [Latn]
+  rus:
+    scripts: [Cyrl]
+  rwm:
+    scripts: [Latn]
+  rwr:
+    scripts: [Deva]
+  sab:
+    scripts: [Latn]
+  sag:
+    scripts: [Latn]
+  sah:
+    scripts: [Cyrl]
+  saj:
+    scripts: [Latn]
+  saq:
+    scripts: [Latn]
+  sas:
+    scripts: [Latn]
+  sau:
+    scripts: [Latn]
+  say:
+    scripts: [Latn]
+  sba:
+    scripts: [Latn]
+  sbd:
+    scripts: [Latn]
+  sbl:
+    scripts: [Latn]
+  sbn:
+    scripts: [Arab]
+  sbp:
+    scripts: [Latn]
+  sch:
+    scripts: [Latn]
+  sck:
+    scripts: [Deva]
+  scl:
+    scripts: [Arab]
+  scn:
+    scripts: [Latn]
+  sco:
+    scripts: [Latn]
+  sda:
+    scripts: [Latn]
+  sdo:
+    scripts: [Latn]
+  sea:
+    scripts: [Latn]
+  seh:
+    scripts: [Latn]
+  sei:
+    scripts: [Latn]
+  ses:
+    scripts: [Latn]
+  sey:
+    scripts: [Latn]
+  sgb:
+    scripts: [Latn]
+  sgj:
+    scripts: [Deva]
+  sgw:
+    scripts: [Ethi]
+  shi:
+    scripts: [Latn]
+  shk:
+    scripts: [Latn]
+  shn:
+    scripts: [Mymr]
+  sho:
+    scripts: [Latn]
+  shp:
+    scripts: [Latn]
+  sid:
+    scripts: [Latn]
+  sig:
+    scripts: [Latn]
+  sil:
+    scripts: [Latn]
+  sin:
+    scripts: [Sinh]
+  sip:
+    scripts: [Tibt]
+  siw:
+    scripts: [Latn]
+  sja:
+    scripts: [Latn]
+  sjm:
+    scripts: [Latn]
+  sjp:
+    scripts: [Deva]
+  sjr:
+    scripts: [Latn]
+  skg:
+    scripts: [Latn]
+  skr:
+    scripts: [Arab]
+  sld:
+    scripts: [Latn]
+  slk:
+    scripts: [Latn]
+  slu:
+    scripts: [Latn]
+  slv:
+    scripts: [Latn]
+  sml:
+    scripts: [Latn]
+  smo:
+    scripts: [Latn]
+  sna:
+    scripts: [Latn]
+  snc:
+    scripts: [Latn]
+  snd:
+    scripts: [Arab]
+  sne:
+    scripts: [Latn]
+  snk:
+    scripts: [Latn]
+  snn:
+    scripts: [Latn]
+  snp:
+    scripts: [Latn]
+  snv:
+    scripts: [Latn]
+  snw:
+    scripts: [Latn]
+  sol:
+    scripts: [Latn]
+  som:
+    scripts: [Latn]
+  soy:
+    scripts: [Latn]
+  spa:
+    scripts: [Latn]
+  spp:
+    scripts: [Latn]
+  sps:
+    scripts: [Latn]
+  spy:
+    scripts: [Latn]
+  src:
+    scripts: [Latn]
+  srd:
+    scripts: [Latn]
+  sri:
+    scripts: [Latn]
+  srm:
+    scripts: [Latn]
+  srn:
+    scripts: [Latn]
+  sro:
+    scripts: [Latn]
+  srp:
+    scripts: [Cyrl]
+  srr:
+    scripts: [Latn]
+  srx:
+    scripts: [Deva]
+  ssi:
+    scripts: [Arab]
+  ste:
+    scripts: [Latn]
+  stn:
+    scripts: [Latn]
+  stp:
+    scripts: [Latn]
+  sua:
+    scripts: [Latn]
+  suc:
+    scripts: [Latn]
+  suk:
+    scripts: [Latn]
+  sun:
+    scripts: [Latn]
+  sur:
+    scripts: [Latn]
+  sus:
+    scripts: [Latn]
+  suv:
+    scripts: [Latn]
+  suz:
+    scripts: [Deva]
+  sva:
+    scripts: [Geor]
+  swe:
+    scripts: [Latn]
+  swh:
+    scripts: [Latn]
+  swv:
+    scripts: [Deva]
+  sxb:
+    scripts: [Latn]
+  sxn:
+    scripts: [Latn]
+  sya:
+    scripts: [Latn]
+  syl:
+    scripts: [Latn]
+  sza:
+    scripts: [Latn]
+  szy:
+    scripts: [Latn]
+  tac:
+    scripts: [Latn]
+  taj:
+    scripts: [Deva]
+  tam:
+    scripts: [Taml]
+  tan:
+    scripts: [Latn]
+  tao:
+    scripts: [Latn]
+  tap:
+    scripts: [Latn]
+  taq:
+    scripts: [Latn]
+  tar:
+    scripts: [Latn]
+  tat:
+    scripts: [Cyrl]
+  tav:
+    scripts: [Latn]
+  tay:
+    scripts: [Latn]
+  tbc:
+    scripts: [Latn]
+  tbf:
+    scripts: [Latn]
+  tbg:
+    scripts: [Latn]
+  tbk:
+    scripts: [Latn]
+  tbl:
+    scripts: [Latn]
+  tby:
+    scripts: [Latn]
+  tbz:
+    scripts: [Latn]
+  tca:
+    scripts: [Latn]
+  tcc:
+    scripts: [Latn]
+  tcf:
+    scripts: [Latn]
+  tcy:
+    scripts: [Mlym]
+  tcz:
+    scripts: [Latn]
+  tdj:
+    scripts: [Latn]
+  tdn:
+    scripts: [Latn]
+  tdx:
+    scripts: [Latn]
+  ted:
+    scripts: [Latn]
+  tee:
+    scripts: [Latn]
+  tel:
+    scripts: [Telu]
+  tem:
+    scripts: [Latn]
+  teo:
+    scripts: [Latn]
+  ter:
+    scripts: [Latn]
+  tew:
+    scripts: [Latn]
+  tex:
+    scripts: [Latn]
+  tfr:
+    scripts: [Latn]
+  tgc:
+    scripts: [Latn]
+  tgj:
+    scripts: [Latn]
+  tgk:
+    scripts: [Cyrl]
+  tgl:
+    scripts: [Latn]
+  tgo:
+    scripts: [Latn]
+  tgp:
+    scripts: [Latn]
+  tha:
+    scripts: [Thai]
+  the:
+    scripts: [Deva]
+  thk:
+    scripts: [Latn]
+  thl:
+    scripts: [Deva]
+  thq:
+    scripts: [Deva]
+  thr:
+    scripts: [Deva]
+  thv:
+    scripts: [Tfng]
+  tig:
+    scripts: [Ethi]
+  tih:
+    scripts: [Latn]
+  tik:
+    scripts: [Latn]
+  tio:
+    scripts: [Latn]
+  tir:
+    scripts: [Ethi]
+  tkg:
+    scripts: [Latn]
+  tkr:
+    scripts: [Latn]
+  tkt:
+    scripts: [Deva]
+  tlb:
+    scripts: [Latn]
+  tli:
+    scripts: [Latn]
+  tlj:
+    scripts: [Latn]
+  tlp:
+    scripts: [Latn]
+  tly:
+    scripts: [Latn]
+  tmc:
+    scripts: [Latn]
+  tmf:
+    scripts: [Latn]
+  tna:
+    scripts: [Latn]
+  tng:
+    scripts: [Latn]
+  tnk:
+    scripts: [Latn]
+  tnn:
+    scripts: [Latn]
+  tnp:
+    scripts: [Latn]
+  tnr:
+    scripts: [Latn]
+  tnt:
+    scripts: [Latn]
+  tob:
+    scripts: [Latn]
+  toc:
+    scripts: [Latn]
+  toh:
+    scripts: [Latn]
+  tok:
+    scripts: [Latn]
+  tom:
+    scripts: [Latn]
+  top:
+    scripts: [Latn]
+  tos:
+    scripts: [Latn]
+  tpi:
+    scripts: [Latn]
+  tpl:
+    scripts: [Latn]
+  tpm:
+    scripts: [Latn]
+  tpp:
+    scripts: [Latn]
+  tpt:
+    scripts: [Latn]
+  tpz:
+    scripts: [Latn]
+  tqp:
+    scripts: [Latn]
+  trc:
+    scripts: [Latn]
+  tri:
+    scripts: [Latn]
+  trn:
+    scripts: [Latn]
+  trp:
+    scripts: [Latn]
+  trq:
+    scripts: [Latn]
+  trs:
+    scripts: [Latn]
+  trv:
+    scripts: [Latn]
+  trw:
+    scripts: [Arab]
+  tsn:
+    scripts: [Latn]
+  tso:
+    scripts: [Latn]
+  tsz:
+    scripts: [Latn]
+  ttc:
+    scripts: [Latn]
+  tte:
+    scripts: [Latn]
+  ttj:
+    scripts: [Latn]
+  ttq:
+    scripts: [Tfng]
+  ttr:
+    scripts: [Latn]
+  ttu:
+    scripts: [Latn]
+  tue:
+    scripts: [Latn]
+  tuf:
+    scripts: [Latn]
+  tui:
+    scripts: [Latn]
+  tuk:
+    scripts: [Arab, Latn]
+  tul:
+    scripts: [Latn]
+  tuo:
+    scripts: [Latn]
+  tuq:
+    scripts: [Latn]
+  tur:
+    scripts: [Latn]
+  tuv:
+    scripts: [Latn]
+  tuy:
+    scripts: [Latn]
+  tvo:
+    scripts: [Latn]
+  tvu:
+    scripts: [Latn]
+  tvw:
+    scripts: [Latn]
+  twb:
+    scripts: [Latn]
+  twe:
+    scripts: [Latn]
+  twu:
+    scripts: [Latn]
+  txa:
+    scripts: [Latn]
+  txq:
+    scripts: [Latn]
+  txs:
+    scripts: [Latn]
+  txu:
+    scripts: [Latn]
+  txy:
+    scripts: [Latn]
+  tye:
+    scripts: [Latn]
+  tzh:
+    scripts: [Latn]
+  tzj:
+    scripts: [Latn]
+  tzo:
+    scripts: [Latn]
+  ubl:
+    scripts: [Latn]
+  ubu:
+    scripts: [Latn]
+  udl:
+    scripts: [Latn]
+  udm:
+    scripts: [Cyrl]
+  udu:
+    scripts: [Latn]
+  uig:
+    scripts: [Arab, Cyrl]
+  uki:
+    scripts: [Orya]
+  ukr:
+    scripts: [Cyrl]
+  ukv:
+    scripts: [Latn]
+  umb:
+    scripts: [Latn]
+  upv:
+    scripts: [Latn]
+  ura:
+    scripts: [Latn]
+  urb:
+    scripts: [Latn]
+  urd:
+    scripts: [Arab, Deva, Latn]
+  urh:
+    scripts: [Latn]
+  urk:
+    scripts: [Thai]
+  urt:
+    scripts: [Latn]
+  ury:
+    scripts: [Latn]
+  ush:
+    scripts: [Arab]
+  usp:
+    scripts: [Latn]
+  uzb:
+    scripts: [Cyrl, Latn]
+  uzn:
+    scripts: [Latn]
+  vag:
+    scripts: [Latn]
+  vah:
+    scripts: [Deva]
+  vai:
+    scripts: [Latn]
+  var:
+    scripts: [Latn]
+  ver:
+    scripts: [Latn]
+  vid:
+    scripts: [Latn]
+  vie:
+    scripts: [Latn]
+  vif:
+    scripts: [Latn]
+  vmc:
+    scripts: [Latn]
+  vmj:
+    scripts: [Latn]
+  vmm:
+    scripts: [Latn]
+  vmp:
+    scripts: [Latn]
+  vmw:
+    scripts: [Latn]
+  vmy:
+    scripts: [Latn]
+  vmz:
+    scripts: [Latn]
+  vro:
+    scripts: [Latn]
+  vun:
+    scripts: [Latn]
+  vut:
+    scripts: [Latn]
+  wal:
+    scripts: [Ethi, Latn]
+  wap:
+    scripts: [Latn]
+  war:
+    scripts: [Latn]
+  waw:
+    scripts: [Latn]
+  way:
+    scripts: [Latn]
+  wba:
+    scripts: [Latn]
+  wbl:
+    scripts: [Latn]
+  wbr:
+    scripts: [Deva]
+  wci:
+    scripts: [Latn]
+  weo:
+    scripts: [Latn]
+  wes:
+    scripts: [Latn]
+  wja:
+    scripts: [Latn]
+  wji:
+    scripts: [Latn]
+  wlo:
+    scripts: [Latn]
+  wlx:
+    scripts: [Latn]
+  wmw:
+    scripts: [Latn]
+  wob:
+    scripts: [Latn]
+  wof:
+    scripts: [Latn]
+  wol:
+    scripts: [Latn]
+  wsg:
+    scripts: [Telu]
+  wwa:
+    scripts: [Latn]
+  xal:
+    scripts: [Cyrl]
+  xdy:
+    scripts: [Latn]
+  xed:
+    scripts: [Latn]
+  xer:
+    scripts: [Latn]
+  xhe:
+    scripts: [Arab]
+  xho:
+    scripts: [Latn]
+  xka:
+    scripts: [Arab]
+  xkl:
+    scripts: [Latn]
+  xmf:
+    scripts: [Geor]
+  xmm:
+    scripts: [Latn]
+  xmv:
+    scripts: [Latn]
+  xnj:
+    scripts: [Latn]
+  xnr:
+    scripts: [Deva]
+  xog:
+    scripts: [Latn]
+  xon:
+    scripts: [Latn]
+  xpe:
+    scripts: [Latn]
+  xrb:
+    scripts: [Latn]
+  xsb:
+    scripts: [Latn]
+  xsm:
+    scripts: [Latn]
+  xsr:
+    scripts: [Deva]
+  xsu:
+    scripts: [Latn]
+  xta:
+    scripts: [Latn]
+  xtd:
+    scripts: [Latn]
+  xte:
+    scripts: [Latn]
+  xti:
+    scripts: [Latn]
+  xtm:
+    scripts: [Latn]
+  xtn:
+    scripts: [Latn]
+  xtu:
+    scripts: [Latn]
+  xua:
+    scripts: [Taml]
+  xuo:
+    scripts: [Latn]
+  yaa:
+    scripts: [Latn]
+  yad:
+    scripts: [Latn]
+  yal:
+    scripts: [Latn]
+  yam:
+    scripts: [Latn]
+  yao:
+    scripts: [Latn]
+  yaq:
+    scripts: [Latn]
+  yas:
+    scripts: [Latn]
+  yat:
+    scripts: [Latn]
+  yav:
+    scripts: [Latn]
+  yay:
+    scripts: [Latn]
+  yaz:
+    scripts: [Latn]
+  yba:
+    scripts: [Latn]
+  ybb:
+    scripts: [Latn]
+  ycl:
+    scripts: [Latn]
+  ycn:
+    scripts: [Latn]
+  ydd:
+    scripts: [Hebr]
+  ydg:
+    scripts: [Arab]
+  yea:
+    scripts: [Mlym]
+  yer:
+    scripts: [Latn]
+  yes:
+    scripts: [Latn]
+  yka:
+    scripts: [Latn]
+  yli:
+    scripts: [Latn]
+  yor:
+    scripts: [Latn]
+  yre:
+    scripts: [Latn]
+  yua:
+    scripts: [Latn]
+  yue:
+    scripts: [Hans, Hant]
+  yuz:
+    scripts: [Latn]
+  yva:
+    scripts: [Latn]
+  zaa:
+    scripts: [Latn]
+  zab:
+    scripts: [Latn]
+  zac:
+    scripts: [Latn]
+  zad:
+    scripts: [Latn]
+  zae:
+    scripts: [Latn]
+  zai:
+    scripts: [Latn]
+  zam:
+    scripts: [Latn]
+  zao:
+    scripts: [Latn]
+  zaq:
+    scripts: [Latn]
+  zar:
+    scripts: [Latn]
+  zas:
+    scripts: [Latn]
+  zav:
+    scripts: [Latn]
+  zaw:
+    scripts: [Latn]
+  zca:
+    scripts: [Latn]
+  zga:
+    scripts: [Latn]
+  zim:
+    scripts: [Latn]
+  ziw:
+    scripts: [Latn]
+  zmz:
+    scripts: [Latn]
+  zne:
+    scripts: [Latn]
+  zoc:
+    scripts: [Latn]
+  zoh:
+    scripts: [Latn]
+  zor:
+    scripts: [Latn]
+  zos:
+    scripts: [Latn]
+  zpc:
+    scripts: [Latn]
+  zpg:
+    scripts: [Latn]
+  zpi:
+    scripts: [Latn]
+  zpl:
+    scripts: [Latn]
+  zpm:
+    scripts: [Latn]
+  zpo:
+    scripts: [Latn]
+  zpt:
+    scripts: [Latn]
+  zpu:
+    scripts: [Latn]
+  zpv:
+    scripts: [Latn]
+  zpy:
+    scripts: [Latn]
+  zpz:
+    scripts: [Latn]
+  zsm:
+    scripts: [Latn]
+  ztg:
+    scripts: [Latn]
+  ztn:
+    scripts: [Latn]
+  ztp:
+    scripts: [Latn]
+  ztq:
+    scripts: [Latn]
+  zts:
+    scripts: [Latn]
+  ztu:
+    scripts: [Latn]
+  zty:
+    scripts: [Latn]
+  zul:
+    scripts: [Latn]
+  zyb:
+    scripts: [Latn]
+  zyp:
+    scripts: [Latn]
+  zza:
+    scripts: [Latn]

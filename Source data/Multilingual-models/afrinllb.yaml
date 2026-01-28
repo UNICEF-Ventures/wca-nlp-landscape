@@ -3,6 +3,7 @@
 # Base model: facebook/nllb-200-600M (compressed via iterative layer pruning + quantization)
 # Status: pre-release (models and data not yet published)
 #
+# Language pairs are made up as placeholder. Will be updated with paper release. 
 # 15 language pairs (30 translation directions):
 #   - English ↔ 13 languages (bidirectional)
 #   - French ↔ 2 languages (Lingala, Wolof)

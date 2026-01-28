@@ -8,3 +8,13 @@ common_voice:
   test_clips: 89
   male_percent: 9.0
   female_percent: 44.0
+evaluations:
+  asr:
+  - model: facebook/omnilingual-asr
+    model_url: https://github.com/facebookresearch/omnilingual-asr
+    results:
+    - test_set: FLEURS
+      source: reported
+      metrics:
+      - name: WER
+        value: '?'

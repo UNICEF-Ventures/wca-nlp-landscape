@@ -32,6 +32,14 @@ evaluations:
         value: 4.02
       - name: CER
         value: 0.97
+  - model: facebook/omnilingual-asr
+    model_url: https://github.com/facebookresearch/omnilingual-asr
+    results:
+    - test_set: FLEURS
+      source: reported
+      metrics:
+      - name: WER
+        value: '?'
   - model: openai/whisper-tiny
     model_url: https://huggingface.co/openai/whisper-tiny
     results:

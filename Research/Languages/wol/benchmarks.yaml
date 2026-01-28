@@ -26,3 +26,12 @@ evaluations:
         value: '?'
       - name: BLEU wo-fr
         value: '?'
+  asr:
+  - model: facebook/omnilingual-asr
+    model_url: https://github.com/facebookresearch/omnilingual-asr
+    results:
+    - test_set: FLEURS
+      source: reported
+      metrics:
+      - name: WER
+        value: '?'

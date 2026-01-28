@@ -146,6 +146,7 @@ def generate_language_detail_page(iso_code, lang_data, actors):
     # Languages with different names in LUDP
     ludp_name_map = {
         'mos': 'Mossi',
+        'lin': 'Lingala-Bangala'
     }
     if iso_code not in ludp_skip:
         ludp_name = ludp_name_map.get(iso_code, name)

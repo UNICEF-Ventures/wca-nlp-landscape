@@ -37,5 +37,6 @@ tech_resources:
   MADLAD-400 Sentences: 139000 MAD-Sents
   Fineweb2: 💬
   FLEURS: true
+  AfriNLLB: true
   MMS-ASR: true
   MMS-LID: true

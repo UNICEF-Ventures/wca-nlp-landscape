@@ -1,5 +1,7 @@
 source: https://dl.fbaipublicfiles.com/mms/misc/language_coverage_mms.html
 description: MMS (Massively Multilingual Speech) language coverage by Meta
+tech_resources_label: MMS
+multitask: true
 total_languages: 4022
 total_asr: 1161
 total_tts: 1108

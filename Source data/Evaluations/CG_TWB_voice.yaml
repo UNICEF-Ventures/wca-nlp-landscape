@@ -4,7 +4,7 @@
 models:
   # --- ASR: Whisper fine-tunes ---
 
-  - model: CLEAR-Global/whisper-small-clearglobal-hausa-asr-1.0.0
+  - model: whisper-small-clearglobal-hausa-asr-1.0.0
     model_url: https://huggingface.co/CLEAR-Global/whisper-small-clearglobal-hausa-asr-1.0.0
     task: asr
     results:
@@ -18,7 +18,7 @@ models:
             - name: CER
               value: 3.11
 
-  - model: CLEAR-Global/whisper-small-clearglobal-kanuri-asr-1.0.0
+  - model: whisper-small-clearglobal-kanuri-asr-1.0.0
     model_url: https://huggingface.co/CLEAR-Global/whisper-small-clearglobal-kanuri-asr-1.0.0
     task: asr
     results:
@@ -34,7 +34,7 @@ models:
 
   # --- ASR: W2V-BERT 2.0 fine-tunes ---
 
-  - model: CLEAR-Global/w2v-bert-2.0-clearglobal-hausa-asr-1.0.0
+  - model: w2v-bert-2.0-clearglobal-hausa-asr-1.0.0
     model_url: https://huggingface.co/CLEAR-Global/w2v-bert-2.0-clearglobal-hausa-asr-1.0.0
     task: asr
     results:
@@ -48,7 +48,7 @@ models:
             - name: CER
               value: 0.97
 
-  - model: CLEAR-Global/w2v-bert-2.0-clearglobal-kanuri-asr-1.0.0
+  - model: w2v-bert-2.0-clearglobal-kanuri-asr-1.0.0
     model_url: https://huggingface.co/CLEAR-Global/w2v-bert-2.0-clearglobal-kanuri-asr-1.0.0
     task: asr
     results:
@@ -64,7 +64,7 @@ models:
 
   # --- TTS: TWB Voice TTS models (scores to be added) ---
 
-  - model: CLEAR-Global/TWB-Voice-Hausa-TTS-1.0
+  - model: TWB-Voice-Hausa-TTS-1.0
     model_url: https://huggingface.co/CLEAR-Global/TWB-Voice-Hausa-TTS-1.0
     task: tts
     results:
@@ -78,7 +78,7 @@ models:
             - name: Naturalness
               value: 2.93/5
 
-  - model: CLEAR-Global/TWB-Voice-Kanuri-TTS-1.0
+  - model: TWB-Voice-Kanuri-TTS-1.0
     model_url: https://huggingface.co/CLEAR-Global/TWB-Voice-Kanuri-TTS-1.0
     task: tts
     results:

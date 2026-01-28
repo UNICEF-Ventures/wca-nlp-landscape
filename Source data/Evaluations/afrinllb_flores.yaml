@@ -1,0 +1,272 @@
+# AfriNLLB: Efficient Translation Models for African Languages
+# Paper accepted at AfricaNLP 2026
+# Evaluation on FLORES-200 devtest set (expected)
+# Status: pre-release — values to be filled when paper is published
+#
+# Two model variants: pruned (layer pruning) and quantized
+# Base model: facebook/nllb-200-600M
+
+models:
+  # --- Pruned model ---
+
+  - model: AfriNLLB (pruned)
+    model_url:
+    task: mt
+    results:
+      hau:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-ha
+              value: "?"
+            - name: BLEU ha-en
+              value: "?"
+      yor:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-yo
+              value: "?"
+            - name: BLEU yo-en
+              value: "?"
+      lin:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-ln
+              value: "?"
+            - name: BLEU ln-en
+              value: "?"
+            - name: BLEU fr-ln
+              value: "?"
+            - name: BLEU ln-fr
+              value: "?"
+      wol:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-wo
+              value: "?"
+            - name: BLEU wo-en
+              value: "?"
+            - name: BLEU fr-wo
+              value: "?"
+            - name: BLEU wo-fr
+              value: "?"
+      swh:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-sw
+              value: "?"
+            - name: BLEU sw-en
+              value: "?"
+      amh:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-am
+              value: "?"
+            - name: BLEU am-en
+              value: "?"
+      som:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-so
+              value: "?"
+            - name: BLEU so-en
+              value: "?"
+      zul:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-zu
+              value: "?"
+            - name: BLEU zu-en
+              value: "?"
+      afr:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-af
+              value: "?"
+            - name: BLEU af-en
+              value: "?"
+      arz:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-arz
+              value: "?"
+            - name: BLEU arz-en
+              value: "?"
+      arb:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-ar
+              value: "?"
+            - name: BLEU ar-en
+              value: "?"
+      fra:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-fr
+              value: "?"
+            - name: BLEU fr-en
+              value: "?"
+      por:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-pt
+              value: "?"
+            - name: BLEU pt-en
+              value: "?"
+
+  # --- Quantized model ---
+
+  - model: AfriNLLB (quantized)
+    model_url:
+    task: mt
+    results:
+      hau:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-ha
+              value: "?"
+            - name: BLEU ha-en
+              value: "?"
+      yor:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-yo
+              value: "?"
+            - name: BLEU yo-en
+              value: "?"
+      lin:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-ln
+              value: "?"
+            - name: BLEU ln-en
+              value: "?"
+            - name: BLEU fr-ln
+              value: "?"
+            - name: BLEU ln-fr
+              value: "?"
+      wol:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-wo
+              value: "?"
+            - name: BLEU wo-en
+              value: "?"
+            - name: BLEU fr-wo
+              value: "?"
+            - name: BLEU wo-fr
+              value: "?"
+      swh:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-sw
+              value: "?"
+            - name: BLEU sw-en
+              value: "?"
+      amh:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-am
+              value: "?"
+            - name: BLEU am-en
+              value: "?"
+      som:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-so
+              value: "?"
+            - name: BLEU so-en
+              value: "?"
+      zul:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-zu
+              value: "?"
+            - name: BLEU zu-en
+              value: "?"
+      afr:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-af
+              value: "?"
+            - name: BLEU af-en
+              value: "?"
+      arz:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-arz
+              value: "?"
+            - name: BLEU arz-en
+              value: "?"
+      arb:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-ar
+              value: "?"
+            - name: BLEU ar-en
+              value: "?"
+      fra:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-fr
+              value: "?"
+            - name: BLEU fr-en
+              value: "?"
+      por:
+        - test_set: FLORES-200
+          source: reported
+          source_url:
+          metrics:
+            - name: BLEU en-pt
+              value: "?"
+            - name: BLEU pt-en
+              value: "?"

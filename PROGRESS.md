@@ -23,7 +23,8 @@ Mapping of available NLP resources (ASR, TTS, MT, LLM) and key actors working on
 - [x] GitHub Pages auto-deployment
 - [x] Search filtering on Focus Languages and Actors tabs
 - [x] LUDP panel for languages
-- [x] MMS coverage check (ASR/TTS/LID per language in tech_resources)
+- [x] Multilingual model coverage check logic
+- [x] List language support for MMS, AfriNLLB, Omnilingual
 - [x] Benchmark infrastructure (evaluations in benchmarks.yaml + benchmarks_manual.yaml, Source data/Evaluations/ with fetcher)
 - [x] Unbenchmarked models support (`unbenchmarked_models` in benchmarks_manual.yaml — lists noteworthy models without scores)
 - [ ] Crisis index information for languages (pending approval from CLEAR to add)
@@ -104,12 +105,12 @@ Compile existing benchmark results (FLORES, FLEURS, Common Voice, published pape
 | Infrastructure done, data collection started | ██░░░░░░░░░░░░░░░░░░ 10% |
 
 - [x] Benchmark data infrastructure (two-file system, Source data/Evaluations/, rendering on language pages)
-- [x] Initial ASR data: Whisper FLEURS WER (14 languages), CLEAR Global TWB Voice (Hausa, Kanuri), w2v-BERT 2.0 (Hausa, Kanuri)
+- [x] Initial ASR data: Whisper FLEURS WER, CLEAR Global TWB Voice (Hausa, Kanuri)
 - [x] Initial TTS data: CLEAR Global TWB Voice TTS (Hausa, Kanuri) — scores entered
 - [ ] Compile ASR benchmarks (more Whisper variants, MMS, wav2vec2, etc.)
-- [ ] Compile MT benchmarks (NLLB, MADLAD, etc.)
+- [ ] Compile MT benchmarks (NLLB, MADLAD, AfriNLLB etc.)
 - [ ] Compile TTS benchmarks (more models)
-- [ ] Compile LLM benchmarks
+- [ ] Compile LLM benchmarks (AfriqueLLM, Goldfish, Aya, Serengeti)
 - [ ] Gap analysis: which languages lack benchmarks
 - [ ] Conducting benchmark analyses where needed and possible
 

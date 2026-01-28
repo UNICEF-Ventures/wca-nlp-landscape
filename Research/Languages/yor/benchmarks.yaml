@@ -9,13 +9,85 @@ common_voice:
   male_percent: 30.0
   female_percent: 37.0
 evaluations:
+  mt:
+  - model: AfriNLLB (pruned)
+    results:
+    - test_set: FLORES-200
+      source: reported
+      metrics:
+      - name: BLEU en-yo
+        value: '?'
+      - name: BLEU yo-en
+        value: '?'
+  - model: AfriNLLB (quantized)
+    results:
+    - test_set: FLORES-200
+      source: reported
+      metrics:
+      - name: BLEU en-yo
+        value: '?'
+      - name: BLEU yo-en
+        value: '?'
   asr:
+  - model: openai/whisper-tiny
+    model_url: https://huggingface.co/openai/whisper-tiny
+    results:
+    - test_set: FLEURS
+      source: reported
+      source_url: https://arxiv.org/abs/2212.04356
+      metrics:
+      - name: WER
+        value: 106.4
+  - model: openai/whisper-base
+    model_url: https://huggingface.co/openai/whisper-base
+    results:
+    - test_set: FLEURS
+      source: reported
+      source_url: https://arxiv.org/abs/2212.04356
+      metrics:
+      - name: WER
+        value: 101.8
+  - model: openai/whisper-small
+    model_url: https://huggingface.co/openai/whisper-small
+    results:
+    - test_set: FLEURS
+      source: reported
+      source_url: https://arxiv.org/abs/2212.04356
+      metrics:
+      - name: WER
+        value: 116.4
+  - model: openai/whisper-medium
+    model_url: https://huggingface.co/openai/whisper-medium
+    results:
+    - test_set: FLEURS
+      source: reported
+      source_url: https://arxiv.org/abs/2212.04356
+      metrics:
+      - name: WER
+        value: 105.1
+  - model: openai/whisper-large
+    model_url: https://huggingface.co/openai/whisper-large
+    results:
+    - test_set: FLEURS
+      source: reported
+      source_url: https://arxiv.org/abs/2212.04356
+      metrics:
+      - name: WER
+        value: 111.7
+  - model: openai/whisper-large-v2
+    model_url: https://huggingface.co/openai/whisper-large-v2
+    results:
+    - test_set: FLEURS
+      source: reported
+      source_url: https://arxiv.org/abs/2212.04356
+      metrics:
+      - name: WER
+        value: 94.8
   - model: openai/whisper-large-v3
     model_url: https://huggingface.co/openai/whisper-large-v3
     results:
     - test_set: FLEURS
       source: reported
-      source_url: https://github.com/openai/whisper/blob/main/model-card.md
       metrics:
       - name: WER
-        value: 37.7
+        value: '?'

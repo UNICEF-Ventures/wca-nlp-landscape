@@ -29,7 +29,7 @@ from fetchers.fetch_huggingface import fetch_models_for_language, fetch_datasets
 from fetchers.fetch_wikipedia import fetch_language_info
 from fetchers.fetch_common_voice import get_common_voice_stats
 from fetchers.fetch_evaluations import load_evaluation_sources, get_evaluations_for_language
-from fetchers.fetch_mms import load_mms_data, get_mms_support
+from fetchers.fetch_model_coverage import load_model_coverage
 
 # Paths
 RESEARCH_DIR = PROJECT_DIR / "Research"
@@ -363,7 +363,7 @@ def create_manual_benchmarks_template(path, lang_name, iso_code):
     print(f"  Created: {path}")
 
 
-def process_language(iso_639_3, cv_data, grid_data, all_evaluations, mms_data, force_fetch=False):
+def process_language(iso_639_3, cv_data, grid_data, all_evaluations, model_coverage, force_fetch=False):
     """Process a single language and create output files in Research/Languages/{iso}/.
 
     Args:
@@ -371,7 +371,7 @@ def process_language(iso_639_3, cv_data, grid_data, all_evaluations, mms_data, f
         cv_data: Common Voice data dict
         grid_data: African Language Grid data
         all_evaluations: Evaluation data from Source data/Evaluations/
-        mms_data: MMS language coverage data dict
+        model_coverage: Multilingual model coverage {iso: [label, ...]}
         force_fetch: If True, re-fetch HuggingFace data even if files exist
     """
 
@@ -434,17 +434,11 @@ def process_language(iso_639_3, cv_data, grid_data, all_evaluations, mms_data, f
         'tech_resources': grid_info.get('tech_resources') if grid_info else None,
     }
 
-    # Add MMS coverage to tech_resources
-    mms_support = get_mms_support(iso_639_3, mms_data)
-    if mms_support:
+    # Add multilingual model coverage to tech_resources (MMS, AfriNLLB, etc.)
+    for label in model_coverage.get(iso_639_3, []):
         if language_info.get('tech_resources') is None:
             language_info['tech_resources'] = {}
-        if mms_support['asr']:
-            language_info['tech_resources']['MMS-ASR'] = True
-        if mms_support['tts']:
-            language_info['tech_resources']['MMS-TTS'] = True
-        if mms_support['lid']:
-            language_info['tech_resources']['MMS-LID'] = True
+        language_info['tech_resources'][label] = True
 
     save_yaml(language_info, lang_dir / "info.yaml")
 
@@ -651,11 +645,11 @@ def main():
     focus_languages = load_focused_languages()
     cv_data = load_common_voice_data()
     all_evaluations = load_evaluation_sources()
-    mms_data = load_mms_data()
+    model_coverage = load_model_coverage()
 
     print(f"Loaded {len(cv_data)} Common Voice locales")
     print(f"Loaded evaluations for {len(all_evaluations)} languages from Source data/Evaluations/")
-    print(f"Loaded MMS coverage for {len(mms_data)} languages")
+    print(f"Loaded multilingual model coverage for {len(model_coverage)} languages")
     print(f"Found {len(focus_languages)} focus languages")
 
     # Ensure Languages directory exists
@@ -674,7 +668,7 @@ def main():
     # Process each language
     processed = 0
     for iso_code in languages_to_process:
-        if process_language(iso_code, cv_data, grid_data, all_evaluations, mms_data, force_fetch=args.force):
+        if process_language(iso_code, cv_data, grid_data, all_evaluations, model_coverage, force_fetch=args.force):
             processed += 1
 
     # Also generate/update the WCA languages list

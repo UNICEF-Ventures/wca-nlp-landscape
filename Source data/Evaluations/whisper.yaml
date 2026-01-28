@@ -1,0 +1,187 @@
+# Whisper reported WER on FLEURS test set
+# Source: https://arxiv.org/abs/2212.04356
+# Only 3 WCARO focus languages are supported by Whisper: hau, yor, lin
+# large-v3 results not in the paper — to be filled separately
+
+models:
+  - model: openai/whisper-tiny
+    model_url: https://huggingface.co/openai/whisper-tiny
+    task: asr
+    results:
+      yor:
+        - test_set: FLEURS
+          source: reported
+          source_url: https://arxiv.org/abs/2212.04356
+          metrics:
+            - name: WER
+              value: 106.4
+      hau:
+        - test_set: FLEURS
+          source: reported
+          source_url: https://arxiv.org/abs/2212.04356
+          metrics:
+            - name: WER
+              value: 100.2
+      lin:
+        - test_set: FLEURS
+          source: reported
+          source_url: https://arxiv.org/abs/2212.04356
+          metrics:
+            - name: WER
+              value: 105.4
+
+  - model: openai/whisper-base
+    model_url: https://huggingface.co/openai/whisper-base
+    task: asr
+    results:
+      yor:
+        - test_set: FLEURS
+          source: reported
+          source_url: https://arxiv.org/abs/2212.04356
+          metrics:
+            - name: WER
+              value: 101.8
+      hau:
+        - test_set: FLEURS
+          source: reported
+          source_url: https://arxiv.org/abs/2212.04356
+          metrics:
+            - name: WER
+              value: 98.6
+      lin:
+        - test_set: FLEURS
+          source: reported
+          source_url: https://arxiv.org/abs/2212.04356
+          metrics:
+            - name: WER
+              value: 96.7
+
+  - model: openai/whisper-small
+    model_url: https://huggingface.co/openai/whisper-small
+    task: asr
+    results:
+      yor:
+        - test_set: FLEURS
+          source: reported
+          source_url: https://arxiv.org/abs/2212.04356
+          metrics:
+            - name: WER
+              value: 116.4
+      hau:
+        - test_set: FLEURS
+          source: reported
+          source_url: https://arxiv.org/abs/2212.04356
+          metrics:
+            - name: WER
+              value: 90.1
+      lin:
+        - test_set: FLEURS
+          source: reported
+          source_url: https://arxiv.org/abs/2212.04356
+          metrics:
+            - name: WER
+              value: 91.3
+
+  - model: openai/whisper-medium
+    model_url: https://huggingface.co/openai/whisper-medium
+    task: asr
+    results:
+      yor:
+        - test_set: FLEURS
+          source: reported
+          source_url: https://arxiv.org/abs/2212.04356
+          metrics:
+            - name: WER
+              value: 105.1
+      hau:
+        - test_set: FLEURS
+          source: reported
+          source_url: https://arxiv.org/abs/2212.04356
+          metrics:
+            - name: WER
+              value: 106.6
+      lin:
+        - test_set: FLEURS
+          source: reported
+          source_url: https://arxiv.org/abs/2212.04356
+          metrics:
+            - name: WER
+              value: 83.2
+
+  - model: openai/whisper-large
+    model_url: https://huggingface.co/openai/whisper-large
+    task: asr
+    results:
+      yor:
+        - test_set: FLEURS
+          source: reported
+          source_url: https://arxiv.org/abs/2212.04356
+          metrics:
+            - name: WER
+              value: 111.7
+      hau:
+        - test_set: FLEURS
+          source: reported
+          source_url: https://arxiv.org/abs/2212.04356
+          metrics:
+            - name: WER
+              value: 87.0
+      lin:
+        - test_set: FLEURS
+          source: reported
+          source_url: https://arxiv.org/abs/2212.04356
+          metrics:
+            - name: WER
+              value: 76.8
+
+  - model: openai/whisper-large-v2
+    model_url: https://huggingface.co/openai/whisper-large-v2
+    task: asr
+    results:
+      yor:
+        - test_set: FLEURS
+          source: reported
+          source_url: https://arxiv.org/abs/2212.04356
+          metrics:
+            - name: WER
+              value: 94.8
+      hau:
+        - test_set: FLEURS
+          source: reported
+          source_url: https://arxiv.org/abs/2212.04356
+          metrics:
+            - name: WER
+              value: 88.9
+      lin:
+        - test_set: FLEURS
+          source: reported
+          source_url: https://arxiv.org/abs/2212.04356
+          metrics:
+            - name: WER
+              value: 75.6
+
+  - model: openai/whisper-large-v3
+    model_url: https://huggingface.co/openai/whisper-large-v3
+    task: asr
+    results:
+      yor:
+        - test_set: FLEURS
+          source: reported
+          source_url:
+          metrics:
+            - name: WER
+              value: "?"
+      hau:
+        - test_set: FLEURS
+          source: reported
+          source_url:
+          metrics:
+            - name: WER
+              value: "?"
+      lin:
+        - test_set: FLEURS
+          source: reported
+          source_url:
+          metrics:
+            - name: WER
+              value: "?"

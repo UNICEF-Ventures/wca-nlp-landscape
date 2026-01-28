@@ -1,11 +1,1 @@
-evaluations:
-  asr:
-  - model: openai/whisper-large-v3
-    model_url: https://huggingface.co/openai/whisper-large-v3
-    results:
-    - test_set: FLEURS
-      source: reported
-      source_url: https://github.com/openai/whisper/blob/main/model-card.md
-      metrics:
-      - name: WER
-        value: 28.8
+{}

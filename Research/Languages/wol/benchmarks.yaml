@@ -1,11 +1,28 @@
 evaluations:
-  asr:
-  - model: openai/whisper-large-v3
-    model_url: https://huggingface.co/openai/whisper-large-v3
+  mt:
+  - model: AfriNLLB (pruned)
     results:
-    - test_set: FLEURS
+    - test_set: FLORES-200
       source: reported
-      source_url: https://github.com/openai/whisper/blob/main/model-card.md
       metrics:
-      - name: WER
-        value: 23.5
+      - name: BLEU en-wo
+        value: '?'
+      - name: BLEU wo-en
+        value: '?'
+      - name: BLEU fr-wo
+        value: '?'
+      - name: BLEU wo-fr
+        value: '?'
+  - model: AfriNLLB (quantized)
+    results:
+    - test_set: FLORES-200
+      source: reported
+      metrics:
+      - name: BLEU en-wo
+        value: '?'
+      - name: BLEU wo-en
+        value: '?'
+      - name: BLEU fr-wo
+        value: '?'
+      - name: BLEU wo-fr
+        value: '?'

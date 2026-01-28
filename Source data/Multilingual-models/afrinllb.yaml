@@ -1,0 +1,64 @@
+# AfriNLLB: Efficient Translation Models for African Languages
+# Paper accepted at AfricaNLP 2026
+# Base model: facebook/nllb-200-600M (compressed via iterative layer pruning + quantization)
+# Status: pre-release (models and data not yet published)
+#
+# 15 language pairs (30 translation directions):
+#   - English ↔ 13 languages (bidirectional)
+#   - French ↔ 2 languages (Lingala, Wolof)
+
+description: >
+  AfriNLLB is a series of lightweight models for efficient translation from and
+  into African languages. Based on NLLB-200 600M, compressed via iterative layer
+  pruning and quantization. 20-50% faster than baseline with comparable performance.
+  Two versions planned: Transformers (for fine-tuning) and CTranslate2 (for inference).
+
+base_model: facebook/nllb-200-600M
+base_model_url: https://huggingface.co/facebook/nllb-200-600M
+status: pre-release
+tech_resources_label: AfriNLLB
+
+languages:
+  eng:
+    name: English
+    role: pivot
+  hau:
+    name: Hausa
+    translation_pairs: [eng]
+  yor:
+    name: Yoruba
+    translation_pairs: [eng]
+  swh:
+    name: Swahili
+    translation_pairs: [eng]
+  amh:
+    name: Amharic
+    translation_pairs: [eng]
+  som:
+    name: Somali
+    translation_pairs: [eng]
+  zul:
+    name: Zulu
+    translation_pairs: [eng]
+  lin:
+    name: Lingala
+    translation_pairs: [eng, fra]
+  afr:
+    name: Afrikaans
+    translation_pairs: [eng]
+  wol:
+    name: Wolof
+    translation_pairs: [eng, fra]
+  arz:
+    name: Egyptian Arabic
+    translation_pairs: [eng]
+  arb:
+    name: Arabic (MSA)
+    translation_pairs: [eng]
+  fra:
+    name: French
+    role: pivot
+    translation_pairs: [eng, lin, wol]
+  por:
+    name: Portuguese
+    translation_pairs: [eng]

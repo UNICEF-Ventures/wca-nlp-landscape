@@ -232,8 +232,8 @@ def get_model_count(models_data):
 TASK_LABELS = {
     'asr': 'ASR (Speech-to-Text)',
     'tts': 'TTS (Text-to-Speech)',
-    'translation': 'Machine Translation',
-    'llm': 'Large Language Models',
+    'mt': 'MT (Machine Translation)',
+    'llm': 'LLM (Large Language Models)',
 }
 
 
@@ -304,9 +304,7 @@ def _render_benchmark_table(entries):
     for entry in entries:
         model = entry.get('model', '')
         model_url = entry.get('model_url', '')
-        # Shorten model name for display
-        model_short = model.split('/')[-1] if '/' in model else model
-        model_html = f'<a href="{model_url}" target="_blank" title="{model}">{model_short}</a>' if model_url else model_short
+        model_html = f'<a href="{model_url}" target="_blank">{model}</a>' if model_url else model
 
         results = entry.get('results', [])
         if not results:
@@ -390,8 +388,7 @@ def generate_unbenchmarked_models_section(models):
         task = entry.get('task', '')
         notes = entry.get('notes', '')
 
-        model_short = model.split('/')[-1] if '/' in model else model
-        model_html = f'<a href="{model_url}" target="_blank" title="{model}">{model_short}</a>' if model_url else model_short
+        model_html = f'<a href="{model_url}" target="_blank">{model}</a>' if model_url else model
         task_label = TASK_SHORT_LABELS.get(task, task.upper())
 
         rows.append(

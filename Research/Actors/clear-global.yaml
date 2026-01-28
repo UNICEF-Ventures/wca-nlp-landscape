@@ -2,7 +2,7 @@ id: clear-global
 name: CLEAR Global
 type: ngo
 website: https://clearglobal.org/
-location: New York, USA (global operations)
+location: Registered in USA and Ireland (global operations)
 
 # Organization details
 founded: 2010  # As Translators without Borders; rebranded to CLEAR Global
@@ -52,6 +52,7 @@ languages:  # (in WCA)
   - shu  # Shuwa Arabic (TWB Voice)
   - lin  # Lingala (LT4CR, Gamayun)
   - swc  # Congolese Swahili (LT4CR, Gamayun MT + ASR)
+  - nnd  # Nande
 
 # Links
 github: https://github.com/translatorswb

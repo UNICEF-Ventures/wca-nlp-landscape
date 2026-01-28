@@ -2,7 +2,7 @@ asr:
   items:
   - name: google/fleurs
     url: https://huggingface.co/datasets/google/fleurs
-    downloads: 25000
+    downloads: 23700
     likes: 368
   - name: sarulab-speech/yodas2_sidon
     url: https://huggingface.co/datasets/sarulab-speech/yodas2_sidon
@@ -10,23 +10,23 @@ asr:
     likes: 55
   - name: google/xtreme_s
     url: https://huggingface.co/datasets/google/xtreme_s
-    downloads: 7830
+    downloads: 7730
     likes: 66
   - name: suryatmodulus/yodas2_sidon
     url: https://huggingface.co/datasets/suryatmodulus/yodas2_sidon
-    downloads: 3880
+    downloads: 3850
     likes: 0
   - name: google/WaxalNLP
     url: https://huggingface.co/datasets/google/WaxalNLP
-    downloads: 1370
-    likes: 18
+    downloads: 1450
+    likes: 38
   - name: YuRiVeRTi/V1Q
     url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 269
+    downloads: 270
     likes: 3
   - name: cahya/fleurs
     url: https://huggingface.co/datasets/cahya/fleurs
-    downloads: 199
+    downloads: 200
     likes: 1
   - name: ankur02/bhojpuri
     url: https://huggingface.co/datasets/ankur02/bhojpuri
@@ -34,19 +34,19 @@ asr:
     likes: 0
   - name: WueNLP/belebele-fleurs
     url: https://huggingface.co/datasets/WueNLP/belebele-fleurs
-    downloads: 73
+    downloads: 76
     likes: 9
   - name: ankur02/fleurs
     url: https://huggingface.co/datasets/ankur02/fleurs
-    downloads: 48
+    downloads: 50
     likes: 0
   - name: developeranalyser/new_train_data
     url: https://huggingface.co/datasets/developeranalyser/new_train_data
-    downloads: 39
+    downloads: 38
     likes: 2
   - name: Helloworld668/fleurs_clean
     url: https://huggingface.co/datasets/Helloworld668/fleurs_clean
-    downloads: 25
+    downloads: 26
     likes: 1
   - name: french-datasets/espnet_yodas2
     url: https://huggingface.co/datasets/french-datasets/espnet_yodas2
@@ -66,7 +66,7 @@ asr:
     likes: 0
   - name: guizme/adlam_fulfulde
     url: https://huggingface.co/datasets/guizme/adlam_fulfulde
-    downloads: 14
+    downloads: 13
     likes: 3
   - name: french-datasets/espnet_ml_superb_hf
     url: https://huggingface.co/datasets/french-datasets/espnet_ml_superb_hf
@@ -74,7 +74,7 @@ asr:
     likes: 0
   - name: dijihax/Dataset
     url: https://huggingface.co/datasets/dijihax/Dataset
-    downloads: 11
+    downloads: 8
     likes: 2
   - name: tunngo/test_4
     url: https://huggingface.co/datasets/tunngo/test_4
@@ -84,16 +84,53 @@ asr:
     url: https://huggingface.co/datasets/satwikguptha/xtreme_s
     downloads: 7
     likes: 0
-  - name: lenoxaugo254/LenoxAI
-    url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
-    downloads: 5
-    likes: 1
   - name: guizme/Pulaar
     url: https://huggingface.co/datasets/guizme/Pulaar
     downloads: 5
     likes: 3
+  - name: lenoxaugo254/LenoxAI
+    url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
+    downloads: 4
+    likes: 1
   total_count: 23
-  counts_by_code: {}
+  counts_by_code:
+    ff: 10
+    ful: 13
 tts:
-  total_count: 0
-  counts_by_code: {}
+  items:
+  - name: sarulab-speech/yodas2_sidon
+    url: https://huggingface.co/datasets/sarulab-speech/yodas2_sidon
+    downloads: 22900
+    likes: 55
+  - name: suryatmodulus/yodas2_sidon
+    url: https://huggingface.co/datasets/suryatmodulus/yodas2_sidon
+    downloads: 3850
+    likes: 0
+  - name: google/WaxalNLP
+    url: https://huggingface.co/datasets/google/WaxalNLP
+    downloads: 1450
+    likes: 38
+  - name: YuRiVeRTi/V1Q
+    url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
+    downloads: 270
+    likes: 3
+  - name: WueNLP/belebele-fleurs
+    url: https://huggingface.co/datasets/WueNLP/belebele-fleurs
+    downloads: 76
+    likes: 9
+  - name: Menoviar28/menov31
+    url: https://huggingface.co/datasets/Menoviar28/menov31
+    downloads: 19
+    likes: 0
+  - name: dijihax/Dataset
+    url: https://huggingface.co/datasets/dijihax/Dataset
+    downloads: 8
+    likes: 2
+  - name: lenoxaugo254/LenoxAI
+    url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
+    downloads: 4
+    likes: 1
+  total_count: 8
+  counts_by_code:
+    ff: 7
+    ful: 1

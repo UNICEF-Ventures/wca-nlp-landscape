@@ -92,8 +92,10 @@ asr:
     url: https://huggingface.co/datasets/djelia/bambara-audio
     downloads: 1
     likes: 1
-  total_count: 23
-  counts_by_code: {}
+  total_count: 24
+  counts_by_code:
+    bm: 21
+    bam: 3
 tts:
   items:
   - name: sarulab-speech/yodas2_sidon
@@ -152,5 +154,7 @@ tts:
     url: https://huggingface.co/datasets/djelia/bambara-audio
     downloads: 1
     likes: 1
-  total_count: 14
-  counts_by_code: {}
+  total_count: 15
+  counts_by_code:
+    bm: 14
+    bam: 1

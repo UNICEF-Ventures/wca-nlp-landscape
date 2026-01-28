@@ -2,7 +2,7 @@ asr:
   items:
   - name: MahmoudAshraf/mms-300m-1130-forced-aligner
     url: https://huggingface.co/MahmoudAshraf/mms-300m-1130-forced-aligner
-    downloads: 2910000
+    downloads: 2930000
     likes: 69
   - name: facebook/seamless-m4t-v2-large
     url: https://huggingface.co/facebook/seamless-m4t-v2-large
@@ -10,31 +10,31 @@ asr:
     likes: 946
   - name: facebook/mms-1b-all
     url: https://huggingface.co/facebook/mms-1b-all
-    downloads: 114000
+    downloads: 99200
     likes: 171
   - name: facebook/mms-1b-fl102
     url: https://huggingface.co/facebook/mms-1b-fl102
-    downloads: 84000
+    downloads: 84100
     likes: 28
   - name: facebook/mms-1b-l1107
     url: https://huggingface.co/facebook/mms-1b-l1107
-    downloads: 2730
+    downloads: 2520
     likes: 11
   - name: hypaai/hypaai-whisper-small-v2-04282025
     url: https://huggingface.co/hypaai/hypaai-whisper-small-v2-04282025
-    downloads: 258
+    downloads: 259
     likes: 0
   - name: NCAIR1/Igbo-ASR
     url: https://huggingface.co/NCAIR1/Igbo-ASR
-    downloads: 138
+    downloads: 134
     likes: 5
   - name: espnet/xeus
     url: https://huggingface.co/espnet/xeus
-    downloads: 42
+    downloads: 41
     likes: 143
   - name: benjaminogbonna/whisper-tiny-igbo
     url: https://huggingface.co/benjaminogbonna/whisper-tiny-igbo
-    downloads: 18
+    downloads: 19
     likes: 1
   - name: johntsi/ZeroSwot-Large_asr-cv_en-to-200
     url: https://huggingface.co/johntsi/ZeroSwot-Large_asr-cv_en-to-200
@@ -136,19 +136,19 @@ tts:
   items:
   - name: okezieowen/hypaai_orpheus
     url: https://huggingface.co/okezieowen/hypaai_orpheus
-    downloads: 375
+    downloads: 387
     likes: 1
   - name: WueNLP/seamless-m4t-v2-large-speech-encoder
     url: https://huggingface.co/WueNLP/seamless-m4t-v2-large-speech-encoder
-    downloads: 337
+    downloads: 382
     likes: 8
   - name: saheedniyi/YarnGPT-local
     url: https://huggingface.co/saheedniyi/YarnGPT-local
-    downloads: 62
+    downloads: 61
     likes: 14
   - name: hypaai/Hypa_Orpheus-3b-0.1-ft-unsloth-merged_16bit
     url: https://huggingface.co/hypaai/Hypa_Orpheus-3b-0.1-ft-unsloth-merged_16bit
-    downloads: 27
+    downloads: 29
     likes: 3
   - name: kumrandy123/hypa_ai_orpheus
     url: https://huggingface.co/kumrandy123/hypa_ai_orpheus
@@ -185,55 +185,59 @@ translation:
   items:
   - name: google/madlad400-3b-mt
     url: https://huggingface.co/google/madlad400-3b-mt
-    downloads: 237000
-    likes: 177
+    downloads: 272000
+    likes: 178
   - name: facebook/nllb-200-distilled-600M
     url: https://huggingface.co/facebook/nllb-200-distilled-600M
-    downloads: 221000
+    downloads: 234000
     likes: 839
   - name: facebook/nllb-200-distilled-1.3B
     url: https://huggingface.co/facebook/nllb-200-distilled-1.3B
-    downloads: 95300
-    likes: 140
+    downloads: 94800
+    likes: 162
   - name: facebook/nllb-200-3.3B
     url: https://huggingface.co/facebook/nllb-200-3.3B
-    downloads: 39300
-    likes: 401
+    downloads: 39500
+    likes: 408
   - name: Helsinki-NLP/opus-mt-mul-en
     url: https://huggingface.co/Helsinki-NLP/opus-mt-mul-en
-    downloads: 39000
-    likes: 84
+    downloads: 39100
+    likes: 85
   - name: facebook/nllb-200-1.3B
     url: https://huggingface.co/facebook/nllb-200-1.3B
     downloads: 17400
     likes: 68
   - name: alirezamsh/small100
     url: https://huggingface.co/alirezamsh/small100
-    downloads: 4520
+    downloads: 4510
     likes: 98
+  - name: jbochi/madlad400-3b-mt
+    url: https://huggingface.co/jbochi/madlad400-3b-mt
+    downloads: 2720
+    likes: 153
   - name: Helsinki-NLP/opus-mt-en-mul
     url: https://huggingface.co/Helsinki-NLP/opus-mt-en-mul
     downloads: 2190
-    likes: 25
+    likes: 26
   - name: Helsinki-NLP/opus-mt-ig-en
     url: https://huggingface.co/Helsinki-NLP/opus-mt-ig-en
-    downloads: 164
+    downloads: 170
     likes: 1
   - name: facebook/nllb-moe-54b
     url: https://huggingface.co/facebook/nllb-moe-54b
-    downloads: 102
+    downloads: 110
     likes: 123
   - name: Helsinki-NLP/opus-mt-en-ig
     url: https://huggingface.co/Helsinki-NLP/opus-mt-en-ig
-    downloads: 74
+    downloads: 78
     likes: 1
   - name: Narsil/nllb
     url: https://huggingface.co/Narsil/nllb
-    downloads: 21
+    downloads: 20
     likes: 2
   - name: JustFrederik/nllb-200-distilled-600M-ct2
     url: https://huggingface.co/JustFrederik/nllb-200-distilled-600M-ct2
-    downloads: 17
+    downloads: 18
     likes: 2
   - name: Helsinki-NLP/opus-mt-alv-en
     url: https://huggingface.co/Helsinki-NLP/opus-mt-alv-en
@@ -241,24 +245,24 @@ translation:
     likes: 0
   - name: cstr/madlad400-3b-ct2-int8
     url: https://huggingface.co/cstr/madlad400-3b-ct2-int8
-    downloads: 7
+    downloads: 6
     likes: 1
-  - name: vonjack/opus-mt-mul-en-big
-    url: https://huggingface.co/vonjack/opus-mt-mul-en-big
-    downloads: 7
-    likes: 3
   - name: Helsinki-NLP/opus-mt-ig-fr
     url: https://huggingface.co/Helsinki-NLP/opus-mt-ig-fr
     downloads: 6
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-sv-ig
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-sv-ig
-    downloads: 5
     likes: 0
   - name: Helsinki-NLP/opus-mt-en-nic
     url: https://huggingface.co/Helsinki-NLP/opus-mt-en-nic
     downloads: 4
     likes: 0
+  - name: Helsinki-NLP/opus-mt-sv-ig
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-sv-ig
+    downloads: 4
+    likes: 0
+  - name: vonjack/opus-mt-mul-en-big
+    url: https://huggingface.co/vonjack/opus-mt-mul-en-big
+    downloads: 4
+    likes: 3
   - name: Helsinki-NLP/opus-mt-en-alv
     url: https://huggingface.co/Helsinki-NLP/opus-mt-en-alv
     downloads: 2
@@ -287,10 +291,6 @@ translation:
     url: https://huggingface.co/Helsinki-NLP/opus-mt-fr-ig
     downloads: 1
     likes: 0
-  - name: McGill-NLP/ssa-comet-stl
-    url: https://huggingface.co/McGill-NLP/ssa-comet-stl
-    downloads: 0
-    likes: 1
   - name: Helsinki-NLP/opus-mt-es-ig
     url: https://huggingface.co/Helsinki-NLP/opus-mt-es-ig
     downloads: 0
@@ -315,91 +315,91 @@ llm:
   items:
   - name: bigscience/bloomz-560m
     url: https://huggingface.co/bigscience/bloomz-560m
-    downloads: 386000
+    downloads: 359000
     likes: 137
   - name: bigscience/bloom-560m
     url: https://huggingface.co/bigscience/bloom-560m
-    downloads: 113000
+    downloads: 112000
     likes: 370
   - name: bigscience/bloom-1b7
     url: https://huggingface.co/bigscience/bloom-1b7
-    downloads: 39900
+    downloads: 40000
     likes: 122
   - name: bigscience/bloom-7b1
     url: https://huggingface.co/bigscience/bloom-7b1
-    downloads: 22300
+    downloads: 22400
     likes: 203
   - name: bigscience/bloomz-7b1
     url: https://huggingface.co/bigscience/bloomz-7b1
-    downloads: 10700
+    downloads: 11100
     likes: 146
   - name: bigscience/bloom-3b
     url: https://huggingface.co/bigscience/bloom-3b
-    downloads: 9850
+    downloads: 8800
     likes: 93
   - name: bigscience/bloom-1b1
     url: https://huggingface.co/bigscience/bloom-1b1
-    downloads: 6880
+    downloads: 6650
     likes: 65
   - name: bigscience/bloomz-3b
     url: https://huggingface.co/bigscience/bloomz-3b
-    downloads: 5240
+    downloads: 5120
     likes: 81
   - name: bigscience/bloomz-1b7
     url: https://huggingface.co/bigscience/bloomz-1b7
-    downloads: 4380
+    downloads: 4420
     likes: 23
   - name: bigscience/bloomz-1b1
     url: https://huggingface.co/bigscience/bloomz-1b1
-    downloads: 4230
+    downloads: 4240
     likes: 33
-  - name: bigscience/mt0-base
-    url: https://huggingface.co/bigscience/mt0-base
-    downloads: 3960
-    likes: 32
-  - name: bigscience/mt0-xxl
-    url: https://huggingface.co/bigscience/mt0-xxl
-    downloads: 3850
-    likes: 60
   - name: bigscience/bloom
     url: https://huggingface.co/bigscience/bloom
-    downloads: 3730
+    downloads: 3810
     likes: 4980
+  - name: bigscience/mt0-xxl
+    url: https://huggingface.co/bigscience/mt0-xxl
+    downloads: 3790
+    likes: 60
   - name: bigscience/bloomz
     url: https://huggingface.co/bigscience/bloomz
-    downloads: 1700
+    downloads: 1640
     likes: 514
   - name: bigscience/bloomz-7b1-mt
     url: https://huggingface.co/bigscience/bloomz-7b1-mt
-    downloads: 1410
+    downloads: 1420
     likes: 143
+  - name: LLaMAX/LLaMAX3-8B-Alpaca
+    url: https://huggingface.co/LLaMAX/LLaMAX3-8B-Alpaca
+    downloads: 401
+    likes: 30
   - name: MaziyarPanahi/Mistral-7B-Instruct-Aya-101-GGUF
     url: https://huggingface.co/MaziyarPanahi/Mistral-7B-Instruct-Aya-101-GGUF
-    downloads: 223
+    downloads: 221
     likes: 12
   - name: bigscience/bloom-7b1-intermediate
     url: https://huggingface.co/bigscience/bloom-7b1-intermediate
-    downloads: 95
+    downloads: 94
     likes: 0
   - name: bigscience/bloom-1b1-intermediate
     url: https://huggingface.co/bigscience/bloom-1b1-intermediate
-    downloads: 95
+    downloads: 94
     likes: 0
   - name: bigscience/bloomz-mt
     url: https://huggingface.co/bigscience/bloomz-mt
-    downloads: 70
+    downloads: 68
     likes: 32
   - name: bigscience/bloomz-p3
     url: https://huggingface.co/bigscience/bloomz-p3
-    downloads: 58
+    downloads: 61
     likes: 19
   - name: bigscience/bloomz-7b1-p3
     url: https://huggingface.co/bigscience/bloomz-7b1-p3
-    downloads: 58
+    downloads: 60
     likes: 6
   - name: bigscience/distill-bloom-1b3
     url: https://huggingface.co/bigscience/distill-bloom-1b3
-    downloads: 56
+    downloads: 55
     likes: 9
   - name: bigscience/bloom-3b-intermediate
     url: https://huggingface.co/bigscience/bloom-3b-intermediate
@@ -407,15 +407,15 @@ llm:
     likes: 1
   - name: bigscience/bloom-1b7-intermediate
     url: https://huggingface.co/bigscience/bloom-1b7-intermediate
-    downloads: 54
+    downloads: 55
     likes: 0
   - name: bigscience/bloom-560m-intermediate
     url: https://huggingface.co/bigscience/bloom-560m-intermediate
-    downloads: 54
+    downloads: 52
     likes: 1
   - name: bigscience/distill-bloom-1b3-10x
     url: https://huggingface.co/bigscience/distill-bloom-1b3-10x
-    downloads: 51
+    downloads: 49
     likes: 7
   - name: UBC-NLP/toucan-base
     url: https://huggingface.co/UBC-NLP/toucan-base
@@ -427,20 +427,20 @@ llm:
     likes: 1
   - name: joaoalvarenga/bloom-8bit
     url: https://huggingface.co/joaoalvarenga/bloom-8bit
-    downloads: 9
+    downloads: 10
     likes: 75
-  - name: MaziyarPanahi/Mistral-7B-Instruct-Aya-101
-    url: https://huggingface.co/MaziyarPanahi/Mistral-7B-Instruct-Aya-101
-    downloads: 7
-    likes: 11
-  - name: mrm8488/bloom-6b3-8bit
-    url: https://huggingface.co/mrm8488/bloom-6b3-8bit
-    downloads: 6
-    likes: 4
   - name: model-attribution-challenge/bloom-2b5
     url: https://huggingface.co/model-attribution-challenge/bloom-2b5
     downloads: 6
     likes: 0
+  - name: MaziyarPanahi/Mistral-7B-Instruct-Aya-101
+    url: https://huggingface.co/MaziyarPanahi/Mistral-7B-Instruct-Aya-101
+    downloads: 6
+    likes: 11
+  - name: mrm8488/bloom-6b3-8bit
+    url: https://huggingface.co/mrm8488/bloom-6b3-8bit
+    downloads: 4
+    likes: 4
   - name: goldfish-models/ibo_latn_10mb
     url: https://huggingface.co/goldfish-models/ibo_latn_10mb
     downloads: 4
@@ -473,7 +473,7 @@ llm:
     url: https://huggingface.co/UBC-NLP/cheetah-1.2B
     downloads: 0
     likes: 4
-  total_count: 177
+  total_count: 178
   counts_by_code:
-    ig: 167
+    ig: 168
     ibo: 10

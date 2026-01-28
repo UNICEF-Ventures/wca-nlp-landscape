@@ -2,7 +2,7 @@ asr:
   items:
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 234
+    downloads: 240
     likes: 11
   - name: goaicorp/moore-speech-bible
     url: https://huggingface.co/datasets/goaicorp/moore-speech-bible
@@ -45,12 +45,13 @@ asr:
     downloads: 0
     likes: 1
   total_count: 11
-  counts_by_code: {}
+  counts_by_code:
+    mos: 11
 tts:
   items:
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 234
+    downloads: 240
     likes: 11
   - name: sawadogosalif/MooreFRCollections
     url: https://huggingface.co/datasets/sawadogosalif/MooreFRCollections
@@ -97,4 +98,5 @@ tts:
     downloads: 0
     likes: 1
   total_count: 12
-  counts_by_code: {}
+  counts_by_code:
+    mos: 12

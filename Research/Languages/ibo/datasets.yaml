@@ -2,7 +2,7 @@ asr:
   items:
   - name: google/fleurs
     url: https://huggingface.co/datasets/google/fleurs
-    downloads: 25000
+    downloads: 23700
     likes: 368
   - name: sarulab-speech/yodas2_sidon
     url: https://huggingface.co/datasets/sarulab-speech/yodas2_sidon
@@ -10,59 +10,59 @@ asr:
     likes: 55
   - name: fsicoli/common_voice_15_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_15_0
-    downloads: 22400
+    downloads: 22800
     likes: 5
   - name: fsicoli/common_voice_22_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_22_0
-    downloads: 22100
+    downloads: 22200
     likes: 9
   - name: google/xtreme_s
     url: https://huggingface.co/datasets/google/xtreme_s
-    downloads: 7830
+    downloads: 7730
     likes: 66
   - name: fsicoli/common_voice_17_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_17_0
-    downloads: 5560
+    downloads: 5670
     likes: 10
   - name: suryatmodulus/yodas2_sidon
     url: https://huggingface.co/datasets/suryatmodulus/yodas2_sidon
-    downloads: 3880
+    downloads: 3850
     likes: 0
   - name: fsicoli/common_voice_16_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_16_0
-    downloads: 3770
+    downloads: 3840
     likes: 2
   - name: fsicoli/common_voice_19_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_19_0
-    downloads: 2770
+    downloads: 2760
     likes: 7
   - name: fsicoli/common_voice_21_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_21_0
-    downloads: 2270
+    downloads: 2330
     likes: 2
   - name: google/WaxalNLP
     url: https://huggingface.co/datasets/google/WaxalNLP
-    downloads: 1370
-    likes: 18
+    downloads: 1450
+    likes: 38
   - name: facebook/2M-Belebele
     url: https://huggingface.co/datasets/facebook/2M-Belebele
-    downloads: 319
+    downloads: 328
     likes: 12
   - name: YuRiVeRTi/V1Q
     url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 269
+    downloads: 270
     likes: 3
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 234
+    downloads: 240
     likes: 11
   - name: cahya/fleurs
     url: https://huggingface.co/datasets/cahya/fleurs
-    downloads: 199
+    downloads: 200
     likes: 1
   - name: hypaai/Hypa_Fleurs
     url: https://huggingface.co/datasets/hypaai/Hypa_Fleurs
-    downloads: 123
+    downloads: 125
     likes: 3
   - name: ankur02/bhojpuri
     url: https://huggingface.co/datasets/ankur02/bhojpuri
@@ -70,27 +70,27 @@ asr:
     likes: 0
   - name: WueNLP/belebele-fleurs
     url: https://huggingface.co/datasets/WueNLP/belebele-fleurs
-    downloads: 73
+    downloads: 76
     likes: 9
   - name: benjaminogbonna/nigerian_common_voice_dataset
     url: https://huggingface.co/datasets/benjaminogbonna/nigerian_common_voice_dataset
-    downloads: 54
+    downloads: 56
     likes: 16
   - name: fsicoli/common_voice_18_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_18_0
-    downloads: 51
+    downloads: 52
     likes: 6
   - name: ankur02/fleurs
     url: https://huggingface.co/datasets/ankur02/fleurs
-    downloads: 48
+    downloads: 50
     likes: 0
   - name: developeranalyser/new_train_data
     url: https://huggingface.co/datasets/developeranalyser/new_train_data
-    downloads: 39
+    downloads: 38
     likes: 2
   - name: PeepDaSlan9/DIDI
     url: https://huggingface.co/datasets/PeepDaSlan9/DIDI
-    downloads: 34
+    downloads: 33
     likes: 2
   - name: VINAYU7/Coalescence
     url: https://huggingface.co/datasets/VINAYU7/Coalescence
@@ -98,7 +98,7 @@ asr:
     likes: 2
   - name: Helloworld668/fleurs_clean
     url: https://huggingface.co/datasets/Helloworld668/fleurs_clean
-    downloads: 25
+    downloads: 26
     likes: 1
   - name: french-datasets/espnet_yodas2
     url: https://huggingface.co/datasets/french-datasets/espnet_yodas2
@@ -116,13 +116,9 @@ asr:
     url: https://huggingface.co/datasets/french-datasets/espnet_ml_superb_hf
     downloads: 13
     likes: 0
-  - name: dijihax/Dataset
-    url: https://huggingface.co/datasets/dijihax/Dataset
-    downloads: 11
-    likes: 2
   - name: deepdml/common_voice_22_0
     url: https://huggingface.co/datasets/deepdml/common_voice_22_0
-    downloads: 11
+    downloads: 12
     likes: 0
   - name: deepdml/igbo-dict-16khz
     url: https://huggingface.co/datasets/deepdml/igbo-dict-16khz
@@ -132,6 +128,10 @@ asr:
     url: https://huggingface.co/datasets/deepdml/igbo-dict
     downloads: 9
     likes: 1
+  - name: dijihax/Dataset
+    url: https://huggingface.co/datasets/dijihax/Dataset
+    downloads: 8
+    likes: 2
   - name: tunngo/test_4
     url: https://huggingface.co/datasets/tunngo/test_4
     downloads: 7
@@ -142,7 +142,7 @@ asr:
     likes: 0
   - name: lenoxaugo254/LenoxAI
     url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
-    downloads: 5
+    downloads: 4
     likes: 1
   - name: deepdml/igbo-dict-expansion
     url: https://huggingface.co/datasets/deepdml/igbo-dict-expansion
@@ -157,7 +157,9 @@ asr:
     downloads: 2
     likes: 0
   total_count: 39
-  counts_by_code: {}
+  counts_by_code:
+    ig: 25
+    ibo: 14
 tts:
   items:
   - name: sarulab-speech/yodas2_sidon
@@ -166,39 +168,39 @@ tts:
     likes: 55
   - name: suryatmodulus/yodas2_sidon
     url: https://huggingface.co/datasets/suryatmodulus/yodas2_sidon
-    downloads: 3880
+    downloads: 3850
     likes: 0
   - name: google/WaxalNLP
     url: https://huggingface.co/datasets/google/WaxalNLP
-    downloads: 1370
-    likes: 18
+    downloads: 1450
+    likes: 38
   - name: sarulab-speech/commonvoice22_sidon
     url: https://huggingface.co/datasets/sarulab-speech/commonvoice22_sidon
-    downloads: 765
+    downloads: 786
     likes: 15
   - name: YuRiVeRTi/V1Q
     url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 269
+    downloads: 270
     likes: 3
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 234
+    downloads: 240
     likes: 11
   - name: hypaai/Hypa_Fleurs
     url: https://huggingface.co/datasets/hypaai/Hypa_Fleurs
-    downloads: 123
+    downloads: 125
     likes: 3
   - name: WueNLP/belebele-fleurs
     url: https://huggingface.co/datasets/WueNLP/belebele-fleurs
-    downloads: 73
+    downloads: 76
     likes: 9
   - name: benjaminogbonna/nigerian_common_voice_dataset
     url: https://huggingface.co/datasets/benjaminogbonna/nigerian_common_voice_dataset
-    downloads: 54
+    downloads: 56
     likes: 16
   - name: PeepDaSlan9/DIDI
     url: https://huggingface.co/datasets/PeepDaSlan9/DIDI
-    downloads: 34
+    downloads: 33
     likes: 2
   - name: OlameMend/soreva
     url: https://huggingface.co/datasets/OlameMend/soreva
@@ -206,11 +208,13 @@ tts:
     likes: 6
   - name: dijihax/Dataset
     url: https://huggingface.co/datasets/dijihax/Dataset
-    downloads: 11
+    downloads: 8
     likes: 2
   - name: lenoxaugo254/LenoxAI
     url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
-    downloads: 5
+    downloads: 4
     likes: 1
   total_count: 13
-  counts_by_code: {}
+  counts_by_code:
+    ig: 11
+    ibo: 2

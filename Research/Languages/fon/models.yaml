@@ -1,56 +1,6 @@
 asr:
-  items:
-  - name: espnet/xeus
-    url: https://huggingface.co/espnet/xeus
-    downloads: 42
-    likes: 143
-  - name: Fonika/whisper-fon-v4
-    url: https://huggingface.co/Fonika/whisper-fon-v4
-    downloads: 15
-    likes: 0
-  - name: johntsi/ZeroSwot-Large_asr-cv_en-to-200
-    url: https://huggingface.co/johntsi/ZeroSwot-Large_asr-cv_en-to-200
-    downloads: 9
-    likes: 1
-  - name: chrisjay/fonxlsr
-    url: https://huggingface.co/chrisjay/fonxlsr
-    downloads: 5
-    likes: 7
-  - name: aioxlabs/dvoice-fongbe
-    url: https://huggingface.co/aioxlabs/dvoice-fongbe
-    downloads: 5
-    likes: 1
-  - name: johntsi/ZeroSwot-Medium_asr-cv_en-to-200
-    url: https://huggingface.co/johntsi/ZeroSwot-Medium_asr-cv_en-to-200
-    downloads: 5
-    likes: 0
-  - name: johntsi/ZeroSwot-Medium_asr-mustc_en-to-200
-    url: https://huggingface.co/johntsi/ZeroSwot-Medium_asr-mustc_en-to-200
-    downloads: 4
-    likes: 0
-  - name: whettenr/asr-fon-with-diacritics
-    url: https://huggingface.co/whettenr/asr-fon-with-diacritics
-    downloads: 3
-    likes: 1
-  - name: speechbrain/asr-wav2vec2-dvoice-fongbe
-    url: https://huggingface.co/speechbrain/asr-wav2vec2-dvoice-fongbe
-    downloads: 1
-    likes: 3
-  - name: johntsi/ZeroSwot-Large_asr-mustc_en-to-200
-    url: https://huggingface.co/johntsi/ZeroSwot-Large_asr-mustc_en-to-200
-    downloads: 1
-    likes: 0
-  - name: Paulalex/WhisperSmallFontranscript
-    url: https://huggingface.co/Paulalex/WhisperSmallFontranscript
-    downloads: 0
-    likes: 0
-  - name: whettenr/asr-fon-without-diacritics
-    url: https://huggingface.co/whettenr/asr-fon-without-diacritics
-    downloads: 0
-    likes: 0
-  total_count: 12
-  counts_by_code:
-    fon: 12
+  total_count: 0
+  counts_by_code: {}
 tts:
   total_count: 0
   counts_by_code: {}

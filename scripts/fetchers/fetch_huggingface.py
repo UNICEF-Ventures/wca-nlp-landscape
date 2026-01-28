@@ -33,10 +33,23 @@ def extract_total_count(html_content):
     """Extract the total count from HuggingFace page.
 
     Looks for: window.__hf_deferred = {"numTotalItems":303}
+    Also tries alternative patterns for datasets pages.
     """
+    # Primary pattern (works for both models and datasets)
     match = re.search(r'"numTotalItems"\s*:\s*(\d+)', html_content)
     if match:
         return int(match.group(1))
+
+    # Alternative pattern that may appear on datasets pages
+    match = re.search(r'"numItemsFound"\s*:\s*(\d+)', html_content)
+    if match:
+        return int(match.group(1))
+
+    # Another alternative pattern
+    match = re.search(r'"totalNumItems"\s*:\s*(\d+)', html_content)
+    if match:
+        return int(match.group(1))
+
     return None
 
 
@@ -72,6 +85,7 @@ def search_huggingface(iso_639_1, iso_639_3, search_type, pipeline_tag):
     items = []
     seen = set()
     counts_by_code = {}  # Track count for each language code
+    items_by_code = {}  # Track actual items found for each code (fallback for datasets)
 
     for code in codes_to_try:
         try:
@@ -100,6 +114,9 @@ def search_huggingface(iso_639_1, iso_639_3, search_type, pipeline_tag):
             if not cards:
                 continue
 
+            # Track items found for this specific code (before deduplication)
+            items_for_code = []
+
             for card in cards:
                 try:
                     link = card.find('a', href=True)
@@ -112,10 +129,14 @@ def search_huggingface(iso_639_1, iso_639_3, search_type, pipeline_tag):
                     if search_type == 'datasets' and href.startswith('datasets/'):
                         href = href[9:]
 
-                    if not href or href == '#' or href in seen:
+                    if not href or href == '#':
                         continue
 
-                    seen.add(href)
+                    # Track if this item is new (not seen before)
+                    is_new = href not in seen
+
+                    if is_new:
+                        seen.add(href)
 
                     # Parse stats from SVG icons
                     downloads = 0
@@ -149,15 +170,25 @@ def search_huggingface(iso_639_1, iso_639_3, search_type, pipeline_tag):
                     if search_type == 'datasets':
                         base_url += "/datasets"
 
-                    items.append({
+                    item = {
                         'name': href,
                         'url': f"{base_url}/{href}",
                         'downloads': downloads,
                         'likes': likes,
-                    })
+                    }
+
+                    # Add to global items list if new
+                    if is_new:
+                        items.append(item)
+
+                    # Also track for this specific code
+                    items_for_code.append(item)
 
                 except Exception:
                     continue
+
+            # Store count of items found for this code
+            items_by_code[code] = len(items_for_code)
 
         except Exception as e:
             print(f"      Warning: Error fetching {search_type} for {code}: {e}")
@@ -165,6 +196,11 @@ def search_huggingface(iso_639_1, iso_639_3, search_type, pipeline_tag):
 
     # Sort by downloads
     items.sort(key=lambda x: x['downloads'], reverse=True)
+
+    # If we couldn't extract total counts from HTML (common for datasets pages),
+    # use the actual item counts we found as a fallback
+    if not counts_by_code and items_by_code:
+        counts_by_code = items_by_code
 
     # Sum all counts (since ha and hau are different searches on HuggingFace)
     total_count = sum(counts_by_code.values()) if counts_by_code else len(items)

@@ -482,31 +482,75 @@ def generate_languages_doc(languages, actors):
 
         for task_key, pipeline_tag in pipeline_tags.items():
             task_label = TASK_LABELS.get(task_key, task_key.upper())
-            count = get_model_count(models.get(task_key, {}))
-            url = get_hf_search_url(iso1, iso3, pipeline_tag)
+            task_data = models.get(task_key, {})
+            total_count = get_model_count(task_data)
+
             p = doc.add_paragraph()
             run = p.add_run(f"{task_label}: ")
             run.bold = True
             run.font.size = Pt(8)
-            if url and count > 0:
-                add_hyperlink(p, f"{count} models", url)
+
+            # Check if we have counts_by_code data (new format)
+            if isinstance(task_data, dict) and 'counts_by_code' in task_data:
+                counts_by_code = task_data['counts_by_code']
+                if counts_by_code:
+                    # Generate links for each code (ISO-2 and ISO-3)
+                    first = True
+                    for code, count in sorted(counts_by_code.items(), key=lambda x: -x[1]):
+                        if count > 0:
+                            if not first:
+                                run = p.add_run(" | ")
+                                run.font.size = Pt(8)
+                            url = f"https://huggingface.co/models?pipeline_tag={pipeline_tag}&language={code}&sort=trending"
+                            add_hyperlink(p, f"{code}: {count}", url)
+                            first = False
+                else:
+                    run = p.add_run(f"{total_count} models")
+                    run.font.size = Pt(8)
             else:
-                run = p.add_run(f"{count} models")
-                run.font.size = Pt(8)
+                # Fallback to single link
+                url = get_hf_search_url(iso1, iso3, pipeline_tag)
+                if url and total_count > 0:
+                    add_hyperlink(p, f"{total_count} models", url)
+                else:
+                    run = p.add_run(f"{total_count} models")
+                    run.font.size = Pt(8)
 
         for task_key, task_cat in dataset_categories.items():
             task_label = TASK_LABELS.get(task_key, task_key.upper())
-            count = get_model_count(datasets.get(task_key, {}))
-            url = get_hf_datasets_url(iso1, iso3, task_cat)
+            task_data = datasets.get(task_key, {})
+            total_count = get_model_count(task_data)
+
             p = doc.add_paragraph()
             run = p.add_run(f"{task_label} Datasets: ")
             run.bold = True
             run.font.size = Pt(8)
-            if url and count > 0:
-                add_hyperlink(p, f"{count} datasets", url)
+
+            # Check if we have counts_by_code data (new format)
+            if isinstance(task_data, dict) and 'counts_by_code' in task_data:
+                counts_by_code = task_data['counts_by_code']
+                if counts_by_code:
+                    # Generate links for each code (ISO-2 and ISO-3)
+                    first = True
+                    for code, count in sorted(counts_by_code.items(), key=lambda x: -x[1]):
+                        if count > 0:
+                            if not first:
+                                run = p.add_run(" | ")
+                                run.font.size = Pt(8)
+                            url = f"https://huggingface.co/datasets?task_categories=task_categories:{task_cat}&language=language:{code}&sort=trending"
+                            add_hyperlink(p, f"{code}: {count}", url)
+                            first = False
+                else:
+                    run = p.add_run(f"{total_count} datasets")
+                    run.font.size = Pt(8)
             else:
-                run = p.add_run(f"{count} datasets")
-                run.font.size = Pt(8)
+                # Fallback to single link
+                url = get_hf_datasets_url(iso1, iso3, task_cat)
+                if url and total_count > 0:
+                    add_hyperlink(p, f"{total_count} datasets", url)
+                else:
+                    run = p.add_run(f"{total_count} datasets")
+                    run.font.size = Pt(8)
 
         # Page break between languages (except last)
         if lang_idx < len(sorted_langs) - 1:

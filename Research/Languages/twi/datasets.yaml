@@ -2,51 +2,51 @@ asr:
   items:
   - name: fsicoli/common_voice_15_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_15_0
-    downloads: 22400
+    downloads: 22800
     likes: 5
   - name: fsicoli/common_voice_22_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_22_0
-    downloads: 22100
+    downloads: 22200
     likes: 9
   - name: fsicoli/common_voice_17_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_17_0
-    downloads: 5560
+    downloads: 5670
     likes: 10
   - name: fsicoli/common_voice_16_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_16_0
-    downloads: 3770
+    downloads: 3840
     likes: 2
   - name: fsicoli/common_voice_19_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_19_0
-    downloads: 2770
+    downloads: 2760
     likes: 7
   - name: fsicoli/common_voice_21_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_21_0
-    downloads: 2270
+    downloads: 2330
     likes: 2
   - name: google/WaxalNLP
     url: https://huggingface.co/datasets/google/WaxalNLP
-    downloads: 1370
-    likes: 18
+    downloads: 1450
+    likes: 38
   - name: YuRiVeRTi/V1Q
     url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 269
+    downloads: 270
     likes: 3
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 234
+    downloads: 240
     likes: 11
   - name: jdapaah/asante-twi-bible
     url: https://huggingface.co/datasets/jdapaah/asante-twi-bible
-    downloads: 74
+    downloads: 73
     likes: 1
   - name: michsethowusu/twi-trigrams-speech-text-parallel
     url: https://huggingface.co/datasets/michsethowusu/twi-trigrams-speech-text-parallel
-    downloads: 69
+    downloads: 68
     likes: 0
   - name: fsicoli/common_voice_18_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_18_0
-    downloads: 51
+    downloads: 52
     likes: 6
   - name: Lagyamfi/akan_audio_processed
     url: https://huggingface.co/datasets/Lagyamfi/akan_audio_processed
@@ -85,32 +85,34 @@ asr:
     downloads: 2
     likes: 0
   total_count: 21
-  counts_by_code: {}
+  counts_by_code:
+    tw: 16
+    twi: 5
 tts:
   items:
   - name: google/WaxalNLP
     url: https://huggingface.co/datasets/google/WaxalNLP
-    downloads: 1370
-    likes: 18
+    downloads: 1450
+    likes: 38
   - name: sarulab-speech/commonvoice22_sidon
     url: https://huggingface.co/datasets/sarulab-speech/commonvoice22_sidon
-    downloads: 765
+    downloads: 786
     likes: 15
   - name: YuRiVeRTi/V1Q
     url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 269
+    downloads: 270
     likes: 3
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 234
+    downloads: 240
     likes: 11
   - name: jdapaah/asante-twi-bible
     url: https://huggingface.co/datasets/jdapaah/asante-twi-bible
-    downloads: 74
+    downloads: 73
     likes: 1
   - name: michsethowusu/twi-trigrams-speech-text-parallel
     url: https://huggingface.co/datasets/michsethowusu/twi-trigrams-speech-text-parallel
-    downloads: 69
+    downloads: 68
     likes: 0
   - name: hci-lab-dcug/bibletts-asante-twi-max29secs-total9hrs-sr22050
     url: https://huggingface.co/datasets/hci-lab-dcug/bibletts-asante-twi-max29secs-total9hrs-sr22050
@@ -141,4 +143,6 @@ tts:
     downloads: 5
     likes: 3
   total_count: 13
-  counts_by_code: {}
+  counts_by_code:
+    tw: 10
+    twi: 3

@@ -1,12 +1,154 @@
 asr:
-  total_count: 0
-  counts_by_code: {}
+  items:
+  - name: espnet/xeus
+    url: https://huggingface.co/espnet/xeus
+    downloads: 41
+    likes: 143
+  total_count: 1
+  counts_by_code:
+    kri: 1
 tts:
   total_count: 0
   counts_by_code: {}
 translation:
-  total_count: 0
-  counts_by_code: {}
+  items:
+  - name: google/madlad400-3b-mt
+    url: https://huggingface.co/google/madlad400-3b-mt
+    downloads: 272000
+    likes: 178
+  - name: jbochi/madlad400-3b-mt
+    url: https://huggingface.co/jbochi/madlad400-3b-mt
+    downloads: 2720
+    likes: 153
+  - name: google/madlad400-10b-mt
+    url: https://huggingface.co/google/madlad400-10b-mt
+    downloads: 2330
+    likes: 128
+  - name: google/madlad400-7b-mt
+    url: https://huggingface.co/google/madlad400-7b-mt
+    downloads: 461
+    likes: 20
+  - name: Nextcloud-AI/madlad400-3b-mt-ct2-int8
+    url: https://huggingface.co/Nextcloud-AI/madlad400-3b-mt-ct2-int8
+    downloads: 261
+    likes: 2
+  - name: google/madlad400-7b-mt-bt
+    url: https://huggingface.co/google/madlad400-7b-mt-bt
+    downloads: 230
+    likes: 7
+  - name: santhosh/madlad400-3b-ct2
+    url: https://huggingface.co/santhosh/madlad400-3b-ct2
+    downloads: 153
+    likes: 13
+  - name: NikolayKozloff/madlad400-3b-mt-Q8_0-GGUF
+    url: https://huggingface.co/NikolayKozloff/madlad400-3b-mt-Q8_0-GGUF
+    downloads: 132
+    likes: 1
+  - name: jbochi/madlad400-10b-mt
+    url: https://huggingface.co/jbochi/madlad400-10b-mt
+    downloads: 97
+    likes: 18
+  - name: jbochi/madlad400-7b-mt-bt
+    url: https://huggingface.co/jbochi/madlad400-7b-mt-bt
+    downloads: 89
+    likes: 8
+  - name: notjjustnumbers/madlad400-3b-mt-Q4_K_M-GGUF
+    url: https://huggingface.co/notjjustnumbers/madlad400-3b-mt-Q4_K_M-GGUF
+    downloads: 88
+    likes: 4
+  - name: mtsdurica/madlad400-7b-mt-Q4_K_M-GGUF
+    url: https://huggingface.co/mtsdurica/madlad400-7b-mt-Q4_K_M-GGUF
+    downloads: 88
+    likes: 0
+  - name: mtsdurica/madlad400-3b-mt-Q8_0-GGUF
+    url: https://huggingface.co/mtsdurica/madlad400-3b-mt-Q8_0-GGUF
+    downloads: 86
+    likes: 1
+  - name: mtsdurica/madlad400-3b-mt-Q4_K_M-GGUF
+    url: https://huggingface.co/mtsdurica/madlad400-3b-mt-Q4_K_M-GGUF
+    downloads: 59
+    likes: 3
+  - name: jbochi/madlad400-7b-mt
+    url: https://huggingface.co/jbochi/madlad400-7b-mt
+    downloads: 56
+    likes: 7
+  - name: NikolayKozloff/madlad400-10b-mt-Q8_0-GGUF
+    url: https://huggingface.co/NikolayKozloff/madlad400-10b-mt-Q8_0-GGUF
+    downloads: 21
+    likes: 3
+  - name: Heng666/madlad400-3b-mt-ct2-int8
+    url: https://huggingface.co/Heng666/madlad400-3b-mt-ct2-int8
+    downloads: 19
+    likes: 1
+  - name: mtsdurica/madlad400-3b-mt-Q4_0-GGUF
+    url: https://huggingface.co/mtsdurica/madlad400-3b-mt-Q4_0-GGUF
+    downloads: 11
+    likes: 0
+  - name: tritiumoxide/madlad400-7b-mt-bt-Q4_K_M-GGUF
+    url: https://huggingface.co/tritiumoxide/madlad400-7b-mt-bt-Q4_K_M-GGUF
+    downloads: 10
+    likes: 0
+  - name: cstr/madlad400-3b-ct2-int8
+    url: https://huggingface.co/cstr/madlad400-3b-ct2-int8
+    downloads: 6
+    likes: 1
+  - name: Heng666/madlad400-7b-mt-ct2-int8
+    url: https://huggingface.co/Heng666/madlad400-7b-mt-ct2-int8
+    downloads: 6
+    likes: 3
+  - name: mtsdurica/madlad400-3b-mt-Q2_K-GGUF
+    url: https://huggingface.co/mtsdurica/madlad400-3b-mt-Q2_K-GGUF
+    downloads: 6
+    likes: 1
+  - name: ikeno-ada/madlad400-3b-mt-bitsandbytes-4bit
+    url: https://huggingface.co/ikeno-ada/madlad400-3b-mt-bitsandbytes-4bit
+    downloads: 3
+    likes: 1
+  - name: Heng666/madlad400-3b-mt-ct2
+    url: https://huggingface.co/Heng666/madlad400-3b-mt-ct2
+    downloads: 3
+    likes: 0
+  - name: NikolayKozloff/madlad400-10b-mt-Q6_K-GGUF
+    url: https://huggingface.co/NikolayKozloff/madlad400-10b-mt-Q6_K-GGUF
+    downloads: 3
+    likes: 1
+  - name: tritiumoxide/madlad400-7b-mt-bt-Q2_K-GGUF
+    url: https://huggingface.co/tritiumoxide/madlad400-7b-mt-bt-Q2_K-GGUF
+    downloads: 2
+    likes: 0
+  - name: CXDuncan/madlad400-3b-mt-optimized-quantized-onnx
+    url: https://huggingface.co/CXDuncan/madlad400-3b-mt-optimized-quantized-onnx
+    downloads: 1
+    likes: 4
+  - name: mtsdurica/madlad400-3b-mt-Q6_K-GGUF
+    url: https://huggingface.co/mtsdurica/madlad400-3b-mt-Q6_K-GGUF
+    downloads: 1
+    likes: 0
+  - name: fernandoruiz/madlad400-3b-mt-Q4_K_S-GGUF
+    url: https://huggingface.co/fernandoruiz/madlad400-3b-mt-Q4_K_S-GGUF
+    downloads: 1
+    likes: 0
+  - name: CXDuncan/madlad400-3b-mt-optimized-onnx
+    url: https://huggingface.co/CXDuncan/madlad400-3b-mt-optimized-onnx
+    downloads: 0
+    likes: 0
+  total_count: 78
+  counts_by_code:
+    kri: 78
 llm:
-  total_count: 0
-  counts_by_code: {}
+  items:
+  - name: google/madlad400-8b-lm
+    url: https://huggingface.co/google/madlad400-8b-lm
+    downloads: 167
+    likes: 10
+  - name: jbochi/madlad400-8b-lm
+    url: https://huggingface.co/jbochi/madlad400-8b-lm
+    downloads: 5
+    likes: 8
+  - name: AAU-NLP/CreoleVal-CreoleM2M
+    url: https://huggingface.co/AAU-NLP/CreoleVal-CreoleM2M
+    downloads: 5
+    likes: 0
+  total_count: 3
+  counts_by_code:
+    kri: 3

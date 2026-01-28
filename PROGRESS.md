@@ -166,6 +166,19 @@ Advisory support for actor selection, agenda input, and presentation of findings
 
 ## Recent Updates (January 2026)
 
+### 2026-01-28
+- Fixed HuggingFace dataset links in both HTML and DOCX outputs to show both ISO-2 and ISO-3 language codes
+  - Dataset pages don't include `numTotalItems` in HTML like model pages do
+  - Implemented fallback counting mechanism: tracks items found per language code during scraping
+  - Now displays multiple clickable links (e.g., "bm: 21 | bam: 3") matching the model listing behavior
+  - Both HTML and DOCX generation updated to support `counts_by_code` for datasets
+- Added multilingual model support auto-detection for three large models
+  - Omnilingual: Speech-to-text model supporting 120+ languages
+  - AfriNLLB: Machine translation model (African languages extension of NLLB)
+  - Displays as flat entries in tech_resources section alongside MMS
+- Verified and corrected Whisper FLEURS evaluation scores in benchmark data
+- Fixed Lingala coding (Lingala-Bangala) when calling language LUDP
+
 ### 2026-01-27
 - Added DOCX document generation (`scripts/generate_docs.py`)
   - Two documents: `WCA_NLP_Languages.docx` and `WCA_NLP_Actors.docx`

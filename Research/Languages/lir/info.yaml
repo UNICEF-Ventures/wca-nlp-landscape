@@ -1,0 +1,27 @@
+name: Liberian Kreyol
+iso_639_3: lir
+name_french: liberian english
+altnames:
+- Kolokwa
+- Liberian Kolokwa English
+- Liberian Kreyol
+- Liberian Pidgin English
+countries:
+- Liberia
+population: '1500000'
+population_order: 10⁶+
+endangerment: safe
+glottocode: libe1240
+glottocode_url: https://glottolog.org/resource/languoid/id/libe1240
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Liberian_Kreyol
+  family: English Creole
+  speakers_l1: 5 million
+  speakers_l2: 5 million
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=lir
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=lir
+  OLAC: http://www.language-archives.org/language/lir
+tech_resources:
+  MMS-LID: true
+  Omnilingual ASR: true

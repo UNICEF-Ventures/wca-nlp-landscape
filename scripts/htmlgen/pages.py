@@ -1,8 +1,10 @@
 """Full detail page generators (language and actor)."""
 
 from datetime import datetime
+from pathlib import Path
 
 from urllib.parse import quote_plus
+import yaml
 
 from .constants import WCA_COUNTRIES
 from .styles import get_css
@@ -13,6 +15,16 @@ from .utils import (
     generate_benchmarks_section,
     generate_unbenchmarked_models_section,
 )
+
+
+# Load LUDP configuration
+def _load_ludp_config():
+    """Load LUDP configuration from YAML file."""
+    config_path = Path(__file__).parent.parent.parent / 'Source data' / 'ludp_config.yaml'
+    with open(config_path, 'r', encoding='utf-8') as f:
+        return yaml.safe_load(f)
+
+LUDP_CONFIG = _load_ludp_config()
 
 
 def generate_language_detail_page(iso_code, lang_data, actors):
@@ -141,17 +153,13 @@ def generate_language_detail_page(iso_code, lang_data, actors):
         """
 
     # LUDP Language Use embed (Tableau)
-    # Languages not available in LUDP
-    ludp_skip = {'fan', 'men', 'tem', 'twi', 'gaa'}
-    # Languages with different names in LUDP
-    ludp_name_map = {
-        'mos': 'Mossi',
-        'lin': 'Lingala-Bangala'
-    }
+    ludp_skip = set(LUDP_CONFIG.get('languages_skip', []))
+    ludp_name_map = LUDP_CONFIG.get('language_name_map', {})
+    ludp_share_code = LUDP_CONFIG.get('language_share_code', '83X9CW8X6')
+
     if iso_code not in ludp_skip:
         ludp_name = ludp_name_map.get(iso_code, name)
         lang_name_encoded = ludp_name.replace(' ', '+')
-        ludp_share_code = '83X9CW8X6'
         ludp_share_prefix = ludp_share_code[:2]
         ludp_viz_id = f'viz_lang_{iso_code}'
         ludp_section = f"""

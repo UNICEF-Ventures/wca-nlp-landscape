@@ -6,27 +6,33 @@
 #   python scripts/populate_research.py --lang hau   # Process single language
 
 # Current focus languages
+
+# Focus list 1
 - hau  # Hausa (Nigeria, Ghana, Niger, Cameroon...)
+- men  # Mende (Sierra Leone)
+- bam  # Bambara (Mali)
+- ewe  # Ewe (Ghana, Togo)
+- fan  # Fang (Gabon, Equatorial Guinea, Cameroon)
+- lir  # Liberian Kreyol/Koloqua (Liberia)
+- shu  # Shuwa Arabic (Chad, Nigeria)
+- mos  # Mooré (Burkina Faso)
+- fon  # Fon (Benin)
+- pov  # Guinea-Bissau Creole
+
+
 - yor  # Yoruba (Nigeria, Benin)
 - ibo  # Igbo (Nigeria, Equatorial guinea ...)
-- bam  # Bambara (Mali)
-- mos  # Mooré (Burkina Faso)
 - twi  # Twi (Ghana)
-- ewe  # Ewe (Ghana, Togo)
 - wol  # Wolof (Senegal, Gambia)
 - ful  # Fulfulde (widespread)
 - kri  # Krio (Sierra Leone)
 - tem  # Temne (Sierra Leone)
-- men  # Mende (Sierra Leone)
 - dag  # Dagbani (Ghana)
 - gaa  # Ga (Ghana)
 - kau  # Kanuri (Nigeria, Niger, Chad)
 - swc  # Congo Swahili (DRC)
 - lin  # Lingala (DRC, Republic of Congo)
-- fon  # Fon (Benin)
 - sag  # Sango (Central African Republic)
-- shu  # Shuwa Arabic (Chad, Nigeria)
-- fan  # Fang (Gabon, Equatorial Guinea, Cameroon)
 - mnk  # Mandinka (Gambia, Senegal, Guinea-Bissau)
 - aka  # Akan (Ghana)
 - fuf  # Pular (Guinea)

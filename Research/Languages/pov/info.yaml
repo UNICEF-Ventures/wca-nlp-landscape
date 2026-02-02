@@ -1,0 +1,43 @@
+name: Guinea-Bissau Creole
+iso_639_3: pov
+name_french: upper guinea crioulo
+altnames:
+- Casamance Creole
+- Casamancese Creole
+- Casamançais
+- Crioulo
+- Crioulo de Guinea-Bissau
+- Créole
+- Créole afro-portugais de Casamance
+- Créole casamançais
+- Créole de Casamance
+- Guinea-Bissau Kriyol
+- Guineense
+- Kiriol
+- Kriulo
+- Kriyol
+- Portuguese Creole
+countries:
+- Gambia
+- Guinea-Bissau
+- Senegal
+population: '350000'
+population_order: 10⁵
+endangerment: safe
+glottocode: uppe1455
+glottocode_url: https://glottolog.org/resource/languoid/id/uppe1455
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Guinea-Bissau_Creole
+  family: Portuguese Creole
+  speakers_l1: 1.5 million
+  speakers_l2: 1.5 million
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=pov
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=pov
+  OLAC: http://www.language-archives.org/language/pov
+  WALS: https://wals.info/languoid/lect/wals_code_gbc
+tech_resources:
+  AfroLID: true
+  Fineweb2: 💬
+  MMS-LID: true
+  Omnilingual ASR: true

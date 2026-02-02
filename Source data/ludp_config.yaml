@@ -1,0 +1,139 @@
+# LUDP (Language Use Data Platform) Configuration
+# https://clearglobal.org/language-use-data-platform/
+
+# Tableau share code for language-level visualizations
+language_share_code: 83X9CW8X6
+
+# Languages not available in LUDP (skip embedding)
+languages_skip:
+  - fan
+  - men
+  - tem
+  - twi
+  - gaa
+  - pov
+  - lir
+
+# Language name mappings (ISO 639-3 code -> LUDP display name)
+# For languages where LUDP uses a different name than the standard name
+language_name_map:
+  mos: Mossi
+  lin: Lingala-Bangala
+
+# WCA countries with LUDP data
+# Each entry: display_name, tableau_share_code (null if not available), url_country_name, admin_level
+countries:
+  - name: Benin
+    share_code: FN98FFC4N
+    url_name: Benin
+    admin_level: 2
+
+  - name: Burkina Faso
+    share_code: QWRMKWW69
+    url_name: Burkina+Faso
+    admin_level: 1
+
+  - name: Cameroon
+    share_code: null
+    url_name: null
+    admin_level: null
+
+  - name: Central African Republic
+    share_code: null
+    url_name: null
+    admin_level: null
+
+  - name: Chad
+    share_code: null
+    url_name: null
+    admin_level: null
+
+  - name: Republic of the Congo
+    share_code: JJ6B67N2W
+    url_name: Congo
+    admin_level: 1
+
+  - name: Côte d'Ivoire
+    share_code: null
+    url_name: null
+    admin_level: null
+
+  - name: DR Congo
+    share_code: GHSXDN7GS
+    url_name: Congo+%28Democratic+Republic+of+the%29
+    admin_level: 2
+
+  - name: Equatorial Guinea
+    share_code: null
+    url_name: null
+    admin_level: null
+
+  - name: Gabon
+    share_code: null
+    url_name: null
+    admin_level: null
+
+  - name: The Gambia
+    share_code: 4JPTWTM9D
+    url_name: Gambia
+    admin_level: 2
+
+  - name: Ghana
+    share_code: Q2RSMMJ6H
+    url_name: Ghana
+    admin_level: 2
+
+  - name: Guinea
+    share_code: BNK8HNX6W
+    url_name: Guinea
+    admin_level: 2
+
+  - name: Guinea-Bissau
+    share_code: null
+    url_name: null
+    admin_level: null
+
+  - name: Liberia
+    share_code: null
+    url_name: null
+    admin_level: null
+
+  - name: Mali
+    share_code: ZHP6RGQFP
+    url_name: Mali
+    admin_level: 2
+
+  - name: Mauritania
+    share_code: null
+    url_name: null
+    admin_level: null
+
+  - name: Niger
+    share_code: 9RRCPCN5H
+    url_name: Niger
+    admin_level: 1
+
+  - name: Nigeria
+    share_code: QDH9D9KQK
+    url_name: Nigeria
+    admin_level: 2
+
+  - name: São Tomé and Príncipe
+    share_code: null
+    url_name: null
+    admin_level: null
+
+  - name: Senegal
+    share_code: JRKYP5P3P
+    url_name: Senegal
+    admin_level: 2
+
+  - name: Sierra Leone
+    share_code: SRC996MM2
+    url_name: Sierra+Leone
+    admin_level: 2
+
+  - name: Togo
+    share_code: null
+    url_name: null
+    admin_level: null

@@ -2,6 +2,7 @@
 
 import json
 import re
+from pathlib import Path
 
 import yaml
 
@@ -10,6 +11,16 @@ from .utils import (
     get_actors_for_language, get_model_count, generate_models_table,
     format_actor_type, country_codes_to_names,
 )
+
+
+# Load LUDP configuration
+def _load_ludp_config():
+    """Load LUDP configuration from YAML file."""
+    config_path = Path(__file__).parent.parent.parent / 'Source data' / 'ludp_config.yaml'
+    with open(config_path, 'r', encoding='utf-8') as f:
+        return yaml.safe_load(f)
+
+LUDP_CONFIG = _load_ludp_config()
 
 
 def generate_language_card(iso_code, lang_data, actors):
@@ -239,41 +250,17 @@ def generate_all_languages_tab(wca_languages, focus_languages):
 
 def generate_countries_tab(wca_languages):
     """Generate the Countries tab with Tableau embeds."""
-    # WCA countries with LUDP data: (display_name, tableau_share_code, url_country_name, admin_level)
-    wca_countries_list = [
-        ('Benin', '7QXX3JMG4', 'Benin', 2),
-        ('Burkina Faso', 'QWRMKWW69', 'Burkina+Faso', 1),
-        ('Cameroon', None, None, None),
-        ('Central African Republic', None, None, None),
-        ('Chad', None, None, None),
-        ('Republic of the Congo', 'JJ6B67N2W', 'Congo', 1),
-        ("Côte d'Ivoire", None, None, None),
-        ('DR Congo', 'GHSXDN7GS', 'Congo+%28Democratic+Republic+of+the%29', 2),
-        ('Equatorial Guinea', None, None, None),
-        ('Gabon', None, None, None),
-        ('The Gambia', '4JPTWTM9D', 'Gambia', 2),
-        ('Ghana', 'Q2RSMMJ6H', 'Ghana', 2),
-        ('Guinea', 'BNK8HNX6W', 'Guinea', 2),
-        ('Guinea-Bissau', None, None, None),
-        ('Liberia', None, None, None),
-        ('Mali', 'ZHP6RGQFP', 'Mali', 2),
-        ('Mauritania', None, None, None),
-        ('Niger', 'JTCYDTKNT', 'Niger', 2),
-        ('Nigeria', 'QDH9D9KQK', 'Nigeria', 2),
-        ('São Tomé and Príncipe', None, None, None),
-        ('Senegal', 'JRKYP5P3P', 'Senegal', 2),
-        ('Sierra Leone', 'SRC996MM2', 'Sierra+Leone', 2),
-        ('Togo', None, None, None),
-    ]
+    # Load countries from LUDP config
+    countries_from_config = LUDP_CONFIG.get('countries', [])
 
     # Build country data as JSON for JavaScript
     countries_data = []
-    for display_name, share_code, url_name, level in wca_countries_list:
+    for country in countries_from_config:
         countries_data.append({
-            'name': display_name,
-            'shareCode': share_code,
-            'urlName': url_name,
-            'level': level
+            'name': country['name'],
+            'shareCode': country['share_code'],
+            'urlName': country['url_name'],
+            'level': country['admin_level']
         })
     countries_json = json.dumps(countries_data)
 
@@ -304,8 +291,8 @@ def generate_countries_tab(wca_languages):
 
     # Build country options for dropdown (with empty default)
     options_html = '<option value="">— Select a country —</option>\n' + '\n'.join(
-        f'<option value="{display_name}">{display_name}</option>'
-        for display_name, _, _, _ in wca_countries_list
+        f'<option value="{country["name"]}">{country["name"]}</option>'
+        for country in countries_from_config
     )
 
     return f"""

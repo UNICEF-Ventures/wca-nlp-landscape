@@ -116,13 +116,13 @@ Scoring framework for prioritizing 26 actors for March 2026 summit in Senegal.
 - Tier 3 (6-9): Include in landscape report, lower priority
 - Tier 4 (0-5): Low priority for WCA focus
 
-Full scoring framework: `actor_prioritization_methodology.md`
+Full scoring framework: `Event/actor_prioritization_methodology.md` (not in repo)
 
 **Status:**
 - [x] Openness field populated for all 26 actors
-- [ ] Apply scoring framework to all actors
-- [ ] Validate scores with UNICEF priorities (pending 3 Feb meeting)
-- [ ] Produce final ranked list
+- [x] Draft scoring framework applied to all actors
+- [ ] Validate criteria with UNICEF (3 Feb meeting)
+- [ ] Finalize ranked list (end of week)
 
 ---
 
@@ -201,11 +201,17 @@ Advisory support for actor selection, agenda input, and presentation of findings
   - Liberian Koloqua (lir) - Liberia
   - Guinea-Bissau Creole (pov) - Guinea-Bissau
 - Focus languages now at 26 (was 24)
-- Created actor prioritization scoring framework (`actor_prioritization_methodology.md`)
+- Created actor prioritization scoring framework and draft ranking of all 26 actors
   - 6 dimensions: WCA relevance, language coverage, maturity, openness, UNICEF alignment, summit readiness
-  - Tier classification for summit invitations
+  - Draft tiers pending validation at 3 Feb meeting
+  - Notes added for distributed communities (Masakhane, HausaNLP, etc.) on who to invite
 - Added `openness` field display to actor detail pages in HTML (color-coded: green=open, yellow=partial, red=closed)
-- Preparing for Task 1 close-out and transition to benchmarking (Task 2)
+- Created `Event/` folder (gitignored) for summit planning documents
+  - `actor_prioritization_methodology.md` - scoring framework
+  - `actor_prioritization_report.md` - full rankings with justifications
+  - `actor_rankings.yaml` - machine-readable scores
+- Added `scripts/md_to_docx.py` - converts markdown to docx using pandoc
+- Draft ready for 3 Feb UNICEF meeting; finalize by end of week
 
 ### 2026-01-28
 - Fixed HuggingFace dataset links in both HTML and DOCX outputs to show both ISO-2 and ISO-3 language codes

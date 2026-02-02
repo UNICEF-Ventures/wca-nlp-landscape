@@ -336,6 +336,10 @@ def generate_actor_detail_page(actor_key, actor_data, all_languages=None):
     languages = actor_data.get('languages', [])
     actor_countries = actor_data.get('countries', [])
     maturity = actor_data.get('maturity', '')
+    openness = actor_data.get('openness', '')
+    # Strip any comment from openness (e.g., "open  # Public models..." -> "open")
+    if openness and '#' in openness:
+        openness = openness.split('#')[0].strip()
     description = actor_data.get('description', '')
     notes = actor_data.get('notes', '')
     projects = actor_data.get('projects', [])
@@ -558,6 +562,7 @@ def generate_actor_detail_page(actor_key, actor_data, all_languages=None):
                 <div class="info-item"><label>Founded</label><span class="value">{founded or '—'}</span></div>
                 <div class="info-item"><label>Size</label><span class="value">{organization_size or '—'}</span></div>
                 <div class="info-item"><label>Maturity</label><span class="value">{maturity or '—'}</span></div>
+                <div class="info-item"><label>Openness</label><span class="value openness-{openness}">{openness or '—'}</span></div>
                 <div class="info-item"><label>Location</label><span class="value">{location or '—'}</span></div>
                 <div class="info-item"><label>Funding</label><span class="value">{funding or '—'}</span></div>
                 <div class="info-item"><label>Website</label><span class="value">{website_html}</span></div>

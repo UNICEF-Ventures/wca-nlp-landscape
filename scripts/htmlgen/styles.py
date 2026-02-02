@@ -451,6 +451,31 @@ def get_css():
             color: #e67700;
         }
 
+        /* Openness indicators */
+        .openness-open {
+            background: #d3f9d8;
+            color: #2b8a3e;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .openness-partial {
+            background: #fff3bf;
+            color: #e67700;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .openness-closed {
+            background: #ffe3e3;
+            color: #c92a2a;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
         footer {
             text-align: center;
             padding: 2rem;

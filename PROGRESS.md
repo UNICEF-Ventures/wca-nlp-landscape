@@ -36,9 +36,9 @@ Automated fetching of HuggingFace models/datasets, Common Voice stats, and Wikip
 
 | Done | Target | Progress                 |
 |------|--------|--------------------------|
-| 24   | 24     | ████████████████████ 100% |
+| 26   | 26     | ████████████████████ 100% |
 
-**Focus languages (24):**
+**Focus languages (26):**
 - Nigeria: Hausa (hau), Yoruba (yor), Igbo (ibo)
 - Ghana: Twi (twi), Akan (aka), Ewe (ewe), Dagbani (dag), Ga (gaa)
 - Mali: Bambara (bam)
@@ -46,6 +46,8 @@ Automated fetching of HuggingFace models/datasets, Common Voice stats, and Wikip
 - Senegal/Gambia: Wolof (wol), Mandinka (mnk)
 - Guinea: Pular (fuf)
 - Sierra Leone: Krio (kri), Mende (men), Temne (tem)
+- Liberia: Liberian Koloqua (lir)
+- Guinea-Bissau: Guinea-Bissau Creole (pov)
 - Benin: Fon (fon)
 - CAR: Sango (sag)
 - Chad: Shuwa Arabic (shu), Kanuri (kau)
@@ -88,11 +90,39 @@ Profiles of organizations, research groups, and startups working on African lang
 25. Digital Umuganda - Rwanda, AfriVoice dataset (Lingala/Fulfulde/Wolof), 2200hrs Kinyarwanda Common Voice (CLEAR Global contact)
 26. CLEAR Global - Global, TWB Voice (Hausa/Kanuri/Shuwa Arabic), Gamayun, LT4CR, 55 HF models (conducting this consultancy)
 
-Languages missing dedicated actors
-Sierra Leone: Krio, Mende, Temne - no dedicated actors
-DRC/Congo: Lingala, Congo Swahili - no dedicated actors (partially covered by CLEAR Global LT4CR + Gamayun)
-CAR: Sango - no dedicated actors
-Gabon/Equatorial Guinea: Fang - no dedicated actors
+Languages missing dedicated actors:
+- Sierra Leone: Krio, Mende, Temne - no dedicated actors
+- Liberia: Liberian Koloqua - no dedicated actors
+- Guinea-Bissau: Guinea-Bissau Creole - no dedicated actors
+- DRC/Congo: Lingala, Congo Swahili - no dedicated actors (partially covered by CLEAR Global LT4CR + Gamayun)
+- CAR: Sango - no dedicated actors
+- Gabon/Equatorial Guinea: Fang - no dedicated actors
+
+### 1.4 Actor Prioritization (for Summit Invitations)
+
+Scoring framework for prioritizing 26 actors for March 2026 summit in Senegal.
+
+**Scoring dimensions (0-3 points each, max 18):**
+1. **WCA Regional Relevance** - HQ in WCA + primary work in WCA
+2. **Priority Language Coverage** - Overlap with UNICEF survey Focus 1 languages
+3. **Technical Maturity** - established/emerging/early
+4. **Openness & Sustainability** - open/partial/closed (from `openness` field in YAML)
+5. **UNICEF Alignment** - active partner/high relevance/moderate/low
+6. **Summit Readiness** - presentable outputs, location/travel considerations
+
+**Tier classification:**
+- Tier 1 (14-18): Summit invitation priority
+- Tier 2 (10-13): Strong candidates for summit or follow-up
+- Tier 3 (6-9): Include in landscape report, lower priority
+- Tier 4 (0-5): Low priority for WCA focus
+
+Full scoring framework: `actor_prioritization_methodology.md`
+
+**Status:**
+- [x] Openness field populated for all 26 actors
+- [ ] Apply scoring framework to all actors
+- [ ] Validate scores with UNICEF priorities (pending 3 Feb meeting)
+- [ ] Produce final ranked list
 
 ---
 
@@ -164,7 +194,18 @@ Advisory support for actor selection, agenda input, and presentation of findings
 
 ---
 
-## Recent Updates (January 2026)
+## Recent Updates
+
+### 2026-02-02
+- Added 2 new languages from UNICEF country office survey (Focus 1 priorities):
+  - Liberian Koloqua (lir) - Liberia
+  - Guinea-Bissau Creole (pov) - Guinea-Bissau
+- Focus languages now at 26 (was 24)
+- Created actor prioritization scoring framework (`actor_prioritization_methodology.md`)
+  - 6 dimensions: WCA relevance, language coverage, maturity, openness, UNICEF alignment, summit readiness
+  - Tier classification for summit invitations
+- Added `openness` field display to actor detail pages in HTML (color-coded: green=open, yellow=partial, red=closed)
+- Preparing for Task 1 close-out and transition to benchmarking (Task 2)
 
 ### 2026-01-28
 - Fixed HuggingFace dataset links in both HTML and DOCX outputs to show both ISO-2 and ISO-3 language codes

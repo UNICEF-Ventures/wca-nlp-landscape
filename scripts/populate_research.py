@@ -614,6 +614,74 @@ def generate_wca_languages_data(grid_data):
     return wca_langs
 
 
+def generate_benchmark_coverage(focus_languages):
+    """Generate a markdown matrix showing benchmark coverage per language and task."""
+    tasks = ['asr', 'tts', 'translation', 'llm']
+    task_labels = {'asr': 'ASR', 'tts': 'TTS', 'translation': 'MT', 'llm': 'LLM'}
+    rows = []
+
+    for iso in focus_languages:
+        lang_dir = LANGUAGES_DIR / iso
+        info_path = lang_dir / "info.yaml"
+        name = iso
+        if info_path.exists():
+            with open(info_path, 'r', encoding='utf-8') as f:
+                info = yaml.safe_load(f) or {}
+            name = info.get('name', iso)
+
+        # Collect all evaluation tasks from both benchmark files
+        has_task = set()
+        for fname in ('benchmarks.yaml', 'benchmarks_manual.yaml'):
+            fpath = lang_dir / fname
+            if not fpath.exists():
+                continue
+            with open(fpath, 'r', encoding='utf-8') as f:
+                data = yaml.safe_load(f) or {}
+            evals = data.get('evaluations', {})
+            for task_key, models in evals.items():
+                if models:  # non-empty list
+                    has_task.add(task_key)
+
+        # Map translation variants (mt) to canonical key
+        if 'mt' in has_task:
+            has_task.add('translation')
+
+        cells = []
+        for t in tasks:
+            cells.append('x' if t in has_task else ' ')
+        rows.append((iso, name, cells))
+
+    # Count coverage per task
+    totals = []
+    for i, t in enumerate(tasks):
+        totals.append(sum(1 for _, _, cells in rows if cells[i] == 'x'))
+
+    # Build markdown
+    header_tasks = ' | '.join(task_labels[t] for t in tasks)
+    lines = [
+        '# Benchmark Coverage Matrix',
+        '',
+        f'Generated: {__import__("datetime").date.today().isoformat()}',
+        '',
+        f'| ISO | {header_tasks} | Language |',
+        f'|-----|' + '|'.join(' --- ' for _ in tasks) + '|---------|',
+    ]
+    for iso, name, cells in rows:
+        cell_str = ' | '.join(f' {c} ' for c in cells)
+        lines.append(f'| {iso} | {cell_str} | {name} |')
+
+    total_str = ' | '.join(f' {t} ' for t in totals)
+    lines.append(f'| {len(rows)} | {total_str} | Total |')
+
+    lines.append('')
+    lines.append(f'Coverage: {sum(1 for _, _, c in rows if any(x == "x" for x in c))}/{len(rows)} languages have at least one benchmark.')
+
+    output_path = RESEARCH_DIR / "benchmark_coverage.md"
+    with open(output_path, 'w', encoding='utf-8') as f:
+        f.write('\n'.join(lines) + '\n')
+    print(f"\nGenerated benchmark coverage matrix: {output_path}")
+
+
 def main():
     parser = argparse.ArgumentParser(description='Populate Research/ with language and model data')
     parser.add_argument('--lang', help='Process only this language ISO code (e.g., hau)')
@@ -677,6 +745,9 @@ def main():
     output_path = RESEARCH_DIR / "wca_all_languages.yaml"
     save_yaml({'languages': wca_langs, 'total': len(wca_langs)}, output_path)
     print(f"Generated {len(wca_langs)} WCA languages")
+
+    # Generate benchmark coverage matrix
+    generate_benchmark_coverage(focus_languages)
 
     print("\n" + "=" * 60)
     print(f"Done! Processed {processed} languages.")

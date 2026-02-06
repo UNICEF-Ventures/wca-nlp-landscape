@@ -1,10 +1,574 @@
 evaluations:
   asr:
-  - model: facebook/omnilingual-asr
-    model_url: https://github.com/facebookresearch/omnilingual-asr
+  - model: facebook/omniASR-LLM-7B
+    model_url: https://huggingface.co/facebook/omniASR-LLM-7B
     results:
-    - test_set: FLEURS
+    - test_set: PazaBench (aggregated)
       source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
+      - name: CER
+        value: 14.0
       - name: WER
-        value: '?'
+        value: 44.0
+  - model: facebook/omniASR-LLM-7B-ZS
+    model_url: https://huggingface.co/facebook/omniASR-LLM-7B-ZS
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 13.0
+      - name: WER
+        value: 43.0
+  - model: facebook/omniASR-LLM-1B
+    model_url: https://huggingface.co/facebook/omniASR-LLM-1B
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 15.0
+      - name: WER
+        value: 47.0
+  - model: facebook/omniASR-LLM-3B
+    model_url: https://huggingface.co/facebook/omniASR-LLM-3B
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 15.0
+      - name: WER
+        value: 47.0
+  - model: facebook/omniASR-LLM-300M
+    model_url: https://huggingface.co/facebook/omniASR-LLM-300M
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 16.0
+      - name: WER
+        value: 47.0
+  - model: facebook/omniASR-CTC-7B
+    model_url: https://huggingface.co/facebook/omniASR-CTC-7B
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 15.0
+      - name: WER
+        value: 51.0
+  - model: facebook/omniASR-CTC-1B
+    model_url: https://huggingface.co/facebook/omniASR-CTC-1B
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 15.0
+      - name: WER
+        value: 52.0
+  - model: facebook/omniASR-CTC-3B
+    model_url: https://huggingface.co/facebook/omniASR-CTC-3B
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 14.0
+      - name: WER
+        value: 50.0
+  - model: facebook/omniASR-CTC-300M
+    model_url: https://huggingface.co/facebook/omniASR-CTC-300M
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 16.0
+      - name: WER
+        value: 56.0
+  - model: microsoft/paza-mms-1b-all
+    model_url: https://huggingface.co/microsoft/paza-mms-1b-all
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 15.0
+      - name: WER
+        value: 54.0
+  - model: facebook/mms-1b-all
+    model_url: https://huggingface.co/facebook/mms-1b-all
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 15.0
+      - name: WER
+        value: 53.0
+  - model: facebook/mms-1b-fl102
+    model_url: https://huggingface.co/facebook/mms-1b-fl102
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 16.0
+      - name: WER
+        value: 53.0
+  - model: microsoft/paza-Phi-4-multimodal-instruct
+    model_url: https://huggingface.co/microsoft/paza-Phi-4-multimodal-instruct
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 38.0
+      - name: WER
+        value: 91.0
+  - model: nvidia/parakeet-tdt-0.6b-v3
+    model_url: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 38.0
+      - name: WER
+        value: 90.0
+  - model: facebook/wav2vec2-conformer-rel-pos-large-960h-ft
+    model_url: https://huggingface.co/facebook/wav2vec2-conformer-rel-pos-large-960h-ft
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 32.0
+      - name: WER
+        value: 95.0
+  - model: facebook/data2vec-audio-large-960h
+    model_url: https://huggingface.co/facebook/data2vec-audio-large-960h
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 36.0
+      - name: WER
+        value: 94.0
+  - model: facebook/wav2vec2-conformer-rope-large-960h-ft
+    model_url: https://huggingface.co/facebook/wav2vec2-conformer-rope-large-960h-ft
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 34.0
+      - name: WER
+        value: 98.0
+  - model: facebook/hubert-large-ls960-ft
+    model_url: https://huggingface.co/facebook/hubert-large-ls960-ft
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 32.0
+      - name: WER
+        value: 90.0
+  - model: facebook/hubert-xlarge-ls960-ft
+    model_url: https://huggingface.co/facebook/hubert-xlarge-ls960-ft
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 33.0
+      - name: WER
+        value: 91.0
+  - model: microsoft/paza-whisper-large-v3-turbo
+    model_url: https://huggingface.co/microsoft/paza-whisper-large-v3-turbo
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 46.0
+      - name: WER
+        value: 92.0
+  - model: facebook/wav2vec2-large-960h-lv60-self
+    model_url: https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 34.0
+      - name: WER
+        value: 89.0
+  - model: facebook/data2vec-audio-base-960h
+    model_url: https://huggingface.co/facebook/data2vec-audio-base-960h
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 42.0
+      - name: WER
+        value: 105.0
+  - model: facebook/wav2vec2-large-robust-ft-libri-960h
+    model_url: https://huggingface.co/facebook/wav2vec2-large-robust-ft-libri-960h
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 35.0
+      - name: WER
+        value: 93.0
+  - model: nvidia/canary-qwen-2.5b
+    model_url: https://huggingface.co/nvidia/canary-qwen-2.5b
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 37.0
+      - name: WER
+        value: 95.0
+  - model: facebook/wav2vec2-large-960h
+    model_url: https://huggingface.co/facebook/wav2vec2-large-960h
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 52.0
+      - name: WER
+        value: 100.0
+  - model: ibm/granite-speech-3.3-2b
+    model_url: https://huggingface.co/ibm/granite-speech-3.3-2b
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 45.0
+      - name: WER
+        value: 99.0
+  - model: facebook/wav2vec2-base-960h
+    model_url: https://huggingface.co/facebook/wav2vec2-base-960h
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 66.0
+      - name: WER
+        value: 101.0
+  - model: openai/whisper-large-v3-turbo
+    model_url: https://huggingface.co/openai/whisper-large-v3-turbo
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 56.0
+      - name: WER
+        value: 90.0
+  - model: efficient-speech/lite-whisper-large-v3-turbo-acc
+    model_url: https://huggingface.co/efficient-speech/lite-whisper-large-v3-turbo-acc
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 55.0
+      - name: WER
+        value: 90.0
+  - model: distil-whisper/distil-large-v3
+    model_url: https://huggingface.co/distil-whisper/distil-large-v3
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 52.0
+      - name: WER
+        value: 92.0
+  - model: ibm/granite-speech-3.3-8b
+    model_url: https://huggingface.co/ibm/granite-speech-3.3-8b
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 54.0
+      - name: WER
+        value: 107.0
+  - model: openai/whisper-large
+    model_url: https://huggingface.co/openai/whisper-large
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 62.0
+      - name: WER
+        value: 93.0
+  - model: distil-whisper/distil-medium.en
+    model_url: https://huggingface.co/distil-whisper/distil-medium.en
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 62.0
+      - name: WER
+        value: 95.0
+  - model: openai/whisper-large-v3
+    model_url: https://huggingface.co/openai/whisper-large-v3
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 71.0
+      - name: WER
+        value: 97.0
+  - model: distil-whisper/distil-large-v2
+    model_url: https://huggingface.co/distil-whisper/distil-large-v2
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 66.0
+      - name: WER
+        value: 95.0
+  - model: Qwen/Qwen2-Audio-7B-Instruct
+    model_url: https://huggingface.co/Qwen/Qwen2-Audio-7B-Instruct
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 53.0
+      - name: WER
+        value: 98.0
+  - model: efficient-speech/lite-whisper-large-v3-acc
+    model_url: https://huggingface.co/efficient-speech/lite-whisper-large-v3-acc
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 75.0
+      - name: WER
+        value: 97.0
+  - model: openai/whisper-large-v2
+    model_url: https://huggingface.co/openai/whisper-large-v2
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 75.0
+      - name: WER
+        value: 97.0
+  - model: kyutai/stt-2.6b-en
+    model_url: https://huggingface.co/kyutai/stt-2.6b-en
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 71.0
+      - name: WER
+        value: 122.0
+  - model: openai/whisper-medium.en
+    model_url: https://huggingface.co/openai/whisper-medium.en
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 74.0
+      - name: WER
+        value: 97.0
+  - model: openai/whisper-small.en
+    model_url: https://huggingface.co/openai/whisper-small.en
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 76.0
+      - name: WER
+        value: 97.0
+  - model: efficient-speech/lite-whisper-large-v3
+    model_url: https://huggingface.co/efficient-speech/lite-whisper-large-v3
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 77.0
+      - name: WER
+        value: 97.0
+  - model: openai/whisper-base.en
+    model_url: https://huggingface.co/openai/whisper-base.en
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 74.0
+      - name: WER
+        value: 97.0
+  - model: efficient-speech/lite-whisper-large-v3-turbo
+    model_url: https://huggingface.co/efficient-speech/lite-whisper-large-v3-turbo
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 78.0
+      - name: WER
+        value: 97.0
+  - model: efficient-speech/lite-whisper-large-v3-fast
+    model_url: https://huggingface.co/efficient-speech/lite-whisper-large-v3-fast
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 81.0
+      - name: WER
+        value: 98.0
+  - model: microsoft/Phi-4-multimodal-instruct
+    model_url: https://huggingface.co/microsoft/Phi-4-multimodal-instruct
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 63.0
+      - name: WER
+        value: 116.0
+  - model: openai/whisper-tiny.en
+    model_url: https://huggingface.co/openai/whisper-tiny.en
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 77.0
+      - name: WER
+        value: 98.0
+  - model: nvidia/canary-1b-v2
+    model_url: https://huggingface.co/nvidia/canary-1b-v2
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 48.0
+      - name: WER
+        value: 106.0
+  - model: efficient-speech/lite-whisper-large-v3-turbo-fast
+    model_url: https://huggingface.co/efficient-speech/lite-whisper-large-v3-turbo-fast
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 90.0
+      - name: WER
+        value: 99.0
+  - model: usefulsensors/moonshine-base
+    model_url: https://huggingface.co/usefulsensors/moonshine-base
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 101.0
+      - name: WER
+        value: 123.0
+  - model: Qwen/Qwen2-Audio-7B
+    model_url: https://huggingface.co/Qwen/Qwen2-Audio-7B
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 113.0
+      - name: WER
+        value: 158.0
+  - model: usefulsensors/moonshine-tiny
+    model_url: https://huggingface.co/usefulsensors/moonshine-tiny
+    results:
+    - test_set: PazaBench (aggregated)
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
+      metrics:
+      - name: CER
+        value: 163.0
+      - name: WER
+        value: 248.0

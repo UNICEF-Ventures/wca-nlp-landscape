@@ -1,0 +1,103 @@
+id: adwumatech
+name: AdwumaTech AI
+type: startup
+website: https://adwumatech.ai/
+location: Accra, Ghana
+
+# Organization details
+founded: 2023
+organization_size: medium  # ~36 employees
+funding: >
+  Commercial revenue from AI training data services for Fortune 500 clients.
+  Enterprise contracts for RLHF, data annotation, and African language AI.
+description: >
+  AdwumaTech AI provides enterprise-grade AI training data infrastructure powered by
+  African engineering talent. Core offerings include RLHF for code generation, reasoning
+  data development, data annotation, and African language AI solutions. They cover 6+
+  African languages with native-speaker teams for dataset creation, RLHF cultural alignment,
+  and model evaluation/red-teaming. Also operates Nokore AI, a deepfake detection solution
+  trained specifically on African identities for KYC/identity verification. Positions itself
+  as building Ghana's first world-class AI workforce, with 100+ local jobs created.
+
+# Key people
+key_people:
+  - name: Hartley Thompson III
+    role: Leadership
+  - name: Frank Acquaye
+    role: ML Research Engineer
+    note: Active researcher with publications on Google Scholar / Semantic Scholar.
+  - name: John-Shebà Baanuo
+    role: Leadership
+  - name: Bernard Acquah
+    role: Leadership
+
+# Coverage
+countries:
+  - GH  # Ghana (primary)
+languages:
+  - aka  # Akan (Twi, Fante)
+  - ewe  # Ewe
+  - gaa  # Ga
+  - hau  # Hausa
+  - yor  # Yoruba
+  - dag  # Dagbani
+
+# Links
+huggingface: https://huggingface.co/adwumatech-ai
+contact:
+  linkedin: https://www.linkedin.com/company/adwumatech-ai/
+
+# Projects
+projects:
+  - name: African Language AI
+    url: https://adwumatech.ai/solutions/african-languages
+    description: >
+      Custom text and speech dataset development, RLHF for African cultural contexts
+      (preference data, reward model training, cultural alignment), and native-speaker
+      model evaluation and red-teaming. Claims 50+ languages available.
+    languages: [aka, ewe, gaa, hau, yor, dag]
+
+  - name: Nokore AI
+    url: https://adwumatech.ai/solutions/nokore-ai
+    description: >
+      Deepfake detection solution for African identity verification. Liveness detection API,
+      injection attack defense, and synthetic face identification. Designed for banks,
+      neobanks, crypto exchanges, and payment providers. "Nokore" means "truth" in Akan.
+
+  - name: mghana-st dataset
+    url: https://huggingface.co/datasets/adwumatech-ai/mghana-st
+    description: >
+      Curated audio dataset for speech tasks (ASR, speaker identification, speech
+      clustering, translation). 10K-100K samples. MIT license.
+    languages: [ewe, aka]
+
+  - name: UGSpeechData dataset
+    url: https://huggingface.co/datasets/adwumatech-ai/UGSpeechData
+    description: >
+      Re-purposing of the University of Ghana multilingual speech dataset for
+      Ghanaian languages. MIT license.
+
+publications: []
+
+partnerships: []
+
+# UNICEF relevance
+unicef_relevance: >
+  Relevant for UNICEF Ghana's language tech needs through their African language AI services
+  covering major Ghanaian languages (Akan, Ewe, Ga, Dagbani). Their native-speaker dataset
+  creation and model evaluation capabilities could support quality assurance of NLP tools.
+  However, their primarily commercial and closed approach limits direct integration — they
+  are a data services company rather than an open-source contributor.
+
+maturity: emerging
+engagement_status: none
+openness: closed  # No public models, only 2 datasets on HuggingFace, commercial services
+last_updated: 2026-02-06
+
+notes: >
+  Primarily an AI training data company serving enterprise clients rather than an NLP
+  research or product org. Their African language work focuses on dataset creation and
+  model evaluation services rather than building open models. Only two datasets published
+  on HuggingFace (both MIT-licensed speech datasets), no public models. Deepfake detection
+  (Nokore AI) is a separate product line not directly relevant to NLP/language tech.
+  Website claims 50+ African languages but only 6 are explicitly named.

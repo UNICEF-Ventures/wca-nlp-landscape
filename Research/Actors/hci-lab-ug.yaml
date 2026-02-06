@@ -134,6 +134,21 @@ projects:
       Whisper-based ASR for Ewe. Dataset: Paywinful/ewe-asr (22.3k downloads)
     languages: [ewe]
 
+  - name: WAXAL Dataset (with Google Research)
+    url: https://huggingface.co/datasets/google/WaxalNLP
+    description: >
+      Large-scale multilingual African speech corpus led by Google Research
+      (Jan 2021 - Mar 2024). University of Ghana collected ASR data for 6
+      languages (Akan 101.9hrs, Dagaare 104.7hrs, Dagbani 98.5hrs, Ewe 99.8hrs,
+      Ikposo 103.8hrs, Fante) and TTS data for 2 languages (Akan 15.8hrs, Fante
+      24.0hrs). Total dataset: ~1,250 hours ASR (14 languages) + ~186 hours TTS
+      (10 languages), 21 languages total representing 100M+ speakers. WCA-relevant
+      languages across the full dataset include Akan, Dagaare, Dagbani, Ewe, Fante,
+      Fulani, Hausa, Igbo, Ikposo, Lingala, Twi, and Yoruba. CC-BY-4.0. Partners:
+      Google Research (lead), Digital Umuganda, Makerere University, Media Trust
+      Limited. Paper: arxiv 2602.02734.
+    languages: [aka, ewe, dag, dga, fat]
+
 publications:
   - title: "Advancing ASR for low-resource Ghanaian languages: Audio datasets for Akan, Ewe, Dagbani, Dagaare, and Ikposo"
     url: https://pure.ug.edu.gh/en/publications/advancing-automatic-speech-recognition-for-low-resource-ghanaian-/
@@ -141,6 +156,9 @@ publications:
   - title: "A Cookbook for Community-driven Data Collection of Impaired Speech in Low-Resource Languages"
     url: https://pure.ug.edu.gh/en/publications/a-cookbook-for-community-driven-data-collection-of-impaired-speec/
     venue: 2024
+  - title: "WAXAL: A Large-Scale Multilingual African Language Speech Corpus"
+    url: https://arxiv.org/abs/2602.02734
+    venue: arXiv, 2026
 
 partnerships:
   - Google Research Africa

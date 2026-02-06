@@ -321,6 +321,41 @@ def generate_language_detail_page(iso_code, lang_data, actors):
     <footer>
         Generated: {datetime.now().strftime("%Y-%m-%d %H:%M")} | CLEAR Global for UNICEF WCARO
     </footer>
+
+    <script>
+        document.querySelectorAll('.benchmark-table').forEach(table => {{
+            table.querySelectorAll('th').forEach((th, colIdx) => {{
+                th.addEventListener('click', () => {{
+                    const tbody = table.querySelector('tbody');
+                    const rows = Array.from(tbody.querySelectorAll('tr'));
+                    const isAsc = th.classList.contains('sorted-asc');
+
+                    table.querySelectorAll('th').forEach(h => h.classList.remove('sorted-asc', 'sorted-desc'));
+
+                    rows.sort((a, b) => {{
+                        const aCell = a.cells[colIdx];
+                        const bCell = b.cells[colIdx];
+                        let aVal = (aCell.textContent || '').trim();
+                        let bVal = (bCell.textContent || '').trim();
+
+                        // Try numeric comparison
+                        const aNum = parseFloat(aVal);
+                        const bNum = parseFloat(bVal);
+                        if (!isNaN(aNum) && !isNaN(bNum)) {{
+                            return isAsc ? aNum - bNum : bNum - aNum;
+                        }}
+                        // Treat dashes as sorting last
+                        if (aVal === '\u2014') aVal = isAsc ? '\\uffff' : '';
+                        if (bVal === '\u2014') bVal = isAsc ? '\\uffff' : '';
+                        return isAsc ? bVal.localeCompare(aVal) : aVal.localeCompare(bVal);
+                    }});
+
+                    th.classList.add(isAsc ? 'sorted-desc' : 'sorted-asc');
+                    rows.forEach(row => tbody.appendChild(row));
+                }});
+            }});
+        }});
+    </script>
 </body>
 </html>
 """

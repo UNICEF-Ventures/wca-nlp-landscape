@@ -84,6 +84,20 @@ projects:
       CLEAR Global (Translators without Borders).
     languages: [kin]
 
+  - name: WAXAL Dataset (with Google Research)
+    url: https://huggingface.co/datasets/google/WaxalNLP
+    description: >
+      Large-scale multilingual African speech corpus led by Google Research
+      (Jan 2021 - Mar 2024). Digital Umuganda collected ASR data for 4 languages
+      (Fulani 124.2hrs, Lingala 101.5hrs, Malagasy 182.5hrs, Shona 99.2hrs).
+      Total dataset: ~1,250 hours ASR (14 languages) + ~186 hours TTS (10
+      languages), 21 languages total representing 100M+ speakers. WCA-relevant
+      languages across the full dataset include Akan, Dagaare, Dagbani, Ewe,
+      Fante, Fulani, Hausa, Igbo, Ikposo, Lingala, Twi, and Yoruba. CC-BY-4.0.
+      Partners: Google Research (lead), University of Ghana, Makerere University,
+      Media Trust Limited. Paper: arxiv 2602.02734.
+    languages: [lin, ful]
+
   - name: AfriVoice / African Next Voices (ANV)
     url: https://africanvoices.io/
     description: >
@@ -95,10 +109,14 @@ projects:
 
 projects_url: https://digitalumuganda.com/projects
 
-publications: []
+publications:
+  - title: "WAXAL: A Large-Scale Multilingual African Language Speech Corpus"
+    url: https://arxiv.org/abs/2602.02734
+    venue: arXiv, 2026
 publications_url: null
 
 partnerships:
+  - Google Research (WAXAL dataset)
   - CLEAR Global (Translators without Borders)
   - Mozilla Foundation
   - University of Pretoria (ANV project)

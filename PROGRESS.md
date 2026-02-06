@@ -132,15 +132,16 @@ Compile existing benchmark results (FLORES, FLEURS, Common Voice, published pape
 
 | Status | Progress |
 |--------|----------|
-| Infrastructure done, data collection started | ██░░░░░░░░░░░░░░░░░░ 10% |
+| Infrastructure done, data collection in progress | ████░░░░░░░░░░░░░░░░ 20% |
 
 - [x] Benchmark data infrastructure (two-file system, Source data/Evaluations/, rendering on language pages)
 - [x] Initial ASR data: Whisper FLEURS WER, CLEAR Global TWB Voice (Hausa, Kanuri)
 - [x] Initial TTS data: CLEAR Global TWB Voice TTS (Hausa, Kanuri) — scores entered
+- [x] PazaBench ASR results compiled (52 models, 39 African languages, CER+WER) — 7 focus languages covered: ful, hau, ibo, lin, twi, wol, yor
 - [ ] Compile ASR benchmarks (more Whisper variants, MMS, wav2vec2, etc.)
 - [ ] Compile MT benchmarks (NLLB, MADLAD, AfriNLLB etc.)
 - [ ] Compile TTS benchmarks (more models)
-- [ ] Compile LLM benchmarks (AfriqueLLM, Goldfish, Aya, Serengeti)
+- [x] Compile LLM benchmarks: AfroBench-Lite scores (24 models, 5 focus languages: hau, ibo, lin, wol, yor)
 - [ ] Gap analysis: which languages lack benchmarks
 - [ ] Conducting benchmark analyses where needed and possible
 
@@ -155,7 +156,8 @@ Compile existing benchmark results (FLORES, FLEURS, Common Voice, published pape
 | MMS paper | Meta | ASR/TTS | Massively Multilingual Speech |
 | AfriSpeech | | ASR | African-focused |
 | Sahara | | Text | African language benchmark |
-| AfriBench | | Multi | |
+| AfroBench-Lite | https://huggingface.co/spaces/McGill-NLP/AfroBench | LLM | 15 tasks, 22 datasets, 64 African languages |
+| PazaBench | https://huggingface.co/spaces/microsoft/paza-bench | ASR | 52 models, 39 African languages |
 
 ---
 
@@ -195,6 +197,25 @@ Advisory support for actor selection, agenda input, and presentation of findings
 ---
 
 ## Recent Updates
+
+### 2026-02-06
+- Compiled AfroBench-Lite LLM benchmark scores into `Source data/Evaluations/afrobench_lite.yaml`
+  - McGill-NLP AfroBench: aggregate scores across 15 NLP tasks, 22 datasets for African languages
+  - Source: https://huggingface.co/spaces/McGill-NLP/AfroBench
+  - 24 models evaluated: open-weight (Aya-101, Gemma family, LLaMA family, LLaMAX, AfroLLaMa, Lugha-Llama) and proprietary (GPT-4o, GPT-4.1, GPT-5, Gemini family, Claude family)
+  - 5 focus languages covered: Hausa (hau), Igbo (ibo), Lingala (lin), Wolof (wol), Yoruba (yor)
+  - Top performers: GPT-5, Claude 4.5 Sonnet, Gemini 2.5 Pro consistently score highest (65-83 range)
+  - Wolof notably lower across all models (e.g. Claude 4.5 Sonnet: 43.9 vs 75.2 for Hausa)
+- Downloaded papers for review (in `Project documents/`, not in repo):
+  - `afrobench.pdf` — AfroBench paper (McGill-NLP, 15 tasks, 64 African languages)
+  - `afrimteb_e5.pdf` — AfriMTEB (African Massive Text Embedding Benchmark)
+  - `afrimcqa.pdf` — AfriMCQA (African Multiple-Choice QA benchmark)
+  - `waxal-paper.pdf` — WAXAL (downloaded earlier)
+- Compiled PazaBench ASR benchmark results into `Source data/Evaluations/pazabench.yaml`
+  - Microsoft's PazaBench: 52 ASR models evaluated on 39 African languages (CER + WER)
+  - Source: https://huggingface.co/spaces/microsoft/paza-bench
+  - 7 focus languages covered: Fulfulde (ful), Hausa (hau), Igbo (ibo), Lingala (lin), Twi (twi), Wolof (wol), Yoruba (yor)
+  - Notable gap: 19 of 26 focus languages not in PazaBench (Bambara, Ewe, Fon, Mooré, Krio, etc.)
 
 ### 2026-02-02
 - Added 2 new languages from UNICEF country office survey (Focus 1 priorities):

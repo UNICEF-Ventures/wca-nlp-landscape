@@ -1,0 +1,1131 @@
+# BibleMMS: Bible-based TTS training data for MMS languages
+# Source: https://huggingface.co/datasets/Flux9665/BibleMMS
+#
+# This dataset provides pre-extracted speech data from Bible translations
+# aligned with MMS (Meta's Massively Multilingual Speech) language coverage.
+# Designed for training TTS models on low-resource languages with Bible audio.
+#
+# Note: Coverage is primarily indigenous languages from the Americas, Southeast Asia,
+# and Oceania, plus some major world languages. Limited West/Central African coverage.
+
+description: >
+  BibleMMS is a dataset of Bible audio recordings aligned with text for TTS training.
+  It provides pre-extracted training data compatible with IMS-Toucan TTS framework,
+  based on MMS language coverage. Useful for bootstrapping TTS models in low-resource
+  languages that have Bible translations.
+
+source: https://huggingface.co/datasets/Flux9665/BibleMMS
+tech_resources_label: BibleMMS-TTS
+task: tts
+
+languages:
+  acf:
+    name: Saint Lucian Creole French
+    tts: true
+  acr:
+    name: Achi
+    tts: true
+  acu:
+    name: Achuar-Shiwiar
+    tts: true
+  agd:
+    name: Agarabi
+    tts: true
+  agg:
+    name: Angor
+    tts: true
+  agn:
+    name: Agutaynen
+    tts: true
+  agr:
+    name: Aguaruna
+    tts: true
+  agu:
+    name: Aguacateco
+    tts: true
+  aia:
+    name: Arosi
+    tts: true
+  ake:
+    name: Akawaio
+    tts: true
+  alp:
+    name: Alune
+    tts: true
+  ame:
+    name: Yanesha'
+    tts: true
+  amf:
+    name: Hamer-Banna
+    tts: true
+  amk:
+    name: Ambai
+    tts: true
+  apb:
+    name: Sa'a
+    tts: true
+  apr:
+    name: Arop-Lokep
+    tts: true
+  arl:
+    name: Arabela
+    tts: true
+  ata:
+    name: Pele-Ata
+    tts: true
+  atb:
+    name: Zaiwa
+    tts: true
+  atg:
+    name: Ivbie North-Okpela-Arhe
+    tts: true
+  awb:
+    name: Awa
+    tts: true
+  azg:
+    name: San Pedro Amuzgos Amuzgo
+    tts: true
+  azz:
+    name: Highland Puebla Nahuatl
+    tts: true
+  bao:
+    name: Waimaha
+    tts: true
+  bba:
+    name: Baatonum
+    tts: true
+  bbb:
+    name: Barai
+    tts: true
+  bgt:
+    name: Bughotu
+    tts: true
+  bjr:
+    name: Binumarien
+    tts: true
+  bjv:
+    name: Bedjond
+    tts: true
+  bjz:
+    name: Baruga
+    tts: true
+  bkd:
+    name: Binukid
+    tts: true
+  blz:
+    name: Balantak
+    tts: true
+  bmr:
+    name: Muinane
+    tts: true
+  bmu:
+    name: Burum-Mindik
+    tts: true
+  bnp:
+    name: Bola
+    tts: true
+  boa:
+    name: Bora
+    tts: true
+  boj:
+    name: Anjam
+    tts: true
+  box:
+    name: Buamu
+    tts: true
+  bpr:
+    name: Koronadal Blaan
+    tts: true
+  bps:
+    name: Sarangani Blaan
+    tts: true
+  bqc:
+    name: Boko (Benin)
+    tts: true
+  bqp:
+    name: Busa
+    tts: true
+  bss:
+    name: Akoose
+    tts: true
+  bus:
+    name: Bokobaru
+    tts: true
+  byr:
+    name: Baruya
+    tts: true
+  bzh:
+    name: Mapos Buang
+    tts: true
+  bzj:
+    name: Belize Kriol English
+    tts: true
+  caa:
+    name: Chorti
+    tts: true
+  cab:
+    name: Garifuna
+    tts: true
+  cap:
+    name: Chipaya
+    tts: true
+  car:
+    name: Galibi Carib
+    tts: true
+  cax:
+    name: Chiquitano
+    tts: true
+  cbc:
+    name: Carapana
+    tts: true
+  cbi:
+    name: Chachi
+    tts: true
+  cbr:
+    name: Cashibo-Cacataibo
+    tts: true
+  cbs:
+    name: Cashinahua
+    tts: true
+  cbt:
+    name: Chayahuita
+    tts: true
+  cbu:
+    name: Candoshi-Shapra
+    tts: true
+  cbv:
+    name: Cacua
+    tts: true
+  cco:
+    name: Comaltepec Chinantec
+    tts: true
+  cek:
+    name: Eastern Khumi Chin
+    tts: true
+  cgc:
+    name: Kagayanen
+    tts: true
+  chf:
+    name: Tabasco Chontal
+    tts: true
+  chz:
+    name: Ozumacin Chinantec
+    tts: true
+  cjo:
+    name: Asheninka Pajonal
+    tts: true
+  cle:
+    name: Lealao Chinantec
+    tts: true
+  cme:
+    name: Cerma
+    tts: true
+  cni:
+    name: Ashaninka
+    tts: true
+  cnl:
+    name: Lalana Chinantec
+    tts: true
+  cnt:
+    name: Tepetotutla Chinantec
+    tts: true
+  cof:
+    name: Colorado
+    tts: true
+  con:
+    name: Cofan
+    tts: true
+  cot:
+    name: Caquinte
+    tts: true
+  cpa:
+    name: Palantla Chinantec
+    tts: true
+  cpu:
+    name: Pichis Asheninka
+    tts: true
+  crn:
+    name: El Nayar Cora
+    tts: true
+  cso:
+    name: Sochiapan Chinantec
+    tts: true
+  ctu:
+    name: Chol
+    tts: true
+  cuc:
+    name: Usila Chinantec
+    tts: true
+  cui:
+    name: Cuiba
+    tts: true
+  cuk:
+    name: San Blas Kuna
+    tts: true
+  cwe:
+    name: Kwere
+    tts: true
+  cya:
+    name: Nopala Chatino
+    tts: true
+  daa:
+    name: Dangaleat
+    tts: true
+  dah:
+    name: Gwahatike
+    tts: true
+  ded:
+    name: Dedua
+    tts: true
+  deu:
+    name: German
+    tts: true
+  dgr:
+    name: Dogrib
+    tts: true
+  dik:
+    name: Southwestern Dinka
+    tts: true
+  djk:
+    name: Eastern Maroon Creole
+    tts: true
+  dop:
+    name: Lukpa
+    tts: true
+  emp:
+    name: Northern Emberá
+    tts: true
+  eng:
+    name: English
+    tts: true
+  ese:
+    name: Ese Ejja
+    tts: true
+  far:
+    name: Fataleka
+    tts: true
+  fra:
+    name: French
+    tts: true
+  gai:
+    name: Borei
+    tts: true
+  gam:
+    name: Kandawo
+    tts: true
+  geb:
+    name: Kire
+    tts: true
+  glk:
+    name: Gilaki
+    tts: true
+  gng:
+    name: Ngangam
+    tts: true
+  grc:
+    name: Ancient Greek
+    tts: true
+  gub:
+    name: Guajajara
+    tts: true
+  guh:
+    name: Guahibo
+    tts: true
+  gum:
+    name: Guambiano
+    tts: true
+  guo:
+    name: Guayabero
+    tts: true
+  gux:
+    name: Gourmanchema
+    tts: true
+  gvc:
+    name: Guanano
+    tts: true
+  gwi:
+    name: Gwich'in
+    tts: true
+  gym:
+    name: Ngabere
+    tts: true
+  gyr:
+    name: Guarayu
+    tts: true
+  hat:
+    name: Haitian
+    tts: true
+  heb:
+    name: Hebrew
+    tts: true
+  hlt:
+    name: Matu Chin
+    tts: true
+  hns:
+    name: Caribbean Hindustani
+    tts: true
+  hto:
+    name: Minica Huitoto
+    tts: true
+  hub:
+    name: Huambisa
+    tts: true
+  huu:
+    name: Murui Huitoto
+    tts: true
+  huv:
+    name: San Mateo Del Mar Huave
+    tts: true
+  hvn:
+    name: Sabu
+    tts: true
+  ign:
+    name: Ignaciano
+    tts: true
+  ikk:
+    name: Ika
+    tts: true
+  imo:
+    name: Imbongu
+    tts: true
+  inb:
+    name: Inga
+    tts: true
+  ind:
+    name: Indonesian
+    tts: true
+  iou:
+    name: Tuma-Irumu
+    tts: true
+  ipi:
+    name: Ipili
+    tts: true
+  jac:
+    name: Popti'
+    tts: true
+  jic:
+    name: Tol
+    tts: true
+  jiv:
+    name: Shuar
+    tts: true
+  jvn:
+    name: Caribbean Javanese
+    tts: true
+  kaq:
+    name: Capanahua
+    tts: true
+  kdc:
+    name: Kutu
+    tts: true
+  kde:
+    name: Makonde
+    tts: true
+  kdl:
+    name: Tsikimba
+    tts: true
+  kek:
+    name: Kekchi
+    tts: true
+  ken:
+    name: Kenyang
+    tts: true
+  kje:
+    name: Kisar
+    tts: true
+  klv:
+    name: Maskelynes
+    tts: true
+  kmu:
+    name: Kanite
+    tts: true
+  kne:
+    name: Kankanaey
+    tts: true
+  knf:
+    name: Mankanya
+    tts: true
+  knj:
+    name: Western Kanjobal
+    tts: true
+  ksr:
+    name: Borong
+    tts: true
+  kue:
+    name: Kuman
+    tts: true
+  kvn:
+    name: Border Kuna
+    tts: true
+  kwd:
+    name: Kwaio
+    tts: true
+  kwf:
+    name: Kwara'ae
+    tts: true
+  kwi:
+    name: Awa-Cuaiquer
+    tts: true
+  kyc:
+    name: Kyaka
+    tts: true
+  kyf:
+    name: Kouya
+    tts: true
+  kyg:
+    name: Keyagana
+    tts: true
+  kyq:
+    name: Kenga
+    tts: true
+  kyz:
+    name: Kayabi
+    tts: true
+  lac:
+    name: Lacandon
+    tts: true
+  lat:
+    name: Latin
+    tts: true
+  lex:
+    name: Luang
+    tts: true
+  lgl:
+    name: Wala
+    tts: true
+  lid:
+    name: Nyindrou
+    tts: true
+  llg:
+    name: Lole
+    tts: true
+  lww:
+    name: Lewo
+    tts: true
+  maj:
+    name: Jalapa De Diaz Mazatec
+    tts: true
+  maq:
+    name: Chiquihuitlan Mazatec
+    tts: true
+  maz:
+    name: Central Mazahua
+    tts: true
+  mbb:
+    name: Western Bukidnon Manobo
+    tts: true
+  mbc:
+    name: Macushi
+    tts: true
+  mbh:
+    name: Mangseng
+    tts: true
+  mbj:
+    name: Nadeb
+    tts: true
+  mbt:
+    name: Matigsalug Manobo
+    tts: true
+  mca:
+    name: Maca
+    tts: true
+  mcb:
+    name: Machiguenga
+    tts: true
+  mcd:
+    name: Sharanahua
+    tts: true
+  mco:
+    name: Coatlan Mixe
+    tts: true
+  mcp:
+    name: Makaa
+    tts: true
+  mcq:
+    name: Ese
+    tts: true
+  mdy:
+    name: Male (Ethiopia)
+    tts: true
+  med:
+    name: Melpa
+    tts: true
+  mee:
+    name: Mengen
+    tts: true
+  meq:
+    name: Merey
+    tts: true
+  met:
+    name: Mato
+    tts: true
+  mgh:
+    name: Makhuwa-Meetto
+    tts: true
+  mib:
+    name: Atatlan Mixe
+    tts: true
+  mie:
+    name: Ocotepec Mixe
+    tts: true
+  mih:
+    name: Chayuco Mixtec
+    tts: true
+  mil:
+    name: Penoles Mixtec
+    tts: true
+  mio:
+    name: Pinotepa Nacional Mixtec
+    tts: true
+  mit:
+    name: Southern Puebla Mixtec
+    tts: true
+  miz:
+    name: Coatzospan Mixtec
+    tts: true
+  mkl:
+    name: Mokole
+    tts: true
+  mkn:
+    name: Kupang Malay
+    tts: true
+  mop:
+    name: Mopan Maya
+    tts: true
+  mox:
+    name: Molima
+    tts: true
+  mpm:
+    name: Yosondua Mixtec
+    tts: true
+  mpp:
+    name: Migabac
+    tts: true
+  mpx:
+    name: Misima-Panaeati
+    tts: true
+  mqb:
+    name: Mbuko
+    tts: true
+  mqj:
+    name: Mamasa
+    tts: true
+  msy:
+    name: Aruamu
+    tts: true
+  mto:
+    name: Totontepec Mixe
+    tts: true
+  muy:
+    name: Muyang
+    tts: true
+  mxb:
+    name: Tezoatlan Mixtec
+    tts: true
+  mxq:
+    name: Juxtlahuaca Mixtec
+    tts: true
+  mxt:
+    name: Jamiltepec Mixtec
+    tts: true
+  myk:
+    name: Mamara Senoufo
+    tts: true
+  myy:
+    name: Macuna
+    tts: true
+  nab:
+    name: Southern Nambikuara
+    tts: true
+  nas:
+    name: Naasioi
+    tts: true
+  nca:
+    name: Iyo
+    tts: true
+  nch:
+    name: Central Huasteca Nahuatl
+    tts: true
+  ncj:
+    name: Northern Puebla Nahuatl
+    tts: true
+  ncl:
+    name: Michoacan Nahuatl
+    tts: true
+  ncu:
+    name: Chumburung
+    tts: true
+  ndj:
+    name: Ndamba
+    tts: true
+  nfa:
+    name: Dhao
+    tts: true
+  ngp:
+    name: Ngulu
+    tts: true
+  ngu:
+    name: Guerrero Nahuatl
+    tts: true
+  nhe:
+    name: Eastern Huasteca Nahuatl
+    tts: true
+  nhu:
+    name: Noone
+    tts: true
+  nhw:
+    name: Western Huasteca Nahuatl
+    tts: true
+  nhy:
+    name: Northern Oaxaca Nahuatl
+    tts: true
+  nin:
+    name: Ninzo
+    tts: true
+  nko:
+    name: Nkonya
+    tts: true
+  nld:
+    name: Dutch
+    tts: true
+  nlg:
+    name: Gela
+    tts: true
+  nnq:
+    name: Ngindo
+    tts: true
+  noa:
+    name: Woun Meu
+    tts: true
+  not:
+    name: Nomatsiguenga
+    tts: true
+  npl:
+    name: Southeastern Puebla Nahuatl
+    tts: true
+  obo:
+    name: Obo Manobo
+    tts: true
+  omw:
+    name: South Tairora
+    tts: true
+  ood:
+    name: Tohono O'odham
+    tts: true
+  ote:
+    name: Mezquital Otomi
+    tts: true
+  otq:
+    name: Queretaro Otomi
+    tts: true
+  pab:
+    name: Parecis
+    tts: true
+  pad:
+    name: Paumare
+    tts: true
+  pao:
+    name: Northern Paiute
+    tts: true
+  pib:
+    name: Yine
+    tts: true
+  pir:
+    name: Piratapuyo
+    tts: true
+  pjt:
+    name: Pitjantjatjara
+    tts: true
+  pls:
+    name: San Marcos Tlalcoyalco Popoloca
+    tts: true
+  poi:
+    name: Highland Popoluca
+    tts: true
+  pol:
+    name: Polish
+    tts: true
+  por:
+    name: Portuguese
+    tts: true
+  poy:
+    name: Pogolo
+    tts: true
+  prf:
+    name: Paranan
+    tts: true
+  ptu:
+    name: Bambam
+    tts: true
+  qub:
+    name: Huallaga Huanuco Quechua
+    tts: true
+  quf:
+    name: Lambayeque Quechua
+    tts: true
+  quh:
+    name: South Bolivian Quechua
+    tts: true
+  qul:
+    name: North Bolivian Quechua
+    tts: true
+  qvc:
+    name: Cajamarca Quechua
+    tts: true
+  qve:
+    name: Eastern Apurimac Quechua
+    tts: true
+  qvh:
+    name: Huamalies-Dos de Mayo Huanuco Quechua
+    tts: true
+  qvm:
+    name: Margos-Yarowilca-Lauricocha Quechua
+    tts: true
+  qvn:
+    name: North Junin Quechua
+    tts: true
+  qvs:
+    name: San Martin Quechua
+    tts: true
+  qvw:
+    name: Huaylla Wanca Quechua
+    tts: true
+  qvz:
+    name: Northern Pastaza Quichua
+    tts: true
+  qwh:
+    name: Huaylas Ancash Quechua
+    tts: true
+  qxh:
+    name: Panao Huanuco Quechua
+    tts: true
+  qxn:
+    name: Northern Conchucos Ancash Quechua
+    tts: true
+  qxo:
+    name: Southern Conchucos Ancash Quechua
+    tts: true
+  rai:
+    name: Ramoaaina
+    tts: true
+  rgu:
+    name: Ringgou
+    tts: true
+  rop:
+    name: Kriol
+    tts: true
+  rro:
+    name: Waima
+    tts: true
+  ruf:
+    name: Luguru
+    tts: true
+  rug:
+    name: Roviana
+    tts: true
+  rus:
+    name: Russian
+    tts: true
+  sab:
+    name: Buglere
+    tts: true
+  seh:
+    name: Sena
+    tts: true
+  sey:
+    name: Secoya
+    tts: true
+  sgb:
+    name: Mag-antsi Ayta
+    tts: true
+  shp:
+    name: Shipibo-Conibo
+    tts: true
+  sja:
+    name: Epena
+    tts: true
+  snn:
+    name: Siona
+    tts: true
+  snp:
+    name: Siane
+    tts: true
+  som:
+    name: Somali
+    tts: true
+  soy:
+    name: Miyobe
+    tts: true
+  spa:
+    name: Spanish
+    tts: true
+  spp:
+    name: Supyire Senoufo
+    tts: true
+  spy:
+    name: Sabaot
+    tts: true
+  sri:
+    name: Siriano
+    tts: true
+  srm:
+    name: Saramaccan
+    tts: true
+  srn:
+    name: Sranan Tongo
+    tts: true
+  stp:
+    name: Southeastern Tepehuan
+    tts: true
+  sus:
+    name: Susu
+    tts: true
+  suz:
+    name: Sunwar
+    tts: true
+  swe:
+    name: Swedish
+    tts: true
+  swh:
+    name: Swahili
+    tts: true
+  sxb:
+    name: Suba
+    tts: true
+  tac:
+    name: Western Tarahumara
+    tts: true
+  taj:
+    name: Eastern Tamang
+    tts: true
+  tav:
+    name: Tatuyo
+    tts: true
+  tbc:
+    name: Takia
+    tts: true
+  tbg:
+    name: North Tairora
+    tts: true
+  tbl:
+    name: Tboli
+    tts: true
+  tbz:
+    name: Ditammari
+    tts: true
+  tca:
+    name: Ticuna
+    tts: true
+  tcs:
+    name: Torres Strait Creole
+    tts: true
+  tee:
+    name: Huehuetla Tepehua
+    tts: true
+  tew:
+    name: Tewa (USA)
+    tts: true
+  tfr:
+    name: Teribe
+    tts: true
+  tgo:
+    name: Sudest
+    tts: true
+  tgp:
+    name: Tangoa
+    tts: true
+  tna:
+    name: Tacana
+    tts: true
+  tnk:
+    name: Kwamera
+    tts: true
+  tnn:
+    name: North Tanna
+    tts: true
+  tnp:
+    name: Whitesands
+    tts: true
+  toc:
+    name: Coyutla Totonac
+    tts: true
+  tos:
+    name: Highland Totonac
+    tts: true
+  tpi:
+    name: Tok Pisin
+    tts: true
+  tpt:
+    name: Tlachichilco Tepehua
+    tts: true
+  trc:
+    name: Copala Triqui
+    tts: true
+  ttc:
+    name: Tektiteko
+    tts: true
+  tte:
+    name: Bwanabwana
+    tts: true
+  tue:
+    name: Tuyuca
+    tts: true
+  tuf:
+    name: Central Tunebo
+    tts: true
+  tuo:
+    name: Tucano
+    tts: true
+  tur:
+    name: Turkish
+    tts: true
+  txq:
+    name: Tii
+    tts: true
+  txu:
+    name: Kayapo
+    tts: true
+  udu:
+    name: Uduk
+    tts: true
+  ukr:
+    name: Ukrainian
+    tts: true
+  upv:
+    name: Uripiv-Wala-Rano-Atchin
+    tts: true
+  ura:
+    name: Urarina
+    tts: true
+  urb:
+    name: Urubú-Kaapor
+    tts: true
+  urt:
+    name: Urat
+    tts: true
+  usp:
+    name: Uspanteco
+    tts: true
+  vid:
+    name: Vidunda
+    tts: true
+  vie:
+    name: Vietnamese
+    tts: true
+  vmy:
+    name: Ayautla Mazatec
+    tts: true
+  wap:
+    name: Wapishana
+    tts: true
+  wmw:
+    name: Mwani
+    tts: true
+  xed:
+    name: Hdi
+    tts: true
+  xon:
+    name: Konkomba
+    tts: true
+  xtd:
+    name: Diuxi-Tilantongo Mixtec
+    tts: true
+  xtm:
+    name: Magdalena Penasco Mixtec
+    tts: true
+  yaa:
+    name: Yaminahua
+    tts: true
+  yad:
+    name: Yagua
+    tts: true
+  yal:
+    name: Yalunka
+    tts: true
+  ycn:
+    name: Yucuna
+    tts: true
+  yka:
+    name: Yakan
+    tts: true
+  yre:
+    name: Yaoure
+    tts: true
+  yva:
+    name: Yawa
+    tts: true
+  zaa:
+    name: Sierra de Juarez Zapotec
+    tts: true
+  zab:
+    name: San Juan Guelavia Zapotec
+    tts: true
+  zac:
+    name: Ocotlan Zapotec
+    tts: true
+  zad:
+    name: Cajonos Zapotec
+    tts: true
+  zai:
+    name: Isthmus Zapotec
+    tts: true
+  zam:
+    name: Miahuatlan Zapotec
+    tts: true
+  zao:
+    name: Ozolotepec Zapotec
+    tts: true
+  zar:
+    name: Rincon Zapotec
+    tts: true
+  zas:
+    name: Santo Domingo Albarradas Zapotec
+    tts: true
+  zav:
+    name: Yatzachi Zapotec
+    tts: true
+  zaw:
+    name: Mitla Zapotec
+    tts: true
+  zca:
+    name: Coatecas Altas Zapotec
+    tts: true
+  zga:
+    name: Kinga
+    tts: true
+  ziw:
+    name: Zigula
+    tts: true
+  zlm:
+    name: Malay (individual language)
+    tts: true
+  zos:
+    name: Francisco Leon Zoque
+    tts: true
+  zpc:
+    name: Choapan Zapotec
+    tts: true
+  zpl:
+    name: Lachixio Zapotec
+    tts: true
+  zpm:
+    name: Mixtepec Zapotec
+    tts: true
+  zpo:
+    name: Amatlan Zapotec
+    tts: true
+  zpu:
+    name: Yalalag Zapotec
+    tts: true
+  zpz:
+    name: Texmelucan Zapotec
+    tts: true
+  ztq:
+    name: Quiavicuzas Zapotec
+    tts: true
+  zty:
+    name: Yatee Zapotec
+    tts: true
+  zyp:
+    name: Zyphe Chin
+    tts: true

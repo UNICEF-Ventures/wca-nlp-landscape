@@ -528,6 +528,10 @@ def get_css():
         /* Benchmark tables */
         .benchmark-table { margin-bottom: 1.5rem; }
         .benchmark-table th.num { text-align: right; }
+        .benchmark-table th { cursor: pointer; user-select: none; }
+        .benchmark-table th::after { content: ' ↕'; opacity: 0.3; font-size: 0.8em; }
+        .benchmark-table th.sorted-asc::after { content: ' ↑'; opacity: 1; }
+        .benchmark-table th.sorted-desc::after { content: ' ↓'; opacity: 1; }
 
         .detail-section h3 {
             font-size: 1.05rem;

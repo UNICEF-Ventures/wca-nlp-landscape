@@ -5,7 +5,8 @@ Countries: Ghana
 
 ## Observations
 
-(Add manual observations here)
+- **Use Cases Document**: Ghana AGOO platform priority language (important for Accra/coastal areas)
+- Ghana has active UNICEF NLP work
 
 ## Gaps
 

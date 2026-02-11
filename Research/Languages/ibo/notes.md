@@ -5,7 +5,7 @@ Countries: Equatorial Guinea, Nigeria
 
 ## Observations
 
-(Add manual observations here)
+- Major language in Nigeria with large speaker population
 
 ## Gaps
 

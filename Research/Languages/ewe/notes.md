@@ -5,7 +5,8 @@ Countries: Benin, Ghana, Togo
 
 ## Observations
 
-(Add manual observations here)
+- **Survey Focus 1** for Togo (2026 UNICEF WCAR Local Languages Survey)
+- Also in **Use Cases Document**: Ghana AGOO platform (3rd most listened language on current IVR platform)
 
 ## Gaps
 

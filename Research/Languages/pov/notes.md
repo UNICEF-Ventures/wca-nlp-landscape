@@ -5,7 +5,9 @@ Countries: Gambia, Guinea-Bissau, Senegal
 
 ## Observations
 
-(Add manual observations here)
+- **Survey Focus 1** for Guinea-Bissau (2026 UNICEF WCAR Local Languages Survey)
+- Added to focus list specifically based on survey recommendation (Feb 2026)
+- Kreyol-MT models are not tagged with "Translation" task so it doesn't show up on Hugging Face queries
 
 ## Gaps
 

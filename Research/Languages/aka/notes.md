@@ -5,7 +5,8 @@ Countries: Benin, Ghana
 
 ## Observations
 
-(Add manual observations here)
+- Major language in Ghana (Akan macrolanguage includes Twi and Fante)
+- Ghana has active UNICEF NLP work
 
 ## Gaps
 

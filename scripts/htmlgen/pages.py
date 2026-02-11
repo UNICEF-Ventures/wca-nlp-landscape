@@ -16,6 +16,41 @@ from .utils import (
     generate_unbenchmarked_models_section,
 )
 
+import re
+
+
+def _parse_notes_sections(notes_md):
+    """Parse notes.md into sections. Returns dict of {section_title: content}.
+    Only returns sections with real content (skips placeholders)."""
+    if not notes_md or not notes_md.strip():
+        return {}
+
+    sections = {}
+    current_title = None
+    current_lines = []
+
+    for line in notes_md.split('\n'):
+        # Match ## headings (skip the top-level # heading)
+        heading_match = re.match(r'^##\s+(.+)$', line)
+        if heading_match:
+            # Save previous section if it had content
+            if current_title is not None:
+                content = '\n'.join(current_lines).strip()
+                if content and '(Add' not in content and '(Note' not in content:
+                    sections[current_title] = content
+            current_title = heading_match.group(1).strip()
+            current_lines = []
+        elif current_title is not None:
+            current_lines.append(line)
+
+    # Save last section
+    if current_title is not None:
+        content = '\n'.join(current_lines).strip()
+        if content and '(Add' not in content and '(Note' not in content:
+            sections[current_title] = content
+
+    return sections
+
 
 # Load LUDP configuration
 def _load_ludp_config():
@@ -115,13 +150,17 @@ def generate_language_detail_page(iso_code, lang_data, actors):
     unbenchmarked = benchmarks.get('unbenchmarked_models', [])
     unbenchmarked_section = generate_unbenchmarked_models_section(unbenchmarked)
 
-    # Notes
+    # Notes - parse sections, only show ones with real content
+    notes_sections = _parse_notes_sections(notes)
     notes_section = ""
-    if notes and notes.strip() and '(Add' not in notes:
+    if notes_sections:
+        notes_items = []
+        for title, content in notes_sections.items():
+            notes_items.append(f"<h3>{title}</h3><div>{markdown_to_html(content)}</div>")
         notes_section = f"""
             <div class="detail-section">
                 <h2>📝 Notes</h2>
-                <div>{markdown_to_html(notes)}</div>
+                {''.join(notes_items)}
             </div>
         """
 

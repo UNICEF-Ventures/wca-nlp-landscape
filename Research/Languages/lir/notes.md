@@ -5,7 +5,8 @@ Countries: Liberia
 
 ## Observations
 
-(Add manual observations here)
+- **Survey Focus 1** for Liberia (2026 UNICEF WCAR Local Languages Survey)
+- Added to focus list specifically based on survey recommendation (Feb 2026)
 
 ## Gaps
 

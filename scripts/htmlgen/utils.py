@@ -26,9 +26,22 @@ def markdown_to_html(md_text):
     # Links
     html = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2" target="_blank">\1</a>', html)
 
-    # Line breaks to paragraphs
-    paragraphs = html.split('\n\n')
-    html = ''.join(f'<p>{p.strip()}</p>' for p in paragraphs if p.strip() and not p.strip().startswith('<h'))
+    # Convert list items and paragraphs
+    blocks = html.split('\n\n')
+    result_parts = []
+    for block in blocks:
+        block = block.strip()
+        if not block or block.startswith('<h'):
+            continue
+        lines = block.split('\n')
+        # Check if block is a list (all non-empty lines start with - )
+        list_lines = [l for l in lines if l.strip()]
+        if list_lines and all(l.strip().startswith('- ') for l in list_lines):
+            items = ''.join(f'<li>{l.strip()[2:]}</li>' for l in list_lines)
+            result_parts.append(f'<ul>{items}</ul>')
+        else:
+            result_parts.append(f'<p>{block}</p>')
+    html = ''.join(result_parts)
 
     return html
 

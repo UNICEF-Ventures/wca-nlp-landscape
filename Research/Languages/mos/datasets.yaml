@@ -2,26 +2,22 @@ asr:
   items:
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 240
+    downloads: 394
     likes: 11
   - name: goaicorp/moore-speech-bible
     url: https://huggingface.co/datasets/goaicorp/moore-speech-bible
-    downloads: 2
+    downloads: 1
     likes: 2
   - name: anyantudre/moore-speech-proverbes
     url: https://huggingface.co/datasets/anyantudre/moore-speech-proverbes
-    downloads: 2
+    downloads: 1
+    likes: 1
+  - name: anyantudre/moore-speech-devinettes
+    url: https://huggingface.co/datasets/anyantudre/moore-speech-devinettes
+    downloads: 1
     likes: 1
   - name: Minervus00/moore_audio_data
     url: https://huggingface.co/datasets/Minervus00/moore_audio_data
-    downloads: 2
-    likes: 1
-  - name: anyantudre/MooreSpeechCorpora
-    url: https://huggingface.co/datasets/anyantudre/MooreSpeechCorpora
-    downloads: 1
-    likes: 2
-  - name: anyantudre/moore-speech-devinettes
-    url: https://huggingface.co/datasets/anyantudre/moore-speech-devinettes
     downloads: 1
     likes: 1
   - name: goaicorp/goai-moore-speech-proverbes
@@ -40,6 +36,10 @@ asr:
     url: https://huggingface.co/datasets/goaicorp/GOAI-MooreSpeechCorpora
     downloads: 1
     likes: 0
+  - name: anyantudre/MooreSpeechCorpora
+    url: https://huggingface.co/datasets/anyantudre/MooreSpeechCorpora
+    downloads: 0
+    likes: 2
   - name: anyantudre/moore-speech-contes
     url: https://huggingface.co/datasets/anyantudre/moore-speech-contes
     downloads: 0
@@ -51,30 +51,26 @@ tts:
   items:
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 240
+    downloads: 394
     likes: 11
   - name: sawadogosalif/MooreFRCollections
     url: https://huggingface.co/datasets/sawadogosalif/MooreFRCollections
-    downloads: 5
+    downloads: 3
     likes: 4
   - name: goaicorp/moore-speech-bible
     url: https://huggingface.co/datasets/goaicorp/moore-speech-bible
-    downloads: 2
+    downloads: 1
     likes: 2
   - name: anyantudre/moore-speech-proverbes
     url: https://huggingface.co/datasets/anyantudre/moore-speech-proverbes
-    downloads: 2
+    downloads: 1
+    likes: 1
+  - name: anyantudre/moore-speech-devinettes
+    url: https://huggingface.co/datasets/anyantudre/moore-speech-devinettes
+    downloads: 1
     likes: 1
   - name: Minervus00/moore_audio_data
     url: https://huggingface.co/datasets/Minervus00/moore_audio_data
-    downloads: 2
-    likes: 1
-  - name: anyantudre/MooreSpeechCorpora
-    url: https://huggingface.co/datasets/anyantudre/MooreSpeechCorpora
-    downloads: 1
-    likes: 2
-  - name: anyantudre/moore-speech-devinettes
-    url: https://huggingface.co/datasets/anyantudre/moore-speech-devinettes
     downloads: 1
     likes: 1
   - name: goaicorp/goai-moore-speech-proverbes
@@ -93,6 +89,10 @@ tts:
     url: https://huggingface.co/datasets/goaicorp/GOAI-MooreSpeechCorpora
     downloads: 1
     likes: 0
+  - name: anyantudre/MooreSpeechCorpora
+    url: https://huggingface.co/datasets/anyantudre/MooreSpeechCorpora
+    downloads: 0
+    likes: 2
   - name: anyantudre/moore-speech-contes
     url: https://huggingface.co/datasets/anyantudre/moore-speech-contes
     downloads: 0

@@ -5,7 +5,8 @@ Countries: Guinea
 
 ## Observations
 
-(Add manual observations here)
+- **Survey Focus 2** for Gambia
+- Major language in Guinea
 
 ## Gaps
 

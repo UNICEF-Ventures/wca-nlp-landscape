@@ -5,7 +5,7 @@ Countries: Republic of Congo, Democratic Republic of Congo
 
 ## Observations
 
-(Add manual observations here)
+- Major lingua franca in western DRC and Republic of Congo
 
 ## Gaps
 

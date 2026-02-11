@@ -2,43 +2,71 @@ asr:
   items:
   - name: MahmoudAshraf/mms-300m-1130-forced-aligner
     url: https://huggingface.co/MahmoudAshraf/mms-300m-1130-forced-aligner
-    downloads: 2930000
-    likes: 69
-  - name: facebook/mms-1b-all
-    url: https://huggingface.co/facebook/mms-1b-all
-    downloads: 99200
-    likes: 171
+    downloads: 2760000
+    likes: 74
   - name: facebook/mms-1b-fl102
     url: https://huggingface.co/facebook/mms-1b-fl102
-    downloads: 84100
+    downloads: 68100
     likes: 28
+  - name: facebook/mms-1b-all
+    url: https://huggingface.co/facebook/mms-1b-all
+    downloads: 58100
+    likes: 188
   - name: facebook/mms-1b-l1107
     url: https://huggingface.co/facebook/mms-1b-l1107
-    downloads: 2520
+    downloads: 2060
     likes: 11
+  - name: UBC-NLP/Simba-H
+    url: https://huggingface.co/UBC-NLP/Simba-H
+    downloads: 83
+    likes: 0
+  - name: UBC-NLP/Simba-X
+    url: https://huggingface.co/UBC-NLP/Simba-X
+    downloads: 82
+    likes: 0
+  - name: UBC-NLP/Simba-W
+    url: https://huggingface.co/UBC-NLP/Simba-W
+    downloads: 49
+    likes: 0
+  - name: UBC-NLP/Simba-S
+    url: https://huggingface.co/UBC-NLP/Simba-S
+    downloads: 42
+    likes: 1
+  - name: UBC-NLP/Simba-M
+    url: https://huggingface.co/UBC-NLP/Simba-M
+    downloads: 28
+    likes: 0
+  - name: bc7ec356/heep-universal
+    url: https://huggingface.co/bc7ec356/heep-universal
+    downloads: 26
+    likes: 0
   - name: espnet/xeus
     url: https://huggingface.co/espnet/xeus
-    downloads: 41
+    downloads: 26
     likes: 143
+  - name: wredd/mms-nku-african
+    url: https://huggingface.co/wredd/mms-nku-african
+    downloads: 17
+    likes: 0
   - name: johntsi/ZeroSwot-Large_asr-cv_en-to-200
     url: https://huggingface.co/johntsi/ZeroSwot-Large_asr-cv_en-to-200
-    downloads: 9
+    downloads: 5
+    likes: 1
+  - name: dodziraynard/Shona2
+    url: https://huggingface.co/dodziraynard/Shona2
+    downloads: 5
     likes: 1
   - name: johntsi/ZeroSwot-Medium_asr-cv_en-to-200
     url: https://huggingface.co/johntsi/ZeroSwot-Medium_asr-cv_en-to-200
-    downloads: 5
+    downloads: 4
     likes: 0
   - name: johntsi/ZeroSwot-Medium_asr-mustc_en-to-200
     url: https://huggingface.co/johntsi/ZeroSwot-Medium_asr-mustc_en-to-200
     downloads: 4
     likes: 0
-  - name: dodziraynard/Shona2
-    url: https://huggingface.co/dodziraynard/Shona2
-    downloads: 4
-    likes: 1
   - name: dodziraynard/Shona
     url: https://huggingface.co/dodziraynard/Shona
-    downloads: 2
+    downloads: 4
     likes: 1
   - name: johntsi/ZeroSwot-Large_asr-mustc_en-to-200
     url: https://huggingface.co/johntsi/ZeroSwot-Large_asr-mustc_en-to-200
@@ -52,9 +80,9 @@ asr:
     url: https://huggingface.co/dodziraynard/whisper-small-ee
     downloads: 0
     likes: 0
-  total_count: 13
+  total_count: 20
   counts_by_code:
-    ee: 12
+    ee: 19
     ewe: 1
 tts:
   items:
@@ -67,192 +95,188 @@ tts:
     ee: 1
 translation:
   items:
-  - name: google/madlad400-3b-mt
-    url: https://huggingface.co/google/madlad400-3b-mt
-    downloads: 272000
-    likes: 178
   - name: facebook/nllb-200-distilled-600M
     url: https://huggingface.co/facebook/nllb-200-distilled-600M
-    downloads: 234000
-    likes: 839
+    downloads: 494000
+    likes: 854
+  - name: google/madlad400-3b-mt
+    url: https://huggingface.co/google/madlad400-3b-mt
+    downloads: 427000
+    likes: 183
   - name: facebook/nllb-200-distilled-1.3B
     url: https://huggingface.co/facebook/nllb-200-distilled-1.3B
-    downloads: 94800
-    likes: 162
+    downloads: 97400
+    likes: 173
   - name: facebook/nllb-200-3.3B
     url: https://huggingface.co/facebook/nllb-200-3.3B
-    downloads: 39500
-    likes: 408
+    downloads: 58300
+    likes: 420
   - name: Helsinki-NLP/opus-mt-mul-en
     url: https://huggingface.co/Helsinki-NLP/opus-mt-mul-en
-    downloads: 39100
-    likes: 85
+    downloads: 54600
+    likes: 87
   - name: facebook/nllb-200-1.3B
     url: https://huggingface.co/facebook/nllb-200-1.3B
-    downloads: 17400
+    downloads: 16400
     likes: 68
-  - name: jbochi/madlad400-3b-mt
-    url: https://huggingface.co/jbochi/madlad400-3b-mt
-    downloads: 2720
-    likes: 153
   - name: Helsinki-NLP/opus-mt-en-mul
     url: https://huggingface.co/Helsinki-NLP/opus-mt-en-mul
-    downloads: 2190
+    downloads: 3620
     likes: 26
-  - name: Helsinki-NLP/opus-mt-fr-ee
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-fr-ee
-    downloads: 121
-    likes: 0
+  - name: JustFrederik/nllb-200-distilled-600M-ct2-int8
+    url: https://huggingface.co/JustFrederik/nllb-200-distilled-600M-ct2-int8
+    downloads: 740
+    likes: 1
   - name: facebook/nllb-moe-54b
     url: https://huggingface.co/facebook/nllb-moe-54b
-    downloads: 110
+    downloads: 412
     likes: 123
+  - name: Helsinki-NLP/opus-mt-fr-ee
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-fr-ee
+    downloads: 127
+    likes: 0
+  - name: JustFrederik/nllb-200-distilled-1.3B-ct2-int8
+    url: https://huggingface.co/JustFrederik/nllb-200-distilled-1.3B-ct2-int8
+    downloads: 76
+    likes: 2
+  - name: ychenNLP/nllb-200-distilled-1.3B-easyproject
+    url: https://huggingface.co/ychenNLP/nllb-200-distilled-1.3B-easyproject
+    downloads: 60
+    likes: 2
   - name: Helsinki-NLP/opus-mt-ee-en
     url: https://huggingface.co/Helsinki-NLP/opus-mt-ee-en
-    downloads: 59
-    likes: 0
-  - name: Narsil/nllb
-    url: https://huggingface.co/Narsil/nllb
-    downloads: 20
-    likes: 2
-  - name: JustFrederik/nllb-200-distilled-600M-ct2
-    url: https://huggingface.co/JustFrederik/nllb-200-distilled-600M-ct2
-    downloads: 18
-    likes: 2
-  - name: Helsinki-NLP/opus-mt-ee-sv
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-ee-sv
-    downloads: 16
+    downloads: 27
     likes: 0
   - name: Helsinki-NLP/opus-mt-ee-fr
     url: https://huggingface.co/Helsinki-NLP/opus-mt-ee-fr
-    downloads: 15
+    downloads: 20
+    likes: 0
+  - name: Helsinki-NLP/opus-mt-alv-en
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-alv-en
+    downloads: 14
     likes: 0
   - name: Helsinki-NLP/opus-mt-en-ee
     url: https://huggingface.co/Helsinki-NLP/opus-mt-en-ee
-    downloads: 14
+    downloads: 13
     likes: 0
   - name: ychenNLP/nllb-200-3.3B-easyproject
     url: https://huggingface.co/ychenNLP/nllb-200-3.3B-easyproject
     downloads: 12
     likes: 8
-  - name: Helsinki-NLP/opus-mt-alv-en
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-alv-en
-    downloads: 9
+  - name: Helsinki-NLP/opus-mt-ee-de
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-ee-de
+    downloads: 11
     likes: 0
-  - name: cstr/madlad400-3b-ct2-int8
-    url: https://huggingface.co/cstr/madlad400-3b-ct2-int8
-    downloads: 6
-    likes: 1
-  - name: Helsinki-NLP/opus-mt-en-nic
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-en-nic
-    downloads: 4
-    likes: 0
-  - name: vonjack/opus-mt-mul-en-big
-    url: https://huggingface.co/vonjack/opus-mt-mul-en-big
-    downloads: 4
-    likes: 3
   - name: Helsinki-NLP/opus-mt-ee-fi
     url: https://huggingface.co/Helsinki-NLP/opus-mt-ee-fi
-    downloads: 3
+    downloads: 10
+    likes: 0
+  - name: Narsil/nllb
+    url: https://huggingface.co/Narsil/nllb
+    downloads: 9
+    likes: 2
+  - name: Helsinki-NLP/opus-mt-en-nic
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-en-nic
+    downloads: 8
+    likes: 0
+  - name: Helsinki-NLP/opus-mt-de-ee
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-de-ee
+    downloads: 7
+    likes: 0
+  - name: Helsinki-NLP/opus-mt-ee-sv
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-ee-sv
+    downloads: 7
     likes: 0
   - name: Helsinki-NLP/opus-mt-en-alv
     url: https://huggingface.co/Helsinki-NLP/opus-mt-en-alv
-    downloads: 2
+    downloads: 7
+    likes: 0
+  - name: Helsinki-NLP/opus-mt-ee-es
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-ee-es
+    downloads: 6
+    likes: 0
+  - name: Helsinki-NLP/opus-mt-nic-en
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-nic-en
+    downloads: 5
+    likes: 0
+  - name: ArthurZ/nllb-moe-128
+    url: https://huggingface.co/ArthurZ/nllb-moe-128
+    downloads: 4
     likes: 0
   - name: Helsinki-NLP/opus-mt-es-ee
     url: https://huggingface.co/Helsinki-NLP/opus-mt-es-ee
     downloads: 2
     likes: 0
-  - name: Helsinki-NLP/opus-mt-nic-en
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-nic-en
-    downloads: 2
-    likes: 0
-  - name: ArthurZ/nllb-moe-128
-    url: https://huggingface.co/ArthurZ/nllb-moe-128
-    downloads: 2
-    likes: 0
   - name: Helsinki-NLP/opus-mt-fi-ee
     url: https://huggingface.co/Helsinki-NLP/opus-mt-fi-ee
-    downloads: 1
+    downloads: 2
     likes: 0
+  - name: vonjack/opus-mt-mul-en-big
+    url: https://huggingface.co/vonjack/opus-mt-mul-en-big
+    downloads: 2
+    likes: 3
   - name: Helsinki-NLP/opus-mt-sv-ee
     url: https://huggingface.co/Helsinki-NLP/opus-mt-sv-ee
     downloads: 1
     likes: 0
-  - name: Helsinki-NLP/opus-mt-de-ee
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-de-ee
-    downloads: 0
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-ee-de
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-ee-de
-    downloads: 0
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-ee-es
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-ee-es
-    downloads: 0
-    likes: 0
-  total_count: 156
+  total_count: 161
   counts_by_code:
-    ee: 155
+    ee: 160
     ewe: 1
 llm:
   items:
   - name: google/madlad400-8b-lm
     url: https://huggingface.co/google/madlad400-8b-lm
-    downloads: 167
+    downloads: 371
     likes: 10
   - name: UBC-NLP/toucan-base
     url: https://huggingface.co/UBC-NLP/toucan-base
-    downloads: 46
-    likes: 3
+    downloads: 90
+    likes: 5
+  - name: Kolyadual/Newton-bot-3-text-mini-8B
+    url: https://huggingface.co/Kolyadual/Newton-bot-3-text-mini-8B
+    downloads: 30
+    likes: 1
   - name: ZeppelinCorp/Charm_15
     url: https://huggingface.co/ZeppelinCorp/Charm_15
-    downloads: 10
+    downloads: 9
     likes: 0
-  - name: Satyam-Singh/LLaVa-Large-Language-Virtual-Assistant-v2.1.6
-    url: https://huggingface.co/Satyam-Singh/LLaVa-Large-Language-Virtual-Assistant-v2.1.6
+  - name: jbochi/madlad400-8b-lm
+    url: https://huggingface.co/jbochi/madlad400-8b-lm
     downloads: 6
-    likes: 0
+    likes: 8
   - name: McGill-NLP/gemma-2-9b-it-Injongo-intent
     url: https://huggingface.co/McGill-NLP/gemma-2-9b-it-Injongo-intent
     downloads: 6
     likes: 0
-  - name: jbochi/madlad400-8b-lm
-    url: https://huggingface.co/jbochi/madlad400-8b-lm
-    downloads: 5
-    likes: 8
-  - name: goldfish-models/ewe_latn_10mb
-    url: https://huggingface.co/goldfish-models/ewe_latn_10mb
-    downloads: 5
-    likes: 0
-  - name: asigalov61/MIDI_Qwen2.5-0.5B-Instruct
-    url: https://huggingface.co/asigalov61/MIDI_Qwen2.5-0.5B-Instruct
-    downloads: 3
-    likes: 1
-  - name: McGill-NLP/gemma-2-9b-it-Injongo-slot
-    url: https://huggingface.co/McGill-NLP/gemma-2-9b-it-Injongo-slot
-    downloads: 3
-    likes: 0
   - name: masakhane/zephyr-7b-gemma-sft-african-alpaca
     url: https://huggingface.co/masakhane/zephyr-7b-gemma-sft-african-alpaca
-    downloads: 2
+    downloads: 5
     likes: 1
-  - name: goldfish-models/ewe_latn_full
-    url: https://huggingface.co/goldfish-models/ewe_latn_full
-    downloads: 2
+  - name: Satyam-Singh/LLaVa-Large-Language-Virtual-Assistant-v2.1.6
+    url: https://huggingface.co/Satyam-Singh/LLaVa-Large-Language-Virtual-Assistant-v2.1.6
+    downloads: 4
     likes: 0
-  - name: goldfish-models/ewe_latn_5mb
-    url: https://huggingface.co/goldfish-models/ewe_latn_5mb
-    downloads: 2
+  - name: McGill-NLP/gemma-2-9b-it-Injongo-slot
+    url: https://huggingface.co/McGill-NLP/gemma-2-9b-it-Injongo-slot
+    downloads: 4
     likes: 0
   - name: ghananlpcommunity/opani-chat_1b-merged-16bit
     url: https://huggingface.co/ghananlpcommunity/opani-chat_1b-merged-16bit
-    downloads: 1
+    downloads: 2
     likes: 0
+  - name: asigalov61/MIDI_Qwen2.5-0.5B-Instruct
+    url: https://huggingface.co/asigalov61/MIDI_Qwen2.5-0.5B-Instruct
+    downloads: 1
+    likes: 1
   - name: UBC-NLP/toucan-1.2B
     url: https://huggingface.co/UBC-NLP/toucan-1.2B
     downloads: 1
     likes: 1
+  - name: goldfish-models/ewe_latn_10mb
+    url: https://huggingface.co/goldfish-models/ewe_latn_10mb
+    downloads: 1
+    likes: 0
   - name: ChiomaBless/Chiomascreation
     url: https://huggingface.co/ChiomaBless/Chiomascreation
     downloads: 0
@@ -289,11 +313,19 @@ llm:
     url: https://huggingface.co/wikilangs/ee
     downloads: 0
     likes: 0
+  - name: goldfish-models/ewe_latn_full
+    url: https://huggingface.co/goldfish-models/ewe_latn_full
+    downloads: 0
+    likes: 0
   - name: UBC-NLP/cheetah-1.2B
     url: https://huggingface.co/UBC-NLP/cheetah-1.2B
     downloads: 0
     likes: 4
-  total_count: 25
+  - name: goldfish-models/ewe_latn_5mb
+    url: https://huggingface.co/goldfish-models/ewe_latn_5mb
+    downloads: 0
+    likes: 0
+  total_count: 26
   counts_by_code:
-    ee: 18
+    ee: 19
     ewe: 7

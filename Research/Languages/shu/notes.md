@@ -5,7 +5,7 @@ Countries: Cameroon, Central African Republic, Chad, Niger, Nigeria
 
 ## Observations
 
-(Add manual observations here)
+- **Survey Focus 1** for Chad (2026 UNICEF WCAR Local Languages Survey)
 
 ## Gaps
 

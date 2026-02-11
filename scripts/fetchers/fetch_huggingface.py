@@ -4,11 +4,20 @@ Adapted from speech-resource-finder/huggingface_search.py
 
 Fetches only the first page (30 items) but extracts the total count from
 the page to show accurate "X more on HuggingFace" links.
+
+Uses HTML scraping because the HuggingFace REST API does not support
+language filtering — only the web UI does.
 """
 
 import re
+import time
 import requests
 from bs4 import BeautifulSoup
+
+# Delay between HuggingFace requests to avoid rate limiting
+REQUEST_DELAY = 2.0  # seconds
+MAX_RETRIES = 5
+RETRY_BASE_DELAY = 10  # seconds (exponential backoff: 10, 20, 40, 80, 160)
 
 
 def parse_stat_number(stat_text):
@@ -53,6 +62,25 @@ def extract_total_count(html_content):
     return None
 
 
+def _fetch_page(url, headers):
+    """Fetch a HuggingFace page with retry and exponential backoff on 429."""
+    for attempt in range(MAX_RETRIES):
+        if attempt > 0:
+            wait = RETRY_BASE_DELAY * (2 ** (attempt - 1))
+            print(f"      Rate limited (429), retrying in {wait}s... (attempt {attempt + 1}/{MAX_RETRIES})")
+            time.sleep(wait)
+        else:
+            time.sleep(REQUEST_DELAY)
+
+        response = requests.get(url, headers=headers, timeout=15)
+        if response.status_code == 429:
+            continue
+        response.raise_for_status()
+        return response.text
+
+    raise requests.exceptions.HTTPError(f"Rate limited after {MAX_RETRIES} retries for {url}")
+
+
 def search_huggingface(iso_639_1, iso_639_3, search_type, pipeline_tag):
     """
     Search HuggingFace for models or datasets.
@@ -87,6 +115,10 @@ def search_huggingface(iso_639_1, iso_639_3, search_type, pipeline_tag):
     counts_by_code = {}  # Track count for each language code
     items_by_code = {}  # Track actual items found for each code (fallback for datasets)
 
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
+    }
+
     for code in codes_to_try:
         try:
             if search_type == 'models':
@@ -94,14 +126,7 @@ def search_huggingface(iso_639_1, iso_639_3, search_type, pipeline_tag):
             else:
                 url = f"https://huggingface.co/datasets?task_categories=task_categories:{pipeline_tag}&language=language:{code}&sort=trending"
 
-            headers = {
-                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
-            }
-
-            response = requests.get(url, headers=headers, timeout=10)
-            response.raise_for_status()
-
-            html_content = response.text
+            html_content = _fetch_page(url, headers)
 
             # Extract total count for this specific code
             page_total = extract_total_count(html_content)

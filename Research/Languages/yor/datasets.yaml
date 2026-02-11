@@ -1,196 +1,228 @@
 asr:
   items:
-  - name: google/fleurs
-    url: https://huggingface.co/datasets/google/fleurs
-    downloads: 23700
-    likes: 368
   - name: sarulab-speech/yodas2_sidon
     url: https://huggingface.co/datasets/sarulab-speech/yodas2_sidon
-    downloads: 22900
+    downloads: 26800
     likes: 55
-  - name: fsicoli/common_voice_15_0
-    url: https://huggingface.co/datasets/fsicoli/common_voice_15_0
-    downloads: 22800
-    likes: 5
+  - name: google/fleurs
+    url: https://huggingface.co/datasets/google/fleurs
+    downloads: 25500
+    likes: 372
   - name: fsicoli/common_voice_22_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_22_0
-    downloads: 22200
+    downloads: 21400
     likes: 9
+  - name: fsicoli/common_voice_15_0
+    url: https://huggingface.co/datasets/fsicoli/common_voice_15_0
+    downloads: 18200
+    likes: 5
   - name: google/xtreme_s
     url: https://huggingface.co/datasets/google/xtreme_s
-    downloads: 7730
+    downloads: 7760
     likes: 66
+  - name: google/WaxalNLP
+    url: https://huggingface.co/datasets/google/WaxalNLP
+    downloads: 7470
+    likes: 119
   - name: fsicoli/common_voice_17_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_17_0
-    downloads: 5670
+    downloads: 5390
     likes: 10
-  - name: suryatmodulus/yodas2_sidon
-    url: https://huggingface.co/datasets/suryatmodulus/yodas2_sidon
-    downloads: 3850
-    likes: 0
   - name: fsicoli/common_voice_16_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_16_0
-    downloads: 3840
+    downloads: 3530
+    likes: 2
+  - name: suryatmodulus/yodas2_sidon
+    url: https://huggingface.co/datasets/suryatmodulus/yodas2_sidon
+    downloads: 3340
+    likes: 0
+  - name: fsicoli/common_voice_21_0
+    url: https://huggingface.co/datasets/fsicoli/common_voice_21_0
+    downloads: 2880
     likes: 2
   - name: fsicoli/common_voice_19_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_19_0
-    downloads: 2760
+    downloads: 1600
     likes: 7
-  - name: fsicoli/common_voice_21_0
-    url: https://huggingface.co/datasets/fsicoli/common_voice_21_0
-    downloads: 2330
-    likes: 2
-  - name: google/WaxalNLP
-    url: https://huggingface.co/datasets/google/WaxalNLP
-    downloads: 1450
-    likes: 38
-  - name: facebook/2M-Belebele
-    url: https://huggingface.co/datasets/facebook/2M-Belebele
-    downloads: 328
-    likes: 12
-  - name: openslr/openslr
-    url: https://huggingface.co/datasets/openslr/openslr
-    downloads: 308
-    likes: 27
   - name: YuRiVeRTi/V1Q
     url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 270
+    downloads: 528
     likes: 3
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 240
+    downloads: 394
     likes: 11
-  - name: cahya/fleurs
-    url: https://huggingface.co/datasets/cahya/fleurs
-    downloads: 200
-    likes: 1
-  - name: hypaai/Hypa_Fleurs
-    url: https://huggingface.co/datasets/hypaai/Hypa_Fleurs
-    downloads: 125
-    likes: 3
-  - name: ankur02/bhojpuri
-    url: https://huggingface.co/datasets/ankur02/bhojpuri
-    downloads: 86
-    likes: 0
+  - name: facebook/2M-Belebele
+    url: https://huggingface.co/datasets/facebook/2M-Belebele
+    downloads: 386
+    likes: 12
+  - name: openslr/openslr
+    url: https://huggingface.co/datasets/openslr/openslr
+    downloads: 379
+    likes: 27
   - name: WueNLP/belebele-fleurs
     url: https://huggingface.co/datasets/WueNLP/belebele-fleurs
-    downloads: 76
+    downloads: 254
     likes: 9
+  - name: cahya/fleurs
+    url: https://huggingface.co/datasets/cahya/fleurs
+    downloads: 177
+    likes: 1
   - name: michsethowusu/yoruba-speech-text-parallel
     url: https://huggingface.co/datasets/michsethowusu/yoruba-speech-text-parallel
-    downloads: 72
+    downloads: 124
     likes: 1
   - name: benjaminogbonna/nigerian_common_voice_dataset
     url: https://huggingface.co/datasets/benjaminogbonna/nigerian_common_voice_dataset
-    downloads: 56
-    likes: 16
-  - name: fsicoli/common_voice_18_0
-    url: https://huggingface.co/datasets/fsicoli/common_voice_18_0
-    downloads: 52
-    likes: 6
+    downloads: 96
+    likes: 17
+  - name: hypaai/Hypa_Fleurs
+    url: https://huggingface.co/datasets/hypaai/Hypa_Fleurs
+    downloads: 90
+    likes: 3
+  - name: ankur02/bhojpuri
+    url: https://huggingface.co/datasets/ankur02/bhojpuri
+    downloads: 70
+    likes: 0
   - name: ankur02/fleurs
     url: https://huggingface.co/datasets/ankur02/fleurs
-    downloads: 50
+    downloads: 48
     likes: 0
   - name: developeranalyser/new_train_data
     url: https://huggingface.co/datasets/developeranalyser/new_train_data
+    downloads: 44
+    likes: 3
+  - name: fsicoli/common_voice_18_0
+    url: https://huggingface.co/datasets/fsicoli/common_voice_18_0
+    downloads: 40
+    likes: 6
+  - name: Ephraimmm/WaxalNLPr
+    url: https://huggingface.co/datasets/Ephraimmm/WaxalNLPr
     downloads: 38
-    likes: 2
+    likes: 0
   - name: Helloworld668/fleurs_clean
     url: https://huggingface.co/datasets/Helloworld668/fleurs_clean
-    downloads: 26
+    downloads: 24
     likes: 1
-  - name: french-datasets/espnet_yodas2
-    url: https://huggingface.co/datasets/french-datasets/espnet_yodas2
-    downloads: 23
+  - name: 0xzanuee/WaxalNLP
+    url: https://huggingface.co/datasets/0xzanuee/WaxalNLP
+    downloads: 21
+    likes: 0
+  - name: Phsntom/WaxalNLP
+    url: https://huggingface.co/datasets/Phsntom/WaxalNLP
+    downloads: 21
     likes: 0
   - name: french-datasets/espnet_yodas
     url: https://huggingface.co/datasets/french-datasets/espnet_yodas
-    downloads: 21
+    downloads: 19
     likes: 0
-  - name: OlameMend/soreva
-    url: https://huggingface.co/datasets/OlameMend/soreva
-    downloads: 20
-    likes: 6
-  - name: french-datasets/espnet_ml_superb_hf
-    url: https://huggingface.co/datasets/french-datasets/espnet_ml_superb_hf
-    downloads: 13
-    likes: 0
-  - name: tunngo/test_4
-    url: https://huggingface.co/datasets/tunngo/test_4
-    downloads: 7
+  - name: french-datasets/espnet_yodas2
+    url: https://huggingface.co/datasets/french-datasets/espnet_yodas2
+    downloads: 19
     likes: 0
   - name: satwikguptha/xtreme_s
     url: https://huggingface.co/datasets/satwikguptha/xtreme_s
-    downloads: 7
+    downloads: 19
+    likes: 0
+  - name: OlameMend/soreva
+    url: https://huggingface.co/datasets/OlameMend/soreva
+    downloads: 16
+    likes: 6
+  - name: AlaminI/nigerian_common_voice_dataset
+    url: https://huggingface.co/datasets/AlaminI/nigerian_common_voice_dataset
+    downloads: 8
+    likes: 0
+  - name: tunngo/test_4
+    url: https://huggingface.co/datasets/tunngo/test_4
+    downloads: 5
+    likes: 0
+  - name: french-datasets/espnet_ml_superb_hf
+    url: https://huggingface.co/datasets/french-datasets/espnet_ml_superb_hf
+    downloads: 5
     likes: 0
   - name: FarmerlineML/TTS_yor_36h
     url: https://huggingface.co/datasets/FarmerlineML/TTS_yor_36h
-    downloads: 2
+    downloads: 3
     likes: 0
   - name: asr-africa/ASR_Evaluation_dataset
     url: https://huggingface.co/datasets/asr-africa/ASR_Evaluation_dataset
-    downloads: 2
+    downloads: 1
     likes: 0
-  total_count: 33
+  total_count: 37
   counts_by_code:
-    yo: 19
-    yor: 14
+    yo: 20
+    yor: 17
 tts:
   items:
   - name: sarulab-speech/yodas2_sidon
     url: https://huggingface.co/datasets/sarulab-speech/yodas2_sidon
-    downloads: 22900
+    downloads: 26800
     likes: 55
-  - name: suryatmodulus/yodas2_sidon
-    url: https://huggingface.co/datasets/suryatmodulus/yodas2_sidon
-    downloads: 3850
-    likes: 0
   - name: google/WaxalNLP
     url: https://huggingface.co/datasets/google/WaxalNLP
-    downloads: 1450
-    likes: 38
+    downloads: 7470
+    likes: 119
+  - name: suryatmodulus/yodas2_sidon
+    url: https://huggingface.co/datasets/suryatmodulus/yodas2_sidon
+    downloads: 3340
+    likes: 0
   - name: sarulab-speech/commonvoice22_sidon
     url: https://huggingface.co/datasets/sarulab-speech/commonvoice22_sidon
-    downloads: 786
-    likes: 15
+    downloads: 973
+    likes: 16
   - name: YuRiVeRTi/V1Q
     url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 270
+    downloads: 528
     likes: 3
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 240
+    downloads: 394
     likes: 11
-  - name: hypaai/Hypa_Fleurs
-    url: https://huggingface.co/datasets/hypaai/Hypa_Fleurs
-    downloads: 125
-    likes: 3
   - name: WueNLP/belebele-fleurs
     url: https://huggingface.co/datasets/WueNLP/belebele-fleurs
-    downloads: 76
+    downloads: 254
     likes: 9
   - name: michsethowusu/yoruba-speech-text-parallel
     url: https://huggingface.co/datasets/michsethowusu/yoruba-speech-text-parallel
-    downloads: 72
+    downloads: 124
     likes: 1
   - name: benjaminogbonna/nigerian_common_voice_dataset
     url: https://huggingface.co/datasets/benjaminogbonna/nigerian_common_voice_dataset
-    downloads: 56
-    likes: 16
+    downloads: 96
+    likes: 17
+  - name: hypaai/Hypa_Fleurs
+    url: https://huggingface.co/datasets/hypaai/Hypa_Fleurs
+    downloads: 90
+    likes: 3
+  - name: Ephraimmm/WaxalNLPr
+    url: https://huggingface.co/datasets/Ephraimmm/WaxalNLPr
+    downloads: 38
+    likes: 0
+  - name: 0xzanuee/WaxalNLP
+    url: https://huggingface.co/datasets/0xzanuee/WaxalNLP
+    downloads: 21
+    likes: 0
+  - name: Phsntom/WaxalNLP
+    url: https://huggingface.co/datasets/Phsntom/WaxalNLP
+    downloads: 21
+    likes: 0
   - name: OlameMend/soreva
     url: https://huggingface.co/datasets/OlameMend/soreva
-    downloads: 20
+    downloads: 16
     likes: 6
-  - name: FarmerlineML/TTS_yor_36h
-    url: https://huggingface.co/datasets/FarmerlineML/TTS_yor_36h
-    downloads: 2
-    likes: 0
   - name: babs/yoruba_lagos_nw
     url: https://huggingface.co/datasets/babs/yoruba_lagos_nw
-    downloads: 0
+    downloads: 12
     likes: 0
-  total_count: 13
+  - name: AlaminI/nigerian_common_voice_dataset
+    url: https://huggingface.co/datasets/AlaminI/nigerian_common_voice_dataset
+    downloads: 8
+    likes: 0
+  - name: FarmerlineML/TTS_yor_36h
+    url: https://huggingface.co/datasets/FarmerlineML/TTS_yor_36h
+    downloads: 3
+    likes: 0
+  total_count: 17
   counts_by_code:
-    yo: 11
-    yor: 2
+    yo: 12
+    yor: 5

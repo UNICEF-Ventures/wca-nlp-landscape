@@ -5,7 +5,8 @@ Countries: Gambia, Mauritania, Senegal
 
 ## Observations
 
-(Add manual observations here)
+- Dominant language of Senegal, major regional lingua franca
+- Senegal not in survey but important WCA country (summit host)
 
 ## Gaps
 

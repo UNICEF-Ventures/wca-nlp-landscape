@@ -1,6 +1,18 @@
 asr:
-  total_count: 0
-  counts_by_code: {}
+  items:
+  - name: ghananlpcommunity/ga-speech-text-parallel-90k
+    url: https://huggingface.co/datasets/ghananlpcommunity/ga-speech-text-parallel-90k
+    downloads: 41
+    likes: 0
+  total_count: 1
+  counts_by_code:
+    gaa: 1
 tts:
-  total_count: 0
-  counts_by_code: {}
+  items:
+  - name: ghananlpcommunity/ga-speech-text-parallel-90k
+    url: https://huggingface.co/datasets/ghananlpcommunity/ga-speech-text-parallel-90k
+    downloads: 41
+    likes: 0
+  total_count: 1
+  counts_by_code:
+    gaa: 1

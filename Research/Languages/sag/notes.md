@@ -5,7 +5,9 @@ Countries: Central African Republic, Chad, Democratic Republic of Congo
 
 ## Observations
 
-(Add manual observations here)
+- National lingua franca of the Central African Republic
+- Sole widely-spoken local language for CAR coverage
+- Kreyol-MT models are not tagged with "Translation" task so it doesn't show up on Hugging Face queries
 
 ## Gaps
 

@@ -2,7 +2,7 @@
 
 ## Observations
 
-(Add manual observations here)
+- **Survey Focus 1** for Mali (2026 UNICEF WCAR Local Languages Survey)
 
 ## Gaps
 

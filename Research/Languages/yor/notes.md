@@ -2,7 +2,8 @@
 
 ## Observations
 
-(Add manual observations here)
+- Appears in **Survey Focus 1** for Benin (2026 UNICEF WCAR Local Languages Survey)
+- Major language in Nigeria and Benin with large speaker population
 
 ## Gaps
 

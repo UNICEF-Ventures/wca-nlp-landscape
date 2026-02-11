@@ -5,7 +5,9 @@ Countries: Democratic Republic of Congo
 
 ## Observations
 
-(Add manual observations here)
+- Major lingua franca in eastern DRC
+- Substantial difference with coastal Swahili (Kenya, Tanzania)
+- MT focused work by CLEAR Global (Models not on HuggingFace)
 
 ## Gaps
 

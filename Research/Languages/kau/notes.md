@@ -5,7 +5,7 @@ Countries: Cameroon, Chad, Niger, Nigeria
 
 ## Observations
 
-(Add manual observations here)
+- Major language in the Lake Chad Basin (Nigeria, Niger, Chad, Cameroon)
 
 ## Gaps
 

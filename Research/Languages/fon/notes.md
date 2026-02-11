@@ -5,7 +5,7 @@ Countries: Benin, Togo
 
 ## Observations
 
-(Add manual observations here)
+- **Survey Focus 1** for Benin (2026 UNICEF WCAR Local Languages Survey)
 
 ## Gaps
 

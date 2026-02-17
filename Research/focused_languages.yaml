@@ -7,7 +7,7 @@
 
 # Current focus languages
 
-# Focus list 1
+# Focus list 1 from survey
 - hau  # Hausa (Nigeria, Ghana, Niger, Cameroon...)
 - men  # Mende (Sierra Leone)
 - bam  # Bambara (Mali)
@@ -19,12 +19,16 @@
 - fon  # Fon (Benin)
 - pov  # Guinea-Bissau Creole
 
+# UNICEF additions 17.2
+- dyu # Dyoula
+- gux # Gourmantchema
+- snk # Soninke
 
 - yor  # Yoruba (Nigeria, Benin)
 - ibo  # Igbo (Nigeria, Equatorial guinea ...)
 - twi  # Twi (Ghana)
 - wol  # Wolof (Senegal, Gambia)
-- ful  # Fulfulde (widespread)
+- ful  # Fulfulde/Fula/Peul (widespread)
 - kri  # Krio (Sierra Leone)
 - tem  # Temne (Sierra Leone)
 - dag  # Dagbani (Ghana)

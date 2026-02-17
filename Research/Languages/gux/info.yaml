@@ -1,0 +1,45 @@
+name: Gourmanché
+iso_639_3: gux
+name_french: gourmanchéma
+altnames:
+- Goulimancema
+- Goulmacema
+- Goulmancema
+- Gourma
+- Gourmanchéma
+- Gourmantche
+- Gulimancema
+- Gulmancema
+- Gurma
+- Migulimancema
+countries:
+- Benin
+- Burkina Faso
+- Niger
+- Togo
+population: '900000'
+population_order: 10⁵
+endangerment: safe
+official_status: 🛂
+glottocode: gour1243
+glottocode_url: https://glottolog.org/resource/languoid/id/gour1243
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Gourmanch%C3%A9
+  family: Niger–Congo
+  speakers_l1: 1.5 million
+  writing_system: Latin
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=gux
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=gux
+  OLAC: http://www.language-archives.org/language/gux
+  WALS: https://wals.info/languoid/lect/wals_code_grm
+  Webonary: https://www.webonary.org/gulimancema/
+tech_resources:
+  AfroLID: true
+  Fineweb2: 💬
+  CMU Wilderness: true
+  BibleMMS-TTS: true
+  MMS-ASR: true
+  MMS-TTS: true
+  MMS-LID: true
+  Omnilingual ASR: true

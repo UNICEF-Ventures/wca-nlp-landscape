@@ -4,6 +4,7 @@ output/
 # Internal project docs
 Project documents/
 Source data aux/
+Event/
 CLAUDE.md
 TASK1_LANGUAGE_MODEL_MAPPING.md
 

@@ -1,6 +1,6 @@
 # Benchmark Coverage Matrix
 
-Generated: 2026-02-11
+Generated: 2026-02-17
 
 | ISO | ASR | TTS | MT | LLM | Language |
 |-----| --- | --- | --- | --- |---------|
@@ -14,14 +14,17 @@ Generated: 2026-02-11
 | mos |     |     |     |     | Mooré |
 | fon |     |     |     |     | Fon |
 | pov |     |     |  x  |     | Guinea-Bissau Creole |
+| dyu |  x  |     |     |     | Dyula |
+| gux |     |     |     |     | Gourmanché |
+| snk |     |     |     |     | Soninke |
+| twi |  x  |     |     |     | Twi |
+| dag |     |     |     |     | Dagbani |
 | yor |  x  |     |  x  |  x  | Yoruba |
 | ibo |  x  |     |     |  x  | Igbo |
-| twi |  x  |     |     |     | Twi |
 | wol |  x  |     |  x  |  x  | Wolof |
 | ful |  x  |     |     |     | Fula |
 | kri |     |     |  x  |     | Krio |
 | tem |     |     |     |     | Temne |
-| dag |     |     |     |     | Dagbani |
 | gaa |     |     |     |     | Ga |
 | kau |  x  |  x  |     |     | Kanuri |
 | swc |     |     |     |     | Congo Swahili |
@@ -30,6 +33,6 @@ Generated: 2026-02-11
 | mnk |     |     |     |     | Mandinka |
 | aka |     |     |     |     | Akan |
 | fuf |     |     |     |     | Pular |
-| 26 |  8  |  2  |  7  |  5  | Total |
+| 29 |  9  |  2  |  7  |  5  | Total |
 
-Coverage: 11/26 languages have at least one benchmark.
+Coverage: 12/29 languages have at least one benchmark.

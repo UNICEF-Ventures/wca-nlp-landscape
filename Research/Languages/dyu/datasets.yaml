@@ -1,0 +1,58 @@
+asr:
+  items:
+  - name: fsicoli/common_voice_22_0
+    url: https://huggingface.co/datasets/fsicoli/common_voice_22_0
+    downloads: 19400
+    likes: 10
+  - name: fsicoli/common_voice_15_0
+    url: https://huggingface.co/datasets/fsicoli/common_voice_15_0
+    downloads: 15100
+    likes: 5
+  - name: fsicoli/common_voice_17_0
+    url: https://huggingface.co/datasets/fsicoli/common_voice_17_0
+    downloads: 4410
+    likes: 10
+  - name: fsicoli/common_voice_16_0
+    url: https://huggingface.co/datasets/fsicoli/common_voice_16_0
+    downloads: 3490
+    likes: 2
+  - name: fsicoli/common_voice_21_0
+    url: https://huggingface.co/datasets/fsicoli/common_voice_21_0
+    downloads: 2820
+    likes: 2
+  - name: fsicoli/common_voice_19_0
+    url: https://huggingface.co/datasets/fsicoli/common_voice_19_0
+    downloads: 1390
+    likes: 7
+  - name: WueNLP/sib-fleurs
+    url: https://huggingface.co/datasets/WueNLP/sib-fleurs
+    downloads: 407
+    likes: 11
+  - name: fsicoli/common_voice_18_0
+    url: https://huggingface.co/datasets/fsicoli/common_voice_18_0
+    downloads: 38
+    likes: 6
+  - name: UBC-NLP/SimbaBench_dataset
+    url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
+    downloads: 34
+    likes: 0
+  total_count: 9
+  counts_by_code:
+    dyu: 9
+tts:
+  items:
+  - name: sarulab-speech/commonvoice22_sidon
+    url: https://huggingface.co/datasets/sarulab-speech/commonvoice22_sidon
+    downloads: 754
+    likes: 16
+  - name: WueNLP/sib-fleurs
+    url: https://huggingface.co/datasets/WueNLP/sib-fleurs
+    downloads: 407
+    likes: 11
+  - name: UBC-NLP/SimbaBench_dataset
+    url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
+    downloads: 34
+    likes: 0
+  total_count: 3
+  counts_by_code:
+    dyu: 3

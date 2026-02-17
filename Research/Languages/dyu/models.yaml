@@ -1,0 +1,182 @@
+asr:
+  items:
+  - name: espnet/xeus
+    url: https://huggingface.co/espnet/xeus
+    downloads: 21
+    likes: 144
+  - name: johntsi/ZeroSwot-Medium_asr-cv_en-to-200
+    url: https://huggingface.co/johntsi/ZeroSwot-Medium_asr-cv_en-to-200
+    downloads: 5
+    likes: 0
+  - name: UBC-NLP/Simba-SLID-49
+    url: https://huggingface.co/UBC-NLP/Simba-SLID-49
+    downloads: 4
+    likes: 0
+  - name: johntsi/ZeroSwot-Large_asr-cv_en-to-200
+    url: https://huggingface.co/johntsi/ZeroSwot-Large_asr-cv_en-to-200
+    downloads: 2
+    likes: 1
+  - name: johntsi/ZeroSwot-Large_asr-mustc_en-to-200
+    url: https://huggingface.co/johntsi/ZeroSwot-Large_asr-mustc_en-to-200
+    downloads: 2
+    likes: 0
+  - name: johntsi/ZeroSwot-Medium_asr-mustc_en-to-200
+    url: https://huggingface.co/johntsi/ZeroSwot-Medium_asr-mustc_en-to-200
+    downloads: 1
+    likes: 0
+  total_count: 6
+  counts_by_code:
+    dyu: 6
+tts:
+  total_count: 0
+  counts_by_code: {}
+translation:
+  items:
+  - name: facebook/nllb-200-distilled-600M
+    url: https://huggingface.co/facebook/nllb-200-distilled-600M
+    downloads: 570000
+    likes: 858
+  - name: google/madlad400-3b-mt
+    url: https://huggingface.co/google/madlad400-3b-mt
+    downloads: 360000
+    likes: 185
+  - name: facebook/nllb-200-distilled-1.3B
+    url: https://huggingface.co/facebook/nllb-200-distilled-1.3B
+    downloads: 99300
+    likes: 174
+  - name: facebook/nllb-200-3.3B
+    url: https://huggingface.co/facebook/nllb-200-3.3B
+    downloads: 60300
+    likes: 421
+  - name: facebook/nllb-200-1.3B
+    url: https://huggingface.co/facebook/nllb-200-1.3B
+    downloads: 18600
+    likes: 69
+  - name: jbochi/madlad400-3b-mt
+    url: https://huggingface.co/jbochi/madlad400-3b-mt
+    downloads: 3200
+    likes: 153
+  - name: JustFrederik/nllb-200-distilled-600M-ct2-int8
+    url: https://huggingface.co/JustFrederik/nllb-200-distilled-600M-ct2-int8
+    downloads: 743
+    likes: 1
+  - name: facebook/nllb-moe-54b
+    url: https://huggingface.co/facebook/nllb-moe-54b
+    downloads: 494
+    likes: 123
+  - name: winstxnhdw/nllb-200-distilled-1.3B-ct2-int8
+    url: https://huggingface.co/winstxnhdw/nllb-200-distilled-1.3B-ct2-int8
+    downloads: 305
+    likes: 6
+  - name: JustFrederik/nllb-200-distilled-1.3B-ct2-int8
+    url: https://huggingface.co/JustFrederik/nllb-200-distilled-1.3B-ct2-int8
+    downloads: 104
+    likes: 2
+  - name: michaelfeil/ct2fast-nllb-200-3.3B
+    url: https://huggingface.co/michaelfeil/ct2fast-nllb-200-3.3B
+    downloads: 46
+    likes: 14
+  - name: JustFrederik/nllb-200-distilled-600M-ct2
+    url: https://huggingface.co/JustFrederik/nllb-200-distilled-600M-ct2
+    downloads: 44
+    likes: 2
+  - name: JustFrederik/nllb-200-distilled-600M-ct2-float16
+    url: https://huggingface.co/JustFrederik/nllb-200-distilled-600M-ct2-float16
+    downloads: 30
+    likes: 0
+  - name: ychenNLP/nllb-200-3.3B-easyproject
+    url: https://huggingface.co/ychenNLP/nllb-200-3.3B-easyproject
+    downloads: 28
+    likes: 8
+  - name: michaelfeil/ct2fast-nllb-200-distilled-1.3B
+    url: https://huggingface.co/michaelfeil/ct2fast-nllb-200-distilled-1.3B
+    downloads: 22
+    likes: 1
+  - name: JustFrederik/nllb-200-3.3B-ct2-float16
+    url: https://huggingface.co/JustFrederik/nllb-200-3.3B-ct2-float16
+    downloads: 14
+    likes: 3
+  - name: ychenNLP/nllb-200-distilled-1.3B-easyproject
+    url: https://huggingface.co/ychenNLP/nllb-200-distilled-1.3B-easyproject
+    downloads: 12
+    likes: 2
+  - name: KomorebiAI/nllb-200-3.3B-int8-ct2
+    url: https://huggingface.co/KomorebiAI/nllb-200-3.3B-int8-ct2
+    downloads: 12
+    likes: 3
+  - name: KomorebiAI/nllb-200-1.3B-int8-ct2
+    url: https://huggingface.co/KomorebiAI/nllb-200-1.3B-int8-ct2
+    downloads: 11
+    likes: 2
+  - name: Narsil/nllb
+    url: https://huggingface.co/Narsil/nllb
+    downloads: 9
+    likes: 2
+  - name: ArthurZ/nllb-moe-128
+    url: https://huggingface.co/ArthurZ/nllb-moe-128
+    downloads: 9
+    likes: 0
+  - name: JustFrederik/nllb-200-distilled-1.3B-ct2-float16
+    url: https://huggingface.co/JustFrederik/nllb-200-distilled-1.3B-ct2-float16
+    downloads: 9
+    likes: 1
+  - name: JustFrederik/nllb-200-distilled-1.3B-ct2
+    url: https://huggingface.co/JustFrederik/nllb-200-distilled-1.3B-ct2
+    downloads: 7
+    likes: 0
+  - name: JustFrederik/nllb-200-1.3B-ct2-int8
+    url: https://huggingface.co/JustFrederik/nllb-200-1.3B-ct2-int8
+    downloads: 5
+    likes: 0
+  - name: JustFrederik/nllb-200-1.3B-ct2-float16
+    url: https://huggingface.co/JustFrederik/nllb-200-1.3B-ct2-float16
+    downloads: 5
+    likes: 0
+  - name: JustFrederik/nllb-200-1.3B-ct2
+    url: https://huggingface.co/JustFrederik/nllb-200-1.3B-ct2
+    downloads: 5
+    likes: 0
+  - name: KomorebiAI/nllb-200-3.3B-float16-ct2
+    url: https://huggingface.co/KomorebiAI/nllb-200-3.3B-float16-ct2
+    downloads: 5
+    likes: 3
+  - name: KomorebiAI/nllb-200-3.3B-ct2
+    url: https://huggingface.co/KomorebiAI/nllb-200-3.3B-ct2
+    downloads: 3
+    likes: 2
+  - name: KomorebiAI/nllb-200-1.3B-float16-ct2
+    url: https://huggingface.co/KomorebiAI/nllb-200-1.3B-float16-ct2
+    downloads: 3
+    likes: 1
+  - name: KomorebiAI/nllb-200-1.3B-ct2
+    url: https://huggingface.co/KomorebiAI/nllb-200-1.3B-ct2
+    downloads: 2
+    likes: 2
+  total_count: 139
+  counts_by_code:
+    dyu: 139
+llm:
+  items:
+  - name: google/madlad400-8b-lm
+    url: https://huggingface.co/google/madlad400-8b-lm
+    downloads: 356
+    likes: 10
+  - name: jbochi/madlad400-8b-lm
+    url: https://huggingface.co/jbochi/madlad400-8b-lm
+    downloads: 7
+    likes: 8
+  - name: goldfish-models/dyu_latn_full
+    url: https://huggingface.co/goldfish-models/dyu_latn_full
+    downloads: 1
+    likes: 0
+  - name: goldfish-models/dyu_latn_10mb
+    url: https://huggingface.co/goldfish-models/dyu_latn_10mb
+    downloads: 1
+    likes: 0
+  - name: goldfish-models/dyu_latn_5mb
+    url: https://huggingface.co/goldfish-models/dyu_latn_5mb
+    downloads: 1
+    likes: 0
+  total_count: 5
+  counts_by_code:
+    dyu: 5

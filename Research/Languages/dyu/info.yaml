@@ -1,0 +1,54 @@
+name: Dyula
+iso_639_3: dyu
+name_french: dioula
+altnames:
+- Dioula
+- Dioula Véhiculaire
+- Diula
+- Djula
+- Dyoula
+- Jula
+- Jula Kong
+- Julakan
+- Kong Jula
+- Tagboussikan
+- Trade Jula
+countries:
+- Burkina Faso
+- Cote d'Ivoire
+- Gambia
+- Guinea
+- Mali
+- Senegal
+population: '2500000'
+population_order: 10⁶+
+endangerment: safe
+official_status: 🛂
+glottocode: dyul1238
+glottocode_url: https://glottolog.org/resource/languoid/id/dyul1238
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Dyula_language
+  family: Niger–Congo
+  speakers_l1: 2.6 million
+  speakers_l2: 10 million
+  writing_system: N'Ko , Latin , Ajami
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=dyu
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=dyu
+  OLAC: http://www.language-archives.org/language/dyu
+  Grambank: https://grambank.clld.org/languages/dyul1238
+  WALS: https://wals.info/languoid/lect/wals_code_dyu
+  Webonary: https://www.webonary.org/dioula-bf/
+tech_resources:
+  AfroLID: true
+  Google Translate: '2024'
+  NLLB-200: true
+  Mozilla Common Voice: true
+  MADLAD-400 Docs: 483 MAD-Docs
+  MADLAD-400 Sentences: 19700 MAD-Sents
+  Fineweb2: 💬
+  CMU Wilderness: true
+  MMS-ASR: true
+  MMS-TTS: true
+  MMS-LID: true
+  Omnilingual ASR: true

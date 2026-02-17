@@ -1,0 +1,52 @@
+name: Soninke
+iso_639_3: snk
+name_french: soninké
+altnames:
+- Aswanek
+- Aswanik
+- Azer
+- Ceddo
+- Cheddo
+- Gangara
+- Genger
+- Kwara
+- Maraka
+- Marka
+- Markaajo
+- Markakan
+- Sarakole
+- Sarakolle
+- Sarakule
+countries:
+- Burkina Faso
+- Cote d'Ivoire
+- Gambia
+- Ghana
+- Guinea-Bissau
+- Mali
+- Mauritania
+- Senegal
+population: '1280000'
+population_order: 10⁶+
+endangerment: safe
+official_status: 🛂
+glottocode: soni1259
+glottocode_url: https://glottolog.org/resource/languoid/id/soni1259
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Soninke_language
+  family: Niger–Congo
+  speakers_l1: 2.3 million
+  writing_system: Latin Arabic ( Ajami ) N'ti script [ 2 ]
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=snk
+resource_page: http://kamu.si/soninke-resources
+acalan_commission: https://docs.google.com/spreadsheets/d/1jYC7TIy9UXTAO7hY3QLK6hliCk2hkozQo858N-gmACM/edit?gid=930323633
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=snk
+  OLAC: http://www.language-archives.org/language/snk
+  Grambank: https://grambank.clld.org/languages/soni1259
+  WALS: https://wals.info/languoid/lect/wals_code_snn
+  Webonary: https://www.asawan.org/fr/lexique_sonink%C3%A9
+tech_resources:
+  Mozilla Common Voice: ☑️
+  MMS-LID: true
+  Omnilingual ASR: true

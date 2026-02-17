@@ -1,0 +1,22 @@
+asr:
+  items:
+  - name: espnet/xeus
+    url: https://huggingface.co/espnet/xeus
+    downloads: 21
+    likes: 144
+  - name: sil-ai/wav2vec2-bloom-speech-snk
+    url: https://huggingface.co/sil-ai/wav2vec2-bloom-speech-snk
+    downloads: 0
+    likes: 1
+  total_count: 2
+  counts_by_code:
+    snk: 2
+tts:
+  total_count: 0
+  counts_by_code: {}
+translation:
+  total_count: 0
+  counts_by_code: {}
+llm:
+  total_count: 0
+  counts_by_code: {}

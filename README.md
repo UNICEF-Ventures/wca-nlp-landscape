@@ -1,10 +1,10 @@
 # UNICEF WCARO NLP Landscape
 
+> **Note:** This repository is no longer the primary location. The official repo and live site have moved to [UNICEF-Ventures/wca-nlp-landscape](https://github.com/UNICEF-Ventures/wca-nlp-landscape). Please refer to that repository for the latest updates.
+
 Mapping of NLP/language technology resources for West and Central Africa.
 
 **Status:** Work in progress. Not yet open for external contributions.
-
-**Live site:** https://translatorswb.github.io/wca-nlp-landscape/
 
 ---
 

@@ -857,11 +857,17 @@ evaluations:
       metrics:
       - name: WER
         value: 75.6
-  - model: openai/whisper-large-v3
-    model_url: https://huggingface.co/openai/whisper-large-v3
+  tts:
+  - model: UBC-NLP/Simba-TTS
+    model_url: https://huggingface.co/UBC-NLP/Simba-TTS
     results:
-    - test_set: FLEURS
+    - test_set: SimbaBench (bibleTTS, Lingala)
       source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
-        value: '?'
+        value: 35.97
+      - name: UTMOS
+        value: 3.92
+      - name: PESQ
+        value: 1.51

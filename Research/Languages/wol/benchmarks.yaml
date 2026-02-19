@@ -786,3 +786,135 @@ evaluations:
         value: 84.0
       - name: WER
         value: 134.0
+  - model: facebook/mms-1b-all
+    model_url: https://huggingface.co/facebook/mms-1b-all
+    results:
+    - test_set: SimbaBench (Kallaama)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 66.85
+      - name: CER
+        value: 39.72
+  - model: openai/whisper-large-v3
+    model_url: https://huggingface.co/openai/whisper-large-v3
+    results:
+    - test_set: SimbaBench (Kallaama)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 427.88
+      - name: CER
+        value: 356.73
+  - model: openai/whisper-large-v3-turbo
+    model_url: https://huggingface.co/openai/whisper-large-v3-turbo
+    results:
+    - test_set: SimbaBench (Kallaama)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 192.2
+      - name: CER
+        value: 151.51
+  - model: facebook/seamless-m4t-v2-large
+    model_url: https://huggingface.co/facebook/seamless-m4t-v2-large
+    results:
+    - test_set: SimbaBench (Kallaama)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 171.84
+      - name: CER
+        value: 162.56
+  - model: UBC-NLP/Simba-S
+    model_url: https://huggingface.co/UBC-NLP/Simba-S
+    results:
+    - test_set: SimbaBench (Kallaama)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 58.07
+      - name: CER
+        value: 43.05
+  - model: UBC-NLP/Simba-M
+    model_url: https://huggingface.co/UBC-NLP/Simba-M
+    results:
+    - test_set: SimbaBench (Kallaama)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 58.57
+      - name: CER
+        value: 34.37
+  - model: UBC-NLP/omniASR_LLM_7B_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_7B_v2
+    results:
+    - test_set: SimbaBench (Kallaama)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 58.34
+      - name: CER
+        value: 57.11
+  - model: UBC-NLP/omniASR_LLM_1B_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_1B_v2
+    results:
+    - test_set: SimbaBench (Kallaama)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 71.21
+      - name: CER
+        value: 76.68
+  - model: UBC-NLP/omniASR_LLM_300M_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_300M_v2
+    results:
+    - test_set: SimbaBench (Kallaama)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 61.77
+      - name: CER
+        value: 61.41
+  - model: UBC-NLP/omniASR_CTC_7B_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_7B_v2
+    results:
+    - test_set: SimbaBench (Kallaama)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 49.91
+      - name: CER
+        value: 39.0
+  - model: UBC-NLP/omniASR_CTC_3B_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_3B_v2
+    results:
+    - test_set: SimbaBench (Kallaama)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 49.26
+      - name: CER
+        value: 38.19
+  - model: UBC-NLP/omniASR_CTC_1B_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_1B_v2
+    results:
+    - test_set: SimbaBench (Kallaama)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 55.11
+      - name: CER
+        value: 40.18

@@ -36,24 +36,18 @@ Automated fetching of HuggingFace models/datasets, Common Voice stats, and Wikip
 
 | Done | Target | Progress                 |
 |------|--------|--------------------------|
-| 26   | 26     | ████████████████████ 100% |
+| 29   | 20     | ████████████████████ 145% |
 
-**Focus languages (26):**
-- Nigeria: Hausa (hau), Yoruba (yor), Igbo (ibo)
-- Ghana: Twi (twi), Akan (aka), Ewe (ewe), Dagbani (dag), Ga (gaa)
-- Mali: Bambara (bam)
-- Burkina Faso: Mooré (mos)
-- Senegal/Gambia: Wolof (wol), Mandinka (mnk)
-- Guinea: Pular (fuf)
-- Sierra Leone: Krio (kri), Mende (men), Temne (tem)
-- Liberia: Liberian Koloqua (lir)
-- Guinea-Bissau: Guinea-Bissau Creole (pov)
-- Benin: Fon (fon)
-- CAR: Sango (sag)
-- Chad: Shuwa Arabic (shu), Kanuri (kau)
-- Gabon/Eq. Guinea: Fang (fan)
-- DRC: Lingala (lin), Swahili Congo (swc)
-- Widespread: Fulfulde (ful)
+**Focus languages (29):**
+
+*Focus 1 — UNICEF country office survey (10):*
+- Hausa (hau), Mende (men), Bambara (bam), Ewe (ewe), Fang (fan), Liberian Koloqua (lir), Shuwa Arabic (shu), Mooré (mos), Fon (fon), Guinea-Bissau Creole (pov)
+
+*Focus 2 — UNICEF additions 17.2 (5):*
+- Dyula (dyu), Gourmantchéma (gux), Soninke (snk), Twi (twi), Dagbani (dag)
+
+*Focus 3 — CLEAR additional selection (14):*
+- Yoruba (yor), Igbo (ibo), Wolof (wol), Fulfulde (ful), Krio (kri), Temne (tem), Ga (gaa), Kanuri (kau), Congo Swahili (swc), Lingala (lin), Sango (sag), Mandinka (mnk), Akan (aka), Pular (fuf)
 
 ### 1.3 Actor Directory
 Profiles of organizations, research groups, and startups working on African language technology.
@@ -91,12 +85,15 @@ Profiles of organizations, research groups, and startups working on African lang
 26. CLEAR Global - Global, TWB Voice (Hausa/Kanuri/Shuwa Arabic), Gamayun, LT4CR, 55 HF models (conducting this consultancy)
 
 Languages missing dedicated actors:
-- Sierra Leone: Krio, Mende, Temne - no dedicated actors
-- Liberia: Liberian Koloqua - no dedicated actors
-- Guinea-Bissau: Guinea-Bissau Creole - no dedicated actors
-- DRC/Congo: Lingala, Congo Swahili - no dedicated actors (partially covered by CLEAR Global LT4CR + Gamayun)
-- CAR: Sango - no dedicated actors
-- Gabon/Equatorial Guinea: Fang - no dedicated actors
+- Sierra Leone: Mende (men), Temne (tem) - no dedicated actors
+- Liberia: Liberian Koloqua (lir) - no dedicated actors
+- Guinea-Bissau: Guinea-Bissau Creole (pov) - no dedicated actors
+- Guinea: Pular (fuf) - no dedicated actors (Fulfulde/ful partially covered by Jokalante, LAfricaMobile, Digital Umuganda)
+- CAR: Sango (sag) - no dedicated actors
+- Gabon/Eq. Guinea: Fang (fan) - no dedicated actors
+- Burkina Faso: Gourmantchéma (gux) - no dedicated actors
+- DRC/Congo: Lingala (lin), Congo Swahili (swc) - partially covered by CLEAR Global (LT4CR, Gamayun)
+- Note: Krio (kri) now partially covered by Farmerline; Soninke (snk) covered by MALIBA-AI and RobotsMali; Dyula (dyu) covered by Farmerline
 
 ### 1.4 Actor Prioritization (for Summit Invitations)
 
@@ -132,32 +129,75 @@ Compile existing benchmark results (FLORES, FLEURS, Common Voice, published pape
 
 | Status | Progress |
 |--------|----------|
-| Infrastructure done, data collection in progress | ████░░░░░░░░░░░░░░░░ 20% |
+| Infrastructure done, data collection in progress | ██████░░░░░░░░░░░░░░ 30% |
 
 - [x] Benchmark data infrastructure (two-file system, Source data/Evaluations/, rendering on language pages)
 - [x] Initial ASR data: Whisper FLEURS WER, CLEAR Global TWB Voice (Hausa, Kanuri)
 - [x] Initial TTS data: CLEAR Global TWB Voice TTS (Hausa, Kanuri) — scores entered
 - [x] PazaBench ASR results compiled (52 models, 39 African languages, CER+WER) — 7 focus languages covered: ful, hau, ibo, lin, twi, wol, yor
+- [x] Compile LLM benchmarks: AfroBench-Lite scores (24 models, 5 focus languages: hau, ibo, lin, wol, yor)
 - [ ] Compile ASR benchmarks (more Whisper variants, MMS, wav2vec2, etc.)
 - [ ] Compile MT benchmarks (NLLB, MADLAD, AfriNLLB etc.)
 - [ ] Compile TTS benchmarks (more models)
-- [x] Compile LLM benchmarks: AfroBench-Lite scores (24 models, 5 focus languages: hau, ibo, lin, wol, yor)
 - [ ] Gap analysis: which languages lack benchmarks
 - [ ] Conducting benchmark analyses where needed and possible
+- [x] **Webpage feature:** "Sources" tab on website listing all data sources and benchmark sources with status, languages, and links (`Source data/sources.yaml`)
 
-### Benchmark Data Sources
+### Benchmark Data Sources — Tracking
 
-| Benchmark | URL | Type | Notes |
-|-----------|-----|------|-------|
-| FLORES-200 | https://github.com/facebookresearch/flores | MT | 200 languages |
-| FLEURS | https://huggingface.co/datasets/google/fleurs | Speech | |
-| Common Voice | https://commonvoice.mozilla.org | ASR data | |
-| Whisper paper | OpenAI | ASR | Published WER by language |
-| MMS paper | Meta | ASR/TTS | Massively Multilingual Speech |
-| AfriSpeech | | ASR | African-focused |
-| Sahara | | Text | African language benchmark |
-| AfroBench-Lite | https://huggingface.co/spaces/McGill-NLP/AfroBench | LLM | 15 tasks, 22 datasets, 64 African languages |
-| PazaBench | https://huggingface.co/spaces/microsoft/paza-bench | ASR | 52 models, 39 African languages |
+**Status key:** INCLUDED = scores extracted and in the system | PLACEHOLDER = file exists but values are "?" | NOTED = identified, not yet extracted | PAPER = paper downloaded to `Project documents/`
+
+#### Already included (scores in the system)
+
+| # | Benchmark / Source | Paper/URL | Type | Focus langs covered | Status |
+|---|-------------------|-----------|------|-------------------|--------|
+| 1 | **Whisper** (FLEURS WER) | [arxiv 2212.04356](https://arxiv.org/abs/2212.04356) | ASR | hau, yor, lin (6 model sizes; large-v3 = "?") | INCLUDED |
+| 2 | **PazaBench** (Microsoft) | [HF Space](https://huggingface.co/spaces/microsoft/paza-bench) | ASR | dyu, ful, hau, ibo, lin, twi, wol, yor (52 models, CER+WER) | INCLUDED |
+| 3 | **AfroBench-Lite** (McGill-NLP) | [HF Space](https://huggingface.co/spaces/McGill-NLP/AfroBench) / [arxiv 2311.07978](https://arxiv.org/abs/2311.07978) | LLM | hau, ibo, lin, wol, yor (24 models, 15 NLP tasks aggregate) | INCLUDED |
+| 4 | **CLEAR Global TWB Voice** | HuggingFace model cards | ASR+TTS | hau, kau (Whisper & w2v-bert fine-tunes + TTS) | INCLUDED |
+| 5 | **Kreyol-MT** | [arxiv 2405.05376](https://arxiv.org/abs/2405.05376) | MT | kri, pov, sag (bible-based BLEU, caution on generalization) | INCLUDED |
+| 6 | **AfriNLLB** (FLORES-200) | AfricaNLP 2026 (pre-release) | MT | hau, yor, lin, wol + more | PLACEHOLDER ("?") |
+
+#### To be extracted (papers downloaded, need to pull scores)
+
+| # | Benchmark / Source | Paper/URL | Type | Potential focus langs | Status |
+|---|-------------------|-----------|------|----------------------|--------|
+| 7 | **Sahara** (UBC-NLP) | [arxiv 2502.19582](https://arxiv.org/abs/2502.19582) / [HF Space](https://huggingface.co/spaces/UBC-NLP/sahara) (broken) | LLM | 517 languages, 16 tasks (4 clusters: classification, generation, MCCR, tokens). 10 focus langs covered: hau, yor, ibo, wol, ful, lin, twi, aka, fon, bam. 24 models evaluated. **Scores in private dataset** (`UBC-NLP/sahara_leaderboard_results_private`). HF Space broken. Ask authors for access or score export. | BLOCKED — need author help |
+| 8 | **SimbaBench** (UBC-NLP) | [arxiv 2505.18436](https://arxiv.org/abs/2505.18436) / [EMNLP 2025](https://aclanthology.org/2025.emnlp-main.559/) / [HF Space](https://huggingface.co/spaces/UBC-NLP/SimbaBench) | ASR+TTS | 12 ASR models + 2 TTS models. 11 focus langs ASR (aka, dyu, fon, fuc, fuf, gaa, hau, ibo, twi, wol, yor), 6 TTS (aka, ewe, hau, lin, twi, yor). Data pulled from Space API. Parser: `scripts/parse_simbabench.py`. | INCLUDED ✓ verified |
+| 9 | **AfriqueLLM** (McGill-NLP) | [arxiv 2601.06395](https://arxiv.org/abs/2601.06395) / [HF Collection](https://huggingface.co/collections/McGill-NLP/afriquellm) | LLM | 20 African languages CPT. Training: hau, ibo, yor + 17 more. Eval on AfroBench-Lite. 5 base models (Llama 3.1, Gemma 3, Qwen 3). | PAPER |
+| 10 | **IrokoBench** | [arxiv 2406.03368](https://arxiv.org/abs/2406.03368) | LLM | 16 African languages: hau, ibo, yor, wol + more. AfriXNLI, AfriMGSM, AfriMMLU. 10 open + 4 proprietary LLMs. | PAPER |
+| 11 | **SERENGETI** (UBC-NLP) | [arxiv 2212.10785](https://arxiv.org/abs/2212.10785) | NLU (encoder) | 517 African languages, 8 NLU tasks, 20 datasets. Encoder model (not generative). 82.27 avg F1. | PAPER |
+| 12 | **Bambara ASR Leaderboard** (MALIBA-AI) | [HF Space](https://huggingface.co/spaces/MALIBA-AI/bambara-asr-leaderboard) | ASR | bam only. Multiple models compared. Need browser agent to scrape scores. | NOTED |
+
+#### Identified but not yet investigated
+
+| # | Benchmark / Source | Paper/URL | Type | Notes |
+|---|-------------------|-----------|------|-------|
+| 13 | **NLLB** (Meta) | [arxiv 2207.04672](https://arxiv.org/abs/2207.04672) | MT | FLORES-200 BLEU scores for 200 languages. Many WCA langs. High priority to extract. |
+| 14 | **MMS** (Meta) | [arxiv 2305.13516](https://arxiv.org/abs/2305.13516) | ASR+TTS+LID | Massively Multilingual Speech. 1100+ languages. Has published WER/CER. |
+| 15 | **Seamless** (Meta) | [arxiv 2312.05187](https://arxiv.org/abs/2312.05187) | ASR+MT+TTS | SeamlessM4T. Multimodal translation. |
+| 16 | **MADLAD-400** | [arxiv 2309.04662](https://arxiv.org/abs/2309.04662) | MT | 400+ languages. Translation model. |
+| 17 | **BLOOM/BLOOMZ** | [arxiv 2211.01786](https://arxiv.org/abs/2211.01786) / [HF evals](https://huggingface.co/datasets/bigscience/evaluation-results) | LLM | 176B multilingual model. Has eval results dataset on HF. |
+| 18 | **LLaMAX** | [HF](https://huggingface.co/LLaMAX/LLaMAX3-8B-Alpaca) | LLM | Multilingual LLaMA extension. |
+| 19 | **Goldfish** | [arxiv 2408.10441](https://arxiv.org/abs/2408.10441) / [HF](https://huggingface.co/goldfish-models) | LLM | Low-resource language models. |
+| 20 | **FLORES-200** | [github](https://github.com/facebookresearch/flores) | MT test set | Standard MT evaluation dataset. 200 languages. |
+| 21 | **FLEURS** | [HF](https://huggingface.co/datasets/google/fleurs) | Speech test set | Standard speech evaluation dataset. |
+| 22 | **Common Voice** | [commonvoice.mozilla.org](https://commonvoice.mozilla.org) | ASR data | Community speech dataset. Stats already integrated. |
+| 23 | **AfriSpeech** | | ASR | African-focused speech benchmark. |
+
+### Papers downloaded (in `Project documents/`, not in repo)
+
+- `afriquellm.pdf` — AfriqueLLM (McGill-NLP, 2026)
+- `sahara.pdf` — Sahara benchmark (UBC-NLP, ACL 2025)
+- `simbabench.pdf` — SimbaBench / Voice of a Continent (UBC-NLP, EMNLP 2025)
+- `serengeti.pdf` — SERENGETI (UBC-NLP, 2022)
+- `irokobench.pdf` — IrokoBench (Adelani et al., 2024)
+- `afrobench.pdf` — AfroBench (McGill-NLP)
+- `afrimcqa.pdf` — AfriMCQA
+- `afrimteb_e5.pdf` — AfriMTEB
+- `waxal-paper.pdf` — WAXAL
+- `kreyolMT.pdf` — Kreyol-MT
+- `omnilingual-paper.pdf` — Omnilingual
 
 ---
 
@@ -197,6 +237,25 @@ Advisory support for actor selection, agenda input, and presentation of findings
 ---
 
 ## Recent Updates
+
+### 2026-02-19
+- Added **Sources tab** to website with two sections: Data Sources (7 general sources) and Benchmark Sources (22 tracked). Each benchmark shows type, focus languages covered, and color-coded status badge (INCLUDED/PLACEHOLDER/TO_EXTRACT/NOTED/BLOCKED). Source metadata lives in `Source data/sources.yaml`.
+- SimbaBench scores extracted and included (12 ASR + 2 TTS models, 11 focus languages for ASR, 6 for TTS)
+
+### 2026-02-18
+- Discovered **EQUATE Index** — Language AI Readiness Index from Cambridge University ([equate-index.ai](https://www.equate-index.ai/en), [arxiv 2602.12018](https://arxiv.org/abs/2602.12018)). Covers 6003 languages across 3 dimensions: AI resources, digital infrastructure, socioeconomics. CSV data downloaded to `Source data/equate_index_data.csv`. Useful as contextual framing for the landscape report (not a model benchmark).
+- Meeting with Nico: all outputs approved, continue benchmark work. Will hire engineer for manual benchmark evaluations.
+- Focus language tiers clarified: Group 1 (UNICEF survey, 10 langs) + Group 2 (UNICEF additions, 5 langs) = priority for manual benchmarks. Group 3 (CLEAR selection, 14 langs) = important but lower priority for manual work.
+- Comprehensive benchmark source tracking added to PROGRESS.md (23 sources tracked: 6 included, 6 to extract, 11 to investigate)
+- Downloaded 5 new papers: AfriqueLLM, Sahara, SimbaBench, SERENGETI, IrokoBench
+- New benchmark sources identified from notes:
+  - Sahara (UBC-NLP): 517 languages, 16 NLP tasks, ACL 2025
+  - SimbaBench (UBC-NLP): 61 languages, ASR/TTS/SLID, EMNLP 2025
+  - AfriqueLLM (McGill-NLP): 20 African language LLMs, AfroBench-Lite eval
+  - IrokoBench: 16 African languages, LLM benchmark (AfriXNLI, AfriMGSM, AfriMMLU)
+  - SERENGETI: 517 languages, encoder NLU model
+  - Bambara ASR Leaderboard (MALIBA-AI): bam ASR models
+- TODO: Extract scores from newly identified papers (priority: SimbaBench for ASR/TTS, Sahara for LLM, NLLB for MT)
 
 ### 2026-02-06
 - Compiled AfroBench-Lite LLM benchmark scores into `Source data/Evaluations/afrobench_lite.yaml`

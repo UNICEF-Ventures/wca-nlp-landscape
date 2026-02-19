@@ -1,1 +1,15 @@
-{}
+evaluations:
+  tts:
+  - model: facebook/mms-tts
+    model_url: https://huggingface.co/facebook/mms-tts
+    results:
+    - test_set: SimbaBench (bibleTTS, Ewe)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 15.94
+      - name: UTMOS
+        value: 3.01
+      - name: PESQ
+        value: 1.5

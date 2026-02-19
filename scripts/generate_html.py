@@ -16,22 +16,23 @@ Output:
 from datetime import datetime
 
 from htmlgen.constants import OUTPUT_DIR
-from htmlgen.data import load_all_languages, load_all_actors, load_wca_languages
+from htmlgen.data import load_all_languages, load_all_actors, load_wca_languages, load_sources
 from htmlgen.styles import get_css
 from htmlgen.tabs import (
     generate_focus_languages_tab, generate_all_languages_tab,
-    generate_countries_tab, generate_actors_tab,
+    generate_countries_tab, generate_actors_tab, generate_sources_tab,
 )
 from htmlgen.pages import generate_language_detail_page, generate_actor_detail_page
 
 
-def generate_main_html(languages, actors, wca_languages):
+def generate_main_html(languages, actors, wca_languages, sources):
     """Generate the main index.html page."""
 
     focus_tab = generate_focus_languages_tab(languages, actors)
     all_tab = generate_all_languages_tab(wca_languages, languages)
     actors_tab = generate_actors_tab(actors)
     countries_tab = generate_countries_tab(wca_languages)
+    sources_tab = generate_sources_tab(sources)
 
     total_focus = len(languages)
     total_wca = len(wca_languages)
@@ -66,6 +67,7 @@ def generate_main_html(languages, actors, wca_languages):
         <button class="tab" data-tab="all">All Languages ({total_wca})</button>
         <button class="tab" data-tab="countries">Countries ({total_countries})</button>
         <button class="tab" data-tab="actors">Actors ({total_actors})</button>
+        <button class="tab" data-tab="sources">Sources</button>
     </div>
 
     <div id="focus" class="tab-content active">
@@ -82,6 +84,10 @@ def generate_main_html(languages, actors, wca_languages):
 
     <div id="actors" class="tab-content">
         {actors_tab}
+    </div>
+
+    <div id="sources" class="tab-content">
+        {sources_tab}
     </div>
 
     <footer>
@@ -203,10 +209,12 @@ def main():
     languages = load_all_languages()
     actors = load_all_actors()
     wca_languages = load_wca_languages()
+    sources = load_sources()
 
     print(f"\nLoaded {len(languages)} focus languages")
     print(f"Loaded {len(wca_languages)} WCA languages")
     print(f"Loaded {len(actors)} actors")
+    print(f"Loaded {len(sources['data_sources'])} data sources, {len(sources['benchmark_sources'])} benchmark sources")
 
     # Create output directories
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -214,7 +222,7 @@ def main():
     (OUTPUT_DIR / "actor").mkdir(parents=True, exist_ok=True)
 
     # Generate main index.html
-    main_html = generate_main_html(languages, actors, wca_languages)
+    main_html = generate_main_html(languages, actors, wca_languages, sources)
     index_path = OUTPUT_DIR / "index.html"
     with open(index_path, 'w') as f:
         f.write(main_html)

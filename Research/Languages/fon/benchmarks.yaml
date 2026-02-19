@@ -1,1 +1,134 @@
-{}
+evaluations:
+  asr:
+  - model: facebook/mms-1b-all
+    model_url: https://huggingface.co/facebook/mms-1b-all
+    results:
+    - test_set: SimbaBench (ALFFA)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 86.21
+      - name: CER
+        value: 31.62
+  - model: openai/whisper-large-v3
+    model_url: https://huggingface.co/openai/whisper-large-v3
+    results:
+    - test_set: SimbaBench (ALFFA)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 344.41
+      - name: CER
+        value: 312.17
+  - model: openai/whisper-large-v3-turbo
+    model_url: https://huggingface.co/openai/whisper-large-v3-turbo
+    results:
+    - test_set: SimbaBench (ALFFA)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 135.9
+      - name: CER
+        value: 124.25
+  - model: facebook/seamless-m4t-v2-large
+    model_url: https://huggingface.co/facebook/seamless-m4t-v2-large
+    results:
+    - test_set: SimbaBench (ALFFA)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 132.78
+      - name: CER
+        value: 115.56
+  - model: UBC-NLP/Simba-S
+    model_url: https://huggingface.co/UBC-NLP/Simba-S
+    results:
+    - test_set: SimbaBench (ALFFA)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 42.12
+      - name: CER
+        value: 14.29
+  - model: UBC-NLP/Simba-M
+    model_url: https://huggingface.co/UBC-NLP/Simba-M
+    results:
+    - test_set: SimbaBench (ALFFA)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 42.49
+      - name: CER
+        value: 11.77
+  - model: UBC-NLP/omniASR_LLM_7B_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_7B_v2
+    results:
+    - test_set: SimbaBench (ALFFA)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 86.71
+      - name: CER
+        value: 35.01
+  - model: UBC-NLP/omniASR_LLM_1B_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_1B_v2
+    results:
+    - test_set: SimbaBench (ALFFA)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 85.11
+      - name: CER
+        value: 33.49
+  - model: UBC-NLP/omniASR_LLM_300M_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_300M_v2
+    results:
+    - test_set: SimbaBench (ALFFA)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 82.84
+      - name: CER
+        value: 31.67
+  - model: UBC-NLP/omniASR_CTC_7B_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_7B_v2
+    results:
+    - test_set: SimbaBench (ALFFA)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 83.29
+      - name: CER
+        value: 32.92
+  - model: UBC-NLP/omniASR_CTC_3B_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_3B_v2
+    results:
+    - test_set: SimbaBench (ALFFA)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 85.37
+      - name: CER
+        value: 33.51
+  - model: UBC-NLP/omniASR_CTC_1B_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_1B_v2
+    results:
+    - test_set: SimbaBench (ALFFA)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 90.6
+      - name: CER
+        value: 37.36

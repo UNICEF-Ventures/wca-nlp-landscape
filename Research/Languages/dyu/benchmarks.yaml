@@ -582,3 +582,135 @@ evaluations:
         value: 60.0
       - name: WER
         value: 112.0
+  - model: facebook/mms-1b-all
+    model_url: https://huggingface.co/facebook/mms-1b-all
+    results:
+    - test_set: SimbaBench (Common Voice 19)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 66.59
+      - name: CER
+        value: 16.45
+  - model: openai/whisper-large-v3
+    model_url: https://huggingface.co/openai/whisper-large-v3
+    results:
+    - test_set: SimbaBench (Common Voice 19)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 293.2
+      - name: CER
+        value: 192.21
+  - model: openai/whisper-large-v3-turbo
+    model_url: https://huggingface.co/openai/whisper-large-v3-turbo
+    results:
+    - test_set: SimbaBench (Common Voice 19)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 108.37
+      - name: CER
+        value: 44.4
+  - model: facebook/seamless-m4t-v2-large
+    model_url: https://huggingface.co/facebook/seamless-m4t-v2-large
+    results:
+    - test_set: SimbaBench (Common Voice 19)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 150.85
+      - name: CER
+        value: 101.24
+  - model: UBC-NLP/Simba-S
+    model_url: https://huggingface.co/UBC-NLP/Simba-S
+    results:
+    - test_set: SimbaBench (Common Voice 19)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 77.83
+      - name: CER
+        value: 23.04
+  - model: UBC-NLP/Simba-M
+    model_url: https://huggingface.co/UBC-NLP/Simba-M
+    results:
+    - test_set: SimbaBench (Common Voice 19)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 67.86
+      - name: CER
+        value: 22.17
+  - model: UBC-NLP/omniASR_LLM_7B_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_7B_v2
+    results:
+    - test_set: SimbaBench (Common Voice 19)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 37.94
+      - name: CER
+        value: 9.03
+  - model: UBC-NLP/omniASR_LLM_1B_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_1B_v2
+    results:
+    - test_set: SimbaBench (Common Voice 19)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 50.29
+      - name: CER
+        value: 12.47
+  - model: UBC-NLP/omniASR_LLM_300M_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_300M_v2
+    results:
+    - test_set: SimbaBench (Common Voice 19)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 45.41
+      - name: CER
+        value: 11.76
+  - model: UBC-NLP/omniASR_CTC_7B_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_7B_v2
+    results:
+    - test_set: SimbaBench (Common Voice 19)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 55.73
+      - name: CER
+        value: 15.82
+  - model: UBC-NLP/omniASR_CTC_3B_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_3B_v2
+    results:
+    - test_set: SimbaBench (Common Voice 19)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 55.74
+      - name: CER
+        value: 13.46
+  - model: UBC-NLP/omniASR_CTC_1B_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_1B_v2
+    results:
+    - test_set: SimbaBench (Common Voice 19)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 60.49
+      - name: CER
+        value: 14.89

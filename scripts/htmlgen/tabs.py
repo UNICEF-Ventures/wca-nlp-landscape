@@ -614,3 +614,122 @@ def generate_actors_tab(actors):
             {''.join(cards)}
         </div>
     """
+
+
+def generate_sources_tab(sources):
+    """Generate the Sources tab content."""
+    data_sources = sources.get('data_sources', [])
+    benchmark_sources = sources.get('benchmark_sources', [])
+
+    # --- Section 1: Data Sources ---
+    ds_rows = []
+    for ds in data_sources:
+        name = ds.get('name', '')
+        url = ds.get('url', '')
+        description = ds.get('description', '')
+        ds_type = ds.get('type', '')
+
+        name_html = f'<a href="{url}" target="_blank">{name}</a>' if url else name
+
+        type_labels = {
+            'reference': ('Reference', '#e3f2fd', '#1565c0'),
+            'speech_data': ('Speech Data', '#fff3e0', '#e65100'),
+            'model_hub': ('Model Hub', '#f3e5f5', '#7b1fa2'),
+            'model_coverage': ('Model Coverage', '#e8f5e9', '#2e7d32'),
+        }
+        label, bg, color = type_labels.get(ds_type, (ds_type, '#f5f5f5', '#616161'))
+        type_badge = f'<span style="background:{bg}; color:{color}; padding:0.15rem 0.5rem; border-radius:4px; font-size:0.8rem;">{label}</span>'
+
+        ds_rows.append(f"""
+            <tr>
+                <td>{name_html}</td>
+                <td>{type_badge}</td>
+                <td>{description}</td>
+            </tr>
+        """)
+
+    # --- Section 2: Benchmark Sources ---
+    status_styles = {
+        'included': ('INCLUDED', '#d4edda', '#155724'),
+        'placeholder': ('PLACEHOLDER', '#fff3cd', '#856404'),
+        'to_extract': ('TO EXTRACT', '#fff3cd', '#856404'),
+        'noted': ('NOTED', '#e2e3e5', '#383d41'),
+        'blocked': ('BLOCKED', '#f8d7da', '#721c24'),
+    }
+
+    bs_rows = []
+    for bs in benchmark_sources:
+        name = bs.get('name', '')
+        url = bs.get('url', '')
+        bs_type = bs.get('type', '')
+        langs = bs.get('languages_covered', [])
+        status = bs.get('status', '')
+        description = bs.get('description', '')
+
+        name_html = f'<a href="{url}" target="_blank">{name}</a>' if url else name
+
+        # Status badge
+        label, bg, color = status_styles.get(status, (status.upper(), '#e2e3e5', '#383d41'))
+        status_badge = f'<span style="background:{bg}; color:{color}; padding:0.15rem 0.5rem; border-radius:4px; font-size:0.8rem; font-weight:500;">{label}</span>'
+
+        # Languages
+        langs_html = ', '.join(f'<span class="iso-code">{l}</span>' for l in langs) if langs else '<span style="color:#999;">—</span>'
+
+        bs_rows.append(f"""
+            <tr>
+                <td>{name_html}</td>
+                <td>{bs_type}</td>
+                <td>{langs_html}</td>
+                <td>{status_badge}</td>
+                <td style="font-size:0.85rem;">{description}</td>
+            </tr>
+        """)
+
+    # Count stats
+    included_count = sum(1 for bs in benchmark_sources if bs.get('status') == 'included')
+    total_count = len(benchmark_sources)
+
+    return f"""
+        <div class="sources-container">
+            <h2>Data Sources</h2>
+            <p style="color: var(--text-muted); margin-bottom: 1rem;">
+                General data sources used to populate language profiles, actor information, and technology coverage.
+            </p>
+            <div class="table-scroll">
+                <table class="all-langs-table">
+                    <thead>
+                        <tr>
+                            <th>Source</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {''.join(ds_rows)}
+                    </tbody>
+                </table>
+            </div>
+
+            <h2 style="margin-top: 2.5rem;">Benchmark Sources</h2>
+            <p style="color: var(--text-muted); margin-bottom: 1rem;">
+                Benchmark and evaluation sources tracked for this study.
+                <strong>{included_count}</strong> of {total_count} sources have scores extracted and included.
+            </p>
+            <div class="table-scroll">
+                <table class="all-langs-table">
+                    <thead>
+                        <tr>
+                            <th>Source</th>
+                            <th>Type</th>
+                            <th>Focus Languages</th>
+                            <th>Status</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {''.join(bs_rows)}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    """

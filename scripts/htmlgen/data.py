@@ -2,7 +2,7 @@
 
 import yaml
 
-from .constants import LANGUAGES_DIR, ACTORS_DIR, WCA_LANGUAGES_PATH, FOCUSED_LANGUAGES_PATH
+from .constants import LANGUAGES_DIR, ACTORS_DIR, WCA_LANGUAGES_PATH, FOCUSED_LANGUAGES_PATH, SOURCES_PATH
 
 
 def load_yaml(path):
@@ -133,6 +133,15 @@ def load_all_actors():
         actors[actor_key] = load_yaml(actor_file)
 
     return actors
+
+
+def load_sources():
+    """Load sources data from Source data/sources.yaml."""
+    data = load_yaml(SOURCES_PATH)
+    return {
+        'data_sources': data.get('data_sources', []),
+        'benchmark_sources': data.get('benchmark_sources', []),
+    }
 
 
 def load_wca_languages():

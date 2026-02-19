@@ -1,1 +1,148 @@
-{}
+evaluations:
+  asr:
+  - model: facebook/mms-1b-all
+    model_url: https://huggingface.co/facebook/mms-1b-all
+    results:
+    - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 85.89
+      - name: CER
+        value: 38.51
+  - model: openai/whisper-large-v3
+    model_url: https://huggingface.co/openai/whisper-large-v3
+    results:
+    - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 633.04
+      - name: CER
+        value: 623.03
+  - model: openai/whisper-large-v3-turbo
+    model_url: https://huggingface.co/openai/whisper-large-v3-turbo
+    results:
+    - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 249.56
+      - name: CER
+        value: 243.12
+  - model: facebook/seamless-m4t-v2-large
+    model_url: https://huggingface.co/facebook/seamless-m4t-v2-large
+    results:
+    - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 230.19
+      - name: CER
+        value: 198.78
+  - model: UBC-NLP/Simba-S
+    model_url: https://huggingface.co/UBC-NLP/Simba-S
+    results:
+    - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 12.01
+      - name: CER
+        value: 7.87
+  - model: UBC-NLP/Simba-M
+    model_url: https://huggingface.co/UBC-NLP/Simba-M
+    results:
+    - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 16.94
+      - name: CER
+        value: 8.01
+  - model: UBC-NLP/omniASR_LLM_7B_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_7B_v2
+    results:
+    - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 89.16
+      - name: CER
+        value: 47.42
+  - model: UBC-NLP/omniASR_LLM_1B_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_1B_v2
+    results:
+    - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 92.84
+      - name: CER
+        value: 61.5
+  - model: UBC-NLP/omniASR_LLM_300M_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_300M_v2
+    results:
+    - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 106.37
+      - name: CER
+        value: 71.87
+  - model: UBC-NLP/omniASR_CTC_7B_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_7B_v2
+    results:
+    - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 85.29
+      - name: CER
+        value: 41.92
+  - model: UBC-NLP/omniASR_CTC_3B_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_3B_v2
+    results:
+    - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 89.32
+      - name: CER
+        value: 41.35
+  - model: UBC-NLP/omniASR_CTC_1B_v2
+    model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_1B_v2
+    results:
+    - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 87.21
+      - name: CER
+        value: 43.37
+  tts:
+  - model: UBC-NLP/Simba-TTS
+    model_url: https://huggingface.co/UBC-NLP/Simba-TTS
+    results:
+    - test_set: SimbaBench (bibleTTS, Akuapem Twi)
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+      metrics:
+      - name: WER
+        value: 59.45
+      - name: UTMOS
+        value: 2.79
+      - name: PESQ
+        value: 1.05

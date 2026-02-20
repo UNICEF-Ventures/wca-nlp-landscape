@@ -288,7 +288,7 @@ def generate_language_detail_page(iso_code, lang_data, actors):
 
     <div class="disclaimer">
         Work in progress. Some data may contain inaccuracies.
-        <a href="https://github.com/translatorswb/wca-nlp-landscape" target="_blank">Contribute on GitHub</a>
+        <a href="https://github.com/UNICEF-Ventures/wca-nlp-landscape" target="_blank">Contribute on GitHub</a>
     </div>
 
     <div class="lang-detail-container">
@@ -612,7 +612,7 @@ def generate_actor_detail_page(actor_key, actor_data, all_languages=None):
 
     <div class="disclaimer">
         Work in progress. Some data may contain inaccuracies.
-        <a href="https://github.com/translatorswb/wca-nlp-landscape" target="_blank">Contribute on GitHub</a>
+        <a href="https://github.com/UNICEF-Ventures/wca-nlp-landscape" target="_blank">Contribute on GitHub</a>
     </div>
 
     <div class="lang-detail-container">

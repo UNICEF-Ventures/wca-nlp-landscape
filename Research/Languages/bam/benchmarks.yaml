@@ -1,1 +1,57 @@
-{}
+evaluations:
+  asr:
+  - model: MALIBA-AI/bambara-asr-v3
+    model_url: https://huggingface.co/MALIBA-AI/bambara-asr-v3
+    results:
+    - test_set: MALIBA-AI Bambara ASR Benchmark
+      source: reported
+      source_url: https://arxiv.org/abs/2602.09785
+      metrics:
+      - name: WER
+        value: 45.73
+      - name: CER
+        value: 13.45
+  - model: djelia/asr-v2
+    model_url: https://huggingface.co/djelia/asr-v2
+    results:
+    - test_set: MALIBA-AI Bambara ASR Benchmark
+      source: reported
+      source_url: https://arxiv.org/abs/2602.09785
+      metrics:
+      - name: WER
+        value: 47.5
+      - name: CER
+        value: 13.56
+  - model: djelia/asr-v1
+    model_url: https://huggingface.co/djelia/asr-v1
+    results:
+    - test_set: MALIBA-AI Bambara ASR Benchmark
+      source: reported
+      source_url: https://arxiv.org/abs/2602.09785
+      metrics:
+      - name: WER
+        value: 48.56
+      - name: CER
+        value: 13.0
+  - model: RobotsMali/soloba-ctc-0.6b-v3
+    model_url: https://huggingface.co/RobotsMali/soloba-ctc-0.6b-v3
+    results:
+    - test_set: MALIBA-AI Bambara ASR Benchmark
+      source: reported
+      source_url: https://arxiv.org/abs/2602.09785
+      metrics:
+      - name: WER
+        value: 46.76
+      - name: CER
+        value: 16.02
+  - model: RobotsMali/soloni-114m-tdt-ctc-v3-ctc-dec
+    model_url: https://huggingface.co/RobotsMali/soloni-114m-tdt-ctc-v3-ctc-dec
+    results:
+    - test_set: MALIBA-AI Bambara ASR Benchmark
+      source: reported
+      source_url: https://arxiv.org/abs/2602.09785
+      metrics:
+      - name: WER
+        value: 48.32
+      - name: CER
+        value: 14.81

@@ -9,7 +9,7 @@ Generated: 2026-02-20
 | ful |  x  |     |     |     | Fula |
 | fuh |     |     |     |     | Western Niger Fulfulde |
 | gux |     |     |     |     | Gourmanché |
-| bam |     |     |     |     | Bambara |
+| bam |  x  |     |     |     | Bambara |
 | snk |     |     |     |     | Soninke |
 | ffm |     |     |     |     | Maasina Fulfulde |
 | dts |     |     |     |     | Escarpment Dogon |
@@ -37,6 +37,6 @@ Generated: 2026-02-20
 | shu |     |     |     |     | Chadian Arabic |
 | fon |  x  |     |     |     | Fon |
 | pov |     |     |  x  |     | Guinea-Bissau Creole |
-| 33 |  13  |  7  |  7  |  5  | Total |
+| 33 |  14  |  7  |  7  |  5  | Total |
 
-Coverage: 17/33 languages have at least one benchmark.
+Coverage: 18/33 languages have at least one benchmark.

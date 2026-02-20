@@ -36,9 +36,9 @@ Automated fetching of HuggingFace models/datasets, Common Voice stats, and Wikip
 
 | Done | Target | Progress                 |
 |------|--------|--------------------------|
-| 29   | 20     | ████████████████████ 145% |
+| 33   | 20     | ████████████████████ 165% |
 
-**Focus languages (29):**
+**Focus languages (33):**
 
 *Focus 1 — UNICEF country office survey (10):*
 - Hausa (hau), Mende (men), Bambara (bam), Ewe (ewe), Fang (fan), Liberian Koloqua (lir), Shuwa Arabic (shu), Mooré (mos), Fon (fon), Guinea-Bissau Creole (pov)
@@ -48,6 +48,9 @@ Automated fetching of HuggingFace models/datasets, Common Voice stats, and Wikip
 
 *Focus 3 — CLEAR additional selection (14):*
 - Yoruba (yor), Igbo (ibo), Wolof (wol), Fulfulde (ful), Krio (kri), Temne (tem), Ga (gaa), Kanuri (kau), Congo Swahili (swc), Lingala (lin), Sango (sag), Mandinka (mnk), Akan (aka), Pular (fuf)
+
+*Focus 4 — Additional Fulfulde variants and Niger/Mali languages (4):*
+- Fulfulde Maasina (ffm), Fulfulde Adamawa (fub), Koyraboro Senni (ses), Toro So Dogon (dts)
 
 ### 1.3 Actor Directory
 Profiles of organizations, research groups, and startups working on African language technology.
@@ -129,7 +132,7 @@ Compile existing benchmark results (FLORES, FLEURS, Common Voice, published pape
 
 | Status | Progress |
 |--------|----------|
-| Infrastructure done, data collection in progress | ██████░░░░░░░░░░░░░░ 30% |
+| Infrastructure done, data collection in progress | ████████░░░░░░░░░░░░ 40% |
 
 - [x] Benchmark data infrastructure (two-file system, Source data/Evaluations/, rendering on language pages)
 - [x] Initial ASR data: Whisper FLEURS WER, CLEAR Global TWB Voice (Hausa, Kanuri)
@@ -137,7 +140,8 @@ Compile existing benchmark results (FLORES, FLEURS, Common Voice, published pape
 - [x] PazaBench ASR results compiled (52 models, 39 African languages, CER+WER) — 7 focus languages covered: ful, hau, ibo, lin, twi, wol, yor
 - [x] Compile LLM benchmarks: AfroBench-Lite scores (24 models, 5 focus languages: hau, ibo, lin, wol, yor)
 - [ ] Compile ASR benchmarks (more Whisper variants, MMS, wav2vec2, etc.)
-- [ ] Compile MT benchmarks (NLLB, MADLAD, AfriNLLB etc.)
+- [x] Compile MT benchmarks: AfriNLLB + NLLB-600M baseline (FLORES-200 BLEU/chrF, 4 focus langs: hau, yor, lin, wol)
+- [ ] Compile MT benchmarks (more: NLLB full, MADLAD, Seamless etc.)
 - [ ] Compile TTS benchmarks (more models)
 - [ ] Gap analysis: which languages lack benchmarks
 - [ ] Conducting benchmark analyses where needed and possible
@@ -156,7 +160,7 @@ Compile existing benchmark results (FLORES, FLEURS, Common Voice, published pape
 | 3 | **AfroBench-Lite** (McGill-NLP) | [HF Space](https://huggingface.co/spaces/McGill-NLP/AfroBench) / [arxiv 2311.07978](https://arxiv.org/abs/2311.07978) | LLM | hau, ibo, lin, wol, yor (24 models, 15 NLP tasks aggregate) | INCLUDED |
 | 4 | **CLEAR Global TWB Voice** | HuggingFace model cards | ASR+TTS | hau, kau (Whisper & w2v-bert fine-tunes + TTS) | INCLUDED |
 | 5 | **Kreyol-MT** | [arxiv 2405.05376](https://arxiv.org/abs/2405.05376) | MT | kri, pov, sag (bible-based BLEU, caution on generalization) | INCLUDED |
-| 6 | **AfriNLLB** (FLORES-200) | AfricaNLP 2026 (pre-release) | MT | hau, yor, lin, wol + more | PLACEHOLDER ("?") |
+| 6 | **AfriNLLB** (FLORES-200) | [HF Collection](https://huggingface.co/collections/AfriNLP/afrinllb) | MT | hau, yor, lin, wol (AfriNLLB 548M + NLLB-600M baseline) | INCLUDED |
 
 #### To be extracted (papers downloaded, need to pull scores)
 
@@ -237,6 +241,12 @@ Advisory support for actor selection, agenda input, and presentation of findings
 ---
 
 ## Recent Updates
+
+### 2026-02-20
+- Added 4 new focus languages (33 total): Fulfulde Maasina (ffm), Fulfulde Adamawa (fub), Koyraboro Senni (ses), Toro So Dogon (dts)
+- **AfriNLLB MT benchmarks included:** FLORES-200 BLEU/chrF scores for AfriNLLB 548M and NLLB-600M baseline across hau, yor, lin, wol. Source: AfriNLP HuggingFace collection.
+- Moved `sources.yaml` from `Source data/` to `Research/` (now tracked in repo)
+- **Bug fix:** MT evaluation data (`task: mt`) was not rendering in HTML benchmarks — the rendering code expected `translation` instead of `mt`. Fixed in `htmlgen/utils.py`, `htmlgen/tabs.py`, and `generate_docs.py`.
 
 ### 2026-02-19
 - Added **Sources tab** to website with two sections: Data Sources (7 general sources) and Benchmark Sources (22 tracked). Each benchmark shows type, focus languages covered, and color-coded status badge (INCLUDED/PLACEHOLDER/TO_EXTRACT/NOTED/BLOCKED). Source metadata lives in `Source data/sources.yaml`.

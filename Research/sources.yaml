@@ -87,7 +87,14 @@ benchmark_sources:
     type: MT
     languages_covered: [hau, yor, lin, wol]
     status: included
-    description: African languages extension of NLLB evaluated on FLORES-200. 
+    description: African languages extension of NLLB evaluated on FLORES-200.
+
+  - name: Bambara ASR Leaderboard (MALIBA-AI)
+    url: https://huggingface.co/spaces/MALIBA-AI/bambara-asr-leaderboard
+    type: ASR
+    languages_covered: [bam]
+    status: included
+    description: Bambara-specific ASR model comparison. Multiple models benchmarked on HuggingFace Space. 
 
   # --- Blocked ---
   - name: Sahara (UBC-NLP)
@@ -119,12 +126,7 @@ benchmark_sources:
     status: to_extract
     description: 517 African languages, 8 NLU tasks, 20 datasets. Encoder model (not generative). 82.27 avg F1.
 
-  - name: Bambara ASR Leaderboard (MALIBA-AI)
-    url: https://huggingface.co/spaces/MALIBA-AI/bambara-asr-leaderboard
-    type: ASR
-    languages_covered: [bam]
-    status: noted
-    description: Bambara-specific ASR model comparison. Multiple models benchmarked on HuggingFace Space.
+
 
   # --- Identified, not yet investigated ---
   - name: NLLB (Meta)

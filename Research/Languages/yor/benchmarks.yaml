@@ -15,6 +15,7 @@ evaluations:
     results:
     - test_set: FLORES-200
       source: reported
+      source_url: https://huggingface.co/collections/AfriNLP/afrinllb
       metrics:
       - name: BLEU en-yo
         value: 8.03
@@ -29,6 +30,7 @@ evaluations:
     results:
     - test_set: FLORES-200
       source: reported
+      source_url: https://huggingface.co/collections/AfriNLP/afrinllb
       metrics:
       - name: BLEU en-yo
         value: 4.32

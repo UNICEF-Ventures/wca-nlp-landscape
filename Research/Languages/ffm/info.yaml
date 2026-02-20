@@ -1,0 +1,38 @@
+name: Maasina Fulfulde
+iso_639_3: ffm
+name_french: maasina fulfulde
+altnames:
+- Fulani
+- Fulbe
+- Fulfulde
+- Maacina
+- Maasina Fulfulde
+- Maasinankoore
+- Macina
+- Peul
+- Toucouleur
+countries:
+- Mali
+population: '1500000'
+population_order: 10⁶+
+endangerment: safe
+official_status: 🛂
+glottocode: maas1239
+glottocode_url: https://glottolog.org/resource/languoid/id/maas1239
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Maasina_Fulfulde
+  family: Niger–Congo
+  speakers_l1: 37 million
+  speakers_l2: 2.7 million
+  writing_system: Latin Adlam Arabic ( Ajami )
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=ffm
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=ffm
+  OLAC: http://www.language-archives.org/language/ffm
+  Grambank: https://grambank.clld.org/languages/maas1239
+  WALS: https://wals.info/languoid/lect/wals_code_fum
+tech_resources:
+  AfroLID: true
+  MADLAD-400 Docs: 65 MAD-Docs
+  MADLAD-400 Sentences: 2000 MAD-Sents
+  Fineweb2: 💬

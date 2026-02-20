@@ -5,32 +5,27 @@
 #   python scripts/populate_research.py              # Process all
 #   python scripts/populate_research.py --lang hau   # Process single language
 
-# Current focus languages
-
-# Focus list 1 from survey
-- hau  # Hausa (Nigeria, Ghana, Niger, Cameroon...)
-- men  # Mende (Sierra Leone)
-- bam  # Bambara (Mali)
-- ewe  # Ewe (Ghana, Togo)
-- fan  # Fang (Gabon, Equatorial Guinea, Cameroon)
-- lir  # Liberian Kreyol/Koloqua (Liberia)
-- shu  # Shuwa Arabic (Chad, Nigeria)
+# UNICEF definite focus list (14)
 - mos  # Mooré (Burkina Faso)
-- fon  # Fon (Benin)
-- pov  # Guinea-Bissau Creole
-
-# UNICEF additions 17.2
-- dyu # Dyoula
-- gux # Gourmantchema
-- snk # Soninke
+- dyu  # Dyoula (Burkina Faso)
+- ful  # Fulfulde/Fulah/Peul (widespread, inclusive code)
+- fuh  # Western Niger Fulfulde (Burkina, Niger)
+- gux  # Gourmantchema (Burkina Faso)
+- bam  # Bambara (Mali)
+- snk  # Soninke (Mali)
+- ffm  # Peul de Maasina / Maasina Fulfulde (Mali, Ghana)
+- dts  # Toro So Dogon / Escarpment Dogon (Mali)
+- ses  # Koyraboro Senni (Songhai) (Mali)
 - twi  # Twi (Ghana)
 - dag  # Dagbani (Ghana)
+- ewe  # Ewe (Ghana, Togo)
+- hau  # Hausa (Nigeria, Ghana, Niger, Cameroon...)
 
-# CLEAR additional selection 
+
+# Additional selection based on popularity or UNICEF's past projects
 - yor  # Yoruba (Nigeria, Benin)
 - ibo  # Igbo (Nigeria, Equatorial guinea ...)
 - wol  # Wolof (Senegal, Gambia)
-- ful  # Fulfulde/Fula/Peul (widespread)
 - kri  # Krio (Sierra Leone)
 - tem  # Temne (Sierra Leone)
 - gaa  # Ga (Ghana)
@@ -41,3 +36,9 @@
 - mnk  # Mandinka (Gambia, Senegal, Guinea-Bissau)
 - aka  # Akan (Ghana)
 - fuf  # Pular (Guinea)
+- men  # Mende (Sierra Leone)
+- fan  # Fang (Gabon, Equatorial Guinea, Cameroon)
+- lir  # Liberian Kreyol/Koloqua (Liberia)
+- shu  # Shuwa Arabic (Chad, Nigeria)
+- fon  # Fon (Benin)
+- pov  # Guinea-Bissau Creole

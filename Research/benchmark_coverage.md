@@ -1,28 +1,26 @@
 # Benchmark Coverage Matrix
 
-Generated: 2026-02-18
+Generated: 2026-02-20
 
 | ISO | ASR | TTS | MT | LLM | Language |
 |-----| --- | --- | --- | --- |---------|
-| hau |  x  |  x  |  x  |  x  | Hausa |
-| men |     |     |     |     | Mende |
-| bam |     |     |     |     | Bambara |
-| ewe |     |  x  |     |     | Ewe |
-| fan |     |     |     |     | Fang |
-| lir |     |     |     |     | Liberian Kreyol |
-| shu |     |     |     |     | Chadian Arabic |
 | mos |     |     |     |     | Mooré |
-| fon |  x  |     |     |     | Fon |
-| pov |     |     |  x  |     | Guinea-Bissau Creole |
 | dyu |  x  |     |     |     | Dyula |
+| ful |  x  |     |     |     | Fula |
+| fuh |     |     |     |     | Western Niger Fulfulde |
 | gux |     |     |     |     | Gourmanché |
+| bam |     |     |     |     | Bambara |
 | snk |     |     |     |     | Soninke |
+| ffm |     |     |     |     | Maasina Fulfulde |
+| dts |     |     |     |     | Escarpment Dogon |
+| ses |     |     |     |     | Koyraboro Senni |
 | twi |  x  |  x  |     |     | Twi |
 | dag |     |     |     |     | Dagbani |
+| ewe |     |  x  |     |     | Ewe |
+| hau |  x  |  x  |  x  |  x  | Hausa |
 | yor |  x  |  x  |  x  |  x  | Yoruba |
 | ibo |  x  |     |     |  x  | Igbo |
 | wol |  x  |     |  x  |  x  | Wolof |
-| ful |  x  |     |     |     | Fula |
 | kri |     |     |  x  |     | Krio |
 | tem |     |     |     |     | Temne |
 | gaa |  x  |     |     |     | Ga |
@@ -33,6 +31,12 @@ Generated: 2026-02-18
 | mnk |     |     |     |     | Mandinka |
 | aka |  x  |  x  |     |     | Akan |
 | fuf |  x  |     |     |     | Pular |
-| 29 |  13  |  7  |  7  |  5  | Total |
+| men |     |     |     |     | Mende |
+| fan |     |     |     |     | Fang |
+| lir |     |     |     |     | Liberian Kreyol |
+| shu |     |     |     |     | Chadian Arabic |
+| fon |  x  |     |     |     | Fon |
+| pov |     |     |  x  |     | Guinea-Bissau Creole |
+| 33 |  13  |  7  |  7  |  5  | Total |
 
-Coverage: 17/29 languages have at least one benchmark.
+Coverage: 17/33 languages have at least one benchmark.

@@ -1,0 +1,31 @@
+name: Escarpment Dogon
+iso_639_3: dts
+name_french: toro so dogon
+altnames:
+- Bomu Tegu
+- Dogoso
+- Toro So
+- Toro So Dogon
+- Tɔrɔ sɔɔ
+countries:
+- Mali
+population: '160000'
+population_order: 10⁵
+endangerment: safe
+official_status: 🛂
+glottocode: toro1252
+glottocode_url: https://glottolog.org/resource/languoid/id/toro1252
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Escarpment_Dogon
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=dts
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=dts
+  OLAC: http://www.language-archives.org/language/dts
+  WALS: https://wals.info/languoid/lect/wals_code_dts
+tech_resources:
+  Fineweb2: 💬
+  CMU Wilderness: true
+  MMS-ASR: true
+  MMS-TTS: true
+  MMS-LID: true
+  Omnilingual ASR: true

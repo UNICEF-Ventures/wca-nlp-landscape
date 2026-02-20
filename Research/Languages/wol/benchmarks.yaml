@@ -1,31 +1,49 @@
 evaluations:
   mt:
-  - model: AfriNLLB (pruned)
+  - model: AfriNLLB 548M (Pruned Iterative FT)
+    model_url: https://huggingface.co/AfriNLP/AfriNLLB-12enc-12dec-full-ft-kd
     results:
     - test_set: FLORES-200
       source: reported
       metrics:
       - name: BLEU en-wo
-        value: '?'
+        value: 6.97
       - name: BLEU wo-en
-        value: '?'
+        value: 17.11
       - name: BLEU fr-wo
-        value: '?'
+        value: 4.52
       - name: BLEU wo-fr
-        value: '?'
-  - model: AfriNLLB (quantized)
+        value: 14.97
+      - name: chrF en-wo
+        value: 28.63
+      - name: chrF wo-en
+        value: 39.58
+      - name: chrF fr-wo
+        value: 25.45
+      - name: chrF wo-fr
+        value: 37.03
+  - model: NLLB-600M
+    model_url: https://huggingface.co/facebook/nllb-200-distilled-600M
     results:
     - test_set: FLORES-200
       source: reported
       metrics:
       - name: BLEU en-wo
-        value: '?'
+        value: 6.97
       - name: BLEU wo-en
-        value: '?'
+        value: 17.11
       - name: BLEU fr-wo
-        value: '?'
+        value: 3.73
       - name: BLEU wo-fr
-        value: '?'
+        value: 12.96
+      - name: chrF en-wo
+        value: 28.63
+      - name: chrF wo-en
+        value: 39.58
+      - name: chrF fr-wo
+        value: 21.84
+      - name: chrF wo-fr
+        value: 34.59
   llm:
   - model: CohereForAI/aya-101
     model_url: https://huggingface.co/CohereForAI/aya-101
@@ -34,7 +52,7 @@ evaluations:
       source: reported
       source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
-      - name: Score
+      - name: Avg Score
         value: 29.2
   - model: google/gemma-1.1-7b-it
     model_url: https://huggingface.co/google/gemma-1.1-7b-it
@@ -43,7 +61,7 @@ evaluations:
       source: reported
       source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
-      - name: Score
+      - name: Avg Score
         value: 22.7
   - model: meta-llama/Llama-2-7b
     model_url: https://huggingface.co/meta-llama/Llama-2-7b
@@ -52,7 +70,7 @@ evaluations:
       source: reported
       source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
-      - name: Score
+      - name: Avg Score
         value: 16.7
   - model: meta-llama/Meta-Llama-3-8B
     model_url: https://huggingface.co/meta-llama/Meta-Llama-3-8B
@@ -61,7 +79,7 @@ evaluations:
       source: reported
       source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
-      - name: Score
+      - name: Avg Score
         value: 16.0
   - model: meta-llama/Meta-Llama-3.1-8B
     model_url: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B
@@ -70,7 +88,7 @@ evaluations:
       source: reported
       source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
-      - name: Score
+      - name: Avg Score
         value: 17.2
   - model: MaLA-LM/LLaMAX3-8B
     model_url: https://huggingface.co/MaLA-LM/LLaMAX3-8B
@@ -79,7 +97,7 @@ evaluations:
       source: reported
       source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
-      - name: Score
+      - name: Avg Score
         value: 16.6
   - model: google/gemma-2-9b
     model_url: https://huggingface.co/google/gemma-2-9b
@@ -88,7 +106,7 @@ evaluations:
       source: reported
       source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
-      - name: Score
+      - name: Avg Score
         value: 26.2
   - model: google/gemma-2-27b
     model_url: https://huggingface.co/google/gemma-2-27b
@@ -97,7 +115,7 @@ evaluations:
       source: reported
       source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
-      - name: Score
+      - name: Avg Score
         value: 26.9
   - model: meta-llama/Meta-Llama-3.1-70B
     model_url: https://huggingface.co/meta-llama/Meta-Llama-3.1-70B
@@ -106,7 +124,7 @@ evaluations:
       source: reported
       source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
-      - name: Score
+      - name: Avg Score
         value: 25.1
   - model: AfroLLaMa 8B
     results:
@@ -114,7 +132,7 @@ evaluations:
       source: reported
       source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
-      - name: Score
+      - name: Avg Score
         value: 14.2
   - model: Gemini 1.5 Pro
     results:
@@ -122,7 +140,7 @@ evaluations:
       source: reported
       source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
-      - name: Score
+      - name: Avg Score
         value: 29.7
   - model: GPT-4o
     results:
@@ -130,7 +148,7 @@ evaluations:
       source: reported
       source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
-      - name: Score
+      - name: Avg Score
         value: 43.5
   - model: google/gemma-3-27b-it
     model_url: https://huggingface.co/google/gemma-3-27b-it
@@ -139,7 +157,7 @@ evaluations:
       source: reported
       source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
-      - name: Score
+      - name: Avg Score
         value: 30.9
   - model: Gemini 2.0 Flash
     results:
@@ -147,7 +165,7 @@ evaluations:
       source: reported
       source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
-      - name: Score
+      - name: Avg Score
         value: 63.7
   - model: GPT-4.1
     results:
@@ -155,7 +173,7 @@ evaluations:
       source: reported
       source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
-      - name: Score
+      - name: Avg Score
         value: 49.0
   - model: Claude 4.0 Sonnet
     results:
@@ -163,7 +181,7 @@ evaluations:
       source: reported
       source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
-      - name: Score
+      - name: Avg Score
         value: 39.7
   - model: Claude 3.7 Sonnet
     results:
@@ -171,7 +189,7 @@ evaluations:
       source: reported
       source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
-      - name: Score
+      - name: Avg Score
         value: 46.4
   - model: Claude 4.5 Sonnet
     results:
@@ -179,7 +197,7 @@ evaluations:
       source: reported
       source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
-      - name: Score
+      - name: Avg Score
         value: 43.9
   - model: Gemini 2.5 Flash
     results:
@@ -187,7 +205,7 @@ evaluations:
       source: reported
       source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
-      - name: Score
+      - name: Avg Score
         value: 57.8
   - model: Gemini 2.5 Pro
     results:
@@ -195,7 +213,7 @@ evaluations:
       source: reported
       source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
-      - name: Score
+      - name: Avg Score
         value: 66.9
   - model: GPT-5
     results:
@@ -203,7 +221,7 @@ evaluations:
       source: reported
       source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
-      - name: Score
+      - name: Avg Score
         value: 63.4
   - model: Gemini 3 Pro
     results:
@@ -211,7 +229,7 @@ evaluations:
       source: reported
       source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
-      - name: Score
+      - name: Avg Score
         value: 68.9
   asr:
   - model: facebook/omniASR-LLM-7B

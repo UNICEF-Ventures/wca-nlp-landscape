@@ -561,7 +561,7 @@ def generate_languages_doc(languages, actors):
 
 def _render_benchmarks_docx(doc, evaluations):
     """Render benchmark tables for all tasks into the document."""
-    task_order = ['asr', 'tts', 'translation', 'llm']
+    task_order = ['asr', 'tts', 'mt', 'llm']
 
     for task in task_order:
         entries = evaluations.get(task, [])

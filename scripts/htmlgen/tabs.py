@@ -80,6 +80,13 @@ def generate_language_card(iso_code, lang_data, actors):
     mt_count = get_model_count(mt_data)
     llm_count = get_model_count(llm_data)
 
+    # Benchmark coverage per task
+    evaluations = benchmarks.get('evaluations', {})
+    has_asr_bench = bool(evaluations.get('asr'))
+    has_tts_bench = bool(evaluations.get('tts'))
+    has_mt_bench = bool(evaluations.get('mt'))
+    has_llm_bench = bool(evaluations.get('llm'))
+
     # Actors working on this language
     lang_actors = get_actors_for_language(iso_code, actors)
     actor_count = len(lang_actors)
@@ -114,22 +121,22 @@ def generate_language_card(iso_code, lang_data, actors):
             {f'<div class="model-summary"><span class="badge" style="background: #ffe8cc; color: #d9480f;">{actor_count} Actor{"s" if actor_count != 1 else ""} working on this language</span></div>' if actor_count > 0 else ''}
 
             <details class="models-section">
-                <summary>ASR Models ({asr_count})</summary>
+                <summary>ASR Models ({asr_count}) {'✅' if has_asr_bench else ''}</summary>
                 {generate_models_table(asr_data, 'ASR', limit=5, iso_639_1=iso1, iso_639_3=iso3, pipeline_tag='automatic-speech-recognition')}
             </details>
 
             <details class="models-section">
-                <summary>TTS Models ({tts_count})</summary>
+                <summary>TTS Models ({tts_count}) {'✅' if has_tts_bench else ''}</summary>
                 {generate_models_table(tts_data, 'TTS', limit=5, iso_639_1=iso1, iso_639_3=iso3, pipeline_tag='text-to-speech')}
             </details>
 
             <details class="models-section">
-                <summary>MT Models ({mt_count})</summary>
+                <summary>MT Models ({mt_count}) {'✅' if has_mt_bench else ''}</summary>
                 {generate_models_table(mt_data, 'translation', limit=5, iso_639_1=iso1, iso_639_3=iso3, pipeline_tag='translation')}
             </details>
 
             <details class="models-section">
-                <summary>LLM Models ({llm_count})</summary>
+                <summary>LLM Models ({llm_count}) {'✅' if has_llm_bench else ''}</summary>
                 {generate_models_table(llm_data, 'LLM', limit=5, iso_639_1=iso1, iso_639_3=iso3, pipeline_tag='text-generation')}
             </details>
         </div>
@@ -151,8 +158,11 @@ def generate_focus_languages_tab(languages, actors):
         cards.append(generate_language_card(iso_code, lang_data, actors))
 
     return f"""
-        <input type="text" class="card-search" id="focusLangSearch"
-               placeholder="Search languages by name, ISO code, country...">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <input type="text" class="card-search" id="focusLangSearch"
+                   placeholder="Search languages by name, ISO code, country..." style="margin-bottom: 0; max-width: 400px;">
+            <span style="font-size: 0.85rem; color: var(--text-muted); white-space: nowrap;">✅ = benchmark scores available</span>
+        </div>
         <div class="languages-grid">
             {''.join(cards)}
         </div>

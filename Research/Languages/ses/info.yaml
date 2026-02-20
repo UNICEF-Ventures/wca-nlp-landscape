@@ -1,0 +1,42 @@
+name: Koyraboro Senni
+iso_639_3: ses
+name_french: koyraboro senni songhai
+altnames:
+- East Songhay
+- Gao Songhay
+- Koyra Senni
+- Koyra Senni Songhay
+- Koyraboro Senni Songhai
+- Songai
+- Songay Senni
+- Songhai
+- Songhay
+- Songoi
+- Songoy
+- Sonrai
+- Sonrhai
+countries:
+- Mali
+population: '660000'
+population_order: 10⁵
+endangerment: safe
+glottocode: koyr1242
+glottocode_url: https://glottolog.org/resource/languoid/id/koyr1242
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Koyraboro_Senni
+  family: Nilo-Saharan
+  speakers_l1: 430,000
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=ses
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=ses
+  OLAC: http://www.language-archives.org/language/ses
+  Grambank: https://grambank.clld.org/languages/koyr1242
+  WALS: https://wals.info/languoid/lect/wals_code_kse
+  CLDR: https://www.unicode.org/cldr/charts/47/summary/ses.html
+tech_resources:
+  AfroLID: true
+  Fineweb2: 💬
+  MMS-ASR: true
+  MMS-TTS: true
+  MMS-LID: true
+  Omnilingual ASR: true

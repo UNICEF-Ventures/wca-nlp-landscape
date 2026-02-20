@@ -82,13 +82,12 @@ benchmark_sources:
     status: included
     description: "Voice of a Continent benchmark. 12 ASR models + 2 TTS models across 61 African languages. EMNLP 2025."
 
-  # --- Placeholder / partial ---
   - name: AfriNLLB (FLORES-200)
-    url: https://huggingface.co/masakhane
+    url: https://huggingface.co/collections/AfriNLP/afrinllb
     type: MT
     languages_covered: [hau, yor, lin, wol]
-    status: placeholder
-    description: AfricaNLP 2026 pre-release. African languages extension of NLLB evaluated on FLORES-200. Values currently placeholder.
+    status: included
+    description: African languages extension of NLLB evaluated on FLORES-200. 
 
   # --- Blocked ---
   - name: Sahara (UBC-NLP)

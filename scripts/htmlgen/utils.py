@@ -263,7 +263,7 @@ def generate_benchmarks_section(evaluations):
         return ""
 
     subsections = []
-    for task in ['asr', 'tts', 'translation', 'llm']:
+    for task in ['asr', 'tts', 'mt', 'llm']:
         entries = evaluations.get(task, [])
         if not entries:
             continue
@@ -377,7 +377,7 @@ def _render_benchmark_table(entries):
 TASK_SHORT_LABELS = {
     'asr': 'ASR',
     'tts': 'TTS',
-    'translation': 'MT',
+    'mt': 'MT',
     'llm': 'LLM',
 }
 

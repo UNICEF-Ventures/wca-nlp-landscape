@@ -1,0 +1,37 @@
+name: Western Niger Fulfulde
+iso_639_3: fuh
+name_french: western niger fulfulde
+altnames:
+- Fula
+- Fulani
+- Fulbe
+- Fulfulde
+- Fulfulde
+- Gorgal
+- Fulfulde
+- Western Niger
+- Gorgal Fulfulde
+- Northeastern Burkina Faso Fulfulde
+- Peul
+- Peulh
+countries:
+- Benin
+- Burkina Faso
+- Niger
+endangerment: safe
+glottocode: west2454
+glottocode_url: https://glottolog.org/resource/languoid/id/west2454
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Western_Niger_Fulfulde
+  family: Niger–Congo
+  speakers_l1: 3.1 million
+  writing_system: Arabic ( Ajami ) Latin
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=fuh
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=fuh
+  OLAC: http://www.language-archives.org/language/fuh
+  WALS: https://wals.info/languoid/lect/wals_code_fbf
+  Webonary: https://www.webonary.org/fulfuldeburkina/
+tech_resources:
+  AfroLID: true
+  Fineweb2: 💬

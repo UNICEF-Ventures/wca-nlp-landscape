@@ -12,7 +12,7 @@ OUTPUT_DIR = PROJECT_DIR / "output"
 WCA_LANGUAGES_PATH = RESEARCH_DIR / "wca_all_languages.yaml"
 FOCUSED_LANGUAGES_PATH = RESEARCH_DIR / "focused_languages.yaml"
 SOURCE_DATA_DIR = PROJECT_DIR / "Source data"
-SOURCES_PATH = SOURCE_DATA_DIR / "sources.yaml"
+SOURCES_PATH = RESEARCH_DIR / "sources.yaml"
 
 # WCA Countries for grouping (includes alternative spellings from source data)
 WCA_COUNTRIES = {

@@ -1,272 +1,147 @@
 # AfriNLLB: Efficient Translation Models for African Languages
 # Paper accepted at AfricaNLP 2026
-# Evaluation on FLORES-200 devtest set (expected)
-# Status: pre-release — values to be filled when paper is published
-#
-# Two model variants: pruned (layer pruning) and quantized
+# Evaluation on FLORES-200 devtest set
+# AfriNLLB scores obtained from Table 7 in paper middle column
+# Base-NLLB-600m scores from "nllb-200-distilled-600M-no-quant-eval-summary.csv" in https://github.com/AfriNLP/mt-model-evaluation
+# Note: Not sure the HF link is right
 # Base model: facebook/nllb-200-600M
 
 models:
-  # --- Pruned model ---
-
-  - model: AfriNLLB (pruned)
-    model_url:
+  
+  - model: AfriNLLB 548M (Pruned Iterative FT) 
+    model_url: https://huggingface.co/AfriNLP/AfriNLLB-12enc-12dec-full-ft-kd
     task: mt
     results:
       hau:
         - test_set: FLORES-200
           source: reported
-          source_url:
+          source_url: https://huggingface.co/collections/AfriNLP/afrinllb
           metrics:
             - name: BLEU en-ha
-              value: "?"
+              value: 27.64
             - name: BLEU ha-en
-              value: "?"
+              value: 32.36
+            - name: chrF en-ha
+              value: 53.21
+            - name: chrF ha-en
+              value: 54.15
+            - name: COMET en-ha
+              value: 65.01
+            - name: COMET ha-en
+              value: 66.37
       yor:
         - test_set: FLORES-200
           source: reported
-          source_url:
+          source_url: https://huggingface.co/collections/AfriNLP/afrinllb
           metrics:
             - name: BLEU en-yo
-              value: "?"
+              value: 8.03 
             - name: BLEU yo-en
-              value: "?"
+              value: 18.62
+            - name: chrF en-yo
+              value: 29.20
+            - name: chrF yo-en
+              value: 41.08
       lin:
         - test_set: FLORES-200
           source: reported
-          source_url:
+          source_url: https://huggingface.co/collections/AfriNLP/afrinllb
           metrics:
-            - name: BLEU en-ln
-              value: "?"
-            - name: BLEU ln-en
-              value: "?"
             - name: BLEU fr-ln
-              value: "?"
+              value: 15.88
             - name: BLEU ln-fr
-              value: "?"
+              value: 20.06
+            - name: chrF fr-ln
+              value: 44.97
+            - name: chrF ln-fr
+              value: 43.39
       wol:
         - test_set: FLORES-200
           source: reported
-          source_url:
+          source_url: https://huggingface.co/collections/AfriNLP/afrinllb
           metrics:
             - name: BLEU en-wo
-              value: "?"
+              value: 6.97
             - name: BLEU wo-en
-              value: "?"
+              value: 17.11
             - name: BLEU fr-wo
-              value: "?"
+              value: 4.52
             - name: BLEU wo-fr
-              value: "?"
-      swh:
-        - test_set: FLORES-200
-          source: reported
-          source_url:
-          metrics:
-            - name: BLEU en-sw
-              value: "?"
-            - name: BLEU sw-en
-              value: "?"
-      amh:
-        - test_set: FLORES-200
-          source: reported
-          source_url:
-          metrics:
-            - name: BLEU en-am
-              value: "?"
-            - name: BLEU am-en
-              value: "?"
-      som:
-        - test_set: FLORES-200
-          source: reported
-          source_url:
-          metrics:
-            - name: BLEU en-so
-              value: "?"
-            - name: BLEU so-en
-              value: "?"
-      zul:
-        - test_set: FLORES-200
-          source: reported
-          source_url:
-          metrics:
-            - name: BLEU en-zu
-              value: "?"
-            - name: BLEU zu-en
-              value: "?"
-      afr:
-        - test_set: FLORES-200
-          source: reported
-          source_url:
-          metrics:
-            - name: BLEU en-af
-              value: "?"
-            - name: BLEU af-en
-              value: "?"
-      arz:
-        - test_set: FLORES-200
-          source: reported
-          source_url:
-          metrics:
-            - name: BLEU en-arz
-              value: "?"
-            - name: BLEU arz-en
-              value: "?"
-      arb:
-        - test_set: FLORES-200
-          source: reported
-          source_url:
-          metrics:
-            - name: BLEU en-ar
-              value: "?"
-            - name: BLEU ar-en
-              value: "?"
-      fra:
-        - test_set: FLORES-200
-          source: reported
-          source_url:
-          metrics:
-            - name: BLEU en-fr
-              value: "?"
-            - name: BLEU fr-en
-              value: "?"
-      por:
-        - test_set: FLORES-200
-          source: reported
-          source_url:
-          metrics:
-            - name: BLEU en-pt
-              value: "?"
-            - name: BLEU pt-en
-              value: "?"
-
-  # --- Quantized model ---
-
-  - model: AfriNLLB (quantized)
-    model_url:
+              value: 14.97
+            - name: chrF en-wo
+              value: 28.63
+            - name: chrF wo-en
+              value: 39.58
+            - name: chrF fr-wo
+              value: 25.45
+            - name: chrF wo-fr
+              value: 37.03
+  
+  - model: NLLB-600M
+    model_url: https://huggingface.co/facebook/nllb-200-distilled-600M
     task: mt
     results:
       hau:
         - test_set: FLORES-200
           source: reported
-          source_url:
+          source_url: https://huggingface.co/collections/AfriNLP/afrinllb
           metrics:
             - name: BLEU en-ha
-              value: "?"
+              value: 23.69
             - name: BLEU ha-en
-              value: "?"
+              value: 31.06
+            - name: chrF en-ha
+              value: 48.99
+            - name: chrF ha-en
+              value: 52.74
       yor:
         - test_set: FLORES-200
           source: reported
-          source_url:
+          source_url: https://huggingface.co/collections/AfriNLP/afrinllb
           metrics:
             - name: BLEU en-yo
-              value: "?"
+              value: 4.32
             - name: BLEU yo-en
-              value: "?"
+              value: 17.61
+            - name: chrF en-yo
+              value: 22.87
+            - name: chrF yo-en
+              value: 39.73
       lin:
         - test_set: FLORES-200
           source: reported
-          source_url:
+          source_url: https://huggingface.co/collections/AfriNLP/afrinllb
           metrics:
-            - name: BLEU en-ln
-              value: "?"
-            - name: BLEU ln-en
-              value: "?"
             - name: BLEU fr-ln
-              value: "?"
+              value: 15.15
             - name: BLEU ln-fr
-              value: "?"
+              value: 19.85
+            - name: chrF fr-ln
+              value: 45.0
+            - name: chrF ln-fr
+              value: 43.07
       wol:
         - test_set: FLORES-200
           source: reported
-          source_url:
+          source_url: https://huggingface.co/collections/AfriNLP/afrinllb
           metrics:
             - name: BLEU en-wo
-              value: "?"
+              value: 6.97
             - name: BLEU wo-en
-              value: "?"
+              value: 17.11
             - name: BLEU fr-wo
-              value: "?"
+              value: 3.73
             - name: BLEU wo-fr
-              value: "?"
-      swh:
-        - test_set: FLORES-200
-          source: reported
-          source_url:
-          metrics:
-            - name: BLEU en-sw
-              value: "?"
-            - name: BLEU sw-en
-              value: "?"
-      amh:
-        - test_set: FLORES-200
-          source: reported
-          source_url:
-          metrics:
-            - name: BLEU en-am
-              value: "?"
-            - name: BLEU am-en
-              value: "?"
-      som:
-        - test_set: FLORES-200
-          source: reported
-          source_url:
-          metrics:
-            - name: BLEU en-so
-              value: "?"
-            - name: BLEU so-en
-              value: "?"
-      zul:
-        - test_set: FLORES-200
-          source: reported
-          source_url:
-          metrics:
-            - name: BLEU en-zu
-              value: "?"
-            - name: BLEU zu-en
-              value: "?"
-      afr:
-        - test_set: FLORES-200
-          source: reported
-          source_url:
-          metrics:
-            - name: BLEU en-af
-              value: "?"
-            - name: BLEU af-en
-              value: "?"
-      arz:
-        - test_set: FLORES-200
-          source: reported
-          source_url:
-          metrics:
-            - name: BLEU en-arz
-              value: "?"
-            - name: BLEU arz-en
-              value: "?"
-      arb:
-        - test_set: FLORES-200
-          source: reported
-          source_url:
-          metrics:
-            - name: BLEU en-ar
-              value: "?"
-            - name: BLEU ar-en
-              value: "?"
-      fra:
-        - test_set: FLORES-200
-          source: reported
-          source_url:
-          metrics:
-            - name: BLEU en-fr
-              value: "?"
-            - name: BLEU fr-en
-              value: "?"
-      por:
-        - test_set: FLORES-200
-          source: reported
-          source_url:
-          metrics:
-            - name: BLEU en-pt
-              value: "?"
-            - name: BLEU pt-en
-              value: "?"
+              value: 12.96
+            - name: chrF en-wo
+              value: 28.63
+            - name: chrF wo-en
+              value: 39.58
+            - name: chrF fr-wo
+              value: 21.84
+            - name: chrF wo-fr
+              value: 34.59
+      
+   
+
+ 

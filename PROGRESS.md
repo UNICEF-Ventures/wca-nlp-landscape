@@ -83,7 +83,7 @@ Profiles of organizations, research groups, and startups working on African lang
 21. CONCREE - Senegal, Wolof TTS (Adia suite)
 22. Lanfrica - Pan-African, language resource discovery platform
 23. Intron Voice AI - Nigeria, Sahara ASR models, healthcare focus
-24. UBC Deep Learning & NLP Lab - Canada, SERENGETI/Toucan/AfroLID (517 African languages)
+24. UBC Deep Learning & NLP Lab - Canada, SAHARA/Toucan/AfroLID (517 African languages)
 25. Digital Umuganda - Rwanda, AfriVoice dataset (Lingala/Fulfulde/Wolof), 2200hrs Kinyarwanda Common Voice (CLEAR Global contact)
 26. CLEAR Global - Global, TWB Voice (Hausa/Kanuri/Shuwa Arabic), Gamayun, LT4CR, 55 HF models (conducting this consultancy)
 
@@ -170,7 +170,6 @@ Compile existing benchmark results (FLORES, FLEURS, Common Voice, published pape
 | 8 | **SimbaBench** (UBC-NLP) | [arxiv 2505.18436](https://arxiv.org/abs/2505.18436) / [EMNLP 2025](https://aclanthology.org/2025.emnlp-main.559/) / [HF Space](https://huggingface.co/spaces/UBC-NLP/SimbaBench) | ASR+TTS | 12 ASR models + 2 TTS models. 11 focus langs ASR (aka, dyu, fon, fuc, fuf, gaa, hau, ibo, twi, wol, yor), 6 TTS (aka, ewe, hau, lin, twi, yor). Data pulled from Space API. Parser: `scripts/parse_simbabench.py`. | INCLUDED ✓ verified |
 | 9 | **AfriqueLLM** (McGill-NLP) | [arxiv 2601.06395](https://arxiv.org/abs/2601.06395) / [HF Collection](https://huggingface.co/collections/McGill-NLP/afriquellm) | LLM+MT | 7 focus langs: ewe, hau, ibo, lin, twi, wol, yor. 4 model pairs (AfriqueQwen-14B, Qwen3-14B, AfriqueGemma-12B, Gemma3-12B, AfriqueLlama-8B). LLM: Intent+Topic (AfroBench), MT: chrF++ en↔xx (FLORES-200). | INCLUDED ✓ |
 | 10 | **IrokoBench** | [arxiv 2406.03368](https://arxiv.org/abs/2406.03368) | LLM | 7 focus langs: ewe, hau, ibo, lin, twi, wol, yor. 4 models: GPT-4o, LLaMA 3.1 70B, Gemma 2 27B, Aya-101. 3 tasks: AfriMMMLU (5 subjects), AfriMGSM (math exact match), AfriXNLI (NLI accuracy). In-language setting. | INCLUDED ✓ |
-| 11 | **SERENGETI** (UBC-NLP) | [arxiv 2212.10785](https://arxiv.org/abs/2212.10785) | NLU (encoder) | 517 African languages, 8 NLU tasks, 20 datasets. Encoder model (not generative). 82.27 avg F1. | PAPER |
 | 12 | **Bambara ASR Leaderboard** (MALIBA-AI) | [HF Space](https://huggingface.co/spaces/MALIBA-AI/bambara-asr-leaderboard) | ASR | bam only. Multiple models compared. Need browser agent to scrape scores. | NOTED |
 
 #### Identified but not yet investigated
@@ -194,7 +193,6 @@ Compile existing benchmark results (FLORES, FLEURS, Common Voice, published pape
 - `afriquellm.pdf` — AfriqueLLM (McGill-NLP, 2026)
 - `sahara.pdf` — Sahara benchmark (UBC-NLP, ACL 2025)
 - `simbabench.pdf` — SimbaBench / Voice of a Continent (UBC-NLP, EMNLP 2025)
-- `serengeti.pdf` — SERENGETI (UBC-NLP, 2022)
 - `irokobench.pdf` — IrokoBench (Adelani et al., 2024)
 - `afrobench.pdf` — AfroBench (McGill-NLP)
 - `afrimcqa.pdf` — AfriMCQA
@@ -264,13 +262,12 @@ Advisory support for actor selection, agenda input, and presentation of findings
 - Meeting with Nico: all outputs approved, continue benchmark work. Will hire engineer for manual benchmark evaluations.
 - Focus language tiers clarified: Group 1 (UNICEF survey, 10 langs) + Group 2 (UNICEF additions, 5 langs) = priority for manual benchmarks. Group 3 (CLEAR selection, 14 langs) = important but lower priority for manual work.
 - Comprehensive benchmark source tracking added to PROGRESS.md (23 sources tracked: 6 included, 6 to extract, 11 to investigate)
-- Downloaded 5 new papers: AfriqueLLM, Sahara, SimbaBench, SERENGETI, IrokoBench
+- Downloaded 4 new papers: AfriqueLLM, Sahara, SimbaBench, IrokoBench
 - New benchmark sources identified from notes:
   - Sahara (UBC-NLP): 517 languages, 16 NLP tasks, ACL 2025
   - SimbaBench (UBC-NLP): 61 languages, ASR/TTS/SLID, EMNLP 2025
   - AfriqueLLM (McGill-NLP): 20 African language LLMs, AfroBench-Lite eval
   - IrokoBench: 16 African languages, LLM benchmark (AfriXNLI, AfriMGSM, AfriMMLU)
-  - SERENGETI: 517 languages, encoder NLU model
   - Bambara ASR Leaderboard (MALIBA-AI): bam ASR models
 - TODO: Extract scores from newly identified papers (priority: SimbaBench for ASR/TTS, Sahara for LLM, NLLB for MT)
 

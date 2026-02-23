@@ -120,13 +120,6 @@ benchmark_sources:
 
   # --- To extract (papers downloaded) ---
 
-  - name: SERENGETI (UBC-NLP)
-    url: https://arxiv.org/abs/2212.10785
-    type: NLU
-    languages_covered: []
-    status: to_extract
-    description: 517 African languages, 8 NLU tasks, 20 datasets. Encoder model (not generative). 82.27 avg F1.
-
 
 
   # --- Identified, not yet investigated ---

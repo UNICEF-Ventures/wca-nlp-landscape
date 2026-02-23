@@ -123,72 +123,70 @@ benchmark_sources:
 
 
   # --- Identified, not yet investigated ---
-  - name: NLLB (Meta)
+  - name: NLLB/FLORES (Meta)
     url: https://arxiv.org/abs/2207.04672
     type: MT
-    languages_covered: []
+    languages_covered: [mos, dyu, ful, bam, twi, ewe, hau, yor, ibo, wol, lin, sag, aka, fon, knc]
+    # ful via fuv_Latn (Nigerian Fulfulde variety); knc = Central Kanuri (not our focus code kau)
+    # Not covered: fuh, gux, snk, ffm, dts, ses, dag, kri, tem, gaa, swc, mnk, fuf, men, fan, lir, shu, pov
     status: noted
     description: No Language Left Behind. FLORES-200 BLEU scores for 200 languages. Many WCA languages covered. High priority to extract.
 
   - name: MMS Evaluation (Meta)
     url: https://arxiv.org/abs/2305.13516
     type: ASR+TTS+LID
-    languages_covered: []
+    languages_covered: [mos, dyu, ful, gux, bam, dts, ses, ewe, hau, yor, ibo, wol, kri, tem, lin, sag, mnk, aka, men, fon]
+    # Not in MMS: fuh, ffm, twi, kau, swc, fuf, shu (LID only: snk, dag, gaa, fan, lir, pov)
     status: noted
     description: Massively Multilingual Speech. 1,100+ languages. Published WER/CER scores available to extract.
 
   - name: Seamless (Meta)
     url: https://arxiv.org/abs/2312.05187
     type: ASR+MT+TTS
-    languages_covered: []
+    languages_covered: [ful, yor, ibo]
+    # ful via fuv (Nigerian Fulfulde variety); very limited WCA coverage overall
     status: noted
     description: SeamlessM4T multimodal translation model. ASR, MT, and TTS in one model.
 
   - name: MADLAD-400
     url: https://arxiv.org/abs/2309.04662
     type: MT
-    languages_covered: []
+    languages_covered: [hau, ibo, yor, wol, ewe, lin, sag, aka, fon, dyu, bam, kri, ffm, ful]
+    # Not covered: mos, fuh, gux, snk, dts, ses, twi, dag, tem, gaa, kau, swc, mnk, fuf, men, fan, lir, shu, pov
     status: noted
     description: Translation model covering 400+ languages.
 
   - name: BLOOM / BLOOMZ
     url: https://arxiv.org/abs/2211.01786
     type: LLM
-    languages_covered: []
+    languages_covered: [aka, bam, fon, ibo, lin, twi, wol, yor]
+    # Not covered: hau, ewe, mos, dyu, ful, and most others
     status: noted
     description: 176B multilingual model with published evaluation results on HuggingFace.
 
   - name: LLaMAX
     url: https://huggingface.co/LLaMAX/LLaMAX3-8B-Alpaca
     type: LLM
-    languages_covered: []
+    languages_covered: [ful, hau, ibo, lin, wol, yor]
+    # ful via ff (Fulah macro); not covered: ewe, bam, twi, aka, fon, dyu and most others
     status: noted
     description: Multilingual LLaMA extension for low-resource languages.
 
   - name: Goldfish
     url: https://arxiv.org/abs/2408.10441
     type: LLM
-    languages_covered: []
+    languages_covered: [mos, dyu, ful, bam, twi, ewe, hau, yor, ibo, wol, lin, sag, aka, fon, kau]
+    # Monolingual LMs for 350 languages; FLORES perplexity evaluation. ful via fuv; kau via knc
+    # Not covered: fuh, gux, snk, ffm, dts, ses, dag, kri, tem, gaa, swc, mnk, fuf, men, fan, lir, shu, pov
     status: noted
-    description: Low-resource language models.
+    description: Monolingual language models (up to 125M params) for 350 languages, trained on 5MB–1GB of text. FLORES log-perplexity evaluation.
 
-  - name: FLORES-200
-    url: https://github.com/facebookresearch/flores
-    type: MT test set
-    languages_covered: []
-    status: noted
-    description: Standard MT evaluation dataset covering 200 languages.
 
   - name: FLEURS
     url: https://huggingface.co/datasets/google/fleurs
     type: Speech test set
-    languages_covered: []
+    languages_covered: [ful, hau, ibo, lin, wol, yor]
+    # Not covered: ewe, bam, twi, aka, fon, mos, dyu, sag, kau, kri, and most others
     status: noted
-    description: Standard speech evaluation dataset used by Whisper, MMS, and others.
+    description: Standard speech evaluation dataset used by Whisper, MMS, and others. 102 languages.
 
-  - name: AfriSpeech
-    url: null
-    type: ASR
-    languages_covered: []
-    status: noted
-    description: African-focused speech benchmark.

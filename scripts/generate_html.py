@@ -16,7 +16,7 @@ Output:
 from datetime import datetime
 
 from htmlgen.constants import OUTPUT_DIR
-from htmlgen.data import load_all_languages, load_all_actors, load_wca_languages, load_sources
+from htmlgen.data import load_all_languages, load_all_actors, load_wca_languages, load_sources, load_focused_languages
 from htmlgen.styles import get_css
 from htmlgen.tabs import (
     generate_focus_languages_tab, generate_all_languages_tab,
@@ -25,11 +25,11 @@ from htmlgen.tabs import (
 from htmlgen.pages import generate_language_detail_page, generate_actor_detail_page
 
 
-def generate_main_html(languages, actors, wca_languages, sources):
+def generate_main_html(languages, actors, wca_languages, sources, priority_isos, extended_isos):
     """Generate the main index.html page."""
 
-    focus_tab = generate_focus_languages_tab(languages, actors)
-    all_tab = generate_all_languages_tab(wca_languages, languages)
+    focus_tab = generate_focus_languages_tab(languages, actors, priority_isos, extended_isos)
+    all_tab = generate_all_languages_tab(wca_languages, languages, priority_isos, extended_isos)
     actors_tab = generate_actors_tab(actors)
     countries_tab = generate_countries_tab(wca_languages)
     sources_tab = generate_sources_tab(sources)
@@ -210,8 +210,11 @@ def main():
     actors = load_all_actors()
     wca_languages = load_wca_languages()
     sources = load_sources()
+    focused = load_focused_languages()
+    priority_isos = set(focused['priority'])
+    extended_isos = set(focused['extended'])
 
-    print(f"\nLoaded {len(languages)} focus languages")
+    print(f"\nLoaded {len(languages)} focus languages ({len(priority_isos)} priority, {len(extended_isos)} extended)")
     print(f"Loaded {len(wca_languages)} WCA languages")
     print(f"Loaded {len(actors)} actors")
     print(f"Loaded {len(sources['data_sources'])} data sources, {len(sources['benchmark_sources'])} benchmark sources")
@@ -222,7 +225,7 @@ def main():
     (OUTPUT_DIR / "actor").mkdir(parents=True, exist_ok=True)
 
     # Generate main index.html
-    main_html = generate_main_html(languages, actors, wca_languages, sources)
+    main_html = generate_main_html(languages, actors, wca_languages, sources, priority_isos, extended_isos)
     index_path = OUTPUT_DIR / "index.html"
     with open(index_path, 'w') as f:
         f.write(main_html)

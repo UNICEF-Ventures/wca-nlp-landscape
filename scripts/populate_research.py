@@ -95,18 +95,21 @@ def load_focused_languages():
     with open(FOCUSED_LANGUAGES_PATH, 'r') as f:
         data = yaml.safe_load(f)
 
-    # Handle both old format (dict with countries) and new format (list of ISO codes)
     if isinstance(data, list):
         return data
-    elif isinstance(data, dict) and 'countries' in data:
-        # Old format - extract ISO codes
-        iso_codes = []
-        for country_data in data.get('countries', {}).values():
-            for lang in country_data.get('languages', []):
-                iso = lang.get('iso_639_3')
-                if iso:
-                    iso_codes.append(iso)
-        return iso_codes
+    if isinstance(data, dict):
+        # New format: {priority: [...], extended: [...]}
+        if 'priority' in data or 'extended' in data:
+            return (data.get('priority') or []) + (data.get('extended') or [])
+        # Old format: {countries: {...}}
+        if 'countries' in data:
+            iso_codes = []
+            for country_data in data.get('countries', {}).values():
+                for lang in country_data.get('languages', []):
+                    iso = lang.get('iso_639_3')
+                    if iso:
+                        iso_codes.append(iso)
+            return iso_codes
     return []
 
 

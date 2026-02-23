@@ -394,9 +394,28 @@ def get_css():
             font-size: 0.85rem;
         }
 
-        .all-langs-table .focus-row { background: #fff9db; }
-        .all-langs-table .focus-row:hover { background: #fff3bf; }
+        .all-langs-table .priority-row { background: #fff9db; }
+        .all-langs-table .priority-row:hover { background: #fff3bf; }
+        .all-langs-table .extended-row { background: #f8f9fa; }
+        .all-langs-table .extended-row:hover { background: #e9ecef; }
         .focus-star { color: #f59f00; font-size: 1.1em; }
+        .extended-star { color: #adb5bd; }
+
+        .focus-section-header { margin-bottom: 0.75rem; }
+        .focus-section-header h2 { margin: 0 0 0.2rem 0; font-size: 1.15rem; color: var(--primary-dark); }
+        .focus-section-header .section-count { font-weight: normal; color: var(--text-muted); }
+        .focus-section-header .section-desc { margin: 0; font-size: 0.85rem; color: var(--text-muted); }
+
+        .priority-badge {
+            background: #1971c2;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.15rem 0.45rem;
+            border-radius: 3px;
+            letter-spacing: 0.02em;
+            white-space: nowrap;
+        }
 
         .all-langs-table th.sortable { cursor: pointer; user-select: none; }
         .all-langs-table th.sortable::after { content: ' ↕'; opacity: 0.3; }

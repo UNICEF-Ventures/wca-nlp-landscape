@@ -1030,7 +1030,8 @@ def main():
     print("Loading data...")
     languages = load_all_languages()
     actors = load_all_actors()
-    focus_codes = load_focused_languages()
+    focused = load_focused_languages()
+    focus_codes = (focused.get('priority') or []) + (focused.get('extended') or [])
 
     # Filter to focused languages only
     focus_languages = {code: languages[code] for code in focus_codes if code in languages}

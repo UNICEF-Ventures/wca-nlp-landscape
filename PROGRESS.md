@@ -121,8 +121,8 @@ Full scoring framework: `Event/actor_prioritization_methodology.md` (not in repo
 **Status:**
 - [x] Openness field populated for all 26 actors
 - [x] Draft scoring framework applied to all actors
-- [ ] Validate criteria with UNICEF (3 Feb meeting)
-- [ ] Finalize ranked list (end of week)
+- [x] Validate criteria with UNICEF (3 Feb meeting)
+- [x] Finalize ranked list
 
 ---
 

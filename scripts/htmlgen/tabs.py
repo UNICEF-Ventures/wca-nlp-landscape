@@ -23,7 +23,7 @@ def _load_ludp_config():
 LUDP_CONFIG = _load_ludp_config()
 
 
-def generate_language_card(iso_code, lang_data, actors):
+def generate_language_card(iso_code, lang_data, actors, is_priority=False):
     """Generate HTML card for a language."""
     info = lang_data.get('info', {})
     models = lang_data.get('models', {})
@@ -101,11 +101,16 @@ def generate_language_card(iso_code, lang_data, actors):
         search_parts.append(family)
     search_text = ' '.join(str(s) for s in search_parts).lower()
 
+    priority_badge = '<span class="priority-badge">UNICEF Priority</span>' if is_priority else ''
+
     return f"""
         <div class="language-card" id="lang-{iso_code}" data-search="{search_text}">
             <div class="lang-header">
                 <h3><a href="{detail_url}">{name}</a></h3>
-                <span class="lang-codes">{iso3}{f' / {iso1}' if iso1 else ''}</span>
+                <div style="display:flex; align-items:center; gap:0.4rem;">
+                    {priority_badge}
+                    <span class="lang-codes">{iso3}{f' / {iso1}' if iso1 else ''}</span>
+                </div>
             </div>
 
             {countries_html}
@@ -143,8 +148,11 @@ def generate_language_card(iso_code, lang_data, actors):
     """
 
 
-def generate_focus_languages_tab(languages, actors):
+def generate_focus_languages_tab(languages, actors, priority_isos=None, extended_isos=None):
     """Generate the Focus Languages tab content."""
+    priority_isos = priority_isos or set()
+    extended_isos = extended_isos or set()
+
     if not languages:
         return """
             <div class="empty-state">
@@ -153,9 +161,52 @@ def generate_focus_languages_tab(languages, actors):
             </div>
         """
 
-    cards = []
+    priority_cards = []
+    extended_cards = []
+    other_cards = []
+
     for iso_code, lang_data in sorted(languages.items(), key=lambda x: x[1].get('info', {}).get('name', '')):
-        cards.append(generate_language_card(iso_code, lang_data, actors))
+        card = generate_language_card(iso_code, lang_data, actors, is_priority=(iso_code in priority_isos))
+        if iso_code in priority_isos:
+            priority_cards.append(card)
+        elif iso_code in extended_isos:
+            extended_cards.append(card)
+        else:
+            other_cards.append(card)
+
+    sections = []
+
+    if priority_cards:
+        sections.append(f"""
+            <div class="focus-section-header">
+                <h2>Priority Languages <span class="section-count">({len(priority_cards)})</span></h2>
+                <p class="section-desc">Confirmed by UNICEF country programmes</p>
+            </div>
+            <div class="languages-grid">
+                {''.join(priority_cards)}
+            </div>
+        """)
+
+    if extended_cards:
+        sections.append(f"""
+            <div class="focus-section-header" style="margin-top: 2rem;">
+                <h2>Extended Languages <span class="section-count">({len(extended_cards)})</span></h2>
+                <p class="section-desc">Selected based on speaker population, official status, or UNICEF past projects</p>
+            </div>
+            <div class="languages-grid">
+                {''.join(extended_cards)}
+            </div>
+        """)
+
+    if other_cards:
+        sections.append(f"""
+            <div class="focus-section-header" style="margin-top: 2rem;">
+                <h2>Other Languages <span class="section-count">({len(other_cards)})</span></h2>
+            </div>
+            <div class="languages-grid">
+                {''.join(other_cards)}
+            </div>
+        """)
 
     return f"""
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
@@ -163,14 +214,15 @@ def generate_focus_languages_tab(languages, actors):
                    placeholder="Search languages by name, ISO code, country..." style="margin-bottom: 0; max-width: 400px;">
             <span style="font-size: 0.85rem; color: var(--text-muted); white-space: nowrap;">✅ = benchmark scores available</span>
         </div>
-        <div class="languages-grid">
-            {''.join(cards)}
-        </div>
+        {''.join(sections)}
     """
 
 
-def generate_all_languages_tab(wca_languages, focus_languages):
+def generate_all_languages_tab(wca_languages, focus_languages, priority_isos=None, extended_isos=None):
     """Generate the All Languages tab - table of all WCA languages."""
+    priority_isos = priority_isos or set()
+    extended_isos = extended_isos or set()
+
     if not wca_languages:
         return """
             <div class="empty-state">
@@ -190,8 +242,16 @@ def generate_all_languages_tab(wca_languages, focus_languages):
         population = lang.get('population', '')
         endangerment = lang.get('endangerment', '')
 
+        is_priority = iso3 in priority_isos
+        is_extended = iso3 in extended_isos
         is_focus = iso3 in focus_iso_set
-        focus_html = '<span class="focus-star">★</span>' if is_focus else ''
+
+        if is_priority:
+            focus_html = '<span class="focus-star">★</span>'
+        elif is_extended:
+            focus_html = '<span class="focus-star extended-star">☆</span>'
+        else:
+            focus_html = ''
 
         if is_focus:
             name_html = f'<a href="lang/{iso3}.html">{name}</a>'
@@ -215,9 +275,15 @@ def generate_all_languages_tab(wca_languages, focus_languages):
             if match:
                 pop_numeric = int(match.group())
 
-        row_class = 'focus-row' if is_focus else ''
+        if is_priority:
+            row_class = 'priority-row'
+        elif is_extended:
+            row_class = 'extended-row'
+        else:
+            row_class = ''
+        focus_sort = 2 if is_priority else (1 if is_extended else 0)
         rows.append(f"""
-            <tr class="{row_class}" data-name="{name.lower()}" data-iso="{iso3.lower()}" data-countries="{' '.join(countries).lower()}" data-focus="{1 if is_focus else 0}" data-pop="{pop_numeric}">
+            <tr class="{row_class}" data-name="{name.lower()}" data-iso="{iso3.lower()}" data-countries="{' '.join(countries).lower()}" data-focus="{focus_sort}" data-pop="{pop_numeric}">
                 <td>{focus_html}</td>
                 <td>{name_html}</td>
                 <td><span class="iso-code">{iso3}</span></td>
@@ -231,7 +297,7 @@ def generate_all_languages_tab(wca_languages, focus_languages):
         <div class="all-langs-container">
             <div class="all-langs-header">
                 <h2>All WCA Languages</h2>
-                <span>{len(wca_languages)} languages | {len(focus_iso_set)} focus</span>
+                <span>{len(wca_languages)} languages | <span class="focus-star">★</span> {len(priority_isos)} priority · <span class="focus-star extended-star">☆</span> {len(extended_isos)} extended</span>
             </div>
 
             <input type="text" class="all-langs-search" id="langSearch"
@@ -293,11 +359,18 @@ def generate_countries_tab(wca_languages):
 
     # Load focus languages for highlighting
     focus_languages_path = RESEARCH_DIR / "focused_languages.yaml"
-    focus_langs = []
+    priority_langs = []
+    extended_langs = []
     if focus_languages_path.exists():
         with open(focus_languages_path, 'r') as f:
-            focus_langs = yaml.safe_load(f) or []
-    focus_langs_json = json.dumps(focus_langs)
+            focus_data = yaml.safe_load(f) or {}
+        if isinstance(focus_data, dict):
+            priority_langs = focus_data.get('priority') or []
+            extended_langs = focus_data.get('extended') or []
+        elif isinstance(focus_data, list):
+            extended_langs = focus_data
+    priority_langs_json = json.dumps(priority_langs)
+    extended_langs_json = json.dumps(extended_langs)
 
     # Build country options for dropdown (with empty default)
     options_html = '<option value="">— Select a country —</option>\n' + '\n'.join(
@@ -344,7 +417,8 @@ def generate_countries_tab(wca_languages):
             // Country data with LUDP share codes
             const countriesData = {countries_json};
             const langsByCountry = {langs_by_country_json};
-            const focusLanguages = {focus_langs_json};
+            const priorityLanguages = {priority_langs_json};
+            const extendedLanguages = {extended_langs_json};
 
             // Mapping from display names to data names (for language lookup)
             const countryNameMapping = {{
@@ -466,7 +540,9 @@ def generate_countries_tab(wca_languages):
                     const name = lang.name || '';
                     const pop = lang.population || '—';
                     const status = lang.endangerment || '—';
-                    const isFocus = focusLanguages.includes(iso);
+                    const isPriority = priorityLanguages.includes(iso);
+                    const isExtended = extendedLanguages.includes(iso);
+                    const isFocus = isPriority || isExtended;
 
                     // Name with link if focus language
                     const nameHtml = isFocus
@@ -474,11 +550,13 @@ def generate_countries_tab(wca_languages):
                         : name;
 
                     // Focus star
-                    const focusHtml = isFocus
+                    const focusHtml = isPriority
                         ? '<span class="focus-star">★</span>'
-                        : '';
+                        : isExtended
+                            ? '<span class="focus-star extended-star">☆</span>'
+                            : '';
 
-                    const rowClass = isFocus ? 'focus-row' : '';
+                    const rowClass = isPriority ? 'priority-row' : isExtended ? 'extended-row' : '';
 
                     return `<tr class="${{rowClass}}">
                         <td>${{focusHtml}}</td>

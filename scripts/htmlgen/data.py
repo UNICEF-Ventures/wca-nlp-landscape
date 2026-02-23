@@ -22,13 +22,19 @@ def load_markdown(path):
 
 
 def load_focused_languages():
-    """Load focused languages list (ISO codes)."""
+    """Load focused languages, returning {'priority': [...], 'extended': [...]}."""
     if not FOCUSED_LANGUAGES_PATH.exists():
-        return []
+        return {'priority': [], 'extended': []}
     data = load_yaml(FOCUSED_LANGUAGES_PATH)
     if isinstance(data, list):
-        return data
-    return []
+        # Legacy flat list — treat everything as extended
+        return {'priority': [], 'extended': data}
+    if isinstance(data, dict):
+        return {
+            'priority': data.get('priority') or [],
+            'extended': data.get('extended') or [],
+        }
+    return {'priority': [], 'extended': []}
 
 
 def merge_evaluations(auto_evals, manual_evals):

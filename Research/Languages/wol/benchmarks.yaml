@@ -231,6 +231,80 @@ evaluations:
       metrics:
       - name: Avg Score
         value: 68.9
+  - model: Aya-101
+    model_url: https://huggingface.co/CohereForAI/aya-101
+    results:
+    - test_set: AfriMGSM(Math)
+      source: reported
+      source_url: https://arxiv.org/abs/2406.03368
+      metrics:
+      - name: Accuracy
+        value: 1.2
+    - test_set: AfriXNLI
+      source: reported
+      source_url: https://arxiv.org/abs/2406.03368
+      metrics:
+      - name: Accuracy
+        value: 36.7
+  - model: Gemma 2 27B
+    model_url: https://huggingface.co/google/gemma-2-27b-it
+    results:
+    - test_set: AfriMGSM(Math)
+      source: reported
+      source_url: https://arxiv.org/abs/2406.03368
+      metrics:
+      - name: Accuracy
+        value: 5.6
+    - test_set: AfriXNLI
+      source: reported
+      source_url: https://arxiv.org/abs/2406.03368
+      metrics:
+      - name: Accuracy
+        value: 36.7
+  - model: LLaMa 3.1 70B
+    model_url: https://huggingface.co/meta-llama/Meta-Llama-3.1-70B-Instruct
+    results:
+    - test_set: AfriMGSM(Math)
+      source: reported
+      source_url: https://arxiv.org/abs/2406.03368
+      metrics:
+      - name: Accuracy
+        value: 3.2
+    - test_set: AfriXNLI
+      source: reported
+      source_url: https://arxiv.org/abs/2406.03368
+      metrics:
+      - name: Accuracy
+        value: 34.7
+  - model: GPT-4o
+    model_url: https://openai.com/gpt-4o
+    results:
+    - test_set: AfriMMLU
+      source: reported
+      source_url: https://arxiv.org/abs/2406.03368
+      metrics:
+      - name: AfriMMLU-ElemMath
+        value: 61.0
+      - name: AfriMMLU-GlobalFacts
+        value: 36.0
+      - name: AfriMMLU-Geography
+        value: 27.0
+      - name: AfriMMLU-MicroEcon
+        value: 19.0
+      - name: AfriMMLU-IntLaw
+        value: 38.0
+    - test_set: AfriMGSM(Math)
+      source: reported
+      source_url: https://arxiv.org/abs/2406.03368
+      metrics:
+      - name: Accuracy
+        value: 28.0
+    - test_set: AfriXNLI
+      source: reported
+      source_url: https://arxiv.org/abs/2406.03368
+      metrics:
+      - name: Accuracy
+        value: 52.7
   - model: claude-sonnet-4-5-20251001
     model_url: https://huggingface.co/anthropic
     results:

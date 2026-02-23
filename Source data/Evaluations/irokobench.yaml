@@ -1,0 +1,490 @@
+# IrokoBench: A New Benchmark for African Languages in the Age of Large Language Models
+# Paper: https://arxiv.org/abs/2406.03368
+# Source Tables: 
+#   Table 4: GPT-4o AfriMMLU (Per-subject Accuracy)
+#   Table 5: AfriMGSM (Accuracy - Exact Match)
+#   Table 6: AfriXNLI (Accuracy)
+# Evaluation Setting: "Prompt LLMs in African Language" (in-language)
+
+models:
+  - model: Aya-101
+    model_url: https://huggingface.co/CohereForAI/aya-101
+    task: llm
+    results:
+      ewe:
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 3.2
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 43.2
+      hau:
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 7.2
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 57.0
+      ibo:
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 3.2
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 55.5
+      lin:
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 4.4
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 33.5
+      twi:
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 1.6
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 47.0
+      wol:
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 1.2
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 36.7
+      yor:
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 4.4
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 54.5
+
+  - model: Gemma 2 27B
+    model_url: https://huggingface.co/google/gemma-2-27b-it
+    task: llm
+    results:
+      ewe:
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 7.6
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 36.8
+      hau:
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 49.6
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 49.7
+      ibo:
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 24.0
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 46.2
+      lin:
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 18.0
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 32.0
+      twi:
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 12.4
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 36.0
+      wol:
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 5.6
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 36.7
+      yor:
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 22.4
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 42.5
+
+  - model: LLaMa 3.1 70B
+    model_url: https://huggingface.co/meta-llama/Meta-Llama-3.1-70B-Instruct
+    task: llm
+    results:
+      ewe:
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 8.0
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 34.3
+      hau:
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 48.8
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 42.8
+      ibo:
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 37.2
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 42.3
+      lin:
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 11.2
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 32.8
+      twi:
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 14.4
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 36.0
+      wol:
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 3.2
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 34.7
+      yor:
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 23.6
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 39.0
+
+  - model: GPT-4o
+    model_url: https://openai.com/gpt-4o
+    task: llm
+    results:
+      ewe:
+        - test_set: AfriMMLU
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: AfriMMLU-ElemMath
+              value: 55.0
+            - name: AfriMMLU-GlobalFacts
+              value: 32.0
+            - name: AfriMMLU-Geography
+              value: 25.0
+            - name: AfriMMLU-MicroEcon
+              value: 26.0
+            - name: AfriMMLU-IntLaw
+              value: 36.0
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 8.8
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 45.0
+      hau:
+        - test_set: AfriMMLU
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: AfriMMLU-ElemMath
+              value: 73.0
+            - name: AfriMMLU-GlobalFacts
+              value: 56.0
+            - name: AfriMMLU-Geography
+              value: 67.0
+            - name: AfriMMLU-MicroEcon
+              value: 70.0
+            - name: AfriMMLU-IntLaw
+              value: 71.0
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 64.8
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 75.2
+      ibo:
+        - test_set: AfriMMLU
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: AfriMMLU-ElemMath
+              value: 84.0
+            - name: AfriMMLU-GlobalFacts
+              value: 49.0
+            - name: AfriMMLU-Geography
+              value: 64.0
+            - name: AfriMMLU-MicroEcon
+              value: 58.0
+            - name: AfriMMLU-IntLaw
+              value: 75.0
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 57.6
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 68.2
+      lin:
+        - test_set: AfriMMLU
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: AfriMMLU-ElemMath
+              value: 71.0
+            - name: AfriMMLU-GlobalFacts
+              value: 54.0
+            - name: AfriMMLU-Geography
+              value: 55.0
+            - name: AfriMMLU-MicroEcon
+              value: 63.0
+            - name: AfriMMLU-IntLaw
+              value: 76.0
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 51.2
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 32.7
+      twi:
+        - test_set: AfriMMLU
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: AfriMMLU-ElemMath
+              value: 68.0
+            - name: AfriMMLU-GlobalFacts
+              value: 33.0
+            - name: AfriMMLU-Geography
+              value: 34.0
+            - name: AfriMMLU-MicroEcon
+              value: 32.0
+            - name: AfriMMLU-IntLaw
+              value: 45.0
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 31.2
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 55.8
+      wol:
+        - test_set: AfriMMLU
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: AfriMMLU-ElemMath
+              value: 61.0
+            - name: AfriMMLU-GlobalFacts
+              value: 36.0
+            - name: AfriMMLU-Geography
+              value: 27.0
+            - name: AfriMMLU-MicroEcon
+              value: 19.0
+            - name: AfriMMLU-IntLaw
+              value: 38.0
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 28.0
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 52.7
+      yor:
+        - test_set: AfriMMLU
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: AfriMMLU-ElemMath
+              value: 80.0
+            - name: AfriMMLU-GlobalFacts
+              value: 42.0
+            - name: AfriMMLU-Geography
+              value: 53.0
+            - name: AfriMMLU-MicroEcon
+              value: 51.0
+            - name: AfriMMLU-IntLaw
+              value: 75.0
+        - test_set: AfriMGSM(Math)
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 62.0
+        - test_set: AfriXNLI
+          source: reported
+          source_url: https://arxiv.org/abs/2406.03368
+          metrics:
+            - name: Accuracy
+              value: 64.5

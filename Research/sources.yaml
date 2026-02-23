@@ -103,6 +103,12 @@ benchmark_sources:
     status: included
     description: Continual pre-training of LLMs on 20 African languages. MT + Topic and intent classification evaluation
 
+  - name: IrokoBench
+    url: https://arxiv.org/abs/2406.03368
+    type: LLM
+    languages_covered: [ewe, hau, ibo, lin, twi, wol, yor]
+    status: included
+    description: "16 African languages benchmark: AfriXNLI, AfriMGSM, AfriMMLU. 10 open + 4 proprietary LLMs."
 
   # --- Blocked ---
   - name: Sahara (UBC-NLP)
@@ -113,13 +119,6 @@ benchmark_sources:
     description: "517 languages, 16 NLP tasks, 24 models. ACL 2025. Scores in private HF dataset; Space is broken. Need author access."
 
   # --- To extract (papers downloaded) ---
-  
-  - name: IrokoBench
-    url: https://arxiv.org/abs/2406.03368
-    type: LLM
-    languages_covered: [hau, ibo, yor, wol]
-    status: to_extract
-    description: "16 African languages benchmark: AfriXNLI, AfriMGSM, AfriMMLU. 10 open + 4 proprietary LLMs."
 
   - name: SERENGETI (UBC-NLP)
     url: https://arxiv.org/abs/2212.10785

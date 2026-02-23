@@ -1,4 +1,104 @@
 evaluations:
+  llm:
+  - model: AfriqueQwen-14B
+    model_url: https://huggingface.co/AfriqueLLM/AfriqueQwen-14B
+    results:
+    - test_set: AfroBench
+      metrics:
+      - name: Intent
+        value: 14.88
+      - name: Topic
+        value: 46.52
+  - model: Qwen3-14B
+    model_url: https://huggingface.co/Alibaba-NLP/Qwen3-14B-PT
+    results:
+    - test_set: AfroBench
+      metrics:
+      - name: Intent
+        value: 15.38
+      - name: Topic
+        value: 47.07
+  - model: AfriqueGemma-12B
+    model_url: https://huggingface.co/AfriqueLLM/AfriqueGemma-12B
+    results:
+    - test_set: AfroBench
+      metrics:
+      - name: Intent
+        value: 13.84
+      - name: Topic
+        value: 43.23
+  - model: Gemma3-12B
+    model_url: https://huggingface.co/google/gemma-3-12b-pt
+    results:
+    - test_set: AfroBench
+      metrics:
+      - name: Intent
+        value: 15.97
+      - name: Topic
+        value: 47.47
+  - model: AfriqueLlama-8B
+    model_url: https://huggingface.co/AfriqueLLM/AfriqueLlama-8B
+    results:
+    - test_set: AfroBench
+      metrics:
+      - name: Intent
+        value: 9.66
+      - name: Topic
+        value: 38.32
+  - model: claude-sonnet-4-5-20251001
+    model_url: https://huggingface.co/anthropic
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://arxiv.org/abs/2502.19582
+      metrics:
+      - name: Avg Score (pending)
+  mt:
+  - model: AfriqueQwen-14B
+    model_url: https://huggingface.co/AfriqueLLM/AfriqueQwen-14B
+    results:
+    - test_set: FLORES-200
+      metrics:
+      - name: chrF++ en-ee
+        value: 6.22
+      - name: chrF++ ee-en
+        value: 21.97
+  - model: Qwen3-14B
+    model_url: https://huggingface.co/Alibaba-NLP/Qwen3-14B-PT
+    results:
+    - test_set: FLORES-200
+      metrics:
+      - name: chrF++ en-ee
+        value: 6.26
+      - name: chrF++ ee-en
+        value: 22.35
+  - model: AfriqueGemma-12B
+    model_url: https://huggingface.co/AfriqueLLM/AfriqueGemma-12B
+    results:
+    - test_set: FLORES-200
+      metrics:
+      - name: chrF++ en-ee
+        value: 8.47
+      - name: chrF++ ee-en
+        value: 19.71
+  - model: Gemma3-12B
+    model_url: https://huggingface.co/google/gemma-3-12b-pt
+    results:
+    - test_set: FLORES-200
+      metrics:
+      - name: chrF++ en-ee
+        value: 7.45
+      - name: chrF++ ee-en
+        value: 13.92
+  - model: AfriqueLlama-8B
+    model_url: https://huggingface.co/AfriqueLLM/AfriqueLlama-8B
+    results:
+    - test_set: FLORES-200
+      metrics:
+      - name: chrF++ en-ee
+        value: 6.8
+      - name: chrF++ ee-en
+        value: 20.78
   tts:
   - model: facebook/mms-tts
     model_url: https://huggingface.co/facebook/mms-tts

@@ -1,25 +1,25 @@
 # Benchmark Coverage Matrix
 
-Generated: 2026-02-20
+Generated: 2026-02-23
 
 | ISO | ASR | TTS | MT | LLM | Language |
 |-----| --- | --- | --- | --- |---------|
-| mos |     |     |     |     | Mooré |
+| mos |     |     |     |  x  | Mooré |
 | dyu |  x  |     |     |     | Dyula |
 | ful |  x  |     |     |     | Fula |
 | fuh |     |     |     |     | Western Niger Fulfulde |
 | gux |     |     |     |     | Gourmanché |
-| bam |  x  |     |     |     | Bambara |
+| bam |  x  |     |     |  x  | Bambara |
 | snk |     |     |     |     | Soninke |
 | ffm |     |     |     |     | Maasina Fulfulde |
 | dts |     |     |     |     | Escarpment Dogon |
 | ses |     |     |     |     | Koyraboro Senni |
-| twi |  x  |  x  |     |     | Twi |
+| twi |  x  |  x  |  x  |  x  | Twi |
 | dag |     |     |     |     | Dagbani |
-| ewe |     |  x  |     |     | Ewe |
+| ewe |     |  x  |  x  |  x  | Ewe |
 | hau |  x  |  x  |  x  |  x  | Hausa |
 | yor |  x  |  x  |  x  |  x  | Yoruba |
-| ibo |  x  |     |     |  x  | Igbo |
+| ibo |  x  |     |  x  |  x  | Igbo |
 | wol |  x  |     |  x  |  x  | Wolof |
 | kri |     |     |  x  |     | Krio |
 | tem |     |     |     |     | Temne |
@@ -35,8 +35,8 @@ Generated: 2026-02-20
 | fan |     |     |     |     | Fang |
 | lir |     |     |     |     | Liberian Kreyol |
 | shu |     |     |     |     | Chadian Arabic |
-| fon |  x  |     |     |     | Fon |
+| fon |  x  |     |     |  x  | Fon |
 | pov |     |     |  x  |     | Guinea-Bissau Creole |
-| 33 |  14  |  7  |  7  |  5  | Total |
+| 33 |  14  |  7  |  10  |  10  | Total |
 
-Coverage: 18/33 languages have at least one benchmark.
+Coverage: 19/33 languages have at least one benchmark.

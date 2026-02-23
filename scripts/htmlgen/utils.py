@@ -345,7 +345,7 @@ def _render_benchmark_table(entries):
                 source_html = source
 
             # Build metric cells
-            metrics_by_name = {m['name']: m['value'] for m in result.get('metrics', []) if 'name' in m}
+            metrics_by_name = {m['name']: m.get('value') for m in result.get('metrics', []) if 'name' in m}
             metric_cells = []
             for name in metric_names:
                 val = metrics_by_name.get(name)

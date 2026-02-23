@@ -1,0 +1,102 @@
+# SAHARA (Where Are We? Evaluating LLM Performance on African Languages)
+# Paper: https://arxiv.org/abs/2502.19582
+# Leaderboard: https://github.com/UBC-NLP/sahara (currently broken as of Feb 2026 - awaiting fix)
+#
+# SAHARA evaluates LLMs across 4 task clusters on 517 African languages:
+#   - Classification: NLI, language ID, news, sentiment, topic
+#   - Generation: MT, paraphrase, summarization, title generation
+#   - MCCR: general knowledge (AfriMMlu), math (AfriMGSM), reading comp (BeleBele), QA
+#   - Token-level: NER, phrase chunking, POS tagging
+#
+# This file marks coverage for WCARO focus languages only.
+# Scores are PENDING (leaderboard broken). Values are null placeholders.
+# Best-reported model: Claude-4-Sonnet (overall avg 40.82 across task clusters)
+# Best open-weight model: Command-A 111B (overall avg 34.05)
+#
+# Coverage notes per language:
+#   hau: all 4 clusters (most comprehensive among WCA languages)
+#   yor: all 4 clusters
+#   ibo: classification, generation, MCCR, token
+#   bam: classification (sentiment), generation (MAFAND-MT, fra-bam), token (MasakhaNER/POS)
+#   ewe: classification, generation (MAFAND-MT, fra-ewe), token (MasakhaNER/POS), MCCR (IrokoBench)
+#   fon: generation (MAFAND-MT, fra-fon), token (MasakhaNER/POS)
+#   wol: classification (AfriSenti), generation (MAFAND-MT, fra-wol), token (MasakhaNER), MCCR (IrokoBench)
+#   mos: classification, generation (MAFAND-MT, fra-mos), token (MasakhaNER/POS)
+#   lin: MCCR (BeleBele), token (MasakhaNER), classification/MCCR (IrokoBench)
+#   twi: token (MasakhaNER, Yoruba-Twi NER), MCCR (BeleBele)
+
+models:
+  - model: claude-sonnet-4-5-20251001
+    model_url: https://huggingface.co/anthropic
+    task: llm
+    results:
+      hau:
+        - test_set: SAHARA
+          source: reported
+          source_url: https://arxiv.org/abs/2502.19582
+          metrics:
+            - name: Avg Score (pending)
+              value: null
+      yor:
+        - test_set: SAHARA
+          source: reported
+          source_url: https://arxiv.org/abs/2502.19582
+          metrics:
+            - name: Avg Score (pending)
+              value: null
+      ibo:
+        - test_set: SAHARA
+          source: reported
+          source_url: https://arxiv.org/abs/2502.19582
+          metrics:
+            - name: Avg Score (pending)
+              value: null
+      bam:
+        - test_set: SAHARA
+          source: reported
+          source_url: https://arxiv.org/abs/2502.19582
+          metrics:
+            - name: Avg Score (pending)
+              value: null
+      ewe:
+        - test_set: SAHARA
+          source: reported
+          source_url: https://arxiv.org/abs/2502.19582
+          metrics:
+            - name: Avg Score (pending)
+              value: null
+      fon:
+        - test_set: SAHARA
+          source: reported
+          source_url: https://arxiv.org/abs/2502.19582
+          metrics:
+            - name: Avg Score (pending)
+              value: null
+      wol:
+        - test_set: SAHARA
+          source: reported
+          source_url: https://arxiv.org/abs/2502.19582
+          metrics:
+            - name: Avg Score (pending)
+              value: null
+      mos:
+        - test_set: SAHARA
+          source: reported
+          source_url: https://arxiv.org/abs/2502.19582
+          metrics:
+            - name: Avg Score (pending)
+              value: null
+      lin:
+        - test_set: SAHARA
+          source: reported
+          source_url: https://arxiv.org/abs/2502.19582
+          metrics:
+            - name: Avg Score (pending)
+              value: null
+      twi:
+        - test_set: SAHARA
+          source: reported
+          source_url: https://arxiv.org/abs/2502.19582
+          metrics:
+            - name: Avg Score (pending)
+              value: null

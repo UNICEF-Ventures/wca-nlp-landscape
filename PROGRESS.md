@@ -166,9 +166,9 @@ Compile existing benchmark results (FLORES, FLEURS, Common Voice, published pape
 
 | # | Benchmark / Source | Paper/URL | Type | Potential focus langs | Status |
 |---|-------------------|-----------|------|----------------------|--------|
-| 7 | **Sahara** (UBC-NLP) | [arxiv 2502.19582](https://arxiv.org/abs/2502.19582) / [HF Space](https://huggingface.co/spaces/UBC-NLP/sahara) (broken) | LLM | 517 languages, 16 tasks (4 clusters: classification, generation, MCCR, tokens). 10 focus langs covered: hau, yor, ibo, wol, ful, lin, twi, aka, fon, bam. 24 models evaluated. **Scores in private dataset** (`UBC-NLP/sahara_leaderboard_results_private`). HF Space broken. Ask authors for access or score export. | BLOCKED — need author help |
+| 7 | **Sahara** (UBC-NLP) | [arxiv 2502.19582](https://arxiv.org/abs/2502.19582) / [HF Space](https://huggingface.co/spaces/UBC-NLP/sahara) (broken) | LLM | 517 languages, 16 tasks (4 clusters: classification, generation, MCCR, tokens). 10 focus langs covered: **hau, yor, ibo, wol, lin, fon, bam, mos, ewe** (all clusters or most); **twi** (token tasks only: NER/POS). 24 models evaluated. Placeholder file created: `Source data/Evaluations/sahara_llm.yaml` (values null pending leaderboard fix). HF Space broken — contacted authors, awaiting fix. | PLACEHOLDER — awaiting author fix |
 | 8 | **SimbaBench** (UBC-NLP) | [arxiv 2505.18436](https://arxiv.org/abs/2505.18436) / [EMNLP 2025](https://aclanthology.org/2025.emnlp-main.559/) / [HF Space](https://huggingface.co/spaces/UBC-NLP/SimbaBench) | ASR+TTS | 12 ASR models + 2 TTS models. 11 focus langs ASR (aka, dyu, fon, fuc, fuf, gaa, hau, ibo, twi, wol, yor), 6 TTS (aka, ewe, hau, lin, twi, yor). Data pulled from Space API. Parser: `scripts/parse_simbabench.py`. | INCLUDED ✓ verified |
-| 9 | **AfriqueLLM** (McGill-NLP) | [arxiv 2601.06395](https://arxiv.org/abs/2601.06395) / [HF Collection](https://huggingface.co/collections/McGill-NLP/afriquellm) | LLM | 20 African languages CPT. Training: hau, ibo, yor + 17 more. Eval on AfroBench-Lite. 5 base models (Llama 3.1, Gemma 3, Qwen 3). | PAPER |
+| 9 | **AfriqueLLM** (McGill-NLP) | [arxiv 2601.06395](https://arxiv.org/abs/2601.06395) / [HF Collection](https://huggingface.co/collections/McGill-NLP/afriquellm) | LLM+MT | 7 focus langs: ewe, hau, ibo, lin, twi, wol, yor. 4 model pairs (AfriqueQwen-14B, Qwen3-14B, AfriqueGemma-12B, Gemma3-12B, AfriqueLlama-8B). LLM: Intent+Topic (AfroBench), MT: chrF++ en↔xx (FLORES-200). | INCLUDED ✓ |
 | 10 | **IrokoBench** | [arxiv 2406.03368](https://arxiv.org/abs/2406.03368) | LLM | 16 African languages: hau, ibo, yor, wol + more. AfriXNLI, AfriMGSM, AfriMMLU. 10 open + 4 proprietary LLMs. | PAPER |
 | 11 | **SERENGETI** (UBC-NLP) | [arxiv 2212.10785](https://arxiv.org/abs/2212.10785) | NLU (encoder) | 517 African languages, 8 NLU tasks, 20 datasets. Encoder model (not generative). 82.27 avg F1. | PAPER |
 | 12 | **Bambara ASR Leaderboard** (MALIBA-AI) | [HF Space](https://huggingface.co/spaces/MALIBA-AI/bambara-asr-leaderboard) | ASR | bam only. Multiple models compared. Need browser agent to scrape scores. | NOTED |
@@ -241,6 +241,12 @@ Advisory support for actor selection, agenda input, and presentation of findings
 ---
 
 ## Recent Updates
+
+### 2026-02-23
+- **AfriqueLLM benchmarks included:** `Source data/Evaluations/AfriqueLLM.yaml` — 5 models (AfriqueQwen-14B, Qwen3-14B, AfriqueGemma-12B, Gemma3-12B, AfriqueLlama-8B) across 7 focus languages (ewe, hau, ibo, lin, twi, wol, yor). LLM tasks: Intent + Topic classification (AfroBench). MT tasks: chrF++ en↔xx on FLORES-200. Source: [arxiv 2601.06395](https://arxiv.org/abs/2601.06395).
+- **SAHARA LLM benchmark:** Confirmed language coverage from paper (Table D2 + Figure E3). 10 focus languages covered: hau, yor, ibo, wol, lin, fon, bam, mos, ewe (multiple clusters), twi (token tasks only). Placeholder file created at `Source data/Evaluations/sahara_llm.yaml` — values are null pending leaderboard fix. Contacted authors to restore broken HF Space.
+- **Bug fix:** `generate_html.py` crashed on `value: null` (or missing `value` key) in benchmark metrics YAML. Fixed `htmlgen/utils.py` to use `m.get('value')` instead of `m['value']`.
+- **Focus language list restructured:** `focused_languages.yaml` now has two tiers — `priority` (14 languages: UNICEF confirmed + most critical) and `extended` (19 languages: broader coverage). Both tiers are processed and displayed, but the distinction enables prioritization for manual benchmarking and factsheet work.
 
 ### 2026-02-20
 - Added 4 new focus languages (33 total): Fulfulde Maasina (ffm), Fulfulde Adamawa (fub), Koyraboro Senni (ses), Toro So Dogon (dts)

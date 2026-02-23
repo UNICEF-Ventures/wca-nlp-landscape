@@ -9,38 +9,52 @@ common_voice:
   male_percent: 30.0
   female_percent: 37.0
 evaluations:
-  mt:
-  - model: AfriNLLB 548M (Pruned Iterative FT)
-    model_url: https://huggingface.co/AfriNLP/AfriNLLB-12enc-12dec-full-ft-kd
-    results:
-    - test_set: FLORES-200
-      source: reported
-      source_url: https://huggingface.co/collections/AfriNLP/afrinllb
-      metrics:
-      - name: BLEU en-yo
-        value: 8.03
-      - name: BLEU yo-en
-        value: 18.62
-      - name: chrF en-yo
-        value: 29.2
-      - name: chrF yo-en
-        value: 41.08
-  - model: NLLB-600M
-    model_url: https://huggingface.co/facebook/nllb-200-distilled-600M
-    results:
-    - test_set: FLORES-200
-      source: reported
-      source_url: https://huggingface.co/collections/AfriNLP/afrinllb
-      metrics:
-      - name: BLEU en-yo
-        value: 4.32
-      - name: BLEU yo-en
-        value: 17.61
-      - name: chrF en-yo
-        value: 22.87
-      - name: chrF yo-en
-        value: 39.73
   llm:
+  - model: AfriqueQwen-14B
+    model_url: https://huggingface.co/AfriqueLLM/AfriqueQwen-14B
+    results:
+    - test_set: AfroBench
+      metrics:
+      - name: Intent
+        value: 81.88
+      - name: Topic
+        value: 80.42
+  - model: Qwen3-14B
+    model_url: https://huggingface.co/Alibaba-NLP/Qwen3-14B-PT
+    results:
+    - test_set: AfroBench
+      metrics:
+      - name: Intent
+        value: 38.28
+      - name: Topic
+        value: 54.86
+  - model: AfriqueGemma-12B
+    model_url: https://huggingface.co/AfriqueLLM/AfriqueGemma-12B
+    results:
+    - test_set: AfroBench
+      metrics:
+      - name: Intent
+        value: 76.09
+      - name: Topic
+        value: 70.31
+  - model: Gemma3-12B
+    model_url: https://huggingface.co/google/gemma-3-12b-pt
+    results:
+    - test_set: AfroBench
+      metrics:
+      - name: Intent
+        value: 67.12
+      - name: Topic
+        value: 66.67
+  - model: AfriqueLlama-8B
+    model_url: https://huggingface.co/AfriqueLLM/AfriqueLlama-8B
+    results:
+    - test_set: AfroBench
+      metrics:
+      - name: Intent
+        value: 73.38
+      - name: Topic
+        value: 61.91
   - model: CohereForAI/aya-101
     model_url: https://huggingface.co/CohereForAI/aya-101
     results:
@@ -244,6 +258,90 @@ evaluations:
       metrics:
       - name: Avg Score
         value: 75.4
+  - model: claude-sonnet-4-5-20251001
+    model_url: https://huggingface.co/anthropic
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://arxiv.org/abs/2502.19582
+      metrics:
+      - name: Avg Score (pending)
+  mt:
+  - model: AfriqueQwen-14B
+    model_url: https://huggingface.co/AfriqueLLM/AfriqueQwen-14B
+    results:
+    - test_set: FLORES-200
+      metrics:
+      - name: chrF++ en-yo
+        value: 27.45
+      - name: chrF++ yo-en
+        value: 45.35
+  - model: Qwen3-14B
+    model_url: https://huggingface.co/Alibaba-NLP/Qwen3-14B-PT
+    results:
+    - test_set: FLORES-200
+      metrics:
+      - name: chrF++ en-yo
+        value: 10.25
+      - name: chrF++ yo-en
+        value: 27.94
+  - model: AfriqueGemma-12B
+    model_url: https://huggingface.co/AfriqueLLM/AfriqueGemma-12B
+    results:
+    - test_set: FLORES-200
+      metrics:
+      - name: chrF++ en-yo
+        value: 28.59
+      - name: chrF++ yo-en
+        value: 44.72
+  - model: Gemma3-12B
+    model_url: https://huggingface.co/google/gemma-3-12b-pt
+    results:
+    - test_set: FLORES-200
+      metrics:
+      - name: chrF++ en-yo
+        value: 13.91
+      - name: chrF++ yo-en
+        value: 17.14
+  - model: AfriqueLlama-8B
+    model_url: https://huggingface.co/AfriqueLLM/AfriqueLlama-8B
+    results:
+    - test_set: FLORES-200
+      metrics:
+      - name: chrF++ en-yo
+        value: 27.36
+      - name: chrF++ yo-en
+        value: 42.43
+  - model: AfriNLLB 548M (Pruned Iterative FT)
+    model_url: https://huggingface.co/AfriNLP/AfriNLLB-12enc-12dec-full-ft-kd
+    results:
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://huggingface.co/collections/AfriNLP/afrinllb
+      metrics:
+      - name: BLEU en-yo
+        value: 8.03
+      - name: BLEU yo-en
+        value: 18.62
+      - name: chrF en-yo
+        value: 29.2
+      - name: chrF yo-en
+        value: 41.08
+  - model: NLLB-600M
+    model_url: https://huggingface.co/facebook/nllb-200-distilled-600M
+    results:
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://huggingface.co/collections/AfriNLP/afrinllb
+      metrics:
+      - name: BLEU en-yo
+        value: 4.32
+      - name: BLEU yo-en
+        value: 17.61
+      - name: chrF en-yo
+        value: 22.87
+      - name: chrF yo-en
+        value: 39.73
   asr:
   - model: facebook/omniASR-LLM-7B
     model_url: https://huggingface.co/facebook/omniASR-LLM-7B

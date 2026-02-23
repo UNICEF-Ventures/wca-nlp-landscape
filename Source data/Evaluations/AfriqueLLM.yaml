@@ -1,0 +1,545 @@
+# AfriqueLLM: How Data Mixing and Model Architecture Impact Continued Pre-training for African Languages
+# Paper: https://arxiv.org/abs/2601.06395
+# Evaluation on AfroBench tasks (Injongo, SIB-200, FLORES-200)
+# Source: Table 20 (MT chrF++), Table 21 (Intent), Table 22 (Topic)
+
+models:
+  - model: AfriqueQwen-14B
+    model_url: https://huggingface.co/AfriqueLLM/AfriqueQwen-14B
+    task: llm
+    results:
+      ewe:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 14.88
+            - name: Topic
+              value: 46.52
+      hau:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 85.88
+            - name: Topic
+              value: 82.66
+      ibo:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 78.94
+            - name: Topic
+              value: 81.39
+      lin:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 41.38
+            - name: Topic
+              value: 61.41
+      twi:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 25.69
+            - name: Topic
+              value: 81.93
+      wol:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 31.10
+            - name: Topic
+              value: 58.13
+      yor:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 81.88
+            - name: Topic
+              value: 80.42
+
+  - model: AfriqueQwen-14B
+    model_url: https://huggingface.co/AfriqueLLM/AfriqueQwen-14B
+    task: mt
+    results:
+      ewe:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-ee
+              value: 6.22
+            - name: chrF++ ee-en
+              value: 21.97
+      hau:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-ha
+              value: 49.78
+            - name: chrF++ ha-en
+              value: 56.27
+      ibo:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-ig
+              value: 41.14
+            - name: chrF++ ig-en
+              value: 52.01
+      lin:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-ln
+              value: 14.67
+            - name: chrF++ ln-en
+              value: 28.44
+      twi:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-tw
+              value: 12.83
+            - name: chrF++ tw-en
+              value: 27.83
+      wol:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-wo
+              value: 8.41
+            - name: chrF++ wo-en
+              value: 24.15
+      yor:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-yo
+              value: 27.45
+            - name: chrF++ yo-en
+              value: 45.35
+
+  - model: Qwen3-14B
+    model_url: https://huggingface.co/Alibaba-NLP/Qwen3-14B-PT
+    task: llm
+    results:
+      ewe:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 15.38
+            - name: Topic
+              value: 47.07
+      hau:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 29.41
+            - name: Topic
+              value: 55.71
+      ibo:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 39.66
+            - name: Topic
+              value: 60.47
+      lin:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 46.44
+            - name: Topic
+              value: 63.74
+      twi:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 30.84
+            - name: Topic
+              value: 61.41
+      wol:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 32.82
+            - name: Topic
+              value: 58.13
+      yor:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 38.28
+            - name: Topic
+              value: 54.86
+
+  - model: Qwen3-14B
+    model_url: https://huggingface.co/Alibaba-NLP/Qwen3-14B-PT
+    task: mt
+    results:
+      ewe:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-ee
+              value: 6.26
+            - name: chrF++ ee-en
+              value: 22.35
+      hau:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-ha
+              value: 13.45
+            - name: chrF++ ha-en
+              value: 28.23
+      ibo:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-ig
+              value: 11.98
+            - name: chrF++ ig-en
+              value: 29.80
+      lin:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-ln
+              value: 15.09
+            - name: chrF++ ln-en
+              value: 27.63
+      twi:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-tw
+              value: 13.49
+            - name: chrF++ tw-en
+              value: 27.33
+      wol:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-wo
+              value: 10.23
+            - name: chrF++ wo-en
+              value: 24.99
+      yor:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-yo
+              value: 10.25
+            - name: chrF++ yo-en
+              value: 27.94
+
+  - model: AfriqueGemma-12B
+    model_url: https://huggingface.co/AfriqueLLM/AfriqueGemma-12B
+    task: llm
+    results:
+      ewe:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 13.84
+            - name: Topic
+              value: 43.23
+      hau:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 84.22
+            - name: Topic
+              value: 74.27
+      ibo:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 77.94
+            - name: Topic
+              value: 69.80
+      lin:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 44.47
+            - name: Topic
+              value: 51.73
+      twi:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 34.69
+            - name: Topic
+              value: 79.67
+      wol:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 29.31
+            - name: Topic
+              value: 48.49
+      yor:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 76.09
+            - name: Topic
+              value: 70.31
+
+  - model: AfriqueGemma-12B
+    model_url: https://huggingface.co/AfriqueLLM/AfriqueGemma-12B
+    task: mt
+    results:
+      ewe:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-ee
+              value: 8.47
+            - name: chrF++ ee-en
+              value: 19.71
+      hau:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-ha
+              value: 51.36
+            - name: chrF++ ha-en
+              value: 56.79
+      ibo:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-ig
+              value: 41.95
+            - name: chrF++ ig-en
+              value: 52.73
+      lin:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-ln
+              value: 19.64
+            - name: chrF++ ln-en
+              value: 29.77
+      twi:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-tw
+              value: 15.58
+            - name: chrF++ tw-en
+              value: 30.86
+      wol:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-wo
+              value: 7.11
+            - name: chrF++ wo-en
+              value: 22.53
+      yor:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-yo
+              value: 28.59
+            - name: chrF++ yo-en
+              value: 44.72
+
+  - model: Gemma3-12B
+    model_url: https://huggingface.co/google/gemma-3-12b-pt
+    task: llm
+    results:
+      ewe:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 15.97
+            - name: Topic
+              value: 47.47
+      hau:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 84.97
+            - name: Topic
+              value: 80.64
+      ibo:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 72.59
+            - name: Topic
+              value: 78.58
+      lin:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 53.41
+            - name: Topic
+              value: 64.38
+      twi:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 47.81
+            - name: Topic
+              value: 73.51
+      wol:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 36.24
+            - name: Topic
+              value: 58.80
+      yor:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 67.12
+            - name: Topic
+              value: 66.67
+
+  - model: Gemma3-12B
+    model_url: https://huggingface.co/google/gemma-3-12b-pt
+    task: mt
+    results:
+      ewe:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-ee
+              value: 7.45
+            - name: chrF++ ee-en
+              value: 13.92
+      hau:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-ha
+              value: 24.79
+            - name: chrF++ ha-en
+              value: 15.27
+      ibo:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-ig
+              value: 32.27
+            - name: chrF++ ig-en
+              value: 15.07
+      lin:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-ln
+              value: 14.16
+            - name: chrF++ ln-en
+              value: 10.96
+      twi:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-tw
+              value: 15.11
+            - name: chrF++ tw-en
+              value: 12.17
+      wol:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-wo
+              value: 7.60
+            - name: chrF++ wo-en
+              value: 12.38
+      yor:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-yo
+              value: 13.91
+            - name: chrF++ yo-en
+              value: 17.14
+
+  - model: AfriqueLlama-8B
+    model_url: https://huggingface.co/AfriqueLLM/AfriqueLlama-8B
+    task: llm
+    results:
+      ewe:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 9.66
+            - name: Topic
+              value: 38.32
+      hau:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 80.19
+            - name: Topic
+              value: 64.32
+      ibo:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 70.78
+            - name: Topic
+              value: 65.83
+      lin:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 38.78
+            - name: Topic
+              value: 41.85
+      twi:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 22.22
+            - name: Topic
+              value: 73.21
+      wol:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 19.81
+            - name: Topic
+              value: 38.75
+      yor:
+        - test_set: AfroBench
+          metrics:
+            - name: Intent
+              value: 73.38
+            - name: Topic
+              value: 61.91
+
+  - model: AfriqueLlama-8B
+    model_url: https://huggingface.co/AfriqueLLM/AfriqueLlama-8B
+    task: mt
+    results:
+      ewe:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-ee
+              value: 6.80
+            - name: chrF++ ee-en
+              value: 20.78
+      hau:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-ha
+              value: 49.56
+            - name: chrF++ ha-en
+              value: 54.25
+      ibo:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-ig
+              value: 40.84
+            - name: chrF++ ig-en
+              value: 49.67
+      lin:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-ln
+              value: 14.15
+            - name: chrF++ ln-en
+              value: 26.94
+      twi:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-tw
+              value: 13.89
+            - name: chrF++ tw-en
+              value: 27.20
+      wol:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-wo
+              value: 8.93
+            - name: chrF++ wo-en
+              value: 22.37
+      yor:
+        - test_set: FLORES-200
+          metrics:
+            - name: chrF++ en-yo
+              value: 27.36
+            - name: chrF++ yo-en
+              value: 42.43

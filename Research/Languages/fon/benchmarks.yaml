@@ -1,4 +1,13 @@
 evaluations:
+  llm:
+  - model: claude-sonnet-4-5-20251001
+    model_url: https://huggingface.co/anthropic
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://arxiv.org/abs/2502.19582
+      metrics:
+      - name: Avg Score (pending)
   asr:
   - model: facebook/mms-1b-all
     model_url: https://huggingface.co/facebook/mms-1b-all

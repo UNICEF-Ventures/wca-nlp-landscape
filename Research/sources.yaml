@@ -96,22 +96,24 @@ benchmark_sources:
     status: included
     description: Bambara-specific ASR model comparison. Multiple models benchmarked on HuggingFace Space. 
 
+  - name: AfriqueLLM (McGill-NLP)
+    url: https://arxiv.org/abs/2601.06395
+    type: LLM
+    languages_covered: [ewe, hau, ibo, yor, lin, twi, wol]
+    status: included
+    description: Continual pre-training of LLMs on 20 African languages. MT + Topic and intent classification evaluation
+
+
   # --- Blocked ---
   - name: Sahara (UBC-NLP)
     url: https://arxiv.org/abs/2502.19582
     type: LLM
     languages_covered: [hau, yor, ibo, wol, ful, lin, twi, aka, fon, bam]
-    status: blocked
+    status: placeholder
     description: "517 languages, 16 NLP tasks, 24 models. ACL 2025. Scores in private HF dataset; Space is broken. Need author access."
 
   # --- To extract (papers downloaded) ---
-  - name: AfriqueLLM (McGill-NLP)
-    url: https://arxiv.org/abs/2601.06395
-    type: LLM
-    languages_covered: [hau, ibo, yor]
-    status: to_extract
-    description: Continual pre-training of LLMs on 20 African languages. Eval on AfroBench-Lite with 5 base models.
-
+  
   - name: IrokoBench
     url: https://arxiv.org/abs/2406.03368
     type: LLM

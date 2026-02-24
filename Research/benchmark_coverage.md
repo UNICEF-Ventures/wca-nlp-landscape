@@ -4,12 +4,12 @@ Generated: 2026-02-24
 
 | ISO | ASR | TTS | MT | LLM | Language |
 |-----| --- | --- | --- | --- |---------|
-| mos |     |     |     |  x  | Mooré |
-| dyu |  x  |     |     |     | Dyula |
-| ful |  x  |     |     |     | Fula |
+| mos |     |     |  x  |  x  | Mooré |
+| dyu |  x  |     |     |  x  | Dyula |
+| ful |  x  |     |     |  x  | Fula |
 | fuh |     |     |     |     | Western Niger Fulfulde |
 | gux |     |     |     |     | Gourmanché |
-| bam |  x  |     |     |  x  | Bambara |
+| bam |  x  |     |  x  |  x  | Bambara |
 | snk |     |     |     |     | Soninke |
 | ffm |     |     |     |     | Maasina Fulfulde |
 | dts |     |     |     |     | Escarpment Dogon |
@@ -24,12 +24,12 @@ Generated: 2026-02-24
 | kri |     |     |  x  |     | Krio |
 | tem |     |     |     |     | Temne |
 | gaa |  x  |     |     |     | Ga |
-| kau |  x  |  x  |     |     | Kanuri |
+| kau |  x  |  x  |     |  x  | Kanuri |
 | swc |     |     |     |     | Congo Swahili |
 | lin |  x  |  x  |  x  |  x  | Lingala |
 | sag |     |     |  x  |     | Sango |
 | mnk |     |     |     |     | Mandinka |
-| aka |  x  |  x  |     |     | Akan |
+| aka |  x  |  x  |  x  |  x  | Akan |
 | fuf |  x  |     |     |     | Pular |
 | men |     |     |     |     | Mende |
 | fan |     |     |     |     | Fang |
@@ -37,6 +37,6 @@ Generated: 2026-02-24
 | shu |     |     |     |     | Chadian Arabic |
 | fon |  x  |     |     |  x  | Fon |
 | pov |     |     |  x  |     | Guinea-Bissau Creole |
-| 33 |  14  |  7  |  10  |  10  | Total |
+| 33 |  14  |  7  |  13  |  14  | Total |
 
 Coverage: 19/33 languages have at least one benchmark.

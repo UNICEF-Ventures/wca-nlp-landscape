@@ -3,6 +3,34 @@
 # Add one-off benchmark results you find in papers here.
 
 evaluations:
+  asr:
+    - model: facebook/mms-1b-fl102
+      model_url: https://huggingface.co/facebook/mms-1b-fl102
+      results:
+        - test_set: FLEURS-102 test
+          source: reported
+          source_url: https://arxiv.org/abs/2305.13516
+          notes: "Table A3 — MMS fine-tuned on FLEURS labeled data, CC LM."
+          metrics:
+            - name: CER
+              value: 5.9
+        - test_set: FLEURS-102 dev
+          source: reported
+          source_url: https://arxiv.org/abs/2305.13516
+          notes: "Table A3 — MMS fine-tuned on FLEURS labeled data, CC LM."
+          metrics:
+            - name: CER
+              value: 5.5
+    - model: facebook/mms-1b-all
+      model_url: https://huggingface.co/facebook/mms-1b-all
+      results:
+        - test_set: FLEURS test
+          source: reported
+          source_url: https://arxiv.org/abs/2305.13516
+          notes: "Table A1 — MMS 1107-lang model, LSAH + CC LM."
+          metrics:
+            - name: WER
+              value: 26.4
   mt:
     - model: facebook/nllb-200-3.3B
       model_url: https://huggingface.co/facebook/nllb-200-3.3B

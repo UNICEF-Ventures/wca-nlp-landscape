@@ -44,9 +44,10 @@ sources:
 
   - name: Omnilingual ASR
     url: https://github.com/facebookresearch/omnilingual-asr
-    description: Meta Research wav2vec2 + LLaMA multilingual ASR covering 1,672 language-script pairs (1,650 unique ISO 639-3 codes). We check which focus languages are supported.
-    type: model
+    description: Meta Research wav2vec2 + LLaMA multilingual ASR covering 1,672 language-script pairs (1,650 unique ISO 639-3 codes). Most inclusive ASR model for WCA languages. Priority benchmark target — run evaluations especially for languages with no other ASR benchmarks (dag, dts, dyu, fan, fon, gux, kri, lir, men, mnk, pov, sag, ses, snk, tem).
+    type: [model, benchmark]
     languages_covered: [aka, bam, dag, dts, dyu, ewe, fan, fon, ful, gux, hau, ibo, kri, lin, lir, men, mnk, mos, pov, sag, ses, snk, tem, wol, yor]
+    status: to_extract
 
 
   - name: WaxalNLP
@@ -156,16 +157,16 @@ sources:
     languages_covered: [mos, dyu, ful, bam, twi, ewe, hau, yor, ibo, wol, lin, sag, aka, fon, knc]
     # ful via fuv_Latn (Nigerian Fulfulde variety); knc = Central Kanuri (not our focus code kau)
     # Not covered: fuh, gux, snk, ffm, dts, ses, dag, kri, tem, gaa, swc, mnk, fuf, men, fan, lir, shu, pov
-    status: noted
-    description: No Language Left Behind. FLORES-200 BLEU scores for 200 languages. Many WCA languages covered. High priority to extract.
+    status: included
+    description: No Language Left Behind. Extracted benchmarks for hau, ibo, yor (eng pairs); mos, bam (fra pairs) and aka. No evaluation found for dyu, ful. 
 
   - name: MMS (Meta Massively Multilingual Speech)
     url: https://arxiv.org/abs/2305.13516
     type: model
     languages_covered: [mos, dyu, ful, gux, bam, dts, ses, ewe, hau, yor, ibo, wol, kri, tem, lin, sag, mnk, aka, men, fon]
     # Not in MMS: fuh, ffm, twi, kau, swc, fuf, shu (LID only: snk, dag, gaa, fan, lir, pov)
-    status: noted
-    description: Massively Multilingual Speech. 1,100+ languages. Published WER/CER scores available to extract.
+    status: included
+    description: Massively Multilingual Speech. 1,100+ languages. Table A3 (FLEURS-102 CER, fine-tuned) extracted for hau, ful, ibo, lin, wol, yor. Table A1 (FLEURS WER vs Whisper, 1107-lang model) extracted for hau and yor. Per-language scores for non-FLEURS languages not available in paper or repo.
 
   - name: Seamless (Meta)
     url: https://arxiv.org/abs/2312.05187
@@ -205,13 +206,12 @@ sources:
     languages_covered: [mos, dyu, ful, bam, twi, ewe, hau, yor, ibo, wol, lin, sag, aka, fon, kau]
     # Monolingual LMs for 350 languages; FLORES perplexity evaluation. ful via fuv; kau via knc
     # Not covered: fuh, gux, snk, ffm, dts, ses, dag, kri, tem, gaa, swc, mnk, fuf, men, fan, lir, shu, pov
-    status: noted
-    description: Monolingual language models (up to 125M params) for 350 languages, trained on 5MB–1GB of text. FLORES log-perplexity evaluation.
+    status: included
+    description: Monolingual language models (up to 125M params) for 350 languages, trained on 5MB–1GB of text. FLORES log-perplexity evaluation. 
 
   - name: FLEURS
     url: https://huggingface.co/datasets/google/fleurs
     type: dataset
     languages_covered: [ful, hau, ibo, lin, wol, yor]
     # Not covered: ewe, bam, twi, aka, fon, mos, dyu, sag, kau, kri, and most others
-    status: noted
-    description: Standard speech evaluation dataset used by Whisper, MMS, and others. 102 languages.
+    description: Standard speech evaluation dataset used by Whisper, MMS, and others. 102 languages. Benchmark scores tracked per model (MMS, Whisper), not per dataset.

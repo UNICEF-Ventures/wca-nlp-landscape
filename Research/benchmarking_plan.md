@@ -7,27 +7,28 @@
 
 | lang | Language | ASR | TTS | MT | LLM | Runnable eval data |
 |------|----------|:---:|:---:|:--:|:---:|-------------------|
-| hau | Hausa | ✓✓✓ | ✓ | ✓ | ✓✓ | Done — don't add more |
+| hau | Hausa | ✓✓✓ | ✓ | ✓✓ | ✓✓ | Done — don't add more |
 | twi | Twi | ✓✓ | ✓ | ✓ | ✓✓ | Done |
-| ewe | Ewe | — | ✓ | ✓ | ✓✓ | SIB-FLEURS, WaxalNLP — **ASR gap** |
-| bam | Bambara | ✓ | — | — | ✓ | MALIBA benchmark, SIB-FLEURS. MT extractable from NLLB/MADLAD |
-| ful | Fulfulde | ✓ | — | — | — | google/fleurs + SIB-FLEURS. MT extractable from NLLB. LLM via Goldfish |
-| dyu | Dyula | ✓ | — | — | — | SIB-FLEURS. MT extractable from NLLB/MADLAD. LLM via Goldfish |
-| mos | Mooré | — | — | — | ✓ | SIB-FLEURS. ASR extractable from MMS paper. MT extractable from NLLB |
+| ewe | Ewe | — | ✓ | ✓ | ✓✓ | WaxalNLP — **ASR gap** |
+| bam | Bambara | ✓ | — | ✓ | ✓ | MALIBA benchmark. MADLAD MT still pending (external repo) |
+| ful | Fulfulde | ✓ | — | — | ✓ | google/fleurs. MT pending NLLB/MADLAD external repo |
+| dyu | Dyula | ✓ | — | — | ✓ | SIB-FLEURS. MT pending NLLB/MADLAD external repo |
+| mos | Mooré | — | — | ✓ | ✓ | SIB-FLEURS. ASR pending MMS external repo |
 | dag | Dagbani | — | — | — | — | google/WaxalNLP (9.7h CV also) |
-| gux | Gourmantchema | — | — | — | — | MMS-ASR supported → extract WER from MMS paper |
-| dts | Toro So Dogon | — | — | — | — | MMS-ASR supported → extract WER from MMS paper |
-| ses | Koyraboro Senni | — | — | — | — | MMS-ASR supported → extract WER from MMS paper |
+| gux | Gourmantchema | — | — | — | — | MMS-ASR supported → pending MMS external repo |
+| dts | Toro So Dogon | — | — | — | — | MMS-ASR supported → pending MMS external repo |
+| ses | Koyraboro Senni | — | — | — | — | MMS-ASR supported → pending MMS external repo |
 | snk | Soninke | — | — | — | — | CV active + Omnilingual corpus |
 | fuh | W. Niger Fulfulde | — | — | — | — | Omnilingual corpus only |
-| ffm | Maasina Fulfulde | — | — | — | — | Omnilingual ASR (domain-limited). MT extractable from MADLAD-400 |
+| ffm | Maasina Fulfulde | — | — | — | — | Omnilingual ASR (domain-limited). MT pending MADLAD external repo |
 
-### Notes on "covered" languages
-- **bam**: ASR from MALIBA-AI bambara_asr_leaderboard.yaml (5 models). LLM pending SAHARA fix.
-- **mos**: LLM pending SAHARA fix. SIB-FLEURS dataset available for LLM classification eval.
+### Notes
+- **bam, mos**: MT entered from NLLB Table 38 (MAFAND-MT news domain, fra pairs).
+- **hau, ibo, yor**: MAFAND-MT entered from NLLB Table 38 (eng pairs) + Masakhane M2M-100 models.
+- **ful, dyu**: Goldfish LLM perplexity entered. MT still needs NLLB/MADLAD external repos.
 - **ewe**: No ASR benchmarks despite being priority — WaxalNLP makes this runnable.
-- **gux, dts, ses**: Not zero-resource — MMS-ASR supported, WER likely in MMS paper supplementary. Extract before assigning to engineer.
-- **ffm**: MADLAD-400 confirms coverage → MT (FLORES) extractable. Only priority language with MT potential not yet pulled.
+- **gux, dts, ses**: MMS coverage confirmed but scores only in external repo (not in PDF).
+- **ffm**: MADLAD-400 MT potential — only priority language still fully zero-benchmark.
 
 ---
 
@@ -37,40 +38,28 @@
 
 **Verified against downloaded PDFs 2026-02-24.**
 
-1. **MMS paper** (`arxiv 2305.13516`) — ⚠️ scores NOT in PDF
-   - gux, dts, ses, mos, ewe are not in FLEURS-102, so no per-language table exists in the paper
-   - Paper only reports regional aggregate CER for the 1,107-language eval (Africa avg ≈ 4.1)
-   - Per-language scores exist but only in external repo: https://github.com/facebookresearch/fairseq/tree/main/examples/mms
-   - **Action: check that repo for per-language results files for gux, dts, ses**
+1. **MMS paper** (`arxiv 2305.13516`) — ❌ no per-language data available
+   - gux, dts, ses, mos, ewe not in FLEURS-102 — no per-language table in PDF
+   - GitHub repo (examples/mms) contains only model checkpoints, no results files
+   - **Dead end** — only option is to run MMS model directly on a test set (→ Tier B)
 
-2. **NLLB paper** (`arxiv 2207.04672`) — ✓ partial, rest in external repo
-   - **In the paper (Table 38, MAFAND-MT, spBLEU/chrF++):**
-     - mos_Latn: fra→mos 5.4/27.6, mos→fra 6.1/23.5
-     - bam_Latn: fra→bam 7.7/29.9, bam→fra 14.6/37.5
-   - **In the paper (Table 39, FLORES-200 chrF++, partial):**
-     - aka_Latn: eng→aka 35.6, aka→eng 45.6
-   - **dyu, ful (fuv_Latn):** confirmed supported but no per-language table in PDF — external repo only: https://github.com/facebookresearch/fairseq/tree/nllb
-   - Note: MAFAND-MT test set (news domain), different from FLORES — caveat when reporting
+2. **NLLB paper** (`arxiv 2207.04672`) — ✅ done (PDF portion)
+   - Extracted Table 38 (MAFAND-MT): hau, ibo, yor (eng pairs); mos, bam (fra pairs)
+   - Extracted Table 39 (FLORES-200 chrF++): aka
+   - dyu, ful (fuv_Latn) not in PDF — GitHub repo also contains no results files (dead end)
 
-3. **MADLAD-400** (`arxiv 2309.04662`) — ⚠️ scores NOT in PDF
-   - Paper body has only aggregate BLEU by direction. Appendix A.10 references per-language scores but is not reproduced in the 20-page PDF.
-   - Per-language MT scores only in external repo: https://github.com/google-research/google-research/tree/master/madlad_400
-   - **Action: check repo for dyu, bam, ffm, ful, aka, kri**
+3. **MADLAD-400** (`arxiv 2309.04662`) — ❌ no per-language data available
+   - GitHub repo contains only model checkpoints and vocabulary files, no evaluation results
+   - **Dead end** — dyu, bam, ffm, ful, aka, kri MT scores not retrievable without running the model
 
-4. **Goldfish** (`arxiv 2408.10441`) — ✓ fully extractable from PDF
-   - FLORES log-perplexity scores in Table 5 (appendix, in PDF). Metric: mean negative log-probability per FLORES sequence. Lower = better.
-   - Confirmed in paper:
-     - aka_Latn: 132.48 (Goldfish), 128.37 (MaLA-500)
-     - dyu_Latn: 183.05 (Goldfish), 189.79 (MaLA-500)
-     - mos_Latn: 187.64 (Goldfish), 188.11 (MaLA-500)
-     - knc_Arab (Kanuri): 181.38 (Goldfish)
-     - knc_Latn (Kanuri): 170.17 (Goldfish)
-     - bam_Latn: 158.88 (Goldfish), 143.14 (MaLA-500)
-   - sag_Latn and fuv_Latn (ful): likely in Table 5 but not captured — verify in PDF pages 15-20 or at https://github.com/tylerachang/goldfish
-   - **Action: extract and add to benchmarks_manual.yaml for aka, dyu, mos, kau (knc), bam**
+4. **Goldfish** (`arxiv 2408.10441`) — ✅ done
+   - Entered FLORES log-perplexity for: aka, bam, dyu, ewe, fon, ful (fuv), hau, ibo,
+     kau (knc_arab + knc_latn), lin, mos, wol, yor
+   - MaLA-500-10B-v2 baseline also entered for: aka, bam, fon
+   - sag, wol scores confirmed from user; fuv confirmed in table
 
-5. **SAHARA scores** (`arxiv 2502.19582`)
-   - Blocked: HF Space broken, contacted authors
+5. **SAHARA scores** (`arxiv 2502.19582`) — ⚠️ blocked
+   - HF Space broken, contacted authors
    - Covers: bam, mos, ewe, fon, hau, yor, ibo, wol, lin, twi (once fixed)
 
 ### B — ML engineer: run evaluations on existing test sets
@@ -91,39 +80,33 @@
 | fuh | Omnilingual corpus test split | Omnilingual model | ASR → WER/CER (Bible-domain, caveat) |
 | ffm | Omnilingual corpus test split | Omnilingual model | ASR → WER/CER (Bible-domain, caveat) |
 
-**Note on Omnilingual:** Facebook's model claiming 120+ language ASR. Worth running on any language it covers, but note the domain (training data is largely Bible/religious texts via CMU Wilderness). Caveat results accordingly.
+**Note on Omnilingual:** Training data is largely Bible/CMU Wilderness domain — caveat results accordingly.
 
 ### C — Documentation-only (no evaluation possible or warranted)
 
-These languages should have a gap analysis section in the report, not a benchmark table:
-- **gux, dts, ses**: After MMS extraction — characterize coverage. Bible-domain speech only, likely poor on conversational language.
-- **fuh, ffm**: Thinnest coverage in the priority list. Omnilingual corpus + domain-limited. Recommend flagging for UNICEF as needing dedicated data collection if they need usable ASR.
-
-Extended languages with **true gaps** (no known benchmark data, no obvious test set):
-- **swc** (Congo Swahili), **fan** (Fang), **lir** (Liberian Kreyol), **shu** (Chadian Arabic)
-- These 4 have no coverage in any noted source. Flag as genuine technology gaps.
+- **gux, dts, ses**: After MMS extraction — characterize coverage. Bible-domain speech only.
+- **fuh, ffm**: Thinnest coverage in priority list. Flag to UNICEF as needing dedicated data collection.
+- **True gaps** (no data, no test set): swc, fan, lir, shu
 
 ---
 
 ## The Coverage Spectrum (for the report)
 
-Rather than "zero-resource vs covered", frame as a spectrum:
-
-1. **Well-benchmarked** — Multiple models, multiple independent test sets: hau, twi, yor, ibo, wol, lin, ewe (LLM+MT+TTS), bam (ASR+LLM)
-2. **Partially benchmarked** — At least one evaluation, limited model variety: bam, dyu, ful, mos, gaa, aka, kau, fuf, kri, sag, pov, fon
-3. **Evaluation-ready but not run** — Test sets exist, evaluations not done yet: dag (WaxalNLP), snk (CV), ewe (ASR), mos (SIB-FLEURS LLM)
-4. **Extractable from papers** — MMS/NLLB/MADLAD coverage confirmed, just needs pulling: gux, dts, ses (MMS ASR); mos, dyu, ful, bam, ffm (NLLB/MADLAD MT)
-5. **Low-resource, domain-limited** — Only Bible/CMU Wilderness domain coverage: fuh, ffm
-6. **True gaps** — No evaluation data and no test set: swc, fan, lir, shu
+1. **Well-benchmarked** — Multiple models, multiple test sets: hau, twi, yor, ibo, wol, lin
+2. **Good coverage** — 3+ task types: ewe (MT+LLM+TTS), bam (ASR+MT+LLM), mos (MT+LLM), aka (ASR+MT+LLM)
+3. **Partial** — 1–2 task types: dyu (ASR+LLM), ful (ASR+LLM), kau (ASR+TTS+LLM), gaa (ASR), fuf (ASR), kri (MT), sag (MT), pov (MT), fon (ASR+LLM)
+4. **Evaluation-ready but not run**: dag (WaxalNLP), snk (CV), ewe ASR (WaxalNLP)
+5. **Extractable pending repos**: gux, dts, ses (MMS ASR); dyu, ful, ffm (NLLB/MADLAD MT)
+6. **Domain-limited only**: fuh, ffm (Omnilingual/Bible domain)
+7. **True gaps**: swc, fan, lir, shu
 
 ---
 
 ## Next Session Checklist
 
-- [ ] Extract MMS paper WER/CER for gux, dts, ses (and verify mos, ewe)
-- [ ] Extract NLLB FLORES-200 MT scores for mos, dyu, ful, bam, aka
-- [ ] Extract MADLAD-400 MT scores for ffm (and dyu, bam if not covered by NLLB)
-- [ ] Extract Goldfish LLM perplexity for dyu, ful, kau, sag, aka
+- [ ] MMS: no results in repo — move gux, dts, ses to Tier B (run MMS model on test set)
+- [ ] MADLAD: no results in repo — dyu, ffm, ful MT scores only obtainable by running model
+- [ ] NLLB: no results in repo — dyu, ful FLORES-200 scores only obtainable by running model
 - [ ] Wait/follow up on SAHARA HF Space fix
 - [ ] Decide scope for ML engineer engagement (Tier B above)
 - [ ] Add Omnilingual model evaluation to benchmarks_manual.yaml once run

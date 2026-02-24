@@ -24,7 +24,7 @@ Mapping of available NLP resources (ASR, TTS, MT, LLM) and key actors working on
 - [x] Search filtering on Focus Languages and Actors tabs
 - [x] LUDP panel for languages
 - [x] Multilingual model coverage check logic
-- [x] List language support for MMS, AfriNLLB, Omnilingual
+- [x] List language support for MMS, AfriNLLB, Omnilingual, WaxalNLP, SimbaBench
 - [x] Benchmark infrastructure (evaluations in benchmarks.yaml + benchmarks_manual.yaml, Source data/Evaluations/ with fetcher)
 - [x] Unbenchmarked models support (`unbenchmarked_models` in benchmarks_manual.yaml — lists noteworthy models without scores)
 - [ ] Crisis index information for languages (pending approval from CLEAR to add)
@@ -145,7 +145,7 @@ Compile existing benchmark results (FLORES, FLEURS, Common Voice, published pape
 - [ ] Compile TTS benchmarks (more models)
 - [ ] Gap analysis: which languages lack benchmarks
 - [ ] Conducting benchmark analyses where needed and possible
-- [x] **Webpage feature:** "Sources" tab on website listing all data sources and benchmark sources with status, languages, and links (`Source data/sources.yaml`)
+- [x] **Webpage feature:** "Sources" tab on website — unified sortable table of all data and benchmark sources with type badges, focus languages, and status (`Research/sources.yaml`)
 
 ### Benchmark Data Sources — Tracking
 
@@ -239,6 +239,13 @@ Advisory support for actor selection, agenda input, and presentation of findings
 ---
 
 ## Recent Updates
+
+### 2026-02-24
+- **WaxalNLP and SimbaBench added** as multilingual dataset coverage files (`Source data/Multilingual-models-datasets/`). Both now appear in the NLP & Tech Resources section for covered focus languages.
+- **Renamed** `Source data/Multilingual-models/` → `Source data/Multilingual-models-datasets/` to reflect that the directory holds both models and datasets.
+- **Sources page overhauled:** Merged `data_sources` and `benchmark_sources` into a single unified `sources` list in `Research/sources.yaml`. Single sortable table with consistent type badges (Reference, Model Hub, Dataset, Model, Benchmark). Multi-type support for dual-nature sources (e.g. Kreyol-MT, NLLB/FLORES, SimbaBench, AfriNLLB are `[model, benchmark]` or `[benchmark, dataset]`). Status column renamed to "Benchmarks". Default sort by name; clickable sort on Source and Type columns.
+- **Focus language columns populated** for Common Voice (7 langs), WaxalNLP (11), Omnilingual ASR (25), BibleMMS-TTS (1) in sources.yaml.
+- **HuggingFace data refetched** for all focus languages (models.yaml + datasets.yaml updated).
 
 ### 2026-02-23
 - **IrokoBench included:** `Source data/Evaluations/irokobench.yaml` — all 3 tasks, 4 models (GPT-4o, LLaMA 3.1 70B, Gemma 2 27B, Aya-101), 7 focus languages (ewe, hau, ibo, lin, twi, wol, yor). AfriMMMLU (5 subject metrics), AfriMGSM (math exact match), AfriXNLI (NLI accuracy). In-language setting throughout.

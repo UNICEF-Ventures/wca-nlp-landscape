@@ -59,7 +59,7 @@ def generate_main_html(languages, actors, wca_languages, sources, priority_isos,
 
     <div class="disclaimer">
         Work in progress. Some data may contain inaccuracies.
-        <a href="https://github.com/translatorswb/wca-nlp-landscape" target="_blank">Contribute on GitHub</a>
+        <a href="https://github.com/UNICEF-Ventures/wca-nlp-landscape" target="_blank">Contribute on GitHub</a>
     </div>
 
     <div class="tabs">

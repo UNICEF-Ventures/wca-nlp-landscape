@@ -1,52 +1,52 @@
 asr:
   items:
+  - name: UBC-NLP/Simba-S
+    url: https://huggingface.co/UBC-NLP/Simba-S
+    downloads: 119
+    likes: 1
   - name: UBC-NLP/Simba-H
     url: https://huggingface.co/UBC-NLP/Simba-H
-    downloads: 83
+    downloads: 98
     likes: 0
   - name: UBC-NLP/Simba-X
     url: https://huggingface.co/UBC-NLP/Simba-X
-    downloads: 82
+    downloads: 97
     likes: 0
   - name: UBC-NLP/Simba-W
     url: https://huggingface.co/UBC-NLP/Simba-W
-    downloads: 49
+    downloads: 65
     likes: 0
-  - name: UBC-NLP/Simba-S
-    url: https://huggingface.co/UBC-NLP/Simba-S
-    downloads: 42
-    likes: 1
   - name: UBC-NLP/Simba-M
     url: https://huggingface.co/UBC-NLP/Simba-M
-    downloads: 28
+    downloads: 46
     likes: 0
   - name: espnet/xeus
     url: https://huggingface.co/espnet/xeus
-    downloads: 26
-    likes: 143
+    downloads: 23
+    likes: 144
+  - name: johntsi/ZeroSwot-Large_asr-mustc_en-to-200
+    url: https://huggingface.co/johntsi/ZeroSwot-Large_asr-mustc_en-to-200
+    downloads: 4
+    likes: 0
   - name: burkimbia/BIA-WHISPER-LARGE-SACHI_V2
     url: https://huggingface.co/burkimbia/BIA-WHISPER-LARGE-SACHI_V2
-    downloads: 14
-    likes: 0
-  - name: johntsi/ZeroSwot-Large_asr-cv_en-to-200
-    url: https://huggingface.co/johntsi/ZeroSwot-Large_asr-cv_en-to-200
-    downloads: 5
-    likes: 1
-  - name: johntsi/ZeroSwot-Medium_asr-cv_en-to-200
-    url: https://huggingface.co/johntsi/ZeroSwot-Medium_asr-cv_en-to-200
-    downloads: 4
-    likes: 0
-  - name: johntsi/ZeroSwot-Medium_asr-mustc_en-to-200
-    url: https://huggingface.co/johntsi/ZeroSwot-Medium_asr-mustc_en-to-200
-    downloads: 4
+    downloads: 3
     likes: 0
   - name: burkimbia/BIA-WHISPER-LARGE-SACHI_V3
     url: https://huggingface.co/burkimbia/BIA-WHISPER-LARGE-SACHI_V3
-    downloads: 3
+    downloads: 2
     likes: 0
-  - name: johntsi/ZeroSwot-Large_asr-mustc_en-to-200
-    url: https://huggingface.co/johntsi/ZeroSwot-Large_asr-mustc_en-to-200
+  - name: johntsi/ZeroSwot-Medium_asr-cv_en-to-200
+    url: https://huggingface.co/johntsi/ZeroSwot-Medium_asr-cv_en-to-200
     downloads: 1
+    likes: 0
+  - name: johntsi/ZeroSwot-Large_asr-cv_en-to-200
+    url: https://huggingface.co/johntsi/ZeroSwot-Large_asr-cv_en-to-200
+    downloads: 0
+    likes: 1
+  - name: johntsi/ZeroSwot-Medium_asr-mustc_en-to-200
+    url: https://huggingface.co/johntsi/ZeroSwot-Medium_asr-mustc_en-to-200
+    downloads: 0
     likes: 0
   total_count: 12
   counts_by_code:
@@ -55,7 +55,7 @@ tts:
   items:
   - name: mradermacher/orpheus-tts-mos-GGUF
     url: https://huggingface.co/mradermacher/orpheus-tts-mos-GGUF
-    downloads: 17
+    downloads: 46
     likes: 0
   - name: burkimbia/BIA-XTTSv2-moore-v0
     url: https://huggingface.co/burkimbia/BIA-XTTSv2-moore-v0
@@ -72,140 +72,140 @@ translation:
   items:
   - name: facebook/nllb-200-distilled-600M
     url: https://huggingface.co/facebook/nllb-200-distilled-600M
-    downloads: 494000
-    likes: 854
+    downloads: 880000
+    likes: 862
   - name: facebook/nllb-200-distilled-1.3B
     url: https://huggingface.co/facebook/nllb-200-distilled-1.3B
-    downloads: 97400
-    likes: 173
+    downloads: 133000
+    likes: 176
   - name: facebook/nllb-200-3.3B
     url: https://huggingface.co/facebook/nllb-200-3.3B
-    downloads: 58300
-    likes: 420
+    downloads: 54900
+    likes: 423
   - name: facebook/nllb-200-1.3B
     url: https://huggingface.co/facebook/nllb-200-1.3B
-    downloads: 16400
-    likes: 68
-  - name: JustFrederik/nllb-200-distilled-600M-ct2-int8
-    url: https://huggingface.co/JustFrederik/nllb-200-distilled-600M-ct2-int8
-    downloads: 740
-    likes: 1
+    downloads: 20300
+    likes: 69
   - name: facebook/nllb-moe-54b
     url: https://huggingface.co/facebook/nllb-moe-54b
-    downloads: 412
+    downloads: 902
     likes: 123
+  - name: JustFrederik/nllb-200-distilled-600M-ct2-int8
+    url: https://huggingface.co/JustFrederik/nllb-200-distilled-600M-ct2-int8
+    downloads: 812
+    likes: 1
   - name: winstxnhdw/nllb-200-distilled-1.3B-ct2-int8
     url: https://huggingface.co/winstxnhdw/nllb-200-distilled-1.3B-ct2-int8
-    downloads: 323
+    downloads: 257
     likes: 6
   - name: JustFrederik/nllb-200-distilled-1.3B-ct2-int8
     url: https://huggingface.co/JustFrederik/nllb-200-distilled-1.3B-ct2-int8
-    downloads: 76
+    downloads: 131
     likes: 2
-  - name: ychenNLP/nllb-200-distilled-1.3B-easyproject
-    url: https://huggingface.co/ychenNLP/nllb-200-distilled-1.3B-easyproject
-    downloads: 60
+  - name: JustFrederik/nllb-200-distilled-600M-ct2
+    url: https://huggingface.co/JustFrederik/nllb-200-distilled-600M-ct2
+    downloads: 43
     likes: 2
   - name: michaelfeil/ct2fast-nllb-200-3.3B
     url: https://huggingface.co/michaelfeil/ct2fast-nllb-200-3.3B
-    downloads: 47
+    downloads: 39
     likes: 14
-  - name: JustFrederik/nllb-200-distilled-600M-ct2
-    url: https://huggingface.co/JustFrederik/nllb-200-distilled-600M-ct2
-    downloads: 34
-    likes: 2
   - name: JustFrederik/nllb-200-distilled-600M-ct2-float16
     url: https://huggingface.co/JustFrederik/nllb-200-distilled-600M-ct2-float16
-    downloads: 25
+    downloads: 30
     likes: 0
+  - name: ychenNLP/nllb-200-3.3B-easyproject
+    url: https://huggingface.co/ychenNLP/nllb-200-3.3B-easyproject
+    downloads: 25
+    likes: 8
+  - name: Helsinki-NLP/opus-mt-fr-mos
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-fr-mos
+    downloads: 23
+    likes: 1
   - name: michaelfeil/ct2fast-nllb-200-distilled-1.3B
     url: https://huggingface.co/michaelfeil/ct2fast-nllb-200-distilled-1.3B
-    downloads: 21
+    downloads: 20
     likes: 1
   - name: Helsinki-NLP/opus-mt-en-mos
     url: https://huggingface.co/Helsinki-NLP/opus-mt-en-mos
-    downloads: 16
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-fr-mos
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-fr-mos
-    downloads: 13
-    likes: 1
-  - name: JustFrederik/nllb-200-3.3B-ct2-float16
-    url: https://huggingface.co/JustFrederik/nllb-200-3.3B-ct2-float16
-    downloads: 13
-    likes: 3
-  - name: KomorebiAI/nllb-200-3.3B-int8-ct2
-    url: https://huggingface.co/KomorebiAI/nllb-200-3.3B-int8-ct2
-    downloads: 13
-    likes: 3
-  - name: ychenNLP/nllb-200-3.3B-easyproject
-    url: https://huggingface.co/ychenNLP/nllb-200-3.3B-easyproject
-    downloads: 12
-    likes: 8
-  - name: Narsil/nllb
-    url: https://huggingface.co/Narsil/nllb
-    downloads: 9
-    likes: 2
-  - name: Helsinki-NLP/opus-mt-mos-en
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-mos-en
-    downloads: 8
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-sv-mos
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-sv-mos
-    downloads: 8
-    likes: 0
-  - name: JustFrederik/nllb-200-distilled-1.3B-ct2-float16
-    url: https://huggingface.co/JustFrederik/nllb-200-distilled-1.3B-ct2-float16
-    downloads: 8
-    likes: 1
-  - name: JustFrederik/nllb-200-1.3B-ct2-int8
-    url: https://huggingface.co/JustFrederik/nllb-200-1.3B-ct2-int8
-    downloads: 7
+    downloads: 18
     likes: 0
   - name: Helsinki-NLP/opus-mt-fi-mos
     url: https://huggingface.co/Helsinki-NLP/opus-mt-fi-mos
-    downloads: 6
+    downloads: 14
     likes: 0
-  - name: JustFrederik/nllb-200-1.3B-ct2-float16
-    url: https://huggingface.co/JustFrederik/nllb-200-1.3B-ct2-float16
-    downloads: 5
+  - name: Helsinki-NLP/opus-mt-sv-mos
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-sv-mos
+    downloads: 13
     likes: 0
-  - name: JustFrederik/nllb-200-distilled-1.3B-ct2
-    url: https://huggingface.co/JustFrederik/nllb-200-distilled-1.3B-ct2
-    downloads: 5
+  - name: JustFrederik/nllb-200-3.3B-ct2-float16
+    url: https://huggingface.co/JustFrederik/nllb-200-3.3B-ct2-float16
+    downloads: 12
+    likes: 3
+  - name: Helsinki-NLP/opus-mt-mos-en
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-mos-en
+    downloads: 9
     likes: 0
   - name: ArthurZ/nllb-moe-128
     url: https://huggingface.co/ArthurZ/nllb-moe-128
-    downloads: 4
+    downloads: 9
     likes: 0
-  - name: JustFrederik/nllb-200-1.3B-ct2
-    url: https://huggingface.co/JustFrederik/nllb-200-1.3B-ct2
+  - name: ychenNLP/nllb-200-distilled-1.3B-easyproject
+    url: https://huggingface.co/ychenNLP/nllb-200-distilled-1.3B-easyproject
+    downloads: 9
+    likes: 2
+  - name: JustFrederik/nllb-200-distilled-1.3B-ct2-float16
+    url: https://huggingface.co/JustFrederik/nllb-200-distilled-1.3B-ct2-float16
+    downloads: 9
+    likes: 1
+  - name: Narsil/nllb
+    url: https://huggingface.co/Narsil/nllb
+    downloads: 6
+    likes: 2
+  - name: JustFrederik/nllb-200-distilled-1.3B-ct2
+    url: https://huggingface.co/JustFrederik/nllb-200-distilled-1.3B-ct2
     downloads: 4
     likes: 0
   - name: KomorebiAI/nllb-200-3.3B-float16-ct2
     url: https://huggingface.co/KomorebiAI/nllb-200-3.3B-float16-ct2
-    downloads: 3
+    downloads: 4
     likes: 3
+  - name: JustFrederik/nllb-200-1.3B-ct2-float16
+    url: https://huggingface.co/JustFrederik/nllb-200-1.3B-ct2-float16
+    downloads: 3
+    likes: 0
+  - name: JustFrederik/nllb-200-1.3B-ct2-int8
+    url: https://huggingface.co/JustFrederik/nllb-200-1.3B-ct2-int8
+    downloads: 2
+    likes: 0
+  - name: JustFrederik/nllb-200-1.3B-ct2
+    url: https://huggingface.co/JustFrederik/nllb-200-1.3B-ct2
+    downloads: 2
+    likes: 0
   - name: KomorebiAI/nllb-200-3.3B-ct2
     url: https://huggingface.co/KomorebiAI/nllb-200-3.3B-ct2
     downloads: 2
     likes: 2
-  total_count: 82
+  - name: McGill-NLP/ssa-comet-mtl
+    url: https://huggingface.co/McGill-NLP/ssa-comet-mtl
+    downloads: 0
+    likes: 3
+  total_count: 85
   counts_by_code:
-    mos: 82
+    mos: 85
 llm:
   items:
-  - name: goldfish-models/mos_latn_full
-    url: https://huggingface.co/goldfish-models/mos_latn_full
-    downloads: 0
+  - name: goldfish-models/mos_latn_5mb
+    url: https://huggingface.co/goldfish-models/mos_latn_5mb
+    downloads: 4
     likes: 0
   - name: goldfish-models/mos_latn_10mb
     url: https://huggingface.co/goldfish-models/mos_latn_10mb
-    downloads: 0
+    downloads: 3
     likes: 0
-  - name: goldfish-models/mos_latn_5mb
-    url: https://huggingface.co/goldfish-models/mos_latn_5mb
-    downloads: 0
+  - name: goldfish-models/mos_latn_full
+    url: https://huggingface.co/goldfish-models/mos_latn_full
+    downloads: 2
     likes: 0
   - name: wikilangs/mos
     url: https://huggingface.co/wikilangs/mos

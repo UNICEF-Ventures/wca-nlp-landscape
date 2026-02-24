@@ -2,11 +2,11 @@ asr:
   items:
   - name: facebook/omnilingual-asr-corpus
     url: https://huggingface.co/datasets/facebook/omnilingual-asr-corpus
-    downloads: 4170
-    likes: 187
+    downloads: 974
+    likes: 191
   - name: Sellopale/omnilingualpaleoi
     url: https://huggingface.co/datasets/Sellopale/omnilingualpaleoi
-    downloads: 11
+    downloads: 61
     likes: 1
   total_count: 2
   counts_by_code:

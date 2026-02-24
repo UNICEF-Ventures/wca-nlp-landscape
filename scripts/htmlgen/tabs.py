@@ -705,119 +705,144 @@ def generate_actors_tab(actors):
 
 
 def generate_sources_tab(sources):
-    """Generate the Sources tab content."""
-    data_sources = sources.get('data_sources', [])
-    benchmark_sources = sources.get('benchmark_sources', [])
-
-    # --- Section 1: Data Sources ---
-    ds_rows = []
-    for ds in data_sources:
-        name = ds.get('name', '')
-        url = ds.get('url', '')
-        description = ds.get('description', '')
-        ds_type = ds.get('type', '')
-
-        name_html = f'<a href="{url}" target="_blank">{name}</a>' if url else name
-
-        type_labels = {
-            'reference': ('Reference', '#e3f2fd', '#1565c0'),
-            'speech_data': ('Speech Data', '#fff3e0', '#e65100'),
-            'model_hub': ('Model Hub', '#f3e5f5', '#7b1fa2'),
-            'model_coverage': ('Model Coverage', '#e8f5e9', '#2e7d32'),
-        }
-        label, bg, color = type_labels.get(ds_type, (ds_type, '#f5f5f5', '#616161'))
-        type_badge = f'<span style="background:{bg}; color:{color}; padding:0.15rem 0.5rem; border-radius:4px; font-size:0.8rem;">{label}</span>'
-
-        ds_rows.append(f"""
-            <tr>
-                <td>{name_html}</td>
-                <td>{type_badge}</td>
-                <td>{description}</td>
-            </tr>
-        """)
-
-    # --- Section 2: Benchmark Sources ---
+    """Generate the Sources tab content — single unified sortable table."""
+    type_labels = {
+        'reference':      ('Reference',  '#e3f2fd', '#1565c0'),
+        'model_hub':      ('Model Hub',  '#f3e5f5', '#7b1fa2'),
+        'dataset':        ('Dataset',    '#fce4ec', '#880e4f'),
+        'model':          ('Model',      '#e8f5e9', '#1b5e20'),
+        'model_coverage': ('Model',      '#e8f5e9', '#1b5e20'),  # legacy alias
+        'benchmark':      ('Benchmark',  '#fff8e1', '#b45309'),
+        'speech_data':    ('Dataset',    '#fce4ec', '#880e4f'),  # legacy alias
+    }
     status_styles = {
-        'included': ('INCLUDED', '#d4edda', '#155724'),
+        'included':    ('INCLUDED',    '#d4edda', '#155724'),
         'placeholder': ('PLACEHOLDER', '#fff3cd', '#856404'),
-        'to_extract': ('TO EXTRACT', '#fff3cd', '#856404'),
-        'noted': ('NOTED', '#e2e3e5', '#383d41'),
-        'blocked': ('BLOCKED', '#f8d7da', '#721c24'),
+        'to_extract':  ('TO EXTRACT',  '#fff3cd', '#856404'),
+        'noted':       ('NOTED',       '#e2e3e5', '#383d41'),
+        'blocked':     ('BLOCKED',     '#f8d7da', '#721c24'),
     }
 
-    bs_rows = []
-    for bs in benchmark_sources:
-        name = bs.get('name', '')
-        url = bs.get('url', '')
-        bs_type = bs.get('type', '')
-        langs = bs.get('languages_covered', [])
-        status = bs.get('status', '')
-        description = bs.get('description', '')
+    included_count = 0
+    benchmark_count = 0
+
+    # Sort by name
+    sorted_sources = sorted(sources, key=lambda s: s.get('name', '').lower())
+
+    rows = []
+    for s in sorted_sources:
+        name = s.get('name', '')
+        url = s.get('url', '')
+        src_type = s.get('type', '')
+        langs = s.get('languages_covered', [])
+        status = s.get('status')
+        description = s.get('description', '')
 
         name_html = f'<a href="{url}" target="_blank">{name}</a>' if url else name
 
-        # Status badge
-        label, bg, color = status_styles.get(status, (status.upper(), '#e2e3e5', '#383d41'))
-        status_badge = f'<span style="background:{bg}; color:{color}; padding:0.15rem 0.5rem; border-radius:4px; font-size:0.8rem; font-weight:500;">{label}</span>'
+        # Uniform type badge — supports single string or list of types
+        types = src_type if isinstance(src_type, list) else [src_type]
+        badges = []
+        for t in types:
+            if t in type_labels:
+                lbl, bg, color = type_labels[t]
+            else:
+                lbl, bg, color = t, '#f5f5f5', '#616161'
+            badges.append(f'<span style="background:{bg}; color:{color}; padding:0.15rem 0.5rem; border-radius:4px; font-size:0.8rem;">{lbl}</span>')
+        sort_key = type_labels.get(types[0], (types[0], '', ''))[0]
+        type_cell = f'<span data-sort="{sort_key}" style="display:inline-flex;gap:0.25rem;">{"".join(badges)}</span>'
 
-        # Languages
-        langs_html = ', '.join(f'<span class="iso-code">{l}</span>' for l in langs) if langs else '<span style="color:#999;">—</span>'
+        # Benchmarks column
+        if status is not None:
+            benchmark_count += 1
+            if status == 'included':
+                included_count += 1
+            lbl, bg, color = status_styles.get(status, (status.upper(), '#e2e3e5', '#383d41'))
+            status_cell = f'<span style="background:{bg}; color:{color}; padding:0.15rem 0.5rem; border-radius:4px; font-size:0.8rem; font-weight:500;">{lbl}</span>'
+        else:
+            status_cell = '<span style="color:#ccc;">—</span>'
 
-        bs_rows.append(f"""
+        # Focus languages
+        if langs:
+            langs_cell = ', '.join(f'<span class="iso-code">{l}</span>' for l in langs)
+        else:
+            langs_cell = '<span style="color:#ccc;">—</span>'
+
+        rows.append(f"""
             <tr>
                 <td>{name_html}</td>
-                <td>{bs_type}</td>
-                <td>{langs_html}</td>
-                <td>{status_badge}</td>
+                <td style="white-space:nowrap;">{type_cell}</td>
+                <td>{langs_cell}</td>
+                <td>{status_cell}</td>
                 <td style="font-size:0.85rem;">{description}</td>
             </tr>
         """)
 
-    # Count stats
-    included_count = sum(1 for bs in benchmark_sources if bs.get('status') == 'included')
-    total_count = len(benchmark_sources)
+    sort_js = """
+    <script>
+    (function() {
+        var table = document.getElementById('sources-table');
+        if (!table) return;
+        var sortState = {col: -1, asc: true};
+
+        function sortTable(colIdx) {
+            var tbody = table.querySelector('tbody');
+            var rows = Array.from(tbody.querySelectorAll('tr'));
+            var asc = sortState.col === colIdx ? !sortState.asc : true;
+            sortState = {col: colIdx, asc: asc};
+
+            rows.sort(function(a, b) {
+                var ca = a.cells[colIdx];
+                var cb = b.cells[colIdx];
+                // Use data-sort attribute on inner span if present, else textContent
+                var ta = (ca.querySelector('[data-sort]') || ca).getAttribute('data-sort') || ca.textContent.trim().toLowerCase();
+                var tb = (cb.querySelector('[data-sort]') || cb).getAttribute('data-sort') || cb.textContent.trim().toLowerCase();
+                ta = ta.toLowerCase(); tb = tb.toLowerCase();
+                return asc ? ta.localeCompare(tb) : tb.localeCompare(ta);
+            });
+
+            rows.forEach(function(r) { tbody.appendChild(r); });
+
+            // Update header indicators
+            table.querySelectorAll('th[data-sortable]').forEach(function(th) {
+                th.querySelector('.sort-indicator').textContent = '⇅';
+            });
+            var activeHeader = table.querySelectorAll('th[data-sortable]')[colIdx === 0 ? 0 : 1];
+            if (activeHeader) activeHeader.querySelector('.sort-indicator').textContent = asc ? '↑' : '↓';
+        }
+
+        table.querySelectorAll('th[data-sortable]').forEach(function(th) {
+            th.style.cursor = 'pointer';
+            th.addEventListener('click', function() { sortTable(parseInt(th.getAttribute('data-sortable'))); });
+        });
+    })();
+    </script>
+    """
 
     return f"""
         <div class="sources-container">
-            <h2>Data Sources</h2>
+            <h2>Sources</h2>
             <p style="color: var(--text-muted); margin-bottom: 1rem;">
-                General data sources used to populate language profiles, actor information, and technology coverage.
+                All data sources used to populate this report — reference data, model/dataset coverage,
+                and benchmark evaluations. <strong>{included_count}</strong> of {benchmark_count} benchmark
+                sources have scores extracted and included.
             </p>
             <div class="table-scroll">
-                <table class="all-langs-table">
+                <table id="sources-table" class="all-langs-table">
                     <thead>
                         <tr>
-                            <th>Source</th>
-                            <th>Type</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {''.join(ds_rows)}
-                    </tbody>
-                </table>
-            </div>
-
-            <h2 style="margin-top: 2.5rem;">Benchmark Sources</h2>
-            <p style="color: var(--text-muted); margin-bottom: 1rem;">
-                Benchmark and evaluation sources tracked for this study.
-                <strong>{included_count}</strong> of {total_count} sources have scores extracted and included.
-            </p>
-            <div class="table-scroll">
-                <table class="all-langs-table">
-                    <thead>
-                        <tr>
-                            <th>Source</th>
-                            <th>Type</th>
+                            <th data-sortable="0">Source <span class="sort-indicator">↑</span></th>
+                            <th data-sortable="1">Type <span class="sort-indicator">⇅</span></th>
                             <th>Focus Languages</th>
-                            <th>Status</th>
+                            <th>Benchmarks</th>
                             <th>Description</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {''.join(bs_rows)}
+                        {''.join(rows)}
                     </tbody>
                 </table>
             </div>
         </div>
+        {sort_js}
     """

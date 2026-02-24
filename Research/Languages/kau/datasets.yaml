@@ -2,20 +2,20 @@ asr:
   items:
   - name: YuRiVeRTi/V1Q
     url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 528
+    downloads: 620
     likes: 3
+  - name: CLEAR-Global/TWB-Voice-1.0
+    url: https://huggingface.co/datasets/CLEAR-Global/TWB-Voice-1.0
+    downloads: 192
+    likes: 0
   - name: dijihax/Dataset
     url: https://huggingface.co/datasets/dijihax/Dataset
-    downloads: 20
+    downloads: 16
     likes: 2
   - name: lenoxaugo254/LenoxAI
     url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
-    downloads: 6
-    likes: 1
-  - name: CLEAR-Global/TWB-Voice-1.0
-    url: https://huggingface.co/datasets/CLEAR-Global/TWB-Voice-1.0
     downloads: 5
-    likes: 0
+    likes: 1
   total_count: 4
   counts_by_code:
     kr: 4
@@ -23,20 +23,20 @@ tts:
   items:
   - name: YuRiVeRTi/V1Q
     url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 528
+    downloads: 620
     likes: 3
   - name: dijihax/Dataset
     url: https://huggingface.co/datasets/dijihax/Dataset
-    downloads: 20
+    downloads: 16
     likes: 2
-  - name: lenoxaugo254/LenoxAI
-    url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
-    downloads: 6
-    likes: 1
   - name: CLEAR-Global/TWB-voice-TTS-Kanuri-1.0-sampleset
     url: https://huggingface.co/datasets/CLEAR-Global/TWB-voice-TTS-Kanuri-1.0-sampleset
-    downloads: 4
+    downloads: 11
     likes: 0
+  - name: lenoxaugo254/LenoxAI
+    url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
+    downloads: 5
+    likes: 1
   total_count: 5
   counts_by_code:
     kr: 4

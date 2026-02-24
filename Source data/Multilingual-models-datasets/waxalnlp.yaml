@@ -1,0 +1,77 @@
+# WaxalNLP: Large-Scale Multilingual African Language Speech Corpus
+# Source: https://huggingface.co/datasets/google/WaxalNLP
+# Paper: https://arxiv.org/abs/2602.02734 (released Feb 2026)
+# Tasks: ASR and TTS
+# License: CC-BY-SA-4.0 / CC-BY-4.0
+
+description: >
+  WAXAL is a large-scale multilingual speech corpus for African languages by Google,
+  providing data for both Automated Speech Recognition (ASR) and Text-to-Speech (TTS).
+  Released February 2026.
+
+dataset_url: https://huggingface.co/datasets/google/WaxalNLP
+tech_resources_label: WaxalNLP
+
+languages:
+  ach:
+    name: Acholi
+  aka:
+    name: Akan
+  amh:
+    name: Amharic
+  bam:
+    name: Bambara
+  bau:
+    name: Bada
+  dag:
+    name: Dagbani
+  dga:
+    name: Dagaare
+  ewe:
+    name: Ewe
+  fat:
+    name: Fanti
+  ful:
+    name: Fulfulde
+  hau:
+    name: Hausa
+  ibo:
+    name: Igbo
+  kik:
+    name: Kikuyu
+  kpo:
+    name: Kposo
+  lin:
+    name: Lingala
+  lug:
+    name: Luganda
+  luo:
+    name: Luo
+  mas:
+    name: Masai
+  mlg:
+    name: Malagasy
+  nyn:
+    name: Nyankore
+  orm:
+    name: Oromo
+  pcm:
+    name: Nigerian Pidgin
+  sid:
+    name: Sidama
+  sna:
+    name: Shona
+  sog:
+    name: Sogdian
+  swa:
+    name: Swahili
+  tir:
+    name: Tigrinya
+  twi:
+    name: Twi
+  wal:
+    name: Wolaytta
+  wol:
+    name: Wolof
+  yor:
+    name: Yoruba

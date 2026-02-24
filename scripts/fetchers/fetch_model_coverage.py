@@ -22,7 +22,7 @@ from pathlib import Path
 import yaml
 
 
-MODELS_DIR = Path(__file__).parent.parent.parent / "Source data" / "Multilingual-models"
+MODELS_DIR = Path(__file__).parent.parent.parent / "Source data" / "Multilingual-models-datasets"
 
 # Fields in a language entry that are metadata, not tasks
 _META_FIELDS = {'name', 'role'}

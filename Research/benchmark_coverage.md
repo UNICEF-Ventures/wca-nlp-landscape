@@ -1,6 +1,6 @@
 # Benchmark Coverage Matrix
 
-Generated: 2026-02-23
+Generated: 2026-02-24
 
 | ISO | ASR | TTS | MT | LLM | Language |
 |-----| --- | --- | --- | --- |---------|

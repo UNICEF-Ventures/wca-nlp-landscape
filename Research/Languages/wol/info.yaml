@@ -49,3 +49,5 @@ tech_resources:
   MMS-ASR: true
   MMS-LID: true
   Omnilingual ASR: true
+  SimbaBench: true
+  WaxalNLP: true

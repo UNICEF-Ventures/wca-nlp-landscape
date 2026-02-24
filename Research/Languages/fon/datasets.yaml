@@ -2,17 +2,33 @@ asr:
   items:
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 394
+    downloads: 329
     likes: 11
-  total_count: 1
+  - name: UBC-NLP/SimbaBench_dataset
+    url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
+    downloads: 45
+    likes: 1
+  - name: Professor/fongbe-speech-zenodo
+    url: https://huggingface.co/datasets/Professor/fongbe-speech-zenodo
+    downloads: 27
+    likes: 0
+  - name: Professor/fongbe-hausa-asr-dataset
+    url: https://huggingface.co/datasets/Professor/fongbe-hausa-asr-dataset
+    downloads: 11
+    likes: 0
+  total_count: 4
   counts_by_code:
-    fon: 1
+    fon: 4
 tts:
   items:
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 394
+    downloads: 329
     likes: 11
-  total_count: 1
+  - name: UBC-NLP/SimbaBench_dataset
+    url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
+    downloads: 45
+    likes: 1
+  total_count: 2
   counts_by_code:
-    fon: 1
+    fon: 2

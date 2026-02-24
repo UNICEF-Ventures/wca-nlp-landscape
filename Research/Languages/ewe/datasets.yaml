@@ -2,147 +2,179 @@ asr:
   items:
   - name: sarulab-speech/yodas2_sidon
     url: https://huggingface.co/datasets/sarulab-speech/yodas2_sidon
-    downloads: 26800
-    likes: 55
-  - name: google/WaxalNLP
-    url: https://huggingface.co/datasets/google/WaxalNLP
-    downloads: 7470
-    likes: 119
+    downloads: 52800
+    likes: 57
   - name: suryatmodulus/yodas2_sidon
     url: https://huggingface.co/datasets/suryatmodulus/yodas2_sidon
-    downloads: 3340
+    downloads: 16400
     likes: 0
+  - name: google/WaxalNLP
+    url: https://huggingface.co/datasets/google/WaxalNLP
+    downloads: 9720
+    likes: 142
   - name: YuRiVeRTi/V1Q
     url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 528
+    downloads: 620
     likes: 3
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 394
+    downloads: 329
     likes: 11
   - name: Groovy-123/deep-think
     url: https://huggingface.co/datasets/Groovy-123/deep-think
-    downloads: 73
+    downloads: 83
+    likes: 1
+  - name: UBC-NLP/SimbaBench_dataset
+    url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
+    downloads: 45
     likes: 1
   - name: Ephraimmm/WaxalNLPr
     url: https://huggingface.co/datasets/Ephraimmm/WaxalNLPr
-    downloads: 38
+    downloads: 42
     likes: 0
   - name: Groovy-123/QuantumAI
     url: https://huggingface.co/datasets/Groovy-123/QuantumAI
-    downloads: 33
+    downloads: 37
     likes: 0
+  - name: zoelaenskii/zinny
+    url: https://huggingface.co/datasets/zoelaenskii/zinny
+    downloads: 28
+    likes: 1
   - name: 0xzanuee/WaxalNLP
     url: https://huggingface.co/datasets/0xzanuee/WaxalNLP
-    downloads: 21
+    downloads: 27
     likes: 0
   - name: Phsntom/WaxalNLP
     url: https://huggingface.co/datasets/Phsntom/WaxalNLP
-    downloads: 21
+    downloads: 27
     likes: 0
-  - name: dijihax/Dataset
-    url: https://huggingface.co/datasets/dijihax/Dataset
-    downloads: 20
-    likes: 2
-  - name: french-datasets/espnet_yodas
-    url: https://huggingface.co/datasets/french-datasets/espnet_yodas
-    downloads: 19
-    likes: 0
+  - name: OlameMend/soreva
+    url: https://huggingface.co/datasets/OlameMend/soreva
+    downloads: 23
+    likes: 6
   - name: french-datasets/espnet_yodas2
     url: https://huggingface.co/datasets/french-datasets/espnet_yodas2
     downloads: 19
     likes: 0
-  - name: OlameMend/soreva
-    url: https://huggingface.co/datasets/OlameMend/soreva
+  - name: french-datasets/espnet_yodas
+    url: https://huggingface.co/datasets/french-datasets/espnet_yodas
+    downloads: 18
+    likes: 0
+  - name: dijihax/Dataset
+    url: https://huggingface.co/datasets/dijihax/Dataset
     downloads: 16
-    likes: 6
-  - name: lenoxaugo254/LenoxAI
-    url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
-    downloads: 6
-    likes: 1
+    likes: 2
+  - name: novelwolde36/WaxalNLP
+    url: https://huggingface.co/datasets/novelwolde36/WaxalNLP
+    downloads: 13
+    likes: 0
   - name: Menoviar28/menov31
     url: https://huggingface.co/datasets/Menoviar28/menov31
-    downloads: 6
+    downloads: 12
     likes: 0
-  - name: worldboss/ewe_bible_v1
-    url: https://huggingface.co/datasets/worldboss/ewe_bible_v1
-    downloads: 2
+  - name: ngoloan/WaxalNLP
+    url: https://huggingface.co/datasets/ngoloan/WaxalNLP
+    downloads: 11
     likes: 0
   - name: worldboss/ewe_bible_v2_tts
     url: https://huggingface.co/datasets/worldboss/ewe_bible_v2_tts
-    downloads: 2
+    downloads: 6
     likes: 0
-  total_count: 18
+  - name: lenoxaugo254/LenoxAI
+    url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
+    downloads: 5
+    likes: 1
+  - name: worldboss/ewe_bible_v1
+    url: https://huggingface.co/datasets/worldboss/ewe_bible_v1
+    downloads: 3
+    likes: 0
+  total_count: 22
   counts_by_code:
-    ee: 11
-    ewe: 7
+    ee: 12
+    ewe: 10
 tts:
   items:
   - name: sarulab-speech/yodas2_sidon
     url: https://huggingface.co/datasets/sarulab-speech/yodas2_sidon
-    downloads: 26800
-    likes: 55
-  - name: google/WaxalNLP
-    url: https://huggingface.co/datasets/google/WaxalNLP
-    downloads: 7470
-    likes: 119
+    downloads: 52800
+    likes: 57
   - name: suryatmodulus/yodas2_sidon
     url: https://huggingface.co/datasets/suryatmodulus/yodas2_sidon
-    downloads: 3340
+    downloads: 16400
     likes: 0
+  - name: google/WaxalNLP
+    url: https://huggingface.co/datasets/google/WaxalNLP
+    downloads: 9720
+    likes: 142
   - name: YuRiVeRTi/V1Q
     url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 528
+    downloads: 620
     likes: 3
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 394
+    downloads: 329
     likes: 11
   - name: Groovy-123/deep-think
     url: https://huggingface.co/datasets/Groovy-123/deep-think
-    downloads: 73
+    downloads: 83
+    likes: 1
+  - name: UBC-NLP/SimbaBench_dataset
+    url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
+    downloads: 45
     likes: 1
   - name: Ephraimmm/WaxalNLPr
     url: https://huggingface.co/datasets/Ephraimmm/WaxalNLPr
-    downloads: 38
+    downloads: 42
     likes: 0
   - name: Groovy-123/QuantumAI
     url: https://huggingface.co/datasets/Groovy-123/QuantumAI
-    downloads: 33
+    downloads: 37
     likes: 0
+  - name: zoelaenskii/zinny
+    url: https://huggingface.co/datasets/zoelaenskii/zinny
+    downloads: 28
+    likes: 1
   - name: 0xzanuee/WaxalNLP
     url: https://huggingface.co/datasets/0xzanuee/WaxalNLP
-    downloads: 21
+    downloads: 27
     likes: 0
   - name: Phsntom/WaxalNLP
     url: https://huggingface.co/datasets/Phsntom/WaxalNLP
-    downloads: 21
+    downloads: 27
     likes: 0
-  - name: dijihax/Dataset
-    url: https://huggingface.co/datasets/dijihax/Dataset
-    downloads: 20
-    likes: 2
   - name: OlameMend/soreva
     url: https://huggingface.co/datasets/OlameMend/soreva
-    downloads: 16
+    downloads: 23
     likes: 6
-  - name: lenoxaugo254/LenoxAI
-    url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
-    downloads: 6
-    likes: 1
+  - name: dijihax/Dataset
+    url: https://huggingface.co/datasets/dijihax/Dataset
+    downloads: 16
+    likes: 2
+  - name: novelwolde36/WaxalNLP
+    url: https://huggingface.co/datasets/novelwolde36/WaxalNLP
+    downloads: 13
+    likes: 0
   - name: Menoviar28/menov31
     url: https://huggingface.co/datasets/Menoviar28/menov31
-    downloads: 6
+    downloads: 12
     likes: 0
-  - name: worldboss/ewe_bible_v1
-    url: https://huggingface.co/datasets/worldboss/ewe_bible_v1
-    downloads: 2
+  - name: ngoloan/WaxalNLP
+    url: https://huggingface.co/datasets/ngoloan/WaxalNLP
+    downloads: 11
     likes: 0
   - name: worldboss/ewe_bible_v2_tts
     url: https://huggingface.co/datasets/worldboss/ewe_bible_v2_tts
-    downloads: 2
+    downloads: 6
     likes: 0
-  total_count: 16
+  - name: lenoxaugo254/LenoxAI
+    url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
+    downloads: 5
+    likes: 1
+  - name: worldboss/ewe_bible_v1
+    url: https://huggingface.co/datasets/worldboss/ewe_bible_v1
+    downloads: 3
+    likes: 0
+  total_count: 20
   counts_by_code:
-    ee: 11
-    ewe: 5
+    ee: 12
+    ewe: 8

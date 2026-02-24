@@ -1,7 +1,16 @@
 # Sources used in the UNICEF WCARO NLP Landscape project
-# Two sections: general data sources and benchmark/evaluation sources
+#
+# Single unified list. Items with a 'status' field are benchmark-trackable
+# (shown in the Benchmark Sources section). All others are general data
+# sources (shown in the Data Sources section).
+#
+# Types: reference, model_hub, dataset, model, benchmark (type can be a list for dual-nature sources)
+# Benchmark status values: included, placeholder, to_extract, noted, blocked
 
-data_sources:
+sources:
+
+  # ── General Data Sources ─────────────────────────────────────────────────
+
   - name: CLEAR Global Language Use Data Platform (LUDP)
     url: https://clearglobal.org/language-use-data-platform/
     description: Subnational language use data for 23 WCA countries. Shows languages spoken at home by proportion of population, with interactive maps.
@@ -9,18 +18,13 @@ data_sources:
 
   - name: African Language Grid
     url: https://docs.google.com/spreadsheets/d/1fq2zb9NFBJdqg15hMckUQa1drYEauiAWfZXgNwOVGE0/edit?gid=2071286209#gid=2071286209
-    description: Comprehensive spreadsheet of African languages with ISO codes, countries, populations, and endangerment status. Compiled by Martin Benjamin.
+    description: Comprehensive spreadsheet of African languages with ISO codes, countries, populations, and endangerment status. Compiled by Martin Benjamin. Also source of tech resource flags (NLLB-200, mBERT, FLEURS, MADLAD-400, Aya-101, Fineweb2, AfroLID, CMU Wilderness, MAFAND, AfriHate, NaijaVoices, Google Translate, mBart-50, M2M-100).
     type: reference
 
   - name: EQUATE Index
     url: https://www.equate-index.ai/en
     description: Language AI Readiness Index from Cambridge University. Covers 6,003 languages across 3 dimensions — AI resources, digital infrastructure, socioeconomics.
     type: reference
-
-  - name: Common Voice (Mozilla)
-    url: https://commonvoice.mozilla.org
-    description: Community-driven multilingual speech dataset. Provides validated speech hours, clips, and speaker counts per language. Used for ASR training and evaluation.
-    type: speech_data
 
   - name: HuggingFace
     url: https://huggingface.co
@@ -32,109 +36,123 @@ data_sources:
     description: Used to fetch language metadata — language family, speaker counts, writing systems, and official status information.
     type: reference
 
-  - name: MMS (Meta Massively Multilingual Speech)
-    url: https://ai.meta.com/blog/multilingual-model-speech-recognition/
-    description: Meta's multilingual speech project covering 1,100+ languages for ASR, TTS, and language identification. We check which focus languages are supported.
-    type: model_coverage
+  - name: Common Voice (Mozilla)
+    url: https://commonvoice.mozilla.org
+    description: Community-driven multilingual speech dataset. Provides validated speech hours, clips, and speaker counts per language. Used for ASR training and evaluation.
+    type: dataset
+    languages_covered: [dag, dyu, fan, hau, ibo, twi, yor]
+
+  - name: Omnilingual ASR
+    url: https://github.com/facebookresearch/omnilingual-asr
+    description: Meta Research wav2vec2 + LLaMA multilingual ASR covering 1,672 language-script pairs (1,650 unique ISO 639-3 codes). We check which focus languages are supported.
+    type: model
+    languages_covered: [aka, bam, dag, dts, dyu, ewe, fan, fon, ful, gux, hau, ibo, kri, lin, lir, men, mnk, mos, pov, sag, ses, snk, tem, wol, yor]
 
 
-benchmark_sources:
-  # --- Already included (scores in the system) ---
+  - name: WaxalNLP
+    url: https://huggingface.co/datasets/google/WaxalNLP
+    description: Large-scale multilingual speech corpus by Google for 31 African languages, providing ASR and TTS training data. Released February 2026 (arxiv:2602.02734).
+    type: dataset
+    languages_covered: [aka, bam, dag, ewe, ful, hau, ibo, lin, twi, wol, yor]
+
+  - name: BibleMMS-TTS
+    url: https://huggingface.co/datasets/Flux9665/BibleMMS
+    description: The dataset associated with the paper "Meta Learning Text-to-Speech Synthesis in over 7000 Languages" by Florian Lux et al. 2000 spoken utterances per language using subsets of the eBible dataset that are under free licenses as text input to the MMS TTS models.
+    type: dataset
+    languages_covered: [gux]
+
+
+  # ── Benchmark Sources ─────────────────────────────────────────────────────
+
   - name: Whisper (FLEURS WER)
     url: https://arxiv.org/abs/2212.04356
-    type: ASR
+    type: model
     languages_covered: [hau, yor, lin]
     status: included
     description: OpenAI Whisper evaluated on FLEURS benchmark. 6 model sizes with WER scores.
 
   - name: PazaBench (Microsoft)
     url: https://huggingface.co/spaces/microsoft/paza-bench
-    type: ASR
+    type: benchmark
     languages_covered: [dyu, ful, hau, ibo, lin, twi, wol, yor]
     status: included
     description: Microsoft benchmark evaluating 52 ASR models on 39 African languages with CER and WER metrics.
 
   - name: AfroBench-Lite (McGill-NLP)
     url: https://huggingface.co/spaces/McGill-NLP/AfroBench
-    type: LLM
+    type: benchmark
     languages_covered: [hau, ibo, lin, wol, yor]
     status: included
     description: Aggregate scores across 15 NLP tasks and 22 datasets for African languages. 24 models evaluated including open-weight and proprietary.
 
   - name: CLEAR Global TWB Voice
     url: https://huggingface.co/CLEAR-Global
-    type: ASR+TTS
+    type: model
     languages_covered: [hau, kau]
     status: included
     description: CLEAR Global's Whisper and wav2vec-BERT fine-tunes plus TTS models for Hausa and Kanuri.
 
   - name: Kreyol-MT
     url: https://arxiv.org/abs/2405.05376
-    type: MT
+    type: [model, benchmark]
     languages_covered: [kri, pov, sag]
     status: included
     description: Bible-parallel MT benchmark for creole and low-resource languages. BLEU scores included with caveat on domain generalization.
 
-  - name: SimbaBench (UBC-NLP)
-    url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
-    type: ASR+TTS
+  - name: SimbaBench
+    url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
+    type: [benchmark, dataset]
     languages_covered: [aka, dyu, ewe, fon, fuf, gaa, hau, ibo, lin, twi, wol, yor]
     status: included
-    description: "Voice of a Continent benchmark. 12 ASR models + 2 TTS models across 61 African languages. EMNLP 2025."
+    description: "Voice of a Continent benchmark dataset by UBC-NLP. 12 ASR models + 2 TTS models across 61 African languages. EMNLP 2025."
 
-  - name: AfriNLLB (FLORES-200)
+  - name: AfriNLLB
     url: https://huggingface.co/collections/AfriNLP/afrinllb
-    type: MT
+    type: [model, benchmark]
     languages_covered: [hau, yor, lin, wol]
     status: included
-    description: African languages extension of NLLB evaluated on FLORES-200.
+    description: Lightweight translation models for African languages based on NLLB-200 600M, compressed via iterative layer pruning and quantization (AfricaNLP 2026). Evaluated on FLORES-200.
 
   - name: Bambara ASR Leaderboard (MALIBA-AI)
     url: https://huggingface.co/spaces/MALIBA-AI/bambara-asr-leaderboard
-    type: ASR
+    type: benchmark
     languages_covered: [bam]
     status: included
-    description: Bambara-specific ASR model comparison. Multiple models benchmarked on HuggingFace Space. 
+    description: Bambara-specific ASR model comparison. Multiple models benchmarked on HuggingFace Space.
 
   - name: AfriqueLLM (McGill-NLP)
     url: https://arxiv.org/abs/2601.06395
-    type: LLM
+    type: model
     languages_covered: [ewe, hau, ibo, yor, lin, twi, wol]
     status: included
-    description: Continual pre-training of LLMs on 20 African languages. MT + Topic and intent classification evaluation
+    description: Continual pre-trained LLMs on 20 African languages. Evaluated on MT, topic and intent classification.
 
   - name: IrokoBench
     url: https://arxiv.org/abs/2406.03368
-    type: LLM
+    type: benchmark
     languages_covered: [ewe, hau, ibo, lin, twi, wol, yor]
     status: included
     description: "16 African languages benchmark: AfriXNLI, AfriMGSM, AfriMMLU. 10 open + 4 proprietary LLMs."
 
-  # --- Blocked ---
   - name: Sahara (UBC-NLP)
     url: https://arxiv.org/abs/2502.19582
-    type: LLM
+    type: benchmark
     languages_covered: [hau, yor, ibo, wol, ful, lin, twi, aka, fon, bam]
     status: placeholder
     description: "517 languages, 16 NLP tasks, 24 models. ACL 2025. Scores in private HF dataset; Space is broken. Need author access."
 
-  # --- To extract (papers downloaded) ---
-
-
-
-  # --- Identified, not yet investigated ---
   - name: NLLB/FLORES (Meta)
     url: https://arxiv.org/abs/2207.04672
-    type: MT
+    type: [model, benchmark]
     languages_covered: [mos, dyu, ful, bam, twi, ewe, hau, yor, ibo, wol, lin, sag, aka, fon, knc]
     # ful via fuv_Latn (Nigerian Fulfulde variety); knc = Central Kanuri (not our focus code kau)
     # Not covered: fuh, gux, snk, ffm, dts, ses, dag, kri, tem, gaa, swc, mnk, fuf, men, fan, lir, shu, pov
     status: noted
     description: No Language Left Behind. FLORES-200 BLEU scores for 200 languages. Many WCA languages covered. High priority to extract.
 
-  - name: MMS Evaluation (Meta)
+  - name: MMS (Meta Massively Multilingual Speech)
     url: https://arxiv.org/abs/2305.13516
-    type: ASR+TTS+LID
+    type: model
     languages_covered: [mos, dyu, ful, gux, bam, dts, ses, ewe, hau, yor, ibo, wol, kri, tem, lin, sag, mnk, aka, men, fon]
     # Not in MMS: fuh, ffm, twi, kau, swc, fuf, shu (LID only: snk, dag, gaa, fan, lir, pov)
     status: noted
@@ -142,7 +160,7 @@ benchmark_sources:
 
   - name: Seamless (Meta)
     url: https://arxiv.org/abs/2312.05187
-    type: ASR+MT+TTS
+    type: model
     languages_covered: [ful, yor, ibo]
     # ful via fuv (Nigerian Fulfulde variety); very limited WCA coverage overall
     status: noted
@@ -150,7 +168,7 @@ benchmark_sources:
 
   - name: MADLAD-400
     url: https://arxiv.org/abs/2309.04662
-    type: MT
+    type: model
     languages_covered: [hau, ibo, yor, wol, ewe, lin, sag, aka, fon, dyu, bam, kri, ffm, ful]
     # Not covered: mos, fuh, gux, snk, dts, ses, twi, dag, tem, gaa, kau, swc, mnk, fuf, men, fan, lir, shu, pov
     status: noted
@@ -158,7 +176,7 @@ benchmark_sources:
 
   - name: BLOOM / BLOOMZ
     url: https://arxiv.org/abs/2211.01786
-    type: LLM
+    type: model
     languages_covered: [aka, bam, fon, ibo, lin, twi, wol, yor]
     # Not covered: hau, ewe, mos, dyu, ful, and most others
     status: noted
@@ -166,7 +184,7 @@ benchmark_sources:
 
   - name: LLaMAX
     url: https://huggingface.co/LLaMAX/LLaMAX3-8B-Alpaca
-    type: LLM
+    type: model
     languages_covered: [ful, hau, ibo, lin, wol, yor]
     # ful via ff (Fulah macro); not covered: ewe, bam, twi, aka, fon, dyu and most others
     status: noted
@@ -174,19 +192,17 @@ benchmark_sources:
 
   - name: Goldfish
     url: https://arxiv.org/abs/2408.10441
-    type: LLM
+    type: model
     languages_covered: [mos, dyu, ful, bam, twi, ewe, hau, yor, ibo, wol, lin, sag, aka, fon, kau]
     # Monolingual LMs for 350 languages; FLORES perplexity evaluation. ful via fuv; kau via knc
     # Not covered: fuh, gux, snk, ffm, dts, ses, dag, kri, tem, gaa, swc, mnk, fuf, men, fan, lir, shu, pov
     status: noted
     description: Monolingual language models (up to 125M params) for 350 languages, trained on 5MB–1GB of text. FLORES log-perplexity evaluation.
 
-
   - name: FLEURS
     url: https://huggingface.co/datasets/google/fleurs
-    type: Speech test set
+    type: dataset
     languages_covered: [ful, hau, ibo, lin, wol, yor]
     # Not covered: ewe, bam, twi, aka, fon, mos, dyu, sag, kau, kri, and most others
     status: noted
     description: Standard speech evaluation dataset used by Whisper, MMS, and others. 102 languages.
-

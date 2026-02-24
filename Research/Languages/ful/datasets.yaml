@@ -2,159 +2,183 @@ asr:
   items:
   - name: sarulab-speech/yodas2_sidon
     url: https://huggingface.co/datasets/sarulab-speech/yodas2_sidon
-    downloads: 26800
-    likes: 55
+    downloads: 52800
+    likes: 57
   - name: google/fleurs
     url: https://huggingface.co/datasets/google/fleurs
-    downloads: 25500
-    likes: 372
+    downloads: 29600
+    likes: 375
+  - name: suryatmodulus/yodas2_sidon
+    url: https://huggingface.co/datasets/suryatmodulus/yodas2_sidon
+    downloads: 16400
+    likes: 0
   - name: google/xtreme_s
     url: https://huggingface.co/datasets/google/xtreme_s
-    downloads: 7760
+    downloads: 10400
     likes: 66
   - name: google/WaxalNLP
     url: https://huggingface.co/datasets/google/WaxalNLP
-    downloads: 7470
-    likes: 119
-  - name: suryatmodulus/yodas2_sidon
-    url: https://huggingface.co/datasets/suryatmodulus/yodas2_sidon
-    downloads: 3340
-    likes: 0
-  - name: YuRiVeRTi/V1Q
-    url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 528
-    likes: 3
+    downloads: 9720
+    likes: 142
   - name: WueNLP/belebele-fleurs
     url: https://huggingface.co/datasets/WueNLP/belebele-fleurs
-    downloads: 254
+    downloads: 740
     likes: 9
+  - name: YuRiVeRTi/V1Q
+    url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
+    downloads: 620
+    likes: 3
   - name: cahya/fleurs
     url: https://huggingface.co/datasets/cahya/fleurs
-    downloads: 177
+    downloads: 150
     likes: 1
   - name: ankur02/bhojpuri
     url: https://huggingface.co/datasets/ankur02/bhojpuri
-    downloads: 70
-    likes: 0
-  - name: ankur02/fleurs
-    url: https://huggingface.co/datasets/ankur02/fleurs
-    downloads: 48
+    downloads: 64
     likes: 0
   - name: developeranalyser/new_train_data
     url: https://huggingface.co/datasets/developeranalyser/new_train_data
-    downloads: 44
+    downloads: 59
     likes: 3
+  - name: guizme/adlam_fulfulde
+    url: https://huggingface.co/datasets/guizme/adlam_fulfulde
+    downloads: 55
+    likes: 3
+  - name: ankur02/fleurs
+    url: https://huggingface.co/datasets/ankur02/fleurs
+    downloads: 55
+    likes: 0
   - name: Ephraimmm/WaxalNLPr
     url: https://huggingface.co/datasets/Ephraimmm/WaxalNLPr
-    downloads: 38
+    downloads: 42
     likes: 0
-  - name: Helloworld668/fleurs_clean
-    url: https://huggingface.co/datasets/Helloworld668/fleurs_clean
-    downloads: 24
+  - name: zoelaenskii/zinny
+    url: https://huggingface.co/datasets/zoelaenskii/zinny
+    downloads: 28
     likes: 1
   - name: 0xzanuee/WaxalNLP
     url: https://huggingface.co/datasets/0xzanuee/WaxalNLP
-    downloads: 21
+    downloads: 27
     likes: 0
   - name: Phsntom/WaxalNLP
     url: https://huggingface.co/datasets/Phsntom/WaxalNLP
-    downloads: 21
+    downloads: 27
     likes: 0
-  - name: dijihax/Dataset
-    url: https://huggingface.co/datasets/dijihax/Dataset
-    downloads: 20
-    likes: 2
-  - name: french-datasets/espnet_yodas
-    url: https://huggingface.co/datasets/french-datasets/espnet_yodas
-    downloads: 19
+  - name: guizme/Pulaar
+    url: https://huggingface.co/datasets/guizme/Pulaar
+    downloads: 25
+    likes: 3
+  - name: satwikguptha/xtreme_s
+    url: https://huggingface.co/datasets/satwikguptha/xtreme_s
+    downloads: 24
     likes: 0
   - name: french-datasets/espnet_yodas2
     url: https://huggingface.co/datasets/french-datasets/espnet_yodas2
     downloads: 19
     likes: 0
-  - name: satwikguptha/xtreme_s
-    url: https://huggingface.co/datasets/satwikguptha/xtreme_s
-    downloads: 19
-    likes: 0
-  - name: guizme/adlam_fulfulde
-    url: https://huggingface.co/datasets/guizme/adlam_fulfulde
+  - name: french-datasets/espnet_yodas
+    url: https://huggingface.co/datasets/french-datasets/espnet_yodas
     downloads: 18
-    likes: 3
-  - name: guizme/Pulaar
-    url: https://huggingface.co/datasets/guizme/Pulaar
-    downloads: 17
-    likes: 3
+    likes: 0
+  - name: dijihax/Dataset
+    url: https://huggingface.co/datasets/dijihax/Dataset
+    downloads: 16
+    likes: 2
+  - name: Helloworld668/fleurs_clean
+    url: https://huggingface.co/datasets/Helloworld668/fleurs_clean
+    downloads: 16
+    likes: 1
   - name: ngia/ASR_pulaar
     url: https://huggingface.co/datasets/ngia/ASR_pulaar
-    downloads: 10
+    downloads: 15
     likes: 0
-  - name: lenoxaugo254/LenoxAI
-    url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
-    downloads: 6
-    likes: 1
+  - name: novelwolde36/WaxalNLP
+    url: https://huggingface.co/datasets/novelwolde36/WaxalNLP
+    downloads: 13
+    likes: 0
   - name: Menoviar28/menov31
     url: https://huggingface.co/datasets/Menoviar28/menov31
-    downloads: 6
+    downloads: 12
+    likes: 0
+  - name: ngoloan/WaxalNLP
+    url: https://huggingface.co/datasets/ngoloan/WaxalNLP
+    downloads: 11
     likes: 0
   - name: tunngo/test_4
     url: https://huggingface.co/datasets/tunngo/test_4
-    downloads: 5
+    downloads: 9
     likes: 0
   - name: french-datasets/espnet_ml_superb_hf
     url: https://huggingface.co/datasets/french-datasets/espnet_ml_superb_hf
-    downloads: 5
+    downloads: 8
     likes: 0
-  total_count: 26
+  - name: lenoxaugo254/LenoxAI
+    url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
+    downloads: 5
+    likes: 1
+  total_count: 29
   counts_by_code:
     ff: 10
-    ful: 16
+    ful: 19
 tts:
   items:
   - name: sarulab-speech/yodas2_sidon
     url: https://huggingface.co/datasets/sarulab-speech/yodas2_sidon
-    downloads: 26800
-    likes: 55
-  - name: google/WaxalNLP
-    url: https://huggingface.co/datasets/google/WaxalNLP
-    downloads: 7470
-    likes: 119
+    downloads: 52800
+    likes: 57
   - name: suryatmodulus/yodas2_sidon
     url: https://huggingface.co/datasets/suryatmodulus/yodas2_sidon
-    downloads: 3340
+    downloads: 16400
     likes: 0
-  - name: YuRiVeRTi/V1Q
-    url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 528
-    likes: 3
+  - name: google/WaxalNLP
+    url: https://huggingface.co/datasets/google/WaxalNLP
+    downloads: 9720
+    likes: 142
   - name: WueNLP/belebele-fleurs
     url: https://huggingface.co/datasets/WueNLP/belebele-fleurs
-    downloads: 254
+    downloads: 740
     likes: 9
+  - name: YuRiVeRTi/V1Q
+    url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
+    downloads: 620
+    likes: 3
   - name: Ephraimmm/WaxalNLPr
     url: https://huggingface.co/datasets/Ephraimmm/WaxalNLPr
-    downloads: 38
+    downloads: 42
     likes: 0
+  - name: zoelaenskii/zinny
+    url: https://huggingface.co/datasets/zoelaenskii/zinny
+    downloads: 28
+    likes: 1
   - name: 0xzanuee/WaxalNLP
     url: https://huggingface.co/datasets/0xzanuee/WaxalNLP
-    downloads: 21
+    downloads: 27
     likes: 0
   - name: Phsntom/WaxalNLP
     url: https://huggingface.co/datasets/Phsntom/WaxalNLP
-    downloads: 21
+    downloads: 27
     likes: 0
   - name: dijihax/Dataset
     url: https://huggingface.co/datasets/dijihax/Dataset
-    downloads: 20
+    downloads: 16
     likes: 2
-  - name: lenoxaugo254/LenoxAI
-    url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
-    downloads: 6
-    likes: 1
+  - name: novelwolde36/WaxalNLP
+    url: https://huggingface.co/datasets/novelwolde36/WaxalNLP
+    downloads: 13
+    likes: 0
   - name: Menoviar28/menov31
     url: https://huggingface.co/datasets/Menoviar28/menov31
-    downloads: 6
+    downloads: 12
     likes: 0
-  total_count: 11
+  - name: ngoloan/WaxalNLP
+    url: https://huggingface.co/datasets/ngoloan/WaxalNLP
+    downloads: 11
+    likes: 0
+  - name: lenoxaugo254/LenoxAI
+    url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
+    downloads: 5
+    likes: 1
+  total_count: 14
   counts_by_code:
     ff: 7
-    ful: 4
+    ful: 7

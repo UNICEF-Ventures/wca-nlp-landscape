@@ -142,12 +142,16 @@ def load_all_actors():
 
 
 def load_sources():
-    """Load sources data from Source data/sources.yaml."""
+    """Load sources data from Research/sources.yaml.
+
+    Supports a single 'sources' list (new format) or the legacy
+    'data_sources' + 'benchmark_sources' split (auto-merged for compatibility).
+    """
     data = load_yaml(SOURCES_PATH)
-    return {
-        'data_sources': data.get('data_sources', []),
-        'benchmark_sources': data.get('benchmark_sources', []),
-    }
+    if 'sources' in data:
+        return data.get('sources', [])
+    # Legacy: merge both lists preserving order
+    return data.get('data_sources', []) + data.get('benchmark_sources', [])
 
 
 def load_wca_languages():

@@ -217,7 +217,8 @@ def main():
     print(f"\nLoaded {len(languages)} focus languages ({len(priority_isos)} priority, {len(extended_isos)} extended)")
     print(f"Loaded {len(wca_languages)} WCA languages")
     print(f"Loaded {len(actors)} actors")
-    print(f"Loaded {len(sources['data_sources'])} data sources, {len(sources['benchmark_sources'])} benchmark sources")
+    included = sum(1 for s in sources if s.get('status') == 'included')
+    print(f"Loaded {len(sources)} sources ({included} benchmark scores included)")
 
     # Create output directories
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)

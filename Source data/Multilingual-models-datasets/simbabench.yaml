@@ -1,0 +1,117 @@
+# SimbaBench: Multilingual African Speech Benchmark Dataset
+# Source: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
+# Author: UBC-NLP (University of British Columbia NLP Lab)
+# Tasks: ASR, TTS, Spoken Language Identification (SLID)
+# License: CC-BY-4.0
+
+description: >
+  SimbaBench is a multilingual African speech benchmark dataset by UBC-NLP,
+  covering ASR, TTS, and Spoken Language Identification (SLID) tasks across
+  50+ African languages and language varieties.
+
+dataset_url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
+tech_resources_label: SimbaBench
+
+languages:
+  afr:
+    name: Afrikaans
+  amh:
+    name: Amharic
+  bas:
+    name: Basaa
+  bem:
+    name: Bemba
+  din:
+    name: Dinka
+  dyu:
+    name: Dyula
+  ewe:
+    name: Ewe
+  fat:
+    name: Fanti
+  fon:
+    name: Fon
+  fra:
+    name: French
+  fuc:
+    name: Pulaar
+  fuf:
+    name: Pular
+  gaa:
+    name: Ga
+  hau:
+    name: Hausa
+  ibo:
+    name: Igbo
+  aka:
+    name: Akan
+  kab:
+    name: Kabyle
+  kin:
+    name: Kinyarwanda
+  kln:
+    name: Kalenjin
+  kon:
+    name: Kongo
+  lin:
+    name: Lingala
+  loz:
+    name: Lozi
+  lug:
+    name: Luganda
+  luo:
+    name: Luo
+  mlg:
+    name: Malagasy
+  mlq:
+    name: Western Maninkakan
+  mos:
+    name: Mossi
+  nbl:
+    name: South Ndebele
+  nso:
+    name: Northern Sotho
+  nya:
+    name: Nyanja
+  orm:
+    name: Oromo
+  por:
+    name: Portuguese
+  sag:
+    name: Sango
+  sna:
+    name: Shona
+  som:
+    name: Somali
+  sot:
+    name: Southern Sotho
+  ssw:
+    name: Swati
+  swa:
+    name: Swahili
+  tig:
+    name: Tigre
+  tir:
+    name: Tigrinya
+  toi:
+    name: Tonga (Zambia)
+  tsn:
+    name: Tswana
+  tso:
+    name: Tsonga
+  twi:
+    name: Twi
+  umb:
+    name: Umbundu
+  ven:
+    name: Venda
+  wol:
+    name: Wolof
+  xho:
+    name: Xhosa
+  yor:
+    name: Yoruba
+  zgh:
+    name: Standard Moroccan Tamazight
+  zul:
+    name: Zulu

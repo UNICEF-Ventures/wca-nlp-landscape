@@ -1,18 +1,26 @@
 asr:
   items:
+  - name: UBC-NLP/SimbaBench_dataset
+    url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
+    downloads: 45
+    likes: 1
   - name: ghananlpcommunity/ga-speech-text-parallel-90k
     url: https://huggingface.co/datasets/ghananlpcommunity/ga-speech-text-parallel-90k
-    downloads: 41
+    downloads: 15
     likes: 0
-  total_count: 1
+  total_count: 2
   counts_by_code:
-    gaa: 1
+    gaa: 2
 tts:
   items:
+  - name: UBC-NLP/SimbaBench_dataset
+    url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
+    downloads: 45
+    likes: 1
   - name: ghananlpcommunity/ga-speech-text-parallel-90k
     url: https://huggingface.co/datasets/ghananlpcommunity/ga-speech-text-parallel-90k
-    downloads: 41
+    downloads: 15
     likes: 0
-  total_count: 1
+  total_count: 2
   counts_by_code:
-    gaa: 1
+    gaa: 2

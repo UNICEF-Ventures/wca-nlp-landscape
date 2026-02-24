@@ -1,54 +1,26 @@
 # Manual benchmark entries for Kanuri (kau)
 # This file is NEVER overwritten by populate_research.py.
 # Add one-off benchmark results you find in papers here.
-#
-# Structure:
-#
-# evaluations:
-#   asr:
-#     - model: some-org/model-name
-#       model_url: https://huggingface.co/some-org/model-name
-#       results:
-#         - test_set: Common Voice 17
-#           source: reported
-#           source_url: https://arxiv.org/abs/...
-#           metrics:
-#             - name: WER
-#               value: 12.5
-#             - name: CER
-#               value: 5.3
-#         - test_set: FLEURS
-#           source: evaluated
-#           metrics:
-#             - name: WER
-#               value: 18.2
-#   translation:
-#     - model: facebook/nllb-200-3.3B
-#       model_url: https://huggingface.co/facebook/nllb-200-3.3B
-#       results:
-#         - test_set: FLORES-200
-#           source: reported
-#           source_url: https://arxiv.org/abs/2207.04672
-#           metrics:
-#             - name: BLEU
-#               value: 24.3
-#             - name: direction
-#               value: "kau->eng"
-#   llm:
-#     - model: meta-llama/Llama-3.1-70B
-#       model_url: https://huggingface.co/meta-llama/Llama-3.1-70B
-#       results:
-#         - test_set: IrokoBench
-#           source: reported
-#           source_url: https://arxiv.org/abs/...
-#           metrics:
-#             - name: Accuracy
-#               value: 42.1
-#
-# Models without benchmark scores (shown in a separate table):
-#
-# unbenchmarked_models:
-#   - model: some-org/model-name
-#     model_url: https://huggingface.co/some-org/model-name
-#     task: asr
-#     notes: Fine-tuned for Kanuri, no public benchmarks
+
+evaluations:
+  llm:
+    - model: goldfish-models/knc_arab_full
+      model_url: https://huggingface.co/goldfish-models/knc_arab_full
+      results:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2408.10441
+          notes: "Central Kanuri (knc), Arabic script. Monolingual LM. Lower is better."
+          metrics:
+            - name: Log-perplexity
+              value: 181.38
+    - model: goldfish-models/knc_latn_full
+      model_url: https://huggingface.co/goldfish-models/knc_latn_full
+      results:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2408.10441
+          notes: "Central Kanuri (knc), Latin script. Monolingual LM. Lower is better."
+          metrics:
+            - name: Log-perplexity
+              value: 170.17

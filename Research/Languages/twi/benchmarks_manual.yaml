@@ -4,7 +4,7 @@
 #
 # Structure:
 #
-# evaluations:
+evaluations:
 #   asr:
 #     - model: some-org/model-name
 #       model_url: https://huggingface.co/some-org/model-name
@@ -22,18 +22,28 @@
 #           metrics:
 #             - name: WER
 #               value: 18.2
-#   translation:
-#     - model: facebook/nllb-200-3.3B
-#       model_url: https://huggingface.co/facebook/nllb-200-3.3B
-#       results:
-#         - test_set: FLORES-200
-#           source: reported
-#           source_url: https://arxiv.org/abs/2207.04672
-#           metrics:
-#             - name: BLEU
-#               value: 24.3
-#             - name: direction
-#               value: "twi->eng"
+  translation:
+    - model: facebook/nllb-200-3.3B
+      model_url: https://huggingface.co/facebook/nllb-200-3.3B
+      results:
+        - test_set: FLORES-200 devtest
+          source: reported
+          source_url: https://arxiv.org/abs/2207.04672
+          notes: "Table 39 — multilingual transfer analysis. Only chrF++ on Multilingual MoE."
+          metrics:
+            - name: eng→aka chrF++
+              value: 39.1
+            - name: direction
+              value: "eng→twi"
+        - test_set: FLORES-200 devtest
+          source: reported
+          source_url: https://arxiv.org/abs/2207.04672
+          notes: "Table 39 — multilingual transfer analysis. Only chrF++ on Multilingual MoE."
+          metrics:
+            - name: chrF++
+              value: 48
+            - name: direction
+              value: "twi→eng"
 #   llm:
 #     - model: meta-llama/Llama-3.1-70B
 #       model_url: https://huggingface.co/meta-llama/Llama-3.1-70B

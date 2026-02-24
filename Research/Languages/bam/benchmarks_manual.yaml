@@ -1,54 +1,80 @@
 # Manual benchmark entries for Bambara (bam)
 # This file is NEVER overwritten by populate_research.py.
 # Add one-off benchmark results you find in papers here.
-#
-# Structure:
-#
-# evaluations:
-#   asr:
-#     - model: some-org/model-name
-#       model_url: https://huggingface.co/some-org/model-name
-#       results:
-#         - test_set: Common Voice 17
-#           source: reported
-#           source_url: https://arxiv.org/abs/...
-#           metrics:
-#             - name: WER
-#               value: 12.5
-#             - name: CER
-#               value: 5.3
-#         - test_set: FLEURS
-#           source: evaluated
-#           metrics:
-#             - name: WER
-#               value: 18.2
-#   translation:
-#     - model: facebook/nllb-200-3.3B
-#       model_url: https://huggingface.co/facebook/nllb-200-3.3B
-#       results:
-#         - test_set: FLORES-200
-#           source: reported
-#           source_url: https://arxiv.org/abs/2207.04672
-#           metrics:
-#             - name: BLEU
-#               value: 24.3
-#             - name: direction
-#               value: "bam->eng"
-#   llm:
-#     - model: meta-llama/Llama-3.1-70B
-#       model_url: https://huggingface.co/meta-llama/Llama-3.1-70B
-#       results:
-#         - test_set: IrokoBench
-#           source: reported
-#           source_url: https://arxiv.org/abs/...
-#           metrics:
-#             - name: Accuracy
-#               value: 42.1
-#
-# Models without benchmark scores (shown in a separate table):
-#
-unbenchmarked_models:
-  - model: some-org/model-name
-    model_url: https://huggingface.co/some-org/model-name
-    task: asr
-    notes: Fine-tuned for Bambara, no public benchmarks
+
+evaluations:
+  mt:
+    - model: facebook/nllb-200-3.3B
+      model_url: https://huggingface.co/facebook/nllb-200-3.3B
+      results:
+        - test_set: MAFAND-MT
+          source: reported
+          source_url: https://arxiv.org/abs/2207.04672
+          notes: "Table 38 — news domain test set."
+          metrics:
+            - name: spBLEU
+              value: 7.7
+            - name: chrF++
+              value: 29.9
+            - name: direction
+              value: "fra→bam"
+        - test_set: MAFAND-MT
+          source: reported
+          source_url: https://arxiv.org/abs/2207.04672
+          notes: "Table 38 — news domain test set."
+          metrics:
+            - name: spBLEU
+              value: 14.6
+            - name: chrF++
+              value: 37.5
+            - name: direction
+              value: "bam→fra"
+    - model: masakhane/m2m100_418M_fr_bam_rel_news_ft
+      model_url: https://huggingface.co/masakhane/m2m100_418M_fr_bam_rel_news_ft
+      results:
+        - test_set: MAFAND-MT
+          source: reported
+          source_url: https://aclanthology.org/2022.naacl-main.223/
+          notes: "Taken from NLLB paper Table 38 — news domain test set."
+          metrics:
+            - name: BLEU
+              value: 24.7
+            - name: chrF++
+              value: 49.9
+            - name: direction
+              value: "fra→bam"
+    - model: masakhane/m2m100_418M_bam_fr_rel_news_ft
+      model_url: https://huggingface.co/masakhane/m2m100_418M_bam_fr_rel_news_ft
+      results:
+        - test_set: MAFAND-MT
+          source: reported
+          source_url: https://aclanthology.org/2022.naacl-main.223/
+          notes: "Taken from NLLB paper Table 38 — news domain test set."
+          metrics:
+            - name: BLEU
+              value: 25.8
+            - name: chrF++
+              value: 49.0
+            - name: direction
+              value: "bam→fra"
+  llm:
+    - model: goldfish-models/bam_latn_full
+      model_url: https://huggingface.co/goldfish-models/bam_latn_full
+      results:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2408.10441
+          notes: "Monolingual LM trained on up to 1GB of bam text. Lower is better."
+          metrics:
+            - name: Log-perplexity
+              value: 158.88
+    - model: MaLA-LM/mala-500-10b-v2
+      model_url: https://huggingface.co/MaLA-LM/mala-500-10b-v2
+      results:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2408.10441
+          notes: "Best multilingual baseline from Goldfish Table 5. Lower is better."
+          metrics:
+            - name: Log-perplexity
+              value: 143.14

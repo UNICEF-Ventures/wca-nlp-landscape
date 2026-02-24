@@ -64,6 +64,15 @@ sources:
 
   # ── Benchmark Sources ─────────────────────────────────────────────────────
 
+  - name: MAFAND-MT
+    url: https://aclanthology.org/2022.naacl-main.223/
+    type: [dataset, benchmark]
+    languages_covered: [bam, ewe, fon, hau, ibo, mos, twi, wol, yor]
+    # Full set: en, fr, am, bm(bam), bbj, ee(ewe), fon, ha(hau), ig(ibo), lg, mos, ny, pcm, rw, sn, sw(swa≠swc), tn, tw(twi), wo(wol), xh, yo(yor), zu
+    # sw = standard Swahili (swa), not Congo Swahili (swc) — excluded from languages_covered
+    status: included
+    description: News-domain machine translation benchmark for African languages (NAACL 2022). Parallel corpora in 16 African languages paired with English and French. Used as test set in the NLLB paper (Table 38) for fra↔{bam,ewe,fon,mos,wol} directions.
+
   - name: Whisper (FLEURS WER)
     url: https://arxiv.org/abs/2212.04356
     type: model
@@ -188,7 +197,7 @@ sources:
     languages_covered: [ful, hau, ibo, lin, wol, yor]
     # ful via ff (Fulah macro); not covered: ewe, bam, twi, aka, fon, dyu and most others
     status: noted
-    description: Multilingual LLaMA extension for low-resource languages.
+    description: LLaMA2/3 series with multilingual continual pre-training focused on translation across 102 languages (EMNLP 2024 Findings). Evaluated on FLORES-101; outperforms other open-source LLMs by 10+ spBLEU and matches M2M-100-12B on translation.
 
   - name: Goldfish
     url: https://arxiv.org/abs/2408.10441

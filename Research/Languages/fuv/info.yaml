@@ -1,0 +1,37 @@
+name: Nigerian Fulfulde
+iso_639_3: fuv
+name_french: nigerian fulfulde
+altnames:
+- Fulani
+- Fulatanci
+- Fulbe
+- Fulfulde
+- Fulfulde
+- Mbororo
+- Fulɓe
+- Hausa States Fulfulde
+- Nigerian Fulfulde
+- Peul
+countries:
+- Nigeria
+population: '14000000'
+population_order: 10⁶+
+endangerment: safe
+glottocode: nige1253
+glottocode_url: https://glottolog.org/resource/languoid/id/nige1253
+wikipedia:
+  url: https://en.wikipedia.org/wiki/Nigerian_Fulfulde
+  family: Niger–Congo
+  speakers_l1: 17 million
+  writing_system: Arabic ( Ajami ) Latin
+scriptsource_url: https://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=fuv
+resource_links:
+  Lanfrica: https://lanfrica.com/records?language=fuv
+  OLAC: http://www.language-archives.org/language/fuv
+  Grambank: https://grambank.clld.org/languages/nige1253
+  WALS: https://wals.info/languoid/lect/wals_code_fni
+tech_resources:
+  AfroLID: true
+  NLLB-200: true
+  Fineweb2: 💬
+  Omnilingual ASR: true

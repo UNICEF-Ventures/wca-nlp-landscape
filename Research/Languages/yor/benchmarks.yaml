@@ -332,14 +332,35 @@ evaluations:
       metrics:
       - name: Accuracy
         value: 64.5
-  - model: claude-sonnet-4-5-20251001
-    model_url: https://huggingface.co/anthropic
+  - model: google/madlad400-8b-lm
+    model_url: https://huggingface.co/google/madlad400-8b-lm
     results:
-    - test_set: SAHARA
+    - test_set: FLORES-200
       source: reported
-      source_url: https://arxiv.org/abs/2502.19582
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF (10-shot)
       metrics:
-      - name: Avg Score (pending)
+      - name: BLEU yor→eng
+        value: 6.3
+      - name: chrF yor→eng
+        value: 26
+      - name: BLEU eng→yor
+        value: 0
+      - name: chrF eng→yor
+        value: 3.2
+    - test_set: NTREX
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 19 — BLEU/chrF (10-shot)
+      metrics:
+      - name: BLEU yor→eng
+        value: 4.6
+      - name: chrF yor→eng
+        value: 23
+      - name: BLEU eng→yor
+        value: 0.2
+      - name: chrF eng→yor
+        value: 10.5
   mt:
   - model: AfriqueQwen-14B
     model_url: https://huggingface.co/AfriqueLLM/AfriqueQwen-14B
@@ -416,6 +437,93 @@ evaluations:
         value: 22.87
       - name: chrF yo-en
         value: 39.73
+  - model: google/madlad400-3b-mt
+    model_url: https://huggingface.co/google/madlad400-3b-mt
+    results:
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU yor→eng
+        value: 11.9
+      - name: chrF yor→eng
+        value: 34.9
+      - name: BLEU eng→yor
+        value: 2.6
+      - name: chrF eng→yor
+        value: 19.7
+    - test_set: NTREX
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 19 — BLEU/chrF
+      metrics:
+      - name: BLEU yor→eng
+        value: 13.3
+      - name: chrF yor→eng
+        value: 37
+      - name: BLEU eng→yor
+        value: 5.4
+      - name: chrF eng→yor
+        value: 20.9
+  - model: google/madlad400-7.2b-mt
+    model_url: https://huggingface.co/google/madlad400-7.2b-mt
+    results:
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU yor→eng
+        value: 17.4
+      - name: chrF yor→eng
+        value: 40.8
+      - name: BLEU eng→yor
+        value: 2.7
+      - name: chrF eng→yor
+        value: 20.3
+    - test_set: NTREX
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 19 — BLEU/chrF
+      metrics:
+      - name: BLEU yor→eng
+        value: 14.5
+      - name: chrF yor→eng
+        value: 37.4
+      - name: BLEU eng→yor
+        value: 5.5
+      - name: chrF eng→yor
+        value: 21.6
+  - model: google/madlad400-10.7b-mt
+    model_url: https://huggingface.co/google/madlad400-10.7b-mt
+    results:
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU yor→eng
+        value: 17.8
+      - name: chrF yor→eng
+        value: 40.7
+      - name: BLEU eng→yor
+        value: 2.9
+      - name: chrF eng→yor
+        value: 20.7
+    - test_set: NTREX
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 19 — BLEU/chrF
+      metrics:
+      - name: BLEU yor→eng
+        value: 20.9
+      - name: chrF yor→eng
+        value: 43.5
+      - name: BLEU eng→yor
+        value: 5.7
+      - name: chrF eng→yor
+        value: 21.2
   asr:
   - model: facebook/omniASR-LLM-7B
     model_url: https://huggingface.co/facebook/omniASR-LLM-7B

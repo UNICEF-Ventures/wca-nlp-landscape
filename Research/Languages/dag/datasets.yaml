@@ -2,65 +2,73 @@ asr:
   items:
   - name: google/WaxalNLP
     url: https://huggingface.co/datasets/google/WaxalNLP
-    downloads: 9720
-    likes: 142
+    downloads: 13500
+    likes: 147
+  - name: novelwolde36/WaxalNLP
+    url: https://huggingface.co/datasets/novelwolde36/WaxalNLP
+    downloads: 104
+    likes: 0
   - name: Ephraimmm/WaxalNLPr
     url: https://huggingface.co/datasets/Ephraimmm/WaxalNLPr
-    downloads: 42
+    downloads: 44
+    likes: 0
+  - name: 0xzanuee/WaxalNLP
+    url: https://huggingface.co/datasets/0xzanuee/WaxalNLP
+    downloads: 29
     likes: 0
   - name: zoelaenskii/zinny
     url: https://huggingface.co/datasets/zoelaenskii/zinny
-    downloads: 28
+    downloads: 29
     likes: 1
-  - name: 0xzanuee/WaxalNLP
-    url: https://huggingface.co/datasets/0xzanuee/WaxalNLP
-    downloads: 27
-    likes: 0
   - name: Phsntom/WaxalNLP
     url: https://huggingface.co/datasets/Phsntom/WaxalNLP
-    downloads: 27
-    likes: 0
-  - name: novelwolde36/WaxalNLP
-    url: https://huggingface.co/datasets/novelwolde36/WaxalNLP
-    downloads: 13
+    downloads: 28
     likes: 0
   - name: ngoloan/WaxalNLP
     url: https://huggingface.co/datasets/ngoloan/WaxalNLP
-    downloads: 11
+    downloads: 16
     likes: 0
-  total_count: 7
+  - name: BolajiJsAI/WaxalNLP
+    url: https://huggingface.co/datasets/BolajiJsAI/WaxalNLP
+    downloads: 2
+    likes: 1
+  total_count: 8
   counts_by_code:
-    dag: 7
+    dag: 8
 tts:
   items:
   - name: google/WaxalNLP
     url: https://huggingface.co/datasets/google/WaxalNLP
-    downloads: 9720
-    likes: 142
+    downloads: 13500
+    likes: 147
+  - name: novelwolde36/WaxalNLP
+    url: https://huggingface.co/datasets/novelwolde36/WaxalNLP
+    downloads: 104
+    likes: 0
   - name: Ephraimmm/WaxalNLPr
     url: https://huggingface.co/datasets/Ephraimmm/WaxalNLPr
-    downloads: 42
+    downloads: 44
+    likes: 0
+  - name: 0xzanuee/WaxalNLP
+    url: https://huggingface.co/datasets/0xzanuee/WaxalNLP
+    downloads: 29
     likes: 0
   - name: zoelaenskii/zinny
     url: https://huggingface.co/datasets/zoelaenskii/zinny
-    downloads: 28
+    downloads: 29
     likes: 1
-  - name: 0xzanuee/WaxalNLP
-    url: https://huggingface.co/datasets/0xzanuee/WaxalNLP
-    downloads: 27
-    likes: 0
   - name: Phsntom/WaxalNLP
     url: https://huggingface.co/datasets/Phsntom/WaxalNLP
-    downloads: 27
-    likes: 0
-  - name: novelwolde36/WaxalNLP
-    url: https://huggingface.co/datasets/novelwolde36/WaxalNLP
-    downloads: 13
+    downloads: 28
     likes: 0
   - name: ngoloan/WaxalNLP
     url: https://huggingface.co/datasets/ngoloan/WaxalNLP
-    downloads: 11
+    downloads: 16
     likes: 0
-  total_count: 7
+  - name: BolajiJsAI/WaxalNLP
+    url: https://huggingface.co/datasets/BolajiJsAI/WaxalNLP
+    downloads: 2
+    likes: 1
+  total_count: 8
   counts_by_code:
-    dag: 7
+    dag: 8

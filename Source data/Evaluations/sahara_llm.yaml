@@ -1,102 +1,4430 @@
-# SAHARA (Where Are We? Evaluating LLM Performance on African Languages)
+# SAHARA - Systematic Assessment of Holistic Abilities in Real-world Applications for African Languages
 # Paper: https://arxiv.org/abs/2502.19582
-# Leaderboard: https://github.com/UBC-NLP/sahara (currently broken as of Feb 2026 - awaiting fix)
+# Leaderboard: https://huggingface.co/spaces/UBC-NLP/sahara
 #
-# SAHARA evaluates LLMs across 4 task clusters on 517 African languages:
-#   - Classification: NLI, language ID, news, sentiment, topic
-#   - Generation: MT, paraphrase, summarization, title generation
-#   - MCCR: general knowledge (AfriMMlu), math (AfriMGSM), reading comp (BeleBele), QA
-#   - Token-level: NER, phrase chunking, POS tagging
+# SAHARA evaluates LLMs across 4 task clusters on African languages:
+#   - Classification: XNLI, sentiment, topic
+#   - Generation: MT, summarization, title generation
+#   - MCCR: MMLU (general knowledge), MGSM (math), Belebele (reading comprehension)
+#   - Token-level: NER, POS tagging
 #
-# This file marks coverage for WCARO focus languages only.
-# Scores are PENDING (leaderboard broken). Values are null placeholders.
-# Best-reported model: Claude-4-Sonnet (overall avg 40.82 across task clusters)
-# Best open-weight model: Command-A 111B (overall avg 34.05)
+# Metrics: Score=aggregate, XNLI/MMLU/Belebele=Accuracy, NER/Sentiment/Topic/POS=Macro-F1,
+#          spBLEU/Title Gen=spBLEU-1K, MGSM=Exact Match, Summarization=RougeL
 #
-# Coverage notes per language:
-#   hau: all 4 clusters (most comprehensive among WCA languages)
-#   yor: all 4 clusters
-#   ibo: classification, generation, MCCR, token
-#   bam: classification (sentiment), generation (MAFAND-MT, fra-bam), token (MasakhaNER/POS)
-#   ewe: classification, generation (MAFAND-MT, fra-ewe), token (MasakhaNER/POS), MCCR (IrokoBench)
-#   fon: generation (MAFAND-MT, fra-fon), token (MasakhaNER/POS)
-#   wol: classification (AfriSenti), generation (MAFAND-MT, fra-wol), token (MasakhaNER), MCCR (IrokoBench)
-#   mos: classification, generation (MAFAND-MT, fra-mos), token (MasakhaNER/POS)
-#   lin: MCCR (BeleBele), token (MasakhaNER), classification/MCCR (IrokoBench)
-#   twi: token (MasakhaNER, Yoruba-Twi NER), MCCR (BeleBele)
+# WCA languages: bam, ewe, fon, fuv, hau, ibo, mos, twi
 
 models:
-  - model: claude-sonnet-4-5-20251001
-    model_url: https://huggingface.co/anthropic
-    task: llm
-    results:
-      hau:
-        - test_set: SAHARA
-          source: reported
-          source_url: https://arxiv.org/abs/2502.19582
-          metrics:
-            - name: Avg Score (pending)
-              value: null
-      yor:
-        - test_set: SAHARA
-          source: reported
-          source_url: https://arxiv.org/abs/2502.19582
-          metrics:
-            - name: Avg Score (pending)
-              value: null
-      ibo:
-        - test_set: SAHARA
-          source: reported
-          source_url: https://arxiv.org/abs/2502.19582
-          metrics:
-            - name: Avg Score (pending)
-              value: null
-      bam:
-        - test_set: SAHARA
-          source: reported
-          source_url: https://arxiv.org/abs/2502.19582
-          metrics:
-            - name: Avg Score (pending)
-              value: null
-      ewe:
-        - test_set: SAHARA
-          source: reported
-          source_url: https://arxiv.org/abs/2502.19582
-          metrics:
-            - name: Avg Score (pending)
-              value: null
-      fon:
-        - test_set: SAHARA
-          source: reported
-          source_url: https://arxiv.org/abs/2502.19582
-          metrics:
-            - name: Avg Score (pending)
-              value: null
-      wol:
-        - test_set: SAHARA
-          source: reported
-          source_url: https://arxiv.org/abs/2502.19582
-          metrics:
-            - name: Avg Score (pending)
-              value: null
-      mos:
-        - test_set: SAHARA
-          source: reported
-          source_url: https://arxiv.org/abs/2502.19582
-          metrics:
-            - name: Avg Score (pending)
-              value: null
-      lin:
-        - test_set: SAHARA
-          source: reported
-          source_url: https://arxiv.org/abs/2502.19582
-          metrics:
-            - name: Avg Score (pending)
-              value: null
-      twi:
-        - test_set: SAHARA
-          source: reported
-          source_url: https://arxiv.org/abs/2502.19582
-          metrics:
-            - name: Avg Score (pending)
-              value: null
+- model: gemini-3-pro-preview
+  task: llm
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 41.54
+      - name: spBLEU fra→bam
+        value: 11.29
+      - name: NER F1
+        value: 42.11
+      - name: Reading comprehension Acc.
+        value: 60.53
+      - name: Sentiment F1
+        value: 52.24
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 68.97
+      - name: XNLI Acc
+        value: 75.81
+      - name: MMLU Acc.
+        value: 95.24
+      - name: spBLEU fra→ewe
+        value: 17.63
+      - name: MGSM
+        value: 76.19
+      - name: NER F1
+        value: 80.0
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 30.3
+      - name: spBLEU fra→fon
+        value: 8.74
+      - name: NER F1
+        value: 51.85
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 42.11
+      - name: Reading comprehension Acc.
+        value: 42.11
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 62.44
+      - name: XNLI Acc
+        value: 85.48
+      - name: MMLU Acc.
+        value: 96.77
+      - name: spBLEU eng→hau
+        value: 13.85
+      - name: MGSM
+        value: 87.1
+      - name: NER F1
+        value: 74.64
+      - name: Reading comprehension Acc.
+        value: 64.1
+      - name: Summarization RougeL
+        value: 26.06
+      - name: Title Gen spBleu-1K
+        value: 21.39
+      - name: Topic class. F1
+        value: 92.56
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 61.41
+      - name: XNLI Acc
+        value: 90.32
+      - name: MMLU Acc.
+        value: 96.83
+      - name: spBLEU eng→ibo
+        value: 39.75
+      - name: MGSM
+        value: 84.13
+      - name: NER F1
+        value: 70.83
+      - name: POS F1
+        value: 72.81
+      - name: Reading comprehension Acc.
+        value: 64.1
+      - name: Summarization RougeL
+        value: 20.82
+      - name: Title Gen spBleu-1K
+        value: 13.14
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 34.37
+      - name: spBLEU fra→mos
+        value: 3.88
+      - name: NER F1
+        value: 64.86
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 68.94
+      - name: XNLI Acc
+        value: 68.25
+      - name: MMLU Acc.
+        value: 96.77
+      - name: spBLEU eng→twi
+        value: 19.96
+      - name: MGSM
+        value: 79.03
+      - name: NER F1
+        value: 80.7
+- model: gemini-2.5-pro
+  task: llm
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 33.9
+      - name: spBLEU fra→bam
+        value: 9.56
+      - name: NER F1
+        value: 31.11
+      - name: Reading comprehension Acc.
+        value: 47.37
+      - name: Sentiment F1
+        value: 47.57
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 63.83
+      - name: XNLI Acc
+        value: 64.52
+      - name: MMLU Acc.
+        value: 92.06
+      - name: spBLEU fra→ewe
+        value: 14.75
+      - name: MGSM
+        value: 73.02
+      - name: NER F1
+        value: 74.79
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 29.66
+      - name: spBLEU fra→fon
+        value: 7.27
+      - name: NER F1
+        value: 52.05
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 31.58
+      - name: Reading comprehension Acc.
+        value: 31.58
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 58.74
+      - name: XNLI Acc
+        value: 77.42
+      - name: MMLU Acc.
+        value: 98.39
+      - name: spBLEU eng→hau
+        value: 16.9
+      - name: MGSM
+        value: 80.65
+      - name: NER F1
+        value: 69.87
+      - name: Reading comprehension Acc.
+        value: 64.1
+      - name: Summarization RougeL
+        value: 22.75
+      - name: Title Gen spBleu-1K
+        value: 14.72
+      - name: Topic class. F1
+        value: 83.86
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 56.26
+      - name: XNLI Acc
+        value: 80.65
+      - name: MMLU Acc.
+        value: 96.83
+      - name: spBLEU eng→ibo
+        value: 38.31
+      - name: MGSM
+        value: 82.54
+      - name: NER F1
+        value: 56.1
+      - name: POS F1
+        value: 69.74
+      - name: Reading comprehension Acc.
+        value: 51.28
+      - name: Summarization RougeL
+        value: 18.41
+      - name: Title Gen spBleu-1K
+        value: 12.52
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 27.46
+      - name: spBLEU fra→mos
+        value: 2.53
+      - name: NER F1
+        value: 52.38
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 64.58
+      - name: XNLI Acc
+        value: 60.32
+      - name: MMLU Acc.
+        value: 98.39
+      - name: spBLEU eng→twi
+        value: 19.41
+      - name: MGSM
+        value: 75.81
+      - name: NER F1
+        value: 68.97
+- model: gpt-5-2025-08-07
+  task: llm
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 27.68
+      - name: spBLEU fra→bam
+        value: 2.69
+      - name: NER F1
+        value: 40.0
+      - name: Reading comprehension Acc.
+        value: 23.68
+      - name: Sentiment F1
+        value: 44.36
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 46.35
+      - name: XNLI Acc
+        value: 50.0
+      - name: MMLU Acc.
+        value: 74.6
+      - name: spBLEU fra→ewe
+        value: 8.36
+      - name: MGSM
+        value: 26.98
+      - name: NER F1
+        value: 71.79
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 21.92
+      - name: spBLEU fra→fon
+        value: 2.81
+      - name: NER F1
+        value: 41.03
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 23.68
+      - name: Reading comprehension Acc.
+        value: 23.68
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 55.49
+      - name: XNLI Acc
+        value: 69.35
+      - name: MMLU Acc.
+        value: 95.16
+      - name: spBLEU eng→hau
+        value: 12.36
+      - name: MGSM
+        value: 80.65
+      - name: NER F1
+        value: 67.84
+      - name: Reading comprehension Acc.
+        value: 64.1
+      - name: Summarization RougeL
+        value: 14.35
+      - name: Title Gen spBleu-1K
+        value: 8.47
+      - name: Topic class. F1
+        value: 87.09
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 54.12
+      - name: XNLI Acc
+        value: 80.65
+      - name: MMLU Acc.
+        value: 96.83
+      - name: spBLEU eng→ibo
+        value: 27.23
+      - name: MGSM
+        value: 68.25
+      - name: NER F1
+        value: 63.41
+      - name: POS F1
+        value: 69.24
+      - name: Reading comprehension Acc.
+        value: 61.54
+      - name: Summarization RougeL
+        value: 12.59
+      - name: Title Gen spBleu-1K
+        value: 7.37
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 22.05
+      - name: spBLEU fra→mos
+        value: 1.25
+      - name: NER F1
+        value: 42.86
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 62.53
+      - name: XNLI Acc
+        value: 66.67
+      - name: MMLU Acc.
+        value: 96.77
+      - name: spBLEU eng→twi
+        value: 13.49
+      - name: MGSM
+        value: 64.52
+      - name: NER F1
+        value: 71.19
+- model: gpt-5.1-2025-11-13
+  task: llm
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 30.58
+      - name: spBLEU fra→bam
+        value: 2.8
+      - name: NER F1
+        value: 32.56
+      - name: Reading comprehension Acc.
+        value: 39.47
+      - name: Sentiment F1
+        value: 47.49
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 46.66
+      - name: XNLI Acc
+        value: 54.84
+      - name: MMLU Acc.
+        value: 73.02
+      - name: spBLEU fra→ewe
+        value: 7.79
+      - name: MGSM
+        value: 26.98
+      - name: NER F1
+        value: 70.69
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 16.26
+      - name: spBLEU fra→fon
+        value: 3.19
+      - name: NER F1
+        value: 29.33
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 34.21
+      - name: Reading comprehension Acc.
+        value: 34.21
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 55.63
+      - name: XNLI Acc
+        value: 74.19
+      - name: MMLU Acc.
+        value: 96.77
+      - name: spBLEU eng→hau
+        value: 13.56
+      - name: MGSM
+        value: 77.42
+      - name: NER F1
+        value: 71.62
+      - name: Reading comprehension Acc.
+        value: 61.54
+      - name: Summarization RougeL
+        value: 14.2
+      - name: Title Gen spBleu-1K
+        value: 6.24
+      - name: Topic class. F1
+        value: 85.13
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 50.72
+      - name: XNLI Acc
+        value: 80.65
+      - name: MMLU Acc.
+        value: 98.41
+      - name: spBLEU eng→ibo
+        value: 23.39
+      - name: MGSM
+        value: 60.32
+      - name: NER F1
+        value: 54.12
+      - name: POS F1
+        value: 66.61
+      - name: Reading comprehension Acc.
+        value: 53.85
+      - name: Summarization RougeL
+        value: 12.6
+      - name: Title Gen spBleu-1K
+        value: 6.56
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 13.91
+      - name: spBLEU fra→mos
+        value: 1.14
+      - name: NER F1
+        value: 26.67
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 55.8
+      - name: XNLI Acc
+        value: 53.97
+      - name: MMLU Acc.
+        value: 88.71
+      - name: spBLEU eng→twi
+        value: 11.5
+      - name: MGSM
+        value: 54.84
+      - name: NER F1
+        value: 70.0
+- model: gemini-2.5-flash
+  task: llm
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 23.84
+      - name: spBLEU fra→bam
+        value: 4.31
+      - name: NER F1
+        value: 5.0
+      - name: Reading comprehension Acc.
+        value: 39.47
+      - name: Sentiment F1
+        value: 46.6
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 47.41
+      - name: XNLI Acc
+        value: 54.84
+      - name: MMLU Acc.
+        value: 79.37
+      - name: spBLEU fra→ewe
+        value: 0.81
+      - name: MGSM
+        value: 65.08
+      - name: NER F1
+        value: 36.97
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 6.71
+      - name: spBLEU fra→fon
+        value: 2.15
+      - name: NER F1
+        value: 11.27
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 36.84
+      - name: Reading comprehension Acc.
+        value: 36.84
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 48.95
+      - name: XNLI Acc
+        value: 79.03
+      - name: MMLU Acc.
+        value: 91.94
+      - name: spBLEU eng→hau
+        value: 15.43
+      - name: MGSM
+        value: 80.65
+      - name: NER F1
+        value: 26.36
+      - name: Reading comprehension Acc.
+        value: 61.54
+      - name: Summarization RougeL
+        value: 19.14
+      - name: Title Gen spBleu-1K
+        value: 7.14
+      - name: Topic class. F1
+        value: 59.36
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 48.13
+      - name: XNLI Acc
+        value: 83.87
+      - name: MMLU Acc.
+        value: 96.83
+      - name: spBLEU eng→ibo
+        value: 34.31
+      - name: MGSM
+        value: 71.43
+      - name: NER F1
+        value: 16.67
+      - name: POS F1
+        value: 43.36
+      - name: Reading comprehension Acc.
+        value: 61.54
+      - name: Summarization RougeL
+        value: 14.71
+      - name: Title Gen spBleu-1K
+        value: 10.41
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 15.45
+      - name: spBLEU fra→mos
+        value: 0.13
+      - name: NER F1
+        value: 30.77
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 51.18
+      - name: XNLI Acc
+        value: 69.84
+      - name: MMLU Acc.
+        value: 88.71
+      - name: spBLEU eng→twi
+        value: 12.69
+      - name: MGSM
+        value: 59.68
+      - name: NER F1
+        value: 25.0
+- model: claude-sonnet-4-5@20250929
+  task: llm
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 23.73
+      - name: spBLEU fra→bam
+        value: 3.58
+      - name: NER F1
+        value: 18.75
+      - name: Reading comprehension Acc.
+        value: 39.47
+      - name: Sentiment F1
+        value: 33.12
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 38.1
+      - name: XNLI Acc
+        value: 61.29
+      - name: MMLU Acc.
+        value: 44.44
+      - name: spBLEU fra→ewe
+        value: 8.61
+      - name: MGSM
+        value: 36.51
+      - name: NER F1
+        value: 39.65
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 13.21
+      - name: spBLEU fra→fon
+        value: 1.81
+      - name: NER F1
+        value: 24.62
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 31.58
+      - name: Reading comprehension Acc.
+        value: 31.58
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 42.56
+      - name: XNLI Acc
+        value: 70.97
+      - name: MMLU Acc.
+        value: 59.68
+      - name: spBLEU eng→hau
+        value: 10.65
+      - name: MGSM
+        value: 45.16
+      - name: NER F1
+        value: 38.77
+      - name: Reading comprehension Acc.
+        value: 46.15
+      - name: Summarization RougeL
+        value: 28.45
+      - name: Title Gen spBleu-1K
+        value: 5.64
+      - name: Topic class. F1
+        value: 77.61
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 39.34
+      - name: XNLI Acc
+        value: 83.87
+      - name: MMLU Acc.
+        value: 55.56
+      - name: spBLEU eng→ibo
+        value: 26.83
+      - name: MGSM
+        value: 47.62
+      - name: NER F1
+        value: 12.28
+      - name: POS F1
+        value: 54.87
+      - name: Reading comprehension Acc.
+        value: 43.59
+      - name: Summarization RougeL
+        value: 22.55
+      - name: Title Gen spBleu-1K
+        value: 6.9
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 15.48
+      - name: spBLEU fra→mos
+        value: 0.97
+      - name: NER F1
+        value: 30.0
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 42.92
+      - name: XNLI Acc
+        value: 66.67
+      - name: MMLU Acc.
+        value: 66.13
+      - name: spBLEU eng→twi
+        value: 12.79
+      - name: MGSM
+        value: 29.03
+      - name: NER F1
+        value: 40.0
+- model: claude-4-sonnet-20250514
+  task: llm
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 23.82
+      - name: spBLEU fra→bam
+        value: 4.73
+      - name: NER F1
+        value: 16.67
+      - name: Reading comprehension Acc.
+        value: 34.21
+      - name: Sentiment F1
+        value: 39.68
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 44.48
+      - name: XNLI Acc
+        value: 58.06
+      - name: MMLU Acc.
+        value: 69.84
+      - name: spBLEU fra→ewe
+        value: 9.38
+      - name: MGSM
+        value: 34.92
+      - name: NER F1
+        value: 50.21
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 12.54
+      - name: spBLEU fra→fon
+        value: 0.46
+      - name: NER F1
+        value: 24.62
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 15.79
+      - name: Reading comprehension Acc.
+        value: 15.79
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 42.41
+      - name: XNLI Acc
+        value: 66.13
+      - name: MMLU Acc.
+        value: 83.87
+      - name: spBLEU eng→hau
+        value: 6.64
+      - name: MGSM
+        value: 51.61
+      - name: NER F1
+        value: 41.74
+      - name: Reading comprehension Acc.
+        value: 43.59
+      - name: Summarization RougeL
+        value: 12.67
+      - name: Title Gen spBleu-1K
+        value: 10.11
+      - name: Topic class. F1
+        value: 65.35
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 41.58
+      - name: XNLI Acc
+        value: 72.58
+      - name: MMLU Acc.
+        value: 84.13
+      - name: spBLEU eng→ibo
+        value: 28.71
+      - name: MGSM
+        value: 39.68
+      - name: NER F1
+        value: 25.48
+      - name: POS F1
+        value: 62.84
+      - name: Reading comprehension Acc.
+        value: 43.59
+      - name: Summarization RougeL
+        value: 4.85
+      - name: Title Gen spBleu-1K
+        value: 12.4
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 12.77
+      - name: spBLEU fra→mos
+        value: 1.14
+      - name: NER F1
+        value: 24.39
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 41.95
+      - name: XNLI Acc
+        value: 57.14
+      - name: MMLU Acc.
+        value: 79.03
+      - name: spBLEU eng→twi
+        value: 4.42
+      - name: MGSM
+        value: 25.81
+      - name: NER F1
+        value: 43.33
+- model: gpt-4.1
+  task: llm
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 23.12
+      - name: spBLEU fra→bam
+        value: 1.67
+      - name: NER F1
+        value: 7.41
+      - name: Reading comprehension Acc.
+        value: 34.21
+      - name: Sentiment F1
+        value: 49.2
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 30.28
+      - name: XNLI Acc
+        value: 56.45
+      - name: MMLU Acc.
+        value: 52.38
+      - name: spBLEU fra→ewe
+        value: 6.88
+      - name: MGSM
+        value: 7.94
+      - name: NER F1
+        value: 27.76
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 6.26
+      - name: spBLEU fra→fon
+        value: 1.09
+      - name: NER F1
+        value: 11.43
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 28.95
+      - name: Reading comprehension Acc.
+        value: 28.95
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 41.9
+      - name: XNLI Acc
+        value: 77.42
+      - name: MMLU Acc.
+        value: 58.06
+      - name: spBLEU eng→hau
+        value: 9.57
+      - name: MGSM
+        value: 43.55
+      - name: NER F1
+        value: 30.9
+      - name: Reading comprehension Acc.
+        value: 53.85
+      - name: Summarization RougeL
+        value: 22.21
+      - name: Title Gen spBleu-1K
+        value: 5.12
+      - name: Topic class. F1
+        value: 76.4
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 35.24
+      - name: XNLI Acc
+        value: 75.81
+      - name: MMLU Acc.
+        value: 73.02
+      - name: spBLEU eng→ibo
+        value: 25.72
+      - name: MGSM
+        value: 14.29
+      - name: NER F1
+        value: 17.61
+      - name: POS F1
+        value: 38.67
+      - name: Reading comprehension Acc.
+        value: 43.59
+      - name: Summarization RougeL
+        value: 21.38
+      - name: Title Gen spBleu-1K
+        value: 7.04
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 16.83
+      - name: spBLEU fra→mos
+        value: 1.09
+      - name: NER F1
+        value: 32.56
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 38.65
+      - name: XNLI Acc
+        value: 61.9
+      - name: MMLU Acc.
+        value: 56.45
+      - name: spBLEU eng→twi
+        value: 8.57
+      - name: MGSM
+        value: 22.58
+      - name: NER F1
+        value: 43.75
+- model: CohereForAI/c4ai-command-a-03-2025
+  task: llm
+  model_url: https://huggingface.co/CohereForAI/c4ai-command-a-03-2025
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 18.59
+      - name: spBLEU fra→bam
+        value: 1.11
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 31.58
+      - name: Sentiment F1
+        value: 41.66
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 28.09
+      - name: XNLI Acc
+        value: 46.77
+      - name: MMLU Acc.
+        value: 57.14
+      - name: spBLEU fra→ewe
+        value: 6.35
+      - name: MGSM
+        value: 11.11
+      - name: NER F1
+        value: 19.1
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 7.29
+      - name: spBLEU fra→fon
+        value: 1.25
+      - name: NER F1
+        value: 13.33
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 34.21
+      - name: Reading comprehension Acc.
+        value: 34.21
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 27.38
+      - name: XNLI Acc
+        value: 59.68
+      - name: MMLU Acc.
+        value: 58.06
+      - name: spBLEU eng→hau
+        value: 3.23
+      - name: MGSM
+        value: 6.45
+      - name: NER F1
+        value: 18.87
+      - name: Reading comprehension Acc.
+        value: 25.64
+      - name: Summarization RougeL
+        value: 21.15
+      - name: Title Gen spBleu-1K
+        value: 8.46
+      - name: Topic class. F1
+        value: 44.89
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 26.57
+      - name: XNLI Acc
+        value: 66.13
+      - name: MMLU Acc.
+        value: 58.73
+      - name: spBLEU eng→ibo
+        value: 15.47
+      - name: MGSM
+        value: 4.76
+      - name: NER F1
+        value: 4.04
+      - name: POS F1
+        value: 27.54
+      - name: Reading comprehension Acc.
+        value: 30.77
+      - name: Summarization RougeL
+        value: 22.77
+      - name: Title Gen spBleu-1K
+        value: 8.89
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 8.17
+      - name: spBLEU fra→mos
+        value: 0.96
+      - name: NER F1
+        value: 15.38
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 32.02
+      - name: XNLI Acc
+        value: 57.14
+      - name: MMLU Acc.
+        value: 62.9
+      - name: spBLEU eng→twi
+        value: 4.44
+      - name: MGSM
+        value: 4.84
+      - name: NER F1
+        value: 30.77
+- model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+  task: llm
+  model_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 24.95
+      - name: spBLEU fra→bam
+        value: 1.7
+      - name: NER F1
+        value: 23.08
+      - name: Reading comprehension Acc.
+        value: 31.58
+      - name: Sentiment F1
+        value: 43.42
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 24.4
+      - name: XNLI Acc
+        value: 43.55
+      - name: MMLU Acc.
+        value: 47.62
+      - name: spBLEU fra→ewe
+        value: 5.22
+      - name: MGSM
+        value: 9.52
+      - name: NER F1
+        value: 16.08
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 4.88
+      - name: spBLEU fra→fon
+        value: 1.07
+      - name: NER F1
+        value: 8.7
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 28.95
+      - name: Reading comprehension Acc.
+        value: 28.95
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 34.62
+      - name: XNLI Acc
+        value: 61.29
+      - name: MMLU Acc.
+        value: 67.74
+      - name: spBLEU eng→hau
+        value: 5.94
+      - name: MGSM
+        value: 32.26
+      - name: NER F1
+        value: 10.75
+      - name: Reading comprehension Acc.
+        value: 41.03
+      - name: Summarization RougeL
+        value: 26.51
+      - name: Title Gen spBleu-1K
+        value: 7.51
+      - name: Topic class. F1
+        value: 58.54
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 31.69
+      - name: XNLI Acc
+        value: 72.58
+      - name: MMLU Acc.
+        value: 68.25
+      - name: spBLEU eng→ibo
+        value: 25.08
+      - name: MGSM
+        value: 17.46
+      - name: NER F1
+        value: 15.87
+      - name: POS F1
+        value: 18.18
+      - name: Reading comprehension Acc.
+        value: 35.9
+      - name: Summarization RougeL
+        value: 21.47
+      - name: Title Gen spBleu-1K
+        value: 10.43
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 4.21
+      - name: spBLEU fra→mos
+        value: 1.01
+      - name: NER F1
+        value: 7.41
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 25.29
+      - name: XNLI Acc
+        value: 44.44
+      - name: MMLU Acc.
+        value: 46.77
+      - name: spBLEU eng→twi
+        value: 5.38
+      - name: MGSM
+        value: 4.84
+      - name: NER F1
+        value: 25.0
+- model: meta-llama/Llama-3.3-70B-Instruct
+  task: llm
+  model_url: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 21.09
+      - name: spBLEU fra→bam
+        value: 1.02
+      - name: NER F1
+        value: 5.88
+      - name: Reading comprehension Acc.
+        value: 31.58
+      - name: Sentiment F1
+        value: 45.89
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 23.52
+      - name: XNLI Acc
+        value: 33.87
+      - name: MMLU Acc.
+        value: 52.38
+      - name: spBLEU fra→ewe
+        value: 5.08
+      - name: MGSM
+        value: 3.17
+      - name: NER F1
+        value: 23.08
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 4.05
+      - name: spBLEU fra→fon
+        value: 0.7
+      - name: NER F1
+        value: 7.41
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 36.84
+      - name: Reading comprehension Acc.
+        value: 36.84
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 30.76
+      - name: XNLI Acc
+        value: 53.23
+      - name: MMLU Acc.
+        value: 69.35
+      - name: spBLEU eng→hau
+        value: 5.76
+      - name: MGSM
+        value: 8.06
+      - name: NER F1
+        value: 4.76
+      - name: Reading comprehension Acc.
+        value: 46.15
+      - name: Summarization RougeL
+        value: 27.02
+      - name: Title Gen spBleu-1K
+        value: 10.99
+      - name: Topic class. F1
+        value: 51.48
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 27.05
+      - name: XNLI Acc
+        value: 59.68
+      - name: MMLU Acc.
+        value: 61.9
+      - name: spBLEU eng→ibo
+        value: 20.97
+      - name: MGSM
+        value: 6.35
+      - name: NER F1
+        value: 4.65
+      - name: POS F1
+        value: 15.04
+      - name: Reading comprehension Acc.
+        value: 41.03
+      - name: Summarization RougeL
+        value: 22.02
+      - name: Title Gen spBleu-1K
+        value: 11.81
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 5.7
+      - name: spBLEU fra→mos
+        value: 0.58
+      - name: NER F1
+        value: 10.81
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 26.07
+      - name: XNLI Acc
+        value: 42.86
+      - name: MMLU Acc.
+        value: 64.52
+      - name: spBLEU eng→twi
+        value: 3.72
+      - name: MGSM
+        value: 3.23
+      - name: NER F1
+        value: 16.0
+- model: google/gemma-3-27b-it
+  task: llm
+  model_url: https://huggingface.co/google/gemma-3-27b-it
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 17.64
+      - name: spBLEU fra→bam
+        value: 1.15
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 26.32
+      - name: Sentiment F1
+        value: 43.09
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 22.02
+      - name: XNLI Acc
+        value: 38.71
+      - name: MMLU Acc.
+        value: 49.21
+      - name: spBLEU fra→ewe
+        value: 5.69
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 16.51
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 3.68
+      - name: spBLEU fra→fon
+        value: 1.39
+      - name: NER F1
+        value: 5.97
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 36.84
+      - name: Reading comprehension Acc.
+        value: 36.84
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 34.01
+      - name: XNLI Acc
+        value: 61.29
+      - name: MMLU Acc.
+        value: 74.19
+      - name: spBLEU eng→hau
+        value: 7.9
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 16.98
+      - name: Reading comprehension Acc.
+        value: 38.46
+      - name: Summarization RougeL
+        value: 23.82
+      - name: Title Gen spBleu-1K
+        value: 8.65
+      - name: Topic class. F1
+        value: 74.81
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 28.74
+      - name: XNLI Acc
+        value: 80.65
+      - name: MMLU Acc.
+        value: 69.84
+      - name: spBLEU eng→ibo
+        value: 24.38
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 3.68
+      - name: POS F1
+        value: 13.99
+      - name: Reading comprehension Acc.
+        value: 38.46
+      - name: Summarization RougeL
+        value: 21.3
+      - name: Title Gen spBleu-1K
+        value: 6.35
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 5.36
+      - name: spBLEU fra→mos
+        value: 0.72
+      - name: NER F1
+        value: 10.0
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 26.42
+      - name: XNLI Acc
+        value: 46.03
+      - name: MMLU Acc.
+        value: 56.45
+      - name: spBLEU eng→twi
+        value: 4.19
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 25.45
+- model: google/gemma-2-27b-it
+  task: llm
+  model_url: https://huggingface.co/google/gemma-2-27b-it
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 19.8
+      - name: spBLEU fra→bam
+        value: 0.82
+      - name: NER F1
+        value: 17.39
+      - name: Reading comprehension Acc.
+        value: 28.95
+      - name: Sentiment F1
+        value: 32.05
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 22.41
+      - name: XNLI Acc
+        value: 43.55
+      - name: MMLU Acc.
+        value: 39.68
+      - name: spBLEU fra→ewe
+        value: 4.2
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 24.6
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 5.41
+      - name: spBLEU fra→fon
+        value: 1.05
+      - name: NER F1
+        value: 9.76
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 23.68
+      - name: Reading comprehension Acc.
+        value: 23.68
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 26.73
+      - name: XNLI Acc
+        value: 62.9
+      - name: MMLU Acc.
+        value: 45.16
+      - name: spBLEU eng→hau
+        value: 6.6
+      - name: MGSM
+        value: 8.06
+      - name: NER F1
+        value: 15.96
+      - name: Reading comprehension Acc.
+        value: 28.21
+      - name: Summarization RougeL
+        value: 22.84
+      - name: Title Gen spBleu-1K
+        value: 5.08
+      - name: Topic class. F1
+        value: 45.74
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 24.6
+      - name: XNLI Acc
+        value: 64.52
+      - name: MMLU Acc.
+        value: 50.79
+      - name: spBLEU eng→ibo
+        value: 22.63
+      - name: MGSM
+        value: 3.17
+      - name: NER F1
+        value: 5.66
+      - name: POS F1
+        value: 19.0
+      - name: Reading comprehension Acc.
+        value: 28.21
+      - name: Summarization RougeL
+        value: 21.55
+      - name: Title Gen spBleu-1K
+        value: 5.83
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 14.58
+      - name: spBLEU fra→mos
+        value: 0.59
+      - name: NER F1
+        value: 28.57
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 25.27
+      - name: XNLI Acc
+        value: 49.21
+      - name: MMLU Acc.
+        value: 50.0
+      - name: spBLEU eng→twi
+        value: 4.9
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 22.22
+- model: deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
+  task: llm
+  model_url: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 21.29
+      - name: spBLEU fra→bam
+        value: 0.67
+      - name: NER F1
+        value: 10.53
+      - name: Reading comprehension Acc.
+        value: 39.47
+      - name: Sentiment F1
+        value: 34.47
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 22.6
+      - name: XNLI Acc
+        value: 37.1
+      - name: MMLU Acc.
+        value: 49.21
+      - name: spBLEU fra→ewe
+        value: 3.64
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 21.47
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 7.64
+      - name: spBLEU fra→fon
+        value: 0.64
+      - name: NER F1
+        value: 14.63
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 34.21
+      - name: Reading comprehension Acc.
+        value: 34.21
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 20.69
+      - name: XNLI Acc
+        value: 38.71
+      - name: MMLU Acc.
+        value: 54.84
+      - name: spBLEU eng→hau
+        value: 0.57
+      - name: MGSM
+        value: 6.45
+      - name: NER F1
+        value: 8.16
+      - name: Reading comprehension Acc.
+        value: 25.64
+      - name: Summarization RougeL
+        value: 18.91
+      - name: Title Gen spBleu-1K
+        value: 5.26
+      - name: Topic class. F1
+        value: 27.68
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 19.09
+      - name: XNLI Acc
+        value: 41.94
+      - name: MMLU Acc.
+        value: 49.21
+      - name: spBLEU eng→ibo
+        value: 8.33
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 0.0
+      - name: POS F1
+        value: 18.36
+      - name: Reading comprehension Acc.
+        value: 30.77
+      - name: Summarization RougeL
+        value: 17.41
+      - name: Title Gen spBleu-1K
+        value: 5.81
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 3.5
+      - name: spBLEU fra→mos
+        value: 0.33
+      - name: NER F1
+        value: 6.67
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 21.11
+      - name: XNLI Acc
+        value: 34.92
+      - name: MMLU Acc.
+        value: 56.45
+      - name: spBLEU eng→twi
+        value: 2.02
+      - name: MGSM
+        value: 1.61
+      - name: NER F1
+        value: 10.53
+- model: meta-llama/Llama-3.1-70B-Instruct
+  task: llm
+  model_url: https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 9.98
+      - name: spBLEU fra→bam
+        value: 0.86
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 13.16
+      - name: Sentiment F1
+        value: 25.9
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 23.62
+      - name: XNLI Acc
+        value: 43.55
+      - name: MMLU Acc.
+        value: 50.79
+      - name: spBLEU fra→ewe
+        value: 5.31
+      - name: MGSM
+        value: 4.76
+      - name: NER F1
+        value: 13.7
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 3.44
+      - name: spBLEU fra→fon
+        value: 0.64
+      - name: NER F1
+        value: 6.25
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 23.68
+      - name: Reading comprehension Acc.
+        value: 23.68
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 31.64
+      - name: XNLI Acc
+        value: 58.06
+      - name: MMLU Acc.
+        value: 66.13
+      - name: spBLEU eng→hau
+        value: 5.74
+      - name: MGSM
+        value: 17.74
+      - name: NER F1
+        value: 4.55
+      - name: Reading comprehension Acc.
+        value: 33.33
+      - name: Summarization RougeL
+        value: 26.64
+      - name: Title Gen spBleu-1K
+        value: 12.2
+      - name: Topic class. F1
+        value: 60.38
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 26.33
+      - name: XNLI Acc
+        value: 59.68
+      - name: MMLU Acc.
+        value: 58.73
+      - name: spBLEU eng→ibo
+        value: 24.62
+      - name: MGSM
+        value: 7.94
+      - name: NER F1
+        value: 2.35
+      - name: POS F1
+        value: 14.13
+      - name: Reading comprehension Acc.
+        value: 35.9
+      - name: Summarization RougeL
+        value: 21.13
+      - name: Title Gen spBleu-1K
+        value: 12.45
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 4.94
+      - name: spBLEU fra→mos
+        value: 0.79
+      - name: NER F1
+        value: 9.09
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 23.46
+      - name: XNLI Acc
+        value: 41.27
+      - name: MMLU Acc.
+        value: 56.45
+      - name: spBLEU eng→twi
+        value: 3.87
+      - name: MGSM
+        value: 3.23
+      - name: NER F1
+        value: 12.5
+- model: Qwen/Qwen3-30B-Instruct-2507
+  task: llm
+  model_url: https://huggingface.co/Qwen/Qwen3-30B-Instruct-2507
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 18.3
+      - name: spBLEU fra→bam
+        value: 0.41
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 28.95
+      - name: Sentiment F1
+        value: 43.82
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 22.86
+      - name: XNLI Acc
+        value: 41.94
+      - name: MMLU Acc.
+        value: 49.21
+      - name: spBLEU fra→ewe
+        value: 2.71
+      - name: MGSM
+        value: 3.17
+      - name: NER F1
+        value: 17.28
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.1
+      - name: spBLEU fra→fon
+        value: 0.21
+      - name: NER F1
+        value: 0.0
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 28.95
+      - name: Reading comprehension Acc.
+        value: 28.95
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 22.35
+      - name: XNLI Acc
+        value: 41.94
+      - name: MMLU Acc.
+        value: 56.45
+      - name: spBLEU eng→hau
+        value: 0.61
+      - name: MGSM
+        value: 6.45
+      - name: NER F1
+        value: 7.69
+      - name: Reading comprehension Acc.
+        value: 33.33
+      - name: Summarization RougeL
+        value: 19.09
+      - name: Title Gen spBleu-1K
+        value: 4.99
+      - name: Topic class. F1
+        value: 30.64
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 22.48
+      - name: XNLI Acc
+        value: 48.39
+      - name: MMLU Acc.
+        value: 58.73
+      - name: spBLEU eng→ibo
+        value: 8.64
+      - name: MGSM
+        value: 4.76
+      - name: NER F1
+        value: 9.2
+      - name: POS F1
+        value: 17.53
+      - name: Reading comprehension Acc.
+        value: 33.33
+      - name: Summarization RougeL
+        value: 16.45
+      - name: Title Gen spBleu-1K
+        value: 5.32
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 8.1
+      - name: spBLEU fra→mos
+        value: 0.19
+      - name: NER F1
+        value: 16.0
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 22.09
+      - name: XNLI Acc
+        value: 33.33
+      - name: MMLU Acc.
+        value: 58.06
+      - name: spBLEU eng→twi
+        value: 1.23
+      - name: MGSM
+        value: 1.61
+      - name: NER F1
+        value: 16.22
+- model: deepseek-ai/DeepSeek-R1-Distill-Llama-70B
+  task: llm
+  model_url: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 15.94
+      - name: spBLEU fra→bam
+        value: 0.71
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 28.95
+      - name: Sentiment F1
+        value: 34.1
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 22.74
+      - name: XNLI Acc
+        value: 43.55
+      - name: MMLU Acc.
+        value: 41.27
+      - name: spBLEU fra→ewe
+        value: 5.34
+      - name: MGSM
+        value: 4.76
+      - name: NER F1
+        value: 18.79
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 3.18
+      - name: spBLEU fra→fon
+        value: 0.48
+      - name: NER F1
+        value: 5.88
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 18.42
+      - name: Reading comprehension Acc.
+        value: 18.42
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 28.88
+      - name: XNLI Acc
+        value: 50.0
+      - name: MMLU Acc.
+        value: 58.06
+      - name: spBLEU eng→hau
+        value: 3.87
+      - name: MGSM
+        value: 9.68
+      - name: NER F1
+        value: 11.19
+      - name: Reading comprehension Acc.
+        value: 43.59
+      - name: Summarization RougeL
+        value: 23.72
+      - name: Title Gen spBleu-1K
+        value: 10.2
+      - name: Topic class. F1
+        value: 49.64
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 25.08
+      - name: XNLI Acc
+        value: 64.52
+      - name: MMLU Acc.
+        value: 57.14
+      - name: spBLEU eng→ibo
+        value: 18.39
+      - name: MGSM
+        value: 9.52
+      - name: NER F1
+        value: 0.0
+      - name: POS F1
+        value: 11.52
+      - name: Reading comprehension Acc.
+        value: 33.33
+      - name: Summarization RougeL
+        value: 21.53
+      - name: Title Gen spBleu-1K
+        value: 9.74
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 5.06
+      - name: spBLEU fra→mos
+        value: 0.6
+      - name: NER F1
+        value: 9.52
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 23.86
+      - name: XNLI Acc
+        value: 42.86
+      - name: MMLU Acc.
+        value: 50.0
+      - name: spBLEU eng→twi
+        value: 3.4
+      - name: MGSM
+        value: 4.84
+      - name: NER F1
+        value: 18.18
+- model: Tower-Babel/Babel-9B-Chat
+  task: llm
+  model_url: https://huggingface.co/Tower-Babel/Babel-9B-Chat
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 14.7
+      - name: spBLEU fra→bam
+        value: 0.62
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 26.32
+      - name: Sentiment F1
+        value: 31.85
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 17.2
+      - name: XNLI Acc
+        value: 35.48
+      - name: MMLU Acc.
+        value: 41.27
+      - name: spBLEU fra→ewe
+        value: 3.75
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 3.92
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 6.04
+      - name: spBLEU fra→fon
+        value: 0.31
+      - name: NER F1
+        value: 11.76
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 31.58
+      - name: Reading comprehension Acc.
+        value: 31.58
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 27.34
+      - name: XNLI Acc
+        value: 62.9
+      - name: MMLU Acc.
+        value: 69.35
+      - name: spBLEU eng→hau
+        value: 6.27
+      - name: MGSM
+        value: 3.23
+      - name: NER F1
+        value: 1.55
+      - name: Reading comprehension Acc.
+        value: 43.59
+      - name: Summarization RougeL
+        value: 21.94
+      - name: Title Gen spBleu-1K
+        value: 6.7
+      - name: Topic class. F1
+        value: 30.54
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 17.33
+      - name: XNLI Acc
+        value: 40.32
+      - name: MMLU Acc.
+        value: 38.1
+      - name: spBLEU eng→ibo
+        value: 8.44
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 0.0
+      - name: POS F1
+        value: 11.68
+      - name: Reading comprehension Acc.
+        value: 30.77
+      - name: Summarization RougeL
+        value: 19.61
+      - name: Title Gen spBleu-1K
+        value: 7.09
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.15
+      - name: spBLEU fra→mos
+        value: 0.31
+      - name: NER F1
+        value: 0.0
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 19.43
+      - name: XNLI Acc
+        value: 33.33
+      - name: MMLU Acc.
+        value: 46.77
+      - name: spBLEU eng→twi
+        value: 2.38
+      - name: MGSM
+        value: 3.23
+      - name: NER F1
+        value: 11.43
+- model: Tower-Babel/Babel-83B-Chat
+  task: llm
+  model_url: https://huggingface.co/Tower-Babel/Babel-83B-Chat
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 10.84
+      - name: spBLEU fra→bam
+        value: 0.79
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 23.68
+      - name: Sentiment F1
+        value: 18.88
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 20.51
+      - name: XNLI Acc
+        value: 29.03
+      - name: MMLU Acc.
+        value: 55.56
+      - name: spBLEU fra→ewe
+        value: 2.57
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 13.79
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 5.11
+      - name: spBLEU fra→fon
+        value: 0.22
+      - name: NER F1
+        value: 10.0
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 21.05
+      - name: Reading comprehension Acc.
+        value: 21.05
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 24.33
+      - name: XNLI Acc
+        value: 27.42
+      - name: MMLU Acc.
+        value: 67.74
+      - name: spBLEU eng→hau
+        value: 3.55
+      - name: MGSM
+        value: 4.84
+      - name: NER F1
+        value: 3.68
+      - name: Reading comprehension Acc.
+        value: 25.64
+      - name: Summarization RougeL
+        value: 23.65
+      - name: Title Gen spBleu-1K
+        value: 6.62
+      - name: Topic class. F1
+        value: 55.85
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 20.68
+      - name: XNLI Acc
+        value: 37.1
+      - name: MMLU Acc.
+        value: 55.56
+      - name: spBLEU eng→ibo
+        value: 11.28
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 0.0
+      - name: POS F1
+        value: 20.76
+      - name: Reading comprehension Acc.
+        value: 33.33
+      - name: Summarization RougeL
+        value: 19.58
+      - name: Title Gen spBleu-1K
+        value: 6.96
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 4.15
+      - name: spBLEU fra→mos
+        value: 0.61
+      - name: NER F1
+        value: 7.69
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 20.95
+      - name: XNLI Acc
+        value: 31.75
+      - name: MMLU Acc.
+        value: 54.84
+      - name: spBLEU eng→twi
+        value: 1.15
+      - name: MGSM
+        value: 1.61
+      - name: NER F1
+        value: 15.38
+- model: Qwen/Qwen3-4B-Instruct-2507
+  task: llm
+  model_url: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 19.32
+      - name: spBLEU fra→bam
+        value: 0.48
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 34.21
+      - name: Sentiment F1
+        value: 42.58
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 19.01
+      - name: XNLI Acc
+        value: 45.16
+      - name: MMLU Acc.
+        value: 34.92
+      - name: spBLEU fra→ewe
+        value: 2.77
+      - name: MGSM
+        value: 4.76
+      - name: NER F1
+        value: 7.45
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.15
+      - name: spBLEU fra→fon
+        value: 0.3
+      - name: NER F1
+        value: 0.0
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 31.58
+      - name: Reading comprehension Acc.
+        value: 31.58
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 19.41
+      - name: XNLI Acc
+        value: 45.16
+      - name: MMLU Acc.
+        value: 40.32
+      - name: spBLEU eng→hau
+        value: 0.4
+      - name: MGSM
+        value: 4.84
+      - name: NER F1
+        value: 6.98
+      - name: Reading comprehension Acc.
+        value: 28.21
+      - name: Summarization RougeL
+        value: 17.64
+      - name: Title Gen spBleu-1K
+        value: 5.22
+      - name: Topic class. F1
+        value: 25.89
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 19.23
+      - name: XNLI Acc
+        value: 53.23
+      - name: MMLU Acc.
+        value: 36.51
+      - name: spBLEU eng→ibo
+        value: 6.77
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 3.45
+      - name: POS F1
+        value: 12.38
+      - name: Reading comprehension Acc.
+        value: 35.9
+      - name: Summarization RougeL
+        value: 17.7
+      - name: Title Gen spBleu-1K
+        value: 5.58
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.07
+      - name: spBLEU fra→mos
+        value: 0.15
+      - name: NER F1
+        value: 0.0
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 18.47
+      - name: XNLI Acc
+        value: 41.27
+      - name: MMLU Acc.
+        value: 40.32
+      - name: spBLEU eng→twi
+        value: 1.56
+      - name: MGSM
+        value: 4.84
+      - name: NER F1
+        value: 4.35
+- model: google/gemma-2-9b-it
+  task: llm
+  model_url: https://huggingface.co/google/gemma-2-9b-it
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 18.75
+      - name: spBLEU fra→bam
+        value: 0.43
+      - name: NER F1
+        value: 6.9
+      - name: Reading comprehension Acc.
+        value: 18.42
+      - name: Sentiment F1
+        value: 49.24
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 18.54
+      - name: XNLI Acc
+        value: 40.32
+      - name: MMLU Acc.
+        value: 39.68
+      - name: spBLEU fra→ewe
+        value: 1.88
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 9.25
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 2.23
+      - name: spBLEU fra→fon
+        value: 0.29
+      - name: NER F1
+        value: 4.17
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 18.42
+      - name: Reading comprehension Acc.
+        value: 18.42
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 21.59
+      - name: XNLI Acc
+        value: 46.77
+      - name: MMLU Acc.
+        value: 40.32
+      - name: spBLEU eng→hau
+        value: 5.48
+      - name: MGSM
+        value: 3.23
+      - name: NER F1
+        value: 5.41
+      - name: Reading comprehension Acc.
+        value: 28.21
+      - name: Summarization RougeL
+        value: 21.11
+      - name: Title Gen spBleu-1K
+        value: 1.09
+      - name: Topic class. F1
+        value: 42.65
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 19.12
+      - name: XNLI Acc
+        value: 53.23
+      - name: MMLU Acc.
+        value: 47.62
+      - name: spBLEU eng→ibo
+        value: 17.08
+      - name: MGSM
+        value: 3.17
+      - name: NER F1
+        value: 3.57
+      - name: POS F1
+        value: 13.2
+      - name: Reading comprehension Acc.
+        value: 17.95
+      - name: Summarization RougeL
+        value: 10.71
+      - name: Title Gen spBleu-1K
+        value: 5.53
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.12
+      - name: spBLEU fra→mos
+        value: 0.24
+      - name: NER F1
+        value: 0.0
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 21.54
+      - name: XNLI Acc
+        value: 46.03
+      - name: MMLU Acc.
+        value: 41.94
+      - name: spBLEU eng→twi
+        value: 4.15
+      - name: MGSM
+        value: 1.61
+      - name: NER F1
+        value: 13.95
+- model: google/gemma-3-12b-it
+  task: llm
+  model_url: https://huggingface.co/google/gemma-3-12b-it
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 12.27
+      - name: spBLEU fra→bam
+        value: 1.06
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 10.53
+      - name: Sentiment F1
+        value: 37.49
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 19.65
+      - name: XNLI Acc
+        value: 43.55
+      - name: MMLU Acc.
+        value: 38.1
+      - name: spBLEU fra→ewe
+        value: 6.29
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 10.29
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 2.92
+      - name: spBLEU fra→fon
+        value: 0.95
+      - name: NER F1
+        value: 4.88
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 10.53
+      - name: Reading comprehension Acc.
+        value: 10.53
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 24.59
+      - name: XNLI Acc
+        value: 61.29
+      - name: MMLU Acc.
+        value: 45.16
+      - name: spBLEU eng→hau
+        value: 5.75
+      - name: MGSM
+        value: 1.61
+      - name: NER F1
+        value: 2.58
+      - name: Reading comprehension Acc.
+        value: 41.03
+      - name: Summarization RougeL
+        value: 22.89
+      - name: Title Gen spBleu-1K
+        value: 6.58
+      - name: Topic class. F1
+        value: 34.43
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 24.39
+      - name: XNLI Acc
+        value: 70.97
+      - name: MMLU Acc.
+        value: 52.38
+      - name: spBLEU eng→ibo
+        value: 17.38
+      - name: MGSM
+        value: 4.76
+      - name: NER F1
+        value: 6.12
+      - name: POS F1
+        value: 13.86
+      - name: Reading comprehension Acc.
+        value: 28.21
+      - name: Summarization RougeL
+        value: 19.91
+      - name: Title Gen spBleu-1K
+        value: 5.95
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 3.32
+      - name: spBLEU fra→mos
+        value: 0.59
+      - name: NER F1
+        value: 6.06
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 18.75
+      - name: XNLI Acc
+        value: 49.21
+      - name: MMLU Acc.
+        value: 29.03
+      - name: spBLEU eng→twi
+        value: 3.88
+      - name: MGSM
+        value: 1.61
+      - name: NER F1
+        value: 10.0
+- model: meta-llama/Llama-3.1-8B-Instruct
+  task: llm
+  model_url: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 14.84
+      - name: spBLEU fra→bam
+        value: 0.55
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 18.42
+      - name: Sentiment F1
+        value: 40.4
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 16.92
+      - name: XNLI Acc
+        value: 43.55
+      - name: MMLU Acc.
+        value: 38.1
+      - name: spBLEU fra→ewe
+        value: 1.38
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 0.0
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.09
+      - name: spBLEU fra→fon
+        value: 0.17
+      - name: NER F1
+        value: 0.0
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 18.42
+      - name: Reading comprehension Acc.
+        value: 18.42
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 19.48
+      - name: XNLI Acc
+        value: 43.55
+      - name: MMLU Acc.
+        value: 22.58
+      - name: spBLEU eng→hau
+        value: 2.49
+      - name: MGSM
+        value: 4.84
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 25.64
+      - name: Summarization RougeL
+        value: 22.26
+      - name: Title Gen spBleu-1K
+        value: 7.15
+      - name: Topic class. F1
+        value: 46.8
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 18.96
+      - name: XNLI Acc
+        value: 53.23
+      - name: MMLU Acc.
+        value: 31.75
+      - name: spBLEU eng→ibo
+        value: 13.46
+      - name: MGSM
+        value: 3.17
+      - name: NER F1
+        value: 4.04
+      - name: POS F1
+        value: 9.13
+      - name: Reading comprehension Acc.
+        value: 25.64
+      - name: Summarization RougeL
+        value: 21.06
+      - name: Title Gen spBleu-1K
+        value: 9.19
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.07
+      - name: spBLEU fra→mos
+        value: 0.14
+      - name: NER F1
+        value: 0.0
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 16.81
+      - name: XNLI Acc
+        value: 46.03
+      - name: MMLU Acc.
+        value: 30.65
+      - name: spBLEU eng→twi
+        value: 1.49
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 5.88
+- model: CohereForAI/aya-23-35B
+  task: llm
+  model_url: https://huggingface.co/CohereForAI/aya-23-35B
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 14.11
+      - name: spBLEU fra→bam
+        value: 0.52
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 21.05
+      - name: Sentiment F1
+        value: 34.87
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 14.51
+      - name: XNLI Acc
+        value: 35.48
+      - name: MMLU Acc.
+        value: 28.57
+      - name: spBLEU fra→ewe
+        value: 2.27
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 4.62
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.1
+      - name: spBLEU fra→fon
+        value: 0.21
+      - name: NER F1
+        value: 0.0
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 34.21
+      - name: Reading comprehension Acc.
+        value: 34.21
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 15.13
+      - name: XNLI Acc
+        value: 38.71
+      - name: MMLU Acc.
+        value: 20.97
+      - name: spBLEU eng→hau
+        value: 0.77
+      - name: MGSM
+        value: 3.23
+      - name: NER F1
+        value: 1.74
+      - name: Reading comprehension Acc.
+        value: 28.21
+      - name: Summarization RougeL
+        value: 6.65
+      - name: Title Gen spBleu-1K
+        value: 2.69
+      - name: Topic class. F1
+        value: 33.18
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 14.41
+      - name: XNLI Acc
+        value: 38.71
+      - name: MMLU Acc.
+        value: 25.4
+      - name: spBLEU eng→ibo
+        value: 7.84
+      - name: MGSM
+        value: 3.17
+      - name: NER F1
+        value: 0.0
+      - name: POS F1
+        value: 11.4
+      - name: Reading comprehension Acc.
+        value: 35.9
+      - name: Summarization RougeL
+        value: 4.9
+      - name: Title Gen spBleu-1K
+        value: 2.35
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.07
+      - name: spBLEU fra→mos
+        value: 0.13
+      - name: NER F1
+        value: 0.0
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 13.03
+      - name: XNLI Acc
+        value: 36.51
+      - name: MMLU Acc.
+        value: 24.19
+      - name: spBLEU eng→twi
+        value: 1.24
+      - name: MGSM
+        value: 3.23
+      - name: NER F1
+        value: 0.0
+- model: CohereForAI/c4ai-command-r-plus-08-2024
+  task: llm
+  model_url: https://huggingface.co/CohereForAI/c4ai-command-r-plus-08-2024
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 11.47
+      - name: spBLEU fra→bam
+        value: 0.81
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 18.42
+      - name: Sentiment F1
+        value: 26.64
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 16.33
+      - name: XNLI Acc
+        value: 33.87
+      - name: MMLU Acc.
+        value: 30.16
+      - name: spBLEU fra→ewe
+        value: 2.4
+      - name: MGSM
+        value: 6.35
+      - name: NER F1
+        value: 8.89
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.07
+      - name: spBLEU fra→fon
+        value: 0.14
+      - name: NER F1
+        value: 0.0
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 18.42
+      - name: Reading comprehension Acc.
+        value: 18.42
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 20.09
+      - name: XNLI Acc
+        value: 43.55
+      - name: MMLU Acc.
+        value: 29.03
+      - name: spBLEU eng→hau
+        value: 2.23
+      - name: MGSM
+        value: 8.06
+      - name: NER F1
+        value: 5.08
+      - name: Reading comprehension Acc.
+        value: 23.08
+      - name: Summarization RougeL
+        value: 20.11
+      - name: Title Gen spBleu-1K
+        value: 5.32
+      - name: Topic class. F1
+        value: 44.39
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 16.56
+      - name: XNLI Acc
+        value: 48.39
+      - name: MMLU Acc.
+        value: 26.98
+      - name: spBLEU eng→ibo
+        value: 10.65
+      - name: MGSM
+        value: 3.17
+      - name: NER F1
+        value: 0.0
+      - name: POS F1
+        value: 13.71
+      - name: Reading comprehension Acc.
+        value: 20.51
+      - name: Summarization RougeL
+        value: 18.67
+      - name: Title Gen spBleu-1K
+        value: 6.92
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 4.85
+      - name: spBLEU fra→mos
+        value: 0.18
+      - name: NER F1
+        value: 9.52
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 16.05
+      - name: XNLI Acc
+        value: 31.75
+      - name: MMLU Acc.
+        value: 25.81
+      - name: spBLEU eng→twi
+        value: 1.72
+      - name: MGSM
+        value: 1.61
+      - name: NER F1
+        value: 19.35
+- model: CohereForAI/c4ai-command-r7b-12-2024
+  task: llm
+  model_url: https://huggingface.co/CohereForAI/c4ai-command-r7b-12-2024
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 12.02
+      - name: spBLEU fra→bam
+        value: 0.44
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 13.16
+      - name: Sentiment F1
+        value: 34.46
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 13.81
+      - name: XNLI Acc
+        value: 35.48
+      - name: MMLU Acc.
+        value: 30.16
+      - name: spBLEU fra→ewe
+        value: 1.81
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 0.0
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.2
+      - name: spBLEU fra→fon
+        value: 0.41
+      - name: NER F1
+        value: 0.0
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 36.84
+      - name: Reading comprehension Acc.
+        value: 36.84
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 15.04
+      - name: XNLI Acc
+        value: 38.71
+      - name: MMLU Acc.
+        value: 27.42
+      - name: spBLEU eng→hau
+        value: 0.61
+      - name: MGSM
+        value: 1.61
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 23.08
+      - name: Summarization RougeL
+        value: 7.49
+      - name: Title Gen spBleu-1K
+        value: 0.18
+      - name: Topic class. F1
+        value: 36.27
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 12.66
+      - name: XNLI Acc
+        value: 32.26
+      - name: MMLU Acc.
+        value: 20.63
+      - name: spBLEU eng→ibo
+        value: 8.22
+      - name: MGSM
+        value: 3.17
+      - name: NER F1
+        value: 0.0
+      - name: POS F1
+        value: 12.52
+      - name: Reading comprehension Acc.
+        value: 30.77
+      - name: Summarization RougeL
+        value: 5.73
+      - name: Title Gen spBleu-1K
+        value: 0.65
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.1
+      - name: spBLEU fra→mos
+        value: 0.19
+      - name: NER F1
+        value: 0.0
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 11.97
+      - name: XNLI Acc
+        value: 39.68
+      - name: MMLU Acc.
+        value: 17.74
+      - name: spBLEU eng→twi
+        value: 2.42
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 0.0
+- model: microsoft/Phi-4-mini-instruct
+  task: llm
+  model_url: https://huggingface.co/microsoft/Phi-4-mini-instruct
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 18.39
+      - name: spBLEU fra→bam
+        value: 0.66
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 31.58
+      - name: Sentiment F1
+        value: 41.34
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 14.18
+      - name: XNLI Acc
+        value: 35.48
+      - name: MMLU Acc.
+        value: 30.16
+      - name: spBLEU fra→ewe
+        value: 3.69
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 0.0
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.3
+      - name: spBLEU fra→fon
+        value: 0.6
+      - name: NER F1
+        value: 0.0
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 26.32
+      - name: Reading comprehension Acc.
+        value: 26.32
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 12.58
+      - name: XNLI Acc
+        value: 40.32
+      - name: MMLU Acc.
+        value: 24.19
+      - name: spBLEU eng→hau
+        value: 1.05
+      - name: MGSM
+        value: 3.23
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 30.77
+      - name: Summarization RougeL
+        value: 2.91
+      - name: Title Gen spBleu-1K
+        value: 0.03
+      - name: Topic class. F1
+        value: 10.72
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 15.24
+      - name: XNLI Acc
+        value: 43.55
+      - name: MMLU Acc.
+        value: 30.16
+      - name: spBLEU eng→ibo
+        value: 2.69
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 0.0
+      - name: POS F1
+        value: 10.3
+      - name: Reading comprehension Acc.
+        value: 46.15
+      - name: Summarization RougeL
+        value: 2.73
+      - name: Title Gen spBleu-1K
+        value: 0.03
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.18
+      - name: spBLEU fra→mos
+        value: 0.37
+      - name: NER F1
+        value: 0.0
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 12.63
+      - name: XNLI Acc
+        value: 31.75
+      - name: MMLU Acc.
+        value: 29.03
+      - name: spBLEU eng→twi
+        value: 2.35
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 0.0
+- model: meta-llama/Llama-3.2-1B-Instruct
+  task: llm
+  model_url: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 16.25
+      - name: spBLEU fra→bam
+        value: 0.1
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 26.32
+      - name: Sentiment F1
+        value: 38.58
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 14.17
+      - name: XNLI Acc
+        value: 33.87
+      - name: MMLU Acc.
+        value: 30.16
+      - name: spBLEU fra→ewe
+        value: 2.07
+      - name: MGSM
+        value: 4.76
+      - name: NER F1
+        value: 0.0
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.23
+      - name: spBLEU fra→fon
+        value: 0.47
+      - name: NER F1
+        value: 0.0
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 28.95
+      - name: Reading comprehension Acc.
+        value: 28.95
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 11.87
+      - name: XNLI Acc
+        value: 33.87
+      - name: MMLU Acc.
+        value: 19.35
+      - name: spBLEU eng→hau
+        value: 0.25
+      - name: MGSM
+        value: 1.61
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 30.77
+      - name: Summarization RougeL
+        value: 13.82
+      - name: Title Gen spBleu-1K
+        value: 1.74
+      - name: Topic class. F1
+        value: 5.41
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 14.7
+      - name: XNLI Acc
+        value: 33.87
+      - name: MMLU Acc.
+        value: 23.81
+      - name: spBLEU eng→ibo
+        value: 6.63
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 0.0
+      - name: POS F1
+        value: 8.83
+      - name: Reading comprehension Acc.
+        value: 38.46
+      - name: Summarization RougeL
+        value: 15.76
+      - name: Title Gen spBleu-1K
+        value: 3.33
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.34
+      - name: spBLEU fra→mos
+        value: 0.68
+      - name: NER F1
+        value: 0.0
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 12.68
+      - name: XNLI Acc
+        value: 33.33
+      - name: MMLU Acc.
+        value: 25.81
+      - name: spBLEU eng→twi
+        value: 2.64
+      - name: MGSM
+        value: 1.61
+      - name: NER F1
+        value: 0.0
+- model: microsoft/Phi-3.5-mini-instruct
+  task: llm
+  model_url: https://huggingface.co/microsoft/Phi-3.5-mini-instruct
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 10.88
+      - name: spBLEU fra→bam
+        value: 0.59
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 28.95
+      - name: Sentiment F1
+        value: 13.99
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 14.61
+      - name: XNLI Acc
+        value: 32.26
+      - name: MMLU Acc.
+        value: 28.57
+      - name: spBLEU fra→ewe
+        value: 3.49
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 7.14
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.08
+      - name: spBLEU fra→fon
+        value: 0.16
+      - name: NER F1
+        value: 0.0
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 23.68
+      - name: Reading comprehension Acc.
+        value: 23.68
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 14.48
+      - name: XNLI Acc
+        value: 41.94
+      - name: MMLU Acc.
+        value: 22.58
+      - name: spBLEU eng→hau
+        value: 0.26
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 4.08
+      - name: Reading comprehension Acc.
+        value: 28.21
+      - name: Summarization RougeL
+        value: 13.74
+      - name: Title Gen spBleu-1K
+        value: 2.39
+      - name: Topic class. F1
+        value: 17.14
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 15.68
+      - name: XNLI Acc
+        value: 40.32
+      - name: MMLU Acc.
+        value: 30.16
+      - name: spBLEU eng→ibo
+        value: 8.18
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 0.0
+      - name: POS F1
+        value: 8.04
+      - name: Reading comprehension Acc.
+        value: 35.9
+      - name: Summarization RougeL
+        value: 15.2
+      - name: Title Gen spBleu-1K
+        value: 3.33
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.17
+      - name: spBLEU fra→mos
+        value: 0.34
+      - name: NER F1
+        value: 0.0
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 14.26
+      - name: XNLI Acc
+        value: 36.51
+      - name: MMLU Acc.
+        value: 27.42
+      - name: spBLEU eng→twi
+        value: 1.32
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 6.06
+- model: google/gemma-2-2b-it
+  task: llm
+  model_url: https://huggingface.co/google/gemma-2-2b-it
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 15.76
+      - name: spBLEU fra→bam
+        value: 0.29
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 21.05
+      - name: Sentiment F1
+        value: 41.71
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 12.35
+      - name: XNLI Acc
+        value: 29.03
+      - name: MMLU Acc.
+        value: 26.98
+      - name: spBLEU fra→ewe
+        value: 2.44
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 3.28
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.1
+      - name: spBLEU fra→fon
+        value: 0.19
+      - name: NER F1
+        value: 0.0
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 23.68
+      - name: Reading comprehension Acc.
+        value: 23.68
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 13.14
+      - name: XNLI Acc
+        value: 41.94
+      - name: MMLU Acc.
+        value: 25.81
+      - name: spBLEU eng→hau
+        value: 1.04
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 3.39
+      - name: Reading comprehension Acc.
+        value: 17.95
+      - name: Summarization RougeL
+        value: 6.51
+      - name: Title Gen spBleu-1K
+        value: 0.54
+      - name: Topic class. F1
+        value: 21.09
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 13.79
+      - name: XNLI Acc
+        value: 43.55
+      - name: MMLU Acc.
+        value: 31.75
+      - name: spBLEU eng→ibo
+        value: 6.65
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 0.0
+      - name: POS F1
+        value: 10.56
+      - name: Reading comprehension Acc.
+        value: 25.64
+      - name: Summarization RougeL
+        value: 5.24
+      - name: Title Gen spBleu-1K
+        value: 0.74
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.09
+      - name: spBLEU fra→mos
+        value: 0.18
+      - name: NER F1
+        value: 0.0
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 13.67
+      - name: XNLI Acc
+        value: 34.92
+      - name: MMLU Acc.
+        value: 30.65
+      - name: spBLEU eng→twi
+        value: 2.8
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 0.0
+- model: CohereForAI/aya-23-8B
+  task: llm
+  model_url: https://huggingface.co/CohereForAI/aya-23-8B
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 17.01
+      - name: spBLEU fra→bam
+        value: 0.51
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 28.95
+      - name: Sentiment F1
+        value: 38.58
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 12.15
+      - name: XNLI Acc
+        value: 33.87
+      - name: MMLU Acc.
+        value: 20.63
+      - name: spBLEU fra→ewe
+        value: 1.77
+      - name: MGSM
+        value: 3.17
+      - name: NER F1
+        value: 1.32
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.1
+      - name: spBLEU fra→fon
+        value: 0.2
+      - name: NER F1
+        value: 0.0
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 15.79
+      - name: Reading comprehension Acc.
+        value: 15.79
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 15.07
+      - name: XNLI Acc
+        value: 33.87
+      - name: MMLU Acc.
+        value: 29.03
+      - name: spBLEU eng→hau
+        value: 0.27
+      - name: MGSM
+        value: 3.23
+      - name: NER F1
+        value: 4.69
+      - name: Reading comprehension Acc.
+        value: 20.51
+      - name: Summarization RougeL
+        value: 4.48
+      - name: Title Gen spBleu-1K
+        value: 1.7
+      - name: Topic class. F1
+        value: 37.89
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 13.3
+      - name: XNLI Acc
+        value: 33.87
+      - name: MMLU Acc.
+        value: 30.16
+      - name: spBLEU eng→ibo
+        value: 3.66
+      - name: MGSM
+        value: 3.17
+      - name: NER F1
+        value: 0.0
+      - name: POS F1
+        value: 9.81
+      - name: Reading comprehension Acc.
+        value: 33.33
+      - name: Summarization RougeL
+        value: 3.48
+      - name: Title Gen spBleu-1K
+        value: 2.18
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.1
+      - name: spBLEU fra→mos
+        value: 0.19
+      - name: NER F1
+        value: 0.0
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 13.9
+      - name: XNLI Acc
+        value: 33.33
+      - name: MMLU Acc.
+        value: 24.19
+      - name: spBLEU eng→twi
+        value: 0.73
+      - name: MGSM
+        value: 3.23
+      - name: NER F1
+        value: 8.0
+- model: google/gemma-3-4b-it
+  task: llm
+  model_url: https://huggingface.co/google/gemma-3-4b-it
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 3.49
+      - name: spBLEU fra→bam
+        value: 0.64
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 10.53
+      - name: Sentiment F1
+        value: 2.8
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 16.81
+      - name: XNLI Acc
+        value: 43.55
+      - name: MMLU Acc.
+        value: 28.57
+      - name: spBLEU fra→ewe
+        value: 3.91
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 8.0
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.45
+      - name: spBLEU fra→fon
+        value: 0.9
+      - name: NER F1
+        value: 0.0
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 15.79
+      - name: Reading comprehension Acc.
+        value: 15.79
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 17.53
+      - name: XNLI Acc
+        value: 45.16
+      - name: MMLU Acc.
+        value: 33.87
+      - name: spBLEU eng→hau
+        value: 1.96
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 3.95
+      - name: Reading comprehension Acc.
+        value: 28.21
+      - name: Summarization RougeL
+        value: 20.85
+      - name: Title Gen spBleu-1K
+        value: 4.19
+      - name: Topic class. F1
+        value: 19.57
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 18.2
+      - name: XNLI Acc
+        value: 38.71
+      - name: MMLU Acc.
+        value: 38.1
+      - name: spBLEU eng→ibo
+        value: 12.82
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 3.81
+      - name: POS F1
+        value: 10.46
+      - name: Reading comprehension Acc.
+        value: 35.9
+      - name: Summarization RougeL
+        value: 18.58
+      - name: Title Gen spBleu-1K
+        value: 5.38
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.17
+      - name: spBLEU fra→mos
+        value: 0.34
+      - name: NER F1
+        value: 0.0
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 14.28
+      - name: XNLI Acc
+        value: 36.51
+      - name: MMLU Acc.
+        value: 30.65
+      - name: spBLEU eng→twi
+        value: 4.22
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 0.0
+- model: meta-llama/Llama-3.2-3B-Instruct
+  task: llm
+  model_url: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
+  results:
+    bam:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 10.34
+      - name: spBLEU fra→bam
+        value: 0.42
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 10.53
+      - name: Sentiment F1
+        value: 30.4
+    ewe:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 12.92
+      - name: XNLI Acc
+        value: 33.87
+      - name: MMLU Acc.
+        value: 28.57
+      - name: spBLEU fra→ewe
+        value: 0.58
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 0.0
+    fon:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.13
+      - name: spBLEU fra→fon
+        value: 0.26
+      - name: NER F1
+        value: 0.0
+    fuv:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 7.89
+      - name: Reading comprehension Acc.
+        value: 7.89
+    hau:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 14.17
+      - name: XNLI Acc
+        value: 33.87
+      - name: MMLU Acc.
+        value: 25.81
+      - name: spBLEU eng→hau
+        value: 0.55
+      - name: MGSM
+        value: 8.06
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 20.51
+      - name: Summarization RougeL
+        value: 9.37
+      - name: Title Gen spBleu-1K
+        value: 3.85
+      - name: Topic class. F1
+        value: 25.53
+    ibo:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 11.05
+      - name: XNLI Acc
+        value: 33.87
+      - name: MMLU Acc.
+        value: 30.16
+      - name: spBLEU eng→ibo
+        value: 5.22
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 0.0
+      - name: POS F1
+        value: 6.73
+      - name: Reading comprehension Acc.
+        value: 15.38
+      - name: Summarization RougeL
+        value: 4.81
+      - name: Title Gen spBleu-1K
+        value: 3.26
+    mos:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 0.04
+      - name: spBLEU fra→mos
+        value: 0.08
+      - name: NER F1
+        value: 0.0
+    twi:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 12.92
+      - name: XNLI Acc
+        value: 33.33
+      - name: MMLU Acc.
+        value: 29.03
+      - name: spBLEU eng→twi
+        value: 2.23
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 0.0

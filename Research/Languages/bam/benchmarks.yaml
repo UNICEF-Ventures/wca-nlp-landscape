@@ -55,12 +55,668 @@ evaluations:
         value: 48.32
       - name: CER
         value: 14.81
+  mt:
+  - model: google/madlad400-3b-mt
+    model_url: https://huggingface.co/google/madlad400-3b-mt
+    results:
+    - test_set: GATONES
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: BLEU bam→eng
+        value: 11.9
+      - name: chrF bam→eng
+        value: 32.8
+      - name: BLEU eng→bam
+        value: 6.5
+      - name: chrF eng→bam
+        value: 28.5
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU bam→eng
+        value: 14.1
+      - name: chrF bam→eng
+        value: 37.1
+      - name: BLEU eng→bam
+        value: 4.9
+      - name: chrF eng→bam
+        value: 27.8
+  - model: google/madlad400-7.2b-mt
+    model_url: https://huggingface.co/google/madlad400-7.2b-mt
+    results:
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: BLEU bam→eng
+        value: 10.6
+      - name: chrF bam→eng
+        value: 31.7
+      - name: BLEU eng→bam
+        value: 6.1
+      - name: chrF eng→bam
+        value: 27.2
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU bam→eng
+        value: 12.9
+      - name: chrF bam→eng
+        value: 36.3
+      - name: BLEU eng→bam
+        value: 4.3
+      - name: chrF eng→bam
+        value: 26.8
+  - model: google/madlad400-10.7b-mt
+    model_url: https://huggingface.co/google/madlad400-10.7b-mt
+    results:
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: BLEU bam→eng
+        value: 12.6
+      - name: chrF bam→eng
+        value: 33.9
+      - name: BLEU eng→bam
+        value: 7.1
+      - name: chrF eng→bam
+        value: 30.5
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU bam→eng
+        value: 15.5
+      - name: chrF bam→eng
+        value: 39.4
+      - name: BLEU eng→bam
+        value: 5.7
+      - name: chrF eng→bam
+        value: 30.1
   llm:
-  - model: claude-sonnet-4-5-20251001
-    model_url: https://huggingface.co/anthropic
+  - model: google/madlad400-8b-lm
+    model_url: https://huggingface.co/google/madlad400-8b-lm
+    results:
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF (10-shot)
+      metrics:
+      - name: BLEU bam→eng
+        value: 1.2
+      - name: chrF bam→eng
+        value: 14.4
+      - name: BLEU eng→bam
+        value: 0
+      - name: chrF eng→bam
+        value: 2.1
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF (10-shot)
+      metrics:
+      - name: BLEU bam→eng
+        value: 2.3
+      - name: chrF bam→eng
+        value: 18.8
+      - name: BLEU eng→bam
+        value: 0.1
+      - name: chrF eng→bam
+        value: 7.8
+  - model: gemini-3-pro-preview
     results:
     - test_set: SAHARA
       source: reported
-      source_url: https://arxiv.org/abs/2502.19582
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
-      - name: Avg Score (pending)
+      - name: Lang. Avg.
+        value: 41.54
+      - name: spBLEU fra→bam
+        value: 11.29
+      - name: NER F1
+        value: 42.11
+      - name: Reading comprehension Acc.
+        value: 60.53
+      - name: Sentiment F1
+        value: 52.24
+  - model: gemini-2.5-pro
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 33.9
+      - name: spBLEU fra→bam
+        value: 9.56
+      - name: NER F1
+        value: 31.11
+      - name: Reading comprehension Acc.
+        value: 47.37
+      - name: Sentiment F1
+        value: 47.57
+  - model: gpt-5-2025-08-07
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 27.68
+      - name: spBLEU fra→bam
+        value: 2.69
+      - name: NER F1
+        value: 40.0
+      - name: Reading comprehension Acc.
+        value: 23.68
+      - name: Sentiment F1
+        value: 44.36
+  - model: gpt-5.1-2025-11-13
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 30.58
+      - name: spBLEU fra→bam
+        value: 2.8
+      - name: NER F1
+        value: 32.56
+      - name: Reading comprehension Acc.
+        value: 39.47
+      - name: Sentiment F1
+        value: 47.49
+  - model: gemini-2.5-flash
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 23.84
+      - name: spBLEU fra→bam
+        value: 4.31
+      - name: NER F1
+        value: 5.0
+      - name: Reading comprehension Acc.
+        value: 39.47
+      - name: Sentiment F1
+        value: 46.6
+  - model: claude-sonnet-4-5@20250929
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 23.73
+      - name: spBLEU fra→bam
+        value: 3.58
+      - name: NER F1
+        value: 18.75
+      - name: Reading comprehension Acc.
+        value: 39.47
+      - name: Sentiment F1
+        value: 33.12
+  - model: claude-4-sonnet-20250514
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 23.82
+      - name: spBLEU fra→bam
+        value: 4.73
+      - name: NER F1
+        value: 16.67
+      - name: Reading comprehension Acc.
+        value: 34.21
+      - name: Sentiment F1
+        value: 39.68
+  - model: gpt-4.1
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 23.12
+      - name: spBLEU fra→bam
+        value: 1.67
+      - name: NER F1
+        value: 7.41
+      - name: Reading comprehension Acc.
+        value: 34.21
+      - name: Sentiment F1
+        value: 49.2
+  - model: CohereForAI/c4ai-command-a-03-2025
+    model_url: https://huggingface.co/CohereForAI/c4ai-command-a-03-2025
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 18.59
+      - name: spBLEU fra→bam
+        value: 1.11
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 31.58
+      - name: Sentiment F1
+        value: 41.66
+  - model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+    model_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 24.95
+      - name: spBLEU fra→bam
+        value: 1.7
+      - name: NER F1
+        value: 23.08
+      - name: Reading comprehension Acc.
+        value: 31.58
+      - name: Sentiment F1
+        value: 43.42
+  - model: meta-llama/Llama-3.3-70B-Instruct
+    model_url: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 21.09
+      - name: spBLEU fra→bam
+        value: 1.02
+      - name: NER F1
+        value: 5.88
+      - name: Reading comprehension Acc.
+        value: 31.58
+      - name: Sentiment F1
+        value: 45.89
+  - model: google/gemma-3-27b-it
+    model_url: https://huggingface.co/google/gemma-3-27b-it
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 17.64
+      - name: spBLEU fra→bam
+        value: 1.15
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 26.32
+      - name: Sentiment F1
+        value: 43.09
+  - model: google/gemma-2-27b-it
+    model_url: https://huggingface.co/google/gemma-2-27b-it
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 19.8
+      - name: spBLEU fra→bam
+        value: 0.82
+      - name: NER F1
+        value: 17.39
+      - name: Reading comprehension Acc.
+        value: 28.95
+      - name: Sentiment F1
+        value: 32.05
+  - model: deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
+    model_url: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 21.29
+      - name: spBLEU fra→bam
+        value: 0.67
+      - name: NER F1
+        value: 10.53
+      - name: Reading comprehension Acc.
+        value: 39.47
+      - name: Sentiment F1
+        value: 34.47
+  - model: meta-llama/Llama-3.1-70B-Instruct
+    model_url: https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 9.98
+      - name: spBLEU fra→bam
+        value: 0.86
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 13.16
+      - name: Sentiment F1
+        value: 25.9
+  - model: Qwen/Qwen3-30B-Instruct-2507
+    model_url: https://huggingface.co/Qwen/Qwen3-30B-Instruct-2507
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 18.3
+      - name: spBLEU fra→bam
+        value: 0.41
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 28.95
+      - name: Sentiment F1
+        value: 43.82
+  - model: deepseek-ai/DeepSeek-R1-Distill-Llama-70B
+    model_url: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 15.94
+      - name: spBLEU fra→bam
+        value: 0.71
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 28.95
+      - name: Sentiment F1
+        value: 34.1
+  - model: Tower-Babel/Babel-9B-Chat
+    model_url: https://huggingface.co/Tower-Babel/Babel-9B-Chat
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 14.7
+      - name: spBLEU fra→bam
+        value: 0.62
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 26.32
+      - name: Sentiment F1
+        value: 31.85
+  - model: Tower-Babel/Babel-83B-Chat
+    model_url: https://huggingface.co/Tower-Babel/Babel-83B-Chat
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 10.84
+      - name: spBLEU fra→bam
+        value: 0.79
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 23.68
+      - name: Sentiment F1
+        value: 18.88
+  - model: Qwen/Qwen3-4B-Instruct-2507
+    model_url: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 19.32
+      - name: spBLEU fra→bam
+        value: 0.48
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 34.21
+      - name: Sentiment F1
+        value: 42.58
+  - model: google/gemma-2-9b-it
+    model_url: https://huggingface.co/google/gemma-2-9b-it
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 18.75
+      - name: spBLEU fra→bam
+        value: 0.43
+      - name: NER F1
+        value: 6.9
+      - name: Reading comprehension Acc.
+        value: 18.42
+      - name: Sentiment F1
+        value: 49.24
+  - model: google/gemma-3-12b-it
+    model_url: https://huggingface.co/google/gemma-3-12b-it
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 12.27
+      - name: spBLEU fra→bam
+        value: 1.06
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 10.53
+      - name: Sentiment F1
+        value: 37.49
+  - model: meta-llama/Llama-3.1-8B-Instruct
+    model_url: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 14.84
+      - name: spBLEU fra→bam
+        value: 0.55
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 18.42
+      - name: Sentiment F1
+        value: 40.4
+  - model: CohereForAI/aya-23-35B
+    model_url: https://huggingface.co/CohereForAI/aya-23-35B
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 14.11
+      - name: spBLEU fra→bam
+        value: 0.52
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 21.05
+      - name: Sentiment F1
+        value: 34.87
+  - model: CohereForAI/c4ai-command-r-plus-08-2024
+    model_url: https://huggingface.co/CohereForAI/c4ai-command-r-plus-08-2024
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 11.47
+      - name: spBLEU fra→bam
+        value: 0.81
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 18.42
+      - name: Sentiment F1
+        value: 26.64
+  - model: CohereForAI/c4ai-command-r7b-12-2024
+    model_url: https://huggingface.co/CohereForAI/c4ai-command-r7b-12-2024
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 12.02
+      - name: spBLEU fra→bam
+        value: 0.44
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 13.16
+      - name: Sentiment F1
+        value: 34.46
+  - model: microsoft/Phi-4-mini-instruct
+    model_url: https://huggingface.co/microsoft/Phi-4-mini-instruct
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 18.39
+      - name: spBLEU fra→bam
+        value: 0.66
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 31.58
+      - name: Sentiment F1
+        value: 41.34
+  - model: meta-llama/Llama-3.2-1B-Instruct
+    model_url: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 16.25
+      - name: spBLEU fra→bam
+        value: 0.1
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 26.32
+      - name: Sentiment F1
+        value: 38.58
+  - model: microsoft/Phi-3.5-mini-instruct
+    model_url: https://huggingface.co/microsoft/Phi-3.5-mini-instruct
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 10.88
+      - name: spBLEU fra→bam
+        value: 0.59
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 28.95
+      - name: Sentiment F1
+        value: 13.99
+  - model: google/gemma-2-2b-it
+    model_url: https://huggingface.co/google/gemma-2-2b-it
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 15.76
+      - name: spBLEU fra→bam
+        value: 0.29
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 21.05
+      - name: Sentiment F1
+        value: 41.71
+  - model: CohereForAI/aya-23-8B
+    model_url: https://huggingface.co/CohereForAI/aya-23-8B
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 17.01
+      - name: spBLEU fra→bam
+        value: 0.51
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 28.95
+      - name: Sentiment F1
+        value: 38.58
+  - model: google/gemma-3-4b-it
+    model_url: https://huggingface.co/google/gemma-3-4b-it
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 3.49
+      - name: spBLEU fra→bam
+        value: 0.64
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 10.53
+      - name: Sentiment F1
+        value: 2.8
+  - model: meta-llama/Llama-3.2-3B-Instruct
+    model_url: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 10.34
+      - name: spBLEU fra→bam
+        value: 0.42
+      - name: NER F1
+        value: 0.0
+      - name: Reading comprehension Acc.
+        value: 10.53
+      - name: Sentiment F1
+        value: 30.4

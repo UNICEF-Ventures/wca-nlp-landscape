@@ -1,16 +1,17 @@
 # Benchmark Coverage Matrix
 
-Generated: 2026-02-24
+Generated: 2026-03-03
 
 | ISO | ASR | TTS | MT | LLM | Language |
 |-----| --- | --- | --- | --- |---------|
 | mos |     |     |  x  |  x  | Mooré |
-| dyu |  x  |     |     |  x  | Dyula |
-| ful |  x  |     |     |  x  | Fula |
+| dyu |  x  |     |  x  |  x  | Dyula |
+| ful |  x  |     |  x  |  x  | Fula |
 | fuh |     |     |     |     | Western Niger Fulfulde |
+| fuv |     |     |     |  x  | Nigerian Fulfulde |
 | gux |     |     |     |     | Gourmanché |
 | bam |  x  |     |  x  |  x  | Bambara |
-| snk |     |     |     |     | Soninke |
+| snk |  x  |     |     |     | Soninke |
 | ffm |     |     |     |     | Maasina Fulfulde |
 | dts |     |     |     |     | Escarpment Dogon |
 | ses |     |     |     |     | Koyraboro Senni |
@@ -21,13 +22,13 @@ Generated: 2026-02-24
 | yor |  x  |  x  |  x  |  x  | Yoruba |
 | ibo |  x  |     |  x  |  x  | Igbo |
 | wol |  x  |     |  x  |  x  | Wolof |
-| kri |     |     |  x  |     | Krio |
+| kri |     |     |  x  |  x  | Krio |
 | tem |     |     |     |     | Temne |
 | gaa |  x  |     |     |     | Ga |
 | kau |  x  |  x  |     |  x  | Kanuri |
 | swc |     |     |     |     | Congo Swahili |
 | lin |  x  |  x  |  x  |  x  | Lingala |
-| sag |     |     |  x  |     | Sango |
+| sag |     |     |  x  |  x  | Sango |
 | mnk |     |     |     |     | Mandinka |
 | aka |  x  |  x  |  x  |  x  | Akan |
 | fuf |  x  |     |     |     | Pular |
@@ -35,8 +36,8 @@ Generated: 2026-02-24
 | fan |     |     |     |     | Fang |
 | lir |     |     |     |     | Liberian Kreyol |
 | shu |     |     |     |     | Chadian Arabic |
-| fon |  x  |     |     |  x  | Fon |
+| fon |  x  |     |  x  |  x  | Fon |
 | pov |     |     |  x  |     | Guinea-Bissau Creole |
-| 33 |  14  |  7  |  13  |  14  | Total |
+| 34 |  15  |  7  |  16  |  17  | Total |
 
-Coverage: 19/33 languages have at least one benchmark.
+Coverage: 21/34 languages have at least one benchmark.

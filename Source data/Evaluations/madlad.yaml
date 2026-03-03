@@ -1,0 +1,1365 @@
+models:
+  - model: google/madlad400-3b-mt
+    model_url: https://huggingface.co/google/madlad400-3b-mt
+    task: mt
+    results:
+      bam:
+        - test_set: GATONES
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 16 — BLEU/chrF"
+          metrics:
+            - name: BLEU bam→eng
+              value: 11.9
+            - name: chrF bam→eng
+              value: 32.8
+            - name: BLEU eng→bam
+              value: 6.5
+            - name: chrF eng→bam
+              value: 28.5
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU bam→eng
+              value: 14.1
+            - name: chrF bam→eng
+              value: 37.1
+            - name: BLEU eng→bam
+              value: 4.9
+            - name: chrF eng→bam
+              value: 27.8
+      dyu:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF"
+          metrics:
+            - name: BLEU dyu→eng
+              value: 7.6
+            - name: chrF dyu→eng
+              value: 28
+            - name: BLEU eng→dyu
+              value: 1.9
+            - name: chrF eng→dyu
+              value: 19.4
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU dyu→eng
+              value: 7.9
+            - name: chrF dyu→eng
+              value: 31.5
+            - name: BLEU eng→dyu
+              value: 2
+            - name: chrF eng→dyu
+              value: 21
+      ewe:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF"
+          metrics:
+            - name: BLEU ewe→eng
+              value: 8.6
+            - name: chrF ewe→eng
+              value: 25.8
+            - name: BLEU eng→ewe
+              value: 4.1
+            - name: chrF eng→ewe
+              value: 23.7
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU ewe→eng
+              value: 10.3
+            - name: chrF ewe→eng
+              value: 33.3
+            - name: BLEU eng→ewe
+              value: 5.2
+            - name: chrF eng→ewe
+              value: 26.9
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF"
+          metrics:
+            - name: BLEU ewe→eng
+              value: 13.2
+            - name: chrF ewe→eng
+              value: 35.1
+            - name: BLEU eng→ewe
+              value: 6.1
+            - name: chrF eng→ewe
+              value: 29.1
+      ful:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF"
+          metrics:
+            - name: BLEU ful→eng
+              value: 7.8
+            - name: chrF ful→eng
+              value: 26.8
+            - name: BLEU eng→ful
+              value: 3
+            - name: chrF eng→ful
+              value: 21.4
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU ful→eng
+              value: 10.5
+            - name: chrF ful→eng
+              value: 33.2
+            - name: BLEU eng→ful
+              value: 2.2
+            - name: chrF eng→ful
+              value: 23.4
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF"
+          metrics:
+            - name: BLEU ful→eng
+              value: 14.4
+            - name: chrF ful→eng
+              value: 35.8
+            - name: BLEU eng→ful
+              value: 4.8
+            - name: chrF eng→ful
+              value: 27.6
+      twi:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF"
+          metrics:
+            - name: BLEU twi→eng
+              value: 6.9
+            - name: chrF twi→eng
+              value: 27
+            - name: BLEU eng→twi
+              value: 2.2
+            - name: chrF eng→twi
+              value: 17.9
+      kri:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF"
+          metrics:
+            - name: BLEU kri→eng
+              value: 13.2
+            - name: chrF kri→eng
+              value: 37
+            - name: BLEU eng→kri
+              value: 2.6
+            - name: chrF eng→kri
+              value: 22.2
+      fon:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU fon→eng
+              value: 3.9
+            - name: chrF fon→eng
+              value: 25.1
+            - name: BLEU eng→fon
+              value: 1.6
+            - name: chrF eng→fon
+              value: 15.6
+      hau:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU hau→eng
+              value: 31.8
+            - name: chrF hau→eng
+              value: 54.5
+            - name: BLEU eng→hau
+              value: 16.9
+            - name: chrF eng→hau
+              value: 44.4
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF"
+          metrics:
+            - name: BLEU hau→eng
+              value: 35
+            - name: chrF hau→eng
+              value: 56.9
+            - name: BLEU eng→hau
+              value: 21
+            - name: chrF eng→hau
+              value: 49
+      ibo:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU ibo→eng
+              value: 25
+            - name: chrF ibo→eng
+              value: 48.5
+            - name: BLEU eng→ibo
+              value: 13.1
+            - name: chrF eng→ibo
+              value: 34.6
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF"
+          metrics:
+            - name: BLEU ibo→eng
+              value: 27.5
+            - name: chrF ibo→eng
+              value: 51.1
+            - name: BLEU eng→ibo
+              value: 13.5
+            - name: chrF eng→ibo
+              value: 37.9
+      yor:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU yor→eng
+              value: 11.9
+            - name: chrF yor→eng
+              value: 34.9
+            - name: BLEU eng→yor
+              value: 2.6
+            - name: chrF eng→yor
+              value: 19.7
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF"
+          metrics:
+            - name: BLEU yor→eng
+              value: 13.3
+            - name: chrF yor→eng
+              value: 37
+            - name: BLEU eng→yor
+              value: 5.4
+            - name: chrF eng→yor
+              value: 20.9
+      wol:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU wol→eng
+              value: 6.6
+            - name: chrF wol→eng
+              value: 28.4
+            - name: BLEU eng→wol
+              value: 1.2
+            - name: chrF eng→wol
+              value: 13.2
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF"
+          metrics:
+            - name: BLEU wol→eng
+              value: 2.1
+            - name: chrF wol→eng
+              value: 18.4
+            - name: BLEU eng→wol
+              value: 0.4
+            - name: chrF eng→wol
+              value: 9.8
+      lin:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU lin→eng
+              value: 5.7
+            - name: chrF lin→eng
+              value: 27.4
+            - name: BLEU eng→lin
+              value: 2.1
+            - name: chrF eng→lin
+              value: 18.1
+      sag:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU sag→eng
+              value: 8.2
+            - name: chrF sag→eng
+              value: 31.1
+            - name: BLEU eng→sag
+              value: 6
+            - name: chrF eng→sag
+              value: 30.1
+      mos:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU mos→eng
+              value: 3.4
+            - name: chrF mos→eng
+              value: 23
+            - name: BLEU eng→mos
+              value: 0.9
+            - name: chrF eng→mos
+              value: 2.3
+  - model: google/madlad400-7.2b-mt
+    model_url: https://huggingface.co/google/madlad400-7.2b-mt
+    task: mt
+    results:
+      bam:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF"
+          metrics:
+            - name: BLEU bam→eng
+              value: 10.6
+            - name: chrF bam→eng
+              value: 31.7
+            - name: BLEU eng→bam
+              value: 6.1
+            - name: chrF eng→bam
+              value: 27.2
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU bam→eng
+              value: 12.9
+            - name: chrF bam→eng
+              value: 36.3
+            - name: BLEU eng→bam
+              value: 4.3
+            - name: chrF eng→bam
+              value: 26.8
+      dyu:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF"
+          metrics:
+            - name: BLEU dyu→eng
+              value: 6.7
+            - name: chrF dyu→eng
+              value: 27.7
+            - name: BLEU eng→dyu
+              value: 2.3
+            - name: chrF eng→dyu
+              value: 19.6
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU dyu→eng
+              value: 7.9
+            - name: chrF dyu→eng
+              value: 31.3
+            - name: BLEU eng→dyu
+              value: 2.3
+            - name: chrF eng→dyu
+              value: 21.1
+      ewe:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF"
+          metrics:
+            - name: BLEU ewe→eng
+              value: 11.1
+            - name: chrF ewe→eng
+              value: 28.9
+            - name: BLEU eng→ewe
+              value: 6.1
+            - name: chrF eng→ewe
+              value: 27.1
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU ewe→eng
+              value: 14.3
+            - name: chrF ewe→eng
+              value: 37.4
+            - name: BLEU eng→ewe
+              value: 6.8
+            - name: chrF eng→ewe
+              value: 29.2
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF"
+          metrics:
+            - name: BLEU ewe→eng
+              value: 16.3
+            - name: chrF ewe→eng
+              value: 38.4
+            - name: BLEU eng→ewe
+              value: 7.4
+            - name: chrF eng→ewe
+              value: 31.6
+      ful:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF"
+          metrics:
+            - name: BLEU ful→eng
+              value: 8.3
+            - name: chrF ful→eng
+              value: 26.5
+            - name: BLEU eng→ful
+              value: 3.3
+            - name: chrF eng→ful
+              value: 21.3
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU ful→eng
+              value: 10.1
+            - name: chrF ful→eng
+              value: 33.1
+            - name: BLEU eng→ful
+              value: 2.5
+            - name: chrF eng→ful
+              value: 24
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF"
+          metrics:
+            - name: BLEU ful→eng
+              value: 14.2
+            - name: chrF ful→eng
+              value: 36
+            - name: BLEU eng→ful
+              value: 5.3
+            - name: chrF eng→ful
+              value: 28.1
+      twi:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF"
+          metrics:
+            - name: BLEU twi→eng
+              value: 10.4
+            - name: chrF twi→eng
+              value: 29.9
+            - name: BLEU eng→twi
+              value: 4.1
+            - name: chrF eng→twi
+              value: 21.9
+      kri:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF"
+          metrics:
+            - name: BLEU kri→eng
+              value: 15.6
+            - name: chrF kri→eng
+              value: 39.5
+            - name: BLEU eng→kri
+              value: 2.3
+            - name: chrF eng→kri
+              value: 18.2
+      fon:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU fon→eng
+              value: 5.6
+            - name: chrF fon→eng
+              value: 26.3
+            - name: BLEU eng→fon
+              value: 1.9
+            - name: chrF eng→fon
+              value: 16
+      hau:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU hau→eng
+              value: 35.9
+            - name: chrF hau→eng
+              value: 57.9
+            - name: BLEU eng→hau
+              value: 18.9
+            - name: chrF eng→hau
+              value: 45.3
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF"
+          metrics:
+            - name: BLEU hau→eng
+              value: 39.2
+            - name: chrF hau→eng
+              value: 59.9
+            - name: BLEU eng→hau
+              value: 21.8
+            - name: chrF eng→hau
+              value: 50.1
+      ibo:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU ibo→eng
+              value: 29.7
+            - name: chrF ibo→eng
+              value: 52.8
+            - name: BLEU eng→ibo
+              value: 16.1
+            - name: chrF eng→ibo
+              value: 38.7
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF"
+          metrics:
+            - name: BLEU ibo→eng
+              value: 31.9
+            - name: chrF ibo→eng
+              value: 55.3
+            - name: BLEU eng→ibo
+              value: 16.4
+            - name: chrF eng→ibo
+              value: 43.2
+      yor:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU yor→eng
+              value: 17.4
+            - name: chrF yor→eng
+              value: 40.8
+            - name: BLEU eng→yor
+              value: 2.7
+            - name: chrF eng→yor
+              value: 20.3
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF"
+          metrics:
+            - name: BLEU yor→eng
+              value: 14.5
+            - name: chrF yor→eng
+              value: 37.4
+            - name: BLEU eng→yor
+              value: 5.5
+            - name: chrF eng→yor
+              value: 21.6
+      wol:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU wol→eng
+              value: 6.7
+            - name: chrF wol→eng
+              value: 29.3
+            - name: BLEU eng→wol
+              value: 1
+            - name: chrF eng→wol
+              value: 12.6
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF"
+          metrics:
+            - name: BLEU wol→eng
+              value: 2.4
+            - name: chrF wol→eng
+              value: 19.3
+            - name: BLEU eng→wol
+              value: 0.5
+            - name: chrF eng→wol
+              value: 10
+      lin:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU lin→eng
+              value: 5.8
+            - name: chrF lin→eng
+              value: 27.2
+            - name: BLEU eng→lin
+              value: 2.3
+            - name: chrF eng→lin
+              value: 18.8
+      sag:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU sag→eng
+              value: 9
+            - name: chrF sag→eng
+              value: 31.7
+            - name: BLEU eng→sag
+              value: 5.8
+            - name: chrF eng→sag
+              value: 29.2
+      mos:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU mos→eng
+              value: 3.4
+            - name: chrF mos→eng
+              value: 22.4
+            - name: BLEU eng→mos
+              value: 1.2
+            - name: chrF eng→mos
+              value: 16.6
+  - model: google/madlad400-10.7b-mt
+    model_url: https://huggingface.co/google/madlad400-10.7b-mt
+    task: mt
+    results:
+      bam:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF"
+          metrics:
+            - name: BLEU bam→eng
+              value: 12.6
+            - name: chrF bam→eng
+              value: 33.9
+            - name: BLEU eng→bam
+              value: 7.1
+            - name: chrF eng→bam
+              value: 30.5
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU bam→eng
+              value: 15.5
+            - name: chrF bam→eng
+              value: 39.4
+            - name: BLEU eng→bam
+              value: 5.7
+            - name: chrF eng→bam
+              value: 30.1
+      dyu:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF"
+          metrics:
+            - name: BLEU dyu→eng
+              value: 8.6
+            - name: chrF dyu→eng
+              value: 30
+            - name: BLEU eng→dyu
+              value: 2.2
+            - name: chrF eng→dyu
+              value: 20.1
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU dyu→eng
+              value: 8.9
+            - name: chrF dyu→eng
+              value: 33.5
+            - name: BLEU eng→dyu
+              value: 2.1
+            - name: chrF eng→dyu
+              value: 22.1
+      ewe:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF"
+          metrics:
+            - name: BLEU ewe→eng
+              value: 10.4
+            - name: chrF ewe→eng
+              value: 28.3
+            - name: BLEU eng→ewe
+              value: 6
+            - name: chrF eng→ewe
+              value: 26.6
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU ewe→eng
+              value: 13.3
+            - name: chrF ewe→eng
+              value: 36.6
+            - name: BLEU eng→ewe
+              value: 5.9
+            - name: chrF eng→ewe
+              value: 28.4
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF"
+          metrics:
+            - name: BLEU ewe→eng
+              value: 16.7
+            - name: chrF ewe→eng
+              value: 38.5
+            - name: BLEU eng→ewe
+              value: 7.2
+            - name: chrF eng→ewe
+              value: 30.5
+      ful:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF"
+          metrics:
+            - name: BLEU ful→eng
+              value: 9.4
+            - name: chrF ful→eng
+              value: 29.2
+            - name: BLEU eng→ful
+              value: 3.7
+            - name: chrF eng→ful
+              value: 22.9
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU ful→eng
+              value: 12.4
+            - name: chrF ful→eng
+              value: 35.8
+            - name: BLEU eng→ful
+              value: 2.5
+            - name: chrF eng→ful
+              value: 25.1
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF"
+          metrics:
+            - name: BLEU ful→eng
+              value: 15.8
+            - name: chrF ful→eng
+              value: 37.5
+            - name: BLEU eng→ful
+              value: 5.1
+            - name: chrF eng→ful
+              value: 28.8
+      twi:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF"
+          metrics:
+            - name: BLEU twi→eng
+              value: 9.3
+            - name: chrF twi→eng
+              value: 29
+            - name: BLEU eng→twi
+              value: 3.9
+            - name: chrF eng→twi
+              value: 21.2
+      kri:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF"
+          metrics:
+            - name: BLEU kri→eng
+              value: 17.3
+            - name: chrF kri→eng
+              value: 41.5
+            - name: BLEU eng→kri
+              value: 3.4
+            - name: chrF eng→kri
+              value: 22.7
+      fon:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU fon→eng
+              value: 6.4
+            - name: chrF fon→eng
+              value: 27.8
+            - name: BLEU eng→fon
+              value: 1.6
+            - name: chrF eng→fon
+              value: 15.9
+      hau:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU hau→eng
+              value: 35.4
+            - name: chrF hau→eng
+              value: 57.6
+            - name: BLEU eng→hau
+              value: 18.7
+            - name: chrF eng→hau
+              value: 47.1
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF"
+          metrics:
+            - name: BLEU hau→eng
+              value: 38.7
+            - name: chrF hau→eng
+              value: 60
+            - name: BLEU eng→hau
+              value: 22.8
+            - name: chrF eng→hau
+              value: 51.1
+      ibo:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU ibo→eng
+              value: 29.2
+            - name: chrF ibo→eng
+              value: 52.7
+            - name: BLEU eng→ibo
+              value: 16.2
+            - name: chrF eng→ibo
+              value: 38.5
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF"
+          metrics:
+            - name: BLEU ibo→eng
+              value: 32.7
+            - name: chrF ibo→eng
+              value: 55.8
+            - name: BLEU eng→ibo
+              value: 16.8
+            - name: chrF eng→ibo
+              value: 42
+      yor:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU yor→eng
+              value: 17.8
+            - name: chrF yor→eng
+              value: 40.7
+            - name: BLEU eng→yor
+              value: 2.9
+            - name: chrF eng→yor
+              value: 20.7
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF"
+          metrics:
+            - name: BLEU yor→eng
+              value: 20.9
+            - name: chrF yor→eng
+              value: 43.5
+            - name: BLEU eng→yor
+              value: 5.7
+            - name: chrF eng→yor
+              value: 21.2
+      wol:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU wol→eng
+              value: 7.1
+            - name: chrF wol→eng
+              value: 29.8
+            - name: BLEU eng→wol
+              value: 1.4
+            - name: chrF eng→wol
+              value: 15.4
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF"
+          metrics:
+            - name: BLEU wol→eng
+              value: 2.8
+            - name: chrF wol→eng
+              value: 19.4
+            - name: BLEU eng→wol
+              value: 0.5
+            - name: chrF eng→wol
+              value: 12.1
+      lin:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU lin→eng
+              value: 6.8
+            - name: chrF lin→eng
+              value: 29.5
+            - name: BLEU eng→lin
+              value: 2.7
+            - name: chrF eng→lin
+              value: 20.8
+      sag:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU sag→eng
+              value: 10
+            - name: chrF sag→eng
+              value: 32.8
+            - name: BLEU eng→sag
+              value: 6.4
+            - name: chrF eng→sag
+              value: 30.7
+      mos:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF"
+          metrics:
+            - name: BLEU mos→eng
+              value: 3.7
+            - name: chrF mos→eng
+              value: 24.1
+            - name: BLEU eng→mos
+              value: 0.8
+            - name: chrF eng→mos
+              value: 2.2
+  - model: google/madlad400-8b-lm
+    model_url: https://huggingface.co/google/madlad400-8b-lm
+    task: llm
+    results:
+      bam:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU bam→eng
+              value: 1.2
+            - name: chrF bam→eng
+              value: 14.4
+            - name: BLEU eng→bam
+              value: 0
+            - name: chrF eng→bam
+              value: 2.1
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU bam→eng
+              value: 2.3
+            - name: chrF bam→eng
+              value: 18.8
+            - name: BLEU eng→bam
+              value: 0.1
+            - name: chrF eng→bam
+              value: 7.8
+      dyu:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU dyu→eng
+              value: 1.3
+            - name: chrF dyu→eng
+              value: 15.1
+            - name: BLEU eng→dyu
+              value: 0
+            - name: chrF eng→dyu
+              value: 1.5
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU dyu→eng
+              value: 2.3
+            - name: chrF dyu→eng
+              value: 18.2
+            - name: BLEU eng→dyu
+              value: 0
+            - name: chrF eng→dyu
+              value: 5.8
+      ewe:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU ewe→eng
+              value: 3.1
+            - name: chrF ewe→eng
+              value: 16.4
+            - name: BLEU eng→ewe
+              value: 0
+            - name: chrF eng→ewe
+              value: 2.1
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU ewe→eng
+              value: 4.4
+            - name: chrF ewe→eng
+              value: 24.3
+            - name: BLEU eng→ewe
+              value: 0.1
+            - name: chrF eng→ewe
+              value: 5.9
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU ewe→eng
+              value: 2.8
+            - name: chrF ewe→eng
+              value: 19.6
+            - name: BLEU eng→ewe
+              value: 0.1
+            - name: chrF eng→ewe
+              value: 4.5
+      ful:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU ful→eng
+              value: 1.3
+            - name: chrF ful→eng
+              value: 13.6
+            - name: BLEU eng→ful
+              value: 0
+            - name: chrF eng→ful
+              value: 3.3
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU ful→eng
+              value: 2.4
+            - name: chrF ful→eng
+              value: 18.2
+            - name: BLEU eng→ful
+              value: 0
+            - name: chrF eng→ful
+              value: 7.8
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU ful→eng
+              value: 2.4
+            - name: chrF ful→eng
+              value: 18.8
+            - name: BLEU eng→ful
+              value: 0.1
+            - name: chrF eng→ful
+              value: 4.3
+      twi:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU twi→eng
+              value: 1.9
+            - name: chrF twi→eng
+              value: 16.6
+            - name: BLEU eng→twi
+              value: 0
+            - name: chrF eng→twi
+              value: 3.1
+      kri:
+        - test_set: GATONES
+          notes: "Table 16 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU kri→eng
+              value: 10.5
+            - name: chrF kri→eng
+              value: 33.2
+            - name: BLEU eng→kri
+              value: 0.7
+            - name: chrF eng→kri
+              value: 16.4
+      fon:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU fon→eng
+              value: 1.8
+            - name: chrF fon→eng
+              value: 18.3
+            - name: BLEU eng→fon
+              value: 0
+            - name: chrF eng→fon
+              value: 1.6
+      hau:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU hau→eng
+              value: 21.1
+            - name: chrF hau→eng
+              value: 45.7
+            - name: BLEU eng→hau
+              value: 0.3
+            - name: chrF eng→hau
+              value: 13.9
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU hau→eng
+              value: 18.9
+            - name: chrF hau→eng
+              value: 43.3
+            - name: BLEU eng→hau
+              value: 0.3
+            - name: chrF eng→hau
+              value: 9
+      ibo:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU ibo→eng
+              value: 9.6
+            - name: chrF ibo→eng
+              value: 36.1
+            - name: BLEU eng→ibo
+              value: 0.1
+            - name: chrF eng→ibo
+              value: 6.5
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU ibo→eng
+              value: 11.8
+            - name: chrF ibo→eng
+              value: 33.1
+            - name: BLEU eng→ibo
+              value: 0.2
+            - name: chrF eng→ibo
+              value: 5.5
+      yor:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU yor→eng
+              value: 6.3
+            - name: chrF yor→eng
+              value: 26
+            - name: BLEU eng→yor
+              value: 0
+            - name: chrF eng→yor
+              value: 3.2
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU yor→eng
+              value: 4.6
+            - name: chrF yor→eng
+              value: 23
+            - name: BLEU eng→yor
+              value: 0.2
+            - name: chrF eng→yor
+              value: 10.5
+      wol:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU wol→eng
+              value: 3.2
+            - name: chrF wol→eng
+              value: 19.7
+            - name: BLEU eng→wol
+              value: 0
+            - name: chrF eng→wol
+              value: 3.5
+        - test_set: NTREX
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 19 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU wol→eng
+              value: 2.2
+            - name: chrF wol→eng
+              value: 20.2
+            - name: BLEU eng→wol
+              value: 0
+            - name: chrF eng→wol
+              value: 5.3
+      lin:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU lin→eng
+              value: 6.8
+            - name: chrF lin→eng
+              value: 29.9
+            - name: BLEU eng→lin
+              value: 0.2
+            - name: chrF eng→lin
+              value: 10.6
+      sag:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU sag→eng
+              value: 2.7
+            - name: chrF sag→eng
+              value: 22.1
+            - name: BLEU eng→sag
+              value: 0.1
+            - name: chrF eng→sag
+              value: 5.3
+      mos:
+        - test_set: FLORES-200
+          source: reported
+          source_url: https://arxiv.org/abs/2309.04662
+          notes: "Table 17 — BLEU/chrF (10-shot)"
+          metrics:
+            - name: BLEU mos→eng
+              value: 1.6
+            - name: chrF mos→eng
+              value: 17.5
+            - name: BLEU eng→mos
+              value: 0
+            - name: chrF eng→mos
+              value: 3.5
+
+  - model: NTL-1.6B
+    results:
+      bam:
+        - test_set: GATONES
+          metrics:
+            - name: chrF bam→eng
+              value: 27.6
+            - name: chrF eng→bam
+              value: 28.7
+      dyu:
+        - test_set: GATONES
+          metrics:
+            - name: chrF dyu→eng
+              value: 23.9
+            - name: chrF eng→dyu
+              value: 12.7
+      ewe:
+        - test_set: GATONES
+          metrics:
+            - name: chrF ewe→eng
+              value: 29.1
+            - name: chrF eng→ewe
+              value: 35.9
+      ful:
+        - test_set: GATONES
+          metrics:
+            - name: chrF ful→eng
+              value: 33.7
+            - name: chrF eng→ful
+              value: 31.1
+      twi:
+        - test_set: GATONES
+          metrics:
+            - name: chrF twi→eng
+              value: 31.7
+            - name: chrF eng→twi
+              value: 32.1
+      kri:
+        - test_set: GATONES
+          metrics:
+            - name: chrF kri→eng
+              value: 48.7
+            - name: chrF eng→kri
+              value: 32.7
+
+  - model: NTL-6.4B
+    results:
+      bam:
+        - test_set: GATONES
+          metrics:
+            - name: chrF bam→eng
+              value: 36.3
+            - name: chrF eng→bam
+              value: 34.3
+      dyu:
+        - test_set: GATONES
+          metrics:
+            - name: chrF dyu→eng
+              value: 23.5
+            - name: chrF eng→dyu
+              value: 20.4
+      ewe:
+        - test_set: GATONES
+          metrics:
+            - name: chrF ewe→eng
+              value: 33.5
+            - name: chrF eng→ewe
+              value: 39.2
+      ful:
+        - test_set: GATONES
+          metrics:
+            - name: chrF ful→eng
+              value: 41.2
+            - name: chrF eng→ful
+              value: 32.3
+      twi:
+        - test_set: GATONES
+          metrics:
+            - name: chrF twi→eng
+              value: 36.3
+            - name: chrF eng→twi
+              value: 34.3
+      kri:
+        - test_set: GATONES
+          metrics:
+            - name: chrF kri→eng
+              value: 56.5
+            - name: chrF eng→kri
+              value: 34.9

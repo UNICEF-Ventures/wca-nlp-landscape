@@ -44,10 +44,10 @@ sources:
 
   - name: Omnilingual ASR
     url: https://github.com/facebookresearch/omnilingual-asr
-    description: Meta Research wav2vec2 + LLaMA multilingual ASR covering 1,672 language-script pairs (1,650 unique ISO 639-3 codes). Most inclusive ASR model for WCA languages. Priority benchmark target — run evaluations especially for languages with no other ASR benchmarks (dag, dts, dyu, fan, fon, gux, kri, lir, men, mnk, pov, sag, ses, snk, tem).
-    type: [model, benchmark]
+    description: Meta Research wav2vec2 + LLaMA multilingual ASR covering 1,672 language-script pairs (1,650 unique ISO 639-3 codes). Most inclusive ASR model for WCA languages. Some languages benchmarked through PazaBench. Will run evaluations especially for languages with no other ASR benchmarks (dag, dts, dyu, fan, fon, gux, kri, lir, men, mnk, pov, sag, ses, snk, tem).
+    type: [model]
     languages_covered: [aka, bam, dag, dts, dyu, ewe, fan, fon, ful, gux, hau, ibo, kri, lin, lir, men, mnk, mos, pov, sag, ses, snk, tem, wol, yor]
-    status: to_extract
+    status: partially_included
 
 
   - name: WaxalNLP
@@ -148,8 +148,8 @@ sources:
     url: https://arxiv.org/abs/2502.19582
     type: benchmark
     languages_covered: [hau, yor, ibo, wol, ful, lin, twi, aka, fon, bam]
-    status: placeholder
-    description: "517 languages, 16 NLP tasks, 24 models. ACL 2025. Scores in private HF dataset; Space is broken. Need author access."
+    status: included
+    description: "517 languages, 16 NLP tasks, 24 models. ACL 2025."
 
   - name: NLLB/FLORES (Meta)
     url: https://arxiv.org/abs/2207.04672
@@ -181,7 +181,7 @@ sources:
     type: model
     languages_covered: [hau, ibo, yor, wol, ewe, lin, sag, aka, fon, dyu, bam, kri, ffm, ful]
     # Not covered: mos, fuh, gux, snk, dts, ses, twi, dag, tem, gaa, kau, swc, mnk, fuf, men, fan, lir, shu, pov
-    status: noted
+    status: included
     description: Translation model covering 400+ languages.
 
   - name: BLOOM / BLOOMZ

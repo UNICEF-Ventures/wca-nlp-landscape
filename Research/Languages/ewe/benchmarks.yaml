@@ -119,14 +119,665 @@ evaluations:
       metrics:
       - name: Accuracy
         value: 45.0
-  - model: claude-sonnet-4-5-20251001
-    model_url: https://huggingface.co/anthropic
+  - model: google/madlad400-8b-lm
+    model_url: https://huggingface.co/google/madlad400-8b-lm
+    results:
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF (10-shot)
+      metrics:
+      - name: BLEU ewe→eng
+        value: 3.1
+      - name: chrF ewe→eng
+        value: 16.4
+      - name: BLEU eng→ewe
+        value: 0
+      - name: chrF eng→ewe
+        value: 2.1
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF (10-shot)
+      metrics:
+      - name: BLEU ewe→eng
+        value: 4.4
+      - name: chrF ewe→eng
+        value: 24.3
+      - name: BLEU eng→ewe
+        value: 0.1
+      - name: chrF eng→ewe
+        value: 5.9
+    - test_set: NTREX
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 19 — BLEU/chrF (10-shot)
+      metrics:
+      - name: BLEU ewe→eng
+        value: 2.8
+      - name: chrF ewe→eng
+        value: 19.6
+      - name: BLEU eng→ewe
+        value: 0.1
+      - name: chrF eng→ewe
+        value: 4.5
+  - model: gemini-3-pro-preview
     results:
     - test_set: SAHARA
       source: reported
-      source_url: https://arxiv.org/abs/2502.19582
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
-      - name: Avg Score (pending)
+      - name: Lang. Avg.
+        value: 68.97
+      - name: XNLI Acc
+        value: 75.81
+      - name: MMLU Acc.
+        value: 95.24
+      - name: spBLEU fra→ewe
+        value: 17.63
+      - name: MGSM
+        value: 76.19
+      - name: NER F1
+        value: 80.0
+  - model: gemini-2.5-pro
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 63.83
+      - name: XNLI Acc
+        value: 64.52
+      - name: MMLU Acc.
+        value: 92.06
+      - name: spBLEU fra→ewe
+        value: 14.75
+      - name: MGSM
+        value: 73.02
+      - name: NER F1
+        value: 74.79
+  - model: gpt-5-2025-08-07
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 46.35
+      - name: XNLI Acc
+        value: 50.0
+      - name: MMLU Acc.
+        value: 74.6
+      - name: spBLEU fra→ewe
+        value: 8.36
+      - name: MGSM
+        value: 26.98
+      - name: NER F1
+        value: 71.79
+  - model: gpt-5.1-2025-11-13
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 46.66
+      - name: XNLI Acc
+        value: 54.84
+      - name: MMLU Acc.
+        value: 73.02
+      - name: spBLEU fra→ewe
+        value: 7.79
+      - name: MGSM
+        value: 26.98
+      - name: NER F1
+        value: 70.69
+  - model: gemini-2.5-flash
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 47.41
+      - name: XNLI Acc
+        value: 54.84
+      - name: MMLU Acc.
+        value: 79.37
+      - name: spBLEU fra→ewe
+        value: 0.81
+      - name: MGSM
+        value: 65.08
+      - name: NER F1
+        value: 36.97
+  - model: claude-sonnet-4-5@20250929
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 38.1
+      - name: XNLI Acc
+        value: 61.29
+      - name: MMLU Acc.
+        value: 44.44
+      - name: spBLEU fra→ewe
+        value: 8.61
+      - name: MGSM
+        value: 36.51
+      - name: NER F1
+        value: 39.65
+  - model: claude-4-sonnet-20250514
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 44.48
+      - name: XNLI Acc
+        value: 58.06
+      - name: MMLU Acc.
+        value: 69.84
+      - name: spBLEU fra→ewe
+        value: 9.38
+      - name: MGSM
+        value: 34.92
+      - name: NER F1
+        value: 50.21
+  - model: gpt-4.1
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 30.28
+      - name: XNLI Acc
+        value: 56.45
+      - name: MMLU Acc.
+        value: 52.38
+      - name: spBLEU fra→ewe
+        value: 6.88
+      - name: MGSM
+        value: 7.94
+      - name: NER F1
+        value: 27.76
+  - model: CohereForAI/c4ai-command-a-03-2025
+    model_url: https://huggingface.co/CohereForAI/c4ai-command-a-03-2025
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 28.09
+      - name: XNLI Acc
+        value: 46.77
+      - name: MMLU Acc.
+        value: 57.14
+      - name: spBLEU fra→ewe
+        value: 6.35
+      - name: MGSM
+        value: 11.11
+      - name: NER F1
+        value: 19.1
+  - model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+    model_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 24.4
+      - name: XNLI Acc
+        value: 43.55
+      - name: MMLU Acc.
+        value: 47.62
+      - name: spBLEU fra→ewe
+        value: 5.22
+      - name: MGSM
+        value: 9.52
+      - name: NER F1
+        value: 16.08
+  - model: meta-llama/Llama-3.3-70B-Instruct
+    model_url: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 23.52
+      - name: XNLI Acc
+        value: 33.87
+      - name: MMLU Acc.
+        value: 52.38
+      - name: spBLEU fra→ewe
+        value: 5.08
+      - name: MGSM
+        value: 3.17
+      - name: NER F1
+        value: 23.08
+  - model: google/gemma-3-27b-it
+    model_url: https://huggingface.co/google/gemma-3-27b-it
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 22.02
+      - name: XNLI Acc
+        value: 38.71
+      - name: MMLU Acc.
+        value: 49.21
+      - name: spBLEU fra→ewe
+        value: 5.69
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 16.51
+  - model: google/gemma-2-27b-it
+    model_url: https://huggingface.co/google/gemma-2-27b-it
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 22.41
+      - name: XNLI Acc
+        value: 43.55
+      - name: MMLU Acc.
+        value: 39.68
+      - name: spBLEU fra→ewe
+        value: 4.2
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 24.6
+  - model: deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
+    model_url: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 22.6
+      - name: XNLI Acc
+        value: 37.1
+      - name: MMLU Acc.
+        value: 49.21
+      - name: spBLEU fra→ewe
+        value: 3.64
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 21.47
+  - model: meta-llama/Llama-3.1-70B-Instruct
+    model_url: https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 23.62
+      - name: XNLI Acc
+        value: 43.55
+      - name: MMLU Acc.
+        value: 50.79
+      - name: spBLEU fra→ewe
+        value: 5.31
+      - name: MGSM
+        value: 4.76
+      - name: NER F1
+        value: 13.7
+  - model: Qwen/Qwen3-30B-Instruct-2507
+    model_url: https://huggingface.co/Qwen/Qwen3-30B-Instruct-2507
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 22.86
+      - name: XNLI Acc
+        value: 41.94
+      - name: MMLU Acc.
+        value: 49.21
+      - name: spBLEU fra→ewe
+        value: 2.71
+      - name: MGSM
+        value: 3.17
+      - name: NER F1
+        value: 17.28
+  - model: deepseek-ai/DeepSeek-R1-Distill-Llama-70B
+    model_url: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 22.74
+      - name: XNLI Acc
+        value: 43.55
+      - name: MMLU Acc.
+        value: 41.27
+      - name: spBLEU fra→ewe
+        value: 5.34
+      - name: MGSM
+        value: 4.76
+      - name: NER F1
+        value: 18.79
+  - model: Tower-Babel/Babel-9B-Chat
+    model_url: https://huggingface.co/Tower-Babel/Babel-9B-Chat
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 17.2
+      - name: XNLI Acc
+        value: 35.48
+      - name: MMLU Acc.
+        value: 41.27
+      - name: spBLEU fra→ewe
+        value: 3.75
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 3.92
+  - model: Tower-Babel/Babel-83B-Chat
+    model_url: https://huggingface.co/Tower-Babel/Babel-83B-Chat
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 20.51
+      - name: XNLI Acc
+        value: 29.03
+      - name: MMLU Acc.
+        value: 55.56
+      - name: spBLEU fra→ewe
+        value: 2.57
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 13.79
+  - model: Qwen/Qwen3-4B-Instruct-2507
+    model_url: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 19.01
+      - name: XNLI Acc
+        value: 45.16
+      - name: MMLU Acc.
+        value: 34.92
+      - name: spBLEU fra→ewe
+        value: 2.77
+      - name: MGSM
+        value: 4.76
+      - name: NER F1
+        value: 7.45
+  - model: google/gemma-2-9b-it
+    model_url: https://huggingface.co/google/gemma-2-9b-it
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 18.54
+      - name: XNLI Acc
+        value: 40.32
+      - name: MMLU Acc.
+        value: 39.68
+      - name: spBLEU fra→ewe
+        value: 1.88
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 9.25
+  - model: google/gemma-3-12b-it
+    model_url: https://huggingface.co/google/gemma-3-12b-it
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 19.65
+      - name: XNLI Acc
+        value: 43.55
+      - name: MMLU Acc.
+        value: 38.1
+      - name: spBLEU fra→ewe
+        value: 6.29
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 10.29
+  - model: meta-llama/Llama-3.1-8B-Instruct
+    model_url: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 16.92
+      - name: XNLI Acc
+        value: 43.55
+      - name: MMLU Acc.
+        value: 38.1
+      - name: spBLEU fra→ewe
+        value: 1.38
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 0.0
+  - model: CohereForAI/aya-23-35B
+    model_url: https://huggingface.co/CohereForAI/aya-23-35B
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 14.51
+      - name: XNLI Acc
+        value: 35.48
+      - name: MMLU Acc.
+        value: 28.57
+      - name: spBLEU fra→ewe
+        value: 2.27
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 4.62
+  - model: CohereForAI/c4ai-command-r-plus-08-2024
+    model_url: https://huggingface.co/CohereForAI/c4ai-command-r-plus-08-2024
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 16.33
+      - name: XNLI Acc
+        value: 33.87
+      - name: MMLU Acc.
+        value: 30.16
+      - name: spBLEU fra→ewe
+        value: 2.4
+      - name: MGSM
+        value: 6.35
+      - name: NER F1
+        value: 8.89
+  - model: CohereForAI/c4ai-command-r7b-12-2024
+    model_url: https://huggingface.co/CohereForAI/c4ai-command-r7b-12-2024
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 13.81
+      - name: XNLI Acc
+        value: 35.48
+      - name: MMLU Acc.
+        value: 30.16
+      - name: spBLEU fra→ewe
+        value: 1.81
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 0.0
+  - model: microsoft/Phi-4-mini-instruct
+    model_url: https://huggingface.co/microsoft/Phi-4-mini-instruct
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 14.18
+      - name: XNLI Acc
+        value: 35.48
+      - name: MMLU Acc.
+        value: 30.16
+      - name: spBLEU fra→ewe
+        value: 3.69
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 0.0
+  - model: meta-llama/Llama-3.2-1B-Instruct
+    model_url: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 14.17
+      - name: XNLI Acc
+        value: 33.87
+      - name: MMLU Acc.
+        value: 30.16
+      - name: spBLEU fra→ewe
+        value: 2.07
+      - name: MGSM
+        value: 4.76
+      - name: NER F1
+        value: 0.0
+  - model: microsoft/Phi-3.5-mini-instruct
+    model_url: https://huggingface.co/microsoft/Phi-3.5-mini-instruct
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 14.61
+      - name: XNLI Acc
+        value: 32.26
+      - name: MMLU Acc.
+        value: 28.57
+      - name: spBLEU fra→ewe
+        value: 3.49
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 7.14
+  - model: google/gemma-2-2b-it
+    model_url: https://huggingface.co/google/gemma-2-2b-it
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 12.35
+      - name: XNLI Acc
+        value: 29.03
+      - name: MMLU Acc.
+        value: 26.98
+      - name: spBLEU fra→ewe
+        value: 2.44
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 3.28
+  - model: CohereForAI/aya-23-8B
+    model_url: https://huggingface.co/CohereForAI/aya-23-8B
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 12.15
+      - name: XNLI Acc
+        value: 33.87
+      - name: MMLU Acc.
+        value: 20.63
+      - name: spBLEU fra→ewe
+        value: 1.77
+      - name: MGSM
+        value: 3.17
+      - name: NER F1
+        value: 1.32
+  - model: google/gemma-3-4b-it
+    model_url: https://huggingface.co/google/gemma-3-4b-it
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 16.81
+      - name: XNLI Acc
+        value: 43.55
+      - name: MMLU Acc.
+        value: 28.57
+      - name: spBLEU fra→ewe
+        value: 3.91
+      - name: MGSM
+        value: 0.0
+      - name: NER F1
+        value: 8.0
+  - model: meta-llama/Llama-3.2-3B-Instruct
+    model_url: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
+    results:
+    - test_set: SAHARA
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
+      metrics:
+      - name: Lang. Avg.
+        value: 12.92
+      - name: XNLI Acc
+        value: 33.87
+      - name: MMLU Acc.
+        value: 28.57
+      - name: spBLEU fra→ewe
+        value: 0.58
+      - name: MGSM
+        value: 1.59
+      - name: NER F1
+        value: 0.0
   mt:
   - model: AfriqueQwen-14B
     model_url: https://huggingface.co/AfriqueLLM/AfriqueQwen-14B
@@ -173,6 +824,126 @@ evaluations:
         value: 6.8
       - name: chrF++ ee-en
         value: 20.78
+  - model: google/madlad400-3b-mt
+    model_url: https://huggingface.co/google/madlad400-3b-mt
+    results:
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: BLEU ewe→eng
+        value: 8.6
+      - name: chrF ewe→eng
+        value: 25.8
+      - name: BLEU eng→ewe
+        value: 4.1
+      - name: chrF eng→ewe
+        value: 23.7
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU ewe→eng
+        value: 10.3
+      - name: chrF ewe→eng
+        value: 33.3
+      - name: BLEU eng→ewe
+        value: 5.2
+      - name: chrF eng→ewe
+        value: 26.9
+    - test_set: NTREX
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 19 — BLEU/chrF
+      metrics:
+      - name: BLEU ewe→eng
+        value: 13.2
+      - name: chrF ewe→eng
+        value: 35.1
+      - name: BLEU eng→ewe
+        value: 6.1
+      - name: chrF eng→ewe
+        value: 29.1
+  - model: google/madlad400-7.2b-mt
+    model_url: https://huggingface.co/google/madlad400-7.2b-mt
+    results:
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: BLEU ewe→eng
+        value: 11.1
+      - name: chrF ewe→eng
+        value: 28.9
+      - name: BLEU eng→ewe
+        value: 6.1
+      - name: chrF eng→ewe
+        value: 27.1
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU ewe→eng
+        value: 14.3
+      - name: chrF ewe→eng
+        value: 37.4
+      - name: BLEU eng→ewe
+        value: 6.8
+      - name: chrF eng→ewe
+        value: 29.2
+    - test_set: NTREX
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 19 — BLEU/chrF
+      metrics:
+      - name: BLEU ewe→eng
+        value: 16.3
+      - name: chrF ewe→eng
+        value: 38.4
+      - name: BLEU eng→ewe
+        value: 7.4
+      - name: chrF eng→ewe
+        value: 31.6
+  - model: google/madlad400-10.7b-mt
+    model_url: https://huggingface.co/google/madlad400-10.7b-mt
+    results:
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: BLEU ewe→eng
+        value: 10.4
+      - name: chrF ewe→eng
+        value: 28.3
+      - name: BLEU eng→ewe
+        value: 6
+      - name: chrF eng→ewe
+        value: 26.6
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU ewe→eng
+        value: 13.3
+      - name: chrF ewe→eng
+        value: 36.6
+      - name: BLEU eng→ewe
+        value: 5.9
+      - name: chrF eng→ewe
+        value: 28.4
+    - test_set: NTREX
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 19 — BLEU/chrF
+      metrics:
+      - name: BLEU ewe→eng
+        value: 16.7
+      - name: chrF ewe→eng
+        value: 38.5
+      - name: BLEU eng→ewe
+        value: 7.2
+      - name: chrF eng→ewe
+        value: 30.5
   tts:
   - model: facebook/mms-tts
     model_url: https://huggingface.co/facebook/mms-tts

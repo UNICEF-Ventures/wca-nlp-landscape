@@ -1,1 +1,59 @@
-{}
+evaluations:
+  mt:
+  - model: google/madlad400-3b-mt
+    model_url: https://huggingface.co/google/madlad400-3b-mt
+    results:
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: BLEU kri→eng
+        value: 13.2
+      - name: chrF kri→eng
+        value: 37
+      - name: BLEU eng→kri
+        value: 2.6
+      - name: chrF eng→kri
+        value: 22.2
+  - model: google/madlad400-7.2b-mt
+    model_url: https://huggingface.co/google/madlad400-7.2b-mt
+    results:
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: BLEU kri→eng
+        value: 15.6
+      - name: chrF kri→eng
+        value: 39.5
+      - name: BLEU eng→kri
+        value: 2.3
+      - name: chrF eng→kri
+        value: 18.2
+  - model: google/madlad400-10.7b-mt
+    model_url: https://huggingface.co/google/madlad400-10.7b-mt
+    results:
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: BLEU kri→eng
+        value: 17.3
+      - name: chrF kri→eng
+        value: 41.5
+      - name: BLEU eng→kri
+        value: 3.4
+      - name: chrF eng→kri
+        value: 22.7
+  llm:
+  - model: google/madlad400-8b-lm
+    model_url: https://huggingface.co/google/madlad400-8b-lm
+    results:
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF (10-shot)
+      metrics:
+      - name: BLEU kri→eng
+        value: 10.5
+      - name: chrF kri→eng
+        value: 33.2
+      - name: BLEU eng→kri
+        value: 0.7
+      - name: chrF eng→kri
+        value: 16.4

@@ -1,7 +1,5 @@
 # UNICEF WCARO NLP Landscape
-
-> **Note:** This repository is no longer the primary location. The official repo and live site have moved to [UNICEF-Ventures/wca-nlp-landscape](https://github.com/UNICEF-Ventures/wca-nlp-landscape). Please refer to that repository for the latest updates.
-
+  
 Mapping of NLP/language technology resources for West and Central Africa.
 
 **Status:** Work in progress. Not yet open for external contributions.
@@ -134,7 +132,10 @@ Create `Research/Actors/{id}.yaml`. See existing files for the full schema (type
 
 ```
 Research/
-├── focused_languages.yaml    # [manual] ISO 639-3 codes to process
+├── focused_languages.yaml    # [manual] ISO 639-3 codes of languages to process (divided into priority and extended)
+├── benchmark_coverage.md     # [auto] Grid of languages and tasks showing if any benchmark exists or not
+├── sources.yaml              # [manual] List of all sources used in mapping
+├── wca_all_languages.yaml    # [auto] List of WCA languages and minimal metadata pulled from African language grid
 ├── Languages/{iso}/
 │   ├── info.yaml             # [auto] Language metadata from African Grid + Wikipedia + MMS
 │   ├── models.yaml           # [auto] HuggingFace models by task

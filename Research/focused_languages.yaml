@@ -11,6 +11,7 @@ priority:
   - dyu  # Dyoula (Burkina Faso)
   - ful  # Fulfulde/Fulah/Peul (widespread, inclusive code)
   - fuh  # Western Niger Fulfulde (Burkina, Niger)
+  - fuv  # Nigerian Fulfulde (Included because some benchmarks use this and could be counted within ful)
   - gux  # Gourmantchema (Burkina Faso)
   - bam  # Bambara (Mali)
   - snk  # Soninke (Mali)

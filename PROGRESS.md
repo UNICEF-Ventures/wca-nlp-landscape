@@ -132,7 +132,7 @@ Compile existing benchmark results (FLORES, FLEURS, Common Voice, published pape
 
 | Status | Progress |
 |--------|----------|
-| Infrastructure done, data collection in progress | ████████░░░░░░░░░░░░ 40% |
+| Infrastructure done, data collection well advanced | ██████████████░░░░░░ 70% |
 
 - [x] Benchmark data infrastructure (two-file system, Source data/Evaluations/, rendering on language pages)
 - [x] Initial ASR data: Whisper FLEURS WER, CLEAR Global TWB Voice (Hausa, Kanuri)
@@ -141,7 +141,8 @@ Compile existing benchmark results (FLORES, FLEURS, Common Voice, published pape
 - [x] Compile LLM benchmarks: AfroBench-Lite scores (24 models, 5 focus languages: hau, ibo, lin, wol, yor)
 - [ ] Compile ASR benchmarks (more Whisper variants, MMS, wav2vec2, etc.)
 - [x] Compile MT benchmarks: AfriNLLB + NLLB-600M baseline (FLORES-200 BLEU/chrF, 4 focus langs: hau, yor, lin, wol)
-- [ ] Compile MT benchmarks (more: NLLB full, MADLAD, Seamless etc.)
+- [x] Compile MT benchmarks: NLLB/FLORES (hau, ibo, yor, mos, bam, aka), MAFAND-MT (9 focus langs), MADLAD-400 (14 focus langs), AfriNLLB
+- [ ] Compile MT benchmarks (more: Seamless etc.)
 - [ ] Compile TTS benchmarks (more models)
 - [ ] Gap analysis: which languages lack benchmarks
 - [ ] Conducting benchmark analyses where needed and possible
@@ -149,44 +150,15 @@ Compile existing benchmark results (FLORES, FLEURS, Common Voice, published pape
 
 ### Benchmark Data Sources — Tracking
 
-**Status key:** INCLUDED = scores extracted and in the system | PLACEHOLDER = file exists but values are "?" | NOTED = identified, not yet extracted | PAPER = paper downloaded to `Project documents/`
+**Canonical source list:** `Research/sources.yaml` (rendered on the live site's Sources tab).
 
-#### Already included (scores in the system)
+**Summary:** 16 benchmark sources included, 1 to extract, 3 noted. See `sources.yaml` for full details.
 
-| # | Benchmark / Source | Paper/URL | Type | Focus langs covered | Status |
-|---|-------------------|-----------|------|-------------------|--------|
-| 1 | **Whisper** (FLEURS WER) | [arxiv 2212.04356](https://arxiv.org/abs/2212.04356) | ASR | hau, yor, lin (6 model sizes; large-v3 = "?") | INCLUDED |
-| 2 | **PazaBench** (Microsoft) | [HF Space](https://huggingface.co/spaces/microsoft/paza-bench) | ASR | dyu, ful, hau, ibo, lin, twi, wol, yor (52 models, CER+WER) | INCLUDED |
-| 3 | **AfroBench-Lite** (McGill-NLP) | [HF Space](https://huggingface.co/spaces/McGill-NLP/AfroBench) / [arxiv 2311.07978](https://arxiv.org/abs/2311.07978) | LLM | hau, ibo, lin, wol, yor (24 models, 15 NLP tasks aggregate) | INCLUDED |
-| 4 | **CLEAR Global TWB Voice** | HuggingFace model cards | ASR+TTS | hau, kau (Whisper & w2v-bert fine-tunes + TTS) | INCLUDED |
-| 5 | **Kreyol-MT** | [arxiv 2405.05376](https://arxiv.org/abs/2405.05376) | MT | kri, pov, sag (bible-based BLEU, caution on generalization) | INCLUDED |
-| 6 | **AfriNLLB** (FLORES-200) | [HF Collection](https://huggingface.co/collections/AfriNLP/afrinllb) | MT | hau, yor, lin, wol (AfriNLLB 548M + NLLB-600M baseline) | INCLUDED |
-
-#### To be extracted (papers downloaded, need to pull scores)
-
-| # | Benchmark / Source | Paper/URL | Type | Potential focus langs | Status |
-|---|-------------------|-----------|------|----------------------|--------|
-| 7 | **Sahara** (UBC-NLP) | [arxiv 2502.19582](https://arxiv.org/abs/2502.19582) / [HF Space](https://huggingface.co/spaces/UBC-NLP/sahara) (broken) | LLM | 517 languages, 16 tasks (4 clusters: classification, generation, MCCR, tokens). 10 focus langs covered: **hau, yor, ibo, wol, lin, fon, bam, mos, ewe** (all clusters or most); **twi** (token tasks only: NER/POS). 24 models evaluated. Placeholder file created: `Source data/Evaluations/sahara_llm.yaml` (values null pending leaderboard fix). HF Space broken — contacted authors, awaiting fix. | PLACEHOLDER — awaiting author fix |
-| 8 | **SimbaBench** (UBC-NLP) | [arxiv 2505.18436](https://arxiv.org/abs/2505.18436) / [EMNLP 2025](https://aclanthology.org/2025.emnlp-main.559/) / [HF Space](https://huggingface.co/spaces/UBC-NLP/SimbaBench) | ASR+TTS | 12 ASR models + 2 TTS models. 11 focus langs ASR (aka, dyu, fon, fuc, fuf, gaa, hau, ibo, twi, wol, yor), 6 TTS (aka, ewe, hau, lin, twi, yor). Data pulled from Space API. Parser: `scripts/parse_simbabench.py`. | INCLUDED ✓ verified |
-| 9 | **AfriqueLLM** (McGill-NLP) | [arxiv 2601.06395](https://arxiv.org/abs/2601.06395) / [HF Collection](https://huggingface.co/collections/McGill-NLP/afriquellm) | LLM+MT | 7 focus langs: ewe, hau, ibo, lin, twi, wol, yor. 4 model pairs (AfriqueQwen-14B, Qwen3-14B, AfriqueGemma-12B, Gemma3-12B, AfriqueLlama-8B). LLM: Intent+Topic (AfroBench), MT: chrF++ en↔xx (FLORES-200). | INCLUDED ✓ |
-| 10 | **IrokoBench** | [arxiv 2406.03368](https://arxiv.org/abs/2406.03368) | LLM | 7 focus langs: ewe, hau, ibo, lin, twi, wol, yor. 4 models: GPT-4o, LLaMA 3.1 70B, Gemma 2 27B, Aya-101. 3 tasks: AfriMMMLU (5 subjects), AfriMGSM (math exact match), AfriXNLI (NLI accuracy). In-language setting. | INCLUDED ✓ |
-| 12 | **Bambara ASR Leaderboard** (MALIBA-AI) | [HF Space](https://huggingface.co/spaces/MALIBA-AI/bambara-asr-leaderboard) | ASR | bam only. Multiple models compared. Need browser agent to scrape scores. | NOTED |
-
-#### Identified but not yet investigated
-
-| # | Benchmark / Source | Paper/URL | Type | Notes |
-|---|-------------------|-----------|------|-------|
-| 13 | **NLLB** (Meta) | [arxiv 2207.04672](https://arxiv.org/abs/2207.04672) | MT | FLORES-200 BLEU scores for 200 languages. Many WCA langs. High priority to extract. |
-| 14 | **MMS** (Meta) | [arxiv 2305.13516](https://arxiv.org/abs/2305.13516) | ASR+TTS+LID | Massively Multilingual Speech. 1100+ languages. Has published WER/CER. |
-| 15 | **Seamless** (Meta) | [arxiv 2312.05187](https://arxiv.org/abs/2312.05187) | ASR+MT+TTS | SeamlessM4T. Multimodal translation. |
-| 16 | **MADLAD-400** | [arxiv 2309.04662](https://arxiv.org/abs/2309.04662) | MT | 400+ languages. Translation model. |
-| 17 | **BLOOM/BLOOMZ** | [arxiv 2211.01786](https://arxiv.org/abs/2211.01786) / [HF evals](https://huggingface.co/datasets/bigscience/evaluation-results) | LLM | 176B multilingual model. Has eval results dataset on HF. |
-| 18 | **LLaMAX** | [HF](https://huggingface.co/LLaMAX/LLaMAX3-8B-Alpaca) | LLM | Multilingual LLaMA extension. |
-| 19 | **Goldfish** | [arxiv 2408.10441](https://arxiv.org/abs/2408.10441) / [HF](https://huggingface.co/goldfish-models) | LLM | Low-resource language models. |
-| 20 | **FLORES-200** | [github](https://github.com/facebookresearch/flores) | MT test set | Standard MT evaluation dataset. 200 languages. |
-| 21 | **FLEURS** | [HF](https://huggingface.co/datasets/google/fleurs) | Speech test set | Standard speech evaluation dataset. |
-| 22 | **Common Voice** | [commonvoice.mozilla.org](https://commonvoice.mozilla.org) | ASR data | Community speech dataset. Stats already integrated. |
-| 23 | **AfriSpeech** | | ASR | African-focused speech benchmark. |
+**Remaining work:**
+- **Omnilingual ASR** (Meta): 25 focus langs covered. Priority: run evals for langs with no other ASR benchmarks. Status: TO_EXTRACT.
+- **Seamless** (Meta): Limited WCA coverage (ful, yor, ibo). Status: NOTED.
+- **BLOOM/BLOOMZ**: Has eval results dataset on HF. Status: NOTED.
+- **LLaMAX**: FLORES-101 translation evals. Status: NOTED.
 
 ### Papers downloaded (in `Project documents/`, not in repo)
 
@@ -205,26 +177,28 @@ Compile existing benchmark results (FLORES, FLEURS, Common Voice, published pape
 
 ## Task 3: Knowledge Management Assets
 
-### 3.1 Language Factsheets
-Max 3-page summaries per language covering resources, benchmarks, actors, and recommendations.
+### 3.1 Language Factsheets (Deliverable 3.1)
+Curated factsheets per language with resources, benchmarks, and assessment. Max 3 pages each.
 
-| Done | Target | Progress |
-|------|--------|----------|
-| 0    | 20     | ░░░░░░░░░░░░░░░░░░░░ 0% |
+| Status | Progress |
+|--------|----------|
+| Done — generated via `generate_docs.py` | ████████████████████ 100% |
 
-### 3.2 Actor Engagement Framework
-5-10 page guide on identifying and engaging language technology partners.
+Language profiles are auto-generated from YAML data into DOCX (`WCA_NLP_Languages.docx`) and HTML (live site). Content maintained through data pipeline.
+
+### 3.2 Actor Engagement Framework (Deliverable 3.2)
+Brief framework: criteria for identifying actors, key discovery resources, engagement best practices. Builds on Task 1 actor mapping.
 
 | Status | Progress |
 |--------|----------|
 | Not started | ░░░░░░░░░░░░░░░░░░░░ 0% |
 
-### 3.3 SharePoint Content
-Structured documentation for UNICEF knowledge management.
+### 3.3 SharePoint Content (Deliverable 3.3)
+Structured content for UNICEF SharePoint. CLEAR provides content/docs; UNICEF handles SharePoint setup and maintenance.
 
 | Status | Progress |
 |--------|----------|
-| Not started | ░░░░░░░░░░░░░░░░░░░░ 0% |
+| Content ready (docs + site), UNICEF to set up SharePoint | ████████████████████ 100% |
 
 ---
 
@@ -232,13 +206,20 @@ Structured documentation for UNICEF knowledge management.
 
 Advisory support for actor selection, agenda input, and presentation of findings.
 
-- [ ] Actor recommendations for summit invitations
-- [ ] Agenda design input
-- [ ] 60-90 minute presentation session
+- [x] Actor recommendations for summit invitations (prioritization framework + ranked list delivered)
+- [ ] Agenda design input (up to 2 review cycles)
+- [ ] 60-90 minute presentation session (virtual delivery, presenting findings + presentation materials)
 
 ---
 
 ## Recent Updates
+
+### 2026-03-03
+- **Sahara LLM benchmarks extracted:** Scores now populated in `Source data/Evaluations/sahara_llm.yaml` (previously placeholder with null values). 10 focus languages (hau, yor, ibo, wol, lin, fon, bam, mos, ewe, twi), 24 models, 16 NLP tasks across 4 clusters.
+- **MADLAD-400 MT benchmarks extracted:** `Source data/Evaluations/madlad.yaml` — translation BLEU scores for 14 focus languages (hau, ibo, yor, wol, ewe, lin, sag, aka, fon, dyu, bam, kri, ffm, ful).
+- Both sources marked as `included` in `Research/sources.yaml`.
+- **PROGRESS.md benchmark table overhauled** to match actual `sources.yaml` state. Several sources (Bambara ASR, NLLB/FLORES, MMS, Goldfish, MAFAND-MT) were already included but incorrectly listed as "noted" or "not yet investigated".
+- **URLs corrected:** Repo and live site URLs updated from translatorswb → UNICEF-Ventures across CLAUDE.md and PROGRESS.md.
 
 ### 2026-02-24
 - **WaxalNLP and SimbaBench added** as multilingual dataset coverage files (`Source data/Multilingual-models-datasets/`). Both now appear in the NLP & Tech Resources section for covered focus languages.
@@ -422,8 +403,8 @@ Advisory support for actor selection, agenda input, and presentation of findings
 
 ## Quick Links
 
-- **Live site:** https://translatorswb.github.io/wca-nlp-landscape/
-- **GitHub repo:** https://github.com/translatorswb/wca-nlp-landscape
+- **Live site:** https://unicef-ventures.github.io/wca-nlp-landscape/
+- **GitHub repo:** https://github.com/UNICEF-Ventures/wca-nlp-landscape
 - **HTML Report (local):** `output/index.html`
 - **Add language:** Edit `Research/focused_languages.yaml`, run `python scripts/populate_research.py`
 - **Add actor:** Create `Research/Actors/{id}.yaml`

@@ -1,1 +1,67 @@
-{}
+evaluations:
+  mt:
+  - model: google/madlad400-3b-mt
+    model_url: https://huggingface.co/google/madlad400-3b-mt
+    results:
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU sag→eng
+        value: 8.2
+      - name: chrF sag→eng
+        value: 31.1
+      - name: BLEU eng→sag
+        value: 6
+      - name: chrF eng→sag
+        value: 30.1
+  - model: google/madlad400-7.2b-mt
+    model_url: https://huggingface.co/google/madlad400-7.2b-mt
+    results:
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU sag→eng
+        value: 9
+      - name: chrF sag→eng
+        value: 31.7
+      - name: BLEU eng→sag
+        value: 5.8
+      - name: chrF eng→sag
+        value: 29.2
+  - model: google/madlad400-10.7b-mt
+    model_url: https://huggingface.co/google/madlad400-10.7b-mt
+    results:
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU sag→eng
+        value: 10
+      - name: chrF sag→eng
+        value: 32.8
+      - name: BLEU eng→sag
+        value: 6.4
+      - name: chrF eng→sag
+        value: 30.7
+  llm:
+  - model: google/madlad400-8b-lm
+    model_url: https://huggingface.co/google/madlad400-8b-lm
+    results:
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF (10-shot)
+      metrics:
+      - name: BLEU sag→eng
+        value: 2.7
+      - name: chrF sag→eng
+        value: 22.1
+      - name: BLEU eng→sag
+        value: 0.1
+      - name: chrF eng→sag
+        value: 5.3

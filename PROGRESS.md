@@ -128,24 +128,73 @@ Full scoring framework: `Event/actor_prioritization_methodology.md` (not in repo
 
 ## Task 2: Benchmarking Study
 
-Compile existing benchmark results (FLORES, FLEURS, Common Voice, published papers) for priority languages. Create comparative analysis where multiple models exist.
+Compile existing benchmark results and run manual evaluations for priority languages. Create comparative analysis where multiple models exist.
 
-| Status | Progress |
-|--------|----------|
-| Infrastructure done, data collection well advanced | ██████████████░░░░░░ 70% |
+### 2.1 Infrastructure
+
+| Done | Target | Progress                 |
+|------|--------|--------------------------|
+| 3    | 3      | ████████████████████ 100% |
 
 - [x] Benchmark data infrastructure (two-file system, Source data/Evaluations/, rendering on language pages)
-- [x] Initial ASR data: Whisper FLEURS WER, CLEAR Global TWB Voice (Hausa, Kanuri)
-- [x] Initial TTS data: CLEAR Global TWB Voice TTS (Hausa, Kanuri) — scores entered
-- [x] PazaBench ASR results compiled (52 models, 39 African languages, CER+WER) — 7 focus languages covered: ful, hau, ibo, lin, twi, wol, yor
-- [x] Compile LLM benchmarks: AfroBench-Lite scores (24 models, 5 focus languages: hau, ibo, lin, wol, yor)
-- [x] Compile MT benchmarks: AfriNLLB + NLLB-600M baseline (FLORES-200 BLEU/chrF, 4 focus langs: hau, yor, lin, wol)
-- [x] Compile MT benchmarks: NLLB/FLORES (hau, ibo, yor, mos, bam, aka), MAFAND-MT (9 focus langs), MADLAD-400 (14 langs, 3 test sets, fully verified), AfriNLLB
-- [ ] Compile MT benchmarks (more: Seamless etc.)
-- [ ] Compile TTS benchmarks (more models)
-- [ ] Gap analysis: which languages lack benchmarks
-- [ ] Conducting benchmark analyses where needed and possible
+- [x] Unbenchmarked models support (`unbenchmarked_models` in benchmarks_manual.yaml)
 - [x] **Webpage feature:** "Sources" tab on website — unified sortable table of all data and benchmark sources with type badges, focus languages, and status (`Research/sources.yaml`)
+
+### 2.2 Collect Benchmark Sources
+Identify and track published benchmark papers, leaderboards, and evaluation datasets relevant to WCA languages.
+
+| Done | Target | Progress                 |
+|------|--------|--------------------------|
+| 14   | 16     | █████████████████░░░ 88%  |
+- [x] Whisper FLEURS WER (6 focus langs)
+- [x] CLEAR Global TWB Voice ASR + TTS (Hausa, Kanuri)
+- [x] PazaBench ASR (52 models, 7 focus langs: ful, hau, ibo, lin, twi, wol, yor)
+- [x] SimbaBench ASR + TTS (12 ASR models, 11 focus langs for ASR, 6 for TTS)
+- [x] AfroBench-Lite LLM (24 models, 5 focus langs: hau, ibo, lin, wol, yor)
+- [x] IrokoBench LLM (4 models, 7 focus langs: ewe, hau, ibo, lin, twi, wol, yor)
+- [x] AfriqueLLM (5 models, 7 focus langs, LLM + MT tasks)
+- [x] SAHARA LLM (24 models, 10 focus langs: hau, yor, ibo, wol, lin, fon, bam, mos, ewe, twi)
+- [x] AfriNLLB + NLLB-600M MT (FLORES-200 BLEU/chrF, 4 focus langs: hau, yor, lin, wol)
+- [x] NLLB/FLORES MT (hau, ibo, yor, mos, bam, aka)
+- [x] MAFAND-MT (9 focus langs)
+- [x] MADLAD-400 MT (14 langs, 3 test sets, 6 models, fully verified)
+- [x] Bambara ASR leaderboard (MALIBA-AI, 5 models)
+- [x] Goldfish monolingual LMs (FLORES perplexity, multiple langs)
+- [ ] Seamless MT (not yet investigated)
+- [ ] Additional TTS benchmarks (beyond SimbaBench + TWB Voice)
+
+### 2.3 Save Benchmark Results
+Extract scores from collected sources into `Source data/Evaluations/` YAML files and distribute to language profiles via `populate_research.py`.
+
+| Done | Target | Progress                 |
+|------|--------|--------------------------|
+| 3    | 3      | ████████████████████ 100% |
+- [x] All sources listed in 2.2 extracted and saved
+- [x] Manual entries in `benchmarks_manual.yaml` for one-off results (Goldfish, MMS FLEURS, Kreyol-MT, Bloom Speech, MAFAND Masakhane)
+- [x] `Research/sources.yaml` status tracking (included/placeholder/noted)
+
+### 2.4 Plan Manual Benchmarking
+Gap analysis and feasibility assessment for languages missing benchmarks.
+
+| Done | Target | Progress                 |
+|------|--------|--------------------------|
+| 3    | 3      | ████████████████████ 100% |
+- [x] Gap analysis completed (`Research/manual_benchmarking_plan.md`)
+- [x] Identified 10 languages feasible for ASR evaluation, 3-4 for MT
+- [x] Identified languages with no feasible path (fuh, ffm, shu, swc, lir, pov — no test data)
+
+### 2.5 Execute Manual Benchmarking
+Run model evaluations where public test data exists but no published scores are available.
+
+| Done | Target | Progress                 |
+|------|--------|--------------------------|
+| 0    | 6      | ░░░░░░░░░░░░░░░░░░░░ 0%  |
+- [ ] Quick wins: extract missing SimbaBench ASR scores for mos, sag, ewe
+- [ ] Quick wins: run NLLB-200 on FLORES-200 for fuv, sag
+- [ ] ASR evals: ewe, mos, dag, fan, sag, kri (on SimbaBench/Common Voice test splits)
+- [ ] ASR evals (Bible-domain, lower priority): gux, ses, dts on CMU Wilderness
+- [ ] MT evals: fuv, sag, kri, dag (NLLB/MADLAD on FLORES-200 or available test sets)
+- [ ] Hire engineer for manual benchmark execution (pending decision)
 
 ---
 

@@ -12,21 +12,21 @@ tts:
   counts_by_code: {}
 translation:
   items:
+  - name: Helsinki-NLP/opus-mt-tc-bible-big-mul-mul
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-mul
+    downloads: 224
+    likes: 10
   - name: Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_nld
     url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_nld
-    downloads: 180
+    downloads: 181
     likes: 2
   - name: Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-mul
     url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-mul
-    downloads: 176
+    downloads: 179
     likes: 1
-  - name: Helsinki-NLP/opus-mt-tc-bible-big-mul-mul
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-mul
-    downloads: 150
-    likes: 10
   - name: vonjack/opus-mt-mul-en-big
     url: https://huggingface.co/vonjack/opus-mt-mul-en-big
-    downloads: 9
+    downloads: 28
     likes: 3
   - name: Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_fra_por_spa
     url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_fra_por_spa

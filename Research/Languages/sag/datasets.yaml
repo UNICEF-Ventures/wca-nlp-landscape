@@ -2,36 +2,36 @@ asr:
   items:
   - name: sarulab-speech/yodas2_sidon
     url: https://huggingface.co/datasets/sarulab-speech/yodas2_sidon
-    downloads: 52800
+    downloads: 57000
     likes: 57
   - name: suryatmodulus/yodas2_sidon
     url: https://huggingface.co/datasets/suryatmodulus/yodas2_sidon
-    downloads: 16400
+    downloads: 18100
     likes: 0
   - name: YuRiVeRTi/V1Q
     url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 620
+    downloads: 670
     likes: 3
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 329
+    downloads: 574
     likes: 11
   - name: UBC-NLP/SimbaBench_dataset
     url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
-    downloads: 45
-    likes: 1
-  - name: french-datasets/espnet_yodas2
-    url: https://huggingface.co/datasets/french-datasets/espnet_yodas2
-    downloads: 19
-    likes: 0
-  - name: french-datasets/espnet_yodas
-    url: https://huggingface.co/datasets/french-datasets/espnet_yodas
-    downloads: 18
+    downloads: 64
     likes: 0
   - name: dijihax/Dataset
     url: https://huggingface.co/datasets/dijihax/Dataset
-    downloads: 16
+    downloads: 17
     likes: 2
+  - name: french-datasets/espnet_yodas
+    url: https://huggingface.co/datasets/french-datasets/espnet_yodas
+    downloads: 17
+    likes: 0
+  - name: french-datasets/espnet_yodas2
+    url: https://huggingface.co/datasets/french-datasets/espnet_yodas2
+    downloads: 15
+    likes: 0
   total_count: 8
   counts_by_code:
     sg: 5
@@ -40,29 +40,143 @@ tts:
   items:
   - name: sarulab-speech/yodas2_sidon
     url: https://huggingface.co/datasets/sarulab-speech/yodas2_sidon
-    downloads: 52800
+    downloads: 57000
     likes: 57
   - name: suryatmodulus/yodas2_sidon
     url: https://huggingface.co/datasets/suryatmodulus/yodas2_sidon
-    downloads: 16400
+    downloads: 18100
     likes: 0
   - name: YuRiVeRTi/V1Q
     url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 620
+    downloads: 670
     likes: 3
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 329
+    downloads: 574
     likes: 11
   - name: UBC-NLP/SimbaBench_dataset
     url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
-    downloads: 45
-    likes: 1
+    downloads: 64
+    likes: 0
   - name: dijihax/Dataset
     url: https://huggingface.co/datasets/dijihax/Dataset
-    downloads: 16
+    downloads: 17
     likes: 2
   total_count: 6
   counts_by_code:
     sg: 5
     sag: 1
+translation:
+  items:
+  - name: openlanguagedata/flores_plus
+    url: https://huggingface.co/datasets/openlanguagedata/flores_plus
+    downloads: 18300
+    likes: 111
+  - name: facebook/flores
+    url: https://huggingface.co/datasets/facebook/flores
+    downloads: 7690
+    likes: 95
+  - name: cointegrated/panlex-meanings
+    url: https://huggingface.co/datasets/cointegrated/panlex-meanings
+    downloads: 2490
+    likes: 12
+  - name: google/smol
+    url: https://huggingface.co/datasets/google/smol
+    downloads: 2130
+    likes: 89
+  - name: Helsinki-NLP/tatoeba
+    url: https://huggingface.co/datasets/Helsinki-NLP/tatoeba
+    downloads: 1550
+    likes: 56
+  - name: jhu-clsp/kreyol-mt
+    url: https://huggingface.co/datasets/jhu-clsp/kreyol-mt
+    downloads: 1370
+    likes: 9
+  - name: Muennighoff/flores200
+    url: https://huggingface.co/datasets/Muennighoff/flores200
+    downloads: 968
+    likes: 18
+  - name: YuRiVeRTi/V1Q
+    url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
+    downloads: 670
+    likes: 3
+  - name: visheratin/laion-coco-nllb
+    url: https://huggingface.co/datasets/visheratin/laion-coco-nllb
+    downloads: 577
+    likes: 44
+  - name: mteb/FloresBitextMining
+    url: https://huggingface.co/datasets/mteb/FloresBitextMining
+    downloads: 343
+    likes: 1
+  - name: gtak1/panlex-meanings
+    url: https://huggingface.co/datasets/gtak1/panlex-meanings
+    downloads: 268
+    likes: 0
+  - name: FrancophonIA/gatitos
+    url: https://huggingface.co/datasets/FrancophonIA/gatitos
+    downloads: 266
+    likes: 4
+  - name: slone/nllb-200-10M-sample
+    url: https://huggingface.co/datasets/slone/nllb-200-10M-sample
+    downloads: 136
+    likes: 13
+  - name: community-datasets/udhr
+    url: https://huggingface.co/datasets/community-datasets/udhr
+    downloads: 102
+    likes: 2
+  - name: FrancophonIA/Dictionnaire_sango-francais
+    url: https://huggingface.co/datasets/FrancophonIA/Dictionnaire_sango-francais
+    downloads: 96
+    likes: 0
+  - name: ymoslem/Tatoeba-Translations
+    url: https://huggingface.co/datasets/ymoslem/Tatoeba-Translations
+    downloads: 87
+    likes: 3
+  - name: FrancophonIA/Sango_langue_commerciale
+    url: https://huggingface.co/datasets/FrancophonIA/Sango_langue_commerciale
+    downloads: 87
+    likes: 0
+  - name: mteb/flores
+    url: https://huggingface.co/datasets/mteb/flores
+    downloads: 80
+    likes: 0
+  - name: Helsinki-NLP/qed_amara
+    url: https://huggingface.co/datasets/Helsinki-NLP/qed_amara
+    downloads: 71
+    likes: 5
+  - name: cis-lmu/GlotStoryBook
+    url: https://huggingface.co/datasets/cis-lmu/GlotStoryBook
+    downloads: 48
+    likes: 7
+  - name: dijihax/Dataset
+    url: https://huggingface.co/datasets/dijihax/Dataset
+    downloads: 17
+    likes: 2
+  - name: neulab/PangeaBench-flores
+    url: https://huggingface.co/datasets/neulab/PangeaBench-flores
+    downloads: 16
+    likes: 0
+  - name: SupriyoCode/flores200
+    url: https://huggingface.co/datasets/SupriyoCode/flores200
+    downloads: 16
+    likes: 0
+  - name: vpermilp/nllb-200-distilled-600M-rust
+    url: https://huggingface.co/datasets/vpermilp/nllb-200-distilled-600M-rust
+    downloads: 15
+    likes: 1
+  - name: robinhad/long_flores
+    url: https://huggingface.co/datasets/robinhad/long_flores
+    downloads: 13
+    likes: 0
+  - name: Svngoku/xP3x-Kongo
+    url: https://huggingface.co/datasets/Svngoku/xP3x-Kongo
+    downloads: 12
+    likes: 4
+  - name: Bretagne/PolyWrite_clean
+    url: https://huggingface.co/datasets/Bretagne/PolyWrite_clean
+    downloads: 6
+    likes: 0
+  total_count: 27
+  counts_by_code:
+    sg: 16
+    sag: 11

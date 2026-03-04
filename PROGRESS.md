@@ -36,9 +36,9 @@ Automated fetching of HuggingFace models/datasets, Common Voice stats, and Wikip
 
 | Done | Target | Progress                 |
 |------|--------|--------------------------|
-| 33   | 20     | ████████████████████ 165% |
+| 34   | 20     | ████████████████████ 170% |
 
-**Focus languages (33):**
+**Focus languages (34):**
 
 *Focus 1 — UNICEF country office survey (10):*
 - Hausa (hau), Mende (men), Bambara (bam), Ewe (ewe), Fang (fan), Liberian Koloqua (lir), Shuwa Arabic (shu), Mooré (mos), Fon (fon), Guinea-Bissau Creole (pov)
@@ -50,7 +50,7 @@ Automated fetching of HuggingFace models/datasets, Common Voice stats, and Wikip
 - Yoruba (yor), Igbo (ibo), Wolof (wol), Fulfulde (ful), Krio (kri), Temne (tem), Ga (gaa), Kanuri (kau), Congo Swahili (swc), Lingala (lin), Sango (sag), Mandinka (mnk), Akan (aka), Pular (fuf)
 
 *Focus 4 — Additional Fulfulde variants and Niger/Mali languages (4):*
-- Fulfulde Maasina (ffm), Fulfulde Adamawa (fub), Koyraboro Senni (ses), Toro So Dogon (dts)
+- Fulfulde Maasina (ffm), Fulfulde Adamawa (fub), , Nigerian Fulfulde (fuv), Koyraboro Senni (ses), Toro So Dogon (dts)
 
 ### 1.3 Actor Directory
 Profiles of organizations, research groups, and startups working on African language technology.
@@ -139,39 +139,13 @@ Compile existing benchmark results (FLORES, FLEURS, Common Voice, published pape
 - [x] Initial TTS data: CLEAR Global TWB Voice TTS (Hausa, Kanuri) — scores entered
 - [x] PazaBench ASR results compiled (52 models, 39 African languages, CER+WER) — 7 focus languages covered: ful, hau, ibo, lin, twi, wol, yor
 - [x] Compile LLM benchmarks: AfroBench-Lite scores (24 models, 5 focus languages: hau, ibo, lin, wol, yor)
-- [ ] Compile ASR benchmarks (more Whisper variants, MMS, wav2vec2, etc.)
 - [x] Compile MT benchmarks: AfriNLLB + NLLB-600M baseline (FLORES-200 BLEU/chrF, 4 focus langs: hau, yor, lin, wol)
-- [x] Compile MT benchmarks: NLLB/FLORES (hau, ibo, yor, mos, bam, aka), MAFAND-MT (9 focus langs), MADLAD-400 (14 focus langs), AfriNLLB
+- [x] Compile MT benchmarks: NLLB/FLORES (hau, ibo, yor, mos, bam, aka), MAFAND-MT (9 focus langs), MADLAD-400 (14 langs, 3 test sets, fully verified), AfriNLLB
 - [ ] Compile MT benchmarks (more: Seamless etc.)
 - [ ] Compile TTS benchmarks (more models)
 - [ ] Gap analysis: which languages lack benchmarks
 - [ ] Conducting benchmark analyses where needed and possible
 - [x] **Webpage feature:** "Sources" tab on website — unified sortable table of all data and benchmark sources with type badges, focus languages, and status (`Research/sources.yaml`)
-
-### Benchmark Data Sources — Tracking
-
-**Canonical source list:** `Research/sources.yaml` (rendered on the live site's Sources tab).
-
-**Summary:** 16 benchmark sources included, 1 to extract, 3 noted. See `sources.yaml` for full details.
-
-**Remaining work:**
-- **Omnilingual ASR** (Meta): 25 focus langs covered. Priority: run evals for langs with no other ASR benchmarks. Status: TO_EXTRACT.
-- **Seamless** (Meta): Limited WCA coverage (ful, yor, ibo). Status: NOTED.
-- **BLOOM/BLOOMZ**: Has eval results dataset on HF. Status: NOTED.
-- **LLaMAX**: FLORES-101 translation evals. Status: NOTED.
-
-### Papers downloaded (in `Project documents/`, not in repo)
-
-- `afriquellm.pdf` — AfriqueLLM (McGill-NLP, 2026)
-- `sahara.pdf` — Sahara benchmark (UBC-NLP, ACL 2025)
-- `simbabench.pdf` — SimbaBench / Voice of a Continent (UBC-NLP, EMNLP 2025)
-- `irokobench.pdf` — IrokoBench (Adelani et al., 2024)
-- `afrobench.pdf` — AfroBench (McGill-NLP)
-- `afrimcqa.pdf` — AfriMCQA
-- `afrimteb_e5.pdf` — AfriMTEB
-- `waxal-paper.pdf` — WAXAL
-- `kreyolMT.pdf` — Kreyol-MT
-- `omnilingual-paper.pdf` — Omnilingual
 
 ---
 
@@ -214,9 +188,13 @@ Advisory support for actor selection, agenda input, and presentation of findings
 
 ## Recent Updates
 
+### 2026-03-04
+- **Translation datasets added to HuggingFace fetching:** Dataset scraping previously only covered ASR and TTS task categories. Added `translation` task category to `populate_research.py`, `htmlgen/pages.py` (language detail pages), and `generate_docs.py` (DOCX output). All focus languages now have MT datasets populated.
+- **MADLAD-400 fully parsed and verified:** All 4 tables extracted from PDF — Table 16 (GATONES), Table 17 (FLORES-200), Table 18 (Flores-200 direct, skipped — subset of Table 17), Table 19 (NTREX). Fixed 6 wrong NTL baseline values Gemini had confused between models. 14 focus languages (bam, dyu, ewe, ful, twi, kri, fon, hau, ibo, yor, wol, lin, sag, mos), 6 models (MT-3B, MT-7.2B, MT-10.7B, LM-8B, NTL-1.6B, NTL-6.4B), up to 3 test sets per language. BLEU + chrF in both directions.
+
 ### 2026-03-03
-- **Sahara LLM benchmarks extracted:** Scores now populated in `Source data/Evaluations/sahara_llm.yaml` (previously placeholder with null values). 10 focus languages (hau, yor, ibo, wol, lin, fon, bam, mos, ewe, twi), 24 models, 16 NLP tasks across 4 clusters.
-- **MADLAD-400 MT benchmarks extracted:** `Source data/Evaluations/madlad.yaml` — translation BLEU scores for 14 focus languages (hau, ibo, yor, wol, ewe, lin, sag, aka, fon, dyu, bam, kri, ffm, ful).
+- **Sahara LLM benchmarks fully extracted:** Scores populated in `Source data/Evaluations/sahara_llm.yaml` from PDF paper tables. 10 focus languages (hau, yor, ibo, wol, lin, fon, bam, mos, ewe, twi), 24 models, 16 NLP tasks across 4 clusters.
+- **MADLAD-400 MT benchmarks initial extraction:** `Source data/Evaluations/madlad.yaml` created (via Gemini, with errors — corrected on 2026-03-04).
 - Both sources marked as `included` in `Research/sources.yaml`.
 - **PROGRESS.md benchmark table overhauled** to match actual `sources.yaml` state. Several sources (Bambara ASR, NLLB/FLORES, MMS, Goldfish, MAFAND-MT) were already included but incorrectly listed as "noted" or "not yet investigated".
 - **URLs corrected:** Repo and live site URLs updated from translatorswb → UNICEF-Ventures across CLAUDE.md and PROGRESS.md.

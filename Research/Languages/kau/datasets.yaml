@@ -2,19 +2,19 @@ asr:
   items:
   - name: YuRiVeRTi/V1Q
     url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 620
+    downloads: 670
     likes: 3
   - name: CLEAR-Global/TWB-Voice-1.0
     url: https://huggingface.co/datasets/CLEAR-Global/TWB-Voice-1.0
-    downloads: 192
+    downloads: 223
     likes: 0
   - name: dijihax/Dataset
     url: https://huggingface.co/datasets/dijihax/Dataset
-    downloads: 16
+    downloads: 17
     likes: 2
   - name: lenoxaugo254/LenoxAI
     url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
-    downloads: 5
+    downloads: 6
     likes: 1
   total_count: 4
   counts_by_code:
@@ -23,21 +23,95 @@ tts:
   items:
   - name: YuRiVeRTi/V1Q
     url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 620
+    downloads: 670
     likes: 3
-  - name: dijihax/Dataset
-    url: https://huggingface.co/datasets/dijihax/Dataset
-    downloads: 16
-    likes: 2
   - name: CLEAR-Global/TWB-voice-TTS-Kanuri-1.0-sampleset
     url: https://huggingface.co/datasets/CLEAR-Global/TWB-voice-TTS-Kanuri-1.0-sampleset
-    downloads: 11
+    downloads: 26
     likes: 0
+  - name: dijihax/Dataset
+    url: https://huggingface.co/datasets/dijihax/Dataset
+    downloads: 17
+    likes: 2
   - name: lenoxaugo254/LenoxAI
     url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
-    downloads: 5
+    downloads: 6
     likes: 1
   total_count: 5
   counts_by_code:
     kr: 4
     kau: 1
+translation:
+  items:
+  - name: CohereLabs/aya_collection
+    url: https://huggingface.co/datasets/CohereLabs/aya_collection
+    downloads: 4000
+    likes: 232
+  - name: google/smol
+    url: https://huggingface.co/datasets/google/smol
+    downloads: 2130
+    likes: 89
+  - name: ayymen/Weblate-Translations
+    url: https://huggingface.co/datasets/ayymen/Weblate-Translations
+    downloads: 690
+    likes: 16
+  - name: YuRiVeRTi/V1Q
+    url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
+    downloads: 670
+    likes: 3
+  - name: FrancophonIA/gatitos
+    url: https://huggingface.co/datasets/FrancophonIA/gatitos
+    downloads: 266
+    likes: 4
+  - name: Helsinki-NLP/opus_gnome
+    url: https://huggingface.co/datasets/Helsinki-NLP/opus_gnome
+    downloads: 240
+    likes: 1
+  - name: slone/nllb-200-10M-sample
+    url: https://huggingface.co/datasets/slone/nllb-200-10M-sample
+    downloads: 136
+    likes: 13
+  - name: community-datasets/udhr
+    url: https://huggingface.co/datasets/community-datasets/udhr
+    downloads: 102
+    likes: 2
+  - name: janavivekariya/aya_collection
+    url: https://huggingface.co/datasets/janavivekariya/aya_collection
+    downloads: 91
+    likes: 0
+  - name: Helsinki-NLP/qed_amara
+    url: https://huggingface.co/datasets/Helsinki-NLP/qed_amara
+    downloads: 71
+    likes: 5
+  - name: CLEAR-Global/Gamayun-kits
+    url: https://huggingface.co/datasets/CLEAR-Global/Gamayun-kits
+    downloads: 54
+    likes: 2
+  - name: cis-lmu/GlotStoryBook
+    url: https://huggingface.co/datasets/cis-lmu/GlotStoryBook
+    downloads: 48
+    likes: 7
+  - name: dijihax/Dataset
+    url: https://huggingface.co/datasets/dijihax/Dataset
+    downloads: 17
+    likes: 2
+  - name: qianstats/multimodal_low-resource_language_translation
+    url: https://huggingface.co/datasets/qianstats/multimodal_low-resource_language_translation
+    downloads: 14
+    likes: 0
+  - name: FrancophonIA/DiLAF
+    url: https://huggingface.co/datasets/FrancophonIA/DiLAF
+    downloads: 9
+    likes: 0
+  - name: lenoxaugo254/LenoxAI
+    url: https://huggingface.co/datasets/lenoxaugo254/LenoxAI
+    downloads: 6
+    likes: 1
+  - name: Bretagne/PolyWrite_clean
+    url: https://huggingface.co/datasets/Bretagne/PolyWrite_clean
+    downloads: 6
+    likes: 0
+  total_count: 17
+  counts_by_code:
+    kr: 12
+    kau: 5

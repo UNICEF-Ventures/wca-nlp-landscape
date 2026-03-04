@@ -2,7 +2,7 @@ asr:
   items:
   - name: espnet/xeus
     url: https://huggingface.co/espnet/xeus
-    downloads: 23
+    downloads: 43
     likes: 144
   total_count: 1
   counts_by_code:
@@ -17,11 +17,11 @@ llm:
   items:
   - name: UBC-NLP/toucan-base
     url: https://huggingface.co/UBC-NLP/toucan-base
-    downloads: 64
+    downloads: 57
     likes: 5
   - name: UBC-NLP/toucan-1.2B
     url: https://huggingface.co/UBC-NLP/toucan-1.2B
-    downloads: 12
+    downloads: 13
     likes: 1
   - name: UBC-NLP/cheetah-1.2B
     url: https://huggingface.co/UBC-NLP/cheetah-1.2B

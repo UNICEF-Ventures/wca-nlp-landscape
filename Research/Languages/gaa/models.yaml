@@ -2,11 +2,11 @@ asr:
   items:
   - name: espnet/xeus
     url: https://huggingface.co/espnet/xeus
-    downloads: 23
+    downloads: 43
     likes: 144
   - name: UBC-NLP/Simba-SLID-49
     url: https://huggingface.co/UBC-NLP/Simba-SLID-49
-    downloads: 5
+    downloads: 7
     likes: 0
   - name: AyikuBen/whisper-ga-finetuned-demo
     url: https://huggingface.co/AyikuBen/whisper-ga-finetuned-demo
@@ -22,19 +22,15 @@ translation:
   items:
   - name: Helsinki-NLP/opus-mt-en-gaa
     url: https://huggingface.co/Helsinki-NLP/opus-mt-en-gaa
-    downloads: 29
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-es-gaa
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-es-gaa
-    downloads: 23
+    downloads: 20
     likes: 0
   - name: Helsinki-NLP/opus-mt-gaa-sv
     url: https://huggingface.co/Helsinki-NLP/opus-mt-gaa-sv
-    downloads: 20
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-gaa-fr
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-gaa-fr
     downloads: 16
+    likes: 0
+  - name: Helsinki-NLP/opus-mt-es-gaa
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-es-gaa
+    downloads: 14
     likes: 0
   - name: Helsinki-NLP/opus-mt-fr-gaa
     url: https://huggingface.co/Helsinki-NLP/opus-mt-fr-gaa
@@ -48,9 +44,9 @@ translation:
     url: https://huggingface.co/Helsinki-NLP/opus-mt-de-gaa
     downloads: 11
     likes: 0
-  - name: Helsinki-NLP/opus-mt-gaa-es
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-gaa-es
-    downloads: 10
+  - name: Helsinki-NLP/opus-mt-gaa-fr
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-gaa-fr
+    downloads: 11
     likes: 0
   - name: Helsinki-NLP/opus-mt-gaa-en
     url: https://huggingface.co/Helsinki-NLP/opus-mt-gaa-en
@@ -58,20 +54,20 @@ translation:
     likes: 0
   - name: Helsinki-NLP/opus-mt-gaa-de
     url: https://huggingface.co/Helsinki-NLP/opus-mt-gaa-de
-    downloads: 5
+    downloads: 4
     likes: 0
   - name: Helsinki-NLP/opus-mt-sv-gaa
     url: https://huggingface.co/Helsinki-NLP/opus-mt-sv-gaa
     downloads: 4
     likes: 0
+  - name: Helsinki-NLP/opus-mt-gaa-es
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-gaa-es
+    downloads: 3
+    likes: 0
   - name: Helsinki-NLP/opus-mt-gaa-fi
     url: https://huggingface.co/Helsinki-NLP/opus-mt-gaa-fi
     downloads: 3
     likes: 0
-  - name: McGill-NLP/ssa-comet-mtl
-    url: https://huggingface.co/McGill-NLP/ssa-comet-mtl
-    downloads: 0
-    likes: 3
   - name: masakhane/africomet-stl-1.1
     url: https://huggingface.co/masakhane/africomet-stl-1.1
     downloads: 0
@@ -80,6 +76,10 @@ translation:
     url: https://huggingface.co/masakhane/africomet-qe-stl-1.1
     downloads: 0
     likes: 4
+  - name: McGill-NLP/ssa-comet-mtl
+    url: https://huggingface.co/McGill-NLP/ssa-comet-mtl
+    downloads: 0
+    likes: 3
   - name: McGill-NLP/ssa-comet-stl
     url: https://huggingface.co/McGill-NLP/ssa-comet-stl
     downloads: 0
@@ -95,7 +95,7 @@ llm:
   items:
   - name: ghananlpcommunity/opani-chat_1b-merged-16bit
     url: https://huggingface.co/ghananlpcommunity/opani-chat_1b-merged-16bit
-    downloads: 2
+    downloads: 1
     likes: 0
   total_count: 1
   counts_by_code:

@@ -2,31 +2,31 @@ asr:
   items:
   - name: MahmoudAshraf/mms-300m-1130-forced-aligner
     url: https://huggingface.co/MahmoudAshraf/mms-300m-1130-forced-aligner
-    downloads: 2730000
-    likes: 73
+    downloads: 2990000
+    likes: 74
   - name: facebook/mms-1b-all
     url: https://huggingface.co/facebook/mms-1b-all
-    downloads: 34700
+    downloads: 338000
     likes: 189
   - name: facebook/mms-1b-fl102
     url: https://huggingface.co/facebook/mms-1b-fl102
-    downloads: 5740
+    downloads: 6720
     likes: 29
   - name: facebook/mms-1b-l1107
     url: https://huggingface.co/facebook/mms-1b-l1107
-    downloads: 426
+    downloads: 652
     likes: 11
   - name: eesungkim/stt_kr_conformer_transducer_large
     url: https://huggingface.co/eesungkim/stt_kr_conformer_transducer_large
-    downloads: 40
+    downloads: 50
     likes: 10
   - name: bc7ec356/heep-universal
     url: https://huggingface.co/bc7ec356/heep-universal
-    downloads: 39
+    downloads: 23
     likes: 0
   - name: hyyoka/wav2vec2-xlsr-korean-senior
     url: https://huggingface.co/hyyoka/wav2vec2-xlsr-korean-senior
-    downloads: 21
+    downloads: 20
     likes: 0
   - name: CLEAR-Global/whisper-small-clearglobal-kanuri-asr-1.0.0
     url: https://huggingface.co/CLEAR-Global/whisper-small-clearglobal-kanuri-asr-1.0.0
@@ -34,7 +34,7 @@ asr:
     likes: 0
   - name: CLEAR-Global/w2v-bert-2.0-clearglobal-kanuri-asr-1.0.0
     url: https://huggingface.co/CLEAR-Global/w2v-bert-2.0-clearglobal-kanuri-asr-1.0.0
-    downloads: 6
+    downloads: 13
     likes: 0
   - name: ypluit/stt_kr_citrinet1024_PublicCallCenter_1000H_0.22
     url: https://huggingface.co/ypluit/stt_kr_citrinet1024_PublicCallCenter_1000H_0.22
@@ -48,10 +48,6 @@ asr:
     url: https://huggingface.co/ypluit/stt_kr_citrinet1024_PublicCallCenter_1000H
     downloads: 2
     likes: 0
-  - name: ypluit/stt_kr_citrinet1024_PublicCallCenter_1000H_0.26
-    url: https://huggingface.co/ypluit/stt_kr_citrinet1024_PublicCallCenter_1000H_0.26
-    downloads: 2
-    likes: 0
   - name: Jungwonchang/whisper_finetune_ksponspeech_partial
     url: https://huggingface.co/Jungwonchang/whisper_finetune_ksponspeech_partial
     downloads: 1
@@ -60,12 +56,16 @@ asr:
     url: https://huggingface.co/Jungwonchang/whisper_finetune_ksponspeech_partial_40epoch
     downloads: 1
     likes: 0
+  - name: Jungwonchang/whisper_finetune_ksponspeech_2000steps
+    url: https://huggingface.co/Jungwonchang/whisper_finetune_ksponspeech_2000steps
+    downloads: 1
+    likes: 0
   - name: byungkyu/sc_onnx
     url: https://huggingface.co/byungkyu/sc_onnx
     downloads: 1
     likes: 0
-  - name: Jungwonchang/whisper_finetune_ksponspeech_2000steps
-    url: https://huggingface.co/Jungwonchang/whisper_finetune_ksponspeech_2000steps
+  - name: ypluit/stt_kr_citrinet1024_PublicCallCenter_1000H_0.26
+    url: https://huggingface.co/ypluit/stt_kr_citrinet1024_PublicCallCenter_1000H_0.26
     downloads: 0
     likes: 0
   - name: doongsae/whisper_finetuning
@@ -96,34 +96,30 @@ tts:
     kau: 1
 translation:
   items:
-  - name: Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_nld
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_nld
-    downloads: 167
-    likes: 2
   - name: Helsinki-NLP/opus-mt-tc-bible-big-mul-mul
     url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-mul
-    downloads: 135
+    downloads: 224
     likes: 10
+  - name: Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_nld
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_nld
+    downloads: 181
+    likes: 2
   - name: Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-mul
     url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-mul
-    downloads: 40
+    downloads: 179
     likes: 1
-  - name: Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_fra_por_spa
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_fra_por_spa
-    downloads: 7
-    likes: 2
   - name: vonjack/opus-mt-mul-en-big
     url: https://huggingface.co/vonjack/opus-mt-mul-en-big
-    downloads: 4
+    downloads: 28
     likes: 3
+  - name: Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_fra_por_spa
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_fra_por_spa
+    downloads: 8
+    likes: 2
   - name: slone/nllb-pruned-6L-512d-finetuned
     url: https://huggingface.co/slone/nllb-pruned-6L-512d-finetuned
     downloads: 3
     likes: 6
-  - name: McGill-NLP/ssa-comet-mtl
-    url: https://huggingface.co/McGill-NLP/ssa-comet-mtl
-    downloads: 0
-    likes: 3
   - name: masakhane/africomet-stl-1.1
     url: https://huggingface.co/masakhane/africomet-stl-1.1
     downloads: 0
@@ -132,6 +128,10 @@ translation:
     url: https://huggingface.co/masakhane/africomet-qe-stl-1.1
     downloads: 0
     likes: 4
+  - name: McGill-NLP/ssa-comet-mtl
+    url: https://huggingface.co/McGill-NLP/ssa-comet-mtl
+    downloads: 0
+    likes: 3
   - name: McGill-NLP/ssa-comet-stl
     url: https://huggingface.co/McGill-NLP/ssa-comet-stl
     downloads: 0
@@ -148,51 +148,51 @@ llm:
   items:
   - name: SEOKDONG/gpt-oss-safeguard-20b-kor-enterprise-gptq-4bit
     url: https://huggingface.co/SEOKDONG/gpt-oss-safeguard-20b-kor-enterprise-gptq-4bit
-    downloads: 95
-    likes: 1
+    downloads: 132
+    likes: 2
   - name: UBC-NLP/toucan-base
     url: https://huggingface.co/UBC-NLP/toucan-base
-    downloads: 64
+    downloads: 57
     likes: 5
   - name: SEOKDONG/gpt-oss-safeguard-20b-kor-enterprise
     url: https://huggingface.co/SEOKDONG/gpt-oss-safeguard-20b-kor-enterprise
-    downloads: 57
+    downloads: 56
     likes: 4
   - name: Kolyadual/Newton-bot-3-text-mini-8B
     url: https://huggingface.co/Kolyadual/Newton-bot-3-text-mini-8B
-    downloads: 34
+    downloads: 22
     likes: 1
   - name: ZeppelinCorp/Charm_15
     url: https://huggingface.co/ZeppelinCorp/Charm_15
-    downloads: 13
+    downloads: 19
     likes: 0
   - name: UBC-NLP/toucan-1.2B
     url: https://huggingface.co/UBC-NLP/toucan-1.2B
-    downloads: 12
+    downloads: 13
     likes: 1
-  - name: goldfish-models/knc_arab_100mb
-    url: https://huggingface.co/goldfish-models/knc_arab_100mb
-    downloads: 6
-    likes: 0
   - name: goldfish-models/knc_arab_5mb
     url: https://huggingface.co/goldfish-models/knc_arab_5mb
-    downloads: 6
+    downloads: 13
     likes: 0
-  - name: goldfish-models/knc_latn_10mb
-    url: https://huggingface.co/goldfish-models/knc_latn_10mb
-    downloads: 3
+  - name: goldfish-models/knc_arab_100mb
+    url: https://huggingface.co/goldfish-models/knc_arab_100mb
+    downloads: 11
     likes: 0
   - name: goldfish-models/knc_latn_5mb
     url: https://huggingface.co/goldfish-models/knc_latn_5mb
-    downloads: 3
-    likes: 0
-  - name: goldfish-models/knc_arab_full
-    url: https://huggingface.co/goldfish-models/knc_arab_full
-    downloads: 2
+    downloads: 10
     likes: 0
   - name: goldfish-models/knc_arab_10mb
     url: https://huggingface.co/goldfish-models/knc_arab_10mb
-    downloads: 2
+    downloads: 9
+    likes: 0
+  - name: goldfish-models/knc_latn_10mb
+    url: https://huggingface.co/goldfish-models/knc_latn_10mb
+    downloads: 9
+    likes: 0
+  - name: goldfish-models/knc_arab_full
+    url: https://huggingface.co/goldfish-models/knc_arab_full
+    downloads: 1
     likes: 0
   - name: goldfish-models/knc_latn_full
     url: https://huggingface.co/goldfish-models/knc_latn_full
@@ -214,11 +214,15 @@ llm:
     url: https://huggingface.co/GlemVNT/VNT-3.5F-16K
     downloads: 0
     likes: 0
+  - name: LumieraLM/Lumiera_v2
+    url: https://huggingface.co/LumieraLM/Lumiera_v2
+    downloads: 0
+    likes: 0
   - name: UBC-NLP/cheetah-1.2B
     url: https://huggingface.co/UBC-NLP/cheetah-1.2B
     downloads: 0
     likes: 4
-  total_count: 18
+  total_count: 19
   counts_by_code:
-    kr: 8
+    kr: 9
     kau: 10

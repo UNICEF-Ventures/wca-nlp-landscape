@@ -498,6 +498,7 @@ def process_language(iso_639_3, cv_data, grid_data, all_evaluations, model_cover
 
         asr_result = fetch_datasets_for_language(iso_639_1, iso_639_3, 'automatic-speech-recognition')
         tts_result = fetch_datasets_for_language(iso_639_1, iso_639_3, 'text-to-speech')
+        mt_result = fetch_datasets_for_language(iso_639_1, iso_639_3, 'translation')
 
         datasets_data = {
             'asr': {
@@ -509,6 +510,11 @@ def process_language(iso_639_3, cv_data, grid_data, all_evaluations, model_cover
                 'items': tts_result['items'],
                 'total_count': tts_result['total_count'],
                 'counts_by_code': tts_result.get('counts_by_code', {}),
+            },
+            'translation': {
+                'items': mt_result['items'],
+                'total_count': mt_result['total_count'],
+                'counts_by_code': mt_result.get('counts_by_code', {}),
             },
         }
 

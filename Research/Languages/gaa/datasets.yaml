@@ -2,11 +2,11 @@ asr:
   items:
   - name: UBC-NLP/SimbaBench_dataset
     url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
-    downloads: 45
-    likes: 1
+    downloads: 64
+    likes: 0
   - name: ghananlpcommunity/ga-speech-text-parallel-90k
     url: https://huggingface.co/datasets/ghananlpcommunity/ga-speech-text-parallel-90k
-    downloads: 15
+    downloads: 10
     likes: 0
   total_count: 2
   counts_by_code:
@@ -15,12 +15,45 @@ tts:
   items:
   - name: UBC-NLP/SimbaBench_dataset
     url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
-    downloads: 45
-    likes: 1
+    downloads: 64
+    likes: 0
   - name: ghananlpcommunity/ga-speech-text-parallel-90k
     url: https://huggingface.co/datasets/ghananlpcommunity/ga-speech-text-parallel-90k
-    downloads: 15
+    downloads: 10
     likes: 0
   total_count: 2
   counts_by_code:
     gaa: 2
+translation:
+  items:
+  - name: cointegrated/panlex-meanings
+    url: https://huggingface.co/datasets/cointegrated/panlex-meanings
+    downloads: 2490
+    likes: 12
+  - name: google/smol
+    url: https://huggingface.co/datasets/google/smol
+    downloads: 2130
+    likes: 89
+  - name: gtak1/panlex-meanings
+    url: https://huggingface.co/datasets/gtak1/panlex-meanings
+    downloads: 268
+    likes: 0
+  - name: FrancophonIA/gatitos
+    url: https://huggingface.co/datasets/FrancophonIA/gatitos
+    downloads: 266
+    likes: 4
+  - name: community-datasets/udhr
+    url: https://huggingface.co/datasets/community-datasets/udhr
+    downloads: 102
+    likes: 2
+  - name: cis-lmu/GlotStoryBook
+    url: https://huggingface.co/datasets/cis-lmu/GlotStoryBook
+    downloads: 48
+    likes: 7
+  - name: Bretagne/PolyWrite_clean
+    url: https://huggingface.co/datasets/Bretagne/PolyWrite_clean
+    downloads: 6
+    likes: 0
+  total_count: 7
+  counts_by_code:
+    gaa: 7

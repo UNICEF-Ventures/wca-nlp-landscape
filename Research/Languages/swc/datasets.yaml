@@ -4,3 +4,16 @@ asr:
 tts:
   total_count: 0
   counts_by_code: {}
+translation:
+  items:
+  - name: CLEAR-Global/Gamayun-kits
+    url: https://huggingface.co/datasets/CLEAR-Global/Gamayun-kits
+    downloads: 54
+    likes: 2
+  - name: SalomonMetre13/cd_multi_parallel_31k_v1
+    url: https://huggingface.co/datasets/SalomonMetre13/cd_multi_parallel_31k_v1
+    downloads: 38
+    likes: 0
+  total_count: 2
+  counts_by_code:
+    swc: 2

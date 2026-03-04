@@ -478,6 +478,7 @@ def generate_languages_doc(languages, actors):
         dataset_categories = {
             'asr': 'automatic-speech-recognition',
             'tts': 'text-to-speech',
+            'translation': 'translation',
         }
 
         for task_key, pipeline_tag in pipeline_tags.items():

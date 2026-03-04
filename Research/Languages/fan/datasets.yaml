@@ -4,3 +4,6 @@ asr:
 tts:
   total_count: 0
   counts_by_code: {}
+translation:
+  total_count: 0
+  counts_by_code: {}

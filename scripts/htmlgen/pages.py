@@ -354,6 +354,8 @@ def generate_language_detail_page(iso_code, lang_data, actors):
             {generate_datasets_table(datasets.get('asr', {}), limit=20, iso_639_1=iso1, iso_639_3=iso3, task_category='automatic-speech-recognition')}
             <h3 style="margin-top: 1rem;">TTS Datasets ({get_model_count(datasets.get('tts', {}))})</h3>
             {generate_datasets_table(datasets.get('tts', {}), limit=20, iso_639_1=iso1, iso_639_3=iso3, task_category='text-to-speech')}
+            <h3 style="margin-top: 1rem;">Translation Datasets ({get_model_count(datasets.get('translation', {}))})</h3>
+            {generate_datasets_table(datasets.get('translation', {}), limit=20, iso_639_1=iso1, iso_639_3=iso3, task_category='translation')}
         </div>
     </div>
 

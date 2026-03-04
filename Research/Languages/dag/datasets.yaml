@@ -2,8 +2,8 @@ asr:
   items:
   - name: google/WaxalNLP
     url: https://huggingface.co/datasets/google/WaxalNLP
-    downloads: 13500
-    likes: 147
+    downloads: 13700
+    likes: 149
   - name: novelwolde36/WaxalNLP
     url: https://huggingface.co/datasets/novelwolde36/WaxalNLP
     downloads: 104
@@ -39,8 +39,8 @@ tts:
   items:
   - name: google/WaxalNLP
     url: https://huggingface.co/datasets/google/WaxalNLP
-    downloads: 13500
-    likes: 147
+    downloads: 13700
+    likes: 149
   - name: novelwolde36/WaxalNLP
     url: https://huggingface.co/datasets/novelwolde36/WaxalNLP
     downloads: 104
@@ -72,3 +72,20 @@ tts:
   total_count: 8
   counts_by_code:
     dag: 8
+translation:
+  items:
+  - name: ayymen/Pontoon-Translations
+    url: https://huggingface.co/datasets/ayymen/Pontoon-Translations
+    downloads: 1480
+    likes: 18
+  - name: community-datasets/udhr
+    url: https://huggingface.co/datasets/community-datasets/udhr
+    downloads: 102
+    likes: 2
+  - name: cis-lmu/GlotStoryBook
+    url: https://huggingface.co/datasets/cis-lmu/GlotStoryBook
+    downloads: 48
+    likes: 7
+  total_count: 3
+  counts_by_code:
+    dag: 3

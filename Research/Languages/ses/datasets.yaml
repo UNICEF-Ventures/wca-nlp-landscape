@@ -4,3 +4,28 @@ asr:
 tts:
   total_count: 0
   counts_by_code: {}
+translation:
+  items:
+  - name: HuggingFaceFW/finetranslations
+    url: https://huggingface.co/datasets/HuggingFaceFW/finetranslations
+    downloads: 30600
+    likes: 272
+  - name: HuggingFaceFW/finetranslations-edu
+    url: https://huggingface.co/datasets/HuggingFaceFW/finetranslations-edu
+    downloads: 3020
+    likes: 25
+  - name: cointegrated/panlex-meanings
+    url: https://huggingface.co/datasets/cointegrated/panlex-meanings
+    downloads: 2490
+    likes: 12
+  - name: ayymen/Pontoon-Translations
+    url: https://huggingface.co/datasets/ayymen/Pontoon-Translations
+    downloads: 1480
+    likes: 18
+  - name: gtak1/panlex-meanings
+    url: https://huggingface.co/datasets/gtak1/panlex-meanings
+    downloads: 268
+    likes: 0
+  total_count: 5
+  counts_by_code:
+    ses: 5

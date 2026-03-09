@@ -5,7 +5,7 @@
 #   python scripts/populate_research.py              # Process all
 #   python scripts/populate_research.py --lang hau   # Process single language
 
-# UNICEF's confirmed priority list (14) - provided directly by country programmes
+# UNICEF's confirmed priority list (15) - provided directly by country programmes
 priority:
   - mos  # Mooré (Burkina Faso)
   - dyu  # Dyoula (Burkina Faso)

@@ -1,4 +1,174 @@
 evaluations:
+  llm:
+  - model: amazon/nova-pro-v1
+    model_url: https://openrouter.ai/amazon/nova-pro-v1
+    results:
+    - test_set: SIB-200 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: Classification Acc.
+        value: 100.0
+  - model: anthropic/claude-3.7-sonnet
+    model_url: https://openrouter.ai/anthropic/claude-3.7-sonnet
+    results:
+    - test_set: MMLU Synthetic 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: MMLU Acc.
+        value: 80.0
+  - model: anthropic/claude-opus-4.6
+    model_url: https://openrouter.ai/anthropic/claude-opus-4.6
+    results:
+    - test_set: MGSM Synthetic 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: MGSM Acc.
+        value: 87.5
+    - test_set: MMLU Synthetic 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: MMLU Acc.
+        value: 88.9
+  - model: anthropic/claude-sonnet-4.6
+    model_url: https://openrouter.ai/anthropic/claude-sonnet-4.6
+    results:
+    - test_set: ARC Synthetic 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: ARC Acc.
+        value: 100.0
+    - test_set: MGSM Synthetic 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: MGSM Acc.
+        value: 80.0
+  - model: baidu/ernie-4.5-300b-a47b
+    model_url: https://openrouter.ai/baidu/ernie-4.5-300b-a47b
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU en→sag
+        value: 7.4
+      - name: ChrF en→sag
+        value: 32.8
+      - name: SpBLEU sag→en
+        value: 3.4
+      - name: ChrF sag→en
+        value: 24.8
+  - model: deepseek/deepseek-v3.2-exp
+    model_url: https://openrouter.ai/deepseek/deepseek-v3.2-exp
+    results:
+    - test_set: ARC Synthetic 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: ARC Acc.
+        value: 100.0
+  - model: google/gemini-2.5-pro
+    model_url: https://openrouter.ai/google/gemini-2.5-pro
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU sag→en
+        value: 21.0
+      - name: ChrF sag→en
+        value: 39.7
+      - name: SpBLEU en→sag
+        value: 7.7
+      - name: ChrF en→sag
+        value: 33.2
+  - model: google/gemini-3-pro-preview
+    model_url: https://openrouter.ai/google/gemini-3-pro-preview
+    results:
+    - test_set: ARC Synthetic 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: ARC Acc.
+        value: 80.0
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU sag→en
+        value: 24.3
+      - name: ChrF sag→en
+        value: 46.6
+      - name: SpBLEU en→sag
+        value: 8.7
+      - name: ChrF en→sag
+        value: 31.1
+    - test_set: MGSM Synthetic 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: MGSM Acc.
+        value: 90.0
+    - test_set: MMLU Synthetic 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: MMLU Acc.
+        value: 80.0
+  - model: google/translate-v2
+    model_url: https://cloud.google.com/translate
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU sag→en
+        value: 17.5
+      - name: ChrF sag→en
+        value: 38.1
+      - name: SpBLEU en→sag
+        value: 9.3
+      - name: ChrF en→sag
+        value: 36.3
+  - model: openai/gpt-4o
+    model_url: https://openrouter.ai/openai/gpt-4o
+    results:
+    - test_set: SIB-200 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: Classification Acc.
+        value: 100.0
+  - model: openai/gpt-5
+    model_url: https://openrouter.ai/openai/gpt-5
+    results:
+    - test_set: SIB-200 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: Classification Acc.
+        value: 100.0
+  - model: google/madlad400-8b-lm
+    model_url: https://huggingface.co/google/madlad400-8b-lm
+    results:
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF (10-shot)
+      metrics:
+      - name: BLEU sag→eng
+        value: 2.7
+      - name: chrF sag→eng
+        value: 22.1
+      - name: BLEU eng→sag
+        value: 0.1
+      - name: chrF eng→sag
+        value: 5.3
   mt:
   - model: google/madlad400-3b-mt
     model_url: https://huggingface.co/google/madlad400-3b-mt
@@ -48,20 +218,3 @@ evaluations:
         value: 6.4
       - name: chrF eng→sag
         value: 30.7
-  llm:
-  - model: google/madlad400-8b-lm
-    model_url: https://huggingface.co/google/madlad400-8b-lm
-    results:
-    - test_set: FLORES-200
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
-      notes: Table 17 — BLEU/chrF (10-shot)
-      metrics:
-      - name: BLEU sag→eng
-        value: 2.7
-      - name: chrF sag→eng
-        value: 22.1
-      - name: BLEU eng→sag
-        value: 0.1
-      - name: chrF eng→sag
-        value: 5.3

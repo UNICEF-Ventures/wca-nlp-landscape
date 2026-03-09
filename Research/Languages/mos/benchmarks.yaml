@@ -1,54 +1,104 @@
 evaluations:
-  mt:
-  - model: google/madlad400-3b-mt
-    model_url: https://huggingface.co/google/madlad400-3b-mt
-    results:
-    - test_set: FLORES-200
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
-      notes: Table 17 — BLEU/chrF
-      metrics:
-      - name: BLEU mos→eng
-        value: 3.4
-      - name: chrF mos→eng
-        value: 23
-      - name: BLEU eng→mos
-        value: 0.9
-      - name: chrF eng→mos
-        value: 2.3
-  - model: google/madlad400-7.2b-mt
-    model_url: https://huggingface.co/google/madlad400-7.2b-mt
-    results:
-    - test_set: FLORES-200
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
-      notes: Table 17 — BLEU/chrF
-      metrics:
-      - name: BLEU mos→eng
-        value: 3.4
-      - name: chrF mos→eng
-        value: 22.4
-      - name: BLEU eng→mos
-        value: 1.2
-      - name: chrF eng→mos
-        value: 16.6
-  - model: google/madlad400-10.7b-mt
-    model_url: https://huggingface.co/google/madlad400-10.7b-mt
-    results:
-    - test_set: FLORES-200
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
-      notes: Table 17 — BLEU/chrF
-      metrics:
-      - name: BLEU mos→eng
-        value: 3.7
-      - name: chrF mos→eng
-        value: 24.1
-      - name: BLEU eng→mos
-        value: 0.8
-      - name: chrF eng→mos
-        value: 2.2
   llm:
+  - model: amazon/nova-pro-v1
+    model_url: https://openrouter.ai/amazon/nova-pro-v1
+    results:
+    - test_set: SIB-200 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: Classification Acc.
+        value: 100.0
+  - model: anthropic/claude-opus-4.5
+    model_url: https://openrouter.ai/anthropic/claude-opus-4.5
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU en→mos
+        value: 6.4
+      - name: ChrF en→mos
+        value: 32.5
+      - name: SpBLEU mos→en
+        value: 6.9
+      - name: ChrF mos→en
+        value: 29.4
+    - test_set: SIB-200 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: Classification Acc.
+        value: 100.0
+  - model: anthropic/claude-opus-4.6
+    model_url: https://openrouter.ai/anthropic/claude-opus-4.6
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU mos→en
+        value: 9.2
+      - name: ChrF mos→en
+        value: 30.3
+      - name: SpBLEU en→mos
+        value: 3.8
+      - name: ChrF en→mos
+        value: 32.8
+  - model: anthropic/claude-sonnet-4.5
+    model_url: https://openrouter.ai/anthropic/claude-sonnet-4.5
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU mos→en
+        value: 14.9
+      - name: ChrF mos→en
+        value: 31.3
+      - name: SpBLEU en→mos
+        value: 5.1
+      - name: ChrF en→mos
+        value: 24.0
+  - model: anthropic/claude-sonnet-4.6
+    model_url: https://openrouter.ai/anthropic/claude-sonnet-4.6
+    results:
+    - test_set: SIB-200 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: Classification Acc.
+        value: 100.0
+  - model: baidu/ernie-4.5-300b-a47b
+    model_url: https://openrouter.ai/baidu/ernie-4.5-300b-a47b
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU en→mos
+        value: 5.4
+      - name: ChrF en→mos
+        value: 30.8
+      - name: SpBLEU mos→en
+        value: 9.1
+      - name: ChrF mos→en
+        value: 27.9
+  - model: google/gemini-3-pro-preview
+    model_url: https://openrouter.ai/google/gemini-3-pro-preview
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU mos→en
+        value: 15.2
+      - name: ChrF mos→en
+        value: 38.7
+      - name: SpBLEU en→mos
+        value: 5.8
+      - name: ChrF en→mos
+        value: 30.3
   - model: google/madlad400-8b-lm
     model_url: https://huggingface.co/google/madlad400-8b-lm
     results:
@@ -486,3 +536,52 @@ evaluations:
         value: 0.08
       - name: NER F1
         value: 0.0
+  mt:
+  - model: google/madlad400-3b-mt
+    model_url: https://huggingface.co/google/madlad400-3b-mt
+    results:
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU mos→eng
+        value: 3.4
+      - name: chrF mos→eng
+        value: 23
+      - name: BLEU eng→mos
+        value: 0.9
+      - name: chrF eng→mos
+        value: 2.3
+  - model: google/madlad400-7.2b-mt
+    model_url: https://huggingface.co/google/madlad400-7.2b-mt
+    results:
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU mos→eng
+        value: 3.4
+      - name: chrF mos→eng
+        value: 22.4
+      - name: BLEU eng→mos
+        value: 1.2
+      - name: chrF eng→mos
+        value: 16.6
+  - model: google/madlad400-10.7b-mt
+    model_url: https://huggingface.co/google/madlad400-10.7b-mt
+    results:
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU mos→eng
+        value: 3.7
+      - name: chrF mos→eng
+        value: 24.1
+      - name: BLEU eng→mos
+        value: 0.8
+      - name: chrF eng→mos
+        value: 2.2

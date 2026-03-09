@@ -305,6 +305,93 @@ evaluations:
       metrics:
       - name: Accuracy
         value: 52.7
+  - model: baidu/ernie-4.5-300b-a47b
+    model_url: https://openrouter.ai/baidu/ernie-4.5-300b-a47b
+    results:
+    - test_set: SIB-200 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: Classification Acc.
+        value: 100.0
+  - model: deepseek/deepseek-v3.2-exp
+    model_url: https://openrouter.ai/deepseek/deepseek-v3.2-exp
+    results:
+    - test_set: SIB-200 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: Classification Acc.
+        value: 100.0
+  - model: google/gemini-2.5-flash
+    model_url: https://openrouter.ai/google/gemini-2.5-flash
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU wol→en
+        value: 18.1
+      - name: ChrF wol→en
+        value: 45.3
+      - name: SpBLEU en→wol
+        value: 10.4
+      - name: ChrF en→wol
+        value: 33.6
+  - model: google/gemini-2.5-pro
+    model_url: https://openrouter.ai/google/gemini-2.5-pro
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU wol→en
+        value: 21.3
+      - name: ChrF wol→en
+        value: 45.4
+      - name: SpBLEU en→wol
+        value: 11.4
+      - name: ChrF en→wol
+        value: 34.6
+  - model: google/gemini-3-pro-preview
+    model_url: https://openrouter.ai/google/gemini-3-pro-preview
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU wol→en
+        value: 32.3
+      - name: ChrF wol→en
+        value: 55.7
+      - name: SpBLEU en→wol
+        value: 13.5
+      - name: ChrF en→wol
+        value: 38.1
+  - model: openai/gpt-4.1
+    model_url: https://openrouter.ai/openai/gpt-4.1
+    results:
+    - test_set: SIB-200 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: Classification Acc.
+        value: 100.0
+  - model: openai/gpt-5.2
+    model_url: https://openrouter.ai/openai/gpt-5.2
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU en→wol
+        value: 11.7
+      - name: ChrF en→wol
+        value: 35.0
+      - name: SpBLEU wol→en
+        value: 12.0
+      - name: ChrF wol→en
+        value: 37.5
   - model: google/madlad400-8b-lm
     model_url: https://huggingface.co/google/madlad400-8b-lm
     results:

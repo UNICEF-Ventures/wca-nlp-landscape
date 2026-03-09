@@ -1,5 +1,122 @@
 evaluations:
   llm:
+  - model: anthropic/claude-3.7-sonnet
+    model_url: https://openrouter.ai/anthropic/claude-3.7-sonnet
+    results:
+    - test_set: SIB-200 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: Classification Acc.
+        value: 90.0
+  - model: anthropic/claude-opus-4.5
+    model_url: https://openrouter.ai/anthropic/claude-opus-4.5
+    results:
+    - test_set: SIB-200 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: Classification Acc.
+        value: 100.0
+  - model: anthropic/claude-opus-4.6
+    model_url: https://openrouter.ai/anthropic/claude-opus-4.6
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU fuv→en
+        value: 18.9
+      - name: ChrF fuv→en
+        value: 44.0
+      - name: SpBLEU en→fuv
+        value: 3.1
+      - name: ChrF en→fuv
+        value: 22.9
+  - model: anthropic/claude-sonnet-4
+    model_url: https://openrouter.ai/anthropic/claude-sonnet-4
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU en→fuv
+        value: 6.4
+      - name: ChrF en→fuv
+        value: 25.6
+      - name: SpBLEU fuv→en
+        value: 9.7
+      - name: ChrF fuv→en
+        value: 29.2
+  - model: anthropic/claude-sonnet-4.6
+    model_url: https://openrouter.ai/anthropic/claude-sonnet-4.6
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU fuv→en
+        value: 9.3
+      - name: ChrF fuv→en
+        value: 40.1
+      - name: SpBLEU en→fuv
+        value: 4.1
+      - name: ChrF en→fuv
+        value: 22.2
+  - model: baidu/ernie-4.5-300b-a47b
+    model_url: https://openrouter.ai/baidu/ernie-4.5-300b-a47b
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU en→fuv
+        value: 3.8
+      - name: ChrF en→fuv
+        value: 26.5
+      - name: SpBLEU fuv→en
+        value: 3.8
+      - name: ChrF fuv→en
+        value: 21.0
+  - model: google/gemini-2.5-pro
+    model_url: https://openrouter.ai/google/gemini-2.5-pro
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU en→fuv
+        value: 5.5
+      - name: ChrF en→fuv
+        value: 26.4
+      - name: SpBLEU fuv→en
+        value: 7.8
+      - name: ChrF fuv→en
+        value: 30.9
+  - model: google/gemini-3-pro-preview
+    model_url: https://openrouter.ai/google/gemini-3-pro-preview
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU fuv→en
+        value: 13.8
+      - name: ChrF fuv→en
+        value: 36.2
+      - name: SpBLEU en→fuv
+        value: 5.6
+      - name: ChrF en→fuv
+        value: 25.6
+  - model: meta-llama/llama-3.1-70b-instruct
+    model_url: https://openrouter.ai/meta-llama/llama-3.1-70b-instruct
+    results:
+    - test_set: SIB-200 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: Classification Acc.
+        value: 90.0
   - model: gemini-3-pro-preview
     results:
     - test_set: SAHARA

@@ -128,6 +128,34 @@ python scripts/generate_docs.py --actors
 
 Create `Research/Actors/{id}.yaml`. See existing files for the full schema (type, countries, languages, projects, publications, etc.). Languages listed in the actor's `languages` field will automatically appear on those language pages.
 
+## Standalone Data Scripts
+
+These scripts fetch or convert data from specific sources. They produce files in `Source data/Evaluations/` which then get distributed to languages when `populate_research.py` runs.
+
+**LanguageBench** — LLM evaluations across 200+ languages from the [AI Language Proficiency Monitor](https://huggingface.co/spaces/fair-forward/languagebench) (BMZ/GIZ/DFKI). Evaluates commercial APIs (GPT, Claude, Gemini) and open-weights models on translation, classification, QA, and math. Note: results are based on n=10 sentences per language, so treat with caution.
+
+```bash
+# Fetch latest results and write evaluation YAML (default: top 3 models per task)
+python scripts/fetch_languagebench.py
+
+# Top 5 models, custom output path
+python scripts/fetch_languagebench.py --top 5 -o custom.yaml
+```
+
+**SimbaBench parser** — Converts SimbaBench evaluation results into our YAML format.
+
+```bash
+python scripts/parse_simbabench.py
+```
+
+**African Language Grid converter** — One-time conversion of the African Language Grid Excel spreadsheet to YAML. Only needed if the source spreadsheet is updated.
+
+```bash
+python scripts/convert_african_grid.py
+```
+
+The `scripts/fetchers/` package contains modules used internally by `populate_research.py` (HuggingFace, Wikipedia, Common Voice, MMS, evaluations). These are not run directly.
+
 ## Structure
 
 ```

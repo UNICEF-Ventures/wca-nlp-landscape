@@ -119,6 +119,105 @@ evaluations:
       metrics:
       - name: Accuracy
         value: 45.0
+  - model: anthropic/claude-opus-4.6
+    model_url: https://openrouter.ai/anthropic/claude-opus-4.6
+    results:
+    - test_set: SIB-200 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: Classification Acc.
+        value: 100.0
+  - model: anthropic/claude-sonnet-4.5
+    model_url: https://openrouter.ai/anthropic/claude-sonnet-4.5
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU ewe→en
+        value: 16.0
+      - name: ChrF ewe→en
+        value: 41.3
+      - name: SpBLEU en→ewe
+        value: 12.1
+      - name: ChrF en→ewe
+        value: 37.4
+  - model: google/gemini-2.5-pro
+    model_url: https://openrouter.ai/google/gemini-2.5-pro
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU ewe→en
+        value: 15.6
+      - name: ChrF ewe→en
+        value: 43.2
+      - name: SpBLEU en→ewe
+        value: 15.4
+      - name: ChrF en→ewe
+        value: 43.5
+    - test_set: SIB-200 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: Classification Acc.
+        value: 100.0
+  - model: google/gemini-3-pro-preview
+    model_url: https://openrouter.ai/google/gemini-3-pro-preview
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU ewe→en
+        value: 24.0
+      - name: ChrF ewe→en
+        value: 48.3
+      - name: SpBLEU en→ewe
+        value: 16.1
+      - name: ChrF en→ewe
+        value: 44.6
+  - model: google/translate-v2
+    model_url: https://cloud.google.com/translate
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU en→ewe
+        value: 17.3
+      - name: ChrF en→ewe
+        value: 46.0
+      - name: SpBLEU ewe→en
+        value: 19.2
+      - name: ChrF ewe→en
+        value: 40.5
+  - model: meta-llama/llama-4-maverick
+    model_url: https://openrouter.ai/meta-llama/llama-4-maverick
+    results:
+    - test_set: SIB-200 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: Classification Acc.
+        value: 100.0
+  - model: openai/gpt-5
+    model_url: https://openrouter.ai/openai/gpt-5
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU en→ewe
+        value: 24.1
+      - name: ChrF en→ewe
+        value: 46.1
+      - name: SpBLEU ewe→en
+        value: 8.6
+      - name: ChrF ewe→en
+        value: 27.9
   - model: google/madlad400-8b-lm
     model_url: https://huggingface.co/google/madlad400-8b-lm
     results:

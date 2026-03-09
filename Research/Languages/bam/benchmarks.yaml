@@ -55,91 +55,172 @@ evaluations:
         value: 48.32
       - name: CER
         value: 14.81
-  mt:
-  - model: google/madlad400-3b-mt
-    model_url: https://huggingface.co/google/madlad400-3b-mt
-    results:
-    - test_set: GATONES
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
-      notes: Table 16 — BLEU/chrF
-      metrics:
-      - name: BLEU bam→eng
-        value: 11.9
-      - name: chrF bam→eng
-        value: 32.8
-      - name: BLEU eng→bam
-        value: 6.5
-      - name: chrF eng→bam
-        value: 28.5
-    - test_set: FLORES-200
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
-      notes: Table 17 — BLEU/chrF
-      metrics:
-      - name: BLEU bam→eng
-        value: 14.1
-      - name: chrF bam→eng
-        value: 37.1
-      - name: BLEU eng→bam
-        value: 4.9
-      - name: chrF eng→bam
-        value: 27.8
-  - model: google/madlad400-7.2b-mt
-    model_url: https://huggingface.co/google/madlad400-7.2b-mt
-    results:
-    - test_set: GATONES
-      notes: Table 16 — BLEU/chrF
-      metrics:
-      - name: BLEU bam→eng
-        value: 10.6
-      - name: chrF bam→eng
-        value: 31.7
-      - name: BLEU eng→bam
-        value: 6.1
-      - name: chrF eng→bam
-        value: 27.2
-    - test_set: FLORES-200
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
-      notes: Table 17 — BLEU/chrF
-      metrics:
-      - name: BLEU bam→eng
-        value: 12.9
-      - name: chrF bam→eng
-        value: 36.3
-      - name: BLEU eng→bam
-        value: 4.3
-      - name: chrF eng→bam
-        value: 26.8
-  - model: google/madlad400-10.7b-mt
-    model_url: https://huggingface.co/google/madlad400-10.7b-mt
-    results:
-    - test_set: GATONES
-      notes: Table 16 — BLEU/chrF
-      metrics:
-      - name: BLEU bam→eng
-        value: 12.6
-      - name: chrF bam→eng
-        value: 33.9
-      - name: BLEU eng→bam
-        value: 7.1
-      - name: chrF eng→bam
-        value: 30.5
-    - test_set: FLORES-200
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
-      notes: Table 17 — BLEU/chrF
-      metrics:
-      - name: BLEU bam→eng
-        value: 15.5
-      - name: chrF bam→eng
-        value: 39.4
-      - name: BLEU eng→bam
-        value: 5.7
-      - name: chrF eng→bam
-        value: 30.1
   llm:
+  - model: anthropic/claude-3.7-sonnet
+    model_url: https://openrouter.ai/anthropic/claude-3.7-sonnet
+    results:
+    - test_set: SIB-200 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: Classification Acc.
+        value: 100.0
+  - model: anthropic/claude-haiku-4.5
+    model_url: https://openrouter.ai/anthropic/claude-haiku-4.5
+    results:
+    - test_set: ARC Synthetic 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: ARC Acc.
+        value: 90.0
+  - model: anthropic/claude-opus-4.5
+    model_url: https://openrouter.ai/anthropic/claude-opus-4.5
+    results:
+    - test_set: ARC Synthetic 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: ARC Acc.
+        value: 90.0
+    - test_set: MGSM Synthetic 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: MGSM Acc.
+        value: 100.0
+    - test_set: MMLU Synthetic 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: MMLU Acc.
+        value: 90.0
+  - model: anthropic/claude-opus-4.6
+    model_url: https://openrouter.ai/anthropic/claude-opus-4.6
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU bam→en
+        value: 15.7
+      - name: ChrF bam→en
+        value: 43.0
+      - name: SpBLEU en→bam
+        value: 4.1
+      - name: ChrF en→bam
+        value: 33.6
+    - test_set: MGSM Synthetic 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: MGSM Acc.
+        value: 100.0
+    - test_set: MMLU Synthetic 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: MMLU Acc.
+        value: 90.0
+  - model: anthropic/claude-sonnet-4.6
+    model_url: https://openrouter.ai/anthropic/claude-sonnet-4.6
+    results:
+    - test_set: ARC Synthetic 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: ARC Acc.
+        value: 100.0
+  - model: baidu/ernie-4.5-300b-a47b
+    model_url: https://openrouter.ai/baidu/ernie-4.5-300b-a47b
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU en→bam
+        value: 5.9
+      - name: ChrF en→bam
+        value: 34.0
+      - name: SpBLEU bam→en
+        value: 5.9
+      - name: ChrF bam→en
+        value: 29.7
+    - test_set: SIB-200 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: Classification Acc.
+        value: 100.0
+  - model: google/gemini-2.5-flash
+    model_url: https://openrouter.ai/google/gemini-2.5-flash
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU bam→en
+        value: 13.7
+      - name: ChrF bam→en
+        value: 40.7
+      - name: SpBLEU en→bam
+        value: 5.6
+      - name: ChrF en→bam
+        value: 29.3
+  - model: google/gemini-2.5-pro
+    model_url: https://openrouter.ai/google/gemini-2.5-pro
+    results:
+    - test_set: MMLU Synthetic 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: MMLU Acc.
+        value: 90.0
+  - model: google/gemini-3-pro-preview
+    model_url: https://openrouter.ai/google/gemini-3-pro-preview
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU bam→en
+        value: 22.6
+      - name: ChrF bam→en
+        value: 46.5
+      - name: SpBLEU en→bam
+        value: 5.7
+      - name: ChrF en→bam
+        value: 33.1
+    - test_set: MGSM Synthetic 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: MGSM Acc.
+        value: 80.0
+  - model: openai/gpt-5
+    model_url: https://openrouter.ai/openai/gpt-5
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU en→bam
+        value: 7.4
+      - name: ChrF en→bam
+        value: 34.2
+      - name: SpBLEU bam→en
+        value: 8.1
+      - name: ChrF bam→en
+        value: 25.1
+  - model: openai/gpt-5-mini
+    model_url: https://openrouter.ai/openai/gpt-5-mini
+    results:
+    - test_set: SIB-200 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: Classification Acc.
+        value: 100.0
   - model: google/madlad400-8b-lm
     model_url: https://huggingface.co/google/madlad400-8b-lm
     results:
@@ -720,3 +801,87 @@ evaluations:
         value: 10.53
       - name: Sentiment F1
         value: 30.4
+  mt:
+  - model: google/madlad400-3b-mt
+    model_url: https://huggingface.co/google/madlad400-3b-mt
+    results:
+    - test_set: GATONES
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: BLEU bam→eng
+        value: 11.9
+      - name: chrF bam→eng
+        value: 32.8
+      - name: BLEU eng→bam
+        value: 6.5
+      - name: chrF eng→bam
+        value: 28.5
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU bam→eng
+        value: 14.1
+      - name: chrF bam→eng
+        value: 37.1
+      - name: BLEU eng→bam
+        value: 4.9
+      - name: chrF eng→bam
+        value: 27.8
+  - model: google/madlad400-7.2b-mt
+    model_url: https://huggingface.co/google/madlad400-7.2b-mt
+    results:
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: BLEU bam→eng
+        value: 10.6
+      - name: chrF bam→eng
+        value: 31.7
+      - name: BLEU eng→bam
+        value: 6.1
+      - name: chrF eng→bam
+        value: 27.2
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU bam→eng
+        value: 12.9
+      - name: chrF bam→eng
+        value: 36.3
+      - name: BLEU eng→bam
+        value: 4.3
+      - name: chrF eng→bam
+        value: 26.8
+  - model: google/madlad400-10.7b-mt
+    model_url: https://huggingface.co/google/madlad400-10.7b-mt
+    results:
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: BLEU bam→eng
+        value: 12.6
+      - name: chrF bam→eng
+        value: 33.9
+      - name: BLEU eng→bam
+        value: 7.1
+      - name: chrF eng→bam
+        value: 30.5
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU bam→eng
+        value: 15.5
+      - name: chrF bam→eng
+        value: 39.4
+      - name: BLEU eng→bam
+        value: 5.7
+      - name: chrF eng→bam
+        value: 30.1

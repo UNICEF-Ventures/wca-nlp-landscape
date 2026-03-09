@@ -9,6 +9,136 @@ common_voice:
   male_percent: 39.0
   female_percent: 30.0
 evaluations:
+  llm:
+  - model: anthropic/claude-opus-4.5
+    model_url: https://openrouter.ai/anthropic/claude-opus-4.5
+    results:
+    - test_set: SIB-200 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: Classification Acc.
+        value: 100.0
+  - model: anthropic/claude-opus-4.6
+    model_url: https://openrouter.ai/anthropic/claude-opus-4.6
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU dyu→en
+        value: 5.2
+      - name: ChrF dyu→en
+        value: 28.8
+      - name: SpBLEU en→dyu
+        value: 0.0
+      - name: ChrF en→dyu
+        value: 19.1
+  - model: anthropic/claude-sonnet-4
+    model_url: https://openrouter.ai/anthropic/claude-sonnet-4
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU en→dyu
+        value: 2.1
+      - name: ChrF en→dyu
+        value: 23.7
+      - name: SpBLEU dyu→en
+        value: 1.6
+      - name: ChrF dyu→en
+        value: 18.8
+  - model: anthropic/claude-sonnet-4.5
+    model_url: https://openrouter.ai/anthropic/claude-sonnet-4.5
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU en→dyu
+        value: 2.3
+      - name: ChrF en→dyu
+        value: 23.5
+      - name: SpBLEU dyu→en
+        value: 4.3
+      - name: ChrF dyu→en
+        value: 23.7
+  - model: google/gemini-2.5-flash
+    model_url: https://openrouter.ai/google/gemini-2.5-flash
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU dyu→en
+        value: 8.4
+      - name: ChrF dyu→en
+        value: 30.6
+      - name: SpBLEU en→dyu
+        value: 1.5
+      - name: ChrF en→dyu
+        value: 22.1
+  - model: google/gemini-2.5-pro
+    model_url: https://openrouter.ai/google/gemini-2.5-pro
+    results:
+    - test_set: SIB-200 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: Classification Acc.
+        value: 100.0
+  - model: google/gemini-3-pro-preview
+    model_url: https://openrouter.ai/google/gemini-3-pro-preview
+    results:
+    - test_set: FLORES+ 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: SpBLEU dyu→en
+        value: 16.9
+      - name: ChrF dyu→en
+        value: 41.1
+      - name: SpBLEU en→dyu
+        value: 2.4
+      - name: ChrF en→dyu
+        value: 24.9
+  - model: meta-llama/llama-3.1-70b-instruct
+    model_url: https://openrouter.ai/meta-llama/llama-3.1-70b-instruct
+    results:
+    - test_set: SIB-200 10-sample
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+      metrics:
+      - name: Classification Acc.
+        value: 90.0
+  - model: google/madlad400-8b-lm
+    model_url: https://huggingface.co/google/madlad400-8b-lm
+    results:
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF (10-shot)
+      metrics:
+      - name: BLEU dyu→eng
+        value: 1.3
+      - name: chrF dyu→eng
+        value: 15.1
+      - name: BLEU eng→dyu
+        value: 0
+      - name: chrF eng→dyu
+        value: 1.5
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF (10-shot)
+      metrics:
+      - name: BLEU dyu→eng
+        value: 2.3
+      - name: chrF dyu→eng
+        value: 18.2
+      - name: BLEU eng→dyu
+        value: 0
+      - name: chrF eng→dyu
+        value: 5.8
   mt:
   - model: google/madlad400-3b-mt
     model_url: https://huggingface.co/google/madlad400-3b-mt
@@ -91,34 +221,6 @@ evaluations:
         value: 2.1
       - name: chrF eng→dyu
         value: 22.1
-  llm:
-  - model: google/madlad400-8b-lm
-    model_url: https://huggingface.co/google/madlad400-8b-lm
-    results:
-    - test_set: GATONES
-      notes: Table 16 — BLEU/chrF (10-shot)
-      metrics:
-      - name: BLEU dyu→eng
-        value: 1.3
-      - name: chrF dyu→eng
-        value: 15.1
-      - name: BLEU eng→dyu
-        value: 0
-      - name: chrF eng→dyu
-        value: 1.5
-    - test_set: FLORES-200
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
-      notes: Table 17 — BLEU/chrF (10-shot)
-      metrics:
-      - name: BLEU dyu→eng
-        value: 2.3
-      - name: chrF dyu→eng
-        value: 18.2
-      - name: BLEU eng→dyu
-        value: 0
-      - name: chrF eng→dyu
-        value: 5.8
   asr:
   - model: facebook/omniASR-LLM-7B
     model_url: https://huggingface.co/facebook/omniASR-LLM-7B

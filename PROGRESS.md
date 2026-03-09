@@ -145,7 +145,7 @@ Identify and track published benchmark papers, leaderboards, and evaluation data
 
 | Done | Target | Progress                 |
 |------|--------|--------------------------|
-| 14   | 16     | █████████████████░░░ 88%  |
+| 15   | 16     | ██████████████████░░ 94%  |
 - [x] Whisper FLEURS WER (6 focus langs)
 - [x] CLEAR Global TWB Voice ASR + TTS (Hausa, Kanuri)
 - [x] PazaBench ASR (52 models, 7 focus langs: ful, hau, ibo, lin, twi, wol, yor)
@@ -160,6 +160,7 @@ Identify and track published benchmark papers, leaderboards, and evaluation data
 - [x] MADLAD-400 MT (14 langs, 3 test sets, 6 models, fully verified)
 - [x] Bambara ASR leaderboard (MALIBA-AI, 5 models)
 - [x] Goldfish monolingual LMs (FLORES perplexity, multiple langs)
+- [x] LanguageBench / AI Language Proficiency Monitor (37 LLMs, 13 focus langs, translation/classification/QA/math, n=10 caveat)
 - [ ] Seamless MT (not yet investigated)
 - [ ] Additional TTS benchmarks (beyond SimbaBench + TWB Voice)
 
@@ -236,6 +237,10 @@ Advisory support for actor selection, agenda input, and presentation of findings
 ---
 
 ## Recent Updates
+
+### 2026-03-09
+- **LanguageBench included:** LLM evaluation benchmark from BMZ/GIZ/DFKI ([arXiv:2507.08538](https://arxiv.org/abs/2507.08538)). Auto-updating leaderboard evaluating 37+ commercial and open-weight LLMs (GPT-5, Claude, Gemini, Llama, etc.) across 200+ languages on translation (FLORES+ SpBLEU/ChrF), classification (SIB-200), QA (MMLU, ARC), and math (MGSM). 13 focus languages benchmarked: aka, bam, dyu, ewe, fon, fuv, hau, ibo, lin, mos, sag, wol, yor. Caveat: n=10 sentences per evaluation — directional insights only. MMLU/ARC/MGSM omitted for 6 languages where IrokoBench has better data. Top 3 models per task per language. Reusable fetch script: `scripts/fetch_languagebench.py --top N`.
+- Added standalone data scripts section to README.md (fetch_languagebench.py, parse_simbabench.py, convert_african_grid.py).
 
 ### 2026-03-04
 - **Translation datasets added to HuggingFace fetching:** Dataset scraping previously only covered ASR and TTS task categories. Added `translation` task category to `populate_research.py`, `htmlgen/pages.py` (language detail pages), and `generate_docs.py` (DOCX output). All focus languages now have MT datasets populated.

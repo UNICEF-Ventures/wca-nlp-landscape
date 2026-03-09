@@ -209,6 +209,13 @@ sources:
     status: included
     description: Monolingual language models (up to 125M params) for 350 languages, trained on 5MB–1GB of text. FLORES log-perplexity evaluation. 
 
+  - name: Fair Forward AI Language Proficiency Monitor
+    url: https://huggingface.co/spaces/fair-forward/languagebench
+    type: benchmark
+    languages_covered: [aka, bam, dyu, ewe, fon, fuv, hau, ibo, lin, mos, sag, wol, yor]
+    status: included
+    description: "Auto-updating LLM leaderboard by BMZ/GIZ/DFKI evaluating 37+ models (commercial APIs + open-weights) on 200+ languages. Tasks: translation (FLORES+ SpBLEU/ChrF), classification (SIB-200), QA (MMLU, ARC), math (MGSM). Caveat: n=10 sentences per evaluation. Paper: arXiv:2507.08538."
+
   - name: FLEURS
     url: https://huggingface.co/datasets/google/fleurs
     type: dataset

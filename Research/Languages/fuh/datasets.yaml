@@ -2,12 +2,12 @@ asr:
   items:
   - name: facebook/omnilingual-asr-corpus
     url: https://huggingface.co/datasets/facebook/omnilingual-asr-corpus
-    downloads: 1060
-    likes: 193
+    downloads: 0
+    likes: 0
   - name: Sellopale/omnilingualpaleoi
     url: https://huggingface.co/datasets/Sellopale/omnilingualpaleoi
-    downloads: 181
-    likes: 1
+    downloads: 0
+    likes: 0
   total_count: 2
   counts_by_code:
     fuh: 2
@@ -16,26 +16,30 @@ tts:
   counts_by_code: {}
 translation:
   items:
-  - name: cointegrated/panlex-meanings
-    url: https://huggingface.co/datasets/cointegrated/panlex-meanings
-    downloads: 2490
-    likes: 12
-  - name: mteb/biblenlp-corpus-mmteb
-    url: https://huggingface.co/datasets/mteb/biblenlp-corpus-mmteb
-    downloads: 316
-    likes: 2
-  - name: gtak1/panlex-meanings
-    url: https://huggingface.co/datasets/gtak1/panlex-meanings
-    downloads: 268
-    likes: 0
   - name: bible-nlp/biblenlp-corpus
     url: https://huggingface.co/datasets/bible-nlp/biblenlp-corpus
-    downloads: 232
-    likes: 37
+    downloads: 0
+    likes: 0
+  - name: cointegrated/panlex-meanings
+    url: https://huggingface.co/datasets/cointegrated/panlex-meanings
+    downloads: 0
+    likes: 0
+  - name: mteb/biblenlp-corpus-mmteb
+    url: https://huggingface.co/datasets/mteb/biblenlp-corpus-mmteb
+    downloads: 0
+    likes: 0
   - name: jtz18/biblenlp-corpus
     url: https://huggingface.co/datasets/jtz18/biblenlp-corpus
-    downloads: 41
+    downloads: 0
     likes: 0
-  total_count: 5
+  - name: gtak1/panlex-meanings
+    url: https://huggingface.co/datasets/gtak1/panlex-meanings
+    downloads: 0
+    likes: 0
+  - name: timothyhartzog/biblenlp-corpus
+    url: https://huggingface.co/datasets/timothyhartzog/biblenlp-corpus
+    downloads: 0
+    likes: 0
+  total_count: 6
   counts_by_code:
-    fuh: 5
+    fuh: 6

@@ -1407,6 +1407,17 @@ evaluations:
         value: 40.84
       - name: chrF++ ig-en
         value: 49.67
+  - model: OMT-LLaMA 8B
+    model_url: https://huggingface.co/facebook/omt-llama3.1-8b-v1
+    results:
+    - test_set: BOUQuET
+      source: reported
+      source_url: https://huggingface.co/spaces/facebook/bouquet
+      metrics:
+      - name: chrF++ en→X
+        value: '?'
+      - name: chrF++ X→en
+        value: '?'
   - model: google/madlad400-3b-mt
     model_url: https://huggingface.co/google/madlad400-3b-mt
     results:

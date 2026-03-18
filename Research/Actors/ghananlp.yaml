@@ -81,9 +81,26 @@ projects:
     description: BERT-based NLP model for Twi language. (2017)
     languages: [twi]
 
+  - name: GhanaNLP Parallel Corpora
+    url: https://huggingface.co/collections/Ghana-NLP/data-collection-project
+    description: >
+      41,513 human-translated parallel sentence pairs (English↔local language) across 5 Ghanaian
+      languages: Twi (14,875), Ga (11,652), Fante (5,001), Ewe (4,985), Kusaal (5,000).
+      Multi-domain (health, education, conversation, religion), dialect-aware. CC BY-NC-SA 4.0.
+      Google-funded. Used to train Khaya AI translation engine.
+    languages: [twi, ewe, gaa, kus]
+
+  - name: Naafi TTS (Ewe)
+    url: https://huggingface.co/spaces/Ghana-NLP/naafi-tts-demo
+    description: Text-to-speech demo for Ewe language.
+    languages: [ewe]
+
 projects_url: https://ghananlp.org/projects
 
-publications: []
+publications:
+  - title: "GhanaNLP Parallel Corpora: Comprehensive Multilingual Resources for Low-Resource Ghanaian Languages"
+    url: https://arxiv.org/abs/2603.13793
+    venue: 2026
 publications_url: https://nlpghana.medium.com/
 
 partnerships:

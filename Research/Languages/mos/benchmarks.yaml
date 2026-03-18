@@ -1,4 +1,64 @@
 evaluations:
+  mt:
+  - model: OMT-LLaMA 8B
+    model_url: https://huggingface.co/facebook/omt-llama3.1-8b-v1
+    results:
+    - test_set: BOUQuET
+      source: reported
+      source_url: https://huggingface.co/spaces/facebook/bouquet
+      metrics:
+      - name: chrF++ en→X
+        value: '?'
+      - name: chrF++ X→en
+        value: '?'
+  - model: google/madlad400-3b-mt
+    model_url: https://huggingface.co/google/madlad400-3b-mt
+    results:
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU mos→eng
+        value: 3.4
+      - name: chrF mos→eng
+        value: 23
+      - name: BLEU eng→mos
+        value: 0.9
+      - name: chrF eng→mos
+        value: 2.3
+  - model: google/madlad400-7.2b-mt
+    model_url: https://huggingface.co/google/madlad400-7.2b-mt
+    results:
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU mos→eng
+        value: 3.4
+      - name: chrF mos→eng
+        value: 22.4
+      - name: BLEU eng→mos
+        value: 1.2
+      - name: chrF eng→mos
+        value: 16.6
+  - model: google/madlad400-10.7b-mt
+    model_url: https://huggingface.co/google/madlad400-10.7b-mt
+    results:
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU mos→eng
+        value: 3.7
+      - name: chrF mos→eng
+        value: 24.1
+      - name: BLEU eng→mos
+        value: 0.8
+      - name: chrF eng→mos
+        value: 2.2
   llm:
   - model: amazon/nova-pro-v1
     model_url: https://openrouter.ai/amazon/nova-pro-v1
@@ -536,52 +596,3 @@ evaluations:
         value: 0.08
       - name: NER F1
         value: 0.0
-  mt:
-  - model: google/madlad400-3b-mt
-    model_url: https://huggingface.co/google/madlad400-3b-mt
-    results:
-    - test_set: FLORES-200
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
-      notes: Table 17 — BLEU/chrF
-      metrics:
-      - name: BLEU mos→eng
-        value: 3.4
-      - name: chrF mos→eng
-        value: 23
-      - name: BLEU eng→mos
-        value: 0.9
-      - name: chrF eng→mos
-        value: 2.3
-  - model: google/madlad400-7.2b-mt
-    model_url: https://huggingface.co/google/madlad400-7.2b-mt
-    results:
-    - test_set: FLORES-200
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
-      notes: Table 17 — BLEU/chrF
-      metrics:
-      - name: BLEU mos→eng
-        value: 3.4
-      - name: chrF mos→eng
-        value: 22.4
-      - name: BLEU eng→mos
-        value: 1.2
-      - name: chrF eng→mos
-        value: 16.6
-  - model: google/madlad400-10.7b-mt
-    model_url: https://huggingface.co/google/madlad400-10.7b-mt
-    results:
-    - test_set: FLORES-200
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
-      notes: Table 17 — BLEU/chrF
-      metrics:
-      - name: BLEU mos→eng
-        value: 3.7
-      - name: chrF mos→eng
-        value: 24.1
-      - name: BLEU eng→mos
-        value: 0.8
-      - name: chrF eng→mos
-        value: 2.2

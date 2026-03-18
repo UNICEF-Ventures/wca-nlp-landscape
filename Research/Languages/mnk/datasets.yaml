@@ -8,12 +8,12 @@ translation:
   items:
   - name: HuggingFaceFW/finetranslations
     url: https://huggingface.co/datasets/HuggingFaceFW/finetranslations
-    downloads: 30600
-    likes: 272
+    downloads: 0
+    likes: 0
   - name: HuggingFaceFW/finetranslations-edu
     url: https://huggingface.co/datasets/HuggingFaceFW/finetranslations-edu
-    downloads: 3020
-    likes: 25
+    downloads: 0
+    likes: 0
   total_count: 2
   counts_by_code:
     mnk: 2

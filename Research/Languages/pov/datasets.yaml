@@ -8,20 +8,20 @@ translation:
   items:
   - name: HuggingFaceFW/finetranslations
     url: https://huggingface.co/datasets/HuggingFaceFW/finetranslations
-    downloads: 30600
-    likes: 272
+    downloads: 0
+    likes: 0
   - name: HuggingFaceFW/finetranslations-edu
     url: https://huggingface.co/datasets/HuggingFaceFW/finetranslations-edu
-    downloads: 3020
-    likes: 25
-  - name: jhu-clsp/kreyol-mt
-    url: https://huggingface.co/datasets/jhu-clsp/kreyol-mt
-    downloads: 1370
-    likes: 9
+    downloads: 0
+    likes: 0
   - name: community-datasets/udhr
     url: https://huggingface.co/datasets/community-datasets/udhr
-    downloads: 102
-    likes: 2
+    downloads: 0
+    likes: 0
+  - name: jhu-clsp/kreyol-mt
+    url: https://huggingface.co/datasets/jhu-clsp/kreyol-mt
+    downloads: 0
+    likes: 0
   total_count: 4
   counts_by_code:
     pov: 4

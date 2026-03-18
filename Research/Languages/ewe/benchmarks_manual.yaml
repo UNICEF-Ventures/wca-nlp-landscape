@@ -2,6 +2,12 @@
 # This file is NEVER overwritten by populate_research.py.
 # Add one-off benchmark results you find in papers here.
 
+unbenchmarked_models:
+  - model: Ghana-NLP/naafi-tts-demo
+    model_url: https://huggingface.co/spaces/Ghana-NLP/naafi-tts-demo
+    task: tts
+    notes: Ewe TTS demo by GhanaNLP. No public benchmarks.
+
 evaluations:
   llm:
     - model: goldfish-models/ewe_latn_full

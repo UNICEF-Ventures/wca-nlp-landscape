@@ -6,18 +6,22 @@ tts:
   counts_by_code: {}
 translation:
   items:
-  - name: mteb/biblenlp-corpus-mmteb
-    url: https://huggingface.co/datasets/mteb/biblenlp-corpus-mmteb
-    downloads: 316
-    likes: 2
   - name: bible-nlp/biblenlp-corpus
     url: https://huggingface.co/datasets/bible-nlp/biblenlp-corpus
-    downloads: 232
-    likes: 37
+    downloads: 0
+    likes: 0
+  - name: mteb/biblenlp-corpus-mmteb
+    url: https://huggingface.co/datasets/mteb/biblenlp-corpus-mmteb
+    downloads: 0
+    likes: 0
   - name: jtz18/biblenlp-corpus
     url: https://huggingface.co/datasets/jtz18/biblenlp-corpus
-    downloads: 41
+    downloads: 0
     likes: 0
-  total_count: 3
+  - name: timothyhartzog/biblenlp-corpus
+    url: https://huggingface.co/datasets/timothyhartzog/biblenlp-corpus
+    downloads: 0
+    likes: 0
+  total_count: 4
   counts_by_code:
-    gux: 3
+    gux: 4

@@ -1,4 +1,16 @@
 evaluations:
+  mt:
+  - model: OMT-LLaMA 8B
+    model_url: https://huggingface.co/facebook/omt-llama3.1-8b-v1
+    results:
+    - test_set: BOUQuET
+      source: reported
+      source_url: https://huggingface.co/spaces/facebook/bouquet
+      metrics:
+      - name: chrF++ en→X
+        value: '?'
+      - name: chrF++ X→en
+        value: '?'
   llm:
   - model: anthropic/claude-3.7-sonnet
     model_url: https://openrouter.ai/anthropic/claude-3.7-sonnet

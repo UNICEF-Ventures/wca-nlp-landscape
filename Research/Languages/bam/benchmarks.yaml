@@ -55,6 +55,101 @@ evaluations:
         value: 48.32
       - name: CER
         value: 14.81
+  mt:
+  - model: OMT-LLaMA 8B
+    model_url: https://huggingface.co/facebook/omt-llama3.1-8b-v1
+    results:
+    - test_set: BOUQuET
+      source: reported
+      source_url: https://huggingface.co/spaces/facebook/bouquet
+      metrics:
+      - name: chrF++ en→X
+        value: '?'
+      - name: chrF++ X→en
+        value: '?'
+  - model: google/madlad400-3b-mt
+    model_url: https://huggingface.co/google/madlad400-3b-mt
+    results:
+    - test_set: GATONES
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: BLEU bam→eng
+        value: 11.9
+      - name: chrF bam→eng
+        value: 32.8
+      - name: BLEU eng→bam
+        value: 6.5
+      - name: chrF eng→bam
+        value: 28.5
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU bam→eng
+        value: 14.1
+      - name: chrF bam→eng
+        value: 37.1
+      - name: BLEU eng→bam
+        value: 4.9
+      - name: chrF eng→bam
+        value: 27.8
+  - model: google/madlad400-7.2b-mt
+    model_url: https://huggingface.co/google/madlad400-7.2b-mt
+    results:
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: BLEU bam→eng
+        value: 10.6
+      - name: chrF bam→eng
+        value: 31.7
+      - name: BLEU eng→bam
+        value: 6.1
+      - name: chrF eng→bam
+        value: 27.2
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU bam→eng
+        value: 12.9
+      - name: chrF bam→eng
+        value: 36.3
+      - name: BLEU eng→bam
+        value: 4.3
+      - name: chrF eng→bam
+        value: 26.8
+  - model: google/madlad400-10.7b-mt
+    model_url: https://huggingface.co/google/madlad400-10.7b-mt
+    results:
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: BLEU bam→eng
+        value: 12.6
+      - name: chrF bam→eng
+        value: 33.9
+      - name: BLEU eng→bam
+        value: 7.1
+      - name: chrF eng→bam
+        value: 30.5
+    - test_set: FLORES-200
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: BLEU bam→eng
+        value: 15.5
+      - name: chrF bam→eng
+        value: 39.4
+      - name: BLEU eng→bam
+        value: 5.7
+      - name: chrF eng→bam
+        value: 30.1
   llm:
   - model: anthropic/claude-3.7-sonnet
     model_url: https://openrouter.ai/anthropic/claude-3.7-sonnet
@@ -801,87 +896,3 @@ evaluations:
         value: 10.53
       - name: Sentiment F1
         value: 30.4
-  mt:
-  - model: google/madlad400-3b-mt
-    model_url: https://huggingface.co/google/madlad400-3b-mt
-    results:
-    - test_set: GATONES
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
-      notes: Table 16 — BLEU/chrF
-      metrics:
-      - name: BLEU bam→eng
-        value: 11.9
-      - name: chrF bam→eng
-        value: 32.8
-      - name: BLEU eng→bam
-        value: 6.5
-      - name: chrF eng→bam
-        value: 28.5
-    - test_set: FLORES-200
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
-      notes: Table 17 — BLEU/chrF
-      metrics:
-      - name: BLEU bam→eng
-        value: 14.1
-      - name: chrF bam→eng
-        value: 37.1
-      - name: BLEU eng→bam
-        value: 4.9
-      - name: chrF eng→bam
-        value: 27.8
-  - model: google/madlad400-7.2b-mt
-    model_url: https://huggingface.co/google/madlad400-7.2b-mt
-    results:
-    - test_set: GATONES
-      notes: Table 16 — BLEU/chrF
-      metrics:
-      - name: BLEU bam→eng
-        value: 10.6
-      - name: chrF bam→eng
-        value: 31.7
-      - name: BLEU eng→bam
-        value: 6.1
-      - name: chrF eng→bam
-        value: 27.2
-    - test_set: FLORES-200
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
-      notes: Table 17 — BLEU/chrF
-      metrics:
-      - name: BLEU bam→eng
-        value: 12.9
-      - name: chrF bam→eng
-        value: 36.3
-      - name: BLEU eng→bam
-        value: 4.3
-      - name: chrF eng→bam
-        value: 26.8
-  - model: google/madlad400-10.7b-mt
-    model_url: https://huggingface.co/google/madlad400-10.7b-mt
-    results:
-    - test_set: GATONES
-      notes: Table 16 — BLEU/chrF
-      metrics:
-      - name: BLEU bam→eng
-        value: 12.6
-      - name: chrF bam→eng
-        value: 33.9
-      - name: BLEU eng→bam
-        value: 7.1
-      - name: chrF eng→bam
-        value: 30.5
-    - test_set: FLORES-200
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
-      notes: Table 17 — BLEU/chrF
-      metrics:
-      - name: BLEU bam→eng
-        value: 15.5
-      - name: chrF bam→eng
-        value: 39.4
-      - name: BLEU eng→bam
-        value: 5.7
-      - name: chrF eng→bam
-        value: 30.1

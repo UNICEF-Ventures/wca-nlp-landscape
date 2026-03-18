@@ -2,16 +2,16 @@ asr:
   items:
   - name: facebook/omnilingual-asr-corpus
     url: https://huggingface.co/datasets/facebook/omnilingual-asr-corpus
-    downloads: 1060
-    likes: 193
+    downloads: 0
+    likes: 0
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 574
-    likes: 11
+    downloads: 0
+    likes: 0
   - name: Sellopale/omnilingualpaleoi
     url: https://huggingface.co/datasets/Sellopale/omnilingualpaleoi
-    downloads: 181
-    likes: 1
+    downloads: 0
+    likes: 0
   total_count: 3
   counts_by_code:
     fuv: 3
@@ -19,77 +19,81 @@ tts:
   items:
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 574
-    likes: 11
+    downloads: 0
+    likes: 0
   total_count: 1
   counts_by_code:
     fuv: 1
 translation:
   items:
-  - name: HuggingFaceFW/finetranslations
-    url: https://huggingface.co/datasets/HuggingFaceFW/finetranslations
-    downloads: 30600
-    likes: 272
+  - name: facebook/bouquet
+    url: https://huggingface.co/datasets/facebook/bouquet
+    downloads: 0
+    likes: 0
   - name: openlanguagedata/flores_plus
     url: https://huggingface.co/datasets/openlanguagedata/flores_plus
-    downloads: 18300
-    likes: 111
-  - name: facebook/flores
-    url: https://huggingface.co/datasets/facebook/flores
-    downloads: 7690
-    likes: 95
-  - name: HuggingFaceFW/finetranslations-edu
-    url: https://huggingface.co/datasets/HuggingFaceFW/finetranslations-edu
-    downloads: 3020
-    likes: 25
-  - name: Helsinki-NLP/tatoeba
-    url: https://huggingface.co/datasets/Helsinki-NLP/tatoeba
-    downloads: 1550
-    likes: 56
-  - name: openlanguagedata/oldi_seed
-    url: https://huggingface.co/datasets/openlanguagedata/oldi_seed
-    downloads: 1180
-    likes: 10
+    downloads: 0
+    likes: 0
   - name: Muennighoff/flores200
     url: https://huggingface.co/datasets/Muennighoff/flores200
-    downloads: 968
-    likes: 18
-  - name: visheratin/laion-coco-nllb
-    url: https://huggingface.co/datasets/visheratin/laion-coco-nllb
-    downloads: 577
-    likes: 44
-  - name: mteb/FloresBitextMining
-    url: https://huggingface.co/datasets/mteb/FloresBitextMining
-    downloads: 343
-    likes: 1
+    downloads: 0
+    likes: 0
+  - name: HuggingFaceFW/finetranslations
+    url: https://huggingface.co/datasets/HuggingFaceFW/finetranslations
+    downloads: 0
+    likes: 0
+  - name: HuggingFaceFW/finetranslations-edu
+    url: https://huggingface.co/datasets/HuggingFaceFW/finetranslations-edu
+    downloads: 0
+    likes: 0
+  - name: Helsinki-NLP/tatoeba
+    url: https://huggingface.co/datasets/Helsinki-NLP/tatoeba
+    downloads: 0
+    likes: 0
   - name: community-datasets/udhr
     url: https://huggingface.co/datasets/community-datasets/udhr
-    downloads: 102
-    likes: 2
-  - name: mteb/flores
-    url: https://huggingface.co/datasets/mteb/flores
-    downloads: 80
+    downloads: 0
     likes: 0
-  - name: neulab/PangeaBench-flores
-    url: https://huggingface.co/datasets/neulab/PangeaBench-flores
-    downloads: 16
-    likes: 0
-  - name: SupriyoCode/flores200
-    url: https://huggingface.co/datasets/SupriyoCode/flores200
-    downloads: 16
+  - name: facebook/flores
+    url: https://huggingface.co/datasets/facebook/flores
+    downloads: 0
     likes: 0
   - name: vpermilp/nllb-200-distilled-600M-rust
     url: https://huggingface.co/datasets/vpermilp/nllb-200-distilled-600M-rust
-    downloads: 15
-    likes: 1
-  - name: robinhad/long_flores
-    url: https://huggingface.co/datasets/robinhad/long_flores
-    downloads: 13
+    downloads: 0
+    likes: 0
+  - name: visheratin/laion-coco-nllb
+    url: https://huggingface.co/datasets/visheratin/laion-coco-nllb
+    downloads: 0
+    likes: 0
+  - name: mteb/flores
+    url: https://huggingface.co/datasets/mteb/flores
+    downloads: 0
     likes: 0
   - name: Svngoku/xP3x-Kongo
     url: https://huggingface.co/datasets/Svngoku/xP3x-Kongo
-    downloads: 12
-    likes: 4
-  total_count: 16
+    downloads: 0
+    likes: 0
+  - name: robinhad/long_flores
+    url: https://huggingface.co/datasets/robinhad/long_flores
+    downloads: 0
+    likes: 0
+  - name: neulab/PangeaBench-flores
+    url: https://huggingface.co/datasets/neulab/PangeaBench-flores
+    downloads: 0
+    likes: 0
+  - name: openlanguagedata/oldi_seed
+    url: https://huggingface.co/datasets/openlanguagedata/oldi_seed
+    downloads: 0
+    likes: 0
+  - name: mteb/FloresBitextMining
+    url: https://huggingface.co/datasets/mteb/FloresBitextMining
+    downloads: 0
+    likes: 0
+  - name: SupriyoCode/flores200
+    url: https://huggingface.co/datasets/SupriyoCode/flores200
+    downloads: 0
+    likes: 0
+  total_count: 17
   counts_by_code:
-    fuv: 16
+    fuv: 17

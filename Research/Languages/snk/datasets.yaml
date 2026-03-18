@@ -2,16 +2,16 @@ asr:
   items:
   - name: facebook/omnilingual-asr-corpus
     url: https://huggingface.co/datasets/facebook/omnilingual-asr-corpus
-    downloads: 1060
-    likes: 193
-  - name: Sellopale/omnilingualpaleoi
-    url: https://huggingface.co/datasets/Sellopale/omnilingualpaleoi
-    downloads: 181
-    likes: 1
+    downloads: 0
+    likes: 0
   - name: sil-ai/bloom-speech
     url: https://huggingface.co/datasets/sil-ai/bloom-speech
-    downloads: 31
-    likes: 25
+    downloads: 0
+    likes: 0
+  - name: Sellopale/omnilingualpaleoi
+    url: https://huggingface.co/datasets/Sellopale/omnilingualpaleoi
+    downloads: 0
+    likes: 0
   total_count: 3
   counts_by_code:
     snk: 3
@@ -19,36 +19,36 @@ tts:
   items:
   - name: sil-ai/bloom-speech
     url: https://huggingface.co/datasets/sil-ai/bloom-speech
-    downloads: 31
-    likes: 25
+    downloads: 0
+    likes: 0
   total_count: 1
   counts_by_code:
     snk: 1
 translation:
   items:
-  - name: cointegrated/panlex-meanings
-    url: https://huggingface.co/datasets/cointegrated/panlex-meanings
-    downloads: 2490
-    likes: 12
-  - name: ayymen/Pontoon-Translations
-    url: https://huggingface.co/datasets/ayymen/Pontoon-Translations
-    downloads: 1480
-    likes: 18
-  - name: gtak1/panlex-meanings
-    url: https://huggingface.co/datasets/gtak1/panlex-meanings
-    downloads: 268
-    likes: 0
   - name: community-datasets/udhr
     url: https://huggingface.co/datasets/community-datasets/udhr
-    downloads: 102
-    likes: 2
+    downloads: 0
+    likes: 0
+  - name: ayymen/Pontoon-Translations
+    url: https://huggingface.co/datasets/ayymen/Pontoon-Translations
+    downloads: 0
+    likes: 0
+  - name: cointegrated/panlex-meanings
+    url: https://huggingface.co/datasets/cointegrated/panlex-meanings
+    downloads: 0
+    likes: 0
   - name: FrancophonIA/Lexicologie_du_soninke
     url: https://huggingface.co/datasets/FrancophonIA/Lexicologie_du_soninke
-    downloads: 96
+    downloads: 0
     likes: 0
   - name: FrancophonIA/Lexique_Soninke-Francais-Anglais
     url: https://huggingface.co/datasets/FrancophonIA/Lexique_Soninke-Francais-Anglais
-    downloads: 80
+    downloads: 0
+    likes: 0
+  - name: gtak1/panlex-meanings
+    url: https://huggingface.co/datasets/gtak1/panlex-meanings
+    downloads: 0
     likes: 0
   total_count: 6
   counts_by_code:

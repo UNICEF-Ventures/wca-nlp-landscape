@@ -6,18 +6,18 @@ tts:
   counts_by_code: {}
 translation:
   items:
-  - name: cointegrated/panlex-meanings
-    url: https://huggingface.co/datasets/cointegrated/panlex-meanings
-    downloads: 2490
-    likes: 12
-  - name: gtak1/panlex-meanings
-    url: https://huggingface.co/datasets/gtak1/panlex-meanings
-    downloads: 268
-    likes: 0
   - name: community-datasets/udhr
     url: https://huggingface.co/datasets/community-datasets/udhr
-    downloads: 102
-    likes: 2
+    downloads: 0
+    likes: 0
+  - name: cointegrated/panlex-meanings
+    url: https://huggingface.co/datasets/cointegrated/panlex-meanings
+    downloads: 0
+    likes: 0
+  - name: gtak1/panlex-meanings
+    url: https://huggingface.co/datasets/gtak1/panlex-meanings
+    downloads: 0
+    likes: 0
   total_count: 3
   counts_by_code:
     men: 3

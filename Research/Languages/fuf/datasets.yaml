@@ -2,15 +2,15 @@ asr:
   items:
   - name: facebook/omnilingual-asr-corpus
     url: https://huggingface.co/datasets/facebook/omnilingual-asr-corpus
-    downloads: 1060
-    likes: 193
+    downloads: 0
+    likes: 0
   - name: Sellopale/omnilingualpaleoi
     url: https://huggingface.co/datasets/Sellopale/omnilingualpaleoi
-    downloads: 181
-    likes: 1
+    downloads: 0
+    likes: 0
   - name: UBC-NLP/SimbaBench_dataset
     url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
-    downloads: 64
+    downloads: 0
     likes: 0
   total_count: 3
   counts_by_code:
@@ -19,7 +19,7 @@ tts:
   items:
   - name: UBC-NLP/SimbaBench_dataset
     url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
-    downloads: 64
+    downloads: 0
     likes: 0
   total_count: 1
   counts_by_code:
@@ -28,40 +28,44 @@ translation:
   items:
   - name: HuggingFaceFW/finetranslations
     url: https://huggingface.co/datasets/HuggingFaceFW/finetranslations
-    downloads: 30600
-    likes: 272
+    downloads: 0
+    likes: 0
   - name: HuggingFaceFW/finetranslations-edu
     url: https://huggingface.co/datasets/HuggingFaceFW/finetranslations-edu
-    downloads: 3020
-    likes: 25
-  - name: cointegrated/panlex-meanings
-    url: https://huggingface.co/datasets/cointegrated/panlex-meanings
-    downloads: 2490
-    likes: 12
-  - name: ayymen/Pontoon-Translations
-    url: https://huggingface.co/datasets/ayymen/Pontoon-Translations
-    downloads: 1480
-    likes: 18
-  - name: mteb/biblenlp-corpus-mmteb
-    url: https://huggingface.co/datasets/mteb/biblenlp-corpus-mmteb
-    downloads: 316
-    likes: 2
-  - name: gtak1/panlex-meanings
-    url: https://huggingface.co/datasets/gtak1/panlex-meanings
-    downloads: 268
+    downloads: 0
+    likes: 0
+  - name: community-datasets/udhr
+    url: https://huggingface.co/datasets/community-datasets/udhr
+    downloads: 0
     likes: 0
   - name: bible-nlp/biblenlp-corpus
     url: https://huggingface.co/datasets/bible-nlp/biblenlp-corpus
-    downloads: 232
-    likes: 37
-  - name: community-datasets/udhr
-    url: https://huggingface.co/datasets/community-datasets/udhr
-    downloads: 102
-    likes: 2
+    downloads: 0
+    likes: 0
+  - name: ayymen/Pontoon-Translations
+    url: https://huggingface.co/datasets/ayymen/Pontoon-Translations
+    downloads: 0
+    likes: 0
+  - name: cointegrated/panlex-meanings
+    url: https://huggingface.co/datasets/cointegrated/panlex-meanings
+    downloads: 0
+    likes: 0
+  - name: mteb/biblenlp-corpus-mmteb
+    url: https://huggingface.co/datasets/mteb/biblenlp-corpus-mmteb
+    downloads: 0
+    likes: 0
   - name: jtz18/biblenlp-corpus
     url: https://huggingface.co/datasets/jtz18/biblenlp-corpus
-    downloads: 41
+    downloads: 0
     likes: 0
-  total_count: 9
+  - name: gtak1/panlex-meanings
+    url: https://huggingface.co/datasets/gtak1/panlex-meanings
+    downloads: 0
+    likes: 0
+  - name: timothyhartzog/biblenlp-corpus
+    url: https://huggingface.co/datasets/timothyhartzog/biblenlp-corpus
+    downloads: 0
+    likes: 0
+  total_count: 10
   counts_by_code:
-    fuf: 9
+    fuf: 10

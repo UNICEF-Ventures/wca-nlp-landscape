@@ -1,59 +1,63 @@
 asr:
   items:
-  - name: UBC-NLP/SimbaBench_dataset
-    url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
-    downloads: 64
-    likes: 0
   - name: ghananlpcommunity/ga-speech-text-parallel-90k
     url: https://huggingface.co/datasets/ghananlpcommunity/ga-speech-text-parallel-90k
-    downloads: 10
+    downloads: 0
+    likes: 0
+  - name: UBC-NLP/SimbaBench_dataset
+    url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
+    downloads: 0
     likes: 0
   total_count: 2
   counts_by_code:
     gaa: 2
 tts:
   items:
-  - name: UBC-NLP/SimbaBench_dataset
-    url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
-    downloads: 64
-    likes: 0
   - name: ghananlpcommunity/ga-speech-text-parallel-90k
     url: https://huggingface.co/datasets/ghananlpcommunity/ga-speech-text-parallel-90k
-    downloads: 10
+    downloads: 0
+    likes: 0
+  - name: UBC-NLP/SimbaBench_dataset
+    url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
+    downloads: 0
     likes: 0
   total_count: 2
   counts_by_code:
     gaa: 2
 translation:
   items:
-  - name: cointegrated/panlex-meanings
-    url: https://huggingface.co/datasets/cointegrated/panlex-meanings
-    downloads: 2490
-    likes: 12
   - name: google/smol
     url: https://huggingface.co/datasets/google/smol
-    downloads: 2130
-    likes: 89
-  - name: gtak1/panlex-meanings
-    url: https://huggingface.co/datasets/gtak1/panlex-meanings
-    downloads: 268
+    downloads: 0
+    likes: 0
+  - name: community-datasets/udhr
+    url: https://huggingface.co/datasets/community-datasets/udhr
+    downloads: 0
+    likes: 0
+  - name: cis-lmu/GlotStoryBook
+    url: https://huggingface.co/datasets/cis-lmu/GlotStoryBook
+    downloads: 0
+    likes: 0
+  - name: cointegrated/panlex-meanings
+    url: https://huggingface.co/datasets/cointegrated/panlex-meanings
+    downloads: 0
     likes: 0
   - name: FrancophonIA/gatitos
     url: https://huggingface.co/datasets/FrancophonIA/gatitos
-    downloads: 266
-    likes: 4
-  - name: community-datasets/udhr
-    url: https://huggingface.co/datasets/community-datasets/udhr
-    downloads: 102
-    likes: 2
-  - name: cis-lmu/GlotStoryBook
-    url: https://huggingface.co/datasets/cis-lmu/GlotStoryBook
-    downloads: 48
-    likes: 7
+    downloads: 0
+    likes: 0
   - name: Bretagne/PolyWrite_clean
     url: https://huggingface.co/datasets/Bretagne/PolyWrite_clean
-    downloads: 6
+    downloads: 0
     likes: 0
-  total_count: 7
+  - name: gtak1/panlex-meanings
+    url: https://huggingface.co/datasets/gtak1/panlex-meanings
+    downloads: 0
+    likes: 0
+  - name: kargaranamir/GlotStoryBook-backup
+    url: https://huggingface.co/datasets/kargaranamir/GlotStoryBook-backup
+    downloads: 0
+    likes: 0
+  total_count: 8
   counts_by_code:
-    gaa: 7
+    gaa: 8

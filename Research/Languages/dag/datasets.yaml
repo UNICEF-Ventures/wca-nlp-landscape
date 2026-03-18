@@ -2,90 +2,102 @@ asr:
   items:
   - name: google/WaxalNLP
     url: https://huggingface.co/datasets/google/WaxalNLP
-    downloads: 13700
-    likes: 149
-  - name: novelwolde36/WaxalNLP
-    url: https://huggingface.co/datasets/novelwolde36/WaxalNLP
-    downloads: 104
-    likes: 0
-  - name: Ephraimmm/WaxalNLPr
-    url: https://huggingface.co/datasets/Ephraimmm/WaxalNLPr
-    downloads: 44
+    downloads: 0
     likes: 0
   - name: 0xzanuee/WaxalNLP
     url: https://huggingface.co/datasets/0xzanuee/WaxalNLP
-    downloads: 29
+    downloads: 0
+    likes: 0
+  - name: Phsntom/WaxalNLP
+    url: https://huggingface.co/datasets/Phsntom/WaxalNLP
+    downloads: 0
+    likes: 0
+  - name: Ephraimmm/WaxalNLPr
+    url: https://huggingface.co/datasets/Ephraimmm/WaxalNLPr
+    downloads: 0
     likes: 0
   - name: zoelaenskii/zinny
     url: https://huggingface.co/datasets/zoelaenskii/zinny
-    downloads: 29
-    likes: 1
-  - name: Phsntom/WaxalNLP
-    url: https://huggingface.co/datasets/Phsntom/WaxalNLP
-    downloads: 28
+    downloads: 0
+    likes: 0
+  - name: novelwolde36/WaxalNLP
+    url: https://huggingface.co/datasets/novelwolde36/WaxalNLP
+    downloads: 0
     likes: 0
   - name: ngoloan/WaxalNLP
     url: https://huggingface.co/datasets/ngoloan/WaxalNLP
-    downloads: 16
+    downloads: 0
     likes: 0
   - name: BolajiJsAI/WaxalNLP
     url: https://huggingface.co/datasets/BolajiJsAI/WaxalNLP
-    downloads: 2
-    likes: 1
-  total_count: 8
+    downloads: 0
+    likes: 0
+  - name: claudefitz/WaxalNLP
+    url: https://huggingface.co/datasets/claudefitz/WaxalNLP
+    downloads: 0
+    likes: 0
+  total_count: 9
   counts_by_code:
-    dag: 8
+    dag: 9
 tts:
   items:
   - name: google/WaxalNLP
     url: https://huggingface.co/datasets/google/WaxalNLP
-    downloads: 13700
-    likes: 149
-  - name: novelwolde36/WaxalNLP
-    url: https://huggingface.co/datasets/novelwolde36/WaxalNLP
-    downloads: 104
-    likes: 0
-  - name: Ephraimmm/WaxalNLPr
-    url: https://huggingface.co/datasets/Ephraimmm/WaxalNLPr
-    downloads: 44
+    downloads: 0
     likes: 0
   - name: 0xzanuee/WaxalNLP
     url: https://huggingface.co/datasets/0xzanuee/WaxalNLP
-    downloads: 29
+    downloads: 0
+    likes: 0
+  - name: Phsntom/WaxalNLP
+    url: https://huggingface.co/datasets/Phsntom/WaxalNLP
+    downloads: 0
+    likes: 0
+  - name: Ephraimmm/WaxalNLPr
+    url: https://huggingface.co/datasets/Ephraimmm/WaxalNLPr
+    downloads: 0
     likes: 0
   - name: zoelaenskii/zinny
     url: https://huggingface.co/datasets/zoelaenskii/zinny
-    downloads: 29
-    likes: 1
-  - name: Phsntom/WaxalNLP
-    url: https://huggingface.co/datasets/Phsntom/WaxalNLP
-    downloads: 28
+    downloads: 0
+    likes: 0
+  - name: novelwolde36/WaxalNLP
+    url: https://huggingface.co/datasets/novelwolde36/WaxalNLP
+    downloads: 0
     likes: 0
   - name: ngoloan/WaxalNLP
     url: https://huggingface.co/datasets/ngoloan/WaxalNLP
-    downloads: 16
+    downloads: 0
     likes: 0
   - name: BolajiJsAI/WaxalNLP
     url: https://huggingface.co/datasets/BolajiJsAI/WaxalNLP
-    downloads: 2
-    likes: 1
-  total_count: 8
+    downloads: 0
+    likes: 0
+  - name: claudefitz/WaxalNLP
+    url: https://huggingface.co/datasets/claudefitz/WaxalNLP
+    downloads: 0
+    likes: 0
+  total_count: 9
   counts_by_code:
-    dag: 8
+    dag: 9
 translation:
   items:
-  - name: ayymen/Pontoon-Translations
-    url: https://huggingface.co/datasets/ayymen/Pontoon-Translations
-    downloads: 1480
-    likes: 18
   - name: community-datasets/udhr
     url: https://huggingface.co/datasets/community-datasets/udhr
-    downloads: 102
-    likes: 2
+    downloads: 0
+    likes: 0
   - name: cis-lmu/GlotStoryBook
     url: https://huggingface.co/datasets/cis-lmu/GlotStoryBook
-    downloads: 48
-    likes: 7
-  total_count: 3
+    downloads: 0
+    likes: 0
+  - name: ayymen/Pontoon-Translations
+    url: https://huggingface.co/datasets/ayymen/Pontoon-Translations
+    downloads: 0
+    likes: 0
+  - name: kargaranamir/GlotStoryBook-backup
+    url: https://huggingface.co/datasets/kargaranamir/GlotStoryBook-backup
+    downloads: 0
+    likes: 0
+  total_count: 4
   counts_by_code:
-    dag: 3
+    dag: 4

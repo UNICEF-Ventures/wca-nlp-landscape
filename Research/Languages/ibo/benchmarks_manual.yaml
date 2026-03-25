@@ -86,3 +86,155 @@ evaluations:
           metrics:
             - name: Log-perplexity
               value: 110.84
+    - model: GPT-4o
+      model_url: https://openai.com/index/hello-gpt-4o/
+      results:
+        - test_set: Winogrande (translated)
+          source: reported
+          source_url: https://arxiv.org/abs/2412.12417
+          notes: "Table 2 — human-translated benchmark, 5-shot accuracy."
+          metrics:
+            - name: Accuracy
+              value: 60.7
+        - test_set: MMLU College Medicine (translated)
+          source: reported
+          source_url: https://arxiv.org/abs/2412.12417
+          notes: "Table 2 — human-translated benchmark, 5-shot accuracy."
+          metrics:
+            - name: Accuracy
+              value: 58.4
+        - test_set: MMLU Clinical Knowledge (translated)
+          source: reported
+          source_url: https://arxiv.org/abs/2412.12417
+          notes: "Table 2 — human-translated benchmark, 5-shot accuracy."
+          metrics:
+            - name: Accuracy
+              value: 63.0
+        - test_set: MMLU Virology (translated)
+          source: reported
+          source_url: https://arxiv.org/abs/2412.12417
+          notes: "Table 2 — human-translated benchmark, 5-shot accuracy."
+          metrics:
+            - name: Accuracy
+              value: 44.0
+        - test_set: Belebele
+          source: reported
+          source_url: https://arxiv.org/abs/2412.12417
+          notes: "Table 2 — 0-shot accuracy."
+          metrics:
+            - name: Accuracy
+              value: 71.3
+    - model: GPT-4
+      model_url: https://openai.com/index/gpt-4/
+      results:
+        - test_set: Winogrande (translated)
+          source: reported
+          source_url: https://arxiv.org/abs/2412.12417
+          notes: "Table 2 — human-translated benchmark, 5-shot accuracy."
+          metrics:
+            - name: Accuracy
+              value: 58.7
+        - test_set: MMLU College Medicine (translated)
+          source: reported
+          source_url: https://arxiv.org/abs/2412.12417
+          notes: "Table 2 — human-translated benchmark, 5-shot accuracy."
+          metrics:
+            - name: Accuracy
+              value: 34.7
+        - test_set: MMLU Clinical Knowledge (translated)
+          source: reported
+          source_url: https://arxiv.org/abs/2412.12417
+          notes: "Table 2 — human-translated benchmark, 5-shot accuracy."
+          metrics:
+            - name: Accuracy
+              value: 54.7
+        - test_set: MMLU Virology (translated)
+          source: reported
+          source_url: https://arxiv.org/abs/2412.12417
+          notes: "Table 2 — human-translated benchmark, 5-shot accuracy."
+          metrics:
+            - name: Accuracy
+              value: 45.8
+        - test_set: Belebele
+          source: reported
+          source_url: https://arxiv.org/abs/2412.12417
+          notes: "Table 2 — 0-shot accuracy."
+          metrics:
+            - name: Accuracy
+              value: 61.3
+    - model: meta-llama/Llama-3-70B-Instruct
+      model_url: https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct
+      results:
+        - test_set: Winogrande (translated)
+          source: reported
+          source_url: https://arxiv.org/abs/2412.12417
+          notes: "Table 2 — human-translated benchmark, 5-shot accuracy."
+          metrics:
+            - name: Accuracy
+              value: 50.5
+        - test_set: MMLU College Medicine (translated)
+          source: reported
+          source_url: https://arxiv.org/abs/2412.12417
+          notes: "Table 2 — human-translated benchmark, 5-shot accuracy."
+          metrics:
+            - name: Accuracy
+              value: 33.5
+        - test_set: MMLU Clinical Knowledge (translated)
+          source: reported
+          source_url: https://arxiv.org/abs/2412.12417
+          notes: "Table 2 — human-translated benchmark, 5-shot accuracy."
+          metrics:
+            - name: Accuracy
+              value: 33.6
+        - test_set: MMLU Virology (translated)
+          source: reported
+          source_url: https://arxiv.org/abs/2412.12417
+          notes: "Table 2 — human-translated benchmark, 5-shot accuracy."
+          metrics:
+            - name: Accuracy
+              value: 34.9
+        - test_set: Belebele
+          source: reported
+          source_url: https://arxiv.org/abs/2412.12417
+          notes: "Table 2 — 0-shot accuracy."
+          metrics:
+            - name: Accuracy
+              value: 35.6
+    - model: BLOOMZ-7b1
+      model_url: https://huggingface.co/bigscience/bloomz-7b1
+      results:
+        - test_set: Winogrande (translated)
+          source: reported
+          source_url: https://arxiv.org/abs/2412.12417
+          notes: "Table 2 — human-translated benchmark, 5-shot accuracy."
+          metrics:
+            - name: Accuracy
+              value: 50.0
+        - test_set: MMLU College Medicine (translated)
+          source: reported
+          source_url: https://arxiv.org/abs/2412.12417
+          notes: "Table 2 — human-translated benchmark, 5-shot accuracy."
+          metrics:
+            - name: Accuracy
+              value: 28.9
+        - test_set: MMLU Clinical Knowledge (translated)
+          source: reported
+          source_url: https://arxiv.org/abs/2412.12417
+          notes: "Table 2 — human-translated benchmark, 5-shot accuracy."
+          metrics:
+            - name: Accuracy
+              value: 26.8
+        - test_set: MMLU Virology (translated)
+          source: reported
+          source_url: https://arxiv.org/abs/2412.12417
+          notes: "Table 2 — human-translated benchmark, 5-shot accuracy."
+          metrics:
+            - name: Accuracy
+              value: 21.1
+        - test_set: Belebele
+          source: reported
+          source_url: https://arxiv.org/abs/2412.12417
+          notes: "Table 2 — 0-shot accuracy."
+          metrics:
+            - name: Accuracy
+              value: 31.6

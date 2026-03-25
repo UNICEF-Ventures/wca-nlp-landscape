@@ -216,6 +216,13 @@ sources:
     status: included
     description: "Auto-updating LLM leaderboard by BMZ/GIZ/DFKI evaluating 37+ models (commercial APIs + open-weights) on 200+ languages. Tasks: translation (FLORES+ SpBLEU/ChrF), classification (SIB-200), QA (MMLU, ARC), math (MGSM). Caveat: n=10 sentences per evaluation. Paper: arXiv:2507.08538."
 
+  - name: BOUQuET / OMT-LLaMA (Meta/FAIR)
+    url: https://huggingface.co/spaces/facebook/bouquet
+    type: [dataset, benchmark]
+    languages_covered: [hau, bam, twi, mos, fuv, dts, yor, ibo, wol, lin, lir]
+    status: included
+    description: "275-language human-created MT evaluation dataset (OmnilingualMT, Meta/FAIR 2026). chrF++ scores for OMT-LLaMA 8B. Values pending release from leaderboard."
+
   - name: FLEURS
     url: https://huggingface.co/datasets/google/fleurs
     type: dataset

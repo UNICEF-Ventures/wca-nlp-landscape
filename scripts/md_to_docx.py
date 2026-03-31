@@ -39,19 +39,30 @@ def convert_md_to_docx(input_path: str, output_path: str = None):
     print(f"Converting: {input_file}")
     print(f"Output: {output_file}")
 
-    # Run pandoc
+    # Preprocess: ensure blank lines before list items that follow non-list lines.
+    # Pandoc requires a blank line before a list block; without it, items get merged
+    # into the preceding paragraph (e.g. "**Bold header**\n- item" becomes one paragraph).
+    raw = input_file.read_text(encoding='utf-8')
+    lines = raw.splitlines(keepends=True)
+    processed: list[str] = []
+    for i, line in enumerate(lines):
+        if i > 0 and line.lstrip().startswith('- '):
+            prev = lines[i - 1]
+            if prev.strip() and not prev.lstrip().startswith('- ') and prev.strip() != '':
+                processed.append('\n')
+        processed.append(line)
+    preprocessed = ''.join(processed)
+
+    # Run pandoc with preprocessed input via stdin
     cmd = [
         'pandoc',
-        str(input_file),
         '-o', str(output_file),
         '--from', 'markdown',
         '--to', 'docx',
-        # Optional: use a reference doc for styling
-        # '--reference-doc', 'template.docx',
     ]
 
     try:
-        result = subprocess.run(cmd, capture_output=True, text=True, check=True)
+        result = subprocess.run(cmd, input=preprocessed, capture_output=True, text=True, check=True)
         print(f"Success: {output_file}")
         return str(output_file)
     except subprocess.CalledProcessError as e:

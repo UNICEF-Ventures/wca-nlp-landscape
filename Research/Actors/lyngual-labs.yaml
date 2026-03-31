@@ -55,8 +55,10 @@ publications:
     venue: ACL CALCS Workshop 2025
   - title: "Evaluating Yoruba Text-to-Speech Systems for Accessible Computer-Based Testing in Visually Impaired Learners"
     venue: AfricaNLP 2026 (EACL)
+    url: https://openreview.net/attachment?id=xuU5Tpo8on&name=pdf
   - title: "Challenging Multimodal LLMs with African Standardized Exams"
     venue: AfricaNLP 2025
+    url: https://aclanthology.org/2025.africanlp-1.22/
 
 partnerships:
   - Chris Emezue / Lanfrica / Mila

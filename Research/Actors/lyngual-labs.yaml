@@ -1,0 +1,72 @@
+id: lyngual-labs
+name: Lyngual Labs
+type: startup
+website: https://lynguallabs.org/
+location: Nigeria
+founded: 2024
+organization_size: small
+description: >
+  Nigerian AI research lab building speech and NLP models for Nigerian languages,
+  with a focus on Yoruba. Operates under LynguaTech Innovative Foundation. Has created
+  paid opportunities for 500+ voice contributors and built a community of 289 data
+  annotators. Notable work on Yoruba-English code-switched ASR, TTS accessibility
+  evaluation for visually impaired learners, and multimodal LLM evaluation on Nigerian
+  exam content (WAEC/NECO).
+
+key_people:
+  - name: Oreoluwa Boluwatife Babatunde
+    role: Co-founder
+  - name: Victor Tolulope Olufemi
+    role: Co-founder
+  - name: Kausar Yetunde Moshood
+    role: Researcher
+  - name: Emmanuel Bolarinwa
+    role: Researcher
+  - name: Williams Oluwademilade
+    role: Researcher
+
+countries:
+  - NG
+languages:
+  - yor
+  - ibo
+  - hau
+
+huggingface: https://huggingface.co/LyngualLabs
+contact:
+  email: kausar@lynguallabs.org
+
+projects:
+  - name: Yoruba-English Code-Switched Speech Dataset
+    description: First large-scale dataset capturing natural bilingual speech in Nigeria, targeting 100+ hours
+    languages: [yor]
+  - name: Nigerian Language Exams VQA
+    url: https://huggingface.co/datasets/LyngualLabs/Nigerian-Language-Exams-VQA
+    description: 837 WAEC/NECO exam images in Yoruba, Igbo, Hausa for evaluating multimodal LLMs
+    languages: [yor, ibo, hau]
+  - name: Yoruba TTS for Accessible Computer-Based Testing
+    url: https://github.com/Moshood-Kausar/Yoruba_CBT_TTS
+    description: Evaluation of TTS systems for visually impaired learners taking WAEC exams
+    languages: [yor]
+
+publications:
+  - title: "Beyond Monolingual Limits: Fine-Tuning Monolingual ASR for Yoruba-English Code-Switching"
+    url: https://aclanthology.org/2025.calcs-1.3/
+    venue: ACL CALCS Workshop 2025
+  - title: "Evaluating Yoruba Text-to-Speech Systems for Accessible Computer-Based Testing in Visually Impaired Learners"
+    venue: AfricaNLP 2026 (EACL)
+  - title: "Challenging Multimodal LLMs with African Standardized Exams"
+    venue: AfricaNLP 2025
+
+partnerships:
+  - Chris Emezue / Lanfrica / Mila
+
+unicef_relevance: >
+  Education accessibility for visually impaired learners using TTS in local languages.
+  Code-switched speech recognition addresses real-world Nigerian speech patterns.
+  Open models on HuggingFace for Yoruba, Igbo, Hausa — all UNICEF priority languages.
+
+maturity: early
+engagement_status: none
+openness: open
+last_updated: 2026-03-31

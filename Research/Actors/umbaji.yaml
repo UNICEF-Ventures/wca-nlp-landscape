@@ -1,0 +1,79 @@
+id: umbaji
+name: Umbaji
+type: startup
+website: https://www.umbaji.org/
+location: Lomé, Togo
+organization_size: small
+description: >
+  Togo-based organization building NLP resources for Togolese languages. Developed the
+  Eyaa-Tom multilingual speech corpus (30.9 hours across 10 Togolese languages) and the
+  Yodi Data Hub, a community platform for crowdsourcing speech and text with fair
+  compensation (415 contributors from 6 countries, 60,000+ clips collected). Fine-tuned
+  Whisper and NLLB models for Togolese languages and introduced the Lom Bench, a
+  community-based TTS evaluation benchmark. Uses the Nwulite Obodo License (NOODL)
+  balancing open access with community ownership. Also sells robotics and hardware
+  products.
+
+key_people:
+  - name: Justin E. Bakoubolo
+    role: Founder
+    note: LinkedIn linkedin.com/in/justin-bakoubolo
+  - name: Catherine N. N. Essuman
+    role: Researcher
+  - name: Messan Agbobli
+    role: Researcher
+    affiliation: University of Lomé
+
+countries:
+  - TG
+languages:
+  - ewe
+
+huggingface: https://huggingface.co/Umbaji
+contact:
+  email: justin.bakoubolo@umbaji.org
+
+projects:
+  - name: Eyaa-Tom Corpus
+    description: >
+      Multilingual speech corpus with 30.9 hours (26,900 recordings) across
+      10 Togolese languages: Ewè, Kabyè, Nawdm, Mina, Adja, Bassar, Kotokoli,
+      Moba, Lamba, Losso. Integrated with 46.6 hours of Common Voice data.
+    languages: [ewe]
+  - name: Yodi Data Hub
+    description: >
+      Community crowdsourcing platform for speech and text data collection.
+      Contributors record prompts, validate transcriptions, and earn compensation.
+      415 contributors from 6 countries, 60,650 clips collected.
+    languages: [ewe]
+  - name: Lom Bench
+    description: >
+      Community-based TTS evaluation benchmark where native speakers rate
+      synthetic speech on quality, naturalness, and pronunciation using MOS.
+    languages: [ewe]
+
+publications:
+  - title: "Eyaa-Tom 26, Yodi-Mantissa and Lom Bench: A Community Benchmark for TTS in Local Languages"
+    venue: AfricaNLP 2026 (EACL)
+  - title: "Eyaa-Tom: A Dataset for Togolese Languages"
+    venue: 2024
+
+partnerships:
+  - University of Lomé
+  - University of Kara
+  - Mozilla Common Voice
+
+unicef_relevance: >
+  Covers Ewe, a UNICEF priority language. Community-driven data collection with fair
+  compensation aligns with UNICEF values. Togo is a WCA country with no other dedicated
+  language technology actor. Ethical data practices and community ownership model.
+
+maturity: early
+engagement_status: none
+openness: open
+last_updated: 2026-03-31
+
+notes: >
+  Primary business appears to be robotics/hardware distribution alongside NLP research.
+  NLP work is legitimate and published at peer-reviewed venues. Founder well-connected
+  in African AI community.

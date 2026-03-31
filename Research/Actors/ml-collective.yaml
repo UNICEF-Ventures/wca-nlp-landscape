@@ -1,0 +1,97 @@
+id: ml-collective
+name: ML Collective
+type: ngo
+website: https://mlcollective.org/
+location: Distributed (US-based)
+organization_size: medium
+description: >
+  Non-profit research lab providing research opportunities to independent and
+  underrepresented researchers. Runs multiple African language NLP projects including
+  AfriCaption (image captioning in 20 African languages), data augmentation for African
+  MT, Nigerian language embeddings, and Yoruba QA robustness evaluation. Connected to
+  the NaijaVoices speech dataset initiative. Provides mentorship, compute resources,
+  and publication support to researchers working on African language technology.
+
+key_people:
+  - name: Jekaterina Novikova
+    role: Research lead / supervisor
+  - name: Mardiyyah Oduwole
+    role: Researcher
+    note: Lead on AfriCaption and multiple African NLP projects
+  - name: Steven Kolawole
+    role: Researcher
+    note: Nigerian Sign Language, model compression
+  - name: Chris Emezue
+    role: Affiliated researcher
+    note: Also Lanfrica, Mila, NaijaVoices
+
+countries:
+  - NG
+  - GH
+languages:
+  - yor
+  - ibo
+  - hau
+  - ewe
+  - lin
+  - fuv
+  - dyu
+  - bam
+
+github: https://github.com/MlCollective
+huggingface: https://huggingface.co/mlcollective
+contact:
+  email: info@mlcollective.org
+
+projects:
+  - name: AfriCaption
+    url: https://huggingface.co/datasets/mlcollective/AFRICaption
+    description: >
+      First image captioning dataset and model for African languages.
+      8K images with captions in 20 African languages. 0.5B parameter
+      vision-to-text model (SigLIP + NLLB decoder).
+    languages: [yor, ibo, hau, ewe, lin, fuv, dyu, bam]
+  - name: African MT Data Augmentation
+    description: Data augmentation techniques for African language translation systems
+    languages: [yor, ibo, hau]
+  - name: Nigerian Language Embeddings (wazobia-embed)
+    url: https://github.com/MlCollective/wazobia-embed
+    description: Improved BGE-M3 multilingual dense embeddings for Nigerian low-resource languages
+    languages: [yor, ibo, hau]
+  - name: Yoruba QA Robustness
+    description: Evaluating LLM resilience to typographical noise in Yoruba question-answering
+    languages: [yor]
+
+projects_url: https://mlcollective.org/projects/
+
+publications:
+  - title: "AfriCaption: Establishing a New Paradigm for Image Captioning in African Languages"
+    venue: AfricaNLP 2026 (EACL)
+  - title: "From Scarcity to Efficiency: Investigating Data Augmentation Effects on African Machine Translation"
+    venue: AAAI 2026 (Language Models for Underserved Communities)
+  - title: "Improving BGE-M3 Multilingual Dense Embeddings for Nigerian Low Resource Languages"
+    venue: WiNLP Workshop, EMNLP 2025
+  - title: "Evaluating Robustness of LLMs to Typographical Noise in Yorùbá QA"
+    url: https://aclanthology.org/2025.africanlp-1.0/
+    venue: AfricaNLP 2025 (ACL)
+  - title: "Sign-to-Speech Model for Nigerian Sign Language"
+    venue: IJCAI 2022
+
+publications_url: https://mlcollective.org/projects/
+
+partnerships:
+  - NaijaVoices
+  - Lanfrica
+  - Ashesi University
+  - Abubakar Tafawa Balewa University
+
+unicef_relevance: >
+  AfriCaption covers 8 UNICEF focus languages including Yoruba, Igbo, Hausa, Ewe,
+  Lingala, Nigerian Fulfulde, Dyula, and Bambara — the broadest WCA language coverage
+  of any single project. Multimodal AI (image captioning) could support visual content
+  accessibility. Provides research mentorship pipeline for African NLP talent.
+
+maturity: established
+engagement_status: none
+openness: open
+last_updated: 2026-03-31

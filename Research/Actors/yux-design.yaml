@@ -1,0 +1,84 @@
+id: yux-design
+name: YUX Design / Kitala AI
+type: startup
+website: https://yux.design/
+location: Dakar, Senegal
+founded: 2016
+organization_size: medium
+description: >
+  African design and innovation firm with offices in Dakar, Accra, Lagos, Abuja,
+  Brazzaville, Kigali, and Nairobi. ~50 staff including ML engineers and researchers.
+  Their AI arm operates through Kitala AI (https://kitala.ai/), offering culturally
+  grounded AI data services: LLM bias evaluation, RLHF testing, voice datasets for ASR,
+  and domain-specific Q&A datasets. The YUX Cultural AI Lab produces open research
+  including the AfriStereo bias benchmark. Recent work includes Wolof ASR fine-tuning
+  for maternal and reproductive health in collaboration with Stanford University.
+
+key_people:
+  - name: Yann Le Beux
+    role: Co-Founder, General Manager, AI Lead
+  - name: Oche David Ankeli
+    role: ML Engineer & Researcher
+  - name: Ertony Basilwango
+    role: Research ML Engineer
+  - name: Pierre Herve Berdys
+    role: Researcher
+
+countries:
+  - SN
+  - GH
+  - NG
+  - CG
+  - RW
+  - KE
+languages:
+  - wol
+  - hau
+
+github: https://github.com/YUX-Cultural-AI-Lab
+contact:
+  email: hello@yux.design
+
+projects:
+  - name: Wolof Maternal Health ASR
+    description: >
+      750-utterance Wolof dataset for maternal and reproductive health ASR.
+      Fine-tuned Whisper with LoRA, reducing WER from 46.5% to 23% and
+      Keyword Error Rate from 17% to 11%. Community evaluation on 1,340
+      real-world utterances.
+    languages: [wol]
+  - name: AfriStereo
+    url: https://github.com/YUX-Cultural-AI-Lab/Afri-Stereo
+    description: >
+      5,000+ stereotype-antistereotype pairs for evaluating LLM bias,
+      grounded in Senegal, Kenya, and Nigeria. 11 LLMs evaluated.
+    languages: [wol]
+  - name: Kitala AI - AI Data Services
+    url: https://kitala.ai/
+    description: >
+      Commercial arm offering LLM bias evaluation, RLHF testing via text/voice,
+      culturally grounded Q&A datasets (health, finance), and voice datasets for ASR.
+
+publications:
+  - title: "AfriStereo: A Culturally Grounded Dataset for Evaluating Stereotypical Bias in Large Language Models"
+    url: https://arxiv.org/abs/2511.22016
+    venue: arXiv 2025
+  - title: "Enhancing ASR Models for Maternal and Reproductive Health: Fine-Tuning and Real-World Evaluation in Wolof"
+    venue: AfricaNLP 2026 (EACL)
+
+partnerships:
+  - Stanford University
+  - Google
+  - Wikimedia Foundation
+  - Gates Foundation
+  - UNICEF
+
+unicef_relevance: >
+  Already a UNICEF client (via YUX Design). Wolof maternal health ASR directly
+  applicable to UNICEF health programmes in Senegal. LLM bias evaluation relevant
+  for responsible AI deployment. Multi-country WCA presence (Dakar, Accra, Lagos).
+
+maturity: established
+engagement_status: none
+openness: partial
+last_updated: 2026-03-31

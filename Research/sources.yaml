@@ -229,3 +229,8 @@ sources:
     languages_covered: [ful, hau, ibo, lin, wol, yor]
     # Not covered: ewe, bam, twi, aka, fon, mos, dyu, sag, kau, kri, and most others
     description: Standard speech evaluation dataset used by Whisper, MMS, and others. 102 languages. Benchmark scores tracked per model (MMS, Whisper), not per dataset.
+
+  - name: AfricaNLP 2026 Workshop Proceedings
+    url: https://sites.google.com/view/africanlp2026/home
+    type: reference
+    description: Annual workshop on NLP for African languages, co-located with EACL 2026 (Rabat, Morocco, March 28 2026). Papers on ASR, MT, TTS, LLM evaluation for African languages. Source for identifying new actors and benchmarks.

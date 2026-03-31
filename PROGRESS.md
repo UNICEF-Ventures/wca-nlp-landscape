@@ -57,7 +57,7 @@ Profiles of organizations, research groups, and startups working on African lang
 
 | Done | Target | Progress                 |
 |------|--------|--------------------------|
-| 26   | 24     | ████████████████████ 108% |
+| 30   | 24     | ████████████████████ 125% |
 
 **Completed actors:**
 1. Masakhane - Pan-African NLP research community
@@ -86,6 +86,10 @@ Profiles of organizations, research groups, and startups working on African lang
 24. UBC Deep Learning & NLP Lab - Canada, SAHARA/Toucan/AfroLID (517 African languages)
 25. Digital Umuganda - Rwanda, AfriVoice dataset (Lingala/Fulfulde/Wolof), 2200hrs Kinyarwanda Common Voice (CLEAR Global contact)
 26. CLEAR Global - Global, TWB Voice (Hausa/Kanuri/Shuwa Arabic), Gamayun, LT4CR, 55 HF models (conducting this consultancy)
+27. Lyngual Labs - Nigeria, Yoruba ASR/TTS/NER, code-switched speech, accessibility for visually impaired
+28. YUX Design / Kitala AI - Senegal (Dakar HQ + 6 cities), Wolof health ASR, LLM bias evaluation, UNICEF client
+29. Umbaji - Togo, Ewe + 9 Togolese languages, Eyaa-Tom corpus (30.9hrs), Yodi Data Hub crowdsourcing platform
+30. ML Collective - Distributed, AfriCaption (20 African languages), Nigerian language embeddings, multiple AfricaNLP papers
 
 Languages missing dedicated actors:
 - Sierra Leone: Mende (men), Temne (tem) - no dedicated actors
@@ -97,6 +101,7 @@ Languages missing dedicated actors:
 - Burkina Faso: Gourmantchéma (gux) - no dedicated actors
 - DRC/Congo: Lingala (lin), Congo Swahili (swc) - partially covered by CLEAR Global (LT4CR, Gamayun)
 - Note: Krio (kri) now partially covered by Farmerline; Soninke (snk) covered by MALIBA-AI and RobotsMali; Dyula (dyu) covered by Farmerline
+- Note: Ewe (ewe) now covered by Umbaji (Togo); Wolof (wol) health domain covered by YUX Design
 
 ### 1.4 Actor Prioritization (for Summit Invitations)
 
@@ -189,13 +194,26 @@ Run model evaluations where public test data exists but no published scores are 
 
 | Done | Target | Progress                 |
 |------|--------|--------------------------|
-| 0    | 6      | ░░░░░░░░░░░░░░░░░░░░ 0%  |
-- [ ] Quick wins: extract missing SimbaBench ASR scores for mos, sag, ewe
-- [ ] Quick wins: run NLLB-200 on FLORES-200 for fuv, sag
-- [ ] ASR evals: ewe, mos, dag, fan, sag, kri (on SimbaBench/Common Voice test splits)
-- [ ] ASR evals (Bible-domain, lower priority): gux, ses, dts on CMU Wilderness
-- [ ] MT evals: fuv, sag, kri, dag (NLLB/MADLAD on FLORES-200 or available test sets)
-- [ ] Hire engineer for manual benchmark execution (pending decision)
+| 5    | 7      | ██████████████░░░░░░ 70%  |
+
+NLP engineer (Aymane Farhi) contracted. Draft report: `Project documents/Manual Benchmarking — UNICEF WCARO NLP Landscape.docx`
+
+**ASR evaluations (OmnilingualASR 3B/7B, MMS, Simba-S):**
+- [x] Mooré (mos): OmniASR on GoAI corpus (1000 samples) — WER 37.66 (3B), 44.72 (7B)
+- [x] Dagbani (dag): OmniASR on CV25 test (WER 33.67) and WaxalNLP (WER 81.40)
+- [x] Nigerian Fulfulde (fuv): OmniASR on corpus test (WER 56.21) and FLEURS (WER 52.36)
+- [x] Central-Eastern Niger Fulfulde (fuq): OmniASR on corpus test (WER 77.78)
+- [x] Soninke (snk): OmniASR on corpus test (WER 59.04)
+- [ ] Ewe (ewe): pending — WaxalNLP data quality issues reported and fixed, evaluation to resume
+
+**MT evaluations (NLLB 600M/3.3B, OPUS-MT):**
+- [x] Nigerian Fulfulde (fuv): NLLB on FLORES+ and BOUQuET (chrF++ 30-36 fuv→en)
+- [x] Dagbani (dag): OPUS-MT on UDHR (chrF++ 12.41 dag→en)
+- [x] Pulaar (fuc): OPUS-MT on BOUQuET (chrF++ 15.49 fuc→en)
+
+**Not feasible (no valid evaluation data):**
+- ses, gux: only Bible data already used in model training
+- dts, ffm, fuh: no evaluation data exists
 
 ---
 
@@ -211,11 +229,13 @@ Curated factsheets per language with resources, benchmarks, and assessment. Max 
 Language profiles are auto-generated from YAML data into DOCX (`WCA_NLP_Languages.docx`) and HTML (live site). Content maintained through data pipeline.
 
 ### 3.2 Actor Engagement Framework (Deliverable 3.2)
-Brief framework: criteria for identifying actors, key discovery resources, engagement best practices. Builds on Task 1 actor mapping.
+One-pager: guidance for identifying and engaging actors working on language technology for WCA languages. Builds on Task 1 actor mapping.
 
 | Status | Progress |
 |--------|----------|
-| Not started | ░░░░░░░░░░░░░░░░░░░░ 0% |
+| Draft complete | ████████████████████ 100% |
+
+Draft at `Event/actor_engagement_framework.md`. Covers: discovery sources (HuggingFace, Masakhane, Lanfrica, AfricaNLP, Common Voice, OpenSLR), assessment dimensions (5 criteria), engagement approaches by actor type (research communities, startups, universities, government), practical tips.
 
 ### 3.3 SharePoint Content (Deliverable 3.3)
 Structured content for UNICEF SharePoint. CLEAR provides content/docs; UNICEF handles SharePoint setup and maintenance.
@@ -237,6 +257,13 @@ Advisory support for actor selection, agenda input, and presentation of findings
 ---
 
 ## Recent Updates
+
+### 2026-03-31
+- **4 new actors added (30 total):** Lyngual Labs (Nigeria, Yoruba ASR/TTS/NER, accessibility), YUX Design / Kitala AI (Senegal, Wolof health ASR, LLM bias evaluation), Umbaji (Togo, Ewe + 9 Togolese languages, Eyaa-Tom corpus), ML Collective (distributed, AfriCaption 20 African languages). Sourced from AfricaNLP 2026 proceedings review.
+- **Actor engagement framework drafted** (`Event/actor_engagement_framework.md`): one-pager covering actor discovery sources, assessment dimensions, engagement approaches by actor type.
+- **SharePoint content drafted** (`output/sharepoint_landscape_analysis_v2.md`): landscape analysis description for UNICEF SharePoint page.
+- **AfricaNLP 2026 Workshop** added to `Research/sources.yaml` as reference source.
+- **AfricaNLP 2026 research notes** compiled at `Event/africanlp2026_research_notes.md`: 8 papers reviewed, potential benchmark data identified.
 
 ### 2026-03-09
 - **LanguageBench included:** LLM evaluation benchmark from BMZ/GIZ/DFKI ([arXiv:2507.08538](https://arxiv.org/abs/2507.08538)). Auto-updating leaderboard evaluating 37+ commercial and open-weight LLMs (GPT-5, Claude, Gemini, Llama, etc.) across 200+ languages on translation (FLORES+ SpBLEU/ChrF), classification (SIB-200), QA (MMLU, ARC), and math (MGSM). 13 focus languages benchmarked: aka, bam, dyu, ewe, fon, fuv, hau, ibo, lin, mos, sag, wol, yor. Caveat: n=10 sentences per evaluation — directional insights only. MMLU/ARC/MGSM omitted for 6 languages where IrokoBench has better data. Top 3 models per task per language. Reusable fetch script: `scripts/fetch_languagebench.py --top N`.

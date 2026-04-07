@@ -5,7 +5,7 @@ evaluations:
     results:
     - test_set: OmniCorpus
       source: evaluated
-      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
       metrics:
       - name: WER
         value: 55.92
@@ -13,7 +13,7 @@ evaluations:
         value: 23.93
     - test_set: FLEURS
       source: evaluated
-      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
       metrics:
       - name: WER
         value: 52.36
@@ -24,7 +24,7 @@ evaluations:
     results:
     - test_set: OmniCorpus
       source: evaluated
-      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
       metrics:
       - name: WER
         value: 53.85
@@ -32,7 +32,7 @@ evaluations:
         value: 22.64
     - test_set: FLEURS
       source: evaluated
-      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
       metrics:
       - name: WER
         value: 48.07
@@ -44,7 +44,7 @@ evaluations:
     results:
     - test_set: FLORES+ devtest
       source: evaluated
-      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
       metrics:
       - name: chrF++ fuv→en
         value: 30.72
@@ -52,7 +52,7 @@ evaluations:
         value: 16.95
     - test_set: BOUQuET
       source: evaluated
-      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
       metrics:
       - name: chrF++ fuv→en
         value: 32.04
@@ -63,7 +63,7 @@ evaluations:
     results:
     - test_set: FLORES+ devtest
       source: evaluated
-      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
       metrics:
       - name: chrF++ fuv→en
         value: 32.4
@@ -71,7 +71,7 @@ evaluations:
         value: 22.94
     - test_set: BOUQuET
       source: evaluated
-      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
       metrics:
       - name: chrF++ fuv→en
         value: 36.27

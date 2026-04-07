@@ -15,7 +15,7 @@ evaluations:
     results:
     - test_set: CV25
       source: evaluated
-      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
       metrics:
       - name: WER
         value: 33.67
@@ -23,7 +23,7 @@ evaluations:
         value: 9.6
     - test_set: Waxal
       source: evaluated
-      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
       metrics:
       - name: WER
         value: 81.4
@@ -34,7 +34,7 @@ evaluations:
     results:
     - test_set: Common Voice 25
       source: evaluated
-      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
       metrics:
       - name: WER
         value: 27.78
@@ -42,7 +42,7 @@ evaluations:
         value: 7.67
     - test_set: Waxal
       source: evaluated
-      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
       metrics:
       - name: WER
         value: 65.74
@@ -54,7 +54,7 @@ evaluations:
     results:
     - test_set: UDHR
       source: evaluated
-      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
       metrics:
       - name: chrF++ dag→en
         value: 12.41

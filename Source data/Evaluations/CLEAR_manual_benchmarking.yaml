@@ -13,7 +13,7 @@ models:
       ewe:
         - test_set: Waxal-test(<40s)
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 50.03
@@ -22,7 +22,7 @@ models:
       mos:
         - test_set: GoAI
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 37.66
@@ -31,7 +31,7 @@ models:
       dag:
         - test_set: CV25
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 33.67
@@ -39,7 +39,7 @@ models:
               value: 9.60
         - test_set: Waxal
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 81.40
@@ -48,7 +48,7 @@ models:
       fuv:
         - test_set: OmniCorpus
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 55.92
@@ -56,7 +56,7 @@ models:
               value: 23.93
         - test_set: FLEURS
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 52.36
@@ -65,7 +65,7 @@ models:
       fuq:
         - test_set: OmniCorpus-test(<40s)
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 79.98
@@ -74,7 +74,7 @@ models:
       snk:
         - test_set: OmniCorpus
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 59.26
@@ -88,7 +88,7 @@ models:
       ewe:
         - test_set: Waxal-test(<40s)
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 41.40
@@ -97,7 +97,7 @@ models:
       mos:
         - test_set: GoAI
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 29.51
@@ -106,7 +106,7 @@ models:
       dag:
         - test_set: Common Voice 25
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 27.78
@@ -114,7 +114,7 @@ models:
               value: 7.67
         - test_set: Waxal
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 65.74
@@ -123,7 +123,7 @@ models:
       fuv:
         - test_set: OmniCorpus
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 53.85
@@ -131,7 +131,7 @@ models:
               value: 22.64
         - test_set: FLEURS
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 48.07
@@ -140,7 +140,7 @@ models:
       fuq:
         - test_set: OmniCorpus-test(<40s)
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 75.47
@@ -149,7 +149,7 @@ models:
       snk:
         - test_set: OmniCorpus
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 54.63
@@ -163,7 +163,7 @@ models:
       ewe:
         - test_set: Waxal
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 50.35
@@ -172,7 +172,7 @@ models:
       mos:
         - test_set: GoAI
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 43.75
@@ -186,7 +186,7 @@ models:
       ewe:
         - test_set: Waxal
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 113.11
@@ -195,7 +195,7 @@ models:
       mos:
         - test_set: GoAI
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 114.58
@@ -211,7 +211,7 @@ models:
       fuv:
         - test_set: FLORES+ devtest
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: chrF++ fuv→en
               value: 30.72
@@ -219,7 +219,7 @@ models:
               value: 16.95
         - test_set: BOUQuET
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: chrF++ fuv→en
               value: 32.04
@@ -233,7 +233,7 @@ models:
       fuv:
         - test_set: FLORES+ devtest
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: chrF++ fuv→en
               value: 32.40
@@ -241,7 +241,7 @@ models:
               value: 22.94
         - test_set: BOUQuET
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: chrF++ fuv→en
               value: 36.27
@@ -255,7 +255,7 @@ models:
       dag:
         - test_set: UDHR
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: chrF++ dag→en
               value: 12.41
@@ -264,7 +264,7 @@ models:
       fuc:
         - test_set: BOUQuET
           source: evaluated
-          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: chrF++ fuc→en
               value: 15.49

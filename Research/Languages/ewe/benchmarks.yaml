@@ -1043,6 +1043,51 @@ evaluations:
         value: 7.2
       - name: chrF eng→ewe
         value: 30.5
+  asr:
+  - model: facebook/omniASR-LLM-3B
+    model_url: https://huggingface.co/facebook/omniASR-LLM-3B
+    results:
+    - test_set: Waxal-test(<40s)
+      source: evaluated
+      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      metrics:
+      - name: WER
+        value: 50.03
+      - name: CER
+        value: 16.89
+  - model: facebook/omniASR-LLM-7B
+    model_url: https://huggingface.co/facebook/omniASR-LLM-7B
+    results:
+    - test_set: Waxal-test(<40s)
+      source: evaluated
+      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      metrics:
+      - name: WER
+        value: 41.4
+      - name: CER
+        value: 12.97
+  - model: facebook/mms-1b-all
+    model_url: https://huggingface.co/facebook/mms-1b-all
+    results:
+    - test_set: Waxal
+      source: evaluated
+      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      metrics:
+      - name: WER
+        value: 50.35
+      - name: CER
+        value: 15.37
+  - model: UBC-NLP/Simba-S
+    model_url: https://huggingface.co/UBC-NLP/Simba-S
+    results:
+    - test_set: Waxal
+      source: evaluated
+      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      metrics:
+      - name: WER
+        value: 113.11
+      - name: CER
+        value: 51.12
   tts:
   - model: facebook/mms-tts
     model_url: https://huggingface.co/facebook/mms-tts

@@ -1,14 +1,14 @@
 # Benchmark Coverage Matrix
 
-Generated: 2026-03-31
+Generated: 2026-04-07
 
 | ISO | ASR | TTS | MT | LLM | Language |
 |-----| --- | --- | --- | --- |---------|
-| mos |     |     |  x  |  x  | Mooré |
+| mos |  x  |     |  x  |  x  | Mooré |
 | dyu |  x  |     |  x  |  x  | Dyula |
 | ful |  x  |     |  x  |  x  | Fula |
 | fuh |     |     |     |     | Western Niger Fulfulde |
-| fuv |     |     |  x  |  x  | Nigerian Fulfulde |
+| fuv |  x  |     |  x  |  x  | Nigerian Fulfulde |
 | gux |     |     |     |     | Gourmanché |
 | bam |  x  |     |  x  |  x  | Bambara |
 | snk |  x  |     |     |     | Soninke |
@@ -16,8 +16,8 @@ Generated: 2026-03-31
 | dts |     |     |  x  |     | Escarpment Dogon |
 | ses |     |     |     |     | Koyraboro Senni |
 | twi |  x  |  x  |  x  |  x  | Twi |
-| dag |     |     |     |     | Dagbani |
-| ewe |     |  x  |  x  |  x  | Ewe |
+| dag |  x  |     |  x  |     | Dagbani |
+| ewe |  x  |  x  |  x  |  x  | Ewe |
 | hau |  x  |  x  |  x  |  x  | Hausa |
 | yor |  x  |  x  |  x  |  x  | Yoruba |
 | ibo |  x  |     |  x  |  x  | Igbo |
@@ -38,6 +38,6 @@ Generated: 2026-03-31
 | shu |     |     |     |     | Chadian Arabic |
 | fon |  x  |     |  x  |  x  | Fon |
 | pov |     |     |  x  |     | Guinea-Bissau Creole |
-| 34 |  15  |  7  |  19  |  17  | Total |
+| 34 |  19  |  7  |  20  |  17  | Total |
 
-Coverage: 23/34 languages have at least one benchmark.
+Coverage: 24/34 languages have at least one benchmark.

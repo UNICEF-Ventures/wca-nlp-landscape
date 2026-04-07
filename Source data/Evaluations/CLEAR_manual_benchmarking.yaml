@@ -1,0 +1,272 @@
+# Manual benchmarking results — CLEAR Global
+# Evaluated as part of UNICEF WCARO NLP Landscape consultancy, 2026
+
+
+models:
+
+  # ── ASR ──────────────────────────────────────────────
+
+  - model: facebook/omniASR-LLM-3B
+    model_url: https://huggingface.co/facebook/omniASR-LLM-3B
+    task: asr
+    results:
+      ewe:
+        - test_set: Waxal-test(<40s)
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: WER
+              value: 50.03
+            - name: CER
+              value: 16.89
+      mos:
+        - test_set: GoAI
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: WER
+              value: 37.66
+            - name: CER
+              value: 14.81
+      dag:
+        - test_set: CV25
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: WER
+              value: 33.67
+            - name: CER
+              value: 9.60
+        - test_set: Waxal
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: WER
+              value: 81.40
+            - name: CER
+              value: 36.32
+      fuv:
+        - test_set: OmniCorpus
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: WER
+              value: 55.92
+            - name: CER
+              value: 23.93
+        - test_set: FLEURS
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: WER
+              value: 52.36
+            - name: CER
+              value: 18.48
+      fuq:
+        - test_set: OmniCorpus-test(<40s)
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: WER
+              value: 79.98
+            - name: CER
+              value: 38.21
+      snk:
+        - test_set: OmniCorpus
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: WER
+              value: 59.26
+            - name: CER
+              value: 17.95
+
+  - model: facebook/omniASR-LLM-7B
+    model_url: https://huggingface.co/facebook/omniASR-LLM-7B
+    task: asr
+    results:
+      ewe:
+        - test_set: Waxal-test(<40s)
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: WER
+              value: 41.40
+            - name: CER
+              value: 12.97
+      mos:
+        - test_set: GoAI
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: WER
+              value: 29.51
+            - name: CER
+              value: 10.56
+      dag:
+        - test_set: Common Voice 25
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: WER
+              value: 27.78
+            - name: CER
+              value: 7.67
+        - test_set: Waxal
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: WER
+              value: 65.74
+            - name: CER
+              value: 23.96
+      fuv:
+        - test_set: OmniCorpus
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: WER
+              value: 53.85
+            - name: CER
+              value: 22.64
+        - test_set: FLEURS
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: WER
+              value: 48.07
+            - name: CER
+              value: 14.89
+      fuq:
+        - test_set: OmniCorpus-test(<40s)
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: WER
+              value: 75.47
+            - name: CER
+              value: 30.85
+      snk:
+        - test_set: OmniCorpus
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: WER
+              value: 54.63
+            - name: CER
+              value: 15.72
+
+  - model: facebook/mms-1b-all
+    model_url: https://huggingface.co/facebook/mms-1b-all
+    task: asr
+    results:
+      ewe:
+        - test_set: Waxal
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: WER
+              value: 50.35
+            - name: CER
+              value: 15.37
+      mos:
+        - test_set: GoAI
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: WER
+              value: 43.75
+            - name: CER
+              value: 14.62
+
+  - model: UBC-NLP/Simba-S
+    model_url: https://huggingface.co/UBC-NLP/Simba-S
+    task: asr
+    results:
+      ewe:
+        - test_set: Waxal
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: WER
+              value: 113.11
+            - name: CER
+              value: 51.12
+      mos:
+        - test_set: GoAI
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: WER
+              value: 114.58
+            - name: CER
+              value: 75.04
+
+  # ── Machine Translation ─────────────────────────────
+
+  - model: facebook/nllb-200-distilled-600M
+    model_url: https://huggingface.co/facebook/nllb-200-distilled-600M
+    task: mt
+    results:
+      fuv:
+        - test_set: FLORES+ devtest
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: chrF++ fuv→en
+              value: 30.72
+            - name: chrF++ en→fuv
+              value: 16.95
+        - test_set: BOUQuET
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: chrF++ fuv→en
+              value: 32.04
+            - name: chrF++ en→fuv
+              value: 20.88
+
+  - model: facebook/nllb-200-3.3B
+    model_url: https://huggingface.co/facebook/nllb-200-3.3B
+    task: mt
+    results:
+      fuv:
+        - test_set: FLORES+ devtest
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: chrF++ fuv→en
+              value: 32.40
+            - name: chrF++ en→fuv
+              value: 22.94
+        - test_set: BOUQuET
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: chrF++ fuv→en
+              value: 36.27
+            - name: chrF++ en→fuv
+              value: 24.51
+
+  - model: Helsinki-NLP/opus-mt-tc-bible-big-mul-mul
+    model_url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-mul
+    task: mt
+    results:
+      dag:
+        - test_set: UDHR
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: chrF++ dag→en
+              value: 12.41
+            - name: chrF++ en→dag
+              value: 8.37
+      fuc:
+        - test_set: BOUQuET
+          source: evaluated
+          source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+          metrics:
+            - name: chrF++ fuc→en
+              value: 15.49
+            - name: chrF++ en→fuc
+              value: 9.92

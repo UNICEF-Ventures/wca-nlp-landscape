@@ -1,5 +1,82 @@
 evaluations:
+  asr:
+  - model: facebook/omniASR-LLM-3B
+    model_url: https://huggingface.co/facebook/omniASR-LLM-3B
+    results:
+    - test_set: OmniCorpus
+      source: evaluated
+      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      metrics:
+      - name: WER
+        value: 55.92
+      - name: CER
+        value: 23.93
+    - test_set: FLEURS
+      source: evaluated
+      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      metrics:
+      - name: WER
+        value: 52.36
+      - name: CER
+        value: 18.48
+  - model: facebook/omniASR-LLM-7B
+    model_url: https://huggingface.co/facebook/omniASR-LLM-7B
+    results:
+    - test_set: OmniCorpus
+      source: evaluated
+      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      metrics:
+      - name: WER
+        value: 53.85
+      - name: CER
+        value: 22.64
+    - test_set: FLEURS
+      source: evaluated
+      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      metrics:
+      - name: WER
+        value: 48.07
+      - name: CER
+        value: 14.89
   mt:
+  - model: facebook/nllb-200-distilled-600M
+    model_url: https://huggingface.co/facebook/nllb-200-distilled-600M
+    results:
+    - test_set: FLORES+ devtest
+      source: evaluated
+      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      metrics:
+      - name: chrF++ fuv→en
+        value: 30.72
+      - name: chrF++ en→fuv
+        value: 16.95
+    - test_set: BOUQuET
+      source: evaluated
+      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      metrics:
+      - name: chrF++ fuv→en
+        value: 32.04
+      - name: chrF++ en→fuv
+        value: 20.88
+  - model: facebook/nllb-200-3.3B
+    model_url: https://huggingface.co/facebook/nllb-200-3.3B
+    results:
+    - test_set: FLORES+ devtest
+      source: evaluated
+      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      metrics:
+      - name: chrF++ fuv→en
+        value: 32.4
+      - name: chrF++ en→fuv
+        value: 22.94
+    - test_set: BOUQuET
+      source: evaluated
+      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      metrics:
+      - name: chrF++ fuv→en
+        value: 36.27
+      - name: chrF++ en→fuv
+        value: 24.51
   - model: OMT-LLaMA 8B
     model_url: https://huggingface.co/facebook/omt-llama3.1-8b-v1
     results:

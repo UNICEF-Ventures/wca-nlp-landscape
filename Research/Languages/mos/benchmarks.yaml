@@ -1,4 +1,49 @@
 evaluations:
+  asr:
+  - model: facebook/omniASR-LLM-3B
+    model_url: https://huggingface.co/facebook/omniASR-LLM-3B
+    results:
+    - test_set: GoAI
+      source: evaluated
+      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      metrics:
+      - name: WER
+        value: 37.66
+      - name: CER
+        value: 14.81
+  - model: facebook/omniASR-LLM-7B
+    model_url: https://huggingface.co/facebook/omniASR-LLM-7B
+    results:
+    - test_set: GoAI
+      source: evaluated
+      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      metrics:
+      - name: WER
+        value: 29.51
+      - name: CER
+        value: 10.56
+  - model: facebook/mms-1b-all
+    model_url: https://huggingface.co/facebook/mms-1b-all
+    results:
+    - test_set: GoAI
+      source: evaluated
+      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      metrics:
+      - name: WER
+        value: 43.75
+      - name: CER
+        value: 14.62
+  - model: UBC-NLP/Simba-S
+    model_url: https://huggingface.co/UBC-NLP/Simba-S
+    results:
+    - test_set: GoAI
+      source: evaluated
+      source_url: https://github.com/MedAymenF/Manual-Benchmarking-WCARO-NLP-Landscape
+      metrics:
+      - name: WER
+        value: 114.58
+      - name: CER
+        value: 75.04
   mt:
   - model: OMT-LLaMA 8B
     model_url: https://huggingface.co/facebook/omt-llama3.1-8b-v1

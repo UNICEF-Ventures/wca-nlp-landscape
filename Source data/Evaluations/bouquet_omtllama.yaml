@@ -1,110 +1,149 @@
-# BOUQuET MT Benchmark — OMT-LLaMA 8B results
-# Paper: OmnilingualMT (Meta/FAIR, 2026) https://arxiv.org/abs/2503.10292
-# BOUQuET: 275-language human-created MT evaluation dataset
-# HF Leaderboard: https://huggingface.co/spaces/facebook/bouquet
-# Per-language scores not published — values set to "?" pending release
-# Only includes focus languages confirmed present in BOUQuET language list
-
+source: reported
+source_url: https://huggingface.co/spaces/facebook/bouquet
 model: OMT-LLaMA 8B
 model_url: https://huggingface.co/facebook/omt-llama3.1-8b-v1
 task: mt
 results:
   hau:
     - test_set: BOUQuET
-      source: reported
-      source_url: https://huggingface.co/spaces/facebook/bouquet
       metrics:
-        - name: chrF++ en→X
+        - name: direction
+          value: eng→hau
+        - name: chrF++
           value: "?"
-        - name: chrF++ X→en
+    - test_set: BOUQuET
+      metrics:
+        - name: direction
+          value: hau→eng
+        - name: chrF++
           value: "?"
   bam:
     - test_set: BOUQuET
-      source: reported
-      source_url: https://huggingface.co/spaces/facebook/bouquet
       metrics:
-        - name: chrF++ en→X
+        - name: direction
+          value: eng→bam
+        - name: chrF++
           value: "?"
-        - name: chrF++ X→en
+    - test_set: BOUQuET
+      metrics:
+        - name: direction
+          value: bam→eng
+        - name: chrF++
           value: "?"
   twi:
     - test_set: BOUQuET
-      source: reported
-      source_url: https://huggingface.co/spaces/facebook/bouquet
       metrics:
-        - name: chrF++ en→X
+        - name: direction
+          value: eng→twi
+        - name: chrF++
           value: "?"
-        - name: chrF++ X→en
+    - test_set: BOUQuET
+      metrics:
+        - name: direction
+          value: twi→eng
+        - name: chrF++
           value: "?"
   mos:
     - test_set: BOUQuET
-      source: reported
-      source_url: https://huggingface.co/spaces/facebook/bouquet
       metrics:
-        - name: chrF++ en→X
+        - name: direction
+          value: eng→mos
+        - name: chrF++
           value: "?"
-        - name: chrF++ X→en
+    - test_set: BOUQuET
+      metrics:
+        - name: direction
+          value: mos→eng
+        - name: chrF++
           value: "?"
   fuv:
     - test_set: BOUQuET
-      source: reported
-      source_url: https://huggingface.co/spaces/facebook/bouquet
       metrics:
-        - name: chrF++ en→X
+        - name: direction
+          value: eng→fuv
+        - name: chrF++
           value: "?"
-        - name: chrF++ X→en
+    - test_set: BOUQuET
+      metrics:
+        - name: direction
+          value: fuv→eng
+        - name: chrF++
           value: "?"
   dts:
     - test_set: BOUQuET
-      source: reported
-      source_url: https://huggingface.co/spaces/facebook/bouquet
       metrics:
-        - name: chrF++ en→X
+        - name: direction
+          value: eng→dts
+        - name: chrF++
           value: "?"
-        - name: chrF++ X→en
+    - test_set: BOUQuET
+      metrics:
+        - name: direction
+          value: dts→eng
+        - name: chrF++
           value: "?"
   yor:
     - test_set: BOUQuET
-      source: reported
-      source_url: https://huggingface.co/spaces/facebook/bouquet
       metrics:
-        - name: chrF++ en→X
+        - name: direction
+          value: eng→yor
+        - name: chrF++
           value: "?"
-        - name: chrF++ X→en
+    - test_set: BOUQuET
+      metrics:
+        - name: direction
+          value: yor→eng
+        - name: chrF++
           value: "?"
   ibo:
     - test_set: BOUQuET
-      source: reported
-      source_url: https://huggingface.co/spaces/facebook/bouquet
       metrics:
-        - name: chrF++ en→X
+        - name: direction
+          value: eng→ibo
+        - name: chrF++
           value: "?"
-        - name: chrF++ X→en
+    - test_set: BOUQuET
+      metrics:
+        - name: direction
+          value: ibo→eng
+        - name: chrF++
           value: "?"
   wol:
     - test_set: BOUQuET
-      source: reported
-      source_url: https://huggingface.co/spaces/facebook/bouquet
       metrics:
-        - name: chrF++ en→X
+        - name: direction
+          value: eng→wol
+        - name: chrF++
           value: "?"
-        - name: chrF++ X→en
+    - test_set: BOUQuET
+      metrics:
+        - name: direction
+          value: wol→eng
+        - name: chrF++
           value: "?"
   lin:
     - test_set: BOUQuET
-      source: reported
-      source_url: https://huggingface.co/spaces/facebook/bouquet
       metrics:
-        - name: chrF++ en→X
+        - name: direction
+          value: eng→lin
+        - name: chrF++
           value: "?"
-        - name: chrF++ X→en
+    - test_set: BOUQuET
+      metrics:
+        - name: direction
+          value: lin→eng
+        - name: chrF++
           value: "?"
   lir:
     - test_set: BOUQuET
-      source: reported
-      source_url: https://huggingface.co/spaces/facebook/bouquet
       metrics:
-        - name: chrF++ en→X
+        - name: direction
+          value: eng→lir
+        - name: chrF++
           value: "?"
-        - name: chrF++ X→en
+    - test_set: BOUQuET
+      metrics:
+        - name: direction
+          value: lir→eng
+        - name: chrF++
           value: "?"

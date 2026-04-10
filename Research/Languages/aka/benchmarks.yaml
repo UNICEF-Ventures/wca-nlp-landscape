@@ -4,286 +4,312 @@ evaluations:
     model_url: https://openrouter.ai/anthropic/claude-3.7-sonnet
     results:
     - test_set: ARC Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
       metrics:
       - name: ARC Acc.
         value: 100.0
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
   - model: anthropic/claude-opus-4.5
     model_url: https://openrouter.ai/anthropic/claude-opus-4.5
     results:
     - test_set: ARC Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
       metrics:
       - name: ARC Acc.
         value: 100.0
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
   - model: anthropic/claude-opus-4.6
     model_url: https://openrouter.ai/anthropic/claude-opus-4.6
     results:
     - test_set: ARC Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
       metrics:
       - name: ARC Acc.
         value: 100.0
-    - test_set: MGSM 10-sample
       source: reported
       source_url: https://huggingface.co/spaces/fair-forward/languagebench
+    - test_set: MGSM 10-sample
       metrics:
       - name: MGSM Acc.
         value: 88.9
-    - test_set: MMLU 10-sample
       source: reported
       source_url: https://huggingface.co/spaces/fair-forward/languagebench
+    - test_set: MMLU 10-sample
       metrics:
       - name: MMLU Acc.
         value: 75.0
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
   - model: anthropic/claude-sonnet-4.5
     model_url: https://openrouter.ai/anthropic/claude-sonnet-4.5
     results:
     - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
       metrics:
       - name: Classification Acc.
         value: 100.0
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
   - model: anthropic/claude-sonnet-4.6
     model_url: https://openrouter.ai/anthropic/claude-sonnet-4.6
     results:
     - test_set: MMLU 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
       metrics:
       - name: MMLU Acc.
         value: 87.5
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
   - model: deepseek/deepseek-v3.2-exp
     model_url: https://openrouter.ai/deepseek/deepseek-v3.2-exp
     results:
     - test_set: MMLU 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
       metrics:
       - name: MMLU Acc.
         value: 75.0
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
   - model: google/gemini-2.5-pro
     model_url: https://openrouter.ai/google/gemini-2.5-pro
     results:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU aka→en
-        value: 30.2
-      - name: ChrF aka→en
-        value: 54.8
-      - name: SpBLEU en→aka
-        value: 17.1
-      - name: ChrF en→aka
-        value: 47.2
     - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
       metrics:
       - name: Classification Acc.
         value: 100.0
-  - model: google/gemini-3-pro-preview
-    model_url: https://openrouter.ai/google/gemini-3-pro-preview
-    results:
-    - test_set: FLORES+ 10-sample
       source: reported
       source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU aka→en
-        value: 32.9
-      - name: ChrF aka→en
-        value: 55.1
-      - name: SpBLEU en→aka
-        value: 17.0
-      - name: ChrF en→aka
-        value: 48.5
-  - model: google/translate-v2
-    model_url: https://cloud.google.com/translate
-    results:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU aka→en
-        value: 28.1
-      - name: ChrF aka→en
-        value: 51.3
-      - name: SpBLEU en→aka
-        value: 17.5
-      - name: ChrF en→aka
-        value: 46.4
   - model: meta-llama/llama-3.1-70b-instruct
     model_url: https://openrouter.ai/meta-llama/llama-3.1-70b-instruct
     results:
     - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
       metrics:
       - name: Classification Acc.
         value: 100.0
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
   - model: openai/gpt-5-mini
     model_url: https://openrouter.ai/openai/gpt-5-mini
     results:
     - test_set: MGSM 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
       metrics:
       - name: MGSM Acc.
         value: 77.8
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
   - model: openai/gpt-5.2
     model_url: https://openrouter.ai/openai/gpt-5.2
     results:
     - test_set: MGSM 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
       metrics:
       - name: MGSM Acc.
         value: 80.0
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+  mt:
+  - model: google/gemini-2.5-pro
+    model_url: https://openrouter.ai/google/gemini-2.5-pro
+    results:
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: aka→eng
+      - name: SpBLEU
+        value: 30.2
+      - name: ChrF
+        value: 54.8
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: eng→aka
+      - name: SpBLEU
+        value: 17.1
+      - name: ChrF
+        value: 47.2
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+  - model: google/gemini-3-pro-preview
+    model_url: https://openrouter.ai/google/gemini-3-pro-preview
+    results:
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: aka→eng
+      - name: SpBLEU
+        value: 32.9
+      - name: ChrF
+        value: 55.1
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: eng→aka
+      - name: SpBLEU
+        value: 17.0
+      - name: ChrF
+        value: 48.5
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+  - model: google/translate-v2
+    model_url: https://cloud.google.com/translate
+    results:
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: aka→eng
+      - name: SpBLEU
+        value: 28.1
+      - name: ChrF
+        value: 51.3
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: eng→aka
+      - name: SpBLEU
+        value: 17.5
+      - name: ChrF
+        value: 46.4
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
   asr:
   - model: facebook/mms-1b-all
     model_url: https://huggingface.co/facebook/mms-1b-all
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 85.89
       - name: CER
         value: 38.51
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: openai/whisper-large-v3
     model_url: https://huggingface.co/openai/whisper-large-v3
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 633.04
       - name: CER
         value: 623.03
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: openai/whisper-large-v3-turbo
     model_url: https://huggingface.co/openai/whisper-large-v3-turbo
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 249.56
       - name: CER
         value: 243.12
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: facebook/seamless-m4t-v2-large
     model_url: https://huggingface.co/facebook/seamless-m4t-v2-large
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 230.19
       - name: CER
         value: 198.78
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/Simba-S
     model_url: https://huggingface.co/UBC-NLP/Simba-S
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 12.01
       - name: CER
         value: 7.87
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/Simba-M
     model_url: https://huggingface.co/UBC-NLP/Simba-M
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 16.94
       - name: CER
         value: 8.01
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_LLM_7B_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_7B_v2
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 89.16
       - name: CER
         value: 47.42
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_LLM_1B_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_1B_v2
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 92.84
       - name: CER
         value: 61.5
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_LLM_300M_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_300M_v2
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 106.37
       - name: CER
         value: 71.87
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_CTC_7B_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_7B_v2
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 85.29
       - name: CER
         value: 41.92
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_CTC_3B_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_3B_v2
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 89.32
       - name: CER
         value: 41.35
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_CTC_1B_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_1B_v2
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 87.21
       - name: CER
         value: 43.37
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   tts:
   - model: UBC-NLP/Simba-TTS
     model_url: https://huggingface.co/UBC-NLP/Simba-TTS
     results:
     - test_set: SimbaBench (bibleTTS, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 59.45
@@ -291,3 +317,5 @@ evaluations:
         value: 2.79
       - name: PESQ
         value: 1.05
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench

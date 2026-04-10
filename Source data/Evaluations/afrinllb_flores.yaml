@@ -1,147 +1,183 @@
-# AfriNLLB: Efficient Translation Models for African Languages
-# Paper accepted at AfricaNLP 2026
-# Evaluation on FLORES-200 devtest set
-# AfriNLLB scores obtained from Table 7 in paper middle column
-# Base-NLLB-600m scores from "nllb-200-distilled-600M-no-quant-eval-summary.csv" in https://github.com/AfriNLP/mt-model-evaluation
-# Note: Not sure the HF link is right
-# Base model: facebook/nllb-200-600M
-
+source: reported
+source_url: https://huggingface.co/collections/AfriNLP/afrinllb
 models:
-  
-  - model: AfriNLLB 548M (Pruned Iterative FT) 
+  - model: AfriNLLB 548M (Pruned Iterative FT)
     model_url: https://huggingface.co/AfriNLP/AfriNLLB-12enc-12dec-full-ft-kd
     task: mt
     results:
       hau:
         - test_set: FLORES-200
-          source: reported
-          source_url: https://huggingface.co/collections/AfriNLP/afrinllb
           metrics:
-            - name: BLEU en-ha
+            - name: direction
+              value: eng→hau
+            - name: BLEU
               value: 27.64
-            - name: BLEU ha-en
-              value: 32.36
-            - name: chrF en-ha
+            - name: chrF
               value: 53.21
-            - name: chrF ha-en
-              value: 54.15
-            - name: COMET en-ha
+            - name: COMET
               value: 65.01
-            - name: COMET ha-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: hau→eng
+            - name: BLEU
+              value: 32.36
+            - name: chrF
+              value: 54.15
+            - name: COMET
               value: 66.37
       yor:
         - test_set: FLORES-200
-          source: reported
-          source_url: https://huggingface.co/collections/AfriNLP/afrinllb
           metrics:
-            - name: BLEU en-yo
-              value: 8.03 
-            - name: BLEU yo-en
-              value: 18.62
-            - name: chrF en-yo
+            - name: direction
+              value: eng→yor
+            - name: BLEU
+              value: 8.03
+            - name: chrF
               value: 29.20
-            - name: chrF yo-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: yor→eng
+            - name: BLEU
+              value: 18.62
+            - name: chrF
               value: 41.08
       lin:
         - test_set: FLORES-200
-          source: reported
-          source_url: https://huggingface.co/collections/AfriNLP/afrinllb
           metrics:
-            - name: BLEU fr-ln
+            - name: direction
+              value: fra→lin
+            - name: BLEU
               value: 15.88
-            - name: BLEU ln-fr
-              value: 20.06
-            - name: chrF fr-ln
+            - name: chrF
               value: 44.97
-            - name: chrF ln-fr
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: lin→fra
+            - name: BLEU
+              value: 20.06
+            - name: chrF
               value: 43.39
       wol:
         - test_set: FLORES-200
-          source: reported
-          source_url: https://huggingface.co/collections/AfriNLP/afrinllb
           metrics:
-            - name: BLEU en-wo
+            - name: direction
+              value: eng→wol
+            - name: BLEU
               value: 6.97
-            - name: BLEU wo-en
-              value: 17.11
-            - name: BLEU fr-wo
-              value: 4.52
-            - name: BLEU wo-fr
-              value: 14.97
-            - name: chrF en-wo
+            - name: chrF
               value: 28.63
-            - name: chrF wo-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: wol→eng
+            - name: BLEU
+              value: 17.11
+            - name: chrF
               value: 39.58
-            - name: chrF fr-wo
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: fra→wol
+            - name: BLEU
+              value: 4.52
+            - name: chrF
               value: 25.45
-            - name: chrF wo-fr
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: wol→fra
+            - name: BLEU
+              value: 14.97
+            - name: chrF
               value: 37.03
-  
   - model: NLLB-600M
     model_url: https://huggingface.co/facebook/nllb-200-distilled-600M
     task: mt
     results:
       hau:
         - test_set: FLORES-200
-          source: reported
-          source_url: https://huggingface.co/collections/AfriNLP/afrinllb
           metrics:
-            - name: BLEU en-ha
+            - name: direction
+              value: eng→hau
+            - name: BLEU
               value: 23.69
-            - name: BLEU ha-en
-              value: 31.06
-            - name: chrF en-ha
+            - name: chrF
               value: 48.99
-            - name: chrF ha-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: hau→eng
+            - name: BLEU
+              value: 31.06
+            - name: chrF
               value: 52.74
       yor:
         - test_set: FLORES-200
-          source: reported
-          source_url: https://huggingface.co/collections/AfriNLP/afrinllb
           metrics:
-            - name: BLEU en-yo
+            - name: direction
+              value: eng→yor
+            - name: BLEU
               value: 4.32
-            - name: BLEU yo-en
-              value: 17.61
-            - name: chrF en-yo
+            - name: chrF
               value: 22.87
-            - name: chrF yo-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: yor→eng
+            - name: BLEU
+              value: 17.61
+            - name: chrF
               value: 39.73
       lin:
         - test_set: FLORES-200
-          source: reported
-          source_url: https://huggingface.co/collections/AfriNLP/afrinllb
           metrics:
-            - name: BLEU fr-ln
+            - name: direction
+              value: fra→lin
+            - name: BLEU
               value: 15.15
-            - name: BLEU ln-fr
-              value: 19.85
-            - name: chrF fr-ln
+            - name: chrF
               value: 45.0
-            - name: chrF ln-fr
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: lin→fra
+            - name: BLEU
+              value: 19.85
+            - name: chrF
               value: 43.07
       wol:
         - test_set: FLORES-200
-          source: reported
-          source_url: https://huggingface.co/collections/AfriNLP/afrinllb
           metrics:
-            - name: BLEU en-wo
+            - name: direction
+              value: eng→wol
+            - name: BLEU
               value: 6.97
-            - name: BLEU wo-en
-              value: 17.11
-            - name: BLEU fr-wo
-              value: 3.73
-            - name: BLEU wo-fr
-              value: 12.96
-            - name: chrF en-wo
+            - name: chrF
               value: 28.63
-            - name: chrF wo-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: wol→eng
+            - name: BLEU
+              value: 17.11
+            - name: chrF
               value: 39.58
-            - name: chrF fr-wo
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: fra→wol
+            - name: BLEU
+              value: 3.73
+            - name: chrF
               value: 21.84
-            - name: chrF wo-fr
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: wol→fra
+            - name: BLEU
+              value: 12.96
+            - name: chrF
               value: 34.59
-      
-   
-
- 

@@ -1,8 +1,10 @@
 # AfriqueLLM: How Data Mixing and Model Architecture Impact Continued Pre-training for African Languages
 # Paper: https://arxiv.org/abs/2601.06395
 # Evaluation on AfroBench tasks (Injongo, SIB-200, FLORES-200)
-# Source: Table 20 (MT chrF++), Table 21 (Intent), Table 22 (Topic)
+# Source: Table 20 (MT chrF), Table 21 (Intent), Table 22 (Topic)
 
+source: reported
+source_url: https://arxiv.org/abs/2601.06395
 models:
   - model: AfriqueQwen-14B
     model_url: https://huggingface.co/AfriqueLLM/AfriqueQwen-14B
@@ -65,53 +67,94 @@ models:
       ewe:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-ee
+            - name: direction
+              value: eng→ewe
+            - name: chrF
               value: 6.22
-            - name: chrF++ ee-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: ewe→eng
+            - name: chrF
               value: 21.97
       hau:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-ha
+            - name: direction
+              value: eng→hau
+            - name: chrF
               value: 49.78
-            - name: chrF++ ha-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: hau→eng
+            - name: chrF
               value: 56.27
       ibo:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-ig
+            - name: direction
+              value: eng→ibo
+            - name: chrF
               value: 41.14
-            - name: chrF++ ig-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: ibo→eng
+            - name: chrF
               value: 52.01
       lin:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-ln
+            - name: direction
+              value: eng→lin
+            - name: chrF
               value: 14.67
-            - name: chrF++ ln-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: lin→eng
+            - name: chrF
               value: 28.44
       twi:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-tw
+            - name: direction
+              value: eng→twi
+            - name: chrF
               value: 12.83
-            - name: chrF++ tw-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: twi→eng
+            - name: chrF
               value: 27.83
       wol:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-wo
+            - name: direction
+              value: eng→wol
+            - name: chrF
               value: 8.41
-            - name: chrF++ wo-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: wol→eng
+            - name: chrF
               value: 24.15
       yor:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-yo
+            - name: direction
+              value: eng→yor
+            - name: chrF
               value: 27.45
-            - name: chrF++ yo-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: yor→eng
+            - name: chrF
               value: 45.35
-
   - model: Qwen3-14B
     model_url: https://huggingface.co/Alibaba-NLP/Qwen3-14B-PT
     task: llm
@@ -173,53 +216,94 @@ models:
       ewe:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-ee
+            - name: direction
+              value: eng→ewe
+            - name: chrF
               value: 6.26
-            - name: chrF++ ee-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: ewe→eng
+            - name: chrF
               value: 22.35
       hau:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-ha
+            - name: direction
+              value: eng→hau
+            - name: chrF
               value: 13.45
-            - name: chrF++ ha-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: hau→eng
+            - name: chrF
               value: 28.23
       ibo:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-ig
+            - name: direction
+              value: eng→ibo
+            - name: chrF
               value: 11.98
-            - name: chrF++ ig-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: ibo→eng
+            - name: chrF
               value: 29.80
       lin:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-ln
+            - name: direction
+              value: eng→lin
+            - name: chrF
               value: 15.09
-            - name: chrF++ ln-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: lin→eng
+            - name: chrF
               value: 27.63
       twi:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-tw
+            - name: direction
+              value: eng→twi
+            - name: chrF
               value: 13.49
-            - name: chrF++ tw-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: twi→eng
+            - name: chrF
               value: 27.33
       wol:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-wo
+            - name: direction
+              value: eng→wol
+            - name: chrF
               value: 10.23
-            - name: chrF++ wo-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: wol→eng
+            - name: chrF
               value: 24.99
       yor:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-yo
+            - name: direction
+              value: eng→yor
+            - name: chrF
               value: 10.25
-            - name: chrF++ yo-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: yor→eng
+            - name: chrF
               value: 27.94
-
   - model: AfriqueGemma-12B
     model_url: https://huggingface.co/AfriqueLLM/AfriqueGemma-12B
     task: llm
@@ -281,53 +365,94 @@ models:
       ewe:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-ee
+            - name: direction
+              value: eng→ewe
+            - name: chrF
               value: 8.47
-            - name: chrF++ ee-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: ewe→eng
+            - name: chrF
               value: 19.71
       hau:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-ha
+            - name: direction
+              value: eng→hau
+            - name: chrF
               value: 51.36
-            - name: chrF++ ha-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: hau→eng
+            - name: chrF
               value: 56.79
       ibo:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-ig
+            - name: direction
+              value: eng→ibo
+            - name: chrF
               value: 41.95
-            - name: chrF++ ig-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: ibo→eng
+            - name: chrF
               value: 52.73
       lin:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-ln
+            - name: direction
+              value: eng→lin
+            - name: chrF
               value: 19.64
-            - name: chrF++ ln-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: lin→eng
+            - name: chrF
               value: 29.77
       twi:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-tw
+            - name: direction
+              value: eng→twi
+            - name: chrF
               value: 15.58
-            - name: chrF++ tw-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: twi→eng
+            - name: chrF
               value: 30.86
       wol:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-wo
+            - name: direction
+              value: eng→wol
+            - name: chrF
               value: 7.11
-            - name: chrF++ wo-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: wol→eng
+            - name: chrF
               value: 22.53
       yor:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-yo
+            - name: direction
+              value: eng→yor
+            - name: chrF
               value: 28.59
-            - name: chrF++ yo-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: yor→eng
+            - name: chrF
               value: 44.72
-
   - model: Gemma3-12B
     model_url: https://huggingface.co/google/gemma-3-12b-pt
     task: llm
@@ -389,53 +514,94 @@ models:
       ewe:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-ee
+            - name: direction
+              value: eng→ewe
+            - name: chrF
               value: 7.45
-            - name: chrF++ ee-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: ewe→eng
+            - name: chrF
               value: 13.92
       hau:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-ha
+            - name: direction
+              value: eng→hau
+            - name: chrF
               value: 24.79
-            - name: chrF++ ha-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: hau→eng
+            - name: chrF
               value: 15.27
       ibo:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-ig
+            - name: direction
+              value: eng→ibo
+            - name: chrF
               value: 32.27
-            - name: chrF++ ig-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: ibo→eng
+            - name: chrF
               value: 15.07
       lin:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-ln
+            - name: direction
+              value: eng→lin
+            - name: chrF
               value: 14.16
-            - name: chrF++ ln-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: lin→eng
+            - name: chrF
               value: 10.96
       twi:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-tw
+            - name: direction
+              value: eng→twi
+            - name: chrF
               value: 15.11
-            - name: chrF++ tw-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: twi→eng
+            - name: chrF
               value: 12.17
       wol:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-wo
+            - name: direction
+              value: eng→wol
+            - name: chrF
               value: 7.60
-            - name: chrF++ wo-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: wol→eng
+            - name: chrF
               value: 12.38
       yor:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-yo
+            - name: direction
+              value: eng→yor
+            - name: chrF
               value: 13.91
-            - name: chrF++ yo-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: yor→eng
+            - name: chrF
               value: 17.14
-
   - model: AfriqueLlama-8B
     model_url: https://huggingface.co/AfriqueLLM/AfriqueLlama-8B
     task: llm
@@ -497,49 +663,91 @@ models:
       ewe:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-ee
+            - name: direction
+              value: eng→ewe
+            - name: chrF
               value: 6.80
-            - name: chrF++ ee-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: ewe→eng
+            - name: chrF
               value: 20.78
       hau:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-ha
+            - name: direction
+              value: eng→hau
+            - name: chrF
               value: 49.56
-            - name: chrF++ ha-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: hau→eng
+            - name: chrF
               value: 54.25
       ibo:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-ig
+            - name: direction
+              value: eng→ibo
+            - name: chrF
               value: 40.84
-            - name: chrF++ ig-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: ibo→eng
+            - name: chrF
               value: 49.67
       lin:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-ln
+            - name: direction
+              value: eng→lin
+            - name: chrF
               value: 14.15
-            - name: chrF++ ln-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: lin→eng
+            - name: chrF
               value: 26.94
       twi:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-tw
+            - name: direction
+              value: eng→twi
+            - name: chrF
               value: 13.89
-            - name: chrF++ tw-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: twi→eng
+            - name: chrF
               value: 27.20
       wol:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-wo
+            - name: direction
+              value: eng→wol
+            - name: chrF
               value: 8.93
-            - name: chrF++ wo-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: wol→eng
+            - name: chrF
               value: 22.37
       yor:
         - test_set: FLORES-200
           metrics:
-            - name: chrF++ en-yo
+            - name: direction
+              value: eng→yor
+            - name: chrF
               value: 27.36
-            - name: chrF++ yo-en
+        - test_set: FLORES-200
+          metrics:
+            - name: direction
+              value: yor→eng
+            - name: chrF
               value: 42.43

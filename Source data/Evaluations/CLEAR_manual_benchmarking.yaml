@@ -1,7 +1,5 @@
-# Manual benchmarking results — CLEAR Global
-# Evaluated as part of UNICEF WCARO NLP Landscape consultancy, 2026
-
-
+source: evaluated
+source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
 models:
 
   # ── ASR ──────────────────────────────────────────────
@@ -12,8 +10,6 @@ models:
     results:
       ewe:
         - test_set: Waxal-test(<40s)
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 50.03
@@ -21,8 +17,6 @@ models:
               value: 16.89
       mos:
         - test_set: GoAI
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 37.66
@@ -30,16 +24,12 @@ models:
               value: 14.81
       dag:
         - test_set: CV25
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 33.67
             - name: CER
               value: 9.60
         - test_set: Waxal
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 81.40
@@ -47,16 +37,12 @@ models:
               value: 36.32
       fuv:
         - test_set: OmniCorpus
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 55.92
             - name: CER
               value: 23.93
         - test_set: FLEURS
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 52.36
@@ -64,8 +50,6 @@ models:
               value: 18.48
       fuq:
         - test_set: OmniCorpus-test(<40s)
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 79.98
@@ -73,8 +57,6 @@ models:
               value: 38.21
       snk:
         - test_set: OmniCorpus
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 59.26
@@ -87,8 +69,6 @@ models:
     results:
       ewe:
         - test_set: Waxal-test(<40s)
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 41.40
@@ -96,8 +76,6 @@ models:
               value: 12.97
       mos:
         - test_set: GoAI
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 29.51
@@ -105,16 +83,12 @@ models:
               value: 10.56
       dag:
         - test_set: Common Voice 25
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 27.78
             - name: CER
               value: 7.67
         - test_set: Waxal
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 65.74
@@ -122,16 +96,12 @@ models:
               value: 23.96
       fuv:
         - test_set: OmniCorpus
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 53.85
             - name: CER
               value: 22.64
         - test_set: FLEURS
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 48.07
@@ -139,8 +109,6 @@ models:
               value: 14.89
       fuq:
         - test_set: OmniCorpus-test(<40s)
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 75.47
@@ -148,8 +116,6 @@ models:
               value: 30.85
       snk:
         - test_set: OmniCorpus
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 54.63
@@ -162,8 +128,6 @@ models:
     results:
       ewe:
         - test_set: Waxal
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 50.35
@@ -171,8 +135,6 @@ models:
               value: 15.37
       mos:
         - test_set: GoAI
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 43.75
@@ -185,8 +147,6 @@ models:
     results:
       ewe:
         - test_set: Waxal
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 113.11
@@ -194,8 +154,6 @@ models:
               value: 51.12
       mos:
         - test_set: GoAI
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
             - name: WER
               value: 114.58
@@ -210,63 +168,85 @@ models:
     results:
       fuv:
         - test_set: FLORES+ devtest
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
-            - name: chrF++ fuv→en
+            - name: direction
+              value: fuv→eng
+            - name: chrF++
               value: 30.72
-            - name: chrF++ en→fuv
+        - test_set: FLORES+ devtest
+          metrics:
+            - name: direction
+              value: eng→fuv
+            - name: chrF++
               value: 16.95
         - test_set: BOUQuET
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
-            - name: chrF++ fuv→en
+            - name: direction
+              value: fuv→eng
+            - name: chrF++
               value: 32.04
-            - name: chrF++ en→fuv
+        - test_set: BOUQuET
+          metrics:
+            - name: direction
+              value: eng→fuv
+            - name: chrF++
               value: 20.88
-
   - model: facebook/nllb-200-3.3B
     model_url: https://huggingface.co/facebook/nllb-200-3.3B
     task: mt
     results:
       fuv:
         - test_set: FLORES+ devtest
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
-            - name: chrF++ fuv→en
+            - name: direction
+              value: fuv→eng
+            - name: chrF++
               value: 32.40
-            - name: chrF++ en→fuv
+        - test_set: FLORES+ devtest
+          metrics:
+            - name: direction
+              value: eng→fuv
+            - name: chrF++
               value: 22.94
         - test_set: BOUQuET
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
-            - name: chrF++ fuv→en
+            - name: direction
+              value: fuv→eng
+            - name: chrF++
               value: 36.27
-            - name: chrF++ en→fuv
+        - test_set: BOUQuET
+          metrics:
+            - name: direction
+              value: eng→fuv
+            - name: chrF++
               value: 24.51
-
   - model: Helsinki-NLP/opus-mt-tc-bible-big-mul-mul
     model_url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-mul
     task: mt
     results:
       dag:
         - test_set: UDHR
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
-            - name: chrF++ dag→en
+            - name: direction
+              value: dag→eng
+            - name: chrF++
               value: 12.41
-            - name: chrF++ en→dag
+        - test_set: UDHR
+          metrics:
+            - name: direction
+              value: eng→dag
+            - name: chrF++
               value: 8.37
       fuc:
         - test_set: BOUQuET
-          source: evaluated
-          source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
           metrics:
-            - name: chrF++ fuc→en
+            - name: direction
+              value: fuc→eng
+            - name: chrF++
               value: 15.49
-            - name: chrF++ en→fuc
+        - test_set: BOUQuET
+          metrics:
+            - name: direction
+              value: eng→fuc
+            - name: chrF++
               value: 9.92

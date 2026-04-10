@@ -1,8 +1,5 @@
-# Whisper reported WER on FLEURS test set
-# Source: https://arxiv.org/abs/2212.04356
-# Only 3 WCARO focus languages are supported by Whisper: hau, yor, lin
-# large-v3 results not in the paper — to be filled separately
-
+source: reported
+source_url: https://arxiv.org/abs/2212.04356
 models:
   - model: openai/whisper-tiny
     model_url: https://huggingface.co/openai/whisper-tiny
@@ -10,22 +7,16 @@ models:
     results:
       yor:
         - test_set: FLEURS
-          source: reported
-          source_url: https://arxiv.org/abs/2212.04356
           metrics:
             - name: WER
               value: 106.4
       hau:
         - test_set: FLEURS
-          source: reported
-          source_url: https://arxiv.org/abs/2212.04356
           metrics:
             - name: WER
               value: 100.2
       lin:
         - test_set: FLEURS
-          source: reported
-          source_url: https://arxiv.org/abs/2212.04356
           metrics:
             - name: WER
               value: 105.4
@@ -36,22 +27,16 @@ models:
     results:
       yor:
         - test_set: FLEURS
-          source: reported
-          source_url: https://arxiv.org/abs/2212.04356
           metrics:
             - name: WER
               value: 101.8
       hau:
         - test_set: FLEURS
-          source: reported
-          source_url: https://arxiv.org/abs/2212.04356
           metrics:
             - name: WER
               value: 98.6
       lin:
         - test_set: FLEURS
-          source: reported
-          source_url: https://arxiv.org/abs/2212.04356
           metrics:
             - name: WER
               value: 96.7
@@ -62,22 +47,16 @@ models:
     results:
       yor:
         - test_set: FLEURS
-          source: reported
-          source_url: https://arxiv.org/abs/2212.04356
           metrics:
             - name: WER
               value: 116.4
       hau:
         - test_set: FLEURS
-          source: reported
-          source_url: https://arxiv.org/abs/2212.04356
           metrics:
             - name: WER
               value: 90.1
       lin:
         - test_set: FLEURS
-          source: reported
-          source_url: https://arxiv.org/abs/2212.04356
           metrics:
             - name: WER
               value: 91.3
@@ -88,22 +67,16 @@ models:
     results:
       yor:
         - test_set: FLEURS
-          source: reported
-          source_url: https://arxiv.org/abs/2212.04356
           metrics:
             - name: WER
               value: 105.1
       hau:
         - test_set: FLEURS
-          source: reported
-          source_url: https://arxiv.org/abs/2212.04356
           metrics:
             - name: WER
               value: 106.6
       lin:
         - test_set: FLEURS
-          source: reported
-          source_url: https://arxiv.org/abs/2212.04356
           metrics:
             - name: WER
               value: 83.2
@@ -114,22 +87,16 @@ models:
     results:
       yor:
         - test_set: FLEURS
-          source: reported
-          source_url: https://arxiv.org/abs/2212.04356
           metrics:
             - name: WER
               value: 111.7
       hau:
         - test_set: FLEURS
-          source: reported
-          source_url: https://arxiv.org/abs/2212.04356
           metrics:
             - name: WER
               value: 87.0
       lin:
         - test_set: FLEURS
-          source: reported
-          source_url: https://arxiv.org/abs/2212.04356
           metrics:
             - name: WER
               value: 76.8
@@ -140,22 +107,16 @@ models:
     results:
       yor:
         - test_set: FLEURS
-          source: reported
-          source_url: https://arxiv.org/abs/2212.04356
           metrics:
             - name: WER
               value: 94.8
       hau:
         - test_set: FLEURS
-          source: reported
-          source_url: https://arxiv.org/abs/2212.04356
           metrics:
             - name: WER
               value: 88.9
       lin:
         - test_set: FLEURS
-          source: reported
-          source_url: https://arxiv.org/abs/2212.04356
           metrics:
             - name: WER
               value: 75.6

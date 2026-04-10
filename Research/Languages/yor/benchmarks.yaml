@@ -19,6 +19,8 @@ evaluations:
         value: 81.88
       - name: Topic
         value: 80.42
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
   - model: Qwen3-14B
     model_url: https://huggingface.co/Alibaba-NLP/Qwen3-14B-PT
     results:
@@ -28,6 +30,8 @@ evaluations:
         value: 38.28
       - name: Topic
         value: 54.86
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
   - model: AfriqueGemma-12B
     model_url: https://huggingface.co/AfriqueLLM/AfriqueGemma-12B
     results:
@@ -37,6 +41,8 @@ evaluations:
         value: 76.09
       - name: Topic
         value: 70.31
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
   - model: Gemma3-12B
     model_url: https://huggingface.co/google/gemma-3-12b-pt
     results:
@@ -46,6 +52,8 @@ evaluations:
         value: 67.12
       - name: Topic
         value: 66.67
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
   - model: AfriqueLlama-8B
     model_url: https://huggingface.co/AfriqueLLM/AfriqueLlama-8B
     results:
@@ -55,260 +63,260 @@ evaluations:
         value: 73.38
       - name: Topic
         value: 61.91
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
   - model: CohereForAI/aya-101
     model_url: https://huggingface.co/CohereForAI/aya-101
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 42.0
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: google/gemma-1.1-7b-it
     model_url: https://huggingface.co/google/gemma-1.1-7b-it
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 22.3
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: meta-llama/Llama-2-7b
     model_url: https://huggingface.co/meta-llama/Llama-2-7b
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 16.0
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: meta-llama/Meta-Llama-3-8B
     model_url: https://huggingface.co/meta-llama/Meta-Llama-3-8B
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 16.5
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: meta-llama/Meta-Llama-3.1-8B
     model_url: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 19.1
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: MaLA-LM/LLaMAX3-8B
     model_url: https://huggingface.co/MaLA-LM/LLaMAX3-8B
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 18.6
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: google/gemma-2-9b
     model_url: https://huggingface.co/google/gemma-2-9b
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 33.2
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: google/gemma-2-27b
     model_url: https://huggingface.co/google/gemma-2-27b
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 37.6
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: meta-llama/Meta-Llama-3.1-70B
     model_url: https://huggingface.co/meta-llama/Meta-Llama-3.1-70B
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 29.4
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: AfroLLaMa 8B
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 16.2
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: Gemini 1.5 Pro
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 62.3
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: GPT-4o
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 68.3
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: google/gemma-3-27b-it
     model_url: https://huggingface.co/google/gemma-3-27b-it
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 45.2
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: Gemini 2.0 Flash
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 64.5
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: GPT-4.1
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 61.7
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: meta-llama/Llama-4-Scout-17B-16E
     model_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 47.1
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: Lugha-Llama 8B
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 21.9
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: Claude 4.0 Sonnet
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 67.8
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: Claude 3.7 Sonnet
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 57.9
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: Claude 4.5 Sonnet
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 69.8
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: Gemini 2.5 Flash
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 65.5
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: Gemini 2.5 Pro
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 71.8
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: GPT-5
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 75.4
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: Gemini 3 Pro
     results:
     - test_set: AfroBench-Lite
-      source: reported
-      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
       metrics:
       - name: Avg Score
         value: 75.4
+      source: reported
+      source_url: https://huggingface.co/spaces/McGill-NLP/AfroBench
   - model: Aya-101
     model_url: https://huggingface.co/CohereForAI/aya-101
     results:
     - test_set: AfriMGSM(Math)
-      source: reported
-      source_url: https://arxiv.org/abs/2406.03368
       metrics:
       - name: Accuracy
         value: 4.4
-    - test_set: AfriXNLI
       source: reported
       source_url: https://arxiv.org/abs/2406.03368
+    - test_set: AfriXNLI
       metrics:
       - name: Accuracy
         value: 54.5
+      source: reported
+      source_url: https://arxiv.org/abs/2406.03368
   - model: Gemma 2 27B
     model_url: https://huggingface.co/google/gemma-2-27b-it
     results:
     - test_set: AfriMGSM(Math)
-      source: reported
-      source_url: https://arxiv.org/abs/2406.03368
       metrics:
       - name: Accuracy
         value: 22.4
-    - test_set: AfriXNLI
       source: reported
       source_url: https://arxiv.org/abs/2406.03368
+    - test_set: AfriXNLI
       metrics:
       - name: Accuracy
         value: 42.5
+      source: reported
+      source_url: https://arxiv.org/abs/2406.03368
   - model: LLaMa 3.1 70B
     model_url: https://huggingface.co/meta-llama/Meta-Llama-3.1-70B-Instruct
     results:
     - test_set: AfriMGSM(Math)
-      source: reported
-      source_url: https://arxiv.org/abs/2406.03368
       metrics:
       - name: Accuracy
         value: 23.6
-    - test_set: AfriXNLI
       source: reported
       source_url: https://arxiv.org/abs/2406.03368
+    - test_set: AfriXNLI
       metrics:
       - name: Accuracy
         value: 39.0
+      source: reported
+      source_url: https://arxiv.org/abs/2406.03368
   - model: GPT-4o
     model_url: https://openai.com/gpt-4o
     results:
     - test_set: AfriMMLU
-      source: reported
-      source_url: https://arxiv.org/abs/2406.03368
       metrics:
       - name: AfriMMLU-ElemMath
         value: 80.0
@@ -320,1086 +328,1275 @@ evaluations:
         value: 51.0
       - name: AfriMMLU-IntLaw
         value: 75.0
-    - test_set: AfriMGSM(Math)
       source: reported
       source_url: https://arxiv.org/abs/2406.03368
+    - test_set: AfriMGSM(Math)
       metrics:
       - name: Accuracy
         value: 62.0
-    - test_set: AfriXNLI
       source: reported
       source_url: https://arxiv.org/abs/2406.03368
+    - test_set: AfriXNLI
       metrics:
       - name: Accuracy
         value: 64.5
+      source: reported
+      source_url: https://arxiv.org/abs/2406.03368
   - model: amazon/nova-premier-v1
     model_url: https://openrouter.ai/amazon/nova-premier-v1
     results:
     - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
       metrics:
       - name: Classification Acc.
         value: 100.0
-  - model: anthropic/claude-opus-4.5
-    model_url: https://openrouter.ai/anthropic/claude-opus-4.5
-    results:
-    - test_set: FLORES+ 10-sample
       source: reported
       source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→yor
-        value: 14.6
-      - name: ChrF en→yor
-        value: 33.2
-      - name: SpBLEU yor→en
-        value: 17.4
-      - name: ChrF yor→en
-        value: 40.1
-  - model: anthropic/claude-opus-4.6
-    model_url: https://openrouter.ai/anthropic/claude-opus-4.6
-    results:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU yor→en
-        value: 20.7
-      - name: ChrF yor→en
-        value: 43.0
-      - name: SpBLEU en→yor
-        value: 14.3
-      - name: ChrF en→yor
-        value: 31.9
-  - model: google/gemini-2.5-pro
-    model_url: https://openrouter.ai/google/gemini-2.5-pro
-    results:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→yor
-        value: 15.8
-      - name: ChrF en→yor
-        value: 34.9
-      - name: SpBLEU yor→en
-        value: 20.1
-      - name: ChrF yor→en
-        value: 42.8
   - model: google/gemini-3-pro-preview
     model_url: https://openrouter.ai/google/gemini-3-pro-preview
     results:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU yor→en
-        value: 27.0
-      - name: ChrF yor→en
-        value: 50.8
-      - name: SpBLEU en→yor
-        value: 19.2
-      - name: ChrF en→yor
-        value: 38.9
     - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
       metrics:
       - name: Classification Acc.
         value: 100.0
-  - model: google/translate-v2
-    model_url: https://cloud.google.com/translate
-    results:
-    - test_set: FLORES+ 10-sample
       source: reported
       source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU yor→en
-        value: 19.8
-      - name: ChrF yor→en
-        value: 42.9
-      - name: SpBLEU en→yor
-        value: 4.4
-      - name: ChrF en→yor
-        value: 20.5
   - model: meta-llama/llama-3.1-70b-instruct
     model_url: https://openrouter.ai/meta-llama/llama-3.1-70b-instruct
     results:
     - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
       metrics:
       - name: Classification Acc.
         value: 100.0
-  - model: google/madlad400-8b-lm
-    model_url: https://huggingface.co/google/madlad400-8b-lm
-    results:
-    - test_set: FLORES-200
       source: reported
-      source_url: https://arxiv.org/abs/2309.04662
-      notes: Table 17 — BLEU/chrF (10-shot)
-      metrics:
-      - name: BLEU yor→eng
-        value: 6.3
-      - name: chrF yor→eng
-        value: 26
-      - name: BLEU eng→yor
-        value: 0
-      - name: chrF eng→yor
-        value: 3.2
-    - test_set: NTREX
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
-      notes: Table 19 — BLEU/chrF (10-shot)
-      metrics:
-      - name: BLEU yor→eng
-        value: 4.6
-      - name: chrF yor→eng
-        value: 23
-      - name: BLEU eng→yor
-        value: 0.2
-      - name: chrF eng→yor
-        value: 10.5
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
   mt:
   - model: AfriqueQwen-14B
     model_url: https://huggingface.co/AfriqueLLM/AfriqueQwen-14B
     results:
     - test_set: FLORES-200
       metrics:
-      - name: chrF++ en-yo
+      - name: direction
+        value: eng→yor
+      - name: chrF
         value: 27.45
-      - name: chrF++ yo-en
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
+    - test_set: FLORES-200
+      metrics:
+      - name: direction
+        value: yor→eng
+      - name: chrF
         value: 45.35
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
   - model: Qwen3-14B
     model_url: https://huggingface.co/Alibaba-NLP/Qwen3-14B-PT
     results:
     - test_set: FLORES-200
       metrics:
-      - name: chrF++ en-yo
+      - name: direction
+        value: eng→yor
+      - name: chrF
         value: 10.25
-      - name: chrF++ yo-en
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
+    - test_set: FLORES-200
+      metrics:
+      - name: direction
+        value: yor→eng
+      - name: chrF
         value: 27.94
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
   - model: AfriqueGemma-12B
     model_url: https://huggingface.co/AfriqueLLM/AfriqueGemma-12B
     results:
     - test_set: FLORES-200
       metrics:
-      - name: chrF++ en-yo
+      - name: direction
+        value: eng→yor
+      - name: chrF
         value: 28.59
-      - name: chrF++ yo-en
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
+    - test_set: FLORES-200
+      metrics:
+      - name: direction
+        value: yor→eng
+      - name: chrF
         value: 44.72
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
   - model: Gemma3-12B
     model_url: https://huggingface.co/google/gemma-3-12b-pt
     results:
     - test_set: FLORES-200
       metrics:
-      - name: chrF++ en-yo
+      - name: direction
+        value: eng→yor
+      - name: chrF
         value: 13.91
-      - name: chrF++ yo-en
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
+    - test_set: FLORES-200
+      metrics:
+      - name: direction
+        value: yor→eng
+      - name: chrF
         value: 17.14
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
   - model: AfriqueLlama-8B
     model_url: https://huggingface.co/AfriqueLLM/AfriqueLlama-8B
     results:
     - test_set: FLORES-200
       metrics:
-      - name: chrF++ en-yo
+      - name: direction
+        value: eng→yor
+      - name: chrF
         value: 27.36
-      - name: chrF++ yo-en
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
+    - test_set: FLORES-200
+      metrics:
+      - name: direction
+        value: yor→eng
+      - name: chrF
         value: 42.43
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
   - model: AfriNLLB 548M (Pruned Iterative FT)
     model_url: https://huggingface.co/AfriNLP/AfriNLLB-12enc-12dec-full-ft-kd
     results:
     - test_set: FLORES-200
+      metrics:
+      - name: direction
+        value: eng→yor
+      - name: BLEU
+        value: 8.03
+      - name: chrF
+        value: 29.2
       source: reported
       source_url: https://huggingface.co/collections/AfriNLP/afrinllb
+    - test_set: FLORES-200
       metrics:
-      - name: BLEU en-yo
-        value: 8.03
-      - name: BLEU yo-en
+      - name: direction
+        value: yor→eng
+      - name: BLEU
         value: 18.62
-      - name: chrF en-yo
-        value: 29.2
-      - name: chrF yo-en
+      - name: chrF
         value: 41.08
+      source: reported
+      source_url: https://huggingface.co/collections/AfriNLP/afrinllb
   - model: NLLB-600M
     model_url: https://huggingface.co/facebook/nllb-200-distilled-600M
     results:
     - test_set: FLORES-200
+      metrics:
+      - name: direction
+        value: eng→yor
+      - name: BLEU
+        value: 4.32
+      - name: chrF
+        value: 22.87
       source: reported
       source_url: https://huggingface.co/collections/AfriNLP/afrinllb
+    - test_set: FLORES-200
       metrics:
-      - name: BLEU en-yo
-        value: 4.32
-      - name: BLEU yo-en
+      - name: direction
+        value: yor→eng
+      - name: BLEU
         value: 17.61
-      - name: chrF en-yo
-        value: 22.87
-      - name: chrF yo-en
+      - name: chrF
         value: 39.73
+      source: reported
+      source_url: https://huggingface.co/collections/AfriNLP/afrinllb
   - model: OMT-LLaMA 8B
     model_url: https://huggingface.co/facebook/omt-llama3.1-8b-v1
     results:
     - test_set: BOUQuET
+      metrics:
+      - name: direction
+        value: eng→yor
+      - name: chrF++
+        value: '?'
       source: reported
       source_url: https://huggingface.co/spaces/facebook/bouquet
+    - test_set: BOUQuET
       metrics:
-      - name: chrF++ en→X
+      - name: direction
+        value: yor→eng
+      - name: chrF++
         value: '?'
-      - name: chrF++ X→en
-        value: '?'
+      source: reported
+      source_url: https://huggingface.co/spaces/facebook/bouquet
+  - model: anthropic/claude-opus-4.5
+    model_url: https://openrouter.ai/anthropic/claude-opus-4.5
+    results:
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: eng→yor
+      - name: SpBLEU
+        value: 14.6
+      - name: ChrF
+        value: 33.2
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: yor→eng
+      - name: SpBLEU
+        value: 17.4
+      - name: ChrF
+        value: 40.1
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+  - model: anthropic/claude-opus-4.6
+    model_url: https://openrouter.ai/anthropic/claude-opus-4.6
+    results:
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: yor→eng
+      - name: SpBLEU
+        value: 20.7
+      - name: ChrF
+        value: 43.0
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: eng→yor
+      - name: SpBLEU
+        value: 14.3
+      - name: ChrF
+        value: 31.9
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+  - model: google/gemini-2.5-pro
+    model_url: https://openrouter.ai/google/gemini-2.5-pro
+    results:
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: eng→yor
+      - name: SpBLEU
+        value: 15.8
+      - name: ChrF
+        value: 34.9
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: yor→eng
+      - name: SpBLEU
+        value: 20.1
+      - name: ChrF
+        value: 42.8
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+  - model: google/gemini-3-pro-preview
+    model_url: https://openrouter.ai/google/gemini-3-pro-preview
+    results:
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: yor→eng
+      - name: SpBLEU
+        value: 27.0
+      - name: ChrF
+        value: 50.8
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: eng→yor
+      - name: SpBLEU
+        value: 19.2
+      - name: ChrF
+        value: 38.9
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+  - model: google/translate-v2
+    model_url: https://cloud.google.com/translate
+    results:
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: yor→eng
+      - name: SpBLEU
+        value: 19.8
+      - name: ChrF
+        value: 42.9
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: eng→yor
+      - name: SpBLEU
+        value: 4.4
+      - name: ChrF
+        value: 20.5
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
   - model: google/madlad400-3b-mt
     model_url: https://huggingface.co/google/madlad400-3b-mt
     results:
     - test_set: FLORES-200
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
       notes: Table 17 — BLEU/chrF
       metrics:
-      - name: BLEU yor→eng
+      - name: direction
+        value: yor→eng
+      - name: BLEU
         value: 11.9
-      - name: chrF yor→eng
+      - name: chrF
         value: 34.9
-      - name: BLEU eng→yor
-        value: 2.6
-      - name: chrF eng→yor
-        value: 19.7
-    - test_set: NTREX
       source: reported
       source_url: https://arxiv.org/abs/2309.04662
+    - test_set: FLORES-200
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: direction
+        value: eng→yor
+      - name: BLEU
+        value: 2.6
+      - name: chrF
+        value: 19.7
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+    - test_set: NTREX
       notes: Table 19 — BLEU/chrF
       metrics:
-      - name: BLEU yor→eng
+      - name: direction
+        value: yor→eng
+      - name: BLEU
         value: 13.3
-      - name: chrF yor→eng
+      - name: chrF
         value: 37
-      - name: BLEU eng→yor
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+    - test_set: NTREX
+      notes: Table 19 — BLEU/chrF
+      metrics:
+      - name: direction
+        value: eng→yor
+      - name: BLEU
         value: 5.4
-      - name: chrF eng→yor
+      - name: chrF
         value: 20.9
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
   - model: google/madlad400-7.2b-mt
     model_url: https://huggingface.co/google/madlad400-7.2b-mt
     results:
     - test_set: FLORES-200
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
       notes: Table 17 — BLEU/chrF
       metrics:
-      - name: BLEU yor→eng
+      - name: direction
+        value: yor→eng
+      - name: BLEU
         value: 17.4
-      - name: chrF yor→eng
+      - name: chrF
         value: 40.8
-      - name: BLEU eng→yor
-        value: 2.7
-      - name: chrF eng→yor
-        value: 20.3
-    - test_set: NTREX
       source: reported
       source_url: https://arxiv.org/abs/2309.04662
+    - test_set: FLORES-200
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: direction
+        value: eng→yor
+      - name: BLEU
+        value: 2.7
+      - name: chrF
+        value: 20.3
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+    - test_set: NTREX
       notes: Table 19 — BLEU/chrF
       metrics:
-      - name: BLEU yor→eng
+      - name: direction
+        value: yor→eng
+      - name: BLEU
         value: 14.5
-      - name: chrF yor→eng
+      - name: chrF
         value: 37.4
-      - name: BLEU eng→yor
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+    - test_set: NTREX
+      notes: Table 19 — BLEU/chrF
+      metrics:
+      - name: direction
+        value: eng→yor
+      - name: BLEU
         value: 5.5
-      - name: chrF eng→yor
+      - name: chrF
         value: 21.6
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
   - model: google/madlad400-10.7b-mt
     model_url: https://huggingface.co/google/madlad400-10.7b-mt
     results:
     - test_set: FLORES-200
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
       notes: Table 17 — BLEU/chrF
       metrics:
-      - name: BLEU yor→eng
+      - name: direction
+        value: yor→eng
+      - name: BLEU
         value: 17.8
-      - name: chrF yor→eng
+      - name: chrF
         value: 40.7
-      - name: BLEU eng→yor
-        value: 2.9
-      - name: chrF eng→yor
-        value: 20.7
-    - test_set: NTREX
       source: reported
       source_url: https://arxiv.org/abs/2309.04662
+    - test_set: FLORES-200
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: direction
+        value: eng→yor
+      - name: BLEU
+        value: 2.9
+      - name: chrF
+        value: 20.7
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+    - test_set: NTREX
       notes: Table 19 — BLEU/chrF
       metrics:
-      - name: BLEU yor→eng
+      - name: direction
+        value: yor→eng
+      - name: BLEU
         value: 20.9
-      - name: chrF yor→eng
+      - name: chrF
         value: 43.5
-      - name: BLEU eng→yor
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+    - test_set: NTREX
+      notes: Table 19 — BLEU/chrF
+      metrics:
+      - name: direction
+        value: eng→yor
+      - name: BLEU
         value: 5.7
-      - name: chrF eng→yor
+      - name: chrF
         value: 21.2
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+  - model: google/madlad400-8b-lm
+    model_url: https://huggingface.co/google/madlad400-8b-lm
+    results:
+    - test_set: FLORES-200
+      notes: Table 17 — BLEU/chrF (10-shot)
+      metrics:
+      - name: direction
+        value: yor→eng
+      - name: BLEU
+        value: 6.3
+      - name: chrF
+        value: 26
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+    - test_set: FLORES-200
+      notes: Table 17 — BLEU/chrF (10-shot)
+      metrics:
+      - name: direction
+        value: eng→yor
+      - name: BLEU
+        value: 0
+      - name: chrF
+        value: 3.2
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+    - test_set: NTREX
+      notes: Table 19 — BLEU/chrF (10-shot)
+      metrics:
+      - name: direction
+        value: yor→eng
+      - name: BLEU
+        value: 4.6
+      - name: chrF
+        value: 23
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+    - test_set: NTREX
+      notes: Table 19 — BLEU/chrF (10-shot)
+      metrics:
+      - name: direction
+        value: eng→yor
+      - name: BLEU
+        value: 0.2
+      - name: chrF
+        value: 10.5
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
   asr:
   - model: facebook/omniASR-LLM-7B
     model_url: https://huggingface.co/facebook/omniASR-LLM-7B
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 14.0
       - name: WER
         value: 39.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/omniASR-LLM-7B-ZS
     model_url: https://huggingface.co/facebook/omniASR-LLM-7B-ZS
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 16.0
       - name: WER
         value: 47.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/omniASR-LLM-1B
     model_url: https://huggingface.co/facebook/omniASR-LLM-1B
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 15.0
       - name: WER
         value: 43.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/omniASR-LLM-3B
     model_url: https://huggingface.co/facebook/omniASR-LLM-3B
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 8.0
       - name: WER
         value: 25.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/omniASR-LLM-300M
     model_url: https://huggingface.co/facebook/omniASR-LLM-300M
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 14.0
       - name: WER
         value: 39.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/omniASR-CTC-7B
     model_url: https://huggingface.co/facebook/omniASR-CTC-7B
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 15.0
       - name: WER
         value: 45.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/omniASR-CTC-1B
     model_url: https://huggingface.co/facebook/omniASR-CTC-1B
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 18.0
       - name: WER
         value: 53.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/omniASR-CTC-3B
     model_url: https://huggingface.co/facebook/omniASR-CTC-3B
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 18.0
       - name: WER
         value: 52.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/omniASR-CTC-300M
     model_url: https://huggingface.co/facebook/omniASR-CTC-300M
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 19.0
       - name: WER
         value: 59.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: microsoft/paza-mms-1b-all
     model_url: https://huggingface.co/microsoft/paza-mms-1b-all
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 13.0
       - name: WER
         value: 41.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/mms-1b-all
     model_url: https://huggingface.co/facebook/mms-1b-all
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 14.0
       - name: WER
         value: 44.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/mms-1b-fl102
     model_url: https://huggingface.co/facebook/mms-1b-fl102
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 14.0
       - name: WER
         value: 44.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: microsoft/paza-Phi-4-multimodal-instruct
     model_url: https://huggingface.co/microsoft/paza-Phi-4-multimodal-instruct
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 50.0
       - name: WER
         value: 98.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: nvidia/parakeet-tdt-0.6b-v3
     model_url: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 52.0
       - name: WER
         value: 99.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/wav2vec2-conformer-rel-pos-large-960h-ft
     model_url: https://huggingface.co/facebook/wav2vec2-conformer-rel-pos-large-960h-ft
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 54.0
       - name: WER
         value: 109.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/data2vec-audio-large-960h
     model_url: https://huggingface.co/facebook/data2vec-audio-large-960h
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 56.0
       - name: WER
         value: 104.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/wav2vec2-conformer-rope-large-960h-ft
     model_url: https://huggingface.co/facebook/wav2vec2-conformer-rope-large-960h-ft
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 57.0
       - name: WER
         value: 106.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/hubert-large-ls960-ft
     model_url: https://huggingface.co/facebook/hubert-large-ls960-ft
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 50.0
       - name: WER
         value: 102.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/hubert-xlarge-ls960-ft
     model_url: https://huggingface.co/facebook/hubert-xlarge-ls960-ft
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 50.0
       - name: WER
         value: 101.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: microsoft/paza-whisper-large-v3-turbo
     model_url: https://huggingface.co/microsoft/paza-whisper-large-v3-turbo
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 59.0
       - name: WER
         value: 96.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/wav2vec2-large-960h-lv60-self
     model_url: https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 54.0
       - name: WER
         value: 99.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/data2vec-audio-base-960h
     model_url: https://huggingface.co/facebook/data2vec-audio-base-960h
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 58.0
       - name: WER
         value: 110.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/wav2vec2-large-robust-ft-libri-960h
     model_url: https://huggingface.co/facebook/wav2vec2-large-robust-ft-libri-960h
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 53.0
       - name: WER
         value: 104.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: nvidia/canary-qwen-2.5b
     model_url: https://huggingface.co/nvidia/canary-qwen-2.5b
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 67.0
       - name: WER
         value: 114.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/wav2vec2-large-960h
     model_url: https://huggingface.co/facebook/wav2vec2-large-960h
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 65.0
       - name: WER
         value: 106.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: ibm/granite-speech-3.3-2b
     model_url: https://huggingface.co/ibm/granite-speech-3.3-2b
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 67.0
       - name: WER
         value: 109.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/wav2vec2-base-960h
     model_url: https://huggingface.co/facebook/wav2vec2-base-960h
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 75.0
       - name: WER
         value: 103.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: openai/whisper-large-v3-turbo
     model_url: https://huggingface.co/openai/whisper-large-v3-turbo
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 58.0
       - name: WER
         value: 91.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: efficient-speech/lite-whisper-large-v3-turbo-acc
     model_url: https://huggingface.co/efficient-speech/lite-whisper-large-v3-turbo-acc
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 63.0
       - name: WER
         value: 94.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: distil-whisper/distil-large-v3
     model_url: https://huggingface.co/distil-whisper/distil-large-v3
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 68.0
       - name: WER
         value: 98.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: ibm/granite-speech-3.3-8b
     model_url: https://huggingface.co/ibm/granite-speech-3.3-8b
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 77.0
       - name: WER
         value: 121.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: openai/whisper-large
     model_url: https://huggingface.co/openai/whisper-large
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 67.0
       - name: WER
         value: 96.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: distil-whisper/distil-medium.en
     model_url: https://huggingface.co/distil-whisper/distil-medium.en
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 73.0
       - name: WER
         value: 99.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: openai/whisper-large-v3
     model_url: https://huggingface.co/openai/whisper-large-v3
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 70.0
       - name: WER
         value: 97.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: distil-whisper/distil-large-v2
     model_url: https://huggingface.co/distil-whisper/distil-large-v2
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 73.0
       - name: WER
         value: 99.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: Qwen/Qwen2-Audio-7B-Instruct
     model_url: https://huggingface.co/Qwen/Qwen2-Audio-7B-Instruct
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 76.0
       - name: WER
         value: 109.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: efficient-speech/lite-whisper-large-v3-acc
     model_url: https://huggingface.co/efficient-speech/lite-whisper-large-v3-acc
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 72.0
       - name: WER
         value: 98.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: openai/whisper-large-v2
     model_url: https://huggingface.co/openai/whisper-large-v2
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 72.0
       - name: WER
         value: 98.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: kyutai/stt-2.6b-en
     model_url: https://huggingface.co/kyutai/stt-2.6b-en
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 71.0
       - name: WER
         value: 114.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: openai/whisper-medium.en
     model_url: https://huggingface.co/openai/whisper-medium.en
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 74.0
       - name: WER
         value: 98.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: openai/whisper-small.en
     model_url: https://huggingface.co/openai/whisper-small.en
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 74.0
       - name: WER
         value: 98.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: efficient-speech/lite-whisper-large-v3
     model_url: https://huggingface.co/efficient-speech/lite-whisper-large-v3
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 78.0
       - name: WER
         value: 98.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: openai/whisper-base.en
     model_url: https://huggingface.co/openai/whisper-base.en
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 77.0
       - name: WER
         value: 99.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: efficient-speech/lite-whisper-large-v3-turbo
     model_url: https://huggingface.co/efficient-speech/lite-whisper-large-v3-turbo
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 75.0
       - name: WER
         value: 98.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: efficient-speech/lite-whisper-large-v3-fast
     model_url: https://huggingface.co/efficient-speech/lite-whisper-large-v3-fast
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 78.0
       - name: WER
         value: 99.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: microsoft/Phi-4-multimodal-instruct
     model_url: https://huggingface.co/microsoft/Phi-4-multimodal-instruct
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 83.0
       - name: WER
         value: 121.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: openai/whisper-tiny.en
     model_url: https://huggingface.co/openai/whisper-tiny.en
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 82.0
       - name: WER
         value: 99.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: nvidia/canary-1b-v2
     model_url: https://huggingface.co/nvidia/canary-1b-v2
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 76.0
       - name: WER
         value: 123.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: efficient-speech/lite-whisper-large-v3-turbo-fast
     model_url: https://huggingface.co/efficient-speech/lite-whisper-large-v3-turbo-fast
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 83.0
       - name: WER
         value: 99.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: usefulsensors/moonshine-base
     model_url: https://huggingface.co/usefulsensors/moonshine-base
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 85.0
       - name: WER
         value: 119.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: Qwen/Qwen2-Audio-7B
     model_url: https://huggingface.co/Qwen/Qwen2-Audio-7B
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 144.0
       - name: WER
         value: 190.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: usefulsensors/moonshine-tiny
     model_url: https://huggingface.co/usefulsensors/moonshine-tiny
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 92.0
       - name: WER
         value: 133.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/mms-1b-all
     model_url: https://huggingface.co/facebook/mms-1b-all
     results:
     - test_set: SimbaBench (Yoruba Voice)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 49.67
       - name: CER
         value: 18.12
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: openai/whisper-large-v3
     model_url: https://huggingface.co/openai/whisper-large-v3
     results:
     - test_set: SimbaBench (Yoruba Voice)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 500.17
       - name: CER
         value: 382.75
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: openai/whisper-large-v3-turbo
     model_url: https://huggingface.co/openai/whisper-large-v3-turbo
     results:
     - test_set: SimbaBench (Yoruba Voice)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 105.91
       - name: CER
         value: 66.43
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: facebook/seamless-m4t-v2-large
     model_url: https://huggingface.co/facebook/seamless-m4t-v2-large
     results:
     - test_set: SimbaBench (Yoruba Voice)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 23.41
       - name: CER
         value: 11.79
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/Simba-S
     model_url: https://huggingface.co/UBC-NLP/Simba-S
     results:
     - test_set: SimbaBench (Yoruba Voice)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 20.05
       - name: CER
         value: 11.69
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/Simba-M
     model_url: https://huggingface.co/UBC-NLP/Simba-M
     results:
     - test_set: SimbaBench (Yoruba Voice)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 41.55
       - name: CER
         value: 12.96
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_LLM_7B_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_7B_v2
     results:
     - test_set: SimbaBench (Yoruba Voice)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 23.22
       - name: CER
         value: 10.23
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_LLM_1B_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_1B_v2
     results:
     - test_set: SimbaBench (Yoruba Voice)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 31.51
       - name: CER
         value: 13.57
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_LLM_300M_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_300M_v2
     results:
     - test_set: SimbaBench (Yoruba Voice)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 29.68
       - name: CER
         value: 12.48
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_CTC_7B_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_7B_v2
     results:
     - test_set: SimbaBench (Yoruba Voice)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 35.15
       - name: CER
         value: 14.57
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_CTC_3B_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_3B_v2
     results:
     - test_set: SimbaBench (Yoruba Voice)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 36.65
       - name: CER
         value: 14.23
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_CTC_1B_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_1B_v2
     results:
     - test_set: SimbaBench (Yoruba Voice)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 40.66
       - name: CER
         value: 15.41
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: openai/whisper-tiny
     model_url: https://huggingface.co/openai/whisper-tiny
     results:
     - test_set: FLEURS
-      source: reported
-      source_url: https://arxiv.org/abs/2212.04356
       metrics:
       - name: WER
         value: 106.4
+      source: reported
+      source_url: https://arxiv.org/abs/2212.04356
   - model: openai/whisper-base
     model_url: https://huggingface.co/openai/whisper-base
     results:
     - test_set: FLEURS
-      source: reported
-      source_url: https://arxiv.org/abs/2212.04356
       metrics:
       - name: WER
         value: 101.8
+      source: reported
+      source_url: https://arxiv.org/abs/2212.04356
   - model: openai/whisper-small
     model_url: https://huggingface.co/openai/whisper-small
     results:
     - test_set: FLEURS
-      source: reported
-      source_url: https://arxiv.org/abs/2212.04356
       metrics:
       - name: WER
         value: 116.4
+      source: reported
+      source_url: https://arxiv.org/abs/2212.04356
   - model: openai/whisper-medium
     model_url: https://huggingface.co/openai/whisper-medium
     results:
     - test_set: FLEURS
-      source: reported
-      source_url: https://arxiv.org/abs/2212.04356
       metrics:
       - name: WER
         value: 105.1
+      source: reported
+      source_url: https://arxiv.org/abs/2212.04356
   - model: openai/whisper-large
     model_url: https://huggingface.co/openai/whisper-large
     results:
     - test_set: FLEURS
-      source: reported
-      source_url: https://arxiv.org/abs/2212.04356
       metrics:
       - name: WER
         value: 111.7
+      source: reported
+      source_url: https://arxiv.org/abs/2212.04356
   - model: openai/whisper-large-v2
     model_url: https://huggingface.co/openai/whisper-large-v2
     results:
     - test_set: FLEURS
-      source: reported
-      source_url: https://arxiv.org/abs/2212.04356
       metrics:
       - name: WER
         value: 94.8
+      source: reported
+      source_url: https://arxiv.org/abs/2212.04356
   tts:
   - model: facebook/mms-tts
     model_url: https://huggingface.co/facebook/mms-tts
     results:
     - test_set: SimbaBench (bibleTTS, Yoruba)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 26.99
@@ -1407,3 +1604,5 @@ evaluations:
         value: 3.45
       - name: PESQ
         value: 2.61
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench

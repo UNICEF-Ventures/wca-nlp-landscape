@@ -22,7 +22,7 @@ Generated: 2026-04-10
 | yor |  x  |  x  |  x  |  x  | Yoruba |
 | ibo |  x  |     |  x  |  x  | Igbo |
 | wol |  x  |     |  x  |  x  | Wolof |
-| kri |     |     |  x  |  x  | Krio |
+| kri |     |     |  x  |     | Krio |
 | tem |     |     |     |     | Temne |
 | gaa |  x  |     |     |     | Ga |
 | kau |  x  |  x  |     |  x  | Kanuri |
@@ -38,6 +38,6 @@ Generated: 2026-04-10
 | shu |     |     |     |     | Chadian Arabic |
 | fon |  x  |     |  x  |  x  | Fon |
 | pov |     |     |  x  |     | Guinea-Bissau Creole |
-| 34 |  19  |  7  |  20  |  17  | Total |
+| 34 |  19  |  7  |  20  |  16  | Total |
 
 Coverage: 24/34 languages have at least one benchmark.

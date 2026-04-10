@@ -14,49 +14,57 @@ evaluations:
     model_url: https://huggingface.co/facebook/omniASR-LLM-3B
     results:
     - test_set: CV25
-      source: evaluated
-      source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
       metrics:
       - name: WER
         value: 33.67
       - name: CER
         value: 9.6
-    - test_set: Waxal
       source: evaluated
       source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
+    - test_set: Waxal
       metrics:
       - name: WER
         value: 81.4
       - name: CER
         value: 36.32
+      source: evaluated
+      source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
   - model: facebook/omniASR-LLM-7B
     model_url: https://huggingface.co/facebook/omniASR-LLM-7B
     results:
     - test_set: Common Voice 25
-      source: evaluated
-      source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
       metrics:
       - name: WER
         value: 27.78
       - name: CER
         value: 7.67
-    - test_set: Waxal
       source: evaluated
       source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
+    - test_set: Waxal
       metrics:
       - name: WER
         value: 65.74
       - name: CER
         value: 23.96
+      source: evaluated
+      source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
   mt:
   - model: Helsinki-NLP/opus-mt-tc-bible-big-mul-mul
     model_url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-mul
     results:
     - test_set: UDHR
+      metrics:
+      - name: direction
+        value: dag→eng
+      - name: chrF++
+        value: 12.41
       source: evaluated
       source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
+    - test_set: UDHR
       metrics:
-      - name: chrF++ dag→en
-        value: 12.41
-      - name: chrF++ en→dag
+      - name: direction
+        value: eng→dag
+      - name: chrF++
         value: 8.37
+      source: evaluated
+      source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape

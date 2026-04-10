@@ -19,6 +19,8 @@ evaluations:
         value: 25.69
       - name: Topic
         value: 81.93
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
   - model: Qwen3-14B
     model_url: https://huggingface.co/Alibaba-NLP/Qwen3-14B-PT
     results:
@@ -28,6 +30,8 @@ evaluations:
         value: 30.84
       - name: Topic
         value: 61.41
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
   - model: AfriqueGemma-12B
     model_url: https://huggingface.co/AfriqueLLM/AfriqueGemma-12B
     results:
@@ -37,6 +41,8 @@ evaluations:
         value: 34.69
       - name: Topic
         value: 79.67
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
   - model: Gemma3-12B
     model_url: https://huggingface.co/google/gemma-3-12b-pt
     results:
@@ -46,6 +52,8 @@ evaluations:
         value: 47.81
       - name: Topic
         value: 73.51
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
   - model: AfriqueLlama-8B
     model_url: https://huggingface.co/AfriqueLLM/AfriqueLlama-8B
     results:
@@ -55,57 +63,57 @@ evaluations:
         value: 22.22
       - name: Topic
         value: 73.21
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
   - model: Aya-101
     model_url: https://huggingface.co/CohereForAI/aya-101
     results:
     - test_set: AfriMGSM(Math)
-      source: reported
-      source_url: https://arxiv.org/abs/2406.03368
       metrics:
       - name: Accuracy
         value: 1.6
-    - test_set: AfriXNLI
       source: reported
       source_url: https://arxiv.org/abs/2406.03368
+    - test_set: AfriXNLI
       metrics:
       - name: Accuracy
         value: 47.0
+      source: reported
+      source_url: https://arxiv.org/abs/2406.03368
   - model: Gemma 2 27B
     model_url: https://huggingface.co/google/gemma-2-27b-it
     results:
     - test_set: AfriMGSM(Math)
-      source: reported
-      source_url: https://arxiv.org/abs/2406.03368
       metrics:
       - name: Accuracy
         value: 12.4
-    - test_set: AfriXNLI
       source: reported
       source_url: https://arxiv.org/abs/2406.03368
+    - test_set: AfriXNLI
       metrics:
       - name: Accuracy
         value: 36.0
+      source: reported
+      source_url: https://arxiv.org/abs/2406.03368
   - model: LLaMa 3.1 70B
     model_url: https://huggingface.co/meta-llama/Meta-Llama-3.1-70B-Instruct
     results:
     - test_set: AfriMGSM(Math)
-      source: reported
-      source_url: https://arxiv.org/abs/2406.03368
       metrics:
       - name: Accuracy
         value: 14.4
-    - test_set: AfriXNLI
       source: reported
       source_url: https://arxiv.org/abs/2406.03368
+    - test_set: AfriXNLI
       metrics:
       - name: Accuracy
         value: 36.0
+      source: reported
+      source_url: https://arxiv.org/abs/2406.03368
   - model: GPT-4o
     model_url: https://openai.com/gpt-4o
     results:
     - test_set: AfriMMLU
-      source: reported
-      source_url: https://arxiv.org/abs/2406.03368
       metrics:
       - name: AfriMMLU-ElemMath
         value: 68.0
@@ -117,37 +125,23 @@ evaluations:
         value: 32.0
       - name: AfriMMLU-IntLaw
         value: 45.0
-    - test_set: AfriMGSM(Math)
       source: reported
       source_url: https://arxiv.org/abs/2406.03368
+    - test_set: AfriMGSM(Math)
       metrics:
       - name: Accuracy
         value: 31.2
-    - test_set: AfriXNLI
       source: reported
       source_url: https://arxiv.org/abs/2406.03368
+    - test_set: AfriXNLI
       metrics:
       - name: Accuracy
         value: 55.8
-  - model: google/madlad400-8b-lm
-    model_url: https://huggingface.co/google/madlad400-8b-lm
-    results:
-    - test_set: GATONES
-      notes: Table 16 — BLEU/chrF (10-shot)
-      metrics:
-      - name: BLEU twi→eng
-        value: 1.9
-      - name: chrF twi→eng
-        value: 16.6
-      - name: BLEU eng→twi
-        value: 0
-      - name: chrF eng→twi
-        value: 3.1
+      source: reported
+      source_url: https://arxiv.org/abs/2406.03368
   - model: gemini-3-pro-preview
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 68.94
@@ -161,11 +155,11 @@ evaluations:
         value: 79.03
       - name: NER F1
         value: 80.7
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: gemini-2.5-pro
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 64.58
@@ -179,11 +173,11 @@ evaluations:
         value: 75.81
       - name: NER F1
         value: 68.97
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: gpt-5-2025-08-07
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 62.53
@@ -197,11 +191,11 @@ evaluations:
         value: 64.52
       - name: NER F1
         value: 71.19
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: gpt-5.1-2025-11-13
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 55.8
@@ -215,11 +209,11 @@ evaluations:
         value: 54.84
       - name: NER F1
         value: 70.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: gemini-2.5-flash
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 51.18
@@ -233,11 +227,11 @@ evaluations:
         value: 59.68
       - name: NER F1
         value: 25.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: claude-sonnet-4-5@20250929
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 42.92
@@ -251,11 +245,11 @@ evaluations:
         value: 29.03
       - name: NER F1
         value: 40.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: claude-4-sonnet-20250514
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 41.95
@@ -269,11 +263,11 @@ evaluations:
         value: 25.81
       - name: NER F1
         value: 43.33
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: gpt-4.1
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 38.65
@@ -287,12 +281,12 @@ evaluations:
         value: 22.58
       - name: NER F1
         value: 43.75
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: CohereForAI/c4ai-command-a-03-2025
     model_url: https://huggingface.co/CohereForAI/c4ai-command-a-03-2025
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 32.02
@@ -306,12 +300,12 @@ evaluations:
         value: 4.84
       - name: NER F1
         value: 30.77
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: meta-llama/Llama-4-Scout-17B-16E-Instruct
     model_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 25.29
@@ -325,12 +319,12 @@ evaluations:
         value: 4.84
       - name: NER F1
         value: 25.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: meta-llama/Llama-3.3-70B-Instruct
     model_url: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 26.07
@@ -344,12 +338,12 @@ evaluations:
         value: 3.23
       - name: NER F1
         value: 16.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: google/gemma-3-27b-it
     model_url: https://huggingface.co/google/gemma-3-27b-it
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 26.42
@@ -363,12 +357,12 @@ evaluations:
         value: 0.0
       - name: NER F1
         value: 25.45
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: google/gemma-2-27b-it
     model_url: https://huggingface.co/google/gemma-2-27b-it
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 25.27
@@ -382,12 +376,12 @@ evaluations:
         value: 0.0
       - name: NER F1
         value: 22.22
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
     model_url: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 21.11
@@ -401,12 +395,12 @@ evaluations:
         value: 1.61
       - name: NER F1
         value: 10.53
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: meta-llama/Llama-3.1-70B-Instruct
     model_url: https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 23.46
@@ -420,12 +414,12 @@ evaluations:
         value: 3.23
       - name: NER F1
         value: 12.5
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: Qwen/Qwen3-30B-Instruct-2507
     model_url: https://huggingface.co/Qwen/Qwen3-30B-Instruct-2507
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 22.09
@@ -439,12 +433,12 @@ evaluations:
         value: 1.61
       - name: NER F1
         value: 16.22
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: deepseek-ai/DeepSeek-R1-Distill-Llama-70B
     model_url: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 23.86
@@ -458,12 +452,12 @@ evaluations:
         value: 4.84
       - name: NER F1
         value: 18.18
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: Tower-Babel/Babel-9B-Chat
     model_url: https://huggingface.co/Tower-Babel/Babel-9B-Chat
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 19.43
@@ -477,12 +471,12 @@ evaluations:
         value: 3.23
       - name: NER F1
         value: 11.43
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: Tower-Babel/Babel-83B-Chat
     model_url: https://huggingface.co/Tower-Babel/Babel-83B-Chat
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 20.95
@@ -496,12 +490,12 @@ evaluations:
         value: 1.61
       - name: NER F1
         value: 15.38
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: Qwen/Qwen3-4B-Instruct-2507
     model_url: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 18.47
@@ -515,12 +509,12 @@ evaluations:
         value: 4.84
       - name: NER F1
         value: 4.35
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: google/gemma-2-9b-it
     model_url: https://huggingface.co/google/gemma-2-9b-it
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 21.54
@@ -534,12 +528,12 @@ evaluations:
         value: 1.61
       - name: NER F1
         value: 13.95
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: google/gemma-3-12b-it
     model_url: https://huggingface.co/google/gemma-3-12b-it
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 18.75
@@ -553,12 +547,12 @@ evaluations:
         value: 1.61
       - name: NER F1
         value: 10.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: meta-llama/Llama-3.1-8B-Instruct
     model_url: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 16.81
@@ -572,12 +566,12 @@ evaluations:
         value: 0.0
       - name: NER F1
         value: 5.88
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: CohereForAI/aya-23-35B
     model_url: https://huggingface.co/CohereForAI/aya-23-35B
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 13.03
@@ -591,12 +585,12 @@ evaluations:
         value: 3.23
       - name: NER F1
         value: 0.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: CohereForAI/c4ai-command-r-plus-08-2024
     model_url: https://huggingface.co/CohereForAI/c4ai-command-r-plus-08-2024
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 16.05
@@ -610,12 +604,12 @@ evaluations:
         value: 1.61
       - name: NER F1
         value: 19.35
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: CohereForAI/c4ai-command-r7b-12-2024
     model_url: https://huggingface.co/CohereForAI/c4ai-command-r7b-12-2024
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 11.97
@@ -629,12 +623,12 @@ evaluations:
         value: 0.0
       - name: NER F1
         value: 0.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: microsoft/Phi-4-mini-instruct
     model_url: https://huggingface.co/microsoft/Phi-4-mini-instruct
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 12.63
@@ -648,12 +642,12 @@ evaluations:
         value: 0.0
       - name: NER F1
         value: 0.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: meta-llama/Llama-3.2-1B-Instruct
     model_url: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 12.68
@@ -667,12 +661,12 @@ evaluations:
         value: 1.61
       - name: NER F1
         value: 0.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: microsoft/Phi-3.5-mini-instruct
     model_url: https://huggingface.co/microsoft/Phi-3.5-mini-instruct
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 14.26
@@ -686,12 +680,12 @@ evaluations:
         value: 0.0
       - name: NER F1
         value: 6.06
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: google/gemma-2-2b-it
     model_url: https://huggingface.co/google/gemma-2-2b-it
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 13.67
@@ -705,12 +699,12 @@ evaluations:
         value: 0.0
       - name: NER F1
         value: 0.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: CohereForAI/aya-23-8B
     model_url: https://huggingface.co/CohereForAI/aya-23-8B
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 13.9
@@ -724,12 +718,12 @@ evaluations:
         value: 3.23
       - name: NER F1
         value: 8.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: google/gemma-3-4b-it
     model_url: https://huggingface.co/google/gemma-3-4b-it
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 14.28
@@ -743,12 +737,12 @@ evaluations:
         value: 0.0
       - name: NER F1
         value: 0.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: meta-llama/Llama-3.2-3B-Instruct
     model_url: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 12.92
@@ -762,1009 +756,1125 @@ evaluations:
         value: 0.0
       - name: NER F1
         value: 0.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   mt:
   - model: AfriqueQwen-14B
     model_url: https://huggingface.co/AfriqueLLM/AfriqueQwen-14B
     results:
     - test_set: FLORES-200
       metrics:
-      - name: chrF++ en-tw
+      - name: direction
+        value: eng→twi
+      - name: chrF
         value: 12.83
-      - name: chrF++ tw-en
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
+    - test_set: FLORES-200
+      metrics:
+      - name: direction
+        value: twi→eng
+      - name: chrF
         value: 27.83
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
   - model: Qwen3-14B
     model_url: https://huggingface.co/Alibaba-NLP/Qwen3-14B-PT
     results:
     - test_set: FLORES-200
       metrics:
-      - name: chrF++ en-tw
+      - name: direction
+        value: eng→twi
+      - name: chrF
         value: 13.49
-      - name: chrF++ tw-en
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
+    - test_set: FLORES-200
+      metrics:
+      - name: direction
+        value: twi→eng
+      - name: chrF
         value: 27.33
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
   - model: AfriqueGemma-12B
     model_url: https://huggingface.co/AfriqueLLM/AfriqueGemma-12B
     results:
     - test_set: FLORES-200
       metrics:
-      - name: chrF++ en-tw
+      - name: direction
+        value: eng→twi
+      - name: chrF
         value: 15.58
-      - name: chrF++ tw-en
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
+    - test_set: FLORES-200
+      metrics:
+      - name: direction
+        value: twi→eng
+      - name: chrF
         value: 30.86
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
   - model: Gemma3-12B
     model_url: https://huggingface.co/google/gemma-3-12b-pt
     results:
     - test_set: FLORES-200
       metrics:
-      - name: chrF++ en-tw
+      - name: direction
+        value: eng→twi
+      - name: chrF
         value: 15.11
-      - name: chrF++ tw-en
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
+    - test_set: FLORES-200
+      metrics:
+      - name: direction
+        value: twi→eng
+      - name: chrF
         value: 12.17
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
   - model: AfriqueLlama-8B
     model_url: https://huggingface.co/AfriqueLLM/AfriqueLlama-8B
     results:
     - test_set: FLORES-200
       metrics:
-      - name: chrF++ en-tw
+      - name: direction
+        value: eng→twi
+      - name: chrF
         value: 13.89
-      - name: chrF++ tw-en
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
+    - test_set: FLORES-200
+      metrics:
+      - name: direction
+        value: twi→eng
+      - name: chrF
         value: 27.2
+      source: reported
+      source_url: https://arxiv.org/abs/2601.06395
   - model: OMT-LLaMA 8B
     model_url: https://huggingface.co/facebook/omt-llama3.1-8b-v1
     results:
     - test_set: BOUQuET
+      metrics:
+      - name: direction
+        value: eng→twi
+      - name: chrF++
+        value: '?'
       source: reported
       source_url: https://huggingface.co/spaces/facebook/bouquet
+    - test_set: BOUQuET
       metrics:
-      - name: chrF++ en→X
+      - name: direction
+        value: twi→eng
+      - name: chrF++
         value: '?'
-      - name: chrF++ X→en
-        value: '?'
+      source: reported
+      source_url: https://huggingface.co/spaces/facebook/bouquet
   - model: google/madlad400-3b-mt
     model_url: https://huggingface.co/google/madlad400-3b-mt
     results:
     - test_set: GATONES
       notes: Table 16 — BLEU/chrF
       metrics:
-      - name: BLEU twi→eng
+      - name: direction
+        value: twi→eng
+      - name: BLEU
         value: 6.9
-      - name: chrF twi→eng
+      - name: chrF
         value: 27
-      - name: BLEU eng→twi
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: direction
+        value: eng→twi
+      - name: BLEU
         value: 2.2
-      - name: chrF eng→twi
+      - name: chrF
         value: 17.9
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
   - model: google/madlad400-7.2b-mt
     model_url: https://huggingface.co/google/madlad400-7.2b-mt
     results:
     - test_set: GATONES
       notes: Table 16 — BLEU/chrF
       metrics:
-      - name: BLEU twi→eng
+      - name: direction
+        value: twi→eng
+      - name: BLEU
         value: 10.4
-      - name: chrF twi→eng
+      - name: chrF
         value: 29.9
-      - name: BLEU eng→twi
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: direction
+        value: eng→twi
+      - name: BLEU
         value: 4.1
-      - name: chrF eng→twi
+      - name: chrF
         value: 21.9
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
   - model: google/madlad400-10.7b-mt
     model_url: https://huggingface.co/google/madlad400-10.7b-mt
     results:
     - test_set: GATONES
       notes: Table 16 — BLEU/chrF
       metrics:
-      - name: BLEU twi→eng
+      - name: direction
+        value: twi→eng
+      - name: BLEU
         value: 9.3
-      - name: chrF twi→eng
+      - name: chrF
         value: 29
-      - name: BLEU eng→twi
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: direction
+        value: eng→twi
+      - name: BLEU
         value: 3.9
-      - name: chrF eng→twi
+      - name: chrF
         value: 21.2
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+  - model: google/madlad400-8b-lm
+    model_url: https://huggingface.co/google/madlad400-8b-lm
+    results:
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF (10-shot)
+      metrics:
+      - name: direction
+        value: twi→eng
+      - name: BLEU
+        value: 1.9
+      - name: chrF
+        value: 16.6
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF (10-shot)
+      metrics:
+      - name: direction
+        value: eng→twi
+      - name: BLEU
+        value: 0
+      - name: chrF
+        value: 3.1
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
   asr:
   - model: facebook/omniASR-LLM-7B
     model_url: https://huggingface.co/facebook/omniASR-LLM-7B
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 10.0
       - name: WER
         value: 35.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/omniASR-LLM-7B-ZS
     model_url: https://huggingface.co/facebook/omniASR-LLM-7B-ZS
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 7.0
       - name: WER
         value: 24.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/omniASR-LLM-1B
     model_url: https://huggingface.co/facebook/omniASR-LLM-1B
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 12.0
       - name: WER
         value: 41.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/omniASR-LLM-3B
     model_url: https://huggingface.co/facebook/omniASR-LLM-3B
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 20.0
       - name: WER
         value: 57.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/omniASR-LLM-300M
     model_url: https://huggingface.co/facebook/omniASR-LLM-300M
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 14.0
       - name: WER
         value: 48.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/omniASR-CTC-7B
     model_url: https://huggingface.co/facebook/omniASR-CTC-7B
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 22.0
       - name: WER
         value: 61.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/omniASR-CTC-1B
     model_url: https://huggingface.co/facebook/omniASR-CTC-1B
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 17.0
       - name: WER
         value: 62.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/omniASR-CTC-3B
     model_url: https://huggingface.co/facebook/omniASR-CTC-3B
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 23.0
       - name: WER
         value: 67.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/omniASR-CTC-300M
     model_url: https://huggingface.co/facebook/omniASR-CTC-300M
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 25.0
       - name: WER
         value: 75.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: microsoft/paza-mms-1b-all
     model_url: https://huggingface.co/microsoft/paza-mms-1b-all
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 52.0
       - name: WER
         value: 96.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/mms-1b-all
     model_url: https://huggingface.co/facebook/mms-1b-all
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 41.0
       - name: WER
         value: 94.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/mms-1b-fl102
     model_url: https://huggingface.co/facebook/mms-1b-fl102
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 47.0
       - name: WER
         value: 99.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: microsoft/paza-Phi-4-multimodal-instruct
     model_url: https://huggingface.co/microsoft/paza-Phi-4-multimodal-instruct
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 53.0
       - name: WER
         value: 96.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: nvidia/parakeet-tdt-0.6b-v3
     model_url: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 54.0
       - name: WER
         value: 101.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/wav2vec2-conformer-rel-pos-large-960h-ft
     model_url: https://huggingface.co/facebook/wav2vec2-conformer-rel-pos-large-960h-ft
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 60.0
       - name: WER
         value: 118.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/data2vec-audio-large-960h
     model_url: https://huggingface.co/facebook/data2vec-audio-large-960h
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 56.0
       - name: WER
         value: 99.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/wav2vec2-conformer-rope-large-960h-ft
     model_url: https://huggingface.co/facebook/wav2vec2-conformer-rope-large-960h-ft
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 61.0
       - name: WER
         value: 112.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/hubert-large-ls960-ft
     model_url: https://huggingface.co/facebook/hubert-large-ls960-ft
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 55.0
       - name: WER
         value: 108.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/hubert-xlarge-ls960-ft
     model_url: https://huggingface.co/facebook/hubert-xlarge-ls960-ft
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 53.0
       - name: WER
         value: 102.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: microsoft/paza-whisper-large-v3-turbo
     model_url: https://huggingface.co/microsoft/paza-whisper-large-v3-turbo
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 81.0
       - name: WER
         value: 99.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/wav2vec2-large-960h-lv60-self
     model_url: https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 56.0
       - name: WER
         value: 98.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/data2vec-audio-base-960h
     model_url: https://huggingface.co/facebook/data2vec-audio-base-960h
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 57.0
       - name: WER
         value: 104.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/wav2vec2-large-robust-ft-libri-960h
     model_url: https://huggingface.co/facebook/wav2vec2-large-robust-ft-libri-960h
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 55.0
       - name: WER
         value: 101.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: nvidia/canary-qwen-2.5b
     model_url: https://huggingface.co/nvidia/canary-qwen-2.5b
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 64.0
       - name: WER
         value: 109.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/wav2vec2-large-960h
     model_url: https://huggingface.co/facebook/wav2vec2-large-960h
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 64.0
       - name: WER
         value: 112.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: ibm/granite-speech-3.3-2b
     model_url: https://huggingface.co/ibm/granite-speech-3.3-2b
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 65.0
       - name: WER
         value: 106.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/wav2vec2-base-960h
     model_url: https://huggingface.co/facebook/wav2vec2-base-960h
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 63.0
       - name: WER
         value: 111.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: openai/whisper-large-v3-turbo
     model_url: https://huggingface.co/openai/whisper-large-v3-turbo
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 74.0
       - name: WER
         value: 99.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: efficient-speech/lite-whisper-large-v3-turbo-acc
     model_url: https://huggingface.co/efficient-speech/lite-whisper-large-v3-turbo-acc
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 77.0
       - name: WER
         value: 99.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: distil-whisper/distil-large-v3
     model_url: https://huggingface.co/distil-whisper/distil-large-v3
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 74.0
       - name: WER
         value: 99.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: ibm/granite-speech-3.3-8b
     model_url: https://huggingface.co/ibm/granite-speech-3.3-8b
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 69.0
       - name: WER
         value: 110.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: openai/whisper-large
     model_url: https://huggingface.co/openai/whisper-large
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 73.0
       - name: WER
         value: 97.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: distil-whisper/distil-medium.en
     model_url: https://huggingface.co/distil-whisper/distil-medium.en
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 77.0
       - name: WER
         value: 99.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: openai/whisper-large-v3
     model_url: https://huggingface.co/openai/whisper-large-v3
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 85.0
       - name: WER
         value: 99.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: distil-whisper/distil-large-v2
     model_url: https://huggingface.co/distil-whisper/distil-large-v2
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 85.0
       - name: WER
         value: 99.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: Qwen/Qwen2-Audio-7B-Instruct
     model_url: https://huggingface.co/Qwen/Qwen2-Audio-7B-Instruct
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 83.0
       - name: WER
         value: 118.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: efficient-speech/lite-whisper-large-v3-acc
     model_url: https://huggingface.co/efficient-speech/lite-whisper-large-v3-acc
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 86.0
       - name: WER
         value: 100.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: openai/whisper-large-v2
     model_url: https://huggingface.co/openai/whisper-large-v2
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 74.0
       - name: WER
         value: 99.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: kyutai/stt-2.6b-en
     model_url: https://huggingface.co/kyutai/stt-2.6b-en
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 79.0
       - name: WER
         value: 120.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: openai/whisper-medium.en
     model_url: https://huggingface.co/openai/whisper-medium.en
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 88.0
       - name: WER
         value: 99.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: openai/whisper-small.en
     model_url: https://huggingface.co/openai/whisper-small.en
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 87.0
       - name: WER
         value: 99.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: efficient-speech/lite-whisper-large-v3
     model_url: https://huggingface.co/efficient-speech/lite-whisper-large-v3
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 86.0
       - name: WER
         value: 99.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: openai/whisper-base.en
     model_url: https://huggingface.co/openai/whisper-base.en
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 86.0
       - name: WER
         value: 100.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: efficient-speech/lite-whisper-large-v3-turbo
     model_url: https://huggingface.co/efficient-speech/lite-whisper-large-v3-turbo
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 87.0
       - name: WER
         value: 100.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: efficient-speech/lite-whisper-large-v3-fast
     model_url: https://huggingface.co/efficient-speech/lite-whisper-large-v3-fast
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 86.0
       - name: WER
         value: 100.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: microsoft/Phi-4-multimodal-instruct
     model_url: https://huggingface.co/microsoft/Phi-4-multimodal-instruct
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 105.0
       - name: WER
         value: 159.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: openai/whisper-tiny.en
     model_url: https://huggingface.co/openai/whisper-tiny.en
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 87.0
       - name: WER
         value: 100.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: nvidia/canary-1b-v2
     model_url: https://huggingface.co/nvidia/canary-1b-v2
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 69.0
       - name: WER
         value: 115.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: efficient-speech/lite-whisper-large-v3-turbo-fast
     model_url: https://huggingface.co/efficient-speech/lite-whisper-large-v3-turbo-fast
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 90.0
       - name: WER
         value: 100.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: usefulsensors/moonshine-base
     model_url: https://huggingface.co/usefulsensors/moonshine-base
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 71.0
       - name: WER
         value: 111.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: Qwen/Qwen2-Audio-7B
     model_url: https://huggingface.co/Qwen/Qwen2-Audio-7B
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 74.0
       - name: WER
         value: 110.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: usefulsensors/moonshine-tiny
     model_url: https://huggingface.co/usefulsensors/moonshine-tiny
     results:
     - test_set: PazaBench (aggregated)
-      source: reported
-      source_url: https://huggingface.co/spaces/microsoft/paza-bench
       metrics:
       - name: CER
         value: 73.0
       - name: WER
         value: 110.0
+      source: reported
+      source_url: https://huggingface.co/spaces/microsoft/paza-bench
   - model: facebook/mms-1b-all
     model_url: https://huggingface.co/facebook/mms-1b-all
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 85.89
       - name: CER
         value: 38.51
-    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       metrics:
       - name: WER
         value: 85.98
       - name: CER
         value: 34.86
-    - test_set: SimbaBench (FLEURS, Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FLEURS, Twi)
       metrics:
       - name: WER
         value: 94.32
       - name: CER
         value: 42.45
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: openai/whisper-large-v3
     model_url: https://huggingface.co/openai/whisper-large-v3
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 633.04
       - name: CER
         value: 623.03
-    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       metrics:
       - name: WER
         value: 440.21
       - name: CER
         value: 337.78
-    - test_set: SimbaBench (FLEURS, Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FLEURS, Twi)
       metrics:
       - name: WER
         value: 600.98
       - name: CER
         value: 405.59
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: openai/whisper-large-v3-turbo
     model_url: https://huggingface.co/openai/whisper-large-v3-turbo
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 249.56
       - name: CER
         value: 243.12
-    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       metrics:
       - name: WER
         value: 181.04
       - name: CER
         value: 134.67
-    - test_set: SimbaBench (FLEURS, Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FLEURS, Twi)
       metrics:
       - name: WER
         value: 104.76
       - name: CER
         value: 52.22
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: facebook/seamless-m4t-v2-large
     model_url: https://huggingface.co/facebook/seamless-m4t-v2-large
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 230.19
       - name: CER
         value: 198.78
-    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       metrics:
       - name: WER
         value: 235.56
       - name: CER
         value: 199.32
-    - test_set: SimbaBench (FLEURS, Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FLEURS, Twi)
       metrics:
       - name: WER
         value: 122.9
       - name: CER
         value: 91.67
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/Simba-S
     model_url: https://huggingface.co/UBC-NLP/Simba-S
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 12.01
       - name: CER
         value: 7.87
-    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       metrics:
       - name: WER
         value: 7.31
       - name: CER
         value: 3.19
-    - test_set: SimbaBench (FLEURS, Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FLEURS, Twi)
       metrics:
       - name: WER
         value: 62.68
       - name: CER
         value: 14.79
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/Simba-M
     model_url: https://huggingface.co/UBC-NLP/Simba-M
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 16.94
       - name: CER
         value: 8.01
-    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       metrics:
       - name: WER
         value: 14.8
       - name: CER
         value: 5.96
-    - test_set: SimbaBench (FLEURS, Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FLEURS, Twi)
       metrics:
       - name: WER
         value: 75.51
       - name: CER
         value: 28.1
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_LLM_7B_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_7B_v2
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 89.16
       - name: CER
         value: 47.42
-    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       metrics:
       - name: WER
         value: 78.32
       - name: CER
         value: 32.75
-    - test_set: SimbaBench (FLEURS, Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FLEURS, Twi)
       metrics:
       - name: WER
         value: 22.1
       - name: CER
         value: 4.83
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_LLM_1B_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_1B_v2
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 92.84
       - name: CER
         value: 61.5
-    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       metrics:
       - name: WER
         value: 83.89
       - name: CER
         value: 43.31
-    - test_set: SimbaBench (FLEURS, Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FLEURS, Twi)
       metrics:
       - name: WER
         value: 25.13
       - name: CER
         value: 7.06
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_LLM_300M_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_300M_v2
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 106.37
       - name: CER
         value: 71.87
-    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       metrics:
       - name: WER
         value: 81.84
       - name: CER
         value: 42.96
-    - test_set: SimbaBench (FLEURS, Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FLEURS, Twi)
       metrics:
       - name: WER
         value: 34.1
       - name: CER
         value: 8.05
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_CTC_7B_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_7B_v2
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 85.29
       - name: CER
         value: 41.92
-    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       metrics:
       - name: WER
         value: 83.22
       - name: CER
         value: 38.65
-    - test_set: SimbaBench (FLEURS, Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FLEURS, Twi)
       metrics:
       - name: WER
         value: 41.73
       - name: CER
         value: 9.86
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_CTC_3B_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_3B_v2
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 89.32
       - name: CER
         value: 41.35
-    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       metrics:
       - name: WER
         value: 82.74
       - name: CER
         value: 37.28
-    - test_set: SimbaBench (FLEURS, Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FLEURS, Twi)
       metrics:
       - name: WER
         value: 43.1
       - name: CER
         value: 11.59
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_CTC_1B_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_1B_v2
     results:
     - test_set: SimbaBench (FinancialSpeech, Akuapem Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 87.21
       - name: CER
         value: 43.37
-    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FinancialSpeech, Asante Twi)
       metrics:
       - name: WER
         value: 86.24
       - name: CER
         value: 40.17
-    - test_set: SimbaBench (FLEURS, Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (FLEURS, Twi)
       metrics:
       - name: WER
         value: 51.72
       - name: CER
         value: 10.79
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   tts:
   - model: UBC-NLP/Simba-TTS
     model_url: https://huggingface.co/UBC-NLP/Simba-TTS
     results:
     - test_set: SimbaBench (bibleTTS, Asante Twi)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 59.84
@@ -1772,9 +1882,9 @@ evaluations:
         value: 3.06
       - name: PESQ
         value: 1
-    - test_set: SimbaBench (bibleTTS, Akuapem Twi)
       source: reported
       source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
+    - test_set: SimbaBench (bibleTTS, Akuapem Twi)
       metrics:
       - name: WER
         value: 59.45
@@ -1782,3 +1892,5 @@ evaluations:
         value: 2.79
       - name: PESQ
         value: 1.05
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench

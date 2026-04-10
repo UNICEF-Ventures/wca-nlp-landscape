@@ -4,107 +4,32 @@ evaluations:
     model_url: https://openrouter.ai/anthropic/claude-3.7-sonnet
     results:
     - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
       metrics:
       - name: Classification Acc.
         value: 100.0
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
   - model: anthropic/claude-opus-4.5
     model_url: https://openrouter.ai/anthropic/claude-opus-4.5
     results:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU fon→en
-        value: 12.0
-      - name: ChrF fon→en
-        value: 34.0
-      - name: SpBLEU en→fon
-        value: 7.7
-      - name: ChrF en→fon
-        value: 26.4
     - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
       metrics:
       - name: Classification Acc.
         value: 100.0
-  - model: anthropic/claude-opus-4.6
-    model_url: https://openrouter.ai/anthropic/claude-opus-4.6
-    results:
-    - test_set: FLORES+ 10-sample
       source: reported
       source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU fon→en
-        value: 11.6
-      - name: ChrF fon→en
-        value: 34.7
-      - name: SpBLEU en→fon
-        value: 4.2
-      - name: ChrF en→fon
-        value: 23.3
   - model: anthropic/claude-sonnet-4.6
     model_url: https://openrouter.ai/anthropic/claude-sonnet-4.6
     results:
     - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
       metrics:
       - name: Classification Acc.
         value: 100.0
-  - model: google/gemini-2.5-pro
-    model_url: https://openrouter.ai/google/gemini-2.5-pro
-    results:
-    - test_set: FLORES+ 10-sample
       source: reported
       source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→fon
-        value: 6.9
-      - name: ChrF en→fon
-        value: 26.0
-      - name: SpBLEU fon→en
-        value: 12.2
-      - name: ChrF fon→en
-        value: 32.3
-  - model: google/gemini-3-pro-preview
-    model_url: https://openrouter.ai/google/gemini-3-pro-preview
-    results:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU fon→en
-        value: 18.7
-      - name: ChrF fon→en
-        value: 41.5
-      - name: SpBLEU en→fon
-        value: 7.5
-      - name: ChrF en→fon
-        value: 27.6
-  - model: google/madlad400-8b-lm
-    model_url: https://huggingface.co/google/madlad400-8b-lm
-    results:
-    - test_set: FLORES-200
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
-      notes: Table 17 — BLEU/chrF (10-shot)
-      metrics:
-      - name: BLEU fon→eng
-        value: 1.8
-      - name: chrF fon→eng
-        value: 18.3
-      - name: BLEU eng→fon
-        value: 0
-      - name: chrF eng→fon
-        value: 1.6
   - model: gemini-3-pro-preview
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 30.3
@@ -112,11 +37,11 @@ evaluations:
         value: 8.74
       - name: NER F1
         value: 51.85
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: gemini-2.5-pro
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 29.66
@@ -124,11 +49,11 @@ evaluations:
         value: 7.27
       - name: NER F1
         value: 52.05
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: gpt-5-2025-08-07
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 21.92
@@ -136,11 +61,11 @@ evaluations:
         value: 2.81
       - name: NER F1
         value: 41.03
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: gpt-5.1-2025-11-13
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 16.26
@@ -148,11 +73,11 @@ evaluations:
         value: 3.19
       - name: NER F1
         value: 29.33
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: gemini-2.5-flash
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 6.71
@@ -160,11 +85,11 @@ evaluations:
         value: 2.15
       - name: NER F1
         value: 11.27
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: claude-sonnet-4-5@20250929
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 13.21
@@ -172,11 +97,11 @@ evaluations:
         value: 1.81
       - name: NER F1
         value: 24.62
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: claude-4-sonnet-20250514
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 12.54
@@ -184,11 +109,11 @@ evaluations:
         value: 0.46
       - name: NER F1
         value: 24.62
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: gpt-4.1
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 6.26
@@ -196,12 +121,12 @@ evaluations:
         value: 1.09
       - name: NER F1
         value: 11.43
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: CohereForAI/c4ai-command-a-03-2025
     model_url: https://huggingface.co/CohereForAI/c4ai-command-a-03-2025
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 7.29
@@ -209,12 +134,12 @@ evaluations:
         value: 1.25
       - name: NER F1
         value: 13.33
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: meta-llama/Llama-4-Scout-17B-16E-Instruct
     model_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 4.88
@@ -222,12 +147,12 @@ evaluations:
         value: 1.07
       - name: NER F1
         value: 8.7
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: meta-llama/Llama-3.3-70B-Instruct
     model_url: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 4.05
@@ -235,12 +160,12 @@ evaluations:
         value: 0.7
       - name: NER F1
         value: 7.41
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: google/gemma-3-27b-it
     model_url: https://huggingface.co/google/gemma-3-27b-it
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 3.68
@@ -248,12 +173,12 @@ evaluations:
         value: 1.39
       - name: NER F1
         value: 5.97
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: google/gemma-2-27b-it
     model_url: https://huggingface.co/google/gemma-2-27b-it
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 5.41
@@ -261,12 +186,12 @@ evaluations:
         value: 1.05
       - name: NER F1
         value: 9.76
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
     model_url: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 7.64
@@ -274,12 +199,12 @@ evaluations:
         value: 0.64
       - name: NER F1
         value: 14.63
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: meta-llama/Llama-3.1-70B-Instruct
     model_url: https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 3.44
@@ -287,12 +212,12 @@ evaluations:
         value: 0.64
       - name: NER F1
         value: 6.25
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: Qwen/Qwen3-30B-Instruct-2507
     model_url: https://huggingface.co/Qwen/Qwen3-30B-Instruct-2507
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 0.1
@@ -300,12 +225,12 @@ evaluations:
         value: 0.21
       - name: NER F1
         value: 0.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: deepseek-ai/DeepSeek-R1-Distill-Llama-70B
     model_url: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 3.18
@@ -313,12 +238,12 @@ evaluations:
         value: 0.48
       - name: NER F1
         value: 5.88
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: Tower-Babel/Babel-9B-Chat
     model_url: https://huggingface.co/Tower-Babel/Babel-9B-Chat
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 6.04
@@ -326,12 +251,12 @@ evaluations:
         value: 0.31
       - name: NER F1
         value: 11.76
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: Tower-Babel/Babel-83B-Chat
     model_url: https://huggingface.co/Tower-Babel/Babel-83B-Chat
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 5.11
@@ -339,12 +264,12 @@ evaluations:
         value: 0.22
       - name: NER F1
         value: 10.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: Qwen/Qwen3-4B-Instruct-2507
     model_url: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 0.15
@@ -352,12 +277,12 @@ evaluations:
         value: 0.3
       - name: NER F1
         value: 0.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: google/gemma-2-9b-it
     model_url: https://huggingface.co/google/gemma-2-9b-it
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 2.23
@@ -365,12 +290,12 @@ evaluations:
         value: 0.29
       - name: NER F1
         value: 4.17
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: google/gemma-3-12b-it
     model_url: https://huggingface.co/google/gemma-3-12b-it
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 2.92
@@ -378,12 +303,12 @@ evaluations:
         value: 0.95
       - name: NER F1
         value: 4.88
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: meta-llama/Llama-3.1-8B-Instruct
     model_url: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 0.09
@@ -391,12 +316,12 @@ evaluations:
         value: 0.17
       - name: NER F1
         value: 0.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: CohereForAI/aya-23-35B
     model_url: https://huggingface.co/CohereForAI/aya-23-35B
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 0.1
@@ -404,12 +329,12 @@ evaluations:
         value: 0.21
       - name: NER F1
         value: 0.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: CohereForAI/c4ai-command-r-plus-08-2024
     model_url: https://huggingface.co/CohereForAI/c4ai-command-r-plus-08-2024
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 0.07
@@ -417,12 +342,12 @@ evaluations:
         value: 0.14
       - name: NER F1
         value: 0.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: CohereForAI/c4ai-command-r7b-12-2024
     model_url: https://huggingface.co/CohereForAI/c4ai-command-r7b-12-2024
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 0.2
@@ -430,12 +355,12 @@ evaluations:
         value: 0.41
       - name: NER F1
         value: 0.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: microsoft/Phi-4-mini-instruct
     model_url: https://huggingface.co/microsoft/Phi-4-mini-instruct
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 0.3
@@ -443,12 +368,12 @@ evaluations:
         value: 0.6
       - name: NER F1
         value: 0.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: meta-llama/Llama-3.2-1B-Instruct
     model_url: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 0.23
@@ -456,12 +381,12 @@ evaluations:
         value: 0.47
       - name: NER F1
         value: 0.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: microsoft/Phi-3.5-mini-instruct
     model_url: https://huggingface.co/microsoft/Phi-3.5-mini-instruct
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 0.08
@@ -469,12 +394,12 @@ evaluations:
         value: 0.16
       - name: NER F1
         value: 0.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: google/gemma-2-2b-it
     model_url: https://huggingface.co/google/gemma-2-2b-it
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 0.1
@@ -482,12 +407,12 @@ evaluations:
         value: 0.19
       - name: NER F1
         value: 0.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: CohereForAI/aya-23-8B
     model_url: https://huggingface.co/CohereForAI/aya-23-8B
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 0.1
@@ -495,12 +420,12 @@ evaluations:
         value: 0.2
       - name: NER F1
         value: 0.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: google/gemma-3-4b-it
     model_url: https://huggingface.co/google/gemma-3-4b-it
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 0.45
@@ -508,12 +433,12 @@ evaluations:
         value: 0.9
       - name: NER F1
         value: 0.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   - model: meta-llama/Llama-3.2-3B-Instruct
     model_url: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
     results:
     - test_set: SAHARA
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
       metrics:
       - name: Lang. Avg.
         value: 0.13
@@ -521,185 +446,331 @@ evaluations:
         value: 0.26
       - name: NER F1
         value: 0.0
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/sahara
   mt:
+  - model: anthropic/claude-opus-4.5
+    model_url: https://openrouter.ai/anthropic/claude-opus-4.5
+    results:
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: fon→eng
+      - name: SpBLEU
+        value: 12.0
+      - name: ChrF
+        value: 34.0
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: eng→fon
+      - name: SpBLEU
+        value: 7.7
+      - name: ChrF
+        value: 26.4
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+  - model: anthropic/claude-opus-4.6
+    model_url: https://openrouter.ai/anthropic/claude-opus-4.6
+    results:
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: fon→eng
+      - name: SpBLEU
+        value: 11.6
+      - name: ChrF
+        value: 34.7
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: eng→fon
+      - name: SpBLEU
+        value: 4.2
+      - name: ChrF
+        value: 23.3
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+  - model: google/gemini-2.5-pro
+    model_url: https://openrouter.ai/google/gemini-2.5-pro
+    results:
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: eng→fon
+      - name: SpBLEU
+        value: 6.9
+      - name: ChrF
+        value: 26.0
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: fon→eng
+      - name: SpBLEU
+        value: 12.2
+      - name: ChrF
+        value: 32.3
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+  - model: google/gemini-3-pro-preview
+    model_url: https://openrouter.ai/google/gemini-3-pro-preview
+    results:
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: fon→eng
+      - name: SpBLEU
+        value: 18.7
+      - name: ChrF
+        value: 41.5
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
+    - test_set: FLORES+ 10-sample
+      metrics:
+      - name: direction
+        value: eng→fon
+      - name: SpBLEU
+        value: 7.5
+      - name: ChrF
+        value: 27.6
+      source: reported
+      source_url: https://huggingface.co/spaces/fair-forward/languagebench
   - model: google/madlad400-3b-mt
     model_url: https://huggingface.co/google/madlad400-3b-mt
     results:
     - test_set: FLORES-200
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
       notes: Table 17 — BLEU/chrF
       metrics:
-      - name: BLEU fon→eng
+      - name: direction
+        value: fon→eng
+      - name: BLEU
         value: 3.9
-      - name: chrF fon→eng
+      - name: chrF
         value: 25.1
-      - name: BLEU eng→fon
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+    - test_set: FLORES-200
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: direction
+        value: eng→fon
+      - name: BLEU
         value: 1.6
-      - name: chrF eng→fon
+      - name: chrF
         value: 15.6
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
   - model: google/madlad400-7.2b-mt
     model_url: https://huggingface.co/google/madlad400-7.2b-mt
     results:
     - test_set: FLORES-200
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
       notes: Table 17 — BLEU/chrF
       metrics:
-      - name: BLEU fon→eng
+      - name: direction
+        value: fon→eng
+      - name: BLEU
         value: 5.6
-      - name: chrF fon→eng
+      - name: chrF
         value: 26.3
-      - name: BLEU eng→fon
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+    - test_set: FLORES-200
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: direction
+        value: eng→fon
+      - name: BLEU
         value: 1.9
-      - name: chrF eng→fon
+      - name: chrF
         value: 16
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
   - model: google/madlad400-10.7b-mt
     model_url: https://huggingface.co/google/madlad400-10.7b-mt
     results:
     - test_set: FLORES-200
-      source: reported
-      source_url: https://arxiv.org/abs/2309.04662
       notes: Table 17 — BLEU/chrF
       metrics:
-      - name: BLEU fon→eng
+      - name: direction
+        value: fon→eng
+      - name: BLEU
         value: 6.4
-      - name: chrF fon→eng
+      - name: chrF
         value: 27.8
-      - name: BLEU eng→fon
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+    - test_set: FLORES-200
+      notes: Table 17 — BLEU/chrF
+      metrics:
+      - name: direction
+        value: eng→fon
+      - name: BLEU
         value: 1.6
-      - name: chrF eng→fon
+      - name: chrF
         value: 15.9
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+  - model: google/madlad400-8b-lm
+    model_url: https://huggingface.co/google/madlad400-8b-lm
+    results:
+    - test_set: FLORES-200
+      notes: Table 17 — BLEU/chrF (10-shot)
+      metrics:
+      - name: direction
+        value: fon→eng
+      - name: BLEU
+        value: 1.8
+      - name: chrF
+        value: 18.3
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+    - test_set: FLORES-200
+      notes: Table 17 — BLEU/chrF (10-shot)
+      metrics:
+      - name: direction
+        value: eng→fon
+      - name: BLEU
+        value: 0
+      - name: chrF
+        value: 1.6
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
   asr:
   - model: facebook/mms-1b-all
     model_url: https://huggingface.co/facebook/mms-1b-all
     results:
     - test_set: SimbaBench (ALFFA)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 86.21
       - name: CER
         value: 31.62
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: openai/whisper-large-v3
     model_url: https://huggingface.co/openai/whisper-large-v3
     results:
     - test_set: SimbaBench (ALFFA)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 344.41
       - name: CER
         value: 312.17
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: openai/whisper-large-v3-turbo
     model_url: https://huggingface.co/openai/whisper-large-v3-turbo
     results:
     - test_set: SimbaBench (ALFFA)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 135.9
       - name: CER
         value: 124.25
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: facebook/seamless-m4t-v2-large
     model_url: https://huggingface.co/facebook/seamless-m4t-v2-large
     results:
     - test_set: SimbaBench (ALFFA)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 132.78
       - name: CER
         value: 115.56
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/Simba-S
     model_url: https://huggingface.co/UBC-NLP/Simba-S
     results:
     - test_set: SimbaBench (ALFFA)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 42.12
       - name: CER
         value: 14.29
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/Simba-M
     model_url: https://huggingface.co/UBC-NLP/Simba-M
     results:
     - test_set: SimbaBench (ALFFA)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 42.49
       - name: CER
         value: 11.77
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_LLM_7B_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_7B_v2
     results:
     - test_set: SimbaBench (ALFFA)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 86.71
       - name: CER
         value: 35.01
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_LLM_1B_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_1B_v2
     results:
     - test_set: SimbaBench (ALFFA)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 85.11
       - name: CER
         value: 33.49
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_LLM_300M_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_LLM_300M_v2
     results:
     - test_set: SimbaBench (ALFFA)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 82.84
       - name: CER
         value: 31.67
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_CTC_7B_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_7B_v2
     results:
     - test_set: SimbaBench (ALFFA)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 83.29
       - name: CER
         value: 32.92
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_CTC_3B_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_3B_v2
     results:
     - test_set: SimbaBench (ALFFA)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 85.37
       - name: CER
         value: 33.51
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
   - model: UBC-NLP/omniASR_CTC_1B_v2
     model_url: https://huggingface.co/UBC-NLP/omniASR_CTC_1B_v2
     results:
     - test_set: SimbaBench (ALFFA)
-      source: reported
-      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench
       metrics:
       - name: WER
         value: 90.6
       - name: CER
         value: 37.36
+      source: reported
+      source_url: https://huggingface.co/spaces/UBC-NLP/SimbaBench

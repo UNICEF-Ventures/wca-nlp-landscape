@@ -1,1358 +1,1501 @@
-# LanguageBench / AI Language Proficiency Monitor
-# Source: https://huggingface.co/spaces/fair-forward/languagebench
-# Paper: arXiv:2507.08538 (Pomerenke, Nothnagel, Ostermann 2025)
-# GitHub: https://github.com/datenlabor-bmz/evals-for-every-language
-# Data pulled: 2026-03-09 from fair-forward/evals-for-every-language-results
-#
-# IMPORTANT CAVEATS:
-# - All results based on n=10 sentences per language/task — treat with caution
-# - "Synthetic" test sets were machine-translated (Google Translate) from English
-# - Human-translated test sets use original FLORES+, SIB-200, AfriMMLU, etc.
-# - Top 3 models per task per language shown (out of ~37 evaluated)
-# - MMLU/ARC/MGSM omitted for hau, yor, ibo, ewe, wol, lin (better data in irokobench.yaml)
-#
-# Datasets: FLORES+ (translation), SIB-200 (classification), MMLU, ARC, MGSM
-# Metric naming: direction in metric name (e.g. SpBLEU hau→en, ChrF en→hau)
-
+source: reported
+source_url: https://huggingface.co/spaces/fair-forward/languagebench
 models:
-- model: amazon/nova-premier-v1
-  model_url: https://openrouter.ai/amazon/nova-premier-v1
-  task: llm
-  results:
-    yor:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-- model: amazon/nova-pro-v1
-  model_url: https://openrouter.ai/amazon/nova-pro-v1
-  task: llm
-  results:
-    mos:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-    sag:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-- model: anthropic/claude-3.7-sonnet
-  model_url: https://openrouter.ai/anthropic/claude-3.7-sonnet
-  task: llm
-  results:
-    aka:
-    - test_set: ARC Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: ARC Acc.
-        value: 100.0
-    bam:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-    fon:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-    fuv:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 90.0
-    sag:
-    - test_set: MMLU Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: MMLU Acc.
-        value: 80.0
-- model: anthropic/claude-haiku-4.5
-  model_url: https://openrouter.ai/anthropic/claude-haiku-4.5
-  task: llm
-  results:
-    bam:
-    - test_set: ARC Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: ARC Acc.
-        value: 90.0
-- model: anthropic/claude-opus-4.5
-  model_url: https://openrouter.ai/anthropic/claude-opus-4.5
-  task: llm
-  results:
-    aka:
-    - test_set: ARC Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: ARC Acc.
-        value: 100.0
-    bam:
-    - test_set: ARC Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: ARC Acc.
-        value: 90.0
-    - test_set: MGSM Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: MGSM Acc.
-        value: 100.0
-    - test_set: MMLU Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: MMLU Acc.
-        value: 90.0
-    dyu:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-    fon:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU fon→en
-        value: 12.0
-      - name: ChrF fon→en
-        value: 34.0
-      - name: SpBLEU en→fon
-        value: 7.7
-      - name: ChrF en→fon
-        value: 26.4
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-    fuv:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-    mos:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→mos
-        value: 6.4
-      - name: ChrF en→mos
-        value: 32.5
-      - name: SpBLEU mos→en
-        value: 6.9
-      - name: ChrF mos→en
-        value: 29.4
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-    yor:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→yor
-        value: 14.6
-      - name: ChrF en→yor
-        value: 33.2
-      - name: SpBLEU yor→en
-        value: 17.4
-      - name: ChrF yor→en
-        value: 40.1
-- model: anthropic/claude-opus-4.6
-  model_url: https://openrouter.ai/anthropic/claude-opus-4.6
-  task: llm
-  results:
-    aka:
-    - test_set: ARC Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: ARC Acc.
-        value: 100.0
-    - test_set: MGSM 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: MGSM Acc.
-        value: 88.9
-    - test_set: MMLU 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: MMLU Acc.
-        value: 75.0
-    bam:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU bam→en
-        value: 15.7
-      - name: ChrF bam→en
-        value: 43.0
-      - name: SpBLEU en→bam
-        value: 4.1
-      - name: ChrF en→bam
-        value: 33.6
-    - test_set: MGSM Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: MGSM Acc.
-        value: 100.0
-    - test_set: MMLU Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: MMLU Acc.
-        value: 90.0
-    dyu:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU dyu→en
-        value: 5.2
-      - name: ChrF dyu→en
-        value: 28.8
-      - name: SpBLEU en→dyu
-        value: 0.0
-      - name: ChrF en→dyu
-        value: 19.1
-    ewe:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-    fon:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU fon→en
-        value: 11.6
-      - name: ChrF fon→en
-        value: 34.7
-      - name: SpBLEU en→fon
-        value: 4.2
-      - name: ChrF en→fon
-        value: 23.3
-    fuv:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU fuv→en
-        value: 18.9
-      - name: ChrF fuv→en
-        value: 44.0
-      - name: SpBLEU en→fuv
-        value: 3.1
-      - name: ChrF en→fuv
-        value: 22.9
-    mos:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU mos→en
-        value: 9.2
-      - name: ChrF mos→en
-        value: 30.3
-      - name: SpBLEU en→mos
-        value: 3.8
-      - name: ChrF en→mos
-        value: 32.8
-    sag:
-    - test_set: MGSM Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: MGSM Acc.
-        value: 87.5
-    - test_set: MMLU Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: MMLU Acc.
-        value: 88.9
-    yor:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU yor→en
-        value: 20.7
-      - name: ChrF yor→en
-        value: 43.0
-      - name: SpBLEU en→yor
-        value: 14.3
-      - name: ChrF en→yor
-        value: 31.9
-- model: anthropic/claude-sonnet-4
-  model_url: https://openrouter.ai/anthropic/claude-sonnet-4
-  task: llm
-  results:
-    dyu:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→dyu
-        value: 2.1
-      - name: ChrF en→dyu
-        value: 23.7
-      - name: SpBLEU dyu→en
-        value: 1.6
-      - name: ChrF dyu→en
-        value: 18.8
-    fuv:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→fuv
-        value: 6.4
-      - name: ChrF en→fuv
-        value: 25.6
-      - name: SpBLEU fuv→en
-        value: 9.7
-      - name: ChrF fuv→en
-        value: 29.2
-    ibo:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→ibo
-        value: 28.7
-      - name: ChrF en→ibo
-        value: 52.4
-      - name: SpBLEU ibo→en
-        value: 25.3
-      - name: ChrF ibo→en
-        value: 50.7
-- model: anthropic/claude-sonnet-4.5
-  model_url: https://openrouter.ai/anthropic/claude-sonnet-4.5
-  task: llm
-  results:
-    aka:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-    dyu:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→dyu
-        value: 2.3
-      - name: ChrF en→dyu
-        value: 23.5
-      - name: SpBLEU dyu→en
-        value: 4.3
-      - name: ChrF dyu→en
-        value: 23.7
-    ewe:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU ewe→en
-        value: 16.0
-      - name: ChrF ewe→en
-        value: 41.3
-      - name: SpBLEU en→ewe
-        value: 12.1
-      - name: ChrF en→ewe
-        value: 37.4
-    hau:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU hau→en
-        value: 28.8
-      - name: ChrF hau→en
-        value: 54.0
-      - name: SpBLEU en→hau
-        value: 29.0
-      - name: ChrF en→hau
-        value: 55.7
-    ibo:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→ibo
-        value: 28.3
-      - name: ChrF en→ibo
-        value: 53.3
-      - name: SpBLEU ibo→en
-        value: 28.0
-      - name: ChrF ibo→en
-        value: 53.9
-    mos:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU mos→en
-        value: 14.9
-      - name: ChrF mos→en
-        value: 31.3
-      - name: SpBLEU en→mos
-        value: 5.1
-      - name: ChrF en→mos
-        value: 24.0
-- model: anthropic/claude-sonnet-4.6
-  model_url: https://openrouter.ai/anthropic/claude-sonnet-4.6
-  task: llm
-  results:
-    aka:
-    - test_set: MMLU 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: MMLU Acc.
-        value: 87.5
-    bam:
-    - test_set: ARC Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: ARC Acc.
-        value: 100.0
-    fon:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-    fuv:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU fuv→en
-        value: 9.3
-      - name: ChrF fuv→en
-        value: 40.1
-      - name: SpBLEU en→fuv
-        value: 4.1
-      - name: ChrF en→fuv
-        value: 22.2
-    mos:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-    sag:
-    - test_set: ARC Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: ARC Acc.
-        value: 100.0
-    - test_set: MGSM Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: MGSM Acc.
-        value: 80.0
-- model: baidu/ernie-4.5-300b-a47b
-  model_url: https://openrouter.ai/baidu/ernie-4.5-300b-a47b
-  task: llm
-  results:
-    bam:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→bam
-        value: 5.9
-      - name: ChrF en→bam
-        value: 34.0
-      - name: SpBLEU bam→en
-        value: 5.9
-      - name: ChrF bam→en
-        value: 29.7
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-    fuv:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→fuv
-        value: 3.8
-      - name: ChrF en→fuv
-        value: 26.5
-      - name: SpBLEU fuv→en
-        value: 3.8
-      - name: ChrF fuv→en
-        value: 21.0
-    lin:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→lin
-        value: 22.2
-      - name: ChrF en→lin
-        value: 53.8
-      - name: SpBLEU lin→en
-        value: 10.2
-      - name: ChrF lin→en
-        value: 36.7
-    mos:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→mos
-        value: 5.4
-      - name: ChrF en→mos
-        value: 30.8
-      - name: SpBLEU mos→en
-        value: 9.1
-      - name: ChrF mos→en
-        value: 27.9
-    sag:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→sag
-        value: 7.4
-      - name: ChrF en→sag
-        value: 32.8
-      - name: SpBLEU sag→en
-        value: 3.4
-      - name: ChrF sag→en
-        value: 24.8
-    wol:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-- model: deepseek/deepseek-v3.2-exp
-  model_url: https://openrouter.ai/deepseek/deepseek-v3.2-exp
-  task: llm
-  results:
-    aka:
-    - test_set: MMLU 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: MMLU Acc.
-        value: 75.0
-    lin:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-    sag:
-    - test_set: ARC Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: ARC Acc.
-        value: 100.0
-    wol:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-- model: google/gemini-2.5-flash
-  model_url: https://openrouter.ai/google/gemini-2.5-flash
-  task: llm
-  results:
-    bam:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU bam→en
-        value: 13.7
-      - name: ChrF bam→en
-        value: 40.7
-      - name: SpBLEU en→bam
-        value: 5.6
-      - name: ChrF en→bam
-        value: 29.3
-    dyu:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU dyu→en
-        value: 8.4
-      - name: ChrF dyu→en
-        value: 30.6
-      - name: SpBLEU en→dyu
-        value: 1.5
-      - name: ChrF en→dyu
-        value: 22.1
-    hau:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→hau
-        value: 29.6
-      - name: ChrF en→hau
-        value: 57.6
-      - name: SpBLEU hau→en
-        value: 28.6
-      - name: ChrF hau→en
-        value: 50.1
-    ibo:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→ibo
-        value: 27.0
-      - name: ChrF en→ibo
-        value: 53.5
-      - name: SpBLEU ibo→en
-        value: 31.2
-      - name: ChrF ibo→en
-        value: 55.0
-    wol:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU wol→en
-        value: 18.1
-      - name: ChrF wol→en
-        value: 45.3
-      - name: SpBLEU en→wol
-        value: 10.4
-      - name: ChrF en→wol
-        value: 33.6
-- model: google/gemini-2.5-pro
-  model_url: https://openrouter.ai/google/gemini-2.5-pro
-  task: llm
-  results:
-    aka:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU aka→en
-        value: 30.2
-      - name: ChrF aka→en
-        value: 54.8
-      - name: SpBLEU en→aka
-        value: 17.1
-      - name: ChrF en→aka
-        value: 47.2
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-    bam:
-    - test_set: MMLU Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: MMLU Acc.
-        value: 90.0
-    dyu:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-    ewe:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU ewe→en
-        value: 15.6
-      - name: ChrF ewe→en
-        value: 43.2
-      - name: SpBLEU en→ewe
-        value: 15.4
-      - name: ChrF en→ewe
-        value: 43.5
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-    fon:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→fon
-        value: 6.9
-      - name: ChrF en→fon
-        value: 26.0
-      - name: SpBLEU fon→en
-        value: 12.2
-      - name: ChrF fon→en
-        value: 32.3
-    fuv:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→fuv
-        value: 5.5
-      - name: ChrF en→fuv
-        value: 26.4
-      - name: SpBLEU fuv→en
-        value: 7.8
-      - name: ChrF fuv→en
-        value: 30.9
-    hau:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→hau
-        value: 27.4
-      - name: ChrF en→hau
-        value: 57.2
-      - name: SpBLEU hau→en
-        value: 31.3
-      - name: ChrF hau→en
-        value: 52.0
-    ibo:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU ibo→en
-        value: 38.1
-      - name: ChrF ibo→en
-        value: 61.4
-      - name: SpBLEU en→ibo
-        value: 26.7
-      - name: ChrF en→ibo
-        value: 51.8
-    lin:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU lin→en
-        value: 18.7
-      - name: ChrF lin→en
-        value: 48.2
-      - name: SpBLEU en→lin
-        value: 19.9
-      - name: ChrF en→lin
-        value: 51.6
-    sag:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU sag→en
-        value: 21.0
-      - name: ChrF sag→en
-        value: 39.7
-      - name: SpBLEU en→sag
-        value: 7.7
-      - name: ChrF en→sag
-        value: 33.2
-    wol:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU wol→en
-        value: 21.3
-      - name: ChrF wol→en
-        value: 45.4
-      - name: SpBLEU en→wol
-        value: 11.4
-      - name: ChrF en→wol
-        value: 34.6
-    yor:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→yor
-        value: 15.8
-      - name: ChrF en→yor
-        value: 34.9
-      - name: SpBLEU yor→en
-        value: 20.1
-      - name: ChrF yor→en
-        value: 42.8
-- model: google/gemini-3-pro-preview
-  model_url: https://openrouter.ai/google/gemini-3-pro-preview
-  task: llm
-  results:
-    aka:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU aka→en
-        value: 32.9
-      - name: ChrF aka→en
-        value: 55.1
-      - name: SpBLEU en→aka
-        value: 17.0
-      - name: ChrF en→aka
-        value: 48.5
-    bam:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU bam→en
-        value: 22.6
-      - name: ChrF bam→en
-        value: 46.5
-      - name: SpBLEU en→bam
-        value: 5.7
-      - name: ChrF en→bam
-        value: 33.1
-    - test_set: MGSM Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: MGSM Acc.
-        value: 80.0
-    dyu:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU dyu→en
-        value: 16.9
-      - name: ChrF dyu→en
-        value: 41.1
-      - name: SpBLEU en→dyu
-        value: 2.4
-      - name: ChrF en→dyu
-        value: 24.9
-    ewe:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU ewe→en
-        value: 24.0
-      - name: ChrF ewe→en
-        value: 48.3
-      - name: SpBLEU en→ewe
-        value: 16.1
-      - name: ChrF en→ewe
-        value: 44.6
-    fon:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU fon→en
-        value: 18.7
-      - name: ChrF fon→en
-        value: 41.5
-      - name: SpBLEU en→fon
-        value: 7.5
-      - name: ChrF en→fon
-        value: 27.6
-    fuv:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU fuv→en
-        value: 13.8
-      - name: ChrF fuv→en
-        value: 36.2
-      - name: SpBLEU en→fuv
-        value: 5.6
-      - name: ChrF en→fuv
-        value: 25.6
-    hau:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU hau→en
-        value: 39.6
-      - name: ChrF hau→en
-        value: 61.0
-      - name: SpBLEU en→hau
-        value: 33.6
-      - name: ChrF en→hau
-        value: 58.7
-    ibo:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU ibo→en
-        value: 40.3
-      - name: ChrF ibo→en
-        value: 64.3
-      - name: SpBLEU en→ibo
-        value: 27.5
-      - name: ChrF en→ibo
-        value: 52.0
-    lin:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU lin→en
-        value: 23.7
-      - name: ChrF lin→en
-        value: 52.0
-      - name: SpBLEU en→lin
-        value: 24.3
-      - name: ChrF en→lin
-        value: 58.0
-    mos:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU mos→en
-        value: 15.2
-      - name: ChrF mos→en
-        value: 38.7
-      - name: SpBLEU en→mos
-        value: 5.8
-      - name: ChrF en→mos
-        value: 30.3
-    sag:
-    - test_set: ARC Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: ARC Acc.
-        value: 80.0
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU sag→en
-        value: 24.3
-      - name: ChrF sag→en
-        value: 46.6
-      - name: SpBLEU en→sag
-        value: 8.7
-      - name: ChrF en→sag
-        value: 31.1
-    - test_set: MGSM Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: MGSM Acc.
-        value: 90.0
-    - test_set: MMLU Synthetic 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: MMLU Acc.
-        value: 80.0
-    wol:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU wol→en
-        value: 32.3
-      - name: ChrF wol→en
-        value: 55.7
-      - name: SpBLEU en→wol
-        value: 13.5
-      - name: ChrF en→wol
-        value: 38.1
-    yor:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU yor→en
-        value: 27.0
-      - name: ChrF yor→en
-        value: 50.8
-      - name: SpBLEU en→yor
-        value: 19.2
-      - name: ChrF en→yor
-        value: 38.9
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-- model: google/translate-v2
-  model_url: https://cloud.google.com/translate
-  task: llm
-  results:
-    aka:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU aka→en
-        value: 28.1
-      - name: ChrF aka→en
-        value: 51.3
-      - name: SpBLEU en→aka
-        value: 17.5
-      - name: ChrF en→aka
-        value: 46.4
-    ewe:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→ewe
-        value: 17.3
-      - name: ChrF en→ewe
-        value: 46.0
-      - name: SpBLEU ewe→en
-        value: 19.2
-      - name: ChrF ewe→en
-        value: 40.5
-    hau:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU hau→en
-        value: 30.2
-      - name: ChrF hau→en
-        value: 53.6
-      - name: SpBLEU en→hau
-        value: 27.6
-      - name: ChrF en→hau
-        value: 53.6
-    ibo:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU ibo→en
-        value: 36.3
-      - name: ChrF ibo→en
-        value: 59.9
-      - name: SpBLEU en→ibo
-        value: 27.1
-      - name: ChrF en→ibo
-        value: 50.5
-    lin:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU lin→en
-        value: 27.4
-      - name: ChrF lin→en
-        value: 52.2
-      - name: SpBLEU en→lin
-        value: 23.7
-      - name: ChrF en→lin
-        value: 52.3
-    sag:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU sag→en
-        value: 17.5
-      - name: ChrF sag→en
-        value: 38.1
-      - name: SpBLEU en→sag
-        value: 9.3
-      - name: ChrF en→sag
-        value: 36.3
-    yor:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU yor→en
-        value: 19.8
-      - name: ChrF yor→en
-        value: 42.9
-      - name: SpBLEU en→yor
-        value: 4.4
-      - name: ChrF en→yor
-        value: 20.5
-- model: meta-llama/llama-3.1-70b-instruct
-  model_url: https://openrouter.ai/meta-llama/llama-3.1-70b-instruct
-  task: llm
-  results:
-    aka:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-    dyu:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 90.0
-    fuv:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 90.0
-    hau:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-    ibo:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-    lin:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-    yor:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-- model: meta-llama/llama-3.3-70b-instruct
-  model_url: https://openrouter.ai/meta-llama/llama-3.3-70b-instruct
-  task: llm
-  results:
-    ibo:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-- model: meta-llama/llama-4-maverick
-  model_url: https://openrouter.ai/meta-llama/llama-4-maverick
-  task: llm
-  results:
-    ewe:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-- model: mistralai/mistral-medium-3.1
-  model_url: https://openrouter.ai/mistralai/mistral-medium-3.1
-  task: llm
-  results:
-    ibo:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-- model: mistralai/mistral-saba
-  model_url: https://openrouter.ai/mistralai/mistral-saba
-  task: llm
-  results:
-    lin:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-- model: openai/gpt-4.1
-  model_url: https://openrouter.ai/openai/gpt-4.1
-  task: llm
-  results:
-    wol:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-- model: openai/gpt-4o
-  model_url: https://openrouter.ai/openai/gpt-4o
-  task: llm
-  results:
-    hau:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-    sag:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-- model: openai/gpt-5
-  model_url: https://openrouter.ai/openai/gpt-5
-  task: llm
-  results:
-    bam:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→bam
-        value: 7.4
-      - name: ChrF en→bam
-        value: 34.2
-      - name: SpBLEU bam→en
-        value: 8.1
-      - name: ChrF bam→en
-        value: 25.1
-    ewe:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→ewe
-        value: 24.1
-      - name: ChrF en→ewe
-        value: 46.1
-      - name: SpBLEU ewe→en
-        value: 8.6
-      - name: ChrF ewe→en
-        value: 27.9
-    sag:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-- model: openai/gpt-5-mini
-  model_url: https://openrouter.ai/openai/gpt-5-mini
-  task: llm
-  results:
-    aka:
-    - test_set: MGSM 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: MGSM Acc.
-        value: 77.8
-    bam:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-- model: openai/gpt-5.1
-  model_url: https://openrouter.ai/openai/gpt-5.1
-  task: llm
-  results:
-    hau:
-    - test_set: SIB-200 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: Classification Acc.
-        value: 100.0
-- model: openai/gpt-5.2
-  model_url: https://openrouter.ai/openai/gpt-5.2
-  task: llm
-  results:
-    aka:
-    - test_set: MGSM 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: MGSM Acc.
-        value: 80.0
-    wol:
-    - test_set: FLORES+ 10-sample
-      source: reported
-      source_url: https://huggingface.co/spaces/fair-forward/languagebench
-      metrics:
-      - name: SpBLEU en→wol
-        value: 11.7
-      - name: ChrF en→wol
-        value: 35.0
-      - name: SpBLEU wol→en
-        value: 12.0
-      - name: ChrF wol→en
-        value: 37.5
+  - model: amazon/nova-premier-v1
+    model_url: https://openrouter.ai/amazon/nova-premier-v1
+    task: llm
+    results:
+      yor:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+  - model: amazon/nova-pro-v1
+    model_url: https://openrouter.ai/amazon/nova-pro-v1
+    task: llm
+    results:
+      mos:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+      sag:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+  - model: anthropic/claude-3.7-sonnet
+    model_url: https://openrouter.ai/anthropic/claude-3.7-sonnet
+    task: llm
+    results:
+      aka:
+        - test_set: ARC Synthetic 10-sample
+          metrics:
+            - name: ARC Acc.
+              value: 100.0
+      bam:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+      fon:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+      fuv:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 90.0
+      sag:
+        - test_set: MMLU Synthetic 10-sample
+          metrics:
+            - name: MMLU Acc.
+              value: 80.0
+  - model: anthropic/claude-haiku-4.5
+    model_url: https://openrouter.ai/anthropic/claude-haiku-4.5
+    task: llm
+    results:
+      bam:
+        - test_set: ARC Synthetic 10-sample
+          metrics:
+            - name: ARC Acc.
+              value: 90.0
+  - model: anthropic/claude-opus-4.5
+    model_url: https://openrouter.ai/anthropic/claude-opus-4.5
+    task: mt
+    results:
+      fon:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: fon→eng
+            - name: SpBLEU
+              value: 12.0
+            - name: ChrF
+              value: 34.0
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→fon
+            - name: SpBLEU
+              value: 7.7
+            - name: ChrF
+              value: 26.4
+      mos:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→mos
+            - name: SpBLEU
+              value: 6.4
+            - name: ChrF
+              value: 32.5
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: mos→eng
+            - name: SpBLEU
+              value: 6.9
+            - name: ChrF
+              value: 29.4
+      yor:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→yor
+            - name: SpBLEU
+              value: 14.6
+            - name: ChrF
+              value: 33.2
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: yor→eng
+            - name: SpBLEU
+              value: 17.4
+            - name: ChrF
+              value: 40.1
+  - model: anthropic/claude-opus-4.5
+    model_url: https://openrouter.ai/anthropic/claude-opus-4.5
+    task: llm
+    results:
+      aka:
+        - test_set: ARC Synthetic 10-sample
+          metrics:
+            - name: ARC Acc.
+              value: 100.0
+      bam:
+        - test_set: ARC Synthetic 10-sample
+          metrics:
+            - name: ARC Acc.
+              value: 90.0
+        - test_set: MGSM Synthetic 10-sample
+          metrics:
+            - name: MGSM Acc.
+              value: 100.0
+        - test_set: MMLU Synthetic 10-sample
+          metrics:
+            - name: MMLU Acc.
+              value: 90.0
+      dyu:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+      fon:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+      fuv:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+      mos:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+  - model: anthropic/claude-opus-4.6
+    model_url: https://openrouter.ai/anthropic/claude-opus-4.6
+    task: mt
+    results:
+      bam:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: bam→eng
+            - name: SpBLEU
+              value: 15.7
+            - name: ChrF
+              value: 43.0
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→bam
+            - name: SpBLEU
+              value: 4.1
+            - name: ChrF
+              value: 33.6
+      dyu:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: dyu→eng
+            - name: SpBLEU
+              value: 5.2
+            - name: ChrF
+              value: 28.8
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→dyu
+            - name: SpBLEU
+              value: 0.0
+            - name: ChrF
+              value: 19.1
+      fon:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: fon→eng
+            - name: SpBLEU
+              value: 11.6
+            - name: ChrF
+              value: 34.7
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→fon
+            - name: SpBLEU
+              value: 4.2
+            - name: ChrF
+              value: 23.3
+      fuv:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: fuv→eng
+            - name: SpBLEU
+              value: 18.9
+            - name: ChrF
+              value: 44.0
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→fuv
+            - name: SpBLEU
+              value: 3.1
+            - name: ChrF
+              value: 22.9
+      mos:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: mos→eng
+            - name: SpBLEU
+              value: 9.2
+            - name: ChrF
+              value: 30.3
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→mos
+            - name: SpBLEU
+              value: 3.8
+            - name: ChrF
+              value: 32.8
+      yor:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: yor→eng
+            - name: SpBLEU
+              value: 20.7
+            - name: ChrF
+              value: 43.0
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→yor
+            - name: SpBLEU
+              value: 14.3
+            - name: ChrF
+              value: 31.9
+  - model: anthropic/claude-opus-4.6
+    model_url: https://openrouter.ai/anthropic/claude-opus-4.6
+    task: llm
+    results:
+      aka:
+        - test_set: ARC Synthetic 10-sample
+          metrics:
+            - name: ARC Acc.
+              value: 100.0
+        - test_set: MGSM 10-sample
+          metrics:
+            - name: MGSM Acc.
+              value: 88.9
+        - test_set: MMLU 10-sample
+          metrics:
+            - name: MMLU Acc.
+              value: 75.0
+      bam:
+        - test_set: MGSM Synthetic 10-sample
+          metrics:
+            - name: MGSM Acc.
+              value: 100.0
+        - test_set: MMLU Synthetic 10-sample
+          metrics:
+            - name: MMLU Acc.
+              value: 90.0
+      ewe:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+      sag:
+        - test_set: MGSM Synthetic 10-sample
+          metrics:
+            - name: MGSM Acc.
+              value: 87.5
+        - test_set: MMLU Synthetic 10-sample
+          metrics:
+            - name: MMLU Acc.
+              value: 88.9
+  - model: anthropic/claude-sonnet-4
+    model_url: https://openrouter.ai/anthropic/claude-sonnet-4
+    task: mt
+    results:
+      dyu:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→dyu
+            - name: SpBLEU
+              value: 2.1
+            - name: ChrF
+              value: 23.7
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: dyu→eng
+            - name: SpBLEU
+              value: 1.6
+            - name: ChrF
+              value: 18.8
+      fuv:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→fuv
+            - name: SpBLEU
+              value: 6.4
+            - name: ChrF
+              value: 25.6
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: fuv→eng
+            - name: SpBLEU
+              value: 9.7
+            - name: ChrF
+              value: 29.2
+      ibo:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→ibo
+            - name: SpBLEU
+              value: 28.7
+            - name: ChrF
+              value: 52.4
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: ibo→eng
+            - name: SpBLEU
+              value: 25.3
+            - name: ChrF
+              value: 50.7
+  - model: anthropic/claude-sonnet-4.5
+    model_url: https://openrouter.ai/anthropic/claude-sonnet-4.5
+    task: mt
+    results:
+      dyu:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→dyu
+            - name: SpBLEU
+              value: 2.3
+            - name: ChrF
+              value: 23.5
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: dyu→eng
+            - name: SpBLEU
+              value: 4.3
+            - name: ChrF
+              value: 23.7
+      ewe:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: ewe→eng
+            - name: SpBLEU
+              value: 16.0
+            - name: ChrF
+              value: 41.3
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→ewe
+            - name: SpBLEU
+              value: 12.1
+            - name: ChrF
+              value: 37.4
+      hau:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: hau→eng
+            - name: SpBLEU
+              value: 28.8
+            - name: ChrF
+              value: 54.0
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→hau
+            - name: SpBLEU
+              value: 29.0
+            - name: ChrF
+              value: 55.7
+      ibo:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→ibo
+            - name: SpBLEU
+              value: 28.3
+            - name: ChrF
+              value: 53.3
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: ibo→eng
+            - name: SpBLEU
+              value: 28.0
+            - name: ChrF
+              value: 53.9
+      mos:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: mos→eng
+            - name: SpBLEU
+              value: 14.9
+            - name: ChrF
+              value: 31.3
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→mos
+            - name: SpBLEU
+              value: 5.1
+            - name: ChrF
+              value: 24.0
+  - model: anthropic/claude-sonnet-4.5
+    model_url: https://openrouter.ai/anthropic/claude-sonnet-4.5
+    task: llm
+    results:
+      aka:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+  - model: anthropic/claude-sonnet-4.6
+    model_url: https://openrouter.ai/anthropic/claude-sonnet-4.6
+    task: mt
+    results:
+      fuv:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: fuv→eng
+            - name: SpBLEU
+              value: 9.3
+            - name: ChrF
+              value: 40.1
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→fuv
+            - name: SpBLEU
+              value: 4.1
+            - name: ChrF
+              value: 22.2
+  - model: anthropic/claude-sonnet-4.6
+    model_url: https://openrouter.ai/anthropic/claude-sonnet-4.6
+    task: llm
+    results:
+      aka:
+        - test_set: MMLU 10-sample
+          metrics:
+            - name: MMLU Acc.
+              value: 87.5
+      bam:
+        - test_set: ARC Synthetic 10-sample
+          metrics:
+            - name: ARC Acc.
+              value: 100.0
+      fon:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+      mos:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+      sag:
+        - test_set: ARC Synthetic 10-sample
+          metrics:
+            - name: ARC Acc.
+              value: 100.0
+        - test_set: MGSM Synthetic 10-sample
+          metrics:
+            - name: MGSM Acc.
+              value: 80.0
+  - model: baidu/ernie-4.5-300b-a47b
+    model_url: https://openrouter.ai/baidu/ernie-4.5-300b-a47b
+    task: mt
+    results:
+      bam:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→bam
+            - name: SpBLEU
+              value: 5.9
+            - name: ChrF
+              value: 34.0
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: bam→eng
+            - name: SpBLEU
+              value: 5.9
+            - name: ChrF
+              value: 29.7
+      fuv:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→fuv
+            - name: SpBLEU
+              value: 3.8
+            - name: ChrF
+              value: 26.5
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: fuv→eng
+            - name: SpBLEU
+              value: 3.8
+            - name: ChrF
+              value: 21.0
+      lin:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→lin
+            - name: SpBLEU
+              value: 22.2
+            - name: ChrF
+              value: 53.8
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: lin→eng
+            - name: SpBLEU
+              value: 10.2
+            - name: ChrF
+              value: 36.7
+      mos:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→mos
+            - name: SpBLEU
+              value: 5.4
+            - name: ChrF
+              value: 30.8
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: mos→eng
+            - name: SpBLEU
+              value: 9.1
+            - name: ChrF
+              value: 27.9
+      sag:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→sag
+            - name: SpBLEU
+              value: 7.4
+            - name: ChrF
+              value: 32.8
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: sag→eng
+            - name: SpBLEU
+              value: 3.4
+            - name: ChrF
+              value: 24.8
+  - model: baidu/ernie-4.5-300b-a47b
+    model_url: https://openrouter.ai/baidu/ernie-4.5-300b-a47b
+    task: llm
+    results:
+      bam:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+      wol:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+  - model: deepseek/deepseek-v3.2-exp
+    model_url: https://openrouter.ai/deepseek/deepseek-v3.2-exp
+    task: llm
+    results:
+      aka:
+        - test_set: MMLU 10-sample
+          metrics:
+            - name: MMLU Acc.
+              value: 75.0
+      lin:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+      sag:
+        - test_set: ARC Synthetic 10-sample
+          metrics:
+            - name: ARC Acc.
+              value: 100.0
+      wol:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+  - model: google/gemini-2.5-flash
+    model_url: https://openrouter.ai/google/gemini-2.5-flash
+    task: mt
+    results:
+      bam:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: bam→eng
+            - name: SpBLEU
+              value: 13.7
+            - name: ChrF
+              value: 40.7
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→bam
+            - name: SpBLEU
+              value: 5.6
+            - name: ChrF
+              value: 29.3
+      dyu:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: dyu→eng
+            - name: SpBLEU
+              value: 8.4
+            - name: ChrF
+              value: 30.6
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→dyu
+            - name: SpBLEU
+              value: 1.5
+            - name: ChrF
+              value: 22.1
+      hau:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→hau
+            - name: SpBLEU
+              value: 29.6
+            - name: ChrF
+              value: 57.6
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: hau→eng
+            - name: SpBLEU
+              value: 28.6
+            - name: ChrF
+              value: 50.1
+      ibo:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→ibo
+            - name: SpBLEU
+              value: 27.0
+            - name: ChrF
+              value: 53.5
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: ibo→eng
+            - name: SpBLEU
+              value: 31.2
+            - name: ChrF
+              value: 55.0
+      wol:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: wol→eng
+            - name: SpBLEU
+              value: 18.1
+            - name: ChrF
+              value: 45.3
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→wol
+            - name: SpBLEU
+              value: 10.4
+            - name: ChrF
+              value: 33.6
+  - model: google/gemini-2.5-pro
+    model_url: https://openrouter.ai/google/gemini-2.5-pro
+    task: mt
+    results:
+      aka:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: aka→eng
+            - name: SpBLEU
+              value: 30.2
+            - name: ChrF
+              value: 54.8
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→aka
+            - name: SpBLEU
+              value: 17.1
+            - name: ChrF
+              value: 47.2
+      ewe:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: ewe→eng
+            - name: SpBLEU
+              value: 15.6
+            - name: ChrF
+              value: 43.2
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→ewe
+            - name: SpBLEU
+              value: 15.4
+            - name: ChrF
+              value: 43.5
+      fon:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→fon
+            - name: SpBLEU
+              value: 6.9
+            - name: ChrF
+              value: 26.0
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: fon→eng
+            - name: SpBLEU
+              value: 12.2
+            - name: ChrF
+              value: 32.3
+      fuv:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→fuv
+            - name: SpBLEU
+              value: 5.5
+            - name: ChrF
+              value: 26.4
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: fuv→eng
+            - name: SpBLEU
+              value: 7.8
+            - name: ChrF
+              value: 30.9
+      hau:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→hau
+            - name: SpBLEU
+              value: 27.4
+            - name: ChrF
+              value: 57.2
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: hau→eng
+            - name: SpBLEU
+              value: 31.3
+            - name: ChrF
+              value: 52.0
+      ibo:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: ibo→eng
+            - name: SpBLEU
+              value: 38.1
+            - name: ChrF
+              value: 61.4
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→ibo
+            - name: SpBLEU
+              value: 26.7
+            - name: ChrF
+              value: 51.8
+      lin:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: lin→eng
+            - name: SpBLEU
+              value: 18.7
+            - name: ChrF
+              value: 48.2
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→lin
+            - name: SpBLEU
+              value: 19.9
+            - name: ChrF
+              value: 51.6
+      sag:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: sag→eng
+            - name: SpBLEU
+              value: 21.0
+            - name: ChrF
+              value: 39.7
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→sag
+            - name: SpBLEU
+              value: 7.7
+            - name: ChrF
+              value: 33.2
+      wol:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: wol→eng
+            - name: SpBLEU
+              value: 21.3
+            - name: ChrF
+              value: 45.4
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→wol
+            - name: SpBLEU
+              value: 11.4
+            - name: ChrF
+              value: 34.6
+      yor:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→yor
+            - name: SpBLEU
+              value: 15.8
+            - name: ChrF
+              value: 34.9
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: yor→eng
+            - name: SpBLEU
+              value: 20.1
+            - name: ChrF
+              value: 42.8
+  - model: google/gemini-2.5-pro
+    model_url: https://openrouter.ai/google/gemini-2.5-pro
+    task: llm
+    results:
+      aka:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+      bam:
+        - test_set: MMLU Synthetic 10-sample
+          metrics:
+            - name: MMLU Acc.
+              value: 90.0
+      dyu:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+      ewe:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+  - model: google/gemini-3-pro-preview
+    model_url: https://openrouter.ai/google/gemini-3-pro-preview
+    task: mt
+    results:
+      aka:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: aka→eng
+            - name: SpBLEU
+              value: 32.9
+            - name: ChrF
+              value: 55.1
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→aka
+            - name: SpBLEU
+              value: 17.0
+            - name: ChrF
+              value: 48.5
+      bam:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: bam→eng
+            - name: SpBLEU
+              value: 22.6
+            - name: ChrF
+              value: 46.5
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→bam
+            - name: SpBLEU
+              value: 5.7
+            - name: ChrF
+              value: 33.1
+      dyu:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: dyu→eng
+            - name: SpBLEU
+              value: 16.9
+            - name: ChrF
+              value: 41.1
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→dyu
+            - name: SpBLEU
+              value: 2.4
+            - name: ChrF
+              value: 24.9
+      ewe:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: ewe→eng
+            - name: SpBLEU
+              value: 24.0
+            - name: ChrF
+              value: 48.3
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→ewe
+            - name: SpBLEU
+              value: 16.1
+            - name: ChrF
+              value: 44.6
+      fon:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: fon→eng
+            - name: SpBLEU
+              value: 18.7
+            - name: ChrF
+              value: 41.5
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→fon
+            - name: SpBLEU
+              value: 7.5
+            - name: ChrF
+              value: 27.6
+      fuv:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: fuv→eng
+            - name: SpBLEU
+              value: 13.8
+            - name: ChrF
+              value: 36.2
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→fuv
+            - name: SpBLEU
+              value: 5.6
+            - name: ChrF
+              value: 25.6
+      hau:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: hau→eng
+            - name: SpBLEU
+              value: 39.6
+            - name: ChrF
+              value: 61.0
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→hau
+            - name: SpBLEU
+              value: 33.6
+            - name: ChrF
+              value: 58.7
+      ibo:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: ibo→eng
+            - name: SpBLEU
+              value: 40.3
+            - name: ChrF
+              value: 64.3
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→ibo
+            - name: SpBLEU
+              value: 27.5
+            - name: ChrF
+              value: 52.0
+      lin:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: lin→eng
+            - name: SpBLEU
+              value: 23.7
+            - name: ChrF
+              value: 52.0
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→lin
+            - name: SpBLEU
+              value: 24.3
+            - name: ChrF
+              value: 58.0
+      mos:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: mos→eng
+            - name: SpBLEU
+              value: 15.2
+            - name: ChrF
+              value: 38.7
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→mos
+            - name: SpBLEU
+              value: 5.8
+            - name: ChrF
+              value: 30.3
+      sag:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: sag→eng
+            - name: SpBLEU
+              value: 24.3
+            - name: ChrF
+              value: 46.6
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→sag
+            - name: SpBLEU
+              value: 8.7
+            - name: ChrF
+              value: 31.1
+      wol:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: wol→eng
+            - name: SpBLEU
+              value: 32.3
+            - name: ChrF
+              value: 55.7
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→wol
+            - name: SpBLEU
+              value: 13.5
+            - name: ChrF
+              value: 38.1
+      yor:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: yor→eng
+            - name: SpBLEU
+              value: 27.0
+            - name: ChrF
+              value: 50.8
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→yor
+            - name: SpBLEU
+              value: 19.2
+            - name: ChrF
+              value: 38.9
+  - model: google/gemini-3-pro-preview
+    model_url: https://openrouter.ai/google/gemini-3-pro-preview
+    task: llm
+    results:
+      bam:
+        - test_set: MGSM Synthetic 10-sample
+          metrics:
+            - name: MGSM Acc.
+              value: 80.0
+      sag:
+        - test_set: ARC Synthetic 10-sample
+          metrics:
+            - name: ARC Acc.
+              value: 80.0
+        - test_set: MGSM Synthetic 10-sample
+          metrics:
+            - name: MGSM Acc.
+              value: 90.0
+        - test_set: MMLU Synthetic 10-sample
+          metrics:
+            - name: MMLU Acc.
+              value: 80.0
+      yor:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+  - model: google/translate-v2
+    model_url: https://cloud.google.com/translate
+    task: mt
+    results:
+      aka:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: aka→eng
+            - name: SpBLEU
+              value: 28.1
+            - name: ChrF
+              value: 51.3
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→aka
+            - name: SpBLEU
+              value: 17.5
+            - name: ChrF
+              value: 46.4
+      ewe:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→ewe
+            - name: SpBLEU
+              value: 17.3
+            - name: ChrF
+              value: 46.0
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: ewe→eng
+            - name: SpBLEU
+              value: 19.2
+            - name: ChrF
+              value: 40.5
+      hau:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: hau→eng
+            - name: SpBLEU
+              value: 30.2
+            - name: ChrF
+              value: 53.6
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→hau
+            - name: SpBLEU
+              value: 27.6
+            - name: ChrF
+              value: 53.6
+      ibo:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: ibo→eng
+            - name: SpBLEU
+              value: 36.3
+            - name: ChrF
+              value: 59.9
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→ibo
+            - name: SpBLEU
+              value: 27.1
+            - name: ChrF
+              value: 50.5
+      lin:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: lin→eng
+            - name: SpBLEU
+              value: 27.4
+            - name: ChrF
+              value: 52.2
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→lin
+            - name: SpBLEU
+              value: 23.7
+            - name: ChrF
+              value: 52.3
+      sag:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: sag→eng
+            - name: SpBLEU
+              value: 17.5
+            - name: ChrF
+              value: 38.1
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→sag
+            - name: SpBLEU
+              value: 9.3
+            - name: ChrF
+              value: 36.3
+      yor:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: yor→eng
+            - name: SpBLEU
+              value: 19.8
+            - name: ChrF
+              value: 42.9
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→yor
+            - name: SpBLEU
+              value: 4.4
+            - name: ChrF
+              value: 20.5
+  - model: meta-llama/llama-3.1-70b-instruct
+    model_url: https://openrouter.ai/meta-llama/llama-3.1-70b-instruct
+    task: llm
+    results:
+      aka:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+      dyu:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 90.0
+      fuv:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 90.0
+      hau:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+      ibo:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+      lin:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+      yor:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+  - model: meta-llama/llama-3.3-70b-instruct
+    model_url: https://openrouter.ai/meta-llama/llama-3.3-70b-instruct
+    task: llm
+    results:
+      ibo:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+  - model: meta-llama/llama-4-maverick
+    model_url: https://openrouter.ai/meta-llama/llama-4-maverick
+    task: llm
+    results:
+      ewe:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+  - model: mistralai/mistral-medium-3.1
+    model_url: https://openrouter.ai/mistralai/mistral-medium-3.1
+    task: llm
+    results:
+      ibo:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+  - model: mistralai/mistral-saba
+    model_url: https://openrouter.ai/mistralai/mistral-saba
+    task: llm
+    results:
+      lin:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+  - model: openai/gpt-4.1
+    model_url: https://openrouter.ai/openai/gpt-4.1
+    task: llm
+    results:
+      wol:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+  - model: openai/gpt-4o
+    model_url: https://openrouter.ai/openai/gpt-4o
+    task: llm
+    results:
+      hau:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+      sag:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+  - model: openai/gpt-5
+    model_url: https://openrouter.ai/openai/gpt-5
+    task: mt
+    results:
+      bam:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→bam
+            - name: SpBLEU
+              value: 7.4
+            - name: ChrF
+              value: 34.2
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: bam→eng
+            - name: SpBLEU
+              value: 8.1
+            - name: ChrF
+              value: 25.1
+      ewe:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→ewe
+            - name: SpBLEU
+              value: 24.1
+            - name: ChrF
+              value: 46.1
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: ewe→eng
+            - name: SpBLEU
+              value: 8.6
+            - name: ChrF
+              value: 27.9
+  - model: openai/gpt-5
+    model_url: https://openrouter.ai/openai/gpt-5
+    task: llm
+    results:
+      sag:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+  - model: openai/gpt-5-mini
+    model_url: https://openrouter.ai/openai/gpt-5-mini
+    task: llm
+    results:
+      aka:
+        - test_set: MGSM 10-sample
+          metrics:
+            - name: MGSM Acc.
+              value: 77.8
+      bam:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+  - model: openai/gpt-5.1
+    model_url: https://openrouter.ai/openai/gpt-5.1
+    task: llm
+    results:
+      hau:
+        - test_set: SIB-200 10-sample
+          metrics:
+            - name: Classification Acc.
+              value: 100.0
+  - model: openai/gpt-5.2
+    model_url: https://openrouter.ai/openai/gpt-5.2
+    task: mt
+    results:
+      wol:
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: eng→wol
+            - name: SpBLEU
+              value: 11.7
+            - name: ChrF
+              value: 35.0
+        - test_set: FLORES+ 10-sample
+          metrics:
+            - name: direction
+              value: wol→eng
+            - name: SpBLEU
+              value: 12.0
+            - name: ChrF
+              value: 37.5
+  - model: openai/gpt-5.2
+    model_url: https://openrouter.ai/openai/gpt-5.2
+    task: llm
+    results:
+      aka:
+        - test_set: MGSM 10-sample
+          metrics:
+            - name: MGSM Acc.
+              value: 80.0

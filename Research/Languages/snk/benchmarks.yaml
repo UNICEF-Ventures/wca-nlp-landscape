@@ -4,21 +4,21 @@ evaluations:
     model_url: https://huggingface.co/facebook/omniASR-LLM-3B
     results:
     - test_set: OmniCorpus
-      source: evaluated
-      source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
       metrics:
       - name: WER
         value: 59.26
       - name: CER
         value: 17.95
+      source: evaluated
+      source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
   - model: facebook/omniASR-LLM-7B
     model_url: https://huggingface.co/facebook/omniASR-LLM-7B
     results:
     - test_set: OmniCorpus
-      source: evaluated
-      source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
       metrics:
       - name: WER
         value: 54.63
       - name: CER
         value: 15.72
+      source: evaluated
+      source_url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape

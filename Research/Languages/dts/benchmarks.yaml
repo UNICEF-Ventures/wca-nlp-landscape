@@ -4,10 +4,18 @@ evaluations:
     model_url: https://huggingface.co/facebook/omt-llama3.1-8b-v1
     results:
     - test_set: BOUQuET
+      metrics:
+      - name: direction
+        value: eng→dts
+      - name: chrF++
+        value: '?'
       source: reported
       source_url: https://huggingface.co/spaces/facebook/bouquet
+    - test_set: BOUQuET
       metrics:
-      - name: chrF++ en→X
+      - name: direction
+        value: dts→eng
+      - name: chrF++
         value: '?'
-      - name: chrF++ X→en
-        value: '?'
+      source: reported
+      source_url: https://huggingface.co/spaces/facebook/bouquet

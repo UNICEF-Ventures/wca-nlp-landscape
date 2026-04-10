@@ -6,54 +6,97 @@ evaluations:
     - test_set: GATONES
       notes: Table 16 — BLEU/chrF
       metrics:
-      - name: BLEU kri→eng
+      - name: direction
+        value: kri→eng
+      - name: BLEU
         value: 13.2
-      - name: chrF kri→eng
+      - name: chrF
         value: 37
-      - name: BLEU eng→kri
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: direction
+        value: eng→kri
+      - name: BLEU
         value: 2.6
-      - name: chrF eng→kri
+      - name: chrF
         value: 22.2
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
   - model: google/madlad400-7.2b-mt
     model_url: https://huggingface.co/google/madlad400-7.2b-mt
     results:
     - test_set: GATONES
       notes: Table 16 — BLEU/chrF
       metrics:
-      - name: BLEU kri→eng
+      - name: direction
+        value: kri→eng
+      - name: BLEU
         value: 15.6
-      - name: chrF kri→eng
+      - name: chrF
         value: 39.5
-      - name: BLEU eng→kri
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: direction
+        value: eng→kri
+      - name: BLEU
         value: 2.3
-      - name: chrF eng→kri
+      - name: chrF
         value: 18.2
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
   - model: google/madlad400-10.7b-mt
     model_url: https://huggingface.co/google/madlad400-10.7b-mt
     results:
     - test_set: GATONES
       notes: Table 16 — BLEU/chrF
       metrics:
-      - name: BLEU kri→eng
+      - name: direction
+        value: kri→eng
+      - name: BLEU
         value: 17.3
-      - name: chrF kri→eng
+      - name: chrF
         value: 41.5
-      - name: BLEU eng→kri
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: direction
+        value: eng→kri
+      - name: BLEU
         value: 3.4
-      - name: chrF eng→kri
+      - name: chrF
         value: 22.7
-  llm:
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
   - model: google/madlad400-8b-lm
     model_url: https://huggingface.co/google/madlad400-8b-lm
     results:
     - test_set: GATONES
       notes: Table 16 — BLEU/chrF (10-shot)
       metrics:
-      - name: BLEU kri→eng
+      - name: direction
+        value: kri→eng
+      - name: BLEU
         value: 10.5
-      - name: chrF kri→eng
+      - name: chrF
         value: 33.2
-      - name: BLEU eng→kri
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF (10-shot)
+      metrics:
+      - name: direction
+        value: eng→kri
+      - name: BLEU
         value: 0.7
-      - name: chrF eng→kri
+      - name: chrF
         value: 16.4
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662

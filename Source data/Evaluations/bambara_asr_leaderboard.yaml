@@ -1,8 +1,5 @@
-# Bambara ASR Leaderboard - MALIBA-AI
-# Source: https://huggingface.co/spaces/MALIBA-AI/bambara-asr-leaderboard
-# Paper: https://arxiv.org/abs/2602.09785
-# Evaluated on: https://huggingface.co/datasets/MALIBA-AI/bambara-asr-benchmark
-
+source: reported
+source_url: https://huggingface.co/spaces/MALIBA-AI/bambara-asr-leaderboard
 models:
   - model: MALIBA-AI/bambara-asr-v3
     model_url: https://huggingface.co/MALIBA-AI/bambara-asr-v3
@@ -10,8 +7,6 @@ models:
     results:
       bam:
         - test_set: MALIBA-AI Bambara ASR Benchmark
-          source: reported
-          source_url: https://huggingface.co/spaces/MALIBA-AI/bambara-asr-leaderboard
           metrics:
             - name: WER
               value: 45.73
@@ -24,8 +19,6 @@ models:
     results:
       bam:
         - test_set: MALIBA-AI Bambara ASR Benchmark
-          source: reported
-          source_url: https://huggingface.co/spaces/MALIBA-AI/bambara-asr-leaderboard
           metrics:
             - name: WER
               value: 47.50
@@ -38,8 +31,6 @@ models:
     results:
       bam:
         - test_set: MALIBA-AI Bambara ASR Benchmark
-          source: reported
-          source_url: https://huggingface.co/spaces/MALIBA-AI/bambara-asr-leaderboard
           metrics:
             - name: WER
               value: 48.56
@@ -52,8 +43,6 @@ models:
     results:
       bam:
         - test_set: MALIBA-AI Bambara ASR Benchmark
-          source: reported
-          source_url: https://huggingface.co/spaces/MALIBA-AI/bambara-asr-leaderboard
           metrics:
             - name: WER
               value: 46.76
@@ -66,8 +55,6 @@ models:
     results:
       bam:
         - test_set: MALIBA-AI Bambara ASR Benchmark
-          source: reported
-          source_url: https://huggingface.co/spaces/MALIBA-AI/bambara-asr-leaderboard
           metrics:
             - name: WER
               value: 48.32

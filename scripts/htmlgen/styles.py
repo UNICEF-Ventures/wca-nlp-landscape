@@ -234,6 +234,7 @@ def get_css():
         }
 
         .data-table td { padding: 0.4rem; border-bottom: 1px solid #f1f3f4; }
+        .data-table th.num { text-align: right; }
         .data-table td.num { text-align: right; font-family: monospace; }
         .data-table a { color: var(--primary); text-decoration: none; }
         .data-table a:hover { text-decoration: underline; }
@@ -545,12 +546,22 @@ def get_css():
         }
 
         /* Benchmark tables */
-        .benchmark-table { margin-bottom: 1.5rem; }
+        .benchmark-table { margin-bottom: 0; }
         .benchmark-table th.num { text-align: right; }
-        .benchmark-table th { cursor: pointer; user-select: none; }
+        .benchmark-table th:last-child,
+        .benchmark-table td:last-child { text-align: right; }
+        .benchmark-table th { cursor: pointer; user-select: none; white-space: nowrap; }
         .benchmark-table th::after { content: ' ↕'; opacity: 0.3; font-size: 0.8em; }
         .benchmark-table th.sorted-asc::after { content: ' ↑'; opacity: 1; }
         .benchmark-table th.sorted-desc::after { content: ' ↓'; opacity: 1; }
+
+        .benchmark-scroll { overflow-x: auto; margin-bottom: 1.25rem; }
+        .benchmark-subhead {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            margin: 0.75rem 0 0.35rem 0;
+        }
 
         .detail-section h3 {
             font-size: 1.05rem;

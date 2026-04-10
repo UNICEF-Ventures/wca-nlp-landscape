@@ -8,20 +8,24 @@ translation:
   items:
   - name: HuggingFaceFW/finetranslations
     url: https://huggingface.co/datasets/HuggingFaceFW/finetranslations
-    downloads: 0
-    likes: 0
-  - name: HuggingFaceFW/finetranslations-edu
-    url: https://huggingface.co/datasets/HuggingFaceFW/finetranslations-edu
-    downloads: 0
-    likes: 0
-  - name: community-datasets/udhr
-    url: https://huggingface.co/datasets/community-datasets/udhr
-    downloads: 0
-    likes: 0
+    downloads: 37000
+    likes: 282
   - name: jhu-clsp/kreyol-mt
     url: https://huggingface.co/datasets/jhu-clsp/kreyol-mt
-    downloads: 0
+    downloads: 1650
+    likes: 9
+  - name: HuggingFaceFW/finetranslations-edu
+    url: https://huggingface.co/datasets/HuggingFaceFW/finetranslations-edu
+    downloads: 1240
+    likes: 27
+  - name: community-datasets/udhr
+    url: https://huggingface.co/datasets/community-datasets/udhr
+    downloads: 127
+    likes: 2
+  - name: MihaiPopa-1/OmniSurgical-1.0
+    url: https://huggingface.co/datasets/MihaiPopa-1/OmniSurgical-1.0
+    downloads: 47
     likes: 0
-  total_count: 4
+  total_count: 5
   counts_by_code:
-    pov: 4
+    pov: 5

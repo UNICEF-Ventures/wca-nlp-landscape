@@ -2,12 +2,12 @@ asr:
   items:
   - name: facebook/omnilingual-asr-corpus
     url: https://huggingface.co/datasets/facebook/omnilingual-asr-corpus
-    downloads: 0
-    likes: 0
+    downloads: 2540
+    likes: 200
   - name: Sellopale/omnilingualpaleoi
     url: https://huggingface.co/datasets/Sellopale/omnilingualpaleoi
-    downloads: 0
-    likes: 0
+    downloads: 25
+    likes: 1
   total_count: 2
   counts_by_code:
     lir: 2
@@ -18,8 +18,8 @@ translation:
   items:
   - name: facebook/bouquet
     url: https://huggingface.co/datasets/facebook/bouquet
-    downloads: 0
-    likes: 0
+    downloads: 1830
+    likes: 33
   total_count: 1
   counts_by_code:
     lir: 1

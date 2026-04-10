@@ -2,8 +2,8 @@ asr:
   items:
   - name: espnet/xeus
     url: https://huggingface.co/espnet/xeus
-    downloads: 0
-    likes: 0
+    downloads: 49
+    likes: 146
   total_count: 1
   counts_by_code:
     mnk: 1
@@ -11,8 +11,30 @@ tts:
   total_count: 0
   counts_by_code: {}
 translation:
-  total_count: 0
-  counts_by_code: {}
+  items:
+  - name: mradermacher/OmniTranslate-1.0-GGUF
+    url: https://huggingface.co/mradermacher/OmniTranslate-1.0-GGUF
+    downloads: 659
+    likes: 2
+  - name: mradermacher/OmniTranslate-1.1-GGUF
+    url: https://huggingface.co/mradermacher/OmniTranslate-1.1-GGUF
+    downloads: 546
+    likes: 1
+  - name: MihaiPopa-1/OmniTranslate-1.0
+    url: https://huggingface.co/MihaiPopa-1/OmniTranslate-1.0
+    downloads: 320
+    likes: 0
+  - name: MihaiPopa-1/OmniTranslate-1.1
+    url: https://huggingface.co/MihaiPopa-1/OmniTranslate-1.1
+    downloads: 207
+    likes: 0
+  - name: MihaiPopa-1/OmniTranslate-1.0-LoRA
+    url: https://huggingface.co/MihaiPopa-1/OmniTranslate-1.0-LoRA
+    downloads: 0
+    likes: 0
+  total_count: 5
+  counts_by_code:
+    mnk: 5
 llm:
   total_count: 0
   counts_by_code: {}

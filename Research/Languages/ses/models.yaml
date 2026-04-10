@@ -2,8 +2,8 @@ asr:
   items:
   - name: espnet/xeus
     url: https://huggingface.co/espnet/xeus
-    downloads: 0
-    likes: 0
+    downloads: 49
+    likes: 146
   total_count: 1
   counts_by_code:
     ses: 1
@@ -12,29 +12,49 @@ tts:
   counts_by_code: {}
 translation:
   items:
-  - name: vonjack/opus-mt-mul-en-big
-    url: https://huggingface.co/vonjack/opus-mt-mul-en-big
-    downloads: 0
+  - name: mradermacher/OmniTranslate-1.0-GGUF
+    url: https://huggingface.co/mradermacher/OmniTranslate-1.0-GGUF
+    downloads: 659
+    likes: 2
+  - name: Helsinki-NLP/opus-mt-tc-bible-big-mul-mul
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-mul
+    downloads: 614
+    likes: 10
+  - name: mradermacher/OmniTranslate-1.1-GGUF
+    url: https://huggingface.co/mradermacher/OmniTranslate-1.1-GGUF
+    downloads: 546
+    likes: 1
+  - name: MihaiPopa-1/OmniTranslate-1.0
+    url: https://huggingface.co/MihaiPopa-1/OmniTranslate-1.0
+    downloads: 320
     likes: 0
-  - name: Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_nld
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_nld
-    downloads: 0
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_fra_por_spa
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_fra_por_spa
-    downloads: 0
+  - name: MihaiPopa-1/OmniTranslate-1.1
+    url: https://huggingface.co/MihaiPopa-1/OmniTranslate-1.1
+    downloads: 207
     likes: 0
   - name: Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-mul
     url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-mul
+    downloads: 95
+    likes: 1
+  - name: Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_fra_por_spa
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_fra_por_spa
+    downloads: 43
+    likes: 2
+  - name: Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_nld
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_nld
+    downloads: 42
+    likes: 2
+  - name: vonjack/opus-mt-mul-en-big
+    url: https://huggingface.co/vonjack/opus-mt-mul-en-big
+    downloads: 38
+    likes: 4
+  - name: MihaiPopa-1/OmniTranslate-1.0-LoRA
+    url: https://huggingface.co/MihaiPopa-1/OmniTranslate-1.0-LoRA
     downloads: 0
     likes: 0
-  - name: Helsinki-NLP/opus-mt-tc-bible-big-mul-mul
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-mul
-    downloads: 0
-    likes: 0
-  total_count: 5
+  total_count: 10
   counts_by_code:
-    ses: 5
+    ses: 10
 llm:
   total_count: 0
   counts_by_code: {}

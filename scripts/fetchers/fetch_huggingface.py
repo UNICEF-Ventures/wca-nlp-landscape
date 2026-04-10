@@ -12,7 +12,7 @@ language filtering — only the web UI does.
 import re
 import time
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Comment, NavigableString
 
 # Delay between HuggingFace requests to avoid rate limiting
 REQUEST_DELAY = 2.0  # seconds
@@ -169,15 +169,26 @@ def search_huggingface(iso_639_1, iso_639_3, search_type, pipeline_tag):
 
                     svgs = card.find_all('svg')
                     for svg in svgs:
-                        next_elem = svg.find_next_sibling(string=True)
+                        # HuggingFace renders stats as: <svg/><!-- --> 49
+                        # Walk forward siblings, skipping HTML comments, until we
+                        # find a text node or tag with actual content. Stop if we
+                        # hit another SVG (that's the next stat's icon).
                         stat_text = ""
-
-                        if next_elem and next_elem.strip():
-                            stat_text = next_elem.strip()
-                        else:
-                            next_tag = svg.find_next_sibling()
-                            if next_tag:
-                                stat_text = next_tag.get_text(strip=True)
+                        for sibling in svg.next_siblings:
+                            if isinstance(sibling, Comment):
+                                continue
+                            if isinstance(sibling, NavigableString):
+                                text = sibling.strip()
+                                if text:
+                                    stat_text = text
+                                    break
+                            else:
+                                if sibling.name == 'svg':
+                                    break
+                                text = sibling.get_text(strip=True)
+                                if text:
+                                    stat_text = text
+                                    break
 
                         if not stat_text:
                             continue

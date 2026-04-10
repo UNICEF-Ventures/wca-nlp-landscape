@@ -157,7 +157,7 @@ def generate_models_table(models_data, task_name, limit=15, iso_639_1=None, iso_
     return f"""
         <table class="data-table">
             <thead>
-                <tr><th>Model</th><th>Downloads</th><th>Likes</th></tr>
+                <tr><th>Model</th><th class="num">Downloads</th><th class="num">Likes</th></tr>
             </thead>
             <tbody>{''.join(rows)}</tbody>
         </table>
@@ -225,7 +225,7 @@ def generate_datasets_table(datasets_data, limit=10, iso_639_1=None, iso_639_3=N
     return f"""
         <table class="data-table">
             <thead>
-                <tr><th>Dataset</th><th>Downloads</th></tr>
+                <tr><th>Dataset</th><th class="num">Downloads</th></tr>
             </thead>
             <tbody>{''.join(rows)}</tbody>
         </table>
@@ -292,59 +292,64 @@ def generate_benchmarks_section(evaluations):
 
 
 def _render_benchmark_table(entries):
-    """Render a benchmark table for a single task.
+    """Render benchmark sub-tables for a single task, grouped by test_set.
 
     Each entry has model, model_url, and results (list of test_set results).
     Each result has test_set, source, source_url, and metrics (list of name/value).
+
+    Returns one sub-table per test_set, so metric columns stay narrow and
+    specific to each benchmark rather than a union across all of them. Each
+    sub-table is wrapped in a horizontal-scroll container as a safety net for
+    any remaining wide tables.
     """
-    # First pass: collect all unique metric names across all results
-    metric_names = []
-    seen_metrics = set()
+    # Group results by test_set, preserving first-seen order
+    test_set_order = []
+    grouped = {}  # test_set -> list of (entry, result)
+    no_result_entries = []
+
     for entry in entries:
-        for result in entry.get('results', []):
+        results = entry.get('results', [])
+        if not results:
+            no_result_entries.append(entry)
+            continue
+        for result in results:
+            ts = result.get('test_set', '—') or '—'
+            if ts not in grouped:
+                grouped[ts] = []
+                test_set_order.append(ts)
+            grouped[ts].append((entry, result))
+
+    blocks = []
+
+    for ts in test_set_order:
+        rows_data = grouped[ts]
+
+        # Collect metric names scoped to this test_set only
+        metric_names = []
+        seen_metrics = set()
+        for _, result in rows_data:
             for m in result.get('metrics', []):
                 name = m.get('name', '')
                 if name and name not in seen_metrics:
                     metric_names.append(name)
                     seen_metrics.add(name)
 
-    # Build header
-    metric_headers = ''.join(f'<th class="num">{name}</th>' for name in metric_names)
-    header = f"<tr><th>Model</th><th>Test Set</th>{metric_headers}<th>Source</th></tr>"
+        metric_headers = ''.join(f'<th class="num">{name}</th>' for name in metric_names)
+        header = f"<tr><th>Model</th>{metric_headers}<th>Source</th></tr>"
 
-    # Build rows: one row per (model, test_set)
-    rows = []
-    for entry in entries:
-        model = entry.get('model', '')
-        model_url = entry.get('model_url', '')
-        model_html = f'<a href="{model_url}" target="_blank">{model}</a>' if model_url else model
+        rows = []
+        for entry, result in rows_data:
+            model = entry.get('model', '')
+            model_url = entry.get('model_url', '')
+            model_html = f'<a href="{model_url}" target="_blank">{model}</a>' if model_url else model
 
-        results = entry.get('results', [])
-        if not results:
-            # Model listed without evaluation results
-            metric_cells = ''.join('<td class="num">—</td>' for _ in metric_names)
-            rows.append(
-                f"<tr>"
-                f"<td>{model_html}</td>"
-                f"<td>—</td>"
-                f"{metric_cells}"
-                f"<td>—</td>"
-                f"</tr>"
-            )
-            continue
-
-        for result in results:
-            test_set = result.get('test_set', '')
             source = result.get('source', '')
             source_url = result.get('source_url', '')
-
-            # Source column: "reported" links to source_url
             if source_url:
                 source_html = f'<a href="{source_url}" target="_blank">{source}</a>'
             else:
                 source_html = source
 
-            # Build metric cells
             metrics_by_name = {m['name']: m.get('value') for m in result.get('metrics', []) if 'name' in m}
             metric_cells = []
             for name in metric_names:
@@ -357,21 +362,43 @@ def _render_benchmark_table(entries):
             rows.append(
                 f"<tr>"
                 f"<td>{model_html}</td>"
-                f"<td>{test_set}</td>"
                 f"{''.join(metric_cells)}"
                 f"<td>{source_html}</td>"
                 f"</tr>"
             )
 
-    if not rows:
+        blocks.append(f"""
+            <h4 class="benchmark-subhead">{ts}</h4>
+            <div class="benchmark-scroll">
+                <table class="data-table benchmark-table">
+                    <thead>{header}</thead>
+                    <tbody>{''.join(rows)}</tbody>
+                </table>
+            </div>
+        """)
+
+    # Edge case: entries present but with no results at all
+    if no_result_entries:
+        rows = []
+        for entry in no_result_entries:
+            model = entry.get('model', '')
+            model_url = entry.get('model_url', '')
+            model_html = f'<a href="{model_url}" target="_blank">{model}</a>' if model_url else model
+            rows.append(f"<tr><td>{model_html}</td><td>—</td></tr>")
+        blocks.append(f"""
+            <h4 class="benchmark-subhead">Listed (no results)</h4>
+            <div class="benchmark-scroll">
+                <table class="data-table benchmark-table">
+                    <thead><tr><th>Model</th><th>Note</th></tr></thead>
+                    <tbody>{''.join(rows)}</tbody>
+                </table>
+            </div>
+        """)
+
+    if not blocks:
         return ""
 
-    return f"""
-        <table class="data-table benchmark-table">
-            <thead>{header}</thead>
-            <tbody>{''.join(rows)}</tbody>
-        </table>
-    """
+    return ''.join(blocks)
 
 
 TASK_SHORT_LABELS = {

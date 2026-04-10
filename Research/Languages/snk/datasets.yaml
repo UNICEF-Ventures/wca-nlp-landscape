@@ -2,16 +2,16 @@ asr:
   items:
   - name: facebook/omnilingual-asr-corpus
     url: https://huggingface.co/datasets/facebook/omnilingual-asr-corpus
-    downloads: 0
-    likes: 0
-  - name: sil-ai/bloom-speech
-    url: https://huggingface.co/datasets/sil-ai/bloom-speech
-    downloads: 0
-    likes: 0
+    downloads: 2540
+    likes: 200
   - name: Sellopale/omnilingualpaleoi
     url: https://huggingface.co/datasets/Sellopale/omnilingualpaleoi
-    downloads: 0
-    likes: 0
+    downloads: 25
+    likes: 1
+  - name: sil-ai/bloom-speech
+    url: https://huggingface.co/datasets/sil-ai/bloom-speech
+    downloads: 15
+    likes: 25
   total_count: 3
   counts_by_code:
     snk: 3
@@ -19,36 +19,36 @@ tts:
   items:
   - name: sil-ai/bloom-speech
     url: https://huggingface.co/datasets/sil-ai/bloom-speech
-    downloads: 0
-    likes: 0
+    downloads: 15
+    likes: 25
   total_count: 1
   counts_by_code:
     snk: 1
 translation:
   items:
-  - name: community-datasets/udhr
-    url: https://huggingface.co/datasets/community-datasets/udhr
-    downloads: 0
+  - name: gtak1/panlex-meanings
+    url: https://huggingface.co/datasets/gtak1/panlex-meanings
+    downloads: 6310
     likes: 0
   - name: ayymen/Pontoon-Translations
     url: https://huggingface.co/datasets/ayymen/Pontoon-Translations
-    downloads: 0
-    likes: 0
+    downloads: 870
+    likes: 18
   - name: cointegrated/panlex-meanings
     url: https://huggingface.co/datasets/cointegrated/panlex-meanings
-    downloads: 0
-    likes: 0
+    downloads: 279
+    likes: 12
+  - name: community-datasets/udhr
+    url: https://huggingface.co/datasets/community-datasets/udhr
+    downloads: 127
+    likes: 2
   - name: FrancophonIA/Lexicologie_du_soninke
     url: https://huggingface.co/datasets/FrancophonIA/Lexicologie_du_soninke
-    downloads: 0
+    downloads: 16
     likes: 0
   - name: FrancophonIA/Lexique_Soninke-Francais-Anglais
     url: https://huggingface.co/datasets/FrancophonIA/Lexique_Soninke-Francais-Anglais
-    downloads: 0
-    likes: 0
-  - name: gtak1/panlex-meanings
-    url: https://huggingface.co/datasets/gtak1/panlex-meanings
-    downloads: 0
+    downloads: 15
     likes: 0
   total_count: 6
   counts_by_code:

@@ -2,177 +2,266 @@ asr:
   items:
   - name: MahmoudAshraf/mms-300m-1130-forced-aligner
     url: https://huggingface.co/MahmoudAshraf/mms-300m-1130-forced-aligner
-    downloads: 0
-    likes: 0
+    downloads: 4220000
+    likes: 83
   - name: facebook/mms-1b-all
     url: https://huggingface.co/facebook/mms-1b-all
-    downloads: 0
-    likes: 0
-  - name: facebook/mms-1b-l1107
-    url: https://huggingface.co/facebook/mms-1b-l1107
-    downloads: 0
-    likes: 0
+    downloads: 1520000
+    likes: 194
   - name: facebook/mms-1b-fl102
     url: https://huggingface.co/facebook/mms-1b-fl102
-    downloads: 0
+    downloads: 9610
+    likes: 29
+  - name: facebook/mms-1b-l1107
+    url: https://huggingface.co/facebook/mms-1b-l1107
+    downloads: 355
+    likes: 12
+  - name: romara-labs/mms-300m-1130-forced-aligner-ONNX
+    url: https://huggingface.co/romara-labs/mms-300m-1130-forced-aligner-ONNX
+    downloads: 39
     likes: 0
   - name: bc7ec356/heep-universal
     url: https://huggingface.co/bc7ec356/heep-universal
-    downloads: 0
-    likes: 0
-  - name: UBC-NLP/Simba-SLID-49
-    url: https://huggingface.co/UBC-NLP/Simba-SLID-49
-    downloads: 0
+    downloads: 31
     likes: 0
   - name: Baamtu/whisper-pular-ggml-q5
     url: https://huggingface.co/Baamtu/whisper-pular-ggml-q5
-    downloads: 0
+    downloads: 24
     likes: 0
-  - name: romara-labs/mms-300m-1130-forced-aligner-ONNX
-    url: https://huggingface.co/romara-labs/mms-300m-1130-forced-aligner-ONNX
-    downloads: 0
+  - name: onnx-community/mms-300m-1130-forced-aligner-ONNX
+    url: https://huggingface.co/onnx-community/mms-300m-1130-forced-aligner-ONNX
+    downloads: 23
     likes: 0
-  total_count: 8
+  - name: UBC-NLP/Simba-SLID-49
+    url: https://huggingface.co/UBC-NLP/Simba-SLID-49
+    downloads: 8
+    likes: 0
+  total_count: 9
   counts_by_code:
-    ff: 8
+    ff: 9
 tts:
   items:
+  - name: k2-fsa/OmniVoice
+    url: https://huggingface.co/k2-fsa/OmniVoice
+    downloads: 270000
+    likes: 451
+  - name: drbaph/OmniVoice-bf16
+    url: https://huggingface.co/drbaph/OmniVoice-bf16
+    downloads: 3310
+    likes: 9
+  - name: splendor1811/omnivoice-vietnamese
+    url: https://huggingface.co/splendor1811/omnivoice-vietnamese
+    downloads: 285
+    likes: 2
+  - name: LeeAeron/OmniVoice
+    url: https://huggingface.co/LeeAeron/OmniVoice
+    downloads: 92
+    likes: 0
+  - name: edwixx/OmniVoice
+    url: https://huggingface.co/edwixx/OmniVoice
+    downloads: 30
+    likes: 0
+  - name: WANJIAX2197/OmniVoice
+    url: https://huggingface.co/WANJIAX2197/OmniVoice
+    downloads: 29
+    likes: 0
+  - name: gluschenko/omnivoice-onnx
+    url: https://huggingface.co/gluschenko/omnivoice-onnx
+    downloads: 25
+    likes: 0
+  - name: ex510/OmniVoice
+    url: https://huggingface.co/ex510/OmniVoice
+    downloads: 17
+    likes: 0
+  - name: Bgeorge/OmniVoice
+    url: https://huggingface.co/Bgeorge/OmniVoice
+    downloads: 16
+    likes: 1
+  - name: Manish993135/OmniVoice
+    url: https://huggingface.co/Manish993135/OmniVoice
+    downloads: 16
+    likes: 0
+  - name: rnjema-unima/mms-tts-ful-baseline
+    url: https://huggingface.co/rnjema-unima/mms-tts-ful-baseline
+    downloads: 15
+    likes: 0
+  - name: phucpx247/OmniVoice
+    url: https://huggingface.co/phucpx247/OmniVoice
+    downloads: 14
+    likes: 0
+  - name: razi08/OmniVoice
+    url: https://huggingface.co/razi08/OmniVoice
+    downloads: 14
+    likes: 0
+  - name: gubernac/OmniVoice
+    url: https://huggingface.co/gubernac/OmniVoice
+    downloads: 13
+    likes: 0
+  - name: harsha7286/OmniVoice
+    url: https://huggingface.co/harsha7286/OmniVoice
+    downloads: 13
+    likes: 0
+  - name: EBINSHAJI1999/OmniVoice
+    url: https://huggingface.co/EBINSHAJI1999/OmniVoice
+    downloads: 12
+    likes: 0
+  - name: Citrus-777/OmniVoice
+    url: https://huggingface.co/Citrus-777/OmniVoice
+    downloads: 12
+    likes: 0
+  - name: bilalRHCH/Arabic-text-to-speech
+    url: https://huggingface.co/bilalRHCH/Arabic-text-to-speech
+    downloads: 12
+    likes: 0
+  - name: preference1/OmniVoice
+    url: https://huggingface.co/preference1/OmniVoice
+    downloads: 12
+    likes: 0
+  - name: lopho/OmniVoice
+    url: https://huggingface.co/lopho/OmniVoice
+    downloads: 12
+    likes: 0
+  - name: Koyiljon/OmniVoice
+    url: https://huggingface.co/Koyiljon/OmniVoice
+    downloads: 11
+    likes: 0
   - name: Dapor/Dapson
     url: https://huggingface.co/Dapor/Dapson
     downloads: 0
-    likes: 0
-  total_count: 1
+    likes: 4
+  total_count: 22
   counts_by_code:
-    ff: 1
+    ff: 21
+    ful: 1
 translation:
   items:
-  - name: jbochi/madlad400-3b-mt
-    url: https://huggingface.co/jbochi/madlad400-3b-mt
-    downloads: 0
-    likes: 0
-  - name: google/madlad400-10b-mt
-    url: https://huggingface.co/google/madlad400-10b-mt
-    downloads: 0
-    likes: 0
-  - name: masakhane/africomet-qe-stl-1.1
-    url: https://huggingface.co/masakhane/africomet-qe-stl-1.1
-    downloads: 0
-    likes: 0
-  - name: alirezamsh/small100
-    url: https://huggingface.co/alirezamsh/small100
-    downloads: 0
-    likes: 0
-  - name: jbochi/madlad400-7b-mt
-    url: https://huggingface.co/jbochi/madlad400-7b-mt
-    downloads: 0
-    likes: 0
-  - name: jbochi/madlad400-7b-mt-bt
-    url: https://huggingface.co/jbochi/madlad400-7b-mt-bt
-    downloads: 0
-    likes: 0
-  - name: jbochi/madlad400-10b-mt
-    url: https://huggingface.co/jbochi/madlad400-10b-mt
-    downloads: 0
-    likes: 0
-  - name: slone/nllb-pruned-6L-512d-finetuned
-    url: https://huggingface.co/slone/nllb-pruned-6L-512d-finetuned
-    downloads: 0
-    likes: 0
   - name: google/madlad400-3b-mt
     url: https://huggingface.co/google/madlad400-3b-mt
-    downloads: 0
-    likes: 0
+    downloads: 326000
+    likes: 191
+  - name: jbochi/madlad400-3b-mt
+    url: https://huggingface.co/jbochi/madlad400-3b-mt
+    downloads: 40700
+    likes: 154
+  - name: alirezamsh/small100
+    url: https://huggingface.co/alirezamsh/small100
+    downloads: 3910
+    likes: 104
+  - name: google/madlad400-10b-mt
+    url: https://huggingface.co/google/madlad400-10b-mt
+    downloads: 3730
+    likes: 131
   - name: google/madlad400-7b-mt
     url: https://huggingface.co/google/madlad400-7b-mt
-    downloads: 0
-    likes: 0
+    downloads: 2790
+    likes: 20
   - name: google/madlad400-7b-mt-bt
     url: https://huggingface.co/google/madlad400-7b-mt-bt
-    downloads: 0
-    likes: 0
+    downloads: 247
+    likes: 7
+  - name: notjjustnumbers/madlad400-3b-mt-Q4_K_M-GGUF
+    url: https://huggingface.co/notjjustnumbers/madlad400-3b-mt-Q4_K_M-GGUF
+    downloads: 229
+    likes: 4
+  - name: jbochi/madlad400-7b-mt-bt
+    url: https://huggingface.co/jbochi/madlad400-7b-mt-bt
+    downloads: 215
+    likes: 8
   - name: santhosh/madlad400-3b-ct2
     url: https://huggingface.co/santhosh/madlad400-3b-ct2
-    downloads: 0
-    likes: 0
-  - name: CXDuncan/madlad400-3b-mt-optimized-quantized-onnx
-    url: https://huggingface.co/CXDuncan/madlad400-3b-mt-optimized-quantized-onnx
-    downloads: 0
-    likes: 0
-  - name: CXDuncan/madlad400-3b-mt-optimized-onnx
-    url: https://huggingface.co/CXDuncan/madlad400-3b-mt-optimized-onnx
-    downloads: 0
+    downloads: 152
+    likes: 14
+  - name: mtsdurica/madlad400-3b-mt-Q4_K_M-GGUF
+    url: https://huggingface.co/mtsdurica/madlad400-3b-mt-Q4_K_M-GGUF
+    downloads: 87
+    likes: 4
+  - name: jbochi/madlad400-7b-mt
+    url: https://huggingface.co/jbochi/madlad400-7b-mt
+    downloads: 83
+    likes: 7
+  - name: jbochi/madlad400-10b-mt
+    url: https://huggingface.co/jbochi/madlad400-10b-mt
+    downloads: 75
+    likes: 18
+  - name: NikolayKozloff/madlad400-10b-mt-Q8_0-GGUF
+    url: https://huggingface.co/NikolayKozloff/madlad400-10b-mt-Q8_0-GGUF
+    downloads: 62
+    likes: 3
+  - name: vonjack/opus-mt-mul-en-big
+    url: https://huggingface.co/vonjack/opus-mt-mul-en-big
+    downloads: 38
+    likes: 4
+  - name: Nextcloud-AI/madlad400-3b-mt-ct2-int8
+    url: https://huggingface.co/Nextcloud-AI/madlad400-3b-mt-ct2-int8
+    downloads: 36
+    likes: 2
+  - name: mtsdurica/madlad400-3b-mt-Q4_0-GGUF
+    url: https://huggingface.co/mtsdurica/madlad400-3b-mt-Q4_0-GGUF
+    downloads: 20
     likes: 0
   - name: Rohith04/ct2fast_m2m100_418M
     url: https://huggingface.co/Rohith04/ct2fast_m2m100_418M
-    downloads: 0
-    likes: 0
-  - name: flutter-painter/nllb-fra-fuf-v2
-    url: https://huggingface.co/flutter-painter/nllb-fra-fuf-v2
-    downloads: 0
-    likes: 0
-  - name: ikeno-ada/madlad400-3b-mt-bitsandbytes-4bit
-    url: https://huggingface.co/ikeno-ada/madlad400-3b-mt-bitsandbytes-4bit
-    downloads: 0
-    likes: 0
-  - name: ikeno-ada/m2m100_418-mt-bitsandbytes-4bit
-    url: https://huggingface.co/ikeno-ada/m2m100_418-mt-bitsandbytes-4bit
-    downloads: 0
-    likes: 0
-  - name: Heng666/madlad400-3b-mt-ct2
-    url: https://huggingface.co/Heng666/madlad400-3b-mt-ct2
-    downloads: 0
-    likes: 0
-  - name: Heng666/madlad400-3b-mt-ct2-int8
-    url: https://huggingface.co/Heng666/madlad400-3b-mt-ct2-int8
-    downloads: 0
-    likes: 0
+    downloads: 19
+    likes: 3
   - name: Heng666/madlad400-7b-mt-ct2-int8
     url: https://huggingface.co/Heng666/madlad400-7b-mt-ct2-int8
-    downloads: 0
-    likes: 0
-  - name: notjjustnumbers/madlad400-3b-mt-Q4_K_M-GGUF
-    url: https://huggingface.co/notjjustnumbers/madlad400-3b-mt-Q4_K_M-GGUF
-    downloads: 0
-    likes: 0
+    downloads: 19
+    likes: 3
   - name: NikolayKozloff/madlad400-3b-mt-Q8_0-GGUF
     url: https://huggingface.co/NikolayKozloff/madlad400-3b-mt-Q8_0-GGUF
-    downloads: 0
-    likes: 0
-  - name: NikolayKozloff/madlad400-10b-mt-Q8_0-GGUF
-    url: https://huggingface.co/NikolayKozloff/madlad400-10b-mt-Q8_0-GGUF
-    downloads: 0
-    likes: 0
+    downloads: 18
+    likes: 1
+  - name: Heng666/madlad400-3b-mt-ct2-int8
+    url: https://huggingface.co/Heng666/madlad400-3b-mt-ct2-int8
+    downloads: 17
+    likes: 1
   - name: NikolayKozloff/madlad400-10b-mt-Q6_K-GGUF
     url: https://huggingface.co/NikolayKozloff/madlad400-10b-mt-Q6_K-GGUF
-    downloads: 0
-    likes: 0
-  - name: Nextcloud-AI/madlad400-3b-mt-ct2-int8
-    url: https://huggingface.co/Nextcloud-AI/madlad400-3b-mt-ct2-int8
-    downloads: 0
-    likes: 0
+    downloads: 17
+    likes: 1
+  - name: CXDuncan/madlad400-3b-mt-optimized-quantized-onnx
+    url: https://huggingface.co/CXDuncan/madlad400-3b-mt-optimized-quantized-onnx
+    downloads: 15
+    likes: 4
   - name: tritiumoxide/madlad400-7b-mt-bt-Q4_K_M-GGUF
     url: https://huggingface.co/tritiumoxide/madlad400-7b-mt-bt-Q4_K_M-GGUF
-    downloads: 0
+    downloads: 13
     likes: 0
-  - name: mtsdurica/madlad400-3b-mt-Q4_K_M-GGUF
-    url: https://huggingface.co/mtsdurica/madlad400-3b-mt-Q4_K_M-GGUF
-    downloads: 0
-    likes: 0
-  - name: mtsdurica/madlad400-3b-mt-Q4_0-GGUF
-    url: https://huggingface.co/mtsdurica/madlad400-3b-mt-Q4_0-GGUF
-    downloads: 0
-    likes: 0
-  - name: mtsdurica/madlad400-3b-mt-Q2_K-GGUF
-    url: https://huggingface.co/mtsdurica/madlad400-3b-mt-Q2_K-GGUF
-    downloads: 0
-    likes: 0
-  - name: vonjack/opus-mt-mul-en-big
-    url: https://huggingface.co/vonjack/opus-mt-mul-en-big
-    downloads: 0
+  - name: mtsdurica/madlad400-3b-mt-Q6_K-GGUF
+    url: https://huggingface.co/mtsdurica/madlad400-3b-mt-Q6_K-GGUF
+    downloads: 10
     likes: 0
   - name: morlayecis0003/nllb-200-pulaar-mairie
     url: https://huggingface.co/morlayecis0003/nllb-200-pulaar-mairie
-    downloads: 0
+    downloads: 10
+    likes: 0
+  - name: mtsdurica/madlad400-3b-mt-Q2_K-GGUF
+    url: https://huggingface.co/mtsdurica/madlad400-3b-mt-Q2_K-GGUF
+    downloads: 9
+    likes: 1
+  - name: ikeno-ada/m2m100_418-mt-bitsandbytes-4bit
+    url: https://huggingface.co/ikeno-ada/m2m100_418-mt-bitsandbytes-4bit
+    downloads: 7
+    likes: 1
+  - name: flutter-painter/nllb-fra-fuf-v2
+    url: https://huggingface.co/flutter-painter/nllb-fra-fuf-v2
+    downloads: 6
+    likes: 1
+  - name: CXDuncan/madlad400-3b-mt-optimized-onnx
+    url: https://huggingface.co/CXDuncan/madlad400-3b-mt-optimized-onnx
+    downloads: 5
+    likes: 0
+  - name: ikeno-ada/madlad400-3b-mt-bitsandbytes-4bit
+    url: https://huggingface.co/ikeno-ada/madlad400-3b-mt-bitsandbytes-4bit
+    downloads: 5
+    likes: 1
+  - name: slone/nllb-pruned-6L-512d-finetuned
+    url: https://huggingface.co/slone/nllb-pruned-6L-512d-finetuned
+    downloads: 3
+    likes: 6
+  - name: Heng666/madlad400-3b-mt-ct2
+    url: https://huggingface.co/Heng666/madlad400-3b-mt-ct2
+    downloads: 2
     likes: 0
   total_count: 32
   counts_by_code:
@@ -180,45 +269,85 @@ translation:
     ful: 2
 llm:
   items:
-  - name: jbochi/madlad400-8b-lm
-    url: https://huggingface.co/jbochi/madlad400-8b-lm
-    downloads: 0
-    likes: 0
-  - name: google/madlad400-8b-lm
-    url: https://huggingface.co/google/madlad400-8b-lm
-    downloads: 0
-    likes: 0
   - name: UBC-NLP/cheetah-base
     url: https://huggingface.co/UBC-NLP/cheetah-base
-    downloads: 0
-    likes: 0
-  - name: LLaMAX/LLaMAX2-7B
-    url: https://huggingface.co/LLaMAX/LLaMAX2-7B
-    downloads: 0
-    likes: 0
-  - name: LLaMAX/LLaMAX2-7B-Alpaca
-    url: https://huggingface.co/LLaMAX/LLaMAX2-7B-Alpaca
-    downloads: 0
-    likes: 0
-  - name: LLaMAX/LLaMAX2-7B-MetaMath
-    url: https://huggingface.co/LLaMAX/LLaMAX2-7B-MetaMath
-    downloads: 0
-    likes: 0
+    downloads: 1070
+    likes: 7
   - name: LLaMAX/LLaMAX3-8B-Alpaca
     url: https://huggingface.co/LLaMAX/LLaMAX3-8B-Alpaca
-    downloads: 0
-    likes: 0
+    downloads: 336
+    likes: 32
+  - name: google/madlad400-8b-lm
+    url: https://huggingface.co/google/madlad400-8b-lm
+    downloads: 203
+    likes: 11
   - name: LLaMAX/LLaMAX3-8B
     url: https://huggingface.co/LLaMAX/LLaMAX3-8B
-    downloads: 0
+    downloads: 47
+    likes: 39
+  - name: LLaMAX/LLaMAX2-7B
+    url: https://huggingface.co/LLaMAX/LLaMAX2-7B
+    downloads: 19
+    likes: 5
+  - name: ZeppelinCorp/Charm_15
+    url: https://huggingface.co/ZeppelinCorp/Charm_15
+    downloads: 19
+    likes: 0
+  - name: jbochi/madlad400-8b-lm
+    url: https://huggingface.co/jbochi/madlad400-8b-lm
+    downloads: 15
+    likes: 8
+  - name: LLaMAX/LLaMAX2-7B-Alpaca
+    url: https://huggingface.co/LLaMAX/LLaMAX2-7B-Alpaca
+    downloads: 12
+    likes: 3
+  - name: goldfish-models/fuv_latn_5mb
+    url: https://huggingface.co/goldfish-models/fuv_latn_5mb
+    downloads: 8
     likes: 0
   - name: LLaMAX/LLaMAX2-7B-XNLI
     url: https://huggingface.co/LLaMAX/LLaMAX2-7B-XNLI
-    downloads: 0
-    likes: 0
+    downloads: 7
+    likes: 1
   - name: LLaMAX/LLaMAX2-7B-X-CSQA
     url: https://huggingface.co/LLaMAX/LLaMAX2-7B-X-CSQA
-    downloads: 0
+    downloads: 6
+    likes: 0
+  - name: tangledgroup/tangled-alpha-0.6-core
+    url: https://huggingface.co/tangledgroup/tangled-alpha-0.6-core
+    downloads: 6
+    likes: 0
+  - name: LLaMAX/LLaMAX2-7B-MetaMath
+    url: https://huggingface.co/LLaMAX/LLaMAX2-7B-MetaMath
+    downloads: 5
+    likes: 0
+  - name: tangledgroup/tangled-alpha-0.7-core
+    url: https://huggingface.co/tangledgroup/tangled-alpha-0.7-core
+    downloads: 5
+    likes: 0
+  - name: tangledgroup/tangled-alpha-0.8-core
+    url: https://huggingface.co/tangledgroup/tangled-alpha-0.8-core
+    downloads: 5
+    likes: 0
+  - name: tangledgroup/tangled-alpha-0.5-core
+    url: https://huggingface.co/tangledgroup/tangled-alpha-0.5-core
+    downloads: 4
+    likes: 0
+  - name: goldfish-models/fuv_latn_10mb
+    url: https://huggingface.co/goldfish-models/fuv_latn_10mb
+    downloads: 4
+    likes: 0
+  - name: goldfish-models/ful_latn_full
+    url: https://huggingface.co/goldfish-models/ful_latn_full
+    downloads: 1
+    likes: 0
+  - name: goldfish-models/fuv_latn_full
+    url: https://huggingface.co/goldfish-models/fuv_latn_full
+    downloads: 1
+    likes: 0
+  - name: goldfish-models/ful_latn_5mb
+    url: https://huggingface.co/goldfish-models/ful_latn_5mb
+    downloads: 1
     likes: 0
   - name: Xois/BuuClientPublicV1-MD-BOT
     url: https://huggingface.co/Xois/BuuClientPublicV1-MD-BOT
@@ -227,11 +356,11 @@ llm:
   - name: misterlakaz/Ceramic-Base-856b
     url: https://huggingface.co/misterlakaz/Ceramic-Base-856b
     downloads: 0
-    likes: 0
+    likes: 6
   - name: misterlakaz/Midas-1922b
     url: https://huggingface.co/misterlakaz/Midas-1922b
     downloads: 0
-    likes: 0
+    likes: 8
   - name: tangledgroup/tangled-alpha-0.1-core
     url: https://huggingface.co/tangledgroup/tangled-alpha-0.1-core
     downloads: 0
@@ -244,32 +373,12 @@ llm:
     url: https://huggingface.co/ZeppelinCorp/Charm_10
     downloads: 0
     likes: 0
-  - name: ZeppelinCorp/Charm_15
-    url: https://huggingface.co/ZeppelinCorp/Charm_15
-    downloads: 0
-    likes: 0
   - name: tangledgroup/tangled-alpha-0.3-core
     url: https://huggingface.co/tangledgroup/tangled-alpha-0.3-core
     downloads: 0
     likes: 0
   - name: tangledgroup/tangled-alpha-0.4-core
     url: https://huggingface.co/tangledgroup/tangled-alpha-0.4-core
-    downloads: 0
-    likes: 0
-  - name: tangledgroup/tangled-alpha-0.5-core
-    url: https://huggingface.co/tangledgroup/tangled-alpha-0.5-core
-    downloads: 0
-    likes: 0
-  - name: tangledgroup/tangled-alpha-0.6-core
-    url: https://huggingface.co/tangledgroup/tangled-alpha-0.6-core
-    downloads: 0
-    likes: 0
-  - name: tangledgroup/tangled-alpha-0.7-core
-    url: https://huggingface.co/tangledgroup/tangled-alpha-0.7-core
-    downloads: 0
-    likes: 0
-  - name: tangledgroup/tangled-alpha-0.8-core
-    url: https://huggingface.co/tangledgroup/tangled-alpha-0.8-core
     downloads: 0
     likes: 0
   - name: tangledgroup/tangled-alpha-0.9-core
@@ -300,28 +409,8 @@ llm:
     url: https://huggingface.co/tangledgroup/tangled-alpha-0.15-core
     downloads: 0
     likes: 0
-  - name: goldfish-models/ful_latn_full
-    url: https://huggingface.co/goldfish-models/ful_latn_full
-    downloads: 0
-    likes: 0
-  - name: goldfish-models/fuv_latn_full
-    url: https://huggingface.co/goldfish-models/fuv_latn_full
-    downloads: 0
-    likes: 0
   - name: goldfish-models/ful_latn_10mb
     url: https://huggingface.co/goldfish-models/ful_latn_10mb
-    downloads: 0
-    likes: 0
-  - name: goldfish-models/fuv_latn_10mb
-    url: https://huggingface.co/goldfish-models/fuv_latn_10mb
-    downloads: 0
-    likes: 0
-  - name: goldfish-models/ful_latn_5mb
-    url: https://huggingface.co/goldfish-models/ful_latn_5mb
-    downloads: 0
-    likes: 0
-  - name: goldfish-models/fuv_latn_5mb
-    url: https://huggingface.co/goldfish-models/fuv_latn_5mb
     downloads: 0
     likes: 0
   total_count: 36

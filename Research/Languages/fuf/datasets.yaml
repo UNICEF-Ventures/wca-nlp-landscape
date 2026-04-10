@@ -2,16 +2,16 @@ asr:
   items:
   - name: facebook/omnilingual-asr-corpus
     url: https://huggingface.co/datasets/facebook/omnilingual-asr-corpus
-    downloads: 0
+    downloads: 2540
+    likes: 200
+  - name: UBC-NLP/SimbaBench_dataset
+    url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
+    downloads: 1270
     likes: 0
   - name: Sellopale/omnilingualpaleoi
     url: https://huggingface.co/datasets/Sellopale/omnilingualpaleoi
-    downloads: 0
-    likes: 0
-  - name: UBC-NLP/SimbaBench_dataset
-    url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
-    downloads: 0
-    likes: 0
+    downloads: 25
+    likes: 1
   total_count: 3
   counts_by_code:
     fuf: 3
@@ -19,7 +19,7 @@ tts:
   items:
   - name: UBC-NLP/SimbaBench_dataset
     url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
-    downloads: 0
+    downloads: 1270
     likes: 0
   total_count: 1
   counts_by_code:
@@ -28,44 +28,48 @@ translation:
   items:
   - name: HuggingFaceFW/finetranslations
     url: https://huggingface.co/datasets/HuggingFaceFW/finetranslations
-    downloads: 0
+    downloads: 37000
+    likes: 282
+  - name: gtak1/panlex-meanings
+    url: https://huggingface.co/datasets/gtak1/panlex-meanings
+    downloads: 6310
     likes: 0
   - name: HuggingFaceFW/finetranslations-edu
     url: https://huggingface.co/datasets/HuggingFaceFW/finetranslations-edu
-    downloads: 0
-    likes: 0
-  - name: community-datasets/udhr
-    url: https://huggingface.co/datasets/community-datasets/udhr
-    downloads: 0
-    likes: 0
-  - name: bible-nlp/biblenlp-corpus
-    url: https://huggingface.co/datasets/bible-nlp/biblenlp-corpus
-    downloads: 0
-    likes: 0
+    downloads: 1240
+    likes: 27
   - name: ayymen/Pontoon-Translations
     url: https://huggingface.co/datasets/ayymen/Pontoon-Translations
-    downloads: 0
-    likes: 0
+    downloads: 870
+    likes: 18
   - name: cointegrated/panlex-meanings
     url: https://huggingface.co/datasets/cointegrated/panlex-meanings
-    downloads: 0
-    likes: 0
+    downloads: 279
+    likes: 12
   - name: mteb/biblenlp-corpus-mmteb
     url: https://huggingface.co/datasets/mteb/biblenlp-corpus-mmteb
-    downloads: 0
+    downloads: 139
+    likes: 2
+  - name: bible-nlp/biblenlp-corpus
+    url: https://huggingface.co/datasets/bible-nlp/biblenlp-corpus
+    downloads: 133
+    likes: 37
+  - name: community-datasets/udhr
+    url: https://huggingface.co/datasets/community-datasets/udhr
+    downloads: 127
+    likes: 2
+  - name: MihaiPopa-1/OmniSurgical-1.0
+    url: https://huggingface.co/datasets/MihaiPopa-1/OmniSurgical-1.0
+    downloads: 47
     likes: 0
   - name: jtz18/biblenlp-corpus
     url: https://huggingface.co/datasets/jtz18/biblenlp-corpus
-    downloads: 0
-    likes: 0
-  - name: gtak1/panlex-meanings
-    url: https://huggingface.co/datasets/gtak1/panlex-meanings
-    downloads: 0
+    downloads: 35
     likes: 0
   - name: timothyhartzog/biblenlp-corpus
     url: https://huggingface.co/datasets/timothyhartzog/biblenlp-corpus
-    downloads: 0
+    downloads: 28
     likes: 0
-  total_count: 10
+  total_count: 11
   counts_by_code:
-    fuf: 10
+    fuf: 11

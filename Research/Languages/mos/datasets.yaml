@@ -1,211 +1,207 @@
 asr:
   items:
-  - name: anyantudre/MooreSpeechCorpora
-    url: https://huggingface.co/datasets/anyantudre/MooreSpeechCorpora
-    downloads: 0
+  - name: UBC-NLP/SimbaBench_dataset
+    url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
+    downloads: 1270
     likes: 0
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 0
-    likes: 0
-  - name: goaicorp/moore-speech-bible
-    url: https://huggingface.co/datasets/goaicorp/moore-speech-bible
-    downloads: 0
-    likes: 0
-  - name: anyantudre/moore-speech-proverbes
-    url: https://huggingface.co/datasets/anyantudre/moore-speech-proverbes
-    downloads: 0
-    likes: 0
-  - name: anyantudre/moore-speech-devinettes
-    url: https://huggingface.co/datasets/anyantudre/moore-speech-devinettes
-    downloads: 0
-    likes: 0
-  - name: anyantudre/moore-speech-contes
-    url: https://huggingface.co/datasets/anyantudre/moore-speech-contes
-    downloads: 0
-    likes: 0
-  - name: Minervus00/moore_audio_data
-    url: https://huggingface.co/datasets/Minervus00/moore_audio_data
-    downloads: 0
-    likes: 0
-  - name: goaicorp/goai-moore-speech-proverbes
-    url: https://huggingface.co/datasets/goaicorp/goai-moore-speech-proverbes
-    downloads: 0
-    likes: 0
-  - name: goaicorp/goai-moore-speech-devinettes
-    url: https://huggingface.co/datasets/goaicorp/goai-moore-speech-devinettes
-    downloads: 0
-    likes: 0
-  - name: goaicorp/goai-moore-speech-contes
-    url: https://huggingface.co/datasets/goaicorp/goai-moore-speech-contes
-    downloads: 0
-    likes: 0
+    downloads: 251
+    likes: 11
   - name: goaicorp/GOAI-MooreSpeechCorpora
     url: https://huggingface.co/datasets/goaicorp/GOAI-MooreSpeechCorpora
-    downloads: 0
-    likes: 0
+    downloads: 159
+    likes: 3
+  - name: goaicorp/goai-moore-speech-devinettes
+    url: https://huggingface.co/datasets/goaicorp/goai-moore-speech-devinettes
+    downloads: 18
+    likes: 1
+  - name: goaicorp/goai-moore-speech-proverbes
+    url: https://huggingface.co/datasets/goaicorp/goai-moore-speech-proverbes
+    downloads: 17
+    likes: 1
+  - name: goaicorp/goai-moore-speech-contes
+    url: https://huggingface.co/datasets/goaicorp/goai-moore-speech-contes
+    downloads: 15
+    likes: 1
+  - name: anyantudre/moore-speech-contes
+    url: https://huggingface.co/datasets/anyantudre/moore-speech-contes
+    downloads: 13
+    likes: 1
+  - name: anyantudre/moore-speech-devinettes
+    url: https://huggingface.co/datasets/anyantudre/moore-speech-devinettes
+    downloads: 7
+    likes: 1
+  - name: anyantudre/moore-speech-proverbes
+    url: https://huggingface.co/datasets/anyantudre/moore-speech-proverbes
+    downloads: 6
+    likes: 1
+  - name: Minervus00/moore_audio_data
+    url: https://huggingface.co/datasets/Minervus00/moore_audio_data
+    downloads: 5
+    likes: 1
+  - name: anyantudre/MooreSpeechCorpora
+    url: https://huggingface.co/datasets/anyantudre/MooreSpeechCorpora
+    downloads: 4
+    likes: 3
+  total_count: 11
+  counts_by_code:
+    mos: 11
+tts:
+  items:
   - name: UBC-NLP/SimbaBench_dataset
     url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
-    downloads: 0
+    downloads: 1270
     likes: 0
+  - name: WueNLP/sib-fleurs
+    url: https://huggingface.co/datasets/WueNLP/sib-fleurs
+    downloads: 251
+    likes: 11
+  - name: goaicorp/GOAI-MooreSpeechCorpora
+    url: https://huggingface.co/datasets/goaicorp/GOAI-MooreSpeechCorpora
+    downloads: 159
+    likes: 3
+  - name: goaicorp/goai-moore-speech-devinettes
+    url: https://huggingface.co/datasets/goaicorp/goai-moore-speech-devinettes
+    downloads: 18
+    likes: 1
+  - name: goaicorp/goai-moore-speech-proverbes
+    url: https://huggingface.co/datasets/goaicorp/goai-moore-speech-proverbes
+    downloads: 17
+    likes: 1
+  - name: goaicorp/goai-moore-speech-contes
+    url: https://huggingface.co/datasets/goaicorp/goai-moore-speech-contes
+    downloads: 15
+    likes: 1
+  - name: anyantudre/moore-speech-contes
+    url: https://huggingface.co/datasets/anyantudre/moore-speech-contes
+    downloads: 13
+    likes: 1
+  - name: anyantudre/moore-speech-devinettes
+    url: https://huggingface.co/datasets/anyantudre/moore-speech-devinettes
+    downloads: 7
+    likes: 1
+  - name: anyantudre/moore-speech-proverbes
+    url: https://huggingface.co/datasets/anyantudre/moore-speech-proverbes
+    downloads: 6
+    likes: 1
+  - name: Minervus00/moore_audio_data
+    url: https://huggingface.co/datasets/Minervus00/moore_audio_data
+    downloads: 5
+    likes: 1
+  - name: anyantudre/MooreSpeechCorpora
+    url: https://huggingface.co/datasets/anyantudre/MooreSpeechCorpora
+    downloads: 4
+    likes: 3
+  - name: sawadogosalif/MooreFRCollections
+    url: https://huggingface.co/datasets/sawadogosalif/MooreFRCollections
+    downloads: 3
+    likes: 4
   total_count: 12
   counts_by_code:
     mos: 12
-tts:
-  items:
-  - name: anyantudre/MooreSpeechCorpora
-    url: https://huggingface.co/datasets/anyantudre/MooreSpeechCorpora
-    downloads: 0
-    likes: 0
-  - name: sawadogosalif/MooreFRCollections
-    url: https://huggingface.co/datasets/sawadogosalif/MooreFRCollections
-    downloads: 0
-    likes: 0
-  - name: WueNLP/sib-fleurs
-    url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 0
-    likes: 0
-  - name: goaicorp/moore-speech-bible
-    url: https://huggingface.co/datasets/goaicorp/moore-speech-bible
-    downloads: 0
-    likes: 0
-  - name: anyantudre/moore-speech-proverbes
-    url: https://huggingface.co/datasets/anyantudre/moore-speech-proverbes
-    downloads: 0
-    likes: 0
-  - name: anyantudre/moore-speech-devinettes
-    url: https://huggingface.co/datasets/anyantudre/moore-speech-devinettes
-    downloads: 0
-    likes: 0
-  - name: anyantudre/moore-speech-contes
-    url: https://huggingface.co/datasets/anyantudre/moore-speech-contes
-    downloads: 0
-    likes: 0
-  - name: Minervus00/moore_audio_data
-    url: https://huggingface.co/datasets/Minervus00/moore_audio_data
-    downloads: 0
-    likes: 0
-  - name: goaicorp/goai-moore-speech-proverbes
-    url: https://huggingface.co/datasets/goaicorp/goai-moore-speech-proverbes
-    downloads: 0
-    likes: 0
-  - name: goaicorp/goai-moore-speech-devinettes
-    url: https://huggingface.co/datasets/goaicorp/goai-moore-speech-devinettes
-    downloads: 0
-    likes: 0
-  - name: goaicorp/goai-moore-speech-contes
-    url: https://huggingface.co/datasets/goaicorp/goai-moore-speech-contes
-    downloads: 0
-    likes: 0
-  - name: goaicorp/GOAI-MooreSpeechCorpora
-    url: https://huggingface.co/datasets/goaicorp/GOAI-MooreSpeechCorpora
-    downloads: 0
-    likes: 0
-  - name: UBC-NLP/SimbaBench_dataset
-    url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
-    downloads: 0
-    likes: 0
-  total_count: 13
-  counts_by_code:
-    mos: 13
 translation:
   items:
-  - name: facebook/bouquet
-    url: https://huggingface.co/datasets/facebook/bouquet
-    downloads: 0
-    likes: 0
-  - name: openlanguagedata/flores_plus
-    url: https://huggingface.co/datasets/openlanguagedata/flores_plus
-    downloads: 0
-    likes: 0
-  - name: google/smol
-    url: https://huggingface.co/datasets/google/smol
-    downloads: 0
-    likes: 0
-  - name: Muennighoff/flores200
-    url: https://huggingface.co/datasets/Muennighoff/flores200
-    downloads: 0
-    likes: 0
-  - name: Helsinki-NLP/qed_amara
-    url: https://huggingface.co/datasets/Helsinki-NLP/qed_amara
-    downloads: 0
-    likes: 0
-  - name: community-datasets/udhr
-    url: https://huggingface.co/datasets/community-datasets/udhr
-    downloads: 0
-    likes: 0
   - name: facebook/flores
     url: https://huggingface.co/datasets/facebook/flores
-    downloads: 0
-    likes: 0
-  - name: masakhane/mafand
-    url: https://huggingface.co/datasets/masakhane/mafand
-    downloads: 0
-    likes: 0
-  - name: vpermilp/nllb-200-distilled-600M-rust
-    url: https://huggingface.co/datasets/vpermilp/nllb-200-distilled-600M-rust
-    downloads: 0
-    likes: 0
-  - name: sbmaruf/forai_ml_masakhane_mafand
-    url: https://huggingface.co/datasets/sbmaruf/forai_ml_masakhane_mafand
-    downloads: 0
-    likes: 0
-  - name: visheratin/laion-coco-nllb
-    url: https://huggingface.co/datasets/visheratin/laion-coco-nllb
-    downloads: 0
-    likes: 0
-  - name: slone/nllb-200-10M-sample
-    url: https://huggingface.co/datasets/slone/nllb-200-10M-sample
-    downloads: 0
-    likes: 0
-  - name: mteb/flores
-    url: https://huggingface.co/datasets/mteb/flores
-    downloads: 0
-    likes: 0
+    downloads: 44500
+    likes: 97
+  - name: openlanguagedata/flores_plus
+    url: https://huggingface.co/datasets/openlanguagedata/flores_plus
+    downloads: 19500
+    likes: 123
+  - name: google/smol
+    url: https://huggingface.co/datasets/google/smol
+    downloads: 2580
+    likes: 93
   - name: aiana94/polynews-parallel
     url: https://huggingface.co/datasets/aiana94/polynews-parallel
-    downloads: 0
-    likes: 0
-  - name: goaicorp/cle-moore-traduction-mos-fr
-    url: https://huggingface.co/datasets/goaicorp/cle-moore-traduction-mos-fr
-    downloads: 0
-    likes: 0
-  - name: Svngoku/xP3x-Kongo
-    url: https://huggingface.co/datasets/Svngoku/xP3x-Kongo
-    downloads: 0
-    likes: 0
-  - name: robinhad/long_flores
-    url: https://huggingface.co/datasets/robinhad/long_flores
-    downloads: 0
+    downloads: 2410
+    likes: 13
+  - name: facebook/bouquet
+    url: https://huggingface.co/datasets/facebook/bouquet
+    downloads: 1830
+    likes: 33
+  - name: Muennighoff/flores200
+    url: https://huggingface.co/datasets/Muennighoff/flores200
+    downloads: 1710
+    likes: 20
+  - name: masakhane/mafand
+    url: https://huggingface.co/datasets/masakhane/mafand
+    downloads: 747
+    likes: 15
+  - name: sbmaruf/forai_ml_masakhane_mafand
+    url: https://huggingface.co/datasets/sbmaruf/forai_ml_masakhane_mafand
+    downloads: 474
+    likes: 2
+  - name: visheratin/laion-coco-nllb
+    url: https://huggingface.co/datasets/visheratin/laion-coco-nllb
+    downloads: 393
+    likes: 44
+  - name: mteb/FloresBitextMining
+    url: https://huggingface.co/datasets/mteb/FloresBitextMining
+    downloads: 293
+    likes: 1
+  - name: slone/nllb-200-10M-sample
+    url: https://huggingface.co/datasets/slone/nllb-200-10M-sample
+    downloads: 249
+    likes: 13
+  - name: community-datasets/udhr
+    url: https://huggingface.co/datasets/community-datasets/udhr
+    downloads: 127
+    likes: 2
+  - name: mteb/flores
+    url: https://huggingface.co/datasets/mteb/flores
+    downloads: 125
     likes: 0
   - name: FrancophonIA/gatitos
     url: https://huggingface.co/datasets/FrancophonIA/gatitos
-    downloads: 0
+    downloads: 120
+    likes: 4
+  - name: Helsinki-NLP/qed_amara
+    url: https://huggingface.co/datasets/Helsinki-NLP/qed_amara
+    downloads: 113
+    likes: 5
+  - name: robinhad/long_flores
+    url: https://huggingface.co/datasets/robinhad/long_flores
+    downloads: 47
     likes: 0
+  - name: vpermilp/nllb-200-distilled-600M-rust
+    url: https://huggingface.co/datasets/vpermilp/nllb-200-distilled-600M-rust
+    downloads: 45
+    likes: 1
+  - name: madoss/nllb-mos-raw
+    url: https://huggingface.co/datasets/madoss/nllb-mos-raw
+    downloads: 33
+    likes: 0
+  - name: Svngoku/xP3x-Kongo
+    url: https://huggingface.co/datasets/Svngoku/xP3x-Kongo
+    downloads: 32
+    likes: 4
   - name: neulab/PangeaBench-flores
     url: https://huggingface.co/datasets/neulab/PangeaBench-flores
-    downloads: 0
-    likes: 0
-  - name: sawadogosalif/MooreFRCollections
-    url: https://huggingface.co/datasets/sawadogosalif/MooreFRCollections
-    downloads: 0
-    likes: 0
-  - name: anyantudre/moore-speech-proverbes
-    url: https://huggingface.co/datasets/anyantudre/moore-speech-proverbes
-    downloads: 0
+    downloads: 23
     likes: 0
   - name: goaicorp/goai-moore-speech-proverbes
     url: https://huggingface.co/datasets/goaicorp/goai-moore-speech-proverbes
-    downloads: 0
-    likes: 0
-  - name: mteb/FloresBitextMining
-    url: https://huggingface.co/datasets/mteb/FloresBitextMining
-    downloads: 0
-    likes: 0
+    downloads: 17
+    likes: 1
   - name: SupriyoCode/flores200
     url: https://huggingface.co/datasets/SupriyoCode/flores200
-    downloads: 0
+    downloads: 16
     likes: 0
-  total_count: 24
+  - name: goaicorp/goai-moore-translation-cle
+    url: https://huggingface.co/datasets/goaicorp/goai-moore-translation-cle
+    downloads: 14
+    likes: 3
+  - name: anyantudre/moore-speech-proverbes
+    url: https://huggingface.co/datasets/anyantudre/moore-speech-proverbes
+    downloads: 6
+    likes: 1
+  - name: sawadogosalif/MooreFRCollections
+    url: https://huggingface.co/datasets/sawadogosalif/MooreFRCollections
+    downloads: 3
+    likes: 4
+  total_count: 25
   counts_by_code:
-    mos: 24
+    mos: 25

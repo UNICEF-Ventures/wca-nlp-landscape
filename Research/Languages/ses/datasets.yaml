@@ -8,24 +8,28 @@ translation:
   items:
   - name: HuggingFaceFW/finetranslations
     url: https://huggingface.co/datasets/HuggingFaceFW/finetranslations
-    downloads: 0
+    downloads: 37000
+    likes: 282
+  - name: gtak1/panlex-meanings
+    url: https://huggingface.co/datasets/gtak1/panlex-meanings
+    downloads: 6310
     likes: 0
   - name: HuggingFaceFW/finetranslations-edu
     url: https://huggingface.co/datasets/HuggingFaceFW/finetranslations-edu
-    downloads: 0
-    likes: 0
+    downloads: 1240
+    likes: 27
   - name: ayymen/Pontoon-Translations
     url: https://huggingface.co/datasets/ayymen/Pontoon-Translations
-    downloads: 0
-    likes: 0
+    downloads: 870
+    likes: 18
   - name: cointegrated/panlex-meanings
     url: https://huggingface.co/datasets/cointegrated/panlex-meanings
-    downloads: 0
+    downloads: 279
+    likes: 12
+  - name: MihaiPopa-1/OmniSurgical-1.0
+    url: https://huggingface.co/datasets/MihaiPopa-1/OmniSurgical-1.0
+    downloads: 47
     likes: 0
-  - name: gtak1/panlex-meanings
-    url: https://huggingface.co/datasets/gtak1/panlex-meanings
-    downloads: 0
-    likes: 0
-  total_count: 5
+  total_count: 6
   counts_by_code:
-    ses: 5
+    ses: 6

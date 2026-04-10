@@ -8,31 +8,31 @@ translation:
   items:
   - name: google/smol
     url: https://huggingface.co/datasets/google/smol
-    downloads: 0
-    likes: 0
-  - name: community-datasets/udhr
-    url: https://huggingface.co/datasets/community-datasets/udhr
-    downloads: 0
-    likes: 0
-  - name: cis-lmu/GlotStoryBook
-    url: https://huggingface.co/datasets/cis-lmu/GlotStoryBook
-    downloads: 0
-    likes: 0
+    downloads: 2580
+    likes: 93
   - name: jhu-clsp/kreyol-mt
     url: https://huggingface.co/datasets/jhu-clsp/kreyol-mt
-    downloads: 0
-    likes: 0
+    downloads: 1650
+    likes: 9
+  - name: community-datasets/udhr
+    url: https://huggingface.co/datasets/community-datasets/udhr
+    downloads: 127
+    likes: 2
   - name: FrancophonIA/gatitos
     url: https://huggingface.co/datasets/FrancophonIA/gatitos
-    downloads: 0
+    downloads: 120
+    likes: 4
+  - name: cis-lmu/GlotStoryBook
+    url: https://huggingface.co/datasets/cis-lmu/GlotStoryBook
+    downloads: 74
+    likes: 7
+  - name: kargaranamir/GlotStoryBook-backup
+    url: https://huggingface.co/datasets/kargaranamir/GlotStoryBook-backup
+    downloads: 27
     likes: 0
   - name: Bretagne/PolyWrite_clean
     url: https://huggingface.co/datasets/Bretagne/PolyWrite_clean
-    downloads: 0
-    likes: 0
-  - name: kargaranamir/GlotStoryBook-backup
-    url: https://huggingface.co/datasets/kargaranamir/GlotStoryBook-backup
-    downloads: 0
+    downloads: 11
     likes: 0
   total_count: 7
   counts_by_code:

@@ -75,13 +75,22 @@ evaluations:
       source_url: https://arxiv.org/abs/2309.04662
       notes: Table 16 — BLEU/chrF
       metrics:
-      - name: BLEU bam→eng
+      - name: direction
+        value: bam→eng
+      - name: BLEU
         value: 11.9
-      - name: chrF bam→eng
+      - name: chrF
         value: 32.8
-      - name: BLEU eng→bam
+    - test_set: GATONES
+      source: reported
+      source_url: https://arxiv.org/abs/2309.04662
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: direction
+        value: eng→bam
+      - name: BLEU
         value: 6.5
-      - name: chrF eng→bam
+      - name: chrF
         value: 28.5
     - test_set: FLORES-200
       source: reported
@@ -102,13 +111,20 @@ evaluations:
     - test_set: GATONES
       notes: Table 16 — BLEU/chrF
       metrics:
-      - name: BLEU bam→eng
+      - name: direction
+        value: bam→eng
+      - name: BLEU
         value: 10.6
-      - name: chrF bam→eng
+      - name: chrF
         value: 31.7
-      - name: BLEU eng→bam
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: direction
+        value: eng→bam
+      - name: BLEU
         value: 6.1
-      - name: chrF eng→bam
+      - name: chrF
         value: 27.2
     - test_set: FLORES-200
       source: reported
@@ -129,13 +145,20 @@ evaluations:
     - test_set: GATONES
       notes: Table 16 — BLEU/chrF
       metrics:
-      - name: BLEU bam→eng
+      - name: direction
+        value: bam→eng
+      - name: BLEU
         value: 12.6
-      - name: chrF bam→eng
+      - name: chrF
         value: 33.9
-      - name: BLEU eng→bam
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF
+      metrics:
+      - name: direction
+        value: eng→bam
+      - name: BLEU
         value: 7.1
-      - name: chrF eng→bam
+      - name: chrF
         value: 30.5
     - test_set: FLORES-200
       source: reported
@@ -322,13 +345,20 @@ evaluations:
     - test_set: GATONES
       notes: Table 16 — BLEU/chrF (10-shot)
       metrics:
-      - name: BLEU bam→eng
+      - name: direction
+        value: bam→eng
+      - name: BLEU
         value: 1.2
-      - name: chrF bam→eng
+      - name: chrF
         value: 14.4
-      - name: BLEU eng→bam
+    - test_set: GATONES
+      notes: Table 16 — BLEU/chrF (10-shot)
+      metrics:
+      - name: direction
+        value: eng→bam
+      - name: BLEU
         value: 0
-      - name: chrF eng→bam
+      - name: chrF
         value: 2.1
     - test_set: FLORES-200
       source: reported

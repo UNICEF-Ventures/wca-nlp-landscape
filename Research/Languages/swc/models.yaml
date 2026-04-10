@@ -2,8 +2,8 @@ asr:
   items:
   - name: espnet/xeus
     url: https://huggingface.co/espnet/xeus
-    downloads: 0
-    likes: 0
+    downloads: 49
+    likes: 146
   total_count: 1
   counts_by_code:
     swc: 1
@@ -12,67 +12,67 @@ tts:
   counts_by_code: {}
 translation:
   items:
-  - name: Helsinki-NLP/opus-mt-en-swc
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-en-swc
-    downloads: 0
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-es-swc
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-es-swc
-    downloads: 0
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-fi-swc
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-fi-swc
-    downloads: 0
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-fr-swc
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-fr-swc
-    downloads: 0
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-sv-swc
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-sv-swc
-    downloads: 0
-    likes: 0
   - name: Helsinki-NLP/opus-mt-swc-en
     url: https://huggingface.co/Helsinki-NLP/opus-mt-swc-en
-    downloads: 0
+    downloads: 112
     likes: 0
-  - name: Helsinki-NLP/opus-mt-swc-es
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-swc-es
-    downloads: 0
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-swc-fi
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-swc-fi
-    downloads: 0
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-swc-fr
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-swc-fr
-    downloads: 0
-    likes: 0
-  - name: Helsinki-NLP/opus-mt-swc-sv
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-swc-sv
-    downloads: 0
+  - name: Helsinki-NLP/opus-mt-en-swc
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-en-swc
+    downloads: 75
     likes: 0
   - name: vonjack/opus-mt-mul-en-big
     url: https://huggingface.co/vonjack/opus-mt-mul-en-big
-    downloads: 0
+    downloads: 38
+    likes: 4
+  - name: Helsinki-NLP/opus-mt-swc-fi
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-swc-fi
+    downloads: 35
+    likes: 0
+  - name: Helsinki-NLP/opus-mt-sv-swc
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-sv-swc
+    downloads: 34
+    likes: 0
+  - name: Helsinki-NLP/opus-mt-swc-es
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-swc-es
+    downloads: 32
+    likes: 0
+  - name: Helsinki-NLP/opus-mt-swc-fr
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-swc-fr
+    downloads: 32
+    likes: 0
+  - name: Helsinki-NLP/opus-mt-swc-sv
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-swc-sv
+    downloads: 32
+    likes: 0
+  - name: Helsinki-NLP/opus-mt-es-swc
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-es-swc
+    downloads: 29
+    likes: 0
+  - name: Helsinki-NLP/opus-mt-fi-swc
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-fi-swc
+    downloads: 28
+    likes: 0
+  - name: Helsinki-NLP/opus-mt-fr-swc
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-fr-swc
+    downloads: 28
     likes: 0
   total_count: 11
   counts_by_code:
     swc: 11
 llm:
   items:
+  - name: UBC-NLP/toucan-base
+    url: https://huggingface.co/UBC-NLP/toucan-base
+    downloads: 2380
+    likes: 5
+  - name: UBC-NLP/toucan-1.2B
+    url: https://huggingface.co/UBC-NLP/toucan-1.2B
+    downloads: 1840
+    likes: 1
   - name: UBC-NLP/cheetah-1.2B
     url: https://huggingface.co/UBC-NLP/cheetah-1.2B
     downloads: 0
-    likes: 0
-  - name: UBC-NLP/toucan-base
-    url: https://huggingface.co/UBC-NLP/toucan-base
-    downloads: 0
-    likes: 0
-  - name: UBC-NLP/toucan-1.2B
-    url: https://huggingface.co/UBC-NLP/toucan-1.2B
-    downloads: 0
-    likes: 0
+    likes: 4
   total_count: 3
   counts_by_code:
     swc: 3

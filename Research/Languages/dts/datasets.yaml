@@ -6,18 +6,18 @@ tts:
   counts_by_code: {}
 translation:
   items:
-  - name: facebook/bouquet
-    url: https://huggingface.co/datasets/facebook/bouquet
-    downloads: 0
-    likes: 0
-  - name: cointegrated/panlex-meanings
-    url: https://huggingface.co/datasets/cointegrated/panlex-meanings
-    downloads: 0
-    likes: 0
   - name: gtak1/panlex-meanings
     url: https://huggingface.co/datasets/gtak1/panlex-meanings
-    downloads: 0
+    downloads: 6310
     likes: 0
+  - name: facebook/bouquet
+    url: https://huggingface.co/datasets/facebook/bouquet
+    downloads: 1830
+    likes: 33
+  - name: cointegrated/panlex-meanings
+    url: https://huggingface.co/datasets/cointegrated/panlex-meanings
+    downloads: 279
+    likes: 12
   total_count: 3
   counts_by_code:
     dts: 3

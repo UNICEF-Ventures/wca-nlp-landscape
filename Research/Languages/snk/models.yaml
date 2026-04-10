@@ -2,18 +2,100 @@ asr:
   items:
   - name: espnet/xeus
     url: https://huggingface.co/espnet/xeus
-    downloads: 0
-    likes: 0
+    downloads: 49
+    likes: 146
   - name: sil-ai/wav2vec2-bloom-speech-snk
     url: https://huggingface.co/sil-ai/wav2vec2-bloom-speech-snk
-    downloads: 0
-    likes: 0
+    downloads: 7
+    likes: 1
   total_count: 2
   counts_by_code:
     snk: 2
 tts:
-  total_count: 0
-  counts_by_code: {}
+  items:
+  - name: k2-fsa/OmniVoice
+    url: https://huggingface.co/k2-fsa/OmniVoice
+    downloads: 270000
+    likes: 451
+  - name: drbaph/OmniVoice-bf16
+    url: https://huggingface.co/drbaph/OmniVoice-bf16
+    downloads: 3310
+    likes: 9
+  - name: splendor1811/omnivoice-vietnamese
+    url: https://huggingface.co/splendor1811/omnivoice-vietnamese
+    downloads: 285
+    likes: 2
+  - name: LeeAeron/OmniVoice
+    url: https://huggingface.co/LeeAeron/OmniVoice
+    downloads: 92
+    likes: 0
+  - name: edwixx/OmniVoice
+    url: https://huggingface.co/edwixx/OmniVoice
+    downloads: 30
+    likes: 0
+  - name: WANJIAX2197/OmniVoice
+    url: https://huggingface.co/WANJIAX2197/OmniVoice
+    downloads: 29
+    likes: 0
+  - name: gluschenko/omnivoice-onnx
+    url: https://huggingface.co/gluschenko/omnivoice-onnx
+    downloads: 25
+    likes: 0
+  - name: ex510/OmniVoice
+    url: https://huggingface.co/ex510/OmniVoice
+    downloads: 17
+    likes: 0
+  - name: Bgeorge/OmniVoice
+    url: https://huggingface.co/Bgeorge/OmniVoice
+    downloads: 16
+    likes: 1
+  - name: Manish993135/OmniVoice
+    url: https://huggingface.co/Manish993135/OmniVoice
+    downloads: 16
+    likes: 0
+  - name: phucpx247/OmniVoice
+    url: https://huggingface.co/phucpx247/OmniVoice
+    downloads: 14
+    likes: 0
+  - name: razi08/OmniVoice
+    url: https://huggingface.co/razi08/OmniVoice
+    downloads: 14
+    likes: 0
+  - name: gubernac/OmniVoice
+    url: https://huggingface.co/gubernac/OmniVoice
+    downloads: 13
+    likes: 0
+  - name: harsha7286/OmniVoice
+    url: https://huggingface.co/harsha7286/OmniVoice
+    downloads: 13
+    likes: 0
+  - name: EBINSHAJI1999/OmniVoice
+    url: https://huggingface.co/EBINSHAJI1999/OmniVoice
+    downloads: 12
+    likes: 0
+  - name: Citrus-777/OmniVoice
+    url: https://huggingface.co/Citrus-777/OmniVoice
+    downloads: 12
+    likes: 0
+  - name: bilalRHCH/Arabic-text-to-speech
+    url: https://huggingface.co/bilalRHCH/Arabic-text-to-speech
+    downloads: 12
+    likes: 0
+  - name: preference1/OmniVoice
+    url: https://huggingface.co/preference1/OmniVoice
+    downloads: 12
+    likes: 0
+  - name: lopho/OmniVoice
+    url: https://huggingface.co/lopho/OmniVoice
+    downloads: 12
+    likes: 0
+  - name: Koyiljon/OmniVoice
+    url: https://huggingface.co/Koyiljon/OmniVoice
+    downloads: 11
+    likes: 0
+  total_count: 20
+  counts_by_code:
+    snk: 20
 translation:
   total_count: 0
   counts_by_code: {}

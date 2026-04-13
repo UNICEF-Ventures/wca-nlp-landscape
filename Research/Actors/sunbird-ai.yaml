@@ -59,7 +59,7 @@ contact:
 # Projects
 projects:
   - name: Sunflower LLM
-    url: https://huggingface.co/collections/Sunbird/sunflower-6705c44a52378cbaacf82715
+    url: https://huggingface.co/collections/Sunbird/sunflower
     description: Multilingual LLM for 31+ Ugandan languages (14B and 32B parameter versions)
     languages: [lug, nyn, ach, teo, lgg, luo, nyo, cgg, xog, myx]  # 31+ Ugandan languages
 

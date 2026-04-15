@@ -2,24 +2,29 @@ asr:
   items:
   - name: UBC-NLP/SimbaBench_dataset
     url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
-    downloads: 1270
+    downloads: 975
     likes: 0
+    rows: 748000
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 251
+    downloads: 260
     likes: 11
-  - name: Professor/fongbe-speech-zenodo
-    url: https://huggingface.co/datasets/Professor/fongbe-speech-zenodo
-    downloads: 101
-    likes: 0
-  - name: alaleye/fon
-    url: https://huggingface.co/datasets/alaleye/fon
-    downloads: 60
-    likes: 0
+    rows: 94400
   - name: Professor/fongbe-hausa-asr-dataset
     url: https://huggingface.co/datasets/Professor/fongbe-hausa-asr-dataset
+    downloads: 48
+    likes: 0
+    rows: 6770
+  - name: Professor/fongbe-speech-zenodo
+    url: https://huggingface.co/datasets/Professor/fongbe-speech-zenodo
     downloads: 46
     likes: 0
+    rows: 13600
+  - name: alaleye/fon
+    url: https://huggingface.co/datasets/alaleye/fon
+    downloads: 34
+    likes: 0
+    rows: 10400
   total_count: 5
   counts_by_code:
     fon: 5
@@ -27,12 +32,14 @@ tts:
   items:
   - name: UBC-NLP/SimbaBench_dataset
     url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
-    downloads: 1270
+    downloads: 975
     likes: 0
+    rows: 748000
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 251
+    downloads: 260
     likes: 11
+    rows: 94400
   total_count: 2
   counts_by_code:
     fon: 2
@@ -40,103 +47,119 @@ translation:
   items:
   - name: facebook/flores
     url: https://huggingface.co/datasets/facebook/flores
-    downloads: 44500
+    downloads: 43400
     likes: 97
   - name: openlanguagedata/flores_plus
     url: https://huggingface.co/datasets/openlanguagedata/flores_plus
-    downloads: 19500
-    likes: 123
+    downloads: 15800
+    likes: 124
+    rows: 893000
   - name: CohereLabs/aya_collection
     url: https://huggingface.co/datasets/CohereLabs/aya_collection
-    downloads: 11600
+    downloads: 12600
     likes: 234
+    rows: 514000000
   - name: google/smol
     url: https://huggingface.co/datasets/google/smol
-    downloads: 2580
-    likes: 93
-  - name: aiana94/polynews-parallel
-    url: https://huggingface.co/datasets/aiana94/polynews-parallel
-    downloads: 2410
-    likes: 13
+    downloads: 2810
+    likes: 94
+    rows: 798000
   - name: Muennighoff/flores200
     url: https://huggingface.co/datasets/Muennighoff/flores200
-    downloads: 1710
+    downloads: 1650
     likes: 20
+  - name: aiana94/polynews-parallel
+    url: https://huggingface.co/datasets/aiana94/polynews-parallel
+    downloads: 1350
+    likes: 13
+    rows: 5390000
   - name: masakhane/mafand
     url: https://huggingface.co/datasets/masakhane/mafand
-    downloads: 747
+    downloads: 463
     likes: 15
+    rows: 143000
   - name: sbmaruf/forai_ml_masakhane_mafand
     url: https://huggingface.co/datasets/sbmaruf/forai_ml_masakhane_mafand
-    downloads: 474
+    downloads: 365
     likes: 2
-  - name: visheratin/laion-coco-nllb
-    url: https://huggingface.co/datasets/visheratin/laion-coco-nllb
-    downloads: 393
-    likes: 44
+    rows: 136000
   - name: mteb/FloresBitextMining
     url: https://huggingface.co/datasets/mteb/FloresBitextMining
-    downloads: 293
+    downloads: 303
     likes: 1
+    rows: 2009
+  - name: visheratin/laion-coco-nllb
+    url: https://huggingface.co/datasets/visheratin/laion-coco-nllb
+    downloads: 255
+    likes: 44
+    rows: 894000
   - name: slone/nllb-200-10M-sample
     url: https://huggingface.co/datasets/slone/nllb-200-10M-sample
-    downloads: 249
+    downloads: 168
     likes: 13
+    rows: 9980000
   - name: community-datasets/udhr
     url: https://huggingface.co/datasets/community-datasets/udhr
-    downloads: 127
+    downloads: 123
     likes: 2
   - name: mteb/flores
     url: https://huggingface.co/datasets/mteb/flores
-    downloads: 125
+    downloads: 96
     likes: 0
+    rows: 2009
   - name: FrancophonIA/gatitos
     url: https://huggingface.co/datasets/FrancophonIA/gatitos
-    downloads: 120
+    downloads: 61
     likes: 4
-  - name: robinhad/long_flores
-    url: https://huggingface.co/datasets/robinhad/long_flores
-    downloads: 47
-    likes: 0
   - name: vpermilp/nllb-200-distilled-600M-rust
     url: https://huggingface.co/datasets/vpermilp/nllb-200-distilled-600M-rust
-    downloads: 45
+    downloads: 51
     likes: 1
-  - name: Svngoku/xP3x-Kongo
-    url: https://huggingface.co/datasets/Svngoku/xP3x-Kongo
-    downloads: 32
-    likes: 4
-  - name: neulab/PangeaBench-flores
-    url: https://huggingface.co/datasets/neulab/PangeaBench-flores
-    downloads: 23
+  - name: robinhad/long_flores
+    url: https://huggingface.co/datasets/robinhad/long_flores
+    downloads: 49
     likes: 0
   - name: janavivekariya/aya_collection
     url: https://huggingface.co/datasets/janavivekariya/aya_collection
-    downloads: 20
+    downloads: 43
     likes: 0
+    rows: 514000000
+  - name: Svngoku/xP3x-Kongo
+    url: https://huggingface.co/datasets/Svngoku/xP3x-Kongo
+    downloads: 30
+    likes: 4
+    rows: 1220000
   - name: FrancophonIA/Fon_French_Daily_Dialogues_Parallel_Data
     url: https://huggingface.co/datasets/FrancophonIA/Fon_French_Daily_Dialogues_Parallel_Data
-    downloads: 17
+    downloads: 19
     likes: 2
-  - name: SupriyoCode/flores200
-    url: https://huggingface.co/datasets/SupriyoCode/flores200
-    downloads: 16
+    rows: 25400
+  - name: FrancophonIA/FFR
+    url: https://huggingface.co/datasets/FrancophonIA/FFR
+    downloads: 18
+    likes: 0
+    rows: 80100
+  - name: neulab/PangeaBench-flores
+    url: https://huggingface.co/datasets/neulab/PangeaBench-flores
+    downloads: 17
     likes: 0
   - name: beethogedeon/Helsinki-en-fon-opus-20k
     url: https://huggingface.co/datasets/beethogedeon/Helsinki-en-fon-opus-20k
     downloads: 13
     likes: 0
-  - name: FrancophonIA/FFR
-    url: https://huggingface.co/datasets/FrancophonIA/FFR
-    downloads: 12
-    likes: 0
+    rows: 20000
   - name: Bretagne/PolyWrite_clean
     url: https://huggingface.co/datasets/Bretagne/PolyWrite_clean
     downloads: 11
     likes: 0
+    rows: 155
+  - name: SupriyoCode/flores200
+    url: https://huggingface.co/datasets/SupriyoCode/flores200
+    downloads: 11
+    likes: 0
   - name: french-datasets/amaniopia_fon_french_translation
     url: https://huggingface.co/datasets/french-datasets/amaniopia_fon_french_translation
-    downloads: 4
+    downloads: 3
     likes: 0
   total_count: 25
   counts_by_code:

@@ -550,10 +550,11 @@ def get_css():
         .benchmark-table th.num { text-align: right; }
         .benchmark-table th:last-child,
         .benchmark-table td:last-child { text-align: right; }
-        .benchmark-table th { cursor: pointer; user-select: none; white-space: nowrap; }
-        .benchmark-table th::after { content: ' ↕'; opacity: 0.3; font-size: 0.8em; }
-        .benchmark-table th.sorted-asc::after { content: ' ↑'; opacity: 1; }
-        .benchmark-table th.sorted-desc::after { content: ' ↓'; opacity: 1; }
+        .benchmark-table th { white-space: nowrap; }
+        .data-table th { cursor: pointer; user-select: none; }
+        .data-table th::after { content: ' ↕'; opacity: 0.3; font-size: 0.8em; }
+        .data-table th.sorted-asc::after { content: ' ↑'; opacity: 1; }
+        .data-table th.sorted-desc::after { content: ' ↓'; opacity: 1; }
 
         .benchmark-scroll { overflow-x: auto; margin-bottom: 1.25rem; }
         .benchmark-subhead {

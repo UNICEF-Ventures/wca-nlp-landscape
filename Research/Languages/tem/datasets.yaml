@@ -8,7 +8,7 @@ translation:
   items:
   - name: community-datasets/udhr
     url: https://huggingface.co/datasets/community-datasets/udhr
-    downloads: 127
+    downloads: 123
     likes: 2
   total_count: 1
   counts_by_code:

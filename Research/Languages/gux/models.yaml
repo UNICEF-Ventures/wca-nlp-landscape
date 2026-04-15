@@ -2,7 +2,7 @@ asr:
   items:
   - name: espnet/xeus
     url: https://huggingface.co/espnet/xeus
-    downloads: 49
+    downloads: 60
     likes: 146
   total_count: 1
   counts_by_code:
@@ -14,24 +14,29 @@ translation:
   items:
   - name: Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-mul
     url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-mul
-    downloads: 95
+    downloads: 88
     likes: 1
-  - name: Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_fra_por_spa
-    url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_fra_por_spa
-    downloads: 43
-    likes: 2
+    size: 0.2B
   - name: Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_nld
     url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_nld
-    downloads: 42
+    downloads: 54
     likes: 2
-  - name: vonjack/opus-mt-mul-en-big
-    url: https://huggingface.co/vonjack/opus-mt-mul-en-big
-    downloads: 38
-    likes: 4
+    size: 0.2B
+  - name: Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_fra_por_spa
+    url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_fra_por_spa
+    downloads: 54
+    likes: 2
+    size: 0.2B
   - name: Helsinki-NLP/opus-mt-tc-bible-big-alv-deu_eng_fra_por_spa
     url: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-alv-deu_eng_fra_por_spa
-    downloads: 33
+    downloads: 47
     likes: 0
+    size: 0.2B
+  - name: vonjack/opus-mt-mul-en-big
+    url: https://huggingface.co/vonjack/opus-mt-mul-en-big
+    downloads: 39
+    likes: 4
+    size: 0.3B
   total_count: 5
   counts_by_code:
     gux: 5

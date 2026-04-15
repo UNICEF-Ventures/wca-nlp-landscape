@@ -163,9 +163,17 @@ def search_huggingface(iso_639_1, iso_639_3, search_type, pipeline_tag):
                     if is_new:
                         seen.add(href)
 
+                    # Parse model size (models only): <span title="Number of parameters in the model: 2B">
+                    size = None
+                    if search_type == 'models':
+                        size_span = card.find('span', title=lambda t: t and t.startswith('Number of parameters'))
+                        if size_span:
+                            size = size_span.get_text(strip=True)
+
                     # Parse stats from SVG icons
                     downloads = 0
                     likes = 0
+                    rows = 0
 
                     svgs = card.find_all('svg')
                     for svg in svgs:
@@ -201,6 +209,9 @@ def search_huggingface(iso_639_1, iso_639_3, search_type, pipeline_tag):
                         # Like icon
                         elif 'M22.45,6a5.47' in svg_str:
                             likes = parse_stat_number(stat_text)
+                        # Dataset rows icon (only on Viewer-enabled datasets)
+                        elif 'M9.84 2.7H2.16' in svg_str:
+                            rows = parse_stat_number(stat_text)
 
                     base_url = "https://huggingface.co"
                     if search_type == 'datasets':
@@ -212,6 +223,10 @@ def search_huggingface(iso_639_1, iso_639_3, search_type, pipeline_tag):
                         'downloads': downloads,
                         'likes': likes,
                     }
+                    if size is not None:
+                        item['size'] = size
+                    if rows:
+                        item['rows'] = rows
 
                     # Add to global items list if new
                     if is_new:
@@ -222,6 +237,17 @@ def search_huggingface(iso_639_1, iso_639_3, search_type, pipeline_tag):
 
                 except Exception:
                     continue
+
+            # Sanity check: if cards were found but all stats are zero,
+            # HuggingFace likely changed their card HTML structure.
+            if items_for_code:
+                all_downloads_zero = all(i.get('downloads', 0) == 0 for i in items_for_code)
+                all_likes_zero = all(i.get('likes', 0) == 0 for i in items_for_code)
+                if all_downloads_zero or all_likes_zero:
+                    broken = [s for s, z in [('downloads', all_downloads_zero), ('likes', all_likes_zero)] if z]
+                    print(f"      WARNING: {len(items_for_code)} cards found for '{code}' but all {' and '.join(broken)} are 0.")
+                    print(f"      This likely means HuggingFace changed their card HTML structure.")
+                    print(f"      Check fetch_huggingface.py SVG fingerprints (search for 'M26 24v4' and 'M22.45,6a5.47').")
 
             # Store count of items found for this code
             items_by_code[code] = len(items_for_code)

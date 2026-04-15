@@ -2,326 +2,399 @@ asr:
   items:
   - name: fsicoli/common_voice_22_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_22_0
-    downloads: 33800
+    downloads: 21200
     likes: 16
   - name: google/WaxalNLP
     url: https://huggingface.co/datasets/google/WaxalNLP
-    downloads: 11900
-    likes: 218
+    downloads: 12300
+    likes: 219
+    rows: 2560000
   - name: fsicoli/common_voice_15_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_15_0
-    downloads: 10800
+    downloads: 8360
     likes: 6
   - name: ghananlpcommunity/navigation-corpus-speech-full-twi
     url: https://huggingface.co/datasets/ghananlpcommunity/navigation-corpus-speech-full-twi
     downloads: 6260
     likes: 0
+    rows: 1500
   - name: fsicoli/common_voice_16_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_16_0
-    downloads: 5290
+    downloads: 5100
     likes: 4
   - name: fsicoli/common_voice_17_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_17_0
-    downloads: 4570
-    likes: 11
+    downloads: 3680
+    likes: 12
+  - name: claudefitz/WaxalNLP
+    url: https://huggingface.co/datasets/claudefitz/WaxalNLP
+    downloads: 3620
+    likes: 0
+    rows: 2560000
   - name: fsicoli/common_voice_21_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_21_0
-    downloads: 3720
+    downloads: 3200
     likes: 2
   - name: BolajiJsAI/WaxalNLP
     url: https://huggingface.co/datasets/BolajiJsAI/WaxalNLP
-    downloads: 2390
+    downloads: 2510
     likes: 1
+    rows: 2560000
   - name: ngoloan/WaxalNLP
     url: https://huggingface.co/datasets/ngoloan/WaxalNLP
-    downloads: 1960
+    downloads: 2130
     likes: 0
+    rows: 2040000
+  - name: novelwolde36/WaxalNLP
+    url: https://huggingface.co/datasets/novelwolde36/WaxalNLP
+    downloads: 1990
+    likes: 1
+    rows: 2550000
   - name: Phsntom/WaxalNLP
     url: https://huggingface.co/datasets/Phsntom/WaxalNLP
-    downloads: 1880
+    downloads: 1900
     likes: 0
-  - name: zoelaenskii/zinny
-    url: https://huggingface.co/datasets/zoelaenskii/zinny
-    downloads: 1880
-    likes: 1
+    rows: 2560000
   - name: Ephraimmm/WaxalNLPr
     url: https://huggingface.co/datasets/Ephraimmm/WaxalNLPr
-    downloads: 1700
+    downloads: 1790
     likes: 0
+    rows: 2560000
+  - name: fiifinketia/WaxalNLP
+    url: https://huggingface.co/datasets/fiifinketia/WaxalNLP
+    downloads: 1700
+    likes: 1
+    rows: 2550000
+  - name: zoelaenskii/zinny
+    url: https://huggingface.co/datasets/zoelaenskii/zinny
+    downloads: 1450
+    likes: 1
+    rows: 2560000
   - name: 0xzanuee/WaxalNLP
     url: https://huggingface.co/datasets/0xzanuee/WaxalNLP
     downloads: 1400
     likes: 0
-  - name: fsicoli/common_voice_19_0
-    url: https://huggingface.co/datasets/fsicoli/common_voice_19_0
-    downloads: 1310
-    likes: 7
+    rows: 1920000
   - name: UBC-NLP/SimbaBench_dataset
     url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
-    downloads: 1270
+    downloads: 975
     likes: 0
-  - name: novelwolde36/WaxalNLP
-    url: https://huggingface.co/datasets/novelwolde36/WaxalNLP
-    downloads: 334
-    likes: 1
-  - name: YuRiVeRTi/V1Q
-    url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 291
-    likes: 3
+    rows: 748000
+  - name: fsicoli/common_voice_19_0
+    url: https://huggingface.co/datasets/fsicoli/common_voice_19_0
+    downloads: 872
+    likes: 7
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 251
+    downloads: 260
     likes: 11
+    rows: 94400
   - name: bdallhrajh371/WaxalNLP
     url: https://huggingface.co/datasets/bdallhrajh371/WaxalNLP
-    downloads: 249
+    downloads: 250
     likes: 0
+    rows: 2580000
   - name: fsicoli/common_voice_18_0
     url: https://huggingface.co/datasets/fsicoli/common_voice_18_0
-    downloads: 206
+    downloads: 210
     likes: 9
-  - name: claudefitz/WaxalNLP
-    url: https://huggingface.co/datasets/claudefitz/WaxalNLP
-    downloads: 168
-    likes: 0
+  - name: YuRiVeRTi/V1Q
+    url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
+    downloads: 201
+    likes: 3
+    rows: 186000
   - name: ghananlpcommunity/twi-speech-sota-240hrs
     url: https://huggingface.co/datasets/ghananlpcommunity/twi-speech-sota-240hrs
-    downloads: 131
+    downloads: 147
     likes: 0
-  - name: fiifinketia/WaxalNLP
-    url: https://huggingface.co/datasets/fiifinketia/WaxalNLP
-    downloads: 115
-    likes: 1
+    rows: 132000
   - name: ghananlpcommunity/twi-trigrams-speech-text-parallel
     url: https://huggingface.co/datasets/ghananlpcommunity/twi-trigrams-speech-text-parallel
-    downloads: 110
+    downloads: 96
     likes: 0
+    rows: 166000
   - name: ghananlpcommunity/ewe-bible-audio-text-tts
     url: https://huggingface.co/datasets/ghananlpcommunity/ewe-bible-audio-text-tts
-    downloads: 80
+    downloads: 93
     likes: 0
+    rows: 48800
   - name: michsethowusu/twi_multispeaker_audio_transcribed
     url: https://huggingface.co/datasets/michsethowusu/twi_multispeaker_audio_transcribed
-    downloads: 70
+    downloads: 87
+    likes: 0
+    rows: 31300
+  - name: Snagy22000/common_voice_17_0
+    url: https://huggingface.co/datasets/Snagy22000/common_voice_17_0
+    downloads: 86
     likes: 0
   - name: ghananlpcommunity/dagbani-bible-audio-text-tts
     url: https://huggingface.co/datasets/ghananlpcommunity/dagbani-bible-audio-text-tts
-    downloads: 66
+    downloads: 77
     likes: 0
+    rows: 53400
   - name: fiifinketia/twi-trigrams-speech-text-parallel
     url: https://huggingface.co/datasets/fiifinketia/twi-trigrams-speech-text-parallel
-    downloads: 55
+    downloads: 62
     likes: 0
+    rows: 166000
   - name: fiifinketia/dagbani-bible-audio-text-tts
     url: https://huggingface.co/datasets/fiifinketia/dagbani-bible-audio-text-tts
-    downloads: 51
+    downloads: 56
     likes: 0
-  - name: fiifinketia/ewe-bible-audio-text-tts
-    url: https://huggingface.co/datasets/fiifinketia/ewe-bible-audio-text-tts
-    downloads: 50
-    likes: 0
+    rows: 53400
   - name: ghananlpcommunity/ghana-female-twi-8sec-splits
     url: https://huggingface.co/datasets/ghananlpcommunity/ghana-female-twi-8sec-splits
-    downloads: 41
+    downloads: 55
     likes: 0
+    rows: 26000
+  - name: fiifinketia/ewe-bible-audio-text-tts
+    url: https://huggingface.co/datasets/fiifinketia/ewe-bible-audio-text-tts
+    downloads: 54
+    likes: 0
+    rows: 48800
   - name: ghananlpcommunity/ghana-female-twi-asr-16word-splits
     url: https://huggingface.co/datasets/ghananlpcommunity/ghana-female-twi-asr-16word-splits
-    downloads: 39
+    downloads: 51
     likes: 0
-  - name: ghananlpcommunity/navigation-corpus-twi-speech
-    url: https://huggingface.co/datasets/ghananlpcommunity/navigation-corpus-twi-speech
-    downloads: 35
-    likes: 0
+    rows: 26000
   - name: OlameMend/soreva
     url: https://huggingface.co/datasets/OlameMend/soreva
-    downloads: 34
+    downloads: 40
     likes: 7
-  - name: michsethowusu/twi-words-speech-text-parallel-400k
-    url: https://huggingface.co/datasets/michsethowusu/twi-words-speech-text-parallel-400k
-    downloads: 29
-    likes: 0
-  - name: michsethowusu/akuapem_multispeaker_audio_transcribed
-    url: https://huggingface.co/datasets/michsethowusu/akuapem_multispeaker_audio_transcribed
-    downloads: 28
-    likes: 1
   - name: ghananlpcommunity/ghana-female-twi-speech-asr-8word-splits
     url: https://huggingface.co/datasets/ghananlpcommunity/ghana-female-twi-speech-asr-8word-splits
-    downloads: 25
+    downloads: 40
     likes: 0
+    rows: 51100
+  - name: ghananlpcommunity/navigation-corpus-twi-speech
+    url: https://huggingface.co/datasets/ghananlpcommunity/navigation-corpus-twi-speech
+    downloads: 36
+    likes: 0
+    rows: 52600
+  - name: michsethowusu/akuapem_multispeaker_audio_transcribed
+    url: https://huggingface.co/datasets/michsethowusu/akuapem_multispeaker_audio_transcribed
+    downloads: 29
+    likes: 1
+    rows: 28600
+  - name: michsethowusu/twi-words-speech-text-parallel-400k
+    url: https://huggingface.co/datasets/michsethowusu/twi-words-speech-text-parallel-400k
+    downloads: 28
+    likes: 0
+    rows: 413000
   - name: jdapaah/asante-twi-bible
     url: https://huggingface.co/datasets/jdapaah/asante-twi-bible
-    downloads: 24
+    downloads: 17
     likes: 1
+    rows: 60
   - name: worldboss/twi_bible_v2_tts
     url: https://huggingface.co/datasets/worldboss/twi_bible_v2_tts
-    downloads: 13
+    downloads: 15
     likes: 3
-  - name: Lagyamfi/akan_audio_processed
-    url: https://huggingface.co/datasets/Lagyamfi/akan_audio_processed
-    downloads: 10
-    likes: 6
+    rows: 1190
   - name: Ghana-NLP/asante_twi_bible
     url: https://huggingface.co/datasets/Ghana-NLP/asante_twi_bible
-    downloads: 8
+    downloads: 10
     likes: 3
+    rows: 21600
+  - name: Lagyamfi/akan_audio_processed
+    url: https://huggingface.co/datasets/Lagyamfi/akan_audio_processed
+    downloads: 7
+    likes: 6
+    rows: 26900
   - name: d3vnerd/twi_dataset
     url: https://huggingface.co/datasets/d3vnerd/twi_dataset
     downloads: 5
     likes: 0
+    rows: 2440
   - name: worldboss/twi_bible_v1
     url: https://huggingface.co/datasets/worldboss/twi_bible_v1
     downloads: 5
     likes: 0
-  total_count: 43
+    rows: 1190
+  total_count: 44
   counts_by_code:
-    tw: 18
+    tw: 19
     twi: 25
 tts:
   items:
   - name: google/WaxalNLP
     url: https://huggingface.co/datasets/google/WaxalNLP
-    downloads: 11900
-    likes: 218
+    downloads: 12300
+    likes: 219
+    rows: 2560000
   - name: ghananlpcommunity/navigation-corpus-speech-full-twi
     url: https://huggingface.co/datasets/ghananlpcommunity/navigation-corpus-speech-full-twi
     downloads: 6260
     likes: 0
+    rows: 1500
+  - name: claudefitz/WaxalNLP
+    url: https://huggingface.co/datasets/claudefitz/WaxalNLP
+    downloads: 3620
+    likes: 0
+    rows: 2560000
   - name: BolajiJsAI/WaxalNLP
     url: https://huggingface.co/datasets/BolajiJsAI/WaxalNLP
-    downloads: 2390
+    downloads: 2510
     likes: 1
+    rows: 2560000
   - name: jaymunshi/open-swara
     url: https://huggingface.co/datasets/jaymunshi/open-swara
-    downloads: 2200
+    downloads: 2180
     likes: 5
   - name: ngoloan/WaxalNLP
     url: https://huggingface.co/datasets/ngoloan/WaxalNLP
-    downloads: 1960
+    downloads: 2130
     likes: 0
+    rows: 2040000
+  - name: novelwolde36/WaxalNLP
+    url: https://huggingface.co/datasets/novelwolde36/WaxalNLP
+    downloads: 1990
+    likes: 1
+    rows: 2550000
   - name: Phsntom/WaxalNLP
     url: https://huggingface.co/datasets/Phsntom/WaxalNLP
-    downloads: 1880
+    downloads: 1900
     likes: 0
-  - name: zoelaenskii/zinny
-    url: https://huggingface.co/datasets/zoelaenskii/zinny
-    downloads: 1880
-    likes: 1
+    rows: 2560000
   - name: Ephraimmm/WaxalNLPr
     url: https://huggingface.co/datasets/Ephraimmm/WaxalNLPr
-    downloads: 1700
+    downloads: 1790
     likes: 0
+    rows: 2560000
+  - name: fiifinketia/WaxalNLP
+    url: https://huggingface.co/datasets/fiifinketia/WaxalNLP
+    downloads: 1700
+    likes: 1
+    rows: 2550000
+  - name: zoelaenskii/zinny
+    url: https://huggingface.co/datasets/zoelaenskii/zinny
+    downloads: 1450
+    likes: 1
+    rows: 2560000
   - name: 0xzanuee/WaxalNLP
     url: https://huggingface.co/datasets/0xzanuee/WaxalNLP
     downloads: 1400
     likes: 0
-  - name: UBC-NLP/SimbaBench_dataset
-    url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
-    downloads: 1270
-    likes: 0
+    rows: 1920000
   - name: sarulab-speech/commonvoice22_sidon
     url: https://huggingface.co/datasets/sarulab-speech/commonvoice22_sidon
-    downloads: 891
-    likes: 27
-  - name: novelwolde36/WaxalNLP
-    url: https://huggingface.co/datasets/novelwolde36/WaxalNLP
-    downloads: 334
-    likes: 1
-  - name: YuRiVeRTi/V1Q
-    url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 291
-    likes: 3
+    downloads: 1110
+    likes: 29
+    rows: 15100000
+  - name: UBC-NLP/SimbaBench_dataset
+    url: https://huggingface.co/datasets/UBC-NLP/SimbaBench_dataset
+    downloads: 975
+    likes: 0
+    rows: 748000
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 251
+    downloads: 260
     likes: 11
+    rows: 94400
   - name: bdallhrajh371/WaxalNLP
     url: https://huggingface.co/datasets/bdallhrajh371/WaxalNLP
-    downloads: 249
+    downloads: 250
     likes: 0
-  - name: claudefitz/WaxalNLP
-    url: https://huggingface.co/datasets/claudefitz/WaxalNLP
-    downloads: 168
-    likes: 0
+    rows: 2580000
+  - name: YuRiVeRTi/V1Q
+    url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
+    downloads: 201
+    likes: 3
+    rows: 186000
   - name: ghananlpcommunity/twi-speech-sota-240hrs
     url: https://huggingface.co/datasets/ghananlpcommunity/twi-speech-sota-240hrs
-    downloads: 131
+    downloads: 147
     likes: 0
-  - name: fiifinketia/WaxalNLP
-    url: https://huggingface.co/datasets/fiifinketia/WaxalNLP
-    downloads: 115
-    likes: 1
+    rows: 132000
   - name: ghananlpcommunity/twi-trigrams-speech-text-parallel
     url: https://huggingface.co/datasets/ghananlpcommunity/twi-trigrams-speech-text-parallel
-    downloads: 110
+    downloads: 96
     likes: 0
+    rows: 166000
   - name: ghananlpcommunity/ewe-bible-audio-text-tts
     url: https://huggingface.co/datasets/ghananlpcommunity/ewe-bible-audio-text-tts
-    downloads: 80
+    downloads: 93
     likes: 0
+    rows: 48800
   - name: ghananlpcommunity/dagbani-bible-audio-text-tts
     url: https://huggingface.co/datasets/ghananlpcommunity/dagbani-bible-audio-text-tts
-    downloads: 66
+    downloads: 77
     likes: 0
+    rows: 53400
   - name: fiifinketia/twi-trigrams-speech-text-parallel
     url: https://huggingface.co/datasets/fiifinketia/twi-trigrams-speech-text-parallel
-    downloads: 55
+    downloads: 62
     likes: 0
+    rows: 166000
   - name: fiifinketia/dagbani-bible-audio-text-tts
     url: https://huggingface.co/datasets/fiifinketia/dagbani-bible-audio-text-tts
-    downloads: 51
+    downloads: 56
     likes: 0
-  - name: fiifinketia/ewe-bible-audio-text-tts
-    url: https://huggingface.co/datasets/fiifinketia/ewe-bible-audio-text-tts
-    downloads: 50
-    likes: 0
+    rows: 53400
   - name: ghananlpcommunity/ghana-female-twi-8sec-splits
     url: https://huggingface.co/datasets/ghananlpcommunity/ghana-female-twi-8sec-splits
-    downloads: 41
+    downloads: 55
     likes: 0
+    rows: 26000
+  - name: fiifinketia/ewe-bible-audio-text-tts
+    url: https://huggingface.co/datasets/fiifinketia/ewe-bible-audio-text-tts
+    downloads: 54
+    likes: 0
+    rows: 48800
   - name: ghananlpcommunity/ghana-female-twi-asr-16word-splits
     url: https://huggingface.co/datasets/ghananlpcommunity/ghana-female-twi-asr-16word-splits
-    downloads: 39
+    downloads: 51
     likes: 0
-  - name: ghananlpcommunity/navigation-corpus-twi-speech
-    url: https://huggingface.co/datasets/ghananlpcommunity/navigation-corpus-twi-speech
-    downloads: 35
-    likes: 0
+    rows: 26000
   - name: OlameMend/soreva
     url: https://huggingface.co/datasets/OlameMend/soreva
-    downloads: 34
+    downloads: 40
     likes: 7
-  - name: hci-lab-dcug/bibletts-asante-twi-max29secs-total9hrs-sr22050
-    url: https://huggingface.co/datasets/hci-lab-dcug/bibletts-asante-twi-max29secs-total9hrs-sr22050
-    downloads: 30
-    likes: 1
-  - name: michsethowusu/twi-words-speech-text-parallel-400k
-    url: https://huggingface.co/datasets/michsethowusu/twi-words-speech-text-parallel-400k
-    downloads: 29
-    likes: 0
   - name: ghananlpcommunity/ghana-female-twi-speech-asr-8word-splits
     url: https://huggingface.co/datasets/ghananlpcommunity/ghana-female-twi-speech-asr-8word-splits
-    downloads: 25
+    downloads: 40
     likes: 0
+    rows: 51100
+  - name: ghananlpcommunity/navigation-corpus-twi-speech
+    url: https://huggingface.co/datasets/ghananlpcommunity/navigation-corpus-twi-speech
+    downloads: 36
+    likes: 0
+    rows: 52600
+  - name: michsethowusu/twi-words-speech-text-parallel-400k
+    url: https://huggingface.co/datasets/michsethowusu/twi-words-speech-text-parallel-400k
+    downloads: 28
+    likes: 0
+    rows: 413000
+  - name: hci-lab-dcug/bibletts-asante-twi-max29secs-total9hrs-sr22050
+    url: https://huggingface.co/datasets/hci-lab-dcug/bibletts-asante-twi-max29secs-total9hrs-sr22050
+    downloads: 26
+    likes: 1
+    rows: 3250
   - name: jdapaah/asante-twi-bible
     url: https://huggingface.co/datasets/jdapaah/asante-twi-bible
-    downloads: 24
+    downloads: 17
     likes: 1
+    rows: 60
   - name: worldboss/twi_bible_v2_tts
     url: https://huggingface.co/datasets/worldboss/twi_bible_v2_tts
-    downloads: 13
+    downloads: 15
     likes: 3
-  - name: Lagyamfi/akan_audio_processed
-    url: https://huggingface.co/datasets/Lagyamfi/akan_audio_processed
-    downloads: 10
-    likes: 6
+    rows: 1190
   - name: Ghana-NLP/asante_twi_bible
     url: https://huggingface.co/datasets/Ghana-NLP/asante_twi_bible
-    downloads: 8
+    downloads: 10
     likes: 3
+    rows: 21600
+  - name: Lagyamfi/akan_audio_processed
+    url: https://huggingface.co/datasets/Lagyamfi/akan_audio_processed
+    downloads: 7
+    likes: 6
+    rows: 26900
   - name: worldboss/twi_bible_v1
     url: https://huggingface.co/datasets/worldboss/twi_bible_v1
     downloads: 5
     likes: 0
+    rows: 1190
   total_count: 36
   counts_by_code:
     tw: 13
@@ -330,180 +403,210 @@ translation:
   items:
   - name: facebook/flores
     url: https://huggingface.co/datasets/facebook/flores
-    downloads: 44500
+    downloads: 43400
     likes: 97
   - name: openlanguagedata/flores_plus
     url: https://huggingface.co/datasets/openlanguagedata/flores_plus
-    downloads: 19500
-    likes: 123
+    downloads: 15800
+    likes: 124
+    rows: 893000
   - name: CohereLabs/aya_collection
     url: https://huggingface.co/datasets/CohereLabs/aya_collection
-    downloads: 11600
+    downloads: 12600
     likes: 234
-  - name: aiana94/polynews-parallel
-    url: https://huggingface.co/datasets/aiana94/polynews-parallel
-    downloads: 2410
-    likes: 13
-  - name: facebook/bouquet
-    url: https://huggingface.co/datasets/facebook/bouquet
-    downloads: 1830
-    likes: 33
+    rows: 514000000
   - name: Muennighoff/flores200
     url: https://huggingface.co/datasets/Muennighoff/flores200
-    downloads: 1710
+    downloads: 1650
     likes: 20
+  - name: facebook/bouquet
+    url: https://huggingface.co/datasets/facebook/bouquet
+    downloads: 1570
+    likes: 33
+    rows: 5640000
+  - name: aiana94/polynews-parallel
+    url: https://huggingface.co/datasets/aiana94/polynews-parallel
+    downloads: 1350
+    likes: 13
+    rows: 5390000
   - name: ayymen/Pontoon-Translations
     url: https://huggingface.co/datasets/ayymen/Pontoon-Translations
-    downloads: 870
+    downloads: 1120
     likes: 18
+    rows: 3560000
   - name: masakhane/mafand
     url: https://huggingface.co/datasets/masakhane/mafand
-    downloads: 747
+    downloads: 463
     likes: 15
-  - name: sbmaruf/forai_ml_masakhane_mafand
-    url: https://huggingface.co/datasets/sbmaruf/forai_ml_masakhane_mafand
-    downloads: 474
-    likes: 2
+    rows: 143000
   - name: ayymen/Weblate-Translations
     url: https://huggingface.co/datasets/ayymen/Weblate-Translations
-    downloads: 465
+    downloads: 383
     likes: 18
-  - name: visheratin/laion-coco-nllb
-    url: https://huggingface.co/datasets/visheratin/laion-coco-nllb
-    downloads: 393
-    likes: 44
+    rows: 11700000
+  - name: sbmaruf/forai_ml_masakhane_mafand
+    url: https://huggingface.co/datasets/sbmaruf/forai_ml_masakhane_mafand
+    downloads: 365
+    likes: 2
+    rows: 136000
   - name: mteb/FloresBitextMining
     url: https://huggingface.co/datasets/mteb/FloresBitextMining
-    downloads: 293
+    downloads: 303
     likes: 1
+    rows: 2009
+  - name: visheratin/laion-coco-nllb
+    url: https://huggingface.co/datasets/visheratin/laion-coco-nllb
+    downloads: 255
+    likes: 44
+    rows: 894000
   - name: YuRiVeRTi/V1Q
     url: https://huggingface.co/datasets/YuRiVeRTi/V1Q
-    downloads: 291
+    downloads: 201
     likes: 3
+    rows: 186000
   - name: slone/nllb-200-10M-sample
     url: https://huggingface.co/datasets/slone/nllb-200-10M-sample
-    downloads: 249
+    downloads: 168
     likes: 13
-  - name: atenglens/taiwanese_english_translation
-    url: https://huggingface.co/datasets/atenglens/taiwanese_english_translation
-    downloads: 221
-    likes: 4
-  - name: mteb/biblenlp-corpus-mmteb
-    url: https://huggingface.co/datasets/mteb/biblenlp-corpus-mmteb
-    downloads: 139
-    likes: 2
+    rows: 9980000
   - name: bible-nlp/biblenlp-corpus
     url: https://huggingface.co/datasets/bible-nlp/biblenlp-corpus
-    downloads: 133
+    downloads: 164
     likes: 37
+  - name: mteb/biblenlp-corpus-mmteb
+    url: https://huggingface.co/datasets/mteb/biblenlp-corpus-mmteb
+    downloads: 146
+    likes: 2
+    rows: 3490000
+  - name: atenglens/taiwanese_english_translation
+    url: https://huggingface.co/datasets/atenglens/taiwanese_english_translation
+    downloads: 138
+    likes: 4
   - name: community-datasets/udhr
     url: https://huggingface.co/datasets/community-datasets/udhr
-    downloads: 127
+    downloads: 123
     likes: 2
-  - name: mteb/flores
-    url: https://huggingface.co/datasets/mteb/flores
-    downloads: 125
-    likes: 0
   - name: Helsinki-NLP/qed_amara
     url: https://huggingface.co/datasets/Helsinki-NLP/qed_amara
-    downloads: 113
+    downloads: 114
     likes: 5
-  - name: Tadesse/COMET_score
-    url: https://huggingface.co/datasets/Tadesse/COMET_score
-    downloads: 113
-    likes: 0
   - name: Helsinki-NLP/php
     url: https://huggingface.co/datasets/Helsinki-NLP/php
-    downloads: 108
+    downloads: 111
     likes: 4
+  - name: mteb/flores
+    url: https://huggingface.co/datasets/mteb/flores
+    downloads: 96
+    likes: 0
+    rows: 2009
+  - name: Tadesse/COMET_score
+    url: https://huggingface.co/datasets/Tadesse/COMET_score
+    downloads: 80
+    likes: 0
+    rows: 127000
   - name: cis-lmu/GlotStoryBook
     url: https://huggingface.co/datasets/cis-lmu/GlotStoryBook
-    downloads: 74
+    downloads: 67
     likes: 7
+    rows: 80100
   - name: ghananlpcommunity/english-twi-sentences-non-nouns
     url: https://huggingface.co/datasets/ghananlpcommunity/english-twi-sentences-non-nouns
-    downloads: 58
+    downloads: 59
     likes: 0
-  - name: robinhad/long_flores
-    url: https://huggingface.co/datasets/robinhad/long_flores
-    downloads: 47
-    likes: 0
+    rows: 1760000
   - name: vpermilp/nllb-200-distilled-600M-rust
     url: https://huggingface.co/datasets/vpermilp/nllb-200-distilled-600M-rust
-    downloads: 45
+    downloads: 51
     likes: 1
+  - name: robinhad/long_flores
+    url: https://huggingface.co/datasets/robinhad/long_flores
+    downloads: 49
+    likes: 0
   - name: michsethowusu/twi-english-parallel-synthetic-50m
     url: https://huggingface.co/datasets/michsethowusu/twi-english-parallel-synthetic-50m
-    downloads: 44
+    downloads: 48
     likes: 2
-  - name: Lagyamfi/akan_audio
-    url: https://huggingface.co/datasets/Lagyamfi/akan_audio
-    downloads: 40
-    likes: 1
-  - name: jtz18/biblenlp-corpus
-    url: https://huggingface.co/datasets/jtz18/biblenlp-corpus
-    downloads: 35
+    rows: 47900000
+  - name: janavivekariya/aya_collection
+    url: https://huggingface.co/datasets/janavivekariya/aya_collection
+    downloads: 43
     likes: 0
-  - name: Svngoku/xP3x-Kongo
-    url: https://huggingface.co/datasets/Svngoku/xP3x-Kongo
-    downloads: 32
-    likes: 4
+    rows: 514000000
   - name: ghananlpcommunity/navigation-corpus-twi
     url: https://huggingface.co/datasets/ghananlpcommunity/navigation-corpus-twi
-    downloads: 31
+    downloads: 32
+    likes: 0
+    rows: 4640
+  - name: Svngoku/xP3x-Kongo
+    url: https://huggingface.co/datasets/Svngoku/xP3x-Kongo
+    downloads: 30
+    likes: 4
+    rows: 1220000
+  - name: timothyhartzog/biblenlp-corpus
+    url: https://huggingface.co/datasets/timothyhartzog/biblenlp-corpus
+    downloads: 29
     likes: 0
   - name: fiifinketia/navigation-corpus-twi
     url: https://huggingface.co/datasets/fiifinketia/navigation-corpus-twi
     downloads: 29
     likes: 0
-  - name: timothyhartzog/biblenlp-corpus
-    url: https://huggingface.co/datasets/timothyhartzog/biblenlp-corpus
+    rows: 4640
+  - name: jtz18/biblenlp-corpus
+    url: https://huggingface.co/datasets/jtz18/biblenlp-corpus
     downloads: 28
     likes: 0
   - name: kargaranamir/GlotStoryBook-backup
     url: https://huggingface.co/datasets/kargaranamir/GlotStoryBook-backup
-    downloads: 27
+    downloads: 21
     likes: 0
+    rows: 80100
+  - name: Lagyamfi/akan_audio
+    url: https://huggingface.co/datasets/Lagyamfi/akan_audio
+    downloads: 20
+    likes: 1
   - name: jdapaah/asante-twi-bible
     url: https://huggingface.co/datasets/jdapaah/asante-twi-bible
-    downloads: 24
+    downloads: 17
     likes: 1
+    rows: 60
   - name: neulab/PangeaBench-flores
     url: https://huggingface.co/datasets/neulab/PangeaBench-flores
-    downloads: 23
+    downloads: 17
     likes: 0
-  - name: janavivekariya/aya_collection
-    url: https://huggingface.co/datasets/janavivekariya/aya_collection
-    downloads: 20
-    likes: 0
-  - name: SupriyoCode/flores200
-    url: https://huggingface.co/datasets/SupriyoCode/flores200
-    downloads: 16
-    likes: 0
+  - name: Heng666/TED2020-TW-Corpus
+    url: https://huggingface.co/datasets/Heng666/TED2020-TW-Corpus
+    downloads: 14
+    likes: 5
+    rows: 1740000
   - name: ghananlpcommunity/english-twi-nouns
     url: https://huggingface.co/datasets/ghananlpcommunity/english-twi-nouns
     downloads: 13
     likes: 0
+    rows: 2430000
   - name: michsethowusu/twi_words
     url: https://huggingface.co/datasets/michsethowusu/twi_words
-    downloads: 12
+    downloads: 11
     likes: 1
+    rows: 59600
+  - name: SupriyoCode/flores200
+    url: https://huggingface.co/datasets/SupriyoCode/flores200
+    downloads: 11
+    likes: 0
   - name: Heng666/MultiCCAligned-TW-Corpus
     url: https://huggingface.co/datasets/Heng666/MultiCCAligned-TW-Corpus
-    downloads: 9
+    downloads: 10
     likes: 7
-  - name: Heng666/TED2020-TW-Corpus
-    url: https://huggingface.co/datasets/Heng666/TED2020-TW-Corpus
-    downloads: 6
-    likes: 5
-  - name: KwekuAinoo/eng_twi
-    url: https://huggingface.co/datasets/KwekuAinoo/eng_twi
-    downloads: 6
-    likes: 0
+    rows: 3130000
   - name: worldboss/twi_bible_v1
     url: https://huggingface.co/datasets/worldboss/twi_bible_v1
     downloads: 5
     likes: 0
+    rows: 1190
+  - name: KwekuAinoo/eng_twi
+    url: https://huggingface.co/datasets/KwekuAinoo/eng_twi
+    downloads: 4
+    likes: 0
+    rows: 561000
   total_count: 45
   counts_by_code:
     tw: 30

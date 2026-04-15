@@ -2,60 +2,74 @@ asr:
   items:
   - name: google/WaxalNLP
     url: https://huggingface.co/datasets/google/WaxalNLP
-    downloads: 11900
-    likes: 218
+    downloads: 12300
+    likes: 219
+    rows: 2560000
   - name: ghananlpcommunity/navigation-corpus-speech-full-dagbani
     url: https://huggingface.co/datasets/ghananlpcommunity/navigation-corpus-speech-full-dagbani
     downloads: 6930
     likes: 0
+    rows: 1500
+  - name: claudefitz/WaxalNLP
+    url: https://huggingface.co/datasets/claudefitz/WaxalNLP
+    downloads: 3620
+    likes: 0
+    rows: 2560000
   - name: BolajiJsAI/WaxalNLP
     url: https://huggingface.co/datasets/BolajiJsAI/WaxalNLP
-    downloads: 2390
+    downloads: 2510
     likes: 1
+    rows: 2560000
   - name: ngoloan/WaxalNLP
     url: https://huggingface.co/datasets/ngoloan/WaxalNLP
-    downloads: 1960
+    downloads: 2130
     likes: 0
+    rows: 2040000
+  - name: novelwolde36/WaxalNLP
+    url: https://huggingface.co/datasets/novelwolde36/WaxalNLP
+    downloads: 1990
+    likes: 1
+    rows: 2550000
   - name: Phsntom/WaxalNLP
     url: https://huggingface.co/datasets/Phsntom/WaxalNLP
-    downloads: 1880
+    downloads: 1900
     likes: 0
-  - name: zoelaenskii/zinny
-    url: https://huggingface.co/datasets/zoelaenskii/zinny
-    downloads: 1880
-    likes: 1
+    rows: 2560000
   - name: Ephraimmm/WaxalNLPr
     url: https://huggingface.co/datasets/Ephraimmm/WaxalNLPr
-    downloads: 1700
+    downloads: 1790
     likes: 0
+    rows: 2560000
+  - name: fiifinketia/WaxalNLP
+    url: https://huggingface.co/datasets/fiifinketia/WaxalNLP
+    downloads: 1700
+    likes: 1
+    rows: 2550000
+  - name: zoelaenskii/zinny
+    url: https://huggingface.co/datasets/zoelaenskii/zinny
+    downloads: 1450
+    likes: 1
+    rows: 2560000
   - name: 0xzanuee/WaxalNLP
     url: https://huggingface.co/datasets/0xzanuee/WaxalNLP
     downloads: 1400
     likes: 0
-  - name: novelwolde36/WaxalNLP
-    url: https://huggingface.co/datasets/novelwolde36/WaxalNLP
-    downloads: 334
-    likes: 1
+    rows: 1920000
   - name: bdallhrajh371/WaxalNLP
     url: https://huggingface.co/datasets/bdallhrajh371/WaxalNLP
-    downloads: 249
+    downloads: 250
     likes: 0
-  - name: claudefitz/WaxalNLP
-    url: https://huggingface.co/datasets/claudefitz/WaxalNLP
-    downloads: 168
-    likes: 0
-  - name: fiifinketia/WaxalNLP
-    url: https://huggingface.co/datasets/fiifinketia/WaxalNLP
-    downloads: 115
-    likes: 1
+    rows: 2580000
   - name: fiifinketia/navigation-corpus-dagbani-speech
     url: https://huggingface.co/datasets/fiifinketia/navigation-corpus-dagbani-speech
-    downloads: 44
+    downloads: 49
     likes: 0
+    rows: 52800
   - name: ghananlpcommunity/navigation-corpus-dagbani-speech
     url: https://huggingface.co/datasets/ghananlpcommunity/navigation-corpus-dagbani-speech
-    downloads: 33
+    downloads: 36
     likes: 0
+    rows: 52800
   total_count: 14
   counts_by_code:
     dag: 14
@@ -63,60 +77,74 @@ tts:
   items:
   - name: google/WaxalNLP
     url: https://huggingface.co/datasets/google/WaxalNLP
-    downloads: 11900
-    likes: 218
+    downloads: 12300
+    likes: 219
+    rows: 2560000
   - name: ghananlpcommunity/navigation-corpus-speech-full-dagbani
     url: https://huggingface.co/datasets/ghananlpcommunity/navigation-corpus-speech-full-dagbani
     downloads: 6930
     likes: 0
+    rows: 1500
+  - name: claudefitz/WaxalNLP
+    url: https://huggingface.co/datasets/claudefitz/WaxalNLP
+    downloads: 3620
+    likes: 0
+    rows: 2560000
   - name: BolajiJsAI/WaxalNLP
     url: https://huggingface.co/datasets/BolajiJsAI/WaxalNLP
-    downloads: 2390
+    downloads: 2510
     likes: 1
+    rows: 2560000
   - name: ngoloan/WaxalNLP
     url: https://huggingface.co/datasets/ngoloan/WaxalNLP
-    downloads: 1960
+    downloads: 2130
     likes: 0
+    rows: 2040000
+  - name: novelwolde36/WaxalNLP
+    url: https://huggingface.co/datasets/novelwolde36/WaxalNLP
+    downloads: 1990
+    likes: 1
+    rows: 2550000
   - name: Phsntom/WaxalNLP
     url: https://huggingface.co/datasets/Phsntom/WaxalNLP
-    downloads: 1880
+    downloads: 1900
     likes: 0
-  - name: zoelaenskii/zinny
-    url: https://huggingface.co/datasets/zoelaenskii/zinny
-    downloads: 1880
-    likes: 1
+    rows: 2560000
   - name: Ephraimmm/WaxalNLPr
     url: https://huggingface.co/datasets/Ephraimmm/WaxalNLPr
-    downloads: 1700
+    downloads: 1790
     likes: 0
+    rows: 2560000
+  - name: fiifinketia/WaxalNLP
+    url: https://huggingface.co/datasets/fiifinketia/WaxalNLP
+    downloads: 1700
+    likes: 1
+    rows: 2550000
+  - name: zoelaenskii/zinny
+    url: https://huggingface.co/datasets/zoelaenskii/zinny
+    downloads: 1450
+    likes: 1
+    rows: 2560000
   - name: 0xzanuee/WaxalNLP
     url: https://huggingface.co/datasets/0xzanuee/WaxalNLP
     downloads: 1400
     likes: 0
-  - name: novelwolde36/WaxalNLP
-    url: https://huggingface.co/datasets/novelwolde36/WaxalNLP
-    downloads: 334
-    likes: 1
+    rows: 1920000
   - name: bdallhrajh371/WaxalNLP
     url: https://huggingface.co/datasets/bdallhrajh371/WaxalNLP
-    downloads: 249
+    downloads: 250
     likes: 0
-  - name: claudefitz/WaxalNLP
-    url: https://huggingface.co/datasets/claudefitz/WaxalNLP
-    downloads: 168
-    likes: 0
-  - name: fiifinketia/WaxalNLP
-    url: https://huggingface.co/datasets/fiifinketia/WaxalNLP
-    downloads: 115
-    likes: 1
+    rows: 2580000
   - name: fiifinketia/navigation-corpus-dagbani-speech
     url: https://huggingface.co/datasets/fiifinketia/navigation-corpus-dagbani-speech
-    downloads: 44
+    downloads: 49
     likes: 0
+    rows: 52800
   - name: ghananlpcommunity/navigation-corpus-dagbani-speech
     url: https://huggingface.co/datasets/ghananlpcommunity/navigation-corpus-dagbani-speech
-    downloads: 33
+    downloads: 36
     likes: 0
+    rows: 52800
   total_count: 14
   counts_by_code:
     dag: 14
@@ -124,20 +152,23 @@ translation:
   items:
   - name: ayymen/Pontoon-Translations
     url: https://huggingface.co/datasets/ayymen/Pontoon-Translations
-    downloads: 870
+    downloads: 1120
     likes: 18
+    rows: 3560000
   - name: community-datasets/udhr
     url: https://huggingface.co/datasets/community-datasets/udhr
-    downloads: 127
+    downloads: 123
     likes: 2
   - name: cis-lmu/GlotStoryBook
     url: https://huggingface.co/datasets/cis-lmu/GlotStoryBook
-    downloads: 74
+    downloads: 67
     likes: 7
+    rows: 80100
   - name: kargaranamir/GlotStoryBook-backup
     url: https://huggingface.co/datasets/kargaranamir/GlotStoryBook-backup
-    downloads: 27
+    downloads: 21
     likes: 0
+    rows: 80100
   total_count: 4
   counts_by_code:
     dag: 4

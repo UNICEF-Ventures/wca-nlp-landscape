@@ -2,15 +2,17 @@ asr:
   items:
   - name: facebook/omnilingual-asr-corpus
     url: https://huggingface.co/datasets/facebook/omnilingual-asr-corpus
-    downloads: 2540
+    downloads: 2580
     likes: 200
+    rows: 548000
   - name: Sellopale/omnilingualpaleoi
     url: https://huggingface.co/datasets/Sellopale/omnilingualpaleoi
-    downloads: 25
+    downloads: 28
     likes: 1
+    rows: 548000
   - name: sil-ai/bloom-speech
     url: https://huggingface.co/datasets/sil-ai/bloom-speech
-    downloads: 15
+    downloads: 16
     likes: 25
   total_count: 3
   counts_by_code:
@@ -19,7 +21,7 @@ tts:
   items:
   - name: sil-ai/bloom-speech
     url: https://huggingface.co/datasets/sil-ai/bloom-speech
-    downloads: 15
+    downloads: 16
     likes: 25
   total_count: 1
   counts_by_code:
@@ -28,27 +30,30 @@ translation:
   items:
   - name: gtak1/panlex-meanings
     url: https://huggingface.co/datasets/gtak1/panlex-meanings
-    downloads: 6310
+    downloads: 6280
     likes: 0
+    rows: 64099999
   - name: ayymen/Pontoon-Translations
     url: https://huggingface.co/datasets/ayymen/Pontoon-Translations
-    downloads: 870
+    downloads: 1120
     likes: 18
+    rows: 3560000
   - name: cointegrated/panlex-meanings
     url: https://huggingface.co/datasets/cointegrated/panlex-meanings
-    downloads: 279
-    likes: 12
+    downloads: 255
+    likes: 13
+    rows: 157000000
   - name: community-datasets/udhr
     url: https://huggingface.co/datasets/community-datasets/udhr
-    downloads: 127
+    downloads: 123
     likes: 2
   - name: FrancophonIA/Lexicologie_du_soninke
     url: https://huggingface.co/datasets/FrancophonIA/Lexicologie_du_soninke
-    downloads: 16
+    downloads: 15
     likes: 0
   - name: FrancophonIA/Lexique_Soninke-Francais-Anglais
     url: https://huggingface.co/datasets/FrancophonIA/Lexique_Soninke-Francais-Anglais
-    downloads: 15
+    downloads: 14
     likes: 0
   total_count: 6
   counts_by_code:

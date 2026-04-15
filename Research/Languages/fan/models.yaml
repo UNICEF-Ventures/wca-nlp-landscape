@@ -2,7 +2,7 @@ asr:
   items:
   - name: espnet/xeus
     url: https://huggingface.co/espnet/xeus
-    downloads: 49
+    downloads: 60
     likes: 146
   total_count: 1
   counts_by_code:
@@ -11,58 +11,75 @@ tts:
   items:
   - name: k2-fsa/OmniVoice
     url: https://huggingface.co/k2-fsa/OmniVoice
-    downloads: 270000
-    likes: 451
+    downloads: 606000
+    likes: 577
   - name: drbaph/OmniVoice-bf16
     url: https://huggingface.co/drbaph/OmniVoice-bf16
-    downloads: 3310
-    likes: 9
+    downloads: 4710
+    likes: 13
   - name: splendor1811/omnivoice-vietnamese
     url: https://huggingface.co/splendor1811/omnivoice-vietnamese
-    downloads: 285
+    downloads: 672
     likes: 2
-  - name: LeeAeron/OmniVoice
-    url: https://huggingface.co/LeeAeron/OmniVoice
-    downloads: 92
-    likes: 0
+    size: 0.6B
+  - name: gluschenko/omnivoice-onnx
+    url: https://huggingface.co/gluschenko/omnivoice-onnx
+    downloads: 397
+    likes: 4
   - name: edwixx/OmniVoice
     url: https://huggingface.co/edwixx/OmniVoice
-    downloads: 30
+    downloads: 163
     likes: 0
   - name: WANJIAX2197/OmniVoice
     url: https://huggingface.co/WANJIAX2197/OmniVoice
-    downloads: 29
+    downloads: 30
     likes: 0
-  - name: gluschenko/omnivoice-onnx
-    url: https://huggingface.co/gluschenko/omnivoice-onnx
+  - name: Bgeorge/OmniVoice
+    url: https://huggingface.co/Bgeorge/OmniVoice
+    downloads: 25
+    likes: 1
+  - name: yash3120/OmniVoice
+    url: https://huggingface.co/yash3120/OmniVoice
     downloads: 25
     likes: 0
   - name: ex510/OmniVoice
     url: https://huggingface.co/ex510/OmniVoice
+    downloads: 19
+    likes: 0
+  - name: razi08/OmniVoice
+    url: https://huggingface.co/razi08/OmniVoice
     downloads: 17
     likes: 0
-  - name: Bgeorge/OmniVoice
-    url: https://huggingface.co/Bgeorge/OmniVoice
-    downloads: 16
-    likes: 1
   - name: Manish993135/OmniVoice
     url: https://huggingface.co/Manish993135/OmniVoice
     downloads: 16
+    likes: 0
+  - name: riasatsk/OmniVoice
+    url: https://huggingface.co/riasatsk/OmniVoice
+    downloads: 16
+    likes: 0
+  - name: harsha7286/OmniVoice
+    url: https://huggingface.co/harsha7286/OmniVoice
+    downloads: 15
+    likes: 0
+  - name: lopho/OmniVoice
+    url: https://huggingface.co/lopho/OmniVoice
+    downloads: 15
+    likes: 0
+  - name: bilalRHCH/Arabic-text-to-speech
+    url: https://huggingface.co/bilalRHCH/Arabic-text-to-speech
+    downloads: 14
     likes: 0
   - name: phucpx247/OmniVoice
     url: https://huggingface.co/phucpx247/OmniVoice
     downloads: 14
     likes: 0
-  - name: razi08/OmniVoice
-    url: https://huggingface.co/razi08/OmniVoice
-    downloads: 14
-    likes: 0
   - name: gubernac/OmniVoice
     url: https://huggingface.co/gubernac/OmniVoice
     downloads: 13
-    likes: 0
-  - name: harsha7286/OmniVoice
-    url: https://huggingface.co/harsha7286/OmniVoice
+    likes: 1
+  - name: preference1/OmniVoice
+    url: https://huggingface.co/preference1/OmniVoice
     downloads: 13
     likes: 0
   - name: EBINSHAJI1999/OmniVoice
@@ -73,25 +90,21 @@ tts:
     url: https://huggingface.co/Citrus-777/OmniVoice
     downloads: 12
     likes: 0
-  - name: bilalRHCH/Arabic-text-to-speech
-    url: https://huggingface.co/bilalRHCH/Arabic-text-to-speech
-    downloads: 12
-    likes: 0
-  - name: preference1/OmniVoice
-    url: https://huggingface.co/preference1/OmniVoice
-    downloads: 12
-    likes: 0
-  - name: lopho/OmniVoice
-    url: https://huggingface.co/lopho/OmniVoice
-    downloads: 12
-    likes: 0
   - name: Koyiljon/OmniVoice
     url: https://huggingface.co/Koyiljon/OmniVoice
     downloads: 11
     likes: 0
-  total_count: 20
+  - name: arthurhenriqueabreu/OmniVoice
+    url: https://huggingface.co/arthurhenriqueabreu/OmniVoice
+    downloads: 11
+    likes: 0
+  - name: kongwang/OmniVoice
+    url: https://huggingface.co/kongwang/OmniVoice
+    downloads: 10
+    likes: 0
+  total_count: 23
   counts_by_code:
-    fan: 20
+    fan: 23
 translation:
   total_count: 0
   counts_by_code: {}
@@ -99,15 +112,17 @@ llm:
   items:
   - name: UBC-NLP/toucan-base
     url: https://huggingface.co/UBC-NLP/toucan-base
-    downloads: 2380
+    downloads: 2540
     likes: 5
+    size: 0.6B
   - name: UBC-NLP/toucan-1.2B
     url: https://huggingface.co/UBC-NLP/toucan-1.2B
-    downloads: 1840
+    downloads: 1870
     likes: 1
+    size: 1B
   - name: UBC-NLP/cheetah-1.2B
     url: https://huggingface.co/UBC-NLP/cheetah-1.2B
-    downloads: 0
+    downloads: 33
     likes: 4
   total_count: 3
   counts_by_code:

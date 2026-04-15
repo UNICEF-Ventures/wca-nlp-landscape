@@ -8,15 +8,17 @@ translation:
   items:
   - name: gtak1/panlex-meanings
     url: https://huggingface.co/datasets/gtak1/panlex-meanings
-    downloads: 6310
+    downloads: 6280
     likes: 0
+    rows: 64099999
   - name: cointegrated/panlex-meanings
     url: https://huggingface.co/datasets/cointegrated/panlex-meanings
-    downloads: 279
-    likes: 12
+    downloads: 255
+    likes: 13
+    rows: 157000000
   - name: community-datasets/udhr
     url: https://huggingface.co/datasets/community-datasets/udhr
-    downloads: 127
+    downloads: 123
     likes: 2
   total_count: 3
   counts_by_code:

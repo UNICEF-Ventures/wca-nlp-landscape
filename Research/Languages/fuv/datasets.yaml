@@ -2,16 +2,19 @@ asr:
   items:
   - name: facebook/omnilingual-asr-corpus
     url: https://huggingface.co/datasets/facebook/omnilingual-asr-corpus
-    downloads: 2540
+    downloads: 2580
     likes: 200
+    rows: 548000
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 251
+    downloads: 260
     likes: 11
+    rows: 94400
   - name: Sellopale/omnilingualpaleoi
     url: https://huggingface.co/datasets/Sellopale/omnilingualpaleoi
-    downloads: 25
+    downloads: 28
     likes: 1
+    rows: 548000
   total_count: 3
   counts_by_code:
     fuv: 3
@@ -19,84 +22,94 @@ tts:
   items:
   - name: WueNLP/sib-fleurs
     url: https://huggingface.co/datasets/WueNLP/sib-fleurs
-    downloads: 251
+    downloads: 260
     likes: 11
+    rows: 94400
   total_count: 1
   counts_by_code:
     fuv: 1
 translation:
   items:
-  - name: facebook/flores
-    url: https://huggingface.co/datasets/facebook/flores
-    downloads: 44500
-    likes: 97
   - name: HuggingFaceFW/finetranslations
     url: https://huggingface.co/datasets/HuggingFaceFW/finetranslations
-    downloads: 37000
-    likes: 282
+    downloads: 75800
+    likes: 283
+  - name: facebook/flores
+    url: https://huggingface.co/datasets/facebook/flores
+    downloads: 43400
+    likes: 97
   - name: openlanguagedata/flores_plus
     url: https://huggingface.co/datasets/openlanguagedata/flores_plus
-    downloads: 19500
-    likes: 123
-  - name: facebook/bouquet
-    url: https://huggingface.co/datasets/facebook/bouquet
-    downloads: 1830
-    likes: 33
+    downloads: 15800
+    likes: 124
+    rows: 893000
   - name: Muennighoff/flores200
     url: https://huggingface.co/datasets/Muennighoff/flores200
-    downloads: 1710
+    downloads: 1650
     likes: 20
+  - name: facebook/bouquet
+    url: https://huggingface.co/datasets/facebook/bouquet
+    downloads: 1570
+    likes: 33
+    rows: 5640000
   - name: HuggingFaceFW/finetranslations-edu
     url: https://huggingface.co/datasets/HuggingFaceFW/finetranslations-edu
-    downloads: 1240
+    downloads: 1100
     likes: 27
+    rows: 109000000
   - name: Helsinki-NLP/tatoeba
     url: https://huggingface.co/datasets/Helsinki-NLP/tatoeba
-    downloads: 1180
+    downloads: 866
     likes: 56
   - name: openlanguagedata/oldi_seed
     url: https://huggingface.co/datasets/openlanguagedata/oldi_seed
-    downloads: 862
+    downloads: 772
     likes: 11
-  - name: visheratin/laion-coco-nllb
-    url: https://huggingface.co/datasets/visheratin/laion-coco-nllb
-    downloads: 393
-    likes: 44
+    rows: 564000
   - name: mteb/FloresBitextMining
     url: https://huggingface.co/datasets/mteb/FloresBitextMining
-    downloads: 293
+    downloads: 303
     likes: 1
+    rows: 2009
+  - name: visheratin/laion-coco-nllb
+    url: https://huggingface.co/datasets/visheratin/laion-coco-nllb
+    downloads: 255
+    likes: 44
+    rows: 894000
   - name: community-datasets/udhr
     url: https://huggingface.co/datasets/community-datasets/udhr
-    downloads: 127
+    downloads: 123
     likes: 2
   - name: mteb/flores
     url: https://huggingface.co/datasets/mteb/flores
-    downloads: 125
+    downloads: 96
     likes: 0
-  - name: robinhad/long_flores
-    url: https://huggingface.co/datasets/robinhad/long_flores
-    downloads: 47
-    likes: 0
+    rows: 2009
   - name: MihaiPopa-1/OmniSurgical-1.0
     url: https://huggingface.co/datasets/MihaiPopa-1/OmniSurgical-1.0
-    downloads: 47
+    downloads: 60
     likes: 0
+    rows: 47000
   - name: vpermilp/nllb-200-distilled-600M-rust
     url: https://huggingface.co/datasets/vpermilp/nllb-200-distilled-600M-rust
-    downloads: 45
+    downloads: 51
     likes: 1
+  - name: robinhad/long_flores
+    url: https://huggingface.co/datasets/robinhad/long_flores
+    downloads: 49
+    likes: 0
   - name: Svngoku/xP3x-Kongo
     url: https://huggingface.co/datasets/Svngoku/xP3x-Kongo
-    downloads: 32
+    downloads: 30
     likes: 4
+    rows: 1220000
   - name: neulab/PangeaBench-flores
     url: https://huggingface.co/datasets/neulab/PangeaBench-flores
-    downloads: 23
+    downloads: 17
     likes: 0
   - name: SupriyoCode/flores200
     url: https://huggingface.co/datasets/SupriyoCode/flores200
-    downloads: 16
+    downloads: 11
     likes: 0
   total_count: 18
   counts_by_code:

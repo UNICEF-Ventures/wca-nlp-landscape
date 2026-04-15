@@ -2,24 +2,28 @@ asr:
   items:
   - name: espnet/xeus
     url: https://huggingface.co/espnet/xeus
-    downloads: 49
+    downloads: 60
     likes: 146
   - name: johntsi/ZeroSwot-Medium_asr-cv_en-to-200
     url: https://huggingface.co/johntsi/ZeroSwot-Medium_asr-cv_en-to-200
-    downloads: 19
+    downloads: 17
     likes: 0
+    size: 0.4B
   - name: johntsi/ZeroSwot-Large_asr-cv_en-to-200
     url: https://huggingface.co/johntsi/ZeroSwot-Large_asr-cv_en-to-200
     downloads: 16
     likes: 1
+    size: 0.4B
   - name: johntsi/ZeroSwot-Medium_asr-mustc_en-to-200
     url: https://huggingface.co/johntsi/ZeroSwot-Medium_asr-mustc_en-to-200
     downloads: 14
     likes: 0
+    size: 0.4B
   - name: johntsi/ZeroSwot-Large_asr-mustc_en-to-200
     url: https://huggingface.co/johntsi/ZeroSwot-Large_asr-mustc_en-to-200
     downloads: 12
     likes: 0
+    size: 0.4B
   total_count: 5
   counts_by_code:
     fuv: 5
@@ -27,58 +31,75 @@ tts:
   items:
   - name: k2-fsa/OmniVoice
     url: https://huggingface.co/k2-fsa/OmniVoice
-    downloads: 270000
-    likes: 451
+    downloads: 606000
+    likes: 577
   - name: drbaph/OmniVoice-bf16
     url: https://huggingface.co/drbaph/OmniVoice-bf16
-    downloads: 3310
-    likes: 9
+    downloads: 4710
+    likes: 13
   - name: splendor1811/omnivoice-vietnamese
     url: https://huggingface.co/splendor1811/omnivoice-vietnamese
-    downloads: 285
+    downloads: 672
     likes: 2
-  - name: LeeAeron/OmniVoice
-    url: https://huggingface.co/LeeAeron/OmniVoice
-    downloads: 92
-    likes: 0
+    size: 0.6B
+  - name: gluschenko/omnivoice-onnx
+    url: https://huggingface.co/gluschenko/omnivoice-onnx
+    downloads: 397
+    likes: 4
   - name: edwixx/OmniVoice
     url: https://huggingface.co/edwixx/OmniVoice
-    downloads: 30
+    downloads: 163
     likes: 0
   - name: WANJIAX2197/OmniVoice
     url: https://huggingface.co/WANJIAX2197/OmniVoice
-    downloads: 29
+    downloads: 30
     likes: 0
-  - name: gluschenko/omnivoice-onnx
-    url: https://huggingface.co/gluschenko/omnivoice-onnx
+  - name: Bgeorge/OmniVoice
+    url: https://huggingface.co/Bgeorge/OmniVoice
+    downloads: 25
+    likes: 1
+  - name: yash3120/OmniVoice
+    url: https://huggingface.co/yash3120/OmniVoice
     downloads: 25
     likes: 0
   - name: ex510/OmniVoice
     url: https://huggingface.co/ex510/OmniVoice
+    downloads: 19
+    likes: 0
+  - name: razi08/OmniVoice
+    url: https://huggingface.co/razi08/OmniVoice
     downloads: 17
     likes: 0
-  - name: Bgeorge/OmniVoice
-    url: https://huggingface.co/Bgeorge/OmniVoice
-    downloads: 16
-    likes: 1
   - name: Manish993135/OmniVoice
     url: https://huggingface.co/Manish993135/OmniVoice
     downloads: 16
+    likes: 0
+  - name: riasatsk/OmniVoice
+    url: https://huggingface.co/riasatsk/OmniVoice
+    downloads: 16
+    likes: 0
+  - name: harsha7286/OmniVoice
+    url: https://huggingface.co/harsha7286/OmniVoice
+    downloads: 15
+    likes: 0
+  - name: lopho/OmniVoice
+    url: https://huggingface.co/lopho/OmniVoice
+    downloads: 15
+    likes: 0
+  - name: bilalRHCH/Arabic-text-to-speech
+    url: https://huggingface.co/bilalRHCH/Arabic-text-to-speech
+    downloads: 14
     likes: 0
   - name: phucpx247/OmniVoice
     url: https://huggingface.co/phucpx247/OmniVoice
     downloads: 14
     likes: 0
-  - name: razi08/OmniVoice
-    url: https://huggingface.co/razi08/OmniVoice
-    downloads: 14
-    likes: 0
   - name: gubernac/OmniVoice
     url: https://huggingface.co/gubernac/OmniVoice
     downloads: 13
-    likes: 0
-  - name: harsha7286/OmniVoice
-    url: https://huggingface.co/harsha7286/OmniVoice
+    likes: 1
+  - name: preference1/OmniVoice
+    url: https://huggingface.co/preference1/OmniVoice
     downloads: 13
     likes: 0
   - name: EBINSHAJI1999/OmniVoice
@@ -89,146 +110,145 @@ tts:
     url: https://huggingface.co/Citrus-777/OmniVoice
     downloads: 12
     likes: 0
-  - name: bilalRHCH/Arabic-text-to-speech
-    url: https://huggingface.co/bilalRHCH/Arabic-text-to-speech
-    downloads: 12
-    likes: 0
-  - name: preference1/OmniVoice
-    url: https://huggingface.co/preference1/OmniVoice
-    downloads: 12
-    likes: 0
-  - name: lopho/OmniVoice
-    url: https://huggingface.co/lopho/OmniVoice
-    downloads: 12
-    likes: 0
   - name: Koyiljon/OmniVoice
     url: https://huggingface.co/Koyiljon/OmniVoice
     downloads: 11
     likes: 0
-  total_count: 20
+  - name: arthurhenriqueabreu/OmniVoice
+    url: https://huggingface.co/arthurhenriqueabreu/OmniVoice
+    downloads: 11
+    likes: 0
+  - name: kongwang/OmniVoice
+    url: https://huggingface.co/kongwang/OmniVoice
+    downloads: 10
+    likes: 0
+  total_count: 23
   counts_by_code:
-    fuv: 20
+    fuv: 23
 translation:
   items:
   - name: facebook/nllb-200-distilled-600M
     url: https://huggingface.co/facebook/nllb-200-distilled-600M
-    downloads: 1030000
-    likes: 879
+    downloads: 1140000
+    likes: 880
   - name: facebook/nllb-200-distilled-1.3B
     url: https://huggingface.co/facebook/nllb-200-distilled-1.3B
-    downloads: 125000
+    downloads: 147000
     likes: 181
   - name: facebook/nllb-200-3.3B
     url: https://huggingface.co/facebook/nllb-200-3.3B
-    downloads: 72600
-    likes: 441
+    downloads: 81600
+    likes: 443
   - name: facebook/nllb-200-1.3B
     url: https://huggingface.co/facebook/nllb-200-1.3B
-    downloads: 31300
-    likes: 70
+    downloads: 31400
+    likes: 71
   - name: Xenova/nllb-200-distilled-600M
     url: https://huggingface.co/Xenova/nllb-200-distilled-600M
-    downloads: 4350
+    downloads: 4420
     likes: 50
-  - name: JustFrederik/nllb-200-distilled-600M-ct2-int8
-    url: https://huggingface.co/JustFrederik/nllb-200-distilled-600M-ct2-int8
-    downloads: 1010
-    likes: 1
   - name: mradermacher/OmniTranslate-1.0-GGUF
     url: https://huggingface.co/mradermacher/OmniTranslate-1.0-GGUF
-    downloads: 659
-    likes: 2
-  - name: facebook/nllb-moe-54b
-    url: https://huggingface.co/facebook/nllb-moe-54b
-    downloads: 611
-    likes: 123
+    downloads: 1120
+    likes: 3
+    size: 0.6B
   - name: mradermacher/OmniTranslate-1.1-GGUF
     url: https://huggingface.co/mradermacher/OmniTranslate-1.1-GGUF
-    downloads: 546
+    downloads: 1110
+    likes: 2
+    size: 0.6B
+  - name: JustFrederik/nllb-200-distilled-600M-ct2-int8
+    url: https://huggingface.co/JustFrederik/nllb-200-distilled-600M-ct2-int8
+    downloads: 925
     likes: 1
+  - name: facebook/nllb-moe-54b
+    url: https://huggingface.co/facebook/nllb-moe-54b
+    downloads: 557
+    likes: 123
   - name: JustFrederik/nllb-200-1.3B-ct2-int8
     url: https://huggingface.co/JustFrederik/nllb-200-1.3B-ct2-int8
-    downloads: 218
+    downloads: 200
     likes: 0
   - name: JustFrederik/nllb-200-distilled-600M-ct2-float16
     url: https://huggingface.co/JustFrederik/nllb-200-distilled-600M-ct2-float16
-    downloads: 149
+    downloads: 157
     likes: 0
-  - name: JustFrederik/nllb-200-distilled-1.3B-ct2-int8
-    url: https://huggingface.co/JustFrederik/nllb-200-distilled-1.3B-ct2-int8
-    downloads: 147
-    likes: 2
   - name: winstxnhdw/nllb-200-distilled-1.3B-ct2-int8
     url: https://huggingface.co/winstxnhdw/nllb-200-distilled-1.3B-ct2-int8
-    downloads: 129
+    downloads: 141
     likes: 6
-  - name: Narsil/nllb
-    url: https://huggingface.co/Narsil/nllb
-    downloads: 70
+  - name: JustFrederik/nllb-200-distilled-1.3B-ct2-int8
+    url: https://huggingface.co/JustFrederik/nllb-200-distilled-1.3B-ct2-int8
+    downloads: 116
     likes: 2
   - name: JustFrederik/nllb-200-distilled-600M-ct2
     url: https://huggingface.co/JustFrederik/nllb-200-distilled-600M-ct2
-    downloads: 63
+    downloads: 65
     likes: 2
-  - name: michaelfeil/ct2fast-nllb-200-distilled-1.3B
-    url: https://huggingface.co/michaelfeil/ct2fast-nllb-200-distilled-1.3B
-    downloads: 51
-    likes: 1
   - name: JustFrederik/nllb-200-3.3B-ct2-float16
     url: https://huggingface.co/JustFrederik/nllb-200-3.3B-ct2-float16
-    downloads: 49
+    downloads: 52
     likes: 3
+  - name: michaelfeil/ct2fast-nllb-200-distilled-1.3B
+    url: https://huggingface.co/michaelfeil/ct2fast-nllb-200-distilled-1.3B
+    downloads: 47
+    likes: 1
   - name: michaelfeil/ct2fast-nllb-200-3.3B
     url: https://huggingface.co/michaelfeil/ct2fast-nllb-200-3.3B
-    downloads: 47
+    downloads: 43
     likes: 14
   - name: ychenNLP/nllb-200-3.3B-easyproject
     url: https://huggingface.co/ychenNLP/nllb-200-3.3B-easyproject
-    downloads: 34
+    downloads: 36
     likes: 8
-  - name: JustFrederik/nllb-200-distilled-1.3B-ct2
-    url: https://huggingface.co/JustFrederik/nllb-200-distilled-1.3B-ct2
-    downloads: 32
-    likes: 0
   - name: JustFrederik/nllb-200-distilled-1.3B-ct2-float16
     url: https://huggingface.co/JustFrederik/nllb-200-distilled-1.3B-ct2-float16
     downloads: 30
     likes: 1
+  - name: JustFrederik/nllb-200-distilled-1.3B-ct2
+    url: https://huggingface.co/JustFrederik/nllb-200-distilled-1.3B-ct2
+    downloads: 29
+    likes: 0
+  - name: Narsil/nllb
+    url: https://huggingface.co/Narsil/nllb
+    downloads: 27
+    likes: 2
+  - name: Emilio407/nllb-200-distilled-600M-4bit
+    url: https://huggingface.co/Emilio407/nllb-200-distilled-600M-4bit
+    downloads: 21
+    likes: 2
+    size: 0.6B
   - name: JustFrederik/nllb-200-1.3B-ct2-float16
     url: https://huggingface.co/JustFrederik/nllb-200-1.3B-ct2-float16
     downloads: 13
     likes: 0
-  - name: KomorebiAI/nllb-200-3.3B-ct2
-    url: https://huggingface.co/KomorebiAI/nllb-200-3.3B-ct2
-    downloads: 9
-    likes: 2
   - name: JustFrederik/nllb-200-1.3B-ct2
     url: https://huggingface.co/JustFrederik/nllb-200-1.3B-ct2
-    downloads: 8
+    downloads: 10
     likes: 0
+  - name: KomorebiAI/nllb-200-3.3B-ct2
+    url: https://huggingface.co/KomorebiAI/nllb-200-3.3B-ct2
+    downloads: 10
+    likes: 2
   - name: KomorebiAI/nllb-200-3.3B-float16-ct2
     url: https://huggingface.co/KomorebiAI/nllb-200-3.3B-float16-ct2
-    downloads: 8
+    downloads: 10
     likes: 3
-  - name: KomorebiAI/nllb-200-1.3B-ct2
-    url: https://huggingface.co/KomorebiAI/nllb-200-1.3B-ct2
-    downloads: 6
-    likes: 2
-  - name: KomorebiAI/nllb-200-1.3B-int8-ct2
-    url: https://huggingface.co/KomorebiAI/nllb-200-1.3B-int8-ct2
-    downloads: 6
-    likes: 2
-  - name: ychenNLP/nllb-200-distilled-1.3B-easyproject
-    url: https://huggingface.co/ychenNLP/nllb-200-distilled-1.3B-easyproject
-    downloads: 5
-    likes: 2
   - name: KomorebiAI/nllb-200-3.3B-int8-ct2
     url: https://huggingface.co/KomorebiAI/nllb-200-3.3B-int8-ct2
     downloads: 5
     likes: 3
+  - name: KomorebiAI/nllb-200-1.3B-ct2
+    url: https://huggingface.co/KomorebiAI/nllb-200-1.3B-ct2
+    downloads: 5
+    likes: 2
+  - name: ychenNLP/nllb-200-distilled-1.3B-easyproject
+    url: https://huggingface.co/ychenNLP/nllb-200-distilled-1.3B-easyproject
+    downloads: 4
+    likes: 2
   - name: KomorebiAI/nllb-200-1.3B-float16-ct2
     url: https://huggingface.co/KomorebiAI/nllb-200-1.3B-float16-ct2
-    downloads: 3
+    downloads: 2
     likes: 1
   total_count: 30
   counts_by_code:
@@ -241,11 +261,11 @@ llm:
     likes: 0
   - name: goldfish-models/fuv_latn_10mb
     url: https://huggingface.co/goldfish-models/fuv_latn_10mb
-    downloads: 4
+    downloads: 6
     likes: 0
   - name: goldfish-models/fuv_latn_full
     url: https://huggingface.co/goldfish-models/fuv_latn_full
-    downloads: 1
+    downloads: 2
     likes: 0
   total_count: 3
   counts_by_code:

@@ -120,18 +120,25 @@ def generate_models_table(models_data, task_name, limit=15, iso_639_1=None, iso_
     if not models:
         return f"<p class='empty'>No {task_name} models found.</p>"
 
+    has_size = any(m.get('size') for m in models[:limit])
+
     rows = []
     for m in models[:limit]:
         name = m.get('name', 'Unknown')
         url = m.get('url', '#')
-        downloads = format_number(m.get('downloads', 0))
-        likes = format_number(m.get('likes', 0))
+        dl_raw = m.get('downloads', 0)
+        lk_raw = m.get('likes', 0)
+        downloads = format_number(dl_raw)
+        likes = format_number(lk_raw)
+        size = m.get('size') or '—'
 
+        size_cell = f'<td class="num">{size}</td>' if has_size else ''
         rows.append(f"""
             <tr>
                 <td><a href="{url}" target="_blank">{name}</a></td>
-                <td class="num">{downloads}</td>
-                <td class="num">{likes}</td>
+                {size_cell}
+                <td class="num" data-val="{dl_raw}">{downloads}</td>
+                <td class="num" data-val="{lk_raw}">{likes}</td>
             </tr>
         """)
 
@@ -154,10 +161,11 @@ def generate_models_table(models_data, task_name, limit=15, iso_639_1=None, iso_
         else:
             more_html = f"<p class='more'>+ {more} more</p>"
 
+    size_header = '<th class="num">Size</th>' if has_size else ''
     return f"""
         <table class="data-table">
             <thead>
-                <tr><th>Model</th><th class="num">Downloads</th><th class="num">Likes</th></tr>
+                <tr><th>Model</th>{size_header}<th class="num">Downloads</th><th class="num">Likes</th></tr>
             </thead>
             <tbody>{''.join(rows)}</tbody>
         </table>
@@ -191,16 +199,26 @@ def generate_datasets_table(datasets_data, limit=10, iso_639_1=None, iso_639_3=N
     if not datasets:
         return "<p class='empty'>No datasets found.</p>"
 
+    has_rows = any(d.get('rows') for d in datasets[:limit])
+
     rows = []
     for d in datasets[:limit]:
         name = d.get('name', 'Unknown')
         url = d.get('url', '#')
-        downloads = format_number(d.get('downloads', 0))
+        dl_raw = d.get('downloads', 0)
+        lk_raw = d.get('likes', 0)
+        rw_raw = d.get('rows', 0)
+        downloads = format_number(dl_raw)
+        likes = format_number(lk_raw)
+        row_count = format_number(rw_raw) if rw_raw else '—'
 
+        rows_cell = f'<td class="num" data-val="{rw_raw}">{row_count}</td>' if has_rows else ''
         rows.append(f"""
             <tr>
                 <td><a href="{url}" target="_blank">{name}</a></td>
-                <td class="num">{downloads}</td>
+                {rows_cell}
+                <td class="num" data-val="{dl_raw}">{downloads}</td>
+                <td class="num" data-val="{lk_raw}">{likes}</td>
             </tr>
         """)
 
@@ -222,10 +240,11 @@ def generate_datasets_table(datasets_data, limit=10, iso_639_1=None, iso_639_3=N
         else:
             more_html = f"<p class='more'>+ {more} more</p>"
 
+    rows_header = '<th class="num">Rows</th>' if has_rows else ''
     return f"""
         <table class="data-table">
             <thead>
-                <tr><th>Dataset</th><th class="num">Downloads</th></tr>
+                <tr><th>Dataset</th>{rows_header}<th class="num">Downloads</th><th class="num">Likes</th></tr>
             </thead>
             <tbody>{''.join(rows)}</tbody>
         </table>

@@ -364,7 +364,7 @@ def generate_language_detail_page(iso_code, lang_data, actors):
     </footer>
 
     <script>
-        document.querySelectorAll('.benchmark-table').forEach(table => {{
+        document.querySelectorAll('.data-table').forEach(table => {{
             table.querySelectorAll('th').forEach((th, colIdx) => {{
                 th.addEventListener('click', () => {{
                     const tbody = table.querySelector('tbody');
@@ -376,6 +376,18 @@ def generate_language_detail_page(iso_code, lang_data, actors):
                     rows.sort((a, b) => {{
                         const aCell = a.cells[colIdx];
                         const bCell = b.cells[colIdx];
+
+                        // Prefer data-val (raw integer) over display text
+                        const aRaw = aCell.getAttribute('data-val');
+                        const bRaw = bCell.getAttribute('data-val');
+                        if (aRaw !== null && bRaw !== null) {{
+                            const aNum = parseFloat(aRaw);
+                            const bNum = parseFloat(bRaw);
+                            if (!isNaN(aNum) && !isNaN(bNum)) {{
+                                return isAsc ? aNum - bNum : bNum - aNum;
+                            }}
+                        }}
+
                         let aVal = (aCell.textContent || '').trim();
                         let bVal = (bCell.textContent || '').trim();
 

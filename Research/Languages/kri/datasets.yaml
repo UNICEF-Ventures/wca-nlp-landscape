@@ -8,32 +8,37 @@ translation:
   items:
   - name: google/smol
     url: https://huggingface.co/datasets/google/smol
-    downloads: 2580
-    likes: 93
+    downloads: 2810
+    likes: 94
+    rows: 798000
   - name: jhu-clsp/kreyol-mt
     url: https://huggingface.co/datasets/jhu-clsp/kreyol-mt
-    downloads: 1650
+    downloads: 1210
     likes: 9
+    rows: 1880000
   - name: community-datasets/udhr
     url: https://huggingface.co/datasets/community-datasets/udhr
-    downloads: 127
+    downloads: 123
     likes: 2
-  - name: FrancophonIA/gatitos
-    url: https://huggingface.co/datasets/FrancophonIA/gatitos
-    downloads: 120
-    likes: 4
   - name: cis-lmu/GlotStoryBook
     url: https://huggingface.co/datasets/cis-lmu/GlotStoryBook
-    downloads: 74
+    downloads: 67
     likes: 7
+    rows: 80100
+  - name: FrancophonIA/gatitos
+    url: https://huggingface.co/datasets/FrancophonIA/gatitos
+    downloads: 61
+    likes: 4
   - name: kargaranamir/GlotStoryBook-backup
     url: https://huggingface.co/datasets/kargaranamir/GlotStoryBook-backup
-    downloads: 27
+    downloads: 21
     likes: 0
+    rows: 80100
   - name: Bretagne/PolyWrite_clean
     url: https://huggingface.co/datasets/Bretagne/PolyWrite_clean
     downloads: 11
     likes: 0
+    rows: 155
   total_count: 7
   counts_by_code:
     kri: 7

@@ -65,6 +65,17 @@ sources:
 
   # ── Benchmark Sources ─────────────────────────────────────────────────────
 
+  - name: CLEAR Global Manual Benchmarking
+    url: https://github.com/translatorswb/Manual-Benchmarking-WCARO-NLP-Landscape
+    type: benchmark
+    status: included
+    languages_covered: [mos, fuv, snk, dag, ewe]
+    description: >
+      Manual benchmark evaluations conducted by CLEAR Global as part of this study, for
+      priority languages where no published evaluation existed: Mooré (ASR),
+      Nigerian Fulfulde (ASR + MT), Soninke (ASR), Dagbani (ASR + MT),
+      and Ewe (ASR). 
+
   - name: MAFAND-MT
     url: https://aclanthology.org/2022.naacl-main.223/
     type: [dataset, benchmark]

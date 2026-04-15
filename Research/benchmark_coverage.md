@@ -2,42 +2,44 @@
 
 Generated: 2026-04-15
 
+<!-- Cell values: C=published benchmark, M=evaluated for this study, N=no data -->
+
 | ISO | ASR | TTS | MT | LLM | Language |
 |-----| --- | --- | --- | --- |---------|
-| mos |  x  |     |  x  |  x  | Mooré |
-| dyu |  x  |     |  x  |  x  | Dyula |
-| ful |  x  |     |  x  |  x  | Fula |
-| fuh |     |     |     |     | Western Niger Fulfulde |
-| fuv |  x  |     |  x  |  x  | Nigerian Fulfulde |
-| gux |     |     |     |     | Gourmanché |
-| bam |  x  |     |  x  |  x  | Bambara |
-| snk |  x  |     |     |     | Soninke |
-| ffm |     |     |     |     | Maasina Fulfulde |
-| dts |     |     |  x  |     | Escarpment Dogon |
-| ses |     |     |     |     | Koyraboro Senni |
-| twi |  x  |  x  |  x  |  x  | Twi |
-| dag |  x  |     |  x  |     | Dagbani |
-| ewe |  x  |  x  |  x  |  x  | Ewe |
-| hau |  x  |  x  |  x  |  x  | Hausa |
-| yor |  x  |  x  |  x  |  x  | Yoruba |
-| ibo |  x  |     |  x  |  x  | Igbo |
-| wol |  x  |     |  x  |  x  | Wolof |
-| kri |     |     |  x  |     | Krio |
-| tem |     |     |     |     | Temne |
-| gaa |  x  |     |     |     | Ga |
-| kau |  x  |  x  |     |  x  | Kanuri |
-| swc |     |     |     |     | Congo Swahili |
-| lin |  x  |  x  |  x  |  x  | Lingala |
-| sag |     |     |  x  |  x  | Sango |
-| mnk |     |     |     |     | Mandinka |
-| aka |  x  |  x  |  x  |  x  | Akan |
-| fuf |  x  |     |     |     | Pular |
-| men |     |     |     |     | Mende |
-| fan |     |     |     |     | Fang |
-| lir |     |     |  x  |     | Liberian Kreyol |
-| shu |     |     |     |     | Chadian Arabic |
-| fon |  x  |     |  x  |  x  | Fon |
-| pov |     |     |  x  |     | Guinea-Bissau Creole |
-| 34 |  19  |  7  |  20  |  16  | Total |
+| mos |  M  |  N  |  C  |  C  | Mooré |
+| dyu |  C  |  N  |  C  |  C  | Dyula |
+| ful |  C  |  N  |  C  |  C  | Fula |
+| fuh |  N  |  N  |  N  |  N  | Western Niger Fulfulde |
+| fuv |  M  |  N  |  M  |  C  | Nigerian Fulfulde |
+| gux |  N  |  N  |  N  |  N  | Gourmanché |
+| bam |  C  |  N  |  C  |  C  | Bambara |
+| snk |  M  |  N  |  N  |  N  | Soninke |
+| ffm |  N  |  N  |  N  |  N  | Maasina Fulfulde |
+| dts |  N  |  N  |  C  |  N  | Escarpment Dogon |
+| ses |  N  |  N  |  N  |  N  | Koyraboro Senni |
+| twi |  C  |  C  |  C  |  C  | Twi |
+| dag |  M  |  N  |  M  |  N  | Dagbani |
+| ewe |  M  |  C  |  C  |  C  | Ewe |
+| hau |  C  |  C  |  C  |  C  | Hausa |
+| yor |  C  |  C  |  C  |  C  | Yoruba |
+| ibo |  C  |  N  |  C  |  C  | Igbo |
+| wol |  C  |  N  |  C  |  C  | Wolof |
+| kri |  N  |  N  |  C  |  N  | Krio |
+| tem |  N  |  N  |  N  |  N  | Temne |
+| gaa |  C  |  N  |  N  |  N  | Ga |
+| kau |  C  |  C  |  N  |  C  | Kanuri |
+| swc |  N  |  N  |  N  |  N  | Congo Swahili |
+| lin |  C  |  C  |  C  |  C  | Lingala |
+| sag |  N  |  N  |  C  |  C  | Sango |
+| mnk |  N  |  N  |  N  |  N  | Mandinka |
+| aka |  C  |  C  |  C  |  C  | Akan |
+| fuf |  C  |  N  |  N  |  N  | Pular |
+| men |  N  |  N  |  N  |  N  | Mende |
+| fan |  N  |  N  |  N  |  N  | Fang |
+| lir |  N  |  N  |  C  |  N  | Liberian Kreyol |
+| shu |  N  |  N  |  N  |  N  | Chadian Arabic |
+| fon |  C  |  N  |  C  |  C  | Fon |
+| pov |  N  |  N  |  C  |  N  | Guinea-Bissau Creole |
+| 34 |  19  |  7  |  20  |  16  | Total (C or M) |
 
 Coverage: 24/34 languages have at least one benchmark.

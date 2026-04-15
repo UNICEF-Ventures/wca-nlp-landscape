@@ -22,6 +22,7 @@ from htmlgen.tabs import (
     generate_focus_languages_tab, generate_all_languages_tab,
     generate_countries_tab, generate_actors_tab, generate_sources_tab,
 )
+from htmlgen.benchmark_coverage import generate_benchmark_coverage_tab
 from htmlgen.pages import generate_language_detail_page, generate_actor_detail_page
 
 
@@ -33,6 +34,7 @@ def generate_main_html(languages, actors, wca_languages, sources, priority_isos,
     actors_tab = generate_actors_tab(actors)
     countries_tab = generate_countries_tab(wca_languages)
     sources_tab = generate_sources_tab(sources)
+    benchmark_tab = generate_benchmark_coverage_tab()
 
     total_focus = len(languages)
     total_wca = len(wca_languages)
@@ -67,6 +69,7 @@ def generate_main_html(languages, actors, wca_languages, sources, priority_isos,
         <button class="tab" data-tab="all">All Languages ({total_wca})</button>
         <button class="tab" data-tab="countries">Countries ({total_countries})</button>
         <button class="tab" data-tab="actors">Actors ({total_actors})</button>
+        <button class="tab" data-tab="benchmarks">Benchmark Coverage</button>
         <button class="tab" data-tab="sources">Sources</button>
     </div>
 
@@ -84,6 +87,10 @@ def generate_main_html(languages, actors, wca_languages, sources, priority_isos,
 
     <div id="actors" class="tab-content">
         {actors_tab}
+    </div>
+
+    <div id="benchmarks" class="tab-content">
+        {benchmark_tab}
     </div>
 
     <div id="sources" class="tab-content">

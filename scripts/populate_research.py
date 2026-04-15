@@ -624,9 +624,22 @@ def generate_wca_languages_data(grid_data):
 
 
 def generate_benchmark_coverage(focus_languages):
-    """Generate a markdown matrix showing benchmark coverage per language and task."""
+    """Generate a markdown matrix showing benchmark coverage per language and task.
+
+    Cell values:
+      M  = at least one result has source=evaluated (we ran it)
+      C  = results exist, all source=reported (published benchmark)
+      N  = no results
+    """
     tasks = ['asr', 'tts', 'translation', 'llm']
     task_labels = {'asr': 'ASR', 'tts': 'TTS', 'translation': 'MT', 'llm': 'LLM'}
+    # translation and mt are the same task
+    task_keys = {
+        'asr': ['asr'],
+        'tts': ['tts'],
+        'translation': ['translation', 'mt'],
+        'llm': ['llm'],
+    }
     rows = []
 
     for iso in focus_languages:
@@ -638,32 +651,39 @@ def generate_benchmark_coverage(focus_languages):
                 info = yaml.safe_load(f) or {}
             name = info.get('name', iso)
 
-        # Collect all evaluation tasks from both benchmark files
-        has_task = set()
-        for fname in ('benchmarks.yaml', 'benchmarks_manual.yaml'):
-            fpath = lang_dir / fname
-            if not fpath.exists():
-                continue
-            with open(fpath, 'r', encoding='utf-8') as f:
-                data = yaml.safe_load(f) or {}
-            evals = data.get('evaluations', {})
-            for task_key, models in evals.items():
-                if models:  # non-empty list
-                    has_task.add(task_key)
-
-        # Map translation variants (mt) to canonical key
-        if 'mt' in has_task:
-            has_task.add('translation')
-
+        # For each task, determine C / M / N
         cells = []
-        for t in tasks:
-            cells.append('x' if t in has_task else ' ')
+        for task in tasks:
+            keys = task_keys[task]
+            has_reported = False
+            is_evaluated = False
+            for fname in ('benchmarks.yaml', 'benchmarks_manual.yaml'):
+                fpath = lang_dir / fname
+                if not fpath.exists():
+                    continue
+                with open(fpath, 'r', encoding='utf-8') as f:
+                    data = yaml.safe_load(f) or {}
+                evals = data.get('evaluations', {})
+                for key in keys:
+                    for entry in evals.get(key, []):
+                        for result in (entry.get('results') or []):
+                            if result.get('source') == 'evaluated':
+                                is_evaluated = True
+                            else:
+                                has_reported = True
+            if is_evaluated:
+                cells.append('M')
+            elif has_reported:
+                cells.append('C')
+            else:
+                cells.append('N')
+
         rows.append((iso, name, cells))
 
-    # Count coverage per task
+    # Count coverage per task (C or M = covered)
     totals = []
-    for i, t in enumerate(tasks):
-        totals.append(sum(1 for _, _, cells in rows if cells[i] == 'x'))
+    for i in range(len(tasks)):
+        totals.append(sum(1 for _, _, cells in rows if cells[i] in ('C', 'M')))
 
     # Build markdown
     header_tasks = ' | '.join(task_labels[t] for t in tasks)
@@ -671,6 +691,8 @@ def generate_benchmark_coverage(focus_languages):
         '# Benchmark Coverage Matrix',
         '',
         f'Generated: {__import__("datetime").date.today().isoformat()}',
+        '',
+        '<!-- Cell values: C=published benchmark, M=evaluated for this study, N=no data -->',
         '',
         f'| ISO | {header_tasks} | Language |',
         f'|-----|' + '|'.join(' --- ' for _ in tasks) + '|---------|',
@@ -680,10 +702,10 @@ def generate_benchmark_coverage(focus_languages):
         lines.append(f'| {iso} | {cell_str} | {name} |')
 
     total_str = ' | '.join(f' {t} ' for t in totals)
-    lines.append(f'| {len(rows)} | {total_str} | Total |')
+    lines.append(f'| {len(rows)} | {total_str} | Total (C or M) |')
 
     lines.append('')
-    lines.append(f'Coverage: {sum(1 for _, _, c in rows if any(x == "x" for x in c))}/{len(rows)} languages have at least one benchmark.')
+    lines.append(f'Coverage: {sum(1 for _, _, c in rows if any(x in ("C", "M") for x in c))}/{len(rows)} languages have at least one benchmark.')
 
     output_path = RESEARCH_DIR / "benchmark_coverage.md"
     with open(output_path, 'w', encoding='utf-8') as f:
